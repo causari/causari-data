@@ -4,6 +4,10 @@
 
 This pack is a proof of concept for using Causari as a public communication layer for fast-moving events.
 
+> ⚠️ **Data status — read before reuse.** The results in this v1 pack are **illustrative / proof-of-concept** and are **not yet sourced against official records**. Treat scorelines as demo content until each carries a citation. The daily live-update workflow ([../../docs/LIVE-UPDATES.md](../../docs/LIVE-UPDATES.md)) requires every `completed` result to cite an official source. This honesty bar matters — the brand stakes its credibility on calibrated, sourced data.
+>
+> **Current contents:** 16 events (10 completed results + 6 `scheduled` upcoming fixtures), 9 causal links, 5 insight patterns. Validated by `scripts/validate-pack.mjs`.
+
 Instead of only listing match results, it models how each result changes the tournament state:
 
 ```text
@@ -39,10 +43,11 @@ packs/worldcup-2026/
 
 Initial scope:
 
-- baseline group-stage events from the early tournament window
+- baseline group-stage results from the early tournament window
+- upcoming fixtures modeled as `scheduled` events (the "watchpoints"), so completed results link forward to real nodes
 - special focus on Argentina, Brazil, and Portugal
-- causal links that explain why specific results changed the tournament state
-- reusable insight patterns for sports and event intelligence
+- causal links (event → event) that explain why specific results changed the tournament state
+- reusable insight patterns attached to links via `instances`
 
 Out of scope for this first pack:
 

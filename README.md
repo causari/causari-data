@@ -130,11 +130,21 @@ import insights from '@causari/data/insights.json';
 
 ### Event pack import
 
+For a **live, daily-updated** pack, fetch at runtime from a CDN so updates need no rebuild:
+
+```typescript
+const BASE = 'https://raw.githubusercontent.com/causari/causari-data/main/packs/worldcup-2026';
+const events = await fetch(`${BASE}/events.json`).then((r) => r.json());
+// ...links.json, insights.json the same way
+```
+
+For a static pack, a build-time import is fine:
+
 ```typescript
 import worldCupEvents from '@causari/data/packs/worldcup-2026/events.json';
-import worldCupLinks from '@causari/data/packs/worldcup-2026/links.json';
-import worldCupInsights from '@causari/data/packs/worldcup-2026/insights.json';
 ```
+
+See [docs/PACKS.md](docs/PACKS.md) for consumption modes and [docs/LIVE-UPDATES.md](docs/LIVE-UPDATES.md) for the daily match-day workflow.
 
 ### Raw JSON
 

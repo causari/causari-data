@@ -44,6 +44,17 @@ For live or short-horizon timelines, packs may use the following optional event 
 
 These optional fields let a pack model live event intelligence without changing the core schema.
 
+## Graph modeling rules (required for clean loading)
+
+A pack is a causal graph. To load cleanly into any Causari consumer (the visual explorer, the MCP store, an agent), it must follow the same structural rules as the core dataset:
+
+- **Links connect events to events.** A `CausalLink`'s `fromEvent` and `toEvent` must both be `id`s of events **in the same pack**. Never point a link at an insight id or at a node that isn't defined — that produces dangling edges in the visual.
+- **Insights attach to links, not the other way around.** An `Insight.instances` array lists the `CausalLink` ids that demonstrate the pattern. Insights are not graph nodes and are never link endpoints.
+- **Upcoming fixtures are events with `status: "scheduled"`.** Model a "watchpoint" (a match that hasn't happened yet) as a real scheduled event, then link the completed result to it. This keeps `nextWatchpoints` (free-text hints) separate from the actual graph edges.
+- **Ids are kebab-case and globally unique** (e.g. `wc2026-brazil-draws-morocco`). Avoid `--` inside an event id so the link id `{from}--{rel}-->{to}` stays unambiguous.
+
+Run `node scripts/validate-pack.mjs <pack-id>` before every commit — it enforces all of the above (referential integrity, id format, enums, 0–1 ranges) and is wired into CI.
+
 ## Pack quality bar
 
 A pack should be accepted when it has:
@@ -67,14 +78,37 @@ Use relationship types conservatively:
 
 When in doubt, prefer `enabled` or `accelerated` over `caused`.
 
-## Suggested consumption pattern
+## Consuming a pack
 
-AI agents and UIs can load packs independently:
+There are two ways to load a pack, and the right one depends on update cadence.
+
+### Live packs → fetch at runtime (recommended for daily-updated packs)
+
+A pack like `worldcup-2026` changes every match-day. A **build-time `import`** would bundle a snapshot into the app, so every update would need a redeploy. Instead, **fetch the JSON at runtime from a CDN** so a `git push` to this repo is the only step needed to update the live visual:
+
+```typescript
+const BASE = 'https://raw.githubusercontent.com/causari/causari-data/main/packs/worldcup-2026';
+// raw.githubusercontent.com is CORS-enabled and Fastly-cached (~5 min propagation).
+
+const [events, links, insights] = await Promise.all([
+  fetch(`${BASE}/events.json`).then((r) => r.json()),
+  fetch(`${BASE}/links.json`).then((r) => r.json()),
+  fetch(`${BASE}/insights.json`).then((r) => r.json()),
+]);
+```
+
+For higher traffic, serve via jsDelivr and purge on each commit (see [LIVE-UPDATES.md](LIVE-UPDATES.md)):
+
+```
+https://cdn.jsdelivr.net/gh/causari/causari-data@main/packs/worldcup-2026/events.json
+```
+
+### Static packs → build-time import
+
+For a pack that rarely changes, a bundled import is fine:
 
 ```typescript
 import events from '@causari/data/packs/worldcup-2026/events.json';
-import links from '@causari/data/packs/worldcup-2026/links.json';
-import insights from '@causari/data/packs/worldcup-2026/insights.json';
 ```
 
 A visual explorer can then render:
@@ -82,3 +116,5 @@ A visual explorer can then render:
 ```text
 Event → causal link → affected entity → next watchpoint
 ```
+
+See [LIVE-UPDATES.md](LIVE-UPDATES.md) for the daily match-day update workflow.
