@@ -47,8 +47,9 @@ jobs:
       - name: Stage data for Pages
         run: |
           mkdir -p _site
-          cp -r packs data schema _site/
-          printf '%s' '{"note":"Causari open data — JSON served for live consumers","packs":["worldcup-2026"]}' > _site/index.json
+          # Copy only the data dirs that exist (data/ may not be present yet).
+          for d in packs data schema; do [ -d "$d" ] && cp -r "$d" _site/; done
+          printf '%s' '{"note":"Causari open data - JSON served for live consumers","packs":["worldcup-2026"]}' > _site/index.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
