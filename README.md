@@ -13,6 +13,13 @@ data/
 ├── events.json        # Historical events with metadata
 ├── links.json         # Causal relationships between events
 └── insights.json      # Recurring causal patterns
+
+packs/
+└── worldcup-2026/     # Optional vertical pack for live causal timelines
+    ├── README.md
+    ├── events.json
+    ├── links.json
+    └── insights.json
 ```
 
 ### Event schema
@@ -69,6 +76,27 @@ See [SCHEMA.md](SCHEMA.md) for full field definitions.
 | Civilizational history | 35 | 36 | 5 |
 | **Total** | **100** | **132** | **8** |
 
+## Event packs
+
+Event packs are optional vertical datasets for focused, faster-moving causal timelines.
+
+They let Causari model domains where the key question is not just "what happened?" but:
+
+```text
+what happened
+→ why it mattered
+→ who was affected
+→ what changed next
+```
+
+Current packs:
+
+| Pack | Purpose |
+|------|---------|
+| [`worldcup-2026`](packs/worldcup-2026/) | Proof of concept for live sports/event intelligence using World Cup 2026 results, causal implications, and watchpoints |
+
+See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines.
+
 ## Relationship types
 
 | Type | Meaning | Example |
@@ -99,6 +127,24 @@ import events from '@causari/data/events.json';
 import links from '@causari/data/links.json';
 import insights from '@causari/data/insights.json';
 ```
+
+### Event pack import
+
+For a **live, daily-updated** pack, fetch at runtime from a CDN so updates need no rebuild:
+
+```typescript
+const BASE = 'https://raw.githubusercontent.com/causari/causari-data/main/packs/worldcup-2026';
+const events = await fetch(`${BASE}/events.json`).then((r) => r.json());
+// ...links.json, insights.json the same way
+```
+
+For a static pack, a build-time import is fine:
+
+```typescript
+import worldCupEvents from '@causari/data/packs/worldcup-2026/events.json';
+```
+
+See [docs/PACKS.md](docs/PACKS.md) for consumption modes and [docs/LIVE-UPDATES.md](docs/LIVE-UPDATES.md) for the daily match-day workflow.
 
 ### Raw JSON
 

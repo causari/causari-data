@@ -1,0 +1,25 @@
+name: validate-packs
+
+on:
+  push:
+    paths:
+      - "packs/**"
+      - "scripts/validate-pack.mjs"
+      - "schema/**"
+      - ".github/workflows/validate-packs.yml"
+  pull_request:
+    paths:
+      - "packs/**"
+      - "scripts/validate-pack.mjs"
+      - "schema/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate all packs (schema + referential integrity)
+        run: node scripts/validate-pack.mjs

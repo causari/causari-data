@@ -1,0 +1,74 @@
+[
+  {
+    "id": "wc2026-brazil-draws-morocco--accelerated-->wc2026-brazil-beats-haiti",
+    "fromEvent": "wc2026-brazil-draws-morocco",
+    "toEvent": "wc2026-brazil-beats-haiti",
+    "relationship": "accelerated",
+    "confidence": 0.72,
+    "evidence": "Brazil's opening draw made the Haiti match more important for restoring momentum and goal difference. The later 3-0 win directly answered the pressure created by the draw."
+  },
+  {
+    "id": "wc2026-brazil-beats-haiti--enabled-->wc2026-scotland-vs-brazil",
+    "fromEvent": "wc2026-brazil-beats-haiti",
+    "toEvent": "wc2026-scotland-vs-brazil",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Brazil's recovery win kept them in contention and set up the final group fixture against Scotland as the decider for top spot."
+  },
+  {
+    "id": "wc2026-argentina-beats-algeria--enabled-->wc2026-argentina-beats-austria",
+    "fromEvent": "wc2026-argentina-beats-algeria",
+    "toEvent": "wc2026-argentina-beats-austria",
+    "relationship": "enabled",
+    "confidence": 0.74,
+    "evidence": "Argentina's first clean win reduced pressure and allowed a controlled second performance. The Austria win built on the stability created against Algeria."
+  },
+  {
+    "id": "wc2026-argentina-beats-austria--enabled-->wc2026-argentina-vs-jordan",
+    "fromEvent": "wc2026-argentina-beats-austria",
+    "toEvent": "wc2026-argentina-vs-jordan",
+    "relationship": "enabled",
+    "confidence": 0.68,
+    "evidence": "Two clean wins put Argentina in command of Group J, turning the final Jordan fixture into a chance to seal top spot and rotate ahead of the knockouts."
+  },
+  {
+    "id": "wc2026-germany-routs-curacao--accelerated-->wc2026-germany-vs-ivory-coast",
+    "fromEvent": "wc2026-germany-routs-curacao",
+    "toEvent": "wc2026-germany-vs-ivory-coast",
+    "relationship": "accelerated",
+    "confidence": 0.66,
+    "evidence": "A 7-1 result raised expectations and made the following Ivory Coast match the real test of whether Germany's form was genuine or flattered by a weak opener."
+  },
+  {
+    "id": "wc2026-canada-routs-qatar--accelerated-->wc2026-switzerland-vs-canada",
+    "fromEvent": "wc2026-canada-routs-qatar",
+    "toEvent": "wc2026-switzerland-vs-canada",
+    "relationship": "accelerated",
+    "confidence": 0.68,
+    "evidence": "Canada's heavy win raised their perceived ceiling and set up the Switzerland fixture as the first real test of their dark-horse credibility against seeded opposition."
+  },
+  {
+    "id": "wc2026-japan-beats-tunisia--accelerated-->wc2026-japan-vs-sweden",
+    "fromEvent": "wc2026-japan-beats-tunisia",
+    "toEvent": "wc2026-japan-vs-sweden",
+    "relationship": "accelerated",
+    "confidence": 0.67,
+    "evidence": "Japan's dominant 4-0 win strengthened their tournament narrative and made the Sweden fixture a measure of their true ceiling against a traditional power."
+  },
+  {
+    "id": "wc2026-portugal-draws-dr-congo--accelerated-->wc2026-portugal-vs-colombia",
+    "fromEvent": "wc2026-portugal-draws-dr-congo",
+    "toEvent": "wc2026-portugal-vs-colombia",
+    "relationship": "accelerated",
+    "confidence": 0.76,
+    "evidence": "Portugal's opening draw raised the stakes of the Colombia head-to-head because they could no longer rely on a perfect start to control the group."
+  },
+  {
+    "id": "wc2026-colombia-beats-uzbekistan--accelerated-->wc2026-portugal-vs-colombia",
+    "fromEvent": "wc2026-colombia-beats-uzbekistan",
+    "toEvent": "wc2026-portugal-vs-colombia",
+    "relationship": "accelerated",
+    "confidence": 0.73,
+    "evidence": "Colombia's win created a direct table contrast with Portugal's draw, turning their head-to-head into a contest for group control rather than routine qualification."
+  }
+]

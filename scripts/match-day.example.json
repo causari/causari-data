@@ -1,0 +1,48 @@
+{
+  "_comment": "Input template for scripts/add-match-day.mjs. Copy, fill with the day's REAL, SOURCED results, then run: node scripts/add-match-day.mjs scripts/match-day.json. The script flips matching scheduled events to completed, adds new fixtures + links, validates, and only writes if clean.",
+  "date": "2026-06-23",
+  "dateLabel": "June 23, 2026",
+  "results": [
+    {
+      "id": "wc2026-germany-vs-ivory-coast",
+      "title": "Germany beat Ivory Coast 2-1",
+      "description": "Germany followed their opening rout with a tighter 2-1 win over Ivory Coast, confirming their form is real rather than flattered by a weak opener.",
+      "whyItMatters": "A win over credible opposition converts an early statement into genuine title-contender status.",
+      "entities": ["Germany", "Ivory Coast", "Group E"],
+      "impactScore": 0.66,
+      "tags": ["world-cup-2026", "group-e", "germany", "ivory-coast"],
+      "nextWatchpoints": ["Germany vs Ecuador"],
+      "sources": [
+        { "type": "official", "citation": "FIFA — World Cup 2026 match centre", "url": "https://www.fifa.com/..." }
+      ]
+    }
+  ],
+  "scheduled": [
+    {
+      "id": "wc2026-germany-vs-ecuador",
+      "title": "Germany vs Ecuador — Group E final round (scheduled)",
+      "description": "Germany's final Group E fixture against Ecuador, likely deciding top spot.",
+      "whyItMatters": "Top seeding in the group shapes the round-of-32 path.",
+      "entities": ["Germany", "Ecuador", "Group E"],
+      "impactScore": 0.58,
+      "tags": ["world-cup-2026", "group-e", "germany", "ecuador", "watchpoint"],
+      "date": "2026-06-27",
+      "dateLabel": "June 27, 2026"
+    }
+  ],
+  "links": [
+    {
+      "fromEvent": "wc2026-germany-vs-ivory-coast",
+      "toEvent": "wc2026-germany-vs-ecuador",
+      "relationship": "enabled",
+      "confidence": 0.68,
+      "evidence": "A second straight win put Germany in command of Group E, turning the Ecuador match into a chance to seal top seeding."
+    }
+  ],
+  "insightInstances": [
+    {
+      "insightId": "pattern--statement-win-leverage",
+      "addLinkIds": ["wc2026-germany-vs-ivory-coast--enabled-->wc2026-germany-vs-ecuador"]
+    }
+  ]
+}
