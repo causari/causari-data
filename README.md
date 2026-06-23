@@ -13,6 +13,13 @@ data/
 ├── events.json        # Historical events with metadata
 ├── links.json         # Causal relationships between events
 └── insights.json      # Recurring causal patterns
+
+packs/
+└── worldcup-2026/     # Optional vertical pack for live causal timelines
+    ├── README.md
+    ├── events.json
+    ├── links.json
+    └── insights.json
 ```
 
 ### Event schema
@@ -69,6 +76,27 @@ See [SCHEMA.md](SCHEMA.md) for full field definitions.
 | Civilizational history | 35 | 36 | 5 |
 | **Total** | **100** | **132** | **8** |
 
+## Event packs
+
+Event packs are optional vertical datasets for focused, faster-moving causal timelines.
+
+They let Causari model domains where the key question is not just "what happened?" but:
+
+```text
+what happened
+→ why it mattered
+→ who was affected
+→ what changed next
+```
+
+Current packs:
+
+| Pack | Purpose |
+|------|---------|
+| [`worldcup-2026`](packs/worldcup-2026/) | Proof of concept for live sports/event intelligence using World Cup 2026 results, causal implications, and watchpoints |
+
+See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines.
+
 ## Relationship types
 
 | Type | Meaning | Example |
@@ -98,6 +126,14 @@ See [SCHEMA.md](SCHEMA.md) for full field definitions.
 import events from '@causari/data/events.json';
 import links from '@causari/data/links.json';
 import insights from '@causari/data/insights.json';
+```
+
+### Event pack import
+
+```typescript
+import worldCupEvents from '@causari/data/packs/worldcup-2026/events.json';
+import worldCupLinks from '@causari/data/packs/worldcup-2026/links.json';
+import worldCupInsights from '@causari/data/packs/worldcup-2026/insights.json';
 ```
 
 ### Raw JSON
