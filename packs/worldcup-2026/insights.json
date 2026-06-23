@@ -1,0 +1,54 @@
+[
+  {
+    "id": "wc2026--group-c-volatility-pattern",
+    "pattern": "Favorite Drops Points, Group Volatility Rises",
+    "description": "When a group favorite draws or loses early, the group becomes more volatile because challengers can realistically compete for the top position. This increases the causal importance of later head-to-head matches.",
+    "instances": [
+      "wc2026--brazil-draws-morocco--enabled-->wc2026--group-c-volatility-pattern"
+    ],
+    "predictiveValue": 0.74,
+    "domains": ["culture", "systems"]
+  },
+  {
+    "id": "wc2026--argentina-control-team-pattern",
+    "pattern": "Clean Wins Signal Tournament Control",
+    "description": "Back-to-back wins without conceding usually signal more than points accumulation. They show tactical control, defensive reliability, and reduced volatility across the next fixtures.",
+    "instances": [
+      "wc2026--argentina-beats-austria--accelerated-->wc2026--argentina-control-team-pattern"
+    ],
+    "predictiveValue": 0.79,
+    "domains": ["culture", "systems"]
+  },
+  {
+    "id": "wc2026--portugal-pressure-fixture-pattern",
+    "pattern": "Dropped Points Convert the Next Match Into a Pressure Fixture",
+    "description": "When a favorite opens with a draw while a rival wins, the next match carries higher psychological and table pressure. The match becomes less about routine qualification and more about restoring control.",
+    "instances": [
+      "wc2026--portugal-draws-dr-congo--accelerated-->wc2026--portugal-pressure-fixture-pattern",
+      "wc2026--colombia-beats-uzbekistan--accelerated-->wc2026--portugal-pressure-fixture-pattern"
+    ],
+    "predictiveValue": 0.77,
+    "domains": ["culture", "systems"]
+  },
+  {
+    "id": "wc2026--statement-win-pattern",
+    "pattern": "Statement Win Creates Narrative and Table Leverage",
+    "description": "A large-margin win creates two forms of leverage at once: practical goal-difference advantage and narrative momentum. This can change how later opponents, analysts, and fans evaluate the team.",
+    "instances": [
+      "wc2026--germany-routs-curacao--accelerated-->wc2026--statement-win-pattern"
+    ],
+    "predictiveValue": 0.72,
+    "domains": ["culture", "systems"]
+  },
+  {
+    "id": "wc2026--dark-horse-emergence-pattern",
+    "pattern": "Heavy Win Converts Outsider Into Dark Horse",
+    "description": "When a non-favorite wins heavily, the result can shift public interpretation faster than a narrow win. The team gains table leverage, confidence, and narrative visibility.",
+    "instances": [
+      "wc2026--canada-routs-qatar--accelerated-->wc2026--dark-horse-emergence-pattern",
+      "wc2026--japan-beats-tunisia--accelerated-->wc2026--dark-horse-emergence-pattern"
+    ],
+    "predictiveValue": 0.7,
+    "domains": ["culture", "systems"]
+  }
+]
