@@ -30,6 +30,7 @@ const RELATIONSHIPS = new Set(['caused', 'enabled', 'accelerated', 'inspired', '
 const PRECISIONS = new Set(['millennium', 'century', 'decade', 'year', 'month', 'day']);
 const STATUSES = new Set(['completed', 'scheduled', 'live', 'forecast']); // optional live-event field
 const KEBAB = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const PATTERN_ID = /^pattern--[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 function isNum01(v) { return typeof v === 'number' && v >= 0 && v <= 1; }
 function isNonEmptyStr(v) { return typeof v === 'string' && v.trim().length > 0; }
@@ -88,14 +89,18 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
 
   // --- Insights (instances must be real links) ---
   if (!Array.isArray(insights)) { E('insights must be an array'); return errors; }
+  const insightIds = new Set();
   for (const ins of insights) {
     const id = ins?.id ?? '<missing id>';
     if (!isNonEmptyStr(ins.id)) E(`insight has no id`);
-    else if (!ins.id.startsWith('pattern--')) E(`insight ${id}: id should follow "pattern--{kebab-name}"`);
+    else if (!PATTERN_ID.test(ins.id)) E(`insight ${id}: id should follow "pattern--{kebab-name}"`);
+    else if (insightIds.has(ins.id)) E(`duplicate insight id: ${ins.id}`);
+    else insightIds.add(ins.id);
     if (!isNonEmptyStr(ins.pattern)) E(`insight ${id}: missing pattern name`);
     if (!isNonEmptyStr(ins.description)) E(`insight ${id}: missing description`);
     if (!isNum01(ins.predictiveValue)) E(`insight ${id}: predictiveValue must be 0-1`);
     if (!Array.isArray(ins.domains) || ins.domains.length === 0) E(`insight ${id}: domains must be a non-empty array`);
+    else for (const d of ins.domains) if (!DOMAINS.has(d)) E(`insight ${id}: invalid domain "${d}"`);
     if (!Array.isArray(ins.instances)) { E(`insight ${id}: instances must be an array`); continue; }
     for (const ref of ins.instances) {
       if (!linkIds.has(ref)) E(`insight ${id}: instance "${ref}" is not a link in this pack`);
