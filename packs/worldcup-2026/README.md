@@ -4,7 +4,7 @@
 
 This pack is a proof of concept for using Causari as a public communication layer for fast-moving events.
 
-> ⚠️ **Data status — read before reuse.** The results in this v1 pack are **illustrative / proof-of-concept** and are **not yet sourced against official records**. Treat scorelines as demo content until each carries a citation. The daily live-update workflow ([../../docs/LIVE-UPDATES.md](../../docs/LIVE-UPDATES.md)) requires every `completed` result to cite an official source. This honesty bar matters — the brand stakes its credibility on calibrated, sourced data.
+> ⚠️ **Data status — sourcing in progress.** The match results in this pack are **real**, but not every result yet carries an inline `sources` citation. Citations are being backfilled, and the daily live-update workflow ([../../docs/LIVE-UPDATES.md](../../docs/LIVE-UPDATES.md)) requires every new `completed` result to cite an official source. Until a result carries a `sources` entry, treat its citation as **pending verification**, not as unsourced opinion. The brand stakes its credibility on calibrated, sourced data.
 >
 > **Current contents:** 16 events (10 completed results + 6 `scheduled` upcoming fixtures), 9 causal links, 5 insight patterns. Validated by `scripts/validate-pack.mjs`.
 
