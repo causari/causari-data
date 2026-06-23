@@ -10,11 +10,14 @@
 //   node scripts/validate-pack.mjs            # validate all packs
 //   node scripts/validate-pack.mjs worldcup-2026
 //
+// Also exports validatePackData({events,links,insights}) for in-memory checks
+// (used by add-match-day.mjs to validate BEFORE writing to disk).
+//
 // Exit 0 = clean, exit 1 = errors found.
 
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PACKS_DIR = join(ROOT, 'packs');
@@ -28,31 +31,21 @@ const PRECISIONS = new Set(['millennium', 'century', 'decade', 'year', 'month', 
 const STATUSES = new Set(['completed', 'scheduled', 'live', 'forecast']); // optional live-event field
 const KEBAB = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
-function readJson(path, errors) {
-  try {
-    return JSON.parse(readFileSync(path, 'utf8'));
-  } catch (e) {
-    errors.push(`${path}: invalid JSON — ${e.message}`);
-    return null;
-  }
-}
-
 function isNum01(v) { return typeof v === 'number' && v >= 0 && v <= 1; }
 function isNonEmptyStr(v) { return typeof v === 'string' && v.trim().length > 0; }
 
-function validatePack(packId, errors) {
-  const dir = join(PACKS_DIR, packId);
-  const events = readJson(join(dir, 'events.json'), errors);
-  const links = readJson(join(dir, 'links.json'), errors);
-  const insights = readJson(join(dir, 'insights.json'), errors);
-  if (!events || !links || !insights) return;
-
+/**
+ * Pure validation of a pack's in-memory data. Returns an array of error strings
+ * (empty = valid). No I/O, no console — safe to call before writing to disk.
+ */
+export function validatePackData({ events, links, insights }, packId = 'pack') {
+  const errors = [];
   const E = (msg) => errors.push(`[${packId}] ${msg}`);
   const eventIds = new Set();
   const linkIds = new Set();
 
   // --- Events ---
-  if (!Array.isArray(events)) return E('events.json must be an array');
+  if (!Array.isArray(events)) { E('events must be an array'); return errors; }
   for (const ev of events) {
     const id = ev?.id ?? '<missing id>';
     if (!isNonEmptyStr(ev.id)) E(`event has no id`);
@@ -76,7 +69,7 @@ function validatePack(packId, errors) {
   }
 
   // --- Links (referential integrity is the point) ---
-  if (!Array.isArray(links)) return E('links.json must be an array');
+  if (!Array.isArray(links)) { E('links must be an array'); return errors; }
   for (const ln of links) {
     const id = ln?.id ?? '<missing id>';
     if (!isNonEmptyStr(ln.id)) E(`link has no id`);
@@ -94,7 +87,7 @@ function validatePack(packId, errors) {
   }
 
   // --- Insights (instances must be real links) ---
-  if (!Array.isArray(insights)) return E('insights.json must be an array');
+  if (!Array.isArray(insights)) { E('insights must be an array'); return errors; }
   for (const ins of insights) {
     const id = ins?.id ?? '<missing id>';
     if (!isNonEmptyStr(ins.id)) E(`insight has no id`);
@@ -109,8 +102,22 @@ function validatePack(packId, errors) {
     }
   }
 
-  const counts = `${eventIds.size} events, ${linkIds.size} links, ${insights.length} insights`;
-  console.log(`  ✓ ${packId}: ${counts}`);
+  return errors;
+}
+
+/** Read a pack from disk and return { errors, counts }. */
+export function validatePackFromDisk(packId) {
+  const dir = join(PACKS_DIR, packId);
+  const read = (name) => JSON.parse(readFileSync(join(dir, name), 'utf8'));
+  let data;
+  try {
+    data = { events: read('events.json'), links: read('links.json'), insights: read('insights.json') };
+  } catch (e) {
+    return { errors: [`[${packId}] cannot read pack — ${e.message}`], counts: '' };
+  }
+  const errors = validatePackData(data, packId);
+  const counts = `${data.events.length} events, ${data.links.length} links, ${data.insights.length} insights`;
+  return { errors, counts };
 }
 
 function main() {
@@ -123,7 +130,11 @@ function main() {
 
   const errors = [];
   console.log(`Validating ${packIds.length} pack(s):`);
-  for (const id of packIds) validatePack(id, errors);
+  for (const id of packIds) {
+    const { errors: errs, counts } = validatePackFromDisk(id);
+    if (errs.length === 0) console.log(`  ✓ ${id}: ${counts}`);
+    errors.push(...errs);
+  }
 
   if (errors.length > 0) {
     console.error(`\n✗ ${errors.length} error(s):`);
@@ -133,4 +144,7 @@ function main() {
   console.log('\n✓ All packs valid.');
 }
 
-main();
+// Run as CLI only when invoked directly (not when imported).
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main();
+}
