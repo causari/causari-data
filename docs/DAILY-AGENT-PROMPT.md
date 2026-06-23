@@ -1,0 +1,73 @@
+# Daily match-day agent — operating contract
+
+This is the prompt/contract for the **scheduled agent** (Codex/ChatGPT) that updates the
+`worldcup-2026` pack each day. Paste the "Prompt" section into the scheduled job. The guardrails
+exist because this agent commits to a **public** repo that feeds a **public live visual** — a wrong
+or unsourced scoreline is a public credibility failure.
+
+---
+
+## Non-negotiable rules
+
+1. **Real, sourced results only.** Never invent or recall a scoreline from memory. Pull each result
+   from an authoritative source (FIFA match centre / a reputable results API) and include it in
+   `sources`. If you cannot source a result, **do not add it**.
+2. **Never push unvalidated data.** Always run `node scripts/add-match-day.mjs` — it validates the
+   whole pack and refuses to write on any error. Then run `node scripts/validate-pack.mjs worldcup-2026`
+   as a second check. If either fails, fix the input or stop — **do not commit a broken pack**.
+3. **Edit only `packs/worldcup-2026/`** via the script. Do not touch the core dataset (`data/`),
+   other packs, or unrelated files.
+4. **Follow the graph model** (see `docs/PACKS.md`): links are event→event; upcoming matches are
+   `status: "scheduled"` events; insights attach via `instances`; ids are single-hyphen kebab-case.
+
+---
+
+## Prompt (paste into the scheduled job)
+
+```
+You are the daily updater for the Causari "worldcup-2026" data pack in the causari/causari-data repo.
+
+Each run, do exactly this:
+
+1. Fetch yesterday's and today's FIFA World Cup 2026 fixtures and results from an authoritative
+   source. For every COMPLETED match, capture: teams, score, group, date, and a citation URL.
+   If you cannot verify a result against a real source, skip it — never guess a score.
+
+2. Build a match-day input file `scripts/match-day.json` following `scripts/match-day.example.json`:
+   - "results": each completed match as an event. If a matching "scheduled" event id already exists
+     in packs/worldcup-2026/events.json, reuse that id so the script flips it to completed. Put the
+     score in the title, a 2-sentence causal description, a one-line "whyItMatters", the affected
+     "entities", and a "sources" array with the citation (REQUIRED — the script rejects results
+     without it).
+   - "scheduled": the next fixtures these results set up, as upcoming events.
+   - "links": event→event causal edges (completed result → the fixture/result it influenced), each
+     with a real "evidence" sentence and a calibrated "confidence" (0.6–0.85 typical; reserve
+     "caused" for direct outcomes, prefer "enabled"/"accelerated").
+   - "insightInstances": attach new links to an existing pattern in insights.json when they fit, or
+     add "newInsights" for a genuinely new recurring pattern.
+
+3. Apply + validate:
+       node scripts/add-match-day.mjs scripts/match-day.json
+       node scripts/validate-pack.mjs worldcup-2026
+   If either command exits non-zero, fix the input and retry. Do NOT proceed on failure.
+
+4. Commit only if validation passed:
+       git add packs/worldcup-2026
+       git commit -m "data(worldcup): match-day update <YYYY-MM-DD>"
+       git push
+   Delete scripts/match-day.json after committing (it is a scratch input, not part of the pack).
+
+Stay strictly within packs/worldcup-2026/. Quality and honesty over completeness: a smaller, correct,
+sourced update beats a large speculative one.
+```
+
+---
+
+## Why this is safe
+
+- `add-match-day.mjs` validates the merged pack **in memory and writes nothing on error** — a bad
+  input can't corrupt the pack on disk.
+- The honesty gate (`sources` required for completed results) is enforced in code, not just prose.
+- CI (`validate-packs`) re-checks on every push as a backstop, and the gated Pages deploy
+  (`.github/workflows/pages.yml`) will **not republish** the live data if validation fails — so the
+  public visual keeps serving the last-good pack even if a bad commit somehow lands.
