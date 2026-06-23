@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://causari.ai/schema/pack.schema.json",
+  "title": "Causari Data Pack",
+  "description": "Per-file JSON Schemas for a pack's events.json / links.json / insights.json. Referential integrity across files (link endpoints exist, insight instances exist) is enforced by scripts/validate-pack.mjs, not by JSON Schema.",
+  "$defs": {
+    "domain": {
+      "enum": ["technology", "humanities", "systems", "science", "economy", "geopolitics", "philosophy", "environment", "culture", "health"]
+    },
+    "relationship": {
+      "enum": ["caused", "enabled", "accelerated", "inspired", "delayed", "prevented"]
+    },
+    "event": {
+      "type": "object",
+      "required": ["id", "title", "description", "yearNum", "yearLabel", "precision", "domains", "impactScore", "tags"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "title": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "yearNum": { "type": "number" },
+        "yearLabel": { "type": "string", "minLength": 1 },
+        "precision": { "enum": ["millennium", "century", "decade", "year", "month", "day"] },
+        "domains": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/domain" } },
+        "impactScore": { "type": "number", "minimum": 0, "maximum": 1 },
+        "tags": { "type": "array", "items": { "type": "string" } },
+        "wikidataId": { "type": "string" },
+        "forecastConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "forecastReasoning": { "type": "string" },
+        "date": { "type": "string" },
+        "dateLabel": { "type": "string" },
+        "status": { "enum": ["completed", "scheduled", "live", "forecast"] },
+        "entities": { "type": "array", "items": { "type": "string" } },
+        "whyItMatters": { "type": "string" },
+        "nextWatchpoints": { "type": "array", "items": { "type": "string" } },
+        "sources": { "type": "array" }
+      }
+    },
+    "link": {
+      "type": "object",
+      "required": ["id", "fromEvent", "toEvent", "relationship", "confidence", "evidence"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "fromEvent": { "type": "string", "minLength": 1 },
+        "toEvent": { "type": "string", "minLength": 1 },
+        "relationship": { "$ref": "#/$defs/relationship" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "evidence": { "type": "string", "minLength": 1 }
+      }
+    },
+    "insight": {
+      "type": "object",
+      "required": ["id", "pattern", "description", "instances", "predictiveValue", "domains"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^pattern--[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "pattern": { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "instances": { "type": "array", "items": { "type": "string" } },
+        "predictiveValue": { "type": "number", "minimum": 0, "maximum": 1 },
+        "domains": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/domain" } }
+      }
+    },
+    "eventsFile": { "type": "array", "items": { "$ref": "#/$defs/event" } },
+    "linksFile": { "type": "array", "items": { "$ref": "#/$defs/link" } },
+    "insightsFile": { "type": "array", "items": { "$ref": "#/$defs/insight" } }
+  }
+}
