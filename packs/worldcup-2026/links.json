@@ -1,0 +1,82 @@
+[
+  {
+    "id": "wc2026--brazil-draws-morocco--accelerated-->wc2026--brazil-beats-haiti",
+    "fromEvent": "wc2026--brazil-draws-morocco",
+    "toEvent": "wc2026--brazil-beats-haiti",
+    "relationship": "accelerated",
+    "confidence": 0.72,
+    "evidence": "Brazil's opening draw made the Haiti match more important for restoring momentum and goal difference. The later 3-0 win directly answered the pressure created by the draw."
+  },
+  {
+    "id": "wc2026--brazil-draws-morocco--enabled-->wc2026--group-c-volatility-pattern",
+    "fromEvent": "wc2026--brazil-draws-morocco",
+    "toEvent": "wc2026--group-c-volatility-pattern",
+    "relationship": "enabled",
+    "confidence": 0.66,
+    "evidence": "When a favorite drops points early, other group teams gain a plausible path to challenge for the top spots. Brazil's draw made Group C less predictable."
+  },
+  {
+    "id": "wc2026--brazil-beats-haiti--enabled-->wc2026--scotland-vs-brazil-watchpoint",
+    "fromEvent": "wc2026--brazil-beats-haiti",
+    "toEvent": "wc2026--scotland-vs-brazil-watchpoint",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Brazil's recovery win kept them in position to control the group, making the Scotland match a direct test of whether the favorite had fully stabilized."
+  },
+  {
+    "id": "wc2026--argentina-beats-algeria--enabled-->wc2026--argentina-beats-austria",
+    "fromEvent": "wc2026--argentina-beats-algeria",
+    "toEvent": "wc2026--argentina-beats-austria",
+    "relationship": "enabled",
+    "confidence": 0.74,
+    "evidence": "Argentina's first clean win reduced pressure and allowed a controlled second performance. The Austria win built on the stability created against Algeria."
+  },
+  {
+    "id": "wc2026--argentina-beats-austria--accelerated-->wc2026--argentina-control-team-pattern",
+    "fromEvent": "wc2026--argentina-beats-austria",
+    "toEvent": "wc2026--argentina-control-team-pattern",
+    "relationship": "accelerated",
+    "confidence": 0.78,
+    "evidence": "Two clean wins in two group matches strongly shift Argentina's interpretation from merely winning to controlling the tournament environment."
+  },
+  {
+    "id": "wc2026--portugal-draws-dr-congo--accelerated-->wc2026--portugal-pressure-fixture-pattern",
+    "fromEvent": "wc2026--portugal-draws-dr-congo",
+    "toEvent": "wc2026--portugal-pressure-fixture-pattern",
+    "relationship": "accelerated",
+    "confidence": 0.76,
+    "evidence": "Portugal's opening draw raised the stakes of the following Uzbekistan and Colombia matches because they could no longer rely on a perfect start."
+  },
+  {
+    "id": "wc2026--colombia-beats-uzbekistan--accelerated-->wc2026--portugal-pressure-fixture-pattern",
+    "fromEvent": "wc2026--colombia-beats-uzbekistan",
+    "toEvent": "wc2026--portugal-pressure-fixture-pattern",
+    "relationship": "accelerated",
+    "confidence": 0.73,
+    "evidence": "Colombia's win mattered beyond its own points because it created a direct table contrast with Portugal's draw. This increased Portugal's pressure before the next match."
+  },
+  {
+    "id": "wc2026--germany-routs-curacao--accelerated-->wc2026--statement-win-pattern",
+    "fromEvent": "wc2026--germany-routs-curacao",
+    "toEvent": "wc2026--statement-win-pattern",
+    "relationship": "accelerated",
+    "confidence": 0.81,
+    "evidence": "A 7-1 result creates both a statistical edge and a narrative signal. Germany's win became an early benchmark for title-contender form."
+  },
+  {
+    "id": "wc2026--canada-routs-qatar--accelerated-->wc2026--dark-horse-emergence-pattern",
+    "fromEvent": "wc2026--canada-routs-qatar",
+    "toEvent": "wc2026--dark-horse-emergence-pattern",
+    "relationship": "accelerated",
+    "confidence": 0.78,
+    "evidence": "Canada's heavy win changed the team's perceived ceiling and goal-difference position, both of which are common triggers for dark-horse narratives."
+  },
+  {
+    "id": "wc2026--japan-beats-tunisia--accelerated-->wc2026--dark-horse-emergence-pattern",
+    "fromEvent": "wc2026--japan-beats-tunisia",
+    "toEvent": "wc2026--dark-horse-emergence-pattern",
+    "relationship": "accelerated",
+    "confidence": 0.75,
+    "evidence": "Japan's dominant 4-0 win strengthened their tournament narrative and made future opponents more likely to treat them as a knockout-stage threat."
+  }
+]
