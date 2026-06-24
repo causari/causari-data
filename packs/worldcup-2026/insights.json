@@ -1,56 +1,27 @@
 [
   {
-    "id": "pattern--favorite-dropped-points-volatility",
-    "pattern": "Favorite Drops Points, Group Volatility Rises",
-    "description": "When a group favorite draws or loses early, the group becomes more volatile because challengers can realistically compete for the top position. This increases the causal importance of later head-to-head matches.",
+    "id": "pattern--statement-win",
+    "pattern": "Statement Win Creates Momentum and Goal-Difference Cushion",
+    "description": "A large-margin win generates both a practical goal-difference advantage and narrative momentum that carries into the next fixture.",
     "instances": [
-      "wc2026-brazil-draws-morocco--accelerated-->wc2026-brazil-beats-haiti",
-      "wc2026-portugal-draws-dr-congo--accelerated-->wc2026-portugal-vs-colombia"
-    ],
-    "predictiveValue": 0.74,
-    "domains": ["culture", "systems"]
-  },
-  {
-    "id": "pattern--clean-wins-signal-control",
-    "pattern": "Clean Wins Signal Tournament Control",
-    "description": "Back-to-back wins without conceding usually signal more than points accumulation. They show tactical control, defensive reliability, and reduced volatility across the next fixtures.",
-    "instances": [
-      "wc2026-argentina-beats-algeria--enabled-->wc2026-argentina-beats-austria",
-      "wc2026-argentina-beats-austria--enabled-->wc2026-argentina-vs-jordan"
-    ],
-    "predictiveValue": 0.79,
-    "domains": ["culture", "systems"]
-  },
-  {
-    "id": "pattern--dropped-points-pressure-fixture",
-    "pattern": "Dropped Points Convert the Next Match Into a Pressure Fixture",
-    "description": "When a favorite opens with a draw while a rival wins, the next match carries higher psychological and table pressure. The match becomes less about routine qualification and more about restoring control.",
-    "instances": [
-      "wc2026-portugal-draws-dr-congo--accelerated-->wc2026-portugal-vs-colombia",
-      "wc2026-colombia-beats-uzbekistan--accelerated-->wc2026-portugal-vs-colombia"
-    ],
-    "predictiveValue": 0.77,
-    "domains": ["culture", "systems"]
-  },
-  {
-    "id": "pattern--statement-win-leverage",
-    "pattern": "Statement Win Creates Narrative and Table Leverage",
-    "description": "A large-margin win creates two forms of leverage at once: practical goal-difference advantage and narrative momentum. This can change how later opponents, analysts, and fans evaluate the team.",
-    "instances": [
-      "wc2026-germany-routs-curacao--accelerated-->wc2026-germany-vs-ivory-coast"
-    ],
-    "predictiveValue": 0.72,
-    "domains": ["culture", "systems"]
-  },
-  {
-    "id": "pattern--heavy-win-dark-horse",
-    "pattern": "Heavy Win Converts Outsider Into Dark Horse",
-    "description": "When a non-favorite wins heavily, the result can shift public interpretation faster than a narrow win. The team gains table leverage, confidence, and narrative visibility.",
-    "instances": [
-      "wc2026-canada-routs-qatar--accelerated-->wc2026-switzerland-vs-canada",
-      "wc2026-japan-beats-tunisia--accelerated-->wc2026-japan-vs-sweden"
+      "wc2026-switzerland-bosnia-and-herzegovina-0618--accelerated-->wc2026-switzerland-canada-0624",
+      "wc2026-canada-qatar-0618--accelerated-->wc2026-switzerland-canada-0624",
+      "wc2026-brazil-haiti-0619--accelerated-->wc2026-scotland-brazil-0624",
+      "wc2026-usa-paraguay-0612--accelerated-->wc2026-usa-australia-0619",
+      "wc2026-germany-curacao-0614--accelerated-->wc2026-germany-ivory-coast-0620",
+      "wc2026-sweden-tunisia-0614--accelerated-->wc2026-netherlands-sweden-0620",
+      "wc2026-netherlands-sweden-0620--accelerated-->wc2026-tunisia-netherlands-0625",
+      "wc2026-tunisia-japan-0620--accelerated-->wc2026-japan-sweden-0625",
+      "wc2026-spain-saudi-arabia-0621--accelerated-->wc2026-uruguay-spain-0626",
+      "wc2026-iraq-norway-0616--accelerated-->wc2026-norway-senegal-0622",
+      "wc2026-france-iraq-0622--accelerated-->wc2026-norway-france-0626",
+      "wc2026-argentina-algeria-0616--accelerated-->wc2026-argentina-austria-0622",
+      "wc2026-portugal-uzbekistan-0623--accelerated-->wc2026-colombia-portugal-0627"
     ],
     "predictiveValue": 0.7,
-    "domains": ["culture", "systems"]
+    "domains": [
+      "culture",
+      "systems"
+    ]
   }
 ]

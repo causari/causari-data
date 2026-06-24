@@ -126,13 +126,27 @@ const FALLBACK = 'https://raw.githubusercontent.com/causari/causari-data/main/pa
 const REFRESH_MS = 5 * 60 * 1000;
 
 const CODE = {
-  'Mexico':'MEX','South Africa':'RSA','Brazil':'BRA','Morocco':'MAR','Germany':'GER','Curacao':'CUW',
-  'Argentina':'ARG','Algeria':'ALG','Austria':'AUT','Jordan':'JOR','Portugal':'POR','DR Congo':'COD',
-  'Colombia':'COL','Uzbekistan':'UZB','Canada':'CAN','Qatar':'QAT','Switzerland':'SUI','Japan':'JPN',
-  'Tunisia':'TUN','Sweden':'SWE','Netherlands':'NED','Haiti':'HAI','Scotland':'SCO','Ivory Coast':'CIV',
-  'Ecuador':'ECU','South Korea':'KOR','Czechia':'CZE','Bosnia and Herzegovina':'BIH'
+  'Algeria':'ALG','Argentina':'ARG','Australia':'AUS','Austria':'AUT','Belgium':'BEL','Bosnia & Herzegovina':'BIH',
+  'Brazil':'BRA','Canada':'CAN','Cape Verde':'CPV','Colombia':'COL','Croatia':'CRO','Curaçao':'CUW',
+  'Czech Republic':'CZE','DR Congo':'COD','Ecuador':'ECU','Egypt':'EGY','England':'ENG','France':'FRA',
+  'Germany':'GER','Ghana':'GHA','Haiti':'HAI','Iran':'IRN','Iraq':'IRQ','Ivory Coast':'CIV','Japan':'JPN',
+  'Jordan':'JOR','Mexico':'MEX','Morocco':'MAR','Netherlands':'NED','New Zealand':'NZL','Norway':'NOR',
+  'Panama':'PAN','Paraguay':'PAR','Portugal':'POR','Qatar':'QAT','Saudi Arabia':'KSA','Scotland':'SCO',
+  'Senegal':'SEN','South Africa':'RSA','South Korea':'KOR','Spain':'ESP','Sweden':'SWE','Switzerland':'SUI',
+  'Tunisia':'TUN','Turkey':'TUR','USA':'USA','Uruguay':'URU','Uzbekistan':'UZB'
 };
-const code = n => CODE[n] || String(n||'').replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+const code = n => {
+  if(CODE[n]) return CODE[n];
+  const s=String(n||'');
+  if(/^[0-9]/.test(s)) return s.split('/')[0].toUpperCase();   // knockout placeholder e.g. "2A", "3A/B/C"
+  if(/^[WL]\d/i.test(s)) return s.toUpperCase();               // "W73" / "L73"
+  return s.replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase() || '?';
+};
+const LANE_ORDER = l => { const m=/^Group ([A-L])$/.exec(l); if(m) return m[1].charCodeAt(0)-65;
+  return ({'Round of 32':12,'Round of 16':13,'Quarter-final':14,'Semi-final':15,'Match for third place':16,'Final':17})[l] ?? 99; };
+const laneLabel = l => { const m=/^Group ([A-L])$/.exec(l); if(m) return (lang==='vi'?'Bảng ':'Group ')+m[1];
+  const ko={'Round of 32':['Vòng 1/16','Round of 32'],'Round of 16':['Vòng 1/8','Round of 16'],'Quarter-final':['Tứ kết','Quarter-final'],'Semi-final':['Bán kết','Semi-final'],'Match for third place':['Tranh hạng 3','Third place'],'Final':['Chung kết','Final']};
+  return ko[l]?ko[l][lang==='vi'?0:1]:l; };
 
 const I18N = {
   vi:{ sub:'Mỗi trận là một mắt xích — chạm vào node để xem vì sao nó đổi cục diện.',
@@ -169,7 +183,7 @@ async function load(){
 }
 
 const teams = ev => (ev.entities||[]).filter(e=>!/group/i.test(e));
-const groupOf = ev => { const g=(ev.entities||[]).map(e=>/^group\s+(.+)$/i.exec(e)).find(Boolean); return g?g[1]:'—'; };
+const groupOf = ev => { const es=ev.entities||[]; return es.find(e=>/^(Group [A-L]$|Round of|Quarter|Semi|Final$|Match for)/.test(e)) || es[2] || '—'; };
 const score = ev => { if((ev.status||'completed')!=='completed') return null; const m=String(ev.description||'').match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/); return m?m[1]+'–'+m[2]:null; };
 
 function applyStatic(){
@@ -183,7 +197,7 @@ function applyStatic(){
 function layout(){
   const evs=[...DATA.events].sort((a,b)=>String(a.date||a.yearNum).localeCompare(String(b.date||b.yearNum)));
   const dates=[...new Set(evs.map(e=>e.date||e.yearLabel))];
-  const groups=[...new Set(evs.map(groupOf))].sort();
+  const groups=[...new Set(evs.map(groupOf))].sort((a,b)=>LANE_ORDER(a)-LANE_ORDER(b));
   const COLW=132, NW=112, NH=42, TOP=44, GUT=58, PADY=10, STACK=NH+8, ROWPAD=20;
   const maxStack={};
   for(const g of groups){
@@ -228,7 +242,7 @@ function render(){
     const y=L.rowY[g], h=L.rowH[g], gcol=`hsl(${(i*53)%360},55%,64%)`;
     if(i%2===0) rows+=`<rect class="grouprow" x="0" y="${y}" width="${L.W}" height="${h}"/>`;
     glabels+=`<rect x="0" y="${y+4}" width="3" height="${h-8}" rx="1.5" fill="${gcol}" opacity="0.85"/>
-      <text class="grouplab" x="11" y="${y+h/2+4}" fill="${gcol}">${esc(t.grp(g))}</text>`;
+      <text class="grouplab" x="11" y="${y+h/2+4}" fill="${gcol}">${esc(laneLabel(g))}</text>`;
   });
 
   // day ticks + labels
