@@ -50,7 +50,14 @@
   .nvs{font-size:10px;font-weight:700;fill:var(--sched)}
   .daylabel{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.03em}
   .daytick{stroke:var(--line);stroke-width:1;opacity:.5}
+  .grouplink{cursor:pointer}
+  .grouplink:focus{outline:none}
+  .grouplink:hover .grouplab,.grouplink:focus .grouplab{fill:var(--accent)}
+  .grouplink:hover .groupfocus,.grouplink:focus .groupfocus{stroke:var(--accent);opacity:.55}
   .grouplab{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.05em}
+  .groupfocus{fill:transparent;stroke:var(--accent);stroke-width:1;opacity:0;pointer-events:all}
+  .groupbars rect{fill:var(--muted);opacity:.8}
+  .grouplink:hover .groupbars rect,.grouplink:focus .groupbars rect{fill:var(--accent);opacity:1}
   .grouprow{fill:#0c1320;opacity:.45}
   .nowline{stroke:var(--accent);stroke-width:1.5;stroke-dasharray:3 4;opacity:.8}
   .nowlab{font-size:10px;font-weight:800;fill:var(--accent);letter-spacing:.12em}
@@ -74,6 +81,20 @@
   .watch{margin-top:10px;font-size:12.5px;color:var(--muted)}
   .watch b{color:#cdd9ea}
   .sectlabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+  .standings{position:fixed;z-index:24;min-width:258px;max-width:calc(100vw - 24px);background:rgba(18,26,39,.98);border:1px solid var(--line);border-radius:10px;padding:10px;box-shadow:0 14px 36px rgba(0,0,0,.48)}
+  .standings[hidden]{display:none}
+  .standings .top{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+  .standings h3{margin:0;font-size:13px;letter-spacing:.02em}
+  .standings .close{margin-left:auto;width:25px;height:25px;border:1px solid var(--line);border-radius:7px;background:var(--ink-soft);color:var(--muted);cursor:pointer;font-size:15px;line-height:1}
+  .standings table{width:100%;border-collapse:collapse;font-size:11.5px;font-variant-numeric:tabular-nums}
+  .standings th{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;border-bottom:1px solid var(--line);padding:4px 3px;text-align:right}
+  .standings th:first-child,.standings td:first-child{text-align:left}
+  .standings td{padding:5px 3px;border-bottom:1px solid rgba(30,42,61,.58);text-align:right}
+  .standings tr:last-child td{border-bottom:0}
+  .standings .tm{display:flex;align-items:center;gap:7px;min-width:0}
+  .standings .tm b{color:#eaf6ff;font-size:11px;min-width:26px}
+  .standings .tm span{color:#cdd9ea;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:112px}
+  .standings .pts{color:var(--accent);font-weight:900}
   .err{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);background:#240b10;border:1px solid #401520;color:#ffd5dd;border-radius:12px;padding:14px 18px;text-align:center}
   .foot{flex:0 0 auto;border-top:1px solid var(--line);padding:6px 16px;color:var(--muted);font-size:11px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
   @media (max-width:560px){ .subbar .t{display:none} }
@@ -116,6 +137,7 @@
   <button class="x" id="drawerClose" aria-label="close">×</button>
   <div id="drawerBody"></div>
 </div>
+<div class="standings" id="standings" hidden role="dialog" aria-modal="false"></div>
 
 <script>
 // ── Powflow World Cup 2026 — visual causal canvas ───────────────────────────
@@ -154,16 +176,18 @@ const I18N = {
     updated:t=>'Cập nhật: '+t, now:'HÔM NAY', err:'Không tải được dữ liệu. Thử lại sau giây lát.',
     rel:{caused:'gây ra',enabled:'mở đường cho',accelerated:'thúc đẩy',inspired:'truyền cảm hứng',delayed:'trì hoãn',prevented:'ngăn cản'},
     st:{completed:'Đã đấu',scheduled:'Sắp đấu',live:'Đang đấu',forecast:'Dự báo'},
-    leads:'Dẫn tới', from:'Bắt nguồn từ', watch:'Đáng xem tiếp', conf:'tin', grp:g=>'Bảng '+g },
+    leads:'Dẫn tới', from:'Bắt nguồn từ', watch:'Đáng xem tiếp', conf:'tin', grp:g=>'Bảng '+g,
+    standings:'Bảng xếp hạng', noStandings:'Chưa có dữ liệu bảng' },
   en:{ sub:'Each match is a link — tap a node to see why it shifts the race.',
     lg_done:'Played', lg_sched:'Upcoming', lg_link:'causal', foot:'Open causal data · updated daily.',
     updated:t=>'Updated: '+t, now:'TODAY', err:'Could not load data. Please try again shortly.',
     rel:{caused:'caused',enabled:'enabled',accelerated:'accelerated',inspired:'inspired',delayed:'delayed',prevented:'prevented'},
     st:{completed:'Played',scheduled:'Upcoming',live:'Live',forecast:'Forecast'},
-    leads:'Leads to', from:'Comes from', watch:'Watch next', conf:'conf', grp:g=>'Group '+g }
+    leads:'Leads to', from:'Comes from', watch:'Watch next', conf:'conf', grp:g=>'Group '+g,
+    standings:'Standings', noStandings:'No group data yet' }
 };
 let lang = (navigator.language||'vi').startsWith('en') ? 'en' : 'vi';
-let DATA=null, NODES=null, selId=null;
+let DATA=null, NODES=null, selId=null, standingsGroup=null;
 
 const $=(s,r=document)=>r.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -184,7 +208,27 @@ async function load(){
 
 const teams = ev => (ev.entities||[]).filter(e=>!/group/i.test(e));
 const groupOf = ev => { const es=ev.entities||[]; return es.find(e=>/^(Group [A-L]$|Round of|Quarter|Semi|Final$|Match for)/.test(e)) || es[2] || '—'; };
-const score = ev => { if((ev.status||'completed')!=='completed') return null; const m=String(ev.description||'').match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/); return m?m[1]+'–'+m[2]:null; };
+const score = ev => { if((ev.status||'completed')!=='completed') return null; const m=String(`${ev.title||''} ${ev.description||''}`).match(/(^|[^\d-])(\d{1,2})\s*[-–]\s*(\d{1,2})(?![\d-])/); return m?m[2]+'–'+m[3]:null; };
+const scoreParts = ev => { const m=String(score(ev)||'').match(/(\d{1,2})\D+(\d{1,2})/); return m?[Number(m[1]),Number(m[2])]:null; };
+const isGroupLane = g => /^Group [A-L]$/.test(g);
+
+function standingsFor(group){
+  if(!DATA || !isGroupLane(group)) return [];
+  const rows=new Map();
+  const ensure=team=>{ if(!rows.has(team)) rows.set(team,{team,p:0,w:0,d:0,l:0,gf:0,ga:0,gd:0,pts:0}); return rows.get(team); };
+  DATA.events.filter(ev=>groupOf(ev)===group).forEach(ev=>{
+    const [a,b]=teams(ev);
+    if(a) ensure(a); if(b) ensure(b);
+    const sc=scoreParts(ev);
+    if(!a || !b || !sc) return;
+    const ra=ensure(a), rb=ensure(b), [ga,gb]=sc;
+    ra.p++; rb.p++; ra.gf+=ga; ra.ga+=gb; rb.gf+=gb; rb.ga+=ga; ra.gd=ra.gf-ra.ga; rb.gd=rb.gf-rb.ga;
+    if(ga>gb){ ra.w++; rb.l++; ra.pts+=3; }
+    else if(gb>ga){ rb.w++; ra.l++; rb.pts+=3; }
+    else { ra.d++; rb.d++; ra.pts++; rb.pts++; }
+  });
+  return [...rows.values()].sort((a,b)=>b.pts-a.pts || b.gd-a.gd || b.gf-a.gf || a.team.localeCompare(b.team));
+}
 
 function applyStatic(){
   const t=I18N[lang]; document.documentElement.lang=lang;
@@ -241,8 +285,13 @@ function render(){
   L.groups.forEach((g,i)=>{
     const y=L.rowY[g], h=L.rowH[g], gcol=`hsl(${(i*53)%360},55%,64%)`;
     if(i%2===0) rows+=`<rect class="grouprow" x="0" y="${y}" width="${L.W}" height="${h}"/>`;
-    glabels+=`<rect x="0" y="${y+4}" width="3" height="${h-8}" rx="1.5" fill="${gcol}" opacity="0.85"/>
-      <text class="grouplab" x="11" y="${y+h/2+4}" fill="${gcol}">${esc(laneLabel(g))}</text>`;
+    const canStand=isGroupLane(g), label=laneLabel(g);
+    glabels+=`<g class="${canStand?'grouplink':''}" data-group="${esc(g)}" ${canStand?`role="button" tabindex="0" aria-label="${esc(t.standings+': '+label)}"`:''}>
+      <rect class="groupfocus" x="5" y="${y+h/2-15}" width="${L.GUT-10}" height="30" rx="7"/>
+      <rect x="0" y="${y+4}" width="3" height="${h-8}" rx="1.5" fill="${gcol}" opacity="0.85"/>
+      <text class="grouplab" x="11" y="${y+h/2+4}" fill="${gcol}">${esc(label)}</text>
+      ${canStand?`<g class="groupbars" transform="translate(${L.GUT-13},${y+h/2-7})"><rect x="0" y="8" width="2" height="5" rx="1"/><rect x="4" y="4" width="2" height="9" rx="1"/><rect x="8" y="0" width="2" height="13" rx="1"/></g>`:''}
+    </g>`;
   });
 
   // day ticks + labels
@@ -306,6 +355,10 @@ function render(){
     g.addEventListener('click',()=>select(g.dataset.id));
     g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(g.dataset.id);}});
   });
+  stage.querySelectorAll('.grouplink').forEach(g=>{
+    g.addEventListener('click',e=>{e.stopPropagation();openStandings(g.dataset.group,e);});
+    g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openStandings(g.dataset.group,e);}});
+  });
   // Keep group labels pinned to the left as the timeline scrolls horizontally.
   const gl=document.getElementById('glabels');
   const pin=()=>{ if(gl) gl.setAttribute('transform','translate('+stage.scrollLeft+',0)'); };
@@ -320,6 +373,36 @@ function render(){
   if(selId) highlight(selId);
 }
 
+function closeStandings(){
+  standingsGroup=null;
+  const pop=$('#standings');
+  if(pop){ pop.hidden=true; pop.innerHTML=''; }
+}
+
+function openStandings(group,e){
+  if(!isGroupLane(group)) return;
+  const rows=standingsFor(group), t=I18N[lang], pop=$('#standings');
+  standingsGroup=group;
+  $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden','true');
+  selId=null; highlight('__none__');
+  const body=rows.length ? `<table aria-label="${esc(t.standings)}">
+    <thead><tr><th></th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr></thead>
+    <tbody>${rows.map(r=>`<tr>
+      <td><span class="tm"><b>${esc(code(r.team))}</b><span>${esc(r.team)}</span></span></td>
+      <td>${r.p}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td><td>${r.gd>0?'+'+r.gd:r.gd}</td><td class="pts">${r.pts}</td>
+    </tr>`).join('')}</tbody>
+  </table>` : `<div class="conf">${esc(t.noStandings)}</div>`;
+  pop.innerHTML=`<div class="top"><h3>${esc(t.standings)} · ${esc(laneLabel(group))}</h3><button class="close" type="button" aria-label="close">×</button></div>${body}`;
+  pop.hidden=false;
+  pop.querySelector('.close').addEventListener('click',closeStandings);
+  const r=e?.currentTarget?.getBoundingClientRect?.() || {left:12,right:70,top:86,bottom:116};
+  let x=r.right+8, y=r.top-8;
+  if(window.innerWidth<=560){ x=12; y=r.bottom+8; }
+  x=Math.max(12,Math.min(x,window.innerWidth-pop.offsetWidth-12));
+  y=Math.max(12,Math.min(y,window.innerHeight-pop.offsetHeight-12));
+  pop.style.left=x+'px'; pop.style.top=y+'px';
+}
+
 function highlight(id){
   document.querySelectorAll('.node').forEach(g=>g.classList.toggle('sel',g.dataset.id===id));
   const any=document.querySelector('.node.sel');
@@ -330,6 +413,7 @@ function highlight(id){
 }
 
 function select(id){
+  closeStandings();
   selId=id; highlight(id);
   const t=I18N[lang]; const ev=DATA.events.find(e=>e.id===id); if(!ev) return;
   const st=ev.status||'completed'; const cls=st==='completed'?'done':'scheduled';
@@ -350,13 +434,17 @@ function select(id){
 function closeDrawer(){ $('#drawer').classList.remove('open'); selId=null; highlight('__none__'); }
 $('#drawerClose').addEventListener('click',closeDrawer);
 
-function setLang(l){ lang=l; applyStatic(); render(); if(selId)select(selId); }
+$('#standings').addEventListener('click',e=>e.stopPropagation());
+document.addEventListener('click',e=>{ if(standingsGroup && !e.target.closest('#standings')) closeStandings(); });
+window.addEventListener('keydown',e=>{ if(e.key==='Escape') closeStandings(); });
+
+function setLang(l){ lang=l; closeStandings(); applyStatic(); render(); if(selId)select(selId); }
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 
 async function boot(){ applyStatic(); const ok=await load(); if(!ok){$('#stage').innerHTML=`<div class="err">${esc(I18N[lang].err)}</div>`;return;} render(); }
 boot();
 setInterval(async()=>{ if(await load()) render(); }, REFRESH_MS);
-window.addEventListener('resize',()=>{ if(DATA) render(); });
+window.addEventListener('resize',()=>{ closeStandings(); if(DATA) render(); });
 </script>
 </body>
 </html>
