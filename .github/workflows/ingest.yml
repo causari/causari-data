@@ -1,0 +1,39 @@
+name: ingest-worldcup
+
+# Refresh the worldcup-2026 pack from openfootball (real, public-domain data)
+# every day. The ingest script validates in memory and writes nothing on error;
+# if the data changed, commit it — which triggers the gated Pages deploy.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily 06:00 UTC (after most match days finish)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Ingest from openfootball
+        run: node scripts/ingest-openfootball.mjs
+      - name: Commit if the pack changed
+        run: |
+          git config user.name "causari-bot"
+          git config user.email "bot@users.noreply.github.com"
+          if git diff --quiet -- packs/worldcup-2026; then
+            echo "No data changes."
+          else
+            git add packs/worldcup-2026
+            git commit -m "data(worldcup): daily ingest from openfootball"
+            git push
+          fi
