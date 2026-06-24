@@ -45,6 +45,7 @@
   .node:hover rect,.node.sel rect{filter:brightness(1.3)}
   .node.sel rect{stroke:var(--accent);stroke-width:2.5}
   .ncode{font-size:11px;font-weight:800;fill:var(--muted)}
+  .ncode.won{fill:#eaf6ff}
   .nscore{font-size:14px;font-weight:900;fill:#fff;letter-spacing:.3px}
   .nvs{font-size:10px;font-weight:700;fill:var(--sched)}
   .daylabel{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.03em}
@@ -96,7 +97,7 @@
       <span class="legend">
         <i><span class="pip" style="background:var(--done)"></span> <span data-i="lg_done"></span></i>
         <i><span class="pip" style="background:var(--sched)"></span> <span data-i="lg_sched"></span></i>
-        <i><span class="swatch" style="background:var(--r-accelerated)"></span> <span data-i="lg_link"></span></i>
+        <span id="rellegend" class="legend"></span>
       </span>
     </div>
   </header>
@@ -220,12 +221,14 @@ function render(){
   $('#updated').textContent=t.updated(lastDone?.dateLabel||'—');
   const H=Math.max(L.H, stage.clientHeight-2);
 
-  // group row bands + labels (variable height)
+  // group row bands (scroll with content) + sticky left labels (pinned)
   let rows='';
+  let glabels=`<rect x="0" y="0" width="${L.GUT}" height="${H}" fill="#070b12"/><line x1="${L.GUT}" y1="0" x2="${L.GUT}" y2="${H}" stroke="var(--line)" stroke-width="1"/>`;
   L.groups.forEach((g,i)=>{
-    const y=L.rowY[g], h=L.rowH[g];
+    const y=L.rowY[g], h=L.rowH[g], gcol=`hsl(${(i*53)%360},55%,64%)`;
     if(i%2===0) rows+=`<rect class="grouprow" x="0" y="${y}" width="${L.W}" height="${h}"/>`;
-    rows+=`<text class="grouplab" x="10" y="${y+h/2+4}">${esc(t.grp(g))}</text>`;
+    glabels+=`<rect x="0" y="${y+4}" width="3" height="${h-8}" rx="1.5" fill="${gcol}" opacity="0.85"/>
+      <text class="grouplab" x="11" y="${y+h/2+4}" fill="${gcol}">${esc(t.grp(g))}</text>`;
   });
 
   // day ticks + labels
@@ -241,8 +244,8 @@ function render(){
   let now='';
   if(L.nowCol>=0){
     const x=L.GUT+L.nowCol*L.COLW+L.COLW;
-    now=`<line class="nowline" x1="${x}" y1="${L.TOP-6}" x2="${x}" y2="${H}"/>
-      <text class="nowlab" x="${x+4}" y="${L.TOP-4}">${esc(t.now)}</text>`;
+    now=`<line class="nowline" x1="${x}" y1="${L.TOP-2}" x2="${x}" y2="${H}"/>
+      <text class="nowlab" x="${x+5}" y="${L.TOP+13}">${esc(t.now)}</text>`;
   }
 
   // edges
@@ -254,6 +257,8 @@ function render(){
     const w=1+Math.round((l.confidence||0.6)*3);
     edges+=`<path class="edge" data-from="${esc(l.fromEvent)}" data-to="${esc(l.toEvent)}" d="${edgePath(a,b,L.NW)}" stroke="${col}" stroke-width="${w}" marker-end="url(#arr)"/>`;
   });
+  const rels=[...new Set(DATA.links.map(l=>l.relationship))];
+  const rl=$('#rellegend'); if(rl) rl.innerHTML=rels.map(r=>`<i><span class="swatch" style="background:var(--r-${r})"></span> ${esc(t.rel[r]||r)}</i>`).join('');
 
   // nodes
   let nodes='';
@@ -262,10 +267,11 @@ function render(){
     const sched=st!=='completed';
     const fill=sched?'#221c10':'#13233a'; const stroke=sched?'#f0b43a':'#22d3a0';
     const x=n.x-L.NW/2, y=n.y-L.NH/2;
+    let wa=false,wb=false; if(n.score){const p=n.score.split('–').map(Number); wa=p[0]>p[1]; wb=p[1]>p[0];}
     const inner = n.score
-      ? `<text class="ncode" x="${n.x-L.NW/2+12}" y="${n.y+4}" text-anchor="start">${esc(code(n.teamA))}</text>
+      ? `<text class="ncode${wa?' won':''}" x="${n.x-L.NW/2+12}" y="${n.y+4}" text-anchor="start">${esc(code(n.teamA))}</text>
          <text class="nscore" x="${n.x}" y="${n.y+5}" text-anchor="middle">${esc(n.score)}</text>
-         <text class="ncode" x="${n.x+L.NW/2-12}" y="${n.y+4}" text-anchor="end">${esc(code(n.teamB))}</text>`
+         <text class="ncode${wb?' won':''}" x="${n.x+L.NW/2-12}" y="${n.y+4}" text-anchor="end">${esc(code(n.teamB))}</text>`
       : `<text class="ncode" x="${n.x-14}" y="${n.y+4}" text-anchor="end">${esc(code(n.teamA))}</text>
          <text class="nvs" x="${n.x}" y="${n.y+4}" text-anchor="middle">–</text>
          <text class="ncode" x="${n.x+14}" y="${n.y+4}" text-anchor="start">${esc(code(n.teamB))}</text>`;
@@ -275,21 +281,28 @@ function render(){
     </g>`;
   });
 
+  const prevScroll=stage.scrollLeft;
   stage.innerHTML=`<svg width="${L.W}" height="${H}" viewBox="0 0 ${L.W} ${H}" xmlns="http://www.w3.org/2000/svg">
     <defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#6f86a6"/></marker></defs>
     <g>${rows}</g><g>${ticks}</g>${now}<g>${edges}</g><g>${nodes}</g>
+    <g class="glabels" id="glabels">${glabels}</g>
   </svg>`;
 
   stage.querySelectorAll('.node').forEach(g=>{
     g.addEventListener('click',()=>select(g.dataset.id));
     g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(g.dataset.id);}});
   });
-  // On first paint, scroll to the "now" region so recent + upcoming are in view.
+  // Keep group labels pinned to the left as the timeline scrolls horizontally.
+  const gl=document.getElementById('glabels');
+  const pin=()=>{ if(gl) gl.setAttribute('transform','translate('+stage.scrollLeft+',0)'); };
+  stage.onscroll=pin;
+  // On first paint scroll to the "now" region; afterwards preserve scroll across refreshes.
   if(!window.__scrolled && L.nowCol>=0){
     const nowX=L.GUT+L.nowCol*L.COLW+L.COLW;
     stage.scrollLeft=Math.max(0, nowX - stage.clientWidth*0.62);
     window.__scrolled=true;
-  }
+  } else { stage.scrollLeft=prevScroll; }
+  pin();
   if(selId) highlight(selId);
 }
 
