@@ -13,7 +13,7 @@
     --ink:#070b12; --ink-soft:#0e141f; --card:#121a27; --line:#1e2a3d;
     --fg:#e8eef7; --muted:#8aa0bd; --accent:#00f2ff;
     --done:#22d3a0; --sched:#f0b43a;
-    --r-caused:#ff5470; --r-enabled:#00f2ff; --r-accelerated:#22d3a0;
+    --r-caused:#ff5470; --r-enabled:#4aa8ff; --r-accelerated:#22d3a0;
     --r-inspired:#a78bfa; --r-delayed:#f0b43a; --r-prevented:#7c8aa0;
     --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
   }
@@ -23,7 +23,7 @@
   a{color:var(--accent);text-decoration:none}
   .app{display:flex;flex-direction:column;height:100dvh}
   header{flex:0 0 auto;background:linear-gradient(var(--ink),rgba(7,11,18,.9));border-bottom:1px solid var(--line)}
-  .hd{padding:11px 16px;display:flex;align-items:center;gap:10px}
+  .hd{padding:10px 16px;display:flex;align-items:center;gap:10px}
   .brand{font-weight:800;letter-spacing:.4px;font-size:16px;display:flex;align-items:center;gap:8px;white-space:nowrap}
   .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
   .brand small{color:var(--muted);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:9.5px}
@@ -32,29 +32,31 @@
   .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
   .lang button{background:transparent;color:var(--muted);border:0;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer}
   .lang button[aria-pressed="true"]{background:var(--accent);color:#04121a}
-  .subbar{padding:0 16px 10px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
-  .subbar .t{color:var(--muted);font-size:12.5px;max-width:52ch}
-  .legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+  .subbar{padding:0 16px 9px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .subbar .t{color:var(--muted);font-size:12.5px}
+  .legend{display:flex;gap:11px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
   .legend i{font-style:normal;display:inline-flex;align-items:center;gap:5px}
   .swatch{width:14px;height:3px;border-radius:2px;display:inline-block}
   .pip{width:9px;height:9px;border-radius:50%;display:inline-block}
   .stage{flex:1 1 auto;position:relative;overflow:auto;-webkit-overflow-scrolling:touch}
-  .hint{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);color:var(--muted);font-size:11px;background:rgba(14,20,31,.8);border:1px solid var(--line);border-radius:999px;padding:4px 12px;pointer-events:none;opacity:.9}
   svg{display:block}
   .node{cursor:pointer}
   .node rect{transition:filter .15s}
-  .node:hover rect,.node.sel rect{filter:brightness(1.25)}
-  .node.sel rect{stroke:var(--accent);stroke-width:2}
-  .nlabel{font-size:11px;font-weight:700;fill:var(--fg)}
-  .nscore{font-size:13px;font-weight:800;fill:#fff}
-  .nteam{font-size:9.5px;fill:var(--muted)}
-  .daylabel{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.04em}
-  .daytick{stroke:var(--line);stroke-width:1}
-  .edge{fill:none;opacity:.5;transition:opacity .15s}
-  .edge.dim{opacity:.08}
-  .edge.hot{opacity:.95}
-  /* drawer */
-  .drawer{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:16px 18px 22px;transform:translateY(110%);transition:transform .22s ease;max-height:62dvh;overflow:auto;box-shadow:0 -16px 40px rgba(0,0,0,.5)}
+  .node:hover rect,.node.sel rect{filter:brightness(1.3)}
+  .node.sel rect{stroke:var(--accent);stroke-width:2.5}
+  .ncode{font-size:11px;font-weight:800;fill:var(--muted)}
+  .nscore{font-size:14px;font-weight:900;fill:#fff;letter-spacing:.3px}
+  .nvs{font-size:10px;font-weight:700;fill:var(--sched)}
+  .daylabel{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.03em}
+  .daytick{stroke:var(--line);stroke-width:1;opacity:.5}
+  .grouplab{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.05em}
+  .grouprow{fill:#0c1320;opacity:.45}
+  .nowline{stroke:var(--accent);stroke-width:1.5;stroke-dasharray:3 4;opacity:.8}
+  .nowlab{font-size:10px;font-weight:800;fill:var(--accent);letter-spacing:.12em}
+  .edge{fill:none;opacity:.35;transition:opacity .15s}
+  .edge.dim{opacity:.07}
+  .edge.hot{opacity:1}
+  .drawer{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:16px 18px 22px;transform:translateY(110%);transition:transform .22s ease;max-height:60dvh;overflow:auto;box-shadow:0 -16px 40px rgba(0,0,0,.5)}
   .drawer.open{transform:translateY(0)}
   .drawer .x{position:absolute;right:14px;top:12px;background:var(--ink-soft);border:1px solid var(--line);color:var(--muted);border-radius:8px;width:30px;height:30px;font-size:16px;cursor:pointer}
   .chip{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
@@ -72,7 +74,7 @@
   .watch b{color:#cdd9ea}
   .sectlabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
   .err{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);background:#240b10;border:1px solid #401520;color:#ffd5dd;border-radius:12px;padding:14px 18px;text-align:center}
-  .foot{flex:0 0 auto;border-top:1px solid var(--line);padding:7px 16px;color:var(--muted);font-size:11px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .foot{flex:0 0 auto;border-top:1px solid var(--line);padding:6px 16px;color:var(--muted);font-size:11px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
   @media (max-width:560px){ .subbar .t{display:none} }
 </style>
 </head>
@@ -80,7 +82,7 @@
 <div class="app">
   <header>
     <div class="hd">
-      <div class="brand"><span class="dot"></span> Powflow <small data-i="wc">World Cup 2026</small></div>
+      <div class="brand"><span class="dot"></span> Powflow <small>World Cup 2026</small></div>
       <span class="spacer"></span>
       <div class="updated" id="updated"></div>
       <div class="lang" role="group" aria-label="Language">
@@ -99,9 +101,7 @@
     </div>
   </header>
 
-  <div class="stage" id="stage">
-    <div class="hint" id="hint"></div>
-  </div>
+  <div class="stage" id="stage"></div>
 
   <div class="foot">
     <span data-i="foot"></span>
@@ -118,39 +118,40 @@
 
 <script>
 // ── Powflow World Cup 2026 — visual causal canvas ───────────────────────────
-// Glanceable timeline: each match is a NODE on a day axis, causal links are
-// drawn EDGES. Heavy text (why it matters / evidence) lives in a tap-to-open
-// drawer, so the canvas stays visual. Fetches the open pack at runtime.
+// Rows = groups, columns = days. Each match is a node (FIFA codes + score),
+// causal links are drawn edges. Heavy text opens in a tap drawer. Live data.
 const BASE = '../packs/worldcup-2026';
 const FALLBACK = 'https://raw.githubusercontent.com/causari/causari-data/main/packs/worldcup-2026';
 const REFRESH_MS = 5 * 60 * 1000;
 
+const CODE = {
+  'Mexico':'MEX','South Africa':'RSA','Brazil':'BRA','Morocco':'MAR','Germany':'GER','Curacao':'CUW',
+  'Argentina':'ARG','Algeria':'ALG','Austria':'AUT','Jordan':'JOR','Portugal':'POR','DR Congo':'COD',
+  'Colombia':'COL','Uzbekistan':'UZB','Canada':'CAN','Qatar':'QAT','Switzerland':'SUI','Japan':'JPN',
+  'Tunisia':'TUN','Sweden':'SWE','Netherlands':'NED','Haiti':'HAI','Scotland':'SCO','Ivory Coast':'CIV',
+  'Ecuador':'ECU','South Korea':'KOR','Czechia':'CZE','Bosnia and Herzegovina':'BIH'
+};
+const code = n => CODE[n] || String(n||'').replace(/[^A-Za-z]/g,'').slice(0,3).toUpperCase();
+
 const I18N = {
-  vi:{ wc:'World Cup 2026',
-    sub:'Mỗi trận là một mắt xích — chạm vào node để xem vì sao nó đổi cục diện.',
-    lg_done:'Đã đấu', lg_sched:'Sắp đấu', lg_link:'nhân quả',
-    foot:'Dữ liệu nhân quả mở · cập nhật theo ngày.',
-    updated:t=>'Cập nhật: '+t, hint:'Cuộn ngang để xem cả giải · chạm node để xem chi tiết',
-    err:'Không tải được dữ liệu. Thử lại sau giây lát.',
+  vi:{ sub:'Mỗi trận là một mắt xích — chạm vào node để xem vì sao nó đổi cục diện.',
+    lg_done:'Đã đấu', lg_sched:'Sắp đấu', lg_link:'nhân quả', foot:'Dữ liệu nhân quả mở · cập nhật theo ngày.',
+    updated:t=>'Cập nhật: '+t, now:'HÔM NAY', err:'Không tải được dữ liệu. Thử lại sau giây lát.',
     rel:{caused:'gây ra',enabled:'mở đường cho',accelerated:'thúc đẩy',inspired:'truyền cảm hứng',delayed:'trì hoãn',prevented:'ngăn cản'},
     st:{completed:'Đã đấu',scheduled:'Sắp đấu',live:'Đang đấu',forecast:'Dự báo'},
-    leads:'Dẫn tới', caused_by:'Bắt nguồn từ', watch:'Đáng xem tiếp', conf:'tin', vs:'gặp' },
-  en:{ wc:'World Cup 2026',
-    sub:'Each match is a link — tap a node to see why it shifts the race.',
-    lg_done:'Played', lg_sched:'Upcoming', lg_link:'causal',
-    foot:'Open causal data · updated daily.',
-    updated:t=>'Updated: '+t, hint:'Scroll sideways for the whole tournament · tap a node for detail',
-    err:'Could not load data. Please try again shortly.',
+    leads:'Dẫn tới', from:'Bắt nguồn từ', watch:'Đáng xem tiếp', conf:'tin', grp:g=>'Bảng '+g },
+  en:{ sub:'Each match is a link — tap a node to see why it shifts the race.',
+    lg_done:'Played', lg_sched:'Upcoming', lg_link:'causal', foot:'Open causal data · updated daily.',
+    updated:t=>'Updated: '+t, now:'TODAY', err:'Could not load data. Please try again shortly.',
     rel:{caused:'caused',enabled:'enabled',accelerated:'accelerated',inspired:'inspired',delayed:'delayed',prevented:'prevented'},
     st:{completed:'Played',scheduled:'Upcoming',live:'Live',forecast:'Forecast'},
-    leads:'Leads to', caused_by:'Comes from', watch:'Watch next', conf:'conf', vs:'vs' }
+    leads:'Leads to', from:'Comes from', watch:'Watch next', conf:'conf', grp:g=>'Group '+g }
 };
 let lang = (navigator.language||'vi').startsWith('en') ? 'en' : 'vi';
 let DATA=null, NODES=null, selId=null;
 
 const $=(s,r=document)=>r.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const short=(s,n=11)=>{s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s;};
 
 async function load(){
   for(const base of [BASE,FALLBACK]){
@@ -166,103 +167,138 @@ async function load(){
   return false;
 }
 
-function teams(ev){ return (ev.entities||[]).filter(e=>!/group/i.test(e)); }
-function score(ev){ const m=String(ev.description||'').match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/); return m?m[1]+'–'+m[2]:null; }
+const teams = ev => (ev.entities||[]).filter(e=>!/group/i.test(e));
+const groupOf = ev => { const g=(ev.entities||[]).map(e=>/^group\s+(.+)$/i.exec(e)).find(Boolean); return g?g[1]:'—'; };
+const score = ev => { if((ev.status||'completed')!=='completed') return null; const m=String(ev.description||'').match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/); return m?m[1]+'–'+m[2]:null; };
 
 function applyStatic(){
   const t=I18N[lang]; document.documentElement.lang=lang;
   document.querySelectorAll('[data-i]').forEach(el=>{const v=t[el.getAttribute('data-i')];if(typeof v==='string')el.textContent=v;});
   document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
-  $('#hint').textContent=t.hint;
 }
 
-// ── layout: columns by date, lanes stacked within a date (no overlap) ───────
+// ── layout: rows = groups, columns = dates. Rows grow if a group has two ────
+// matches on the same day, so nothing is ever hidden behind another node. ────
 function layout(){
-  const t=I18N[lang];
   const evs=[...DATA.events].sort((a,b)=>String(a.date||a.yearNum).localeCompare(String(b.date||b.yearNum)));
   const dates=[...new Set(evs.map(e=>e.date||e.yearLabel))];
-  const COLW=168, ROWH=70, NW=140, NH=50, TOP=46, PADX=24, PADY=14;
-  const laneOf={}; const colCount={};
+  const groups=[...new Set(evs.map(groupOf))].sort();
+  const COLW=132, NW=112, NH=42, TOP=44, GUT=58, PADY=10, STACK=NH+8, ROWPAD=20;
+  const maxStack={};
+  for(const g of groups){
+    const counts={};
+    evs.filter(e=>groupOf(e)===g).forEach(e=>{const d=e.date||e.yearLabel;counts[d]=(counts[d]||0)+1;});
+    maxStack[g]=Math.max(1,...Object.values(counts));
+  }
+  const rowH={}, rowY={}; let cy=TOP+PADY;
+  for(const g of groups){ rowH[g]=NH+ROWPAD+(maxStack[g]-1)*STACK; rowY[g]=cy; cy+=rowH[g]; }
+  const subLane={};
   const nodes=evs.map(ev=>{
-    const key=ev.date||ev.yearLabel; const col=dates.indexOf(key);
-    const lane=(colCount[key]=(colCount[key]||0)); colCount[key]++;
-    const x=PADX+col*COLW+COLW/2, y=TOP+PADY+lane*ROWH+NH/2;
-    laneOf[ev.id]={x,y};
-    const tm=teams(ev), sc=score(ev);
-    return {ev,x,y,col,lane,key,teamA:tm[0]||'',teamB:tm[1]||'',score:sc,
+    const g=groupOf(ev), col=dates.indexOf(ev.date||ev.yearLabel);
+    const k=g+'|'+(ev.date||ev.yearLabel); const s=(subLane[k]=(subLane[k]||0)); subLane[k]++;
+    const x=GUT+col*COLW+COLW/2;
+    const y=rowY[g]+rowH[g]/2 - ((maxStack[g]-1)*STACK)/2 + s*STACK;
+    return {ev,x,y,col,group:g,teamA:teams(ev)[0]||'',teamB:teams(ev)[1]||'',score:score(ev),
       label:ev.dateLabel||ev.yearLabel};
   });
-  const maxLane=Math.max(0,...Object.values(colCount))-1;
-  const W=PADX*2+dates.length*COLW, H=TOP+PADY*2+(maxLane+1)*ROWH;
-  return {nodes,pos:laneOf,dates,W,H,COLW,NW,NH,TOP,PADX};
+  const doneDates=evs.filter(e=>(e.status||'completed')==='completed').map(e=>e.date);
+  const lastDone=doneDates.sort().slice(-1)[0];
+  const nowCol=lastDone?dates.indexOf(lastDone):-1;
+  const W=GUT+dates.length*COLW+20, H=cy+PADY;
+  return {nodes,dates,groups,rowH,rowY,W,H,COLW,NW,NH,TOP,GUT,nowCol};
 }
 
-function edgePath(a,b,NW){
-  const x1=a.x+NW/2, y1=a.y, x2=b.x-NW/2, y2=b.y;
-  const dx=Math.max(40,(x2-x1)/2);
-  return `M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}`;
-}
+const edgePath=(a,b,NW)=>{const x1=a.x+NW/2,y1=a.y,x2=b.x-NW/2,y2=b.y,dx=Math.max(34,(x2-x1)/2);return `M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}`;};
 
 function render(){
   const t=I18N[lang], stage=$('#stage');
-  if(!DATA){ stage.innerHTML='<div class="hint" id="hint"></div>'; return; }
+  if(!DATA){ stage.innerHTML=''; return; }
   if(!DATA.events.length){ stage.innerHTML=`<div class="err">${esc(t.err)}</div>`; return; }
   const L=layout(); NODES=L;
   const byId=Object.fromEntries(L.nodes.map(n=>[n.ev.id,n]));
   const lastDone=[...DATA.events].filter(e=>e.status==='completed').sort((a,b)=>String(a.date).localeCompare(String(b.date))).slice(-1)[0];
   $('#updated').textContent=t.updated(lastDone?.dateLabel||'—');
+  const H=Math.max(L.H, stage.clientHeight-2);
+
+  // group row bands + labels (variable height)
+  let rows='';
+  L.groups.forEach((g,i)=>{
+    const y=L.rowY[g], h=L.rowH[g];
+    if(i%2===0) rows+=`<rect class="grouprow" x="0" y="${y}" width="${L.W}" height="${h}"/>`;
+    rows+=`<text class="grouplab" x="10" y="${y+h/2+4}">${esc(t.grp(g))}</text>`;
+  });
 
   // day ticks + labels
   let ticks='';
   L.dates.forEach((d,i)=>{
-    const x=L.PADX+i*L.COLW+L.COLW/2;
-    const lbl=byId[L.nodes.find(n=>n.col===i)?.ev.id]?.label||d;
-    ticks+=`<line class="daytick" x1="${x}" y1="${L.TOP}" x2="${x}" y2="${L.H}"/>
-      <text class="daylabel" x="${x}" y="${L.TOP-16}" text-anchor="middle">${esc(lbl)}</text>`;
+    const x=L.GUT+i*L.COLW+L.COLW/2;
+    const n=L.nodes.find(n=>n.col===i);
+    ticks+=`<line class="daytick" x1="${x}" y1="${L.TOP}" x2="${x}" y2="${H}"/>
+      <text class="daylabel" x="${x}" y="${L.TOP-14}" text-anchor="middle">${esc(n?n.label:d)}</text>`;
   });
+
+  // now marker
+  let now='';
+  if(L.nowCol>=0){
+    const x=L.GUT+L.nowCol*L.COLW+L.COLW;
+    now=`<line class="nowline" x1="${x}" y1="${L.TOP-6}" x2="${x}" y2="${H}"/>
+      <text class="nowlab" x="${x+4}" y="${L.TOP-4}">${esc(t.now)}</text>`;
+  }
 
   // edges
   let edges='';
-  DATA.links.forEach((l,i)=>{
-    const a=byId[l.fromEvent], b=byId[l.toEvent]; if(!a||!b) return;
-    const col=getComputedStyle(document.documentElement).getPropertyValue('--r-'+l.relationship)||'var(--accent)';
+  const cssVar=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+  DATA.links.forEach(l=>{
+    const a=byId[l.fromEvent],b=byId[l.toEvent]; if(!a||!b) return;
+    const col=cssVar('--r-'+l.relationship)||'#4aa8ff';
     const w=1+Math.round((l.confidence||0.6)*3);
-    edges+=`<path class="edge" data-from="${esc(l.fromEvent)}" data-to="${esc(l.toEvent)}" d="${edgePath(a,b,L.NW)}" stroke="${col.trim()||'#00f2ff'}" stroke-width="${w}" marker-end="url(#arr)"/>`;
+    edges+=`<path class="edge" data-from="${esc(l.fromEvent)}" data-to="${esc(l.toEvent)}" d="${edgePath(a,b,L.NW)}" stroke="${col}" stroke-width="${w}" marker-end="url(#arr)"/>`;
   });
 
   // nodes
   let nodes='';
   L.nodes.forEach(n=>{
     const st=n.ev.status||'completed';
-    const cls=st==='completed'?'done':(st==='scheduled'?'scheduled':st);
-    const fill=st==='completed'?'#15243a':'#231d10';
-    const stroke=st==='completed'?'#22d3a0':'#f0b43a';
+    const sched=st!=='completed';
+    const fill=sched?'#221c10':'#13233a'; const stroke=sched?'#f0b43a':'#22d3a0';
     const x=n.x-L.NW/2, y=n.y-L.NH/2;
-    const mid=n.score?`<text class="nscore" x="${n.x}" y="${n.y+2}" text-anchor="middle">${esc(n.teamA?short(n.teamA,8):'')} ${esc(n.score)} ${esc(n.teamB?short(n.teamB,8):'')}</text>`
-      :`<text class="nteam" x="${n.x}" y="${n.y+3}" text-anchor="middle">${esc(short(n.teamA,8))} ${esc(t.vs)} ${esc(short(n.teamB,8))}</text>`;
+    const inner = n.score
+      ? `<text class="ncode" x="${n.x-L.NW/2+12}" y="${n.y+4}" text-anchor="start">${esc(code(n.teamA))}</text>
+         <text class="nscore" x="${n.x}" y="${n.y+5}" text-anchor="middle">${esc(n.score)}</text>
+         <text class="ncode" x="${n.x+L.NW/2-12}" y="${n.y+4}" text-anchor="end">${esc(code(n.teamB))}</text>`
+      : `<text class="ncode" x="${n.x-14}" y="${n.y+4}" text-anchor="end">${esc(code(n.teamA))}</text>
+         <text class="nvs" x="${n.x}" y="${n.y+4}" text-anchor="middle">–</text>
+         <text class="ncode" x="${n.x+14}" y="${n.y+4}" text-anchor="start">${esc(code(n.teamB))}</text>`;
     nodes+=`<g class="node" data-id="${esc(n.ev.id)}" tabindex="0">
-      <rect x="${x}" y="${y}" width="${L.NW}" height="${L.NH}" rx="11" fill="${fill}" stroke="${stroke}" stroke-width="1" ${st==='scheduled'?'stroke-dasharray="4 3"':''}/>
-      ${mid}
+      <rect x="${x}" y="${y}" width="${L.NW}" height="${L.NH}" rx="10" fill="${fill}" stroke="${stroke}" stroke-width="1.2" ${sched?'stroke-dasharray="4 3"':''}/>
+      ${inner}
     </g>`;
   });
 
-  stage.innerHTML=`<svg width="${L.W}" height="${Math.max(L.H, stage.clientHeight-2)}" viewBox="0 0 ${L.W} ${L.H}" xmlns="http://www.w3.org/2000/svg">
-    <defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#5f7a99"/></marker></defs>
-    <g>${ticks}</g><g>${edges}</g><g>${nodes}</g>
-  </svg><div class="hint" id="hint">${esc(t.hint)}</div>`;
+  stage.innerHTML=`<svg width="${L.W}" height="${H}" viewBox="0 0 ${L.W} ${H}" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#6f86a6"/></marker></defs>
+    <g>${rows}</g><g>${ticks}</g>${now}<g>${edges}</g><g>${nodes}</g>
+  </svg>`;
 
   stage.querySelectorAll('.node').forEach(g=>{
     g.addEventListener('click',()=>select(g.dataset.id));
     g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(g.dataset.id);}});
   });
+  // On first paint, scroll to the "now" region so recent + upcoming are in view.
+  if(!window.__scrolled && L.nowCol>=0){
+    const nowX=L.GUT+L.nowCol*L.COLW+L.COLW;
+    stage.scrollLeft=Math.max(0, nowX - stage.clientWidth*0.62);
+    window.__scrolled=true;
+  }
   if(selId) highlight(selId);
 }
 
 function highlight(id){
   document.querySelectorAll('.node').forEach(g=>g.classList.toggle('sel',g.dataset.id===id));
+  const any=document.querySelector('.node.sel');
   document.querySelectorAll('.edge').forEach(p=>{
     const on=p.dataset.from===id||p.dataset.to===id;
-    p.classList.toggle('hot',on); p.classList.toggle('dim',!on);
+    p.classList.toggle('hot',!!any&&on); p.classList.toggle('dim',!!any&&!on);
   });
 }
 
@@ -270,27 +306,21 @@ function select(id){
   selId=id; highlight(id);
   const t=I18N[lang]; const ev=DATA.events.find(e=>e.id===id); if(!ev) return;
   const st=ev.status||'completed'; const cls=st==='completed'?'done':'scheduled';
-  const outs=DATA.links.filter(l=>l.fromEvent===id);
-  const ins=DATA.links.filter(l=>l.toEvent===id);
+  const outs=DATA.links.filter(l=>l.fromEvent===id), ins=DATA.links.filter(l=>l.toEvent===id);
   const byId=Object.fromEntries(DATA.events.map(e=>[e.id,e]));
-  const lk=(l,dir)=>{
-    const other=byId[dir==='out'?l.toEvent:l.fromEvent];
-    const col=`var(--r-${l.relationship})`;
+  const lk=(l,dir)=>{const other=byId[dir==='out'?l.toEvent:l.fromEvent];const col=`var(--r-${l.relationship})`;
     return `<div class="lk" style="border-color:${col}"><b style="color:${col}">${esc(t.rel[l.relationship]||l.relationship)}</b> → ${esc(other?other.title:'?')}
-      <span class="conf"> · ${t.conf} ${Math.round((l.confidence||0)*100)}%</span>
-      <span class="ev">${esc(l.evidence||'')}</span></div>`;
-  };
+      <span class="conf"> · ${t.conf} ${Math.round((l.confidence||0)*100)}%</span><span class="ev">${esc(l.evidence||'')}</span></div>`;};
   let body=`<span class="chip ${cls}">${esc(t.st[st]||st)}</span> <span class="conf">${esc(ev.dateLabel||'')}</span>
-    <h3>${esc(ev.title)}</h3>
-    <p class="why">${esc(ev.whyItMatters||ev.description||'')}</p>
+    <h3>${esc(ev.title)}</h3><p class="why">${esc(ev.whyItMatters||ev.description||'')}</p>
     <div class="ents">${(ev.entities||[]).map(e=>`<span class="ent">${esc(e)}</span>`).join('')}</div>`;
-  if(outs.length){ body+=`<div class="sectlabel">${esc(t.leads)}</div>${outs.map(l=>lk(l,'out')).join('')}`; }
-  if(ins.length){ body+=`<div class="sectlabel">${esc(t.caused_by)}</div>${ins.map(l=>lk(l,'in')).join('')}`; }
-  if((ev.nextWatchpoints||[]).length){ body+=`<div class="watch"><b>${esc(t.watch)}:</b> ${ev.nextWatchpoints.map(esc).join(' · ')}</div>`; }
+  if(outs.length) body+=`<div class="sectlabel">${esc(t.leads)}</div>${outs.map(l=>lk(l,'out')).join('')}`;
+  if(ins.length) body+=`<div class="sectlabel">${esc(t.from)}</div>${ins.map(l=>lk(l,'in')).join('')}`;
+  if((ev.nextWatchpoints||[]).length) body+=`<div class="watch"><b>${esc(t.watch)}:</b> ${ev.nextWatchpoints.map(esc).join(' · ')}</div>`;
   $('#drawerBody').innerHTML=body;
   $('#drawer').classList.add('open'); $('#drawer').setAttribute('aria-hidden','false');
 }
-function closeDrawer(){ $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden','true'); selId=null; highlight('__none__'); }
+function closeDrawer(){ $('#drawer').classList.remove('open'); selId=null; highlight('__none__'); }
 $('#drawerClose').addEventListener('click',closeDrawer);
 
 function setLang(l){ lang=l; applyStatic(); render(); if(selId)select(selId); }
@@ -299,6 +329,7 @@ document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',
 async function boot(){ applyStatic(); const ok=await load(); if(!ok){$('#stage').innerHTML=`<div class="err">${esc(I18N[lang].err)}</div>`;return;} render(); }
 boot();
 setInterval(async()=>{ if(await load()) render(); }, REFRESH_MS);
+window.addEventListener('resize',()=>{ if(DATA) render(); });
 </script>
 </body>
 </html>
