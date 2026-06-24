@@ -2,271 +2,303 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <title>Powflow · World Cup 2026 — bản đồ nhân quả</title>
-<meta name="description" content="Theo dõi World Cup 2026 không chỉ qua kết quả, mà qua chuỗi nhân quả: kết quả → ý nghĩa bảng đấu → đội bị ảnh hưởng → trận đáng xem tiếp. Dữ liệu mở bởi Causari." />
+<meta name="description" content="Bản đồ nhân quả World Cup 2026 — mỗi kết quả là một mắt xích, không chỉ một tỉ số. Dữ liệu mở bởi Causari." />
 <meta property="og:title" content="Powflow · World Cup 2026" />
-<meta property="og:description" content="Bản đồ nhân quả World Cup 2026 — mỗi kết quả là một mắt xích, không chỉ một tỉ số." />
+<meta property="og:description" content="Bản đồ nhân quả World Cup 2026 — nhìn là hiểu, không phải đọc." />
 <meta property="og:type" content="website" />
 <style>
   :root{
     --ink:#070b12; --ink-soft:#0e141f; --card:#121a27; --line:#1e2a3d;
-    --fg:#e8eef7; --muted:#8aa0bd; --accent:#00f2ff; --accent-dim:#0bb8c4;
-    --done:#22d3a0; --sched:#f0b43a; --live:#ff5470;
+    --fg:#e8eef7; --muted:#8aa0bd; --accent:#00f2ff;
+    --done:#22d3a0; --sched:#f0b43a;
+    --r-caused:#ff5470; --r-enabled:#00f2ff; --r-accelerated:#22d3a0;
+    --r-inspired:#a78bfa; --r-delayed:#f0b43a; --r-prevented:#7c8aa0;
     --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,system-ui,sans-serif;
   }
   *{box-sizing:border-box}
-  html,body{margin:0}
-  body{background:radial-gradient(1200px 600px at 50% -10%,#0d1b24 0%,var(--ink) 60%),var(--ink);color:var(--fg);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+  html,body{margin:0;height:100%}
+  body{background:var(--ink);color:var(--fg);font-family:var(--font);-webkit-font-smoothing:antialiased;overflow:hidden}
   a{color:var(--accent);text-decoration:none}
-  .wrap{max-width:820px;margin:0 auto;padding:0 18px 80px}
-  header{position:sticky;top:0;z-index:10;background:linear-gradient(var(--ink),rgba(7,11,18,.86));backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  .hd{max-width:820px;margin:0 auto;padding:14px 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-  .brand{font-weight:800;letter-spacing:.5px;font-size:18px;display:flex;align-items:center;gap:8px}
+  .app{display:flex;flex-direction:column;height:100dvh}
+  header{flex:0 0 auto;background:linear-gradient(var(--ink),rgba(7,11,18,.9));border-bottom:1px solid var(--line)}
+  .hd{padding:11px 16px;display:flex;align-items:center;gap:10px}
+  .brand{font-weight:800;letter-spacing:.4px;font-size:16px;display:flex;align-items:center;gap:8px;white-space:nowrap}
   .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent)}
-  .brand small{color:var(--muted);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:10px}
+  .brand small{color:var(--muted);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:9.5px}
   .spacer{flex:1}
+  .updated{color:var(--muted);font-size:11px;white-space:nowrap}
   .lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
-  .lang button{background:transparent;color:var(--muted);border:0;padding:5px 11px;font-size:12px;font-weight:700;cursor:pointer}
+  .lang button{background:transparent;color:var(--muted);border:0;padding:5px 10px;font-size:12px;font-weight:700;cursor:pointer}
   .lang button[aria-pressed="true"]{background:var(--accent);color:#04121a}
-  .updated{color:var(--muted);font-size:11px;width:100%}
-  h1.title{font-size:clamp(22px,5vw,34px);margin:26px 0 6px;letter-spacing:-.5px}
-  .sub{color:var(--muted);margin:0 0 8px;max-width:60ch}
-  .legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:14px 0 6px}
-  .legend i{font-style:normal;display:inline-flex;align-items:center;gap:6px}
+  .subbar{padding:0 16px 10px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .subbar .t{color:var(--muted);font-size:12.5px;max-width:52ch}
+  .legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted)}
+  .legend i{font-style:normal;display:inline-flex;align-items:center;gap:5px}
+  .swatch{width:14px;height:3px;border-radius:2px;display:inline-block}
   .pip{width:9px;height:9px;border-radius:50%;display:inline-block}
-  .timeline{position:relative;margin-top:18px;padding-left:26px}
-  .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:0;width:2px;background:linear-gradient(var(--line),transparent)}
-  .day{position:relative;margin:0 0 6px}
-  .day-label{font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:22px 0 10px;display:flex;align-items:center;gap:8px}
-  .day-label::before{content:"";position:absolute;left:-26px;width:18px;height:18px;border-radius:50%;background:var(--ink-soft);border:2px solid var(--line)}
-  .card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:0 0 12px}
-  .card::before{content:"";position:absolute;left:-22px;top:20px;width:10px;height:10px;border-radius:50%;background:var(--muted)}
-  .card.done::before{background:var(--done);box-shadow:0 0 10px var(--done)}
-  .card.scheduled::before{background:var(--sched)}
-  .card.scheduled{border-style:dashed;opacity:.92}
-  .chip{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
+  .stage{flex:1 1 auto;position:relative;overflow:auto;-webkit-overflow-scrolling:touch}
+  .hint{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);color:var(--muted);font-size:11px;background:rgba(14,20,31,.8);border:1px solid var(--line);border-radius:999px;padding:4px 12px;pointer-events:none;opacity:.9}
+  svg{display:block}
+  .node{cursor:pointer}
+  .node rect{transition:filter .15s}
+  .node:hover rect,.node.sel rect{filter:brightness(1.25)}
+  .node.sel rect{stroke:var(--accent);stroke-width:2}
+  .nlabel{font-size:11px;font-weight:700;fill:var(--fg)}
+  .nscore{font-size:13px;font-weight:800;fill:#fff}
+  .nteam{font-size:9.5px;fill:var(--muted)}
+  .daylabel{font-size:11px;font-weight:800;fill:var(--muted);letter-spacing:.04em}
+  .daytick{stroke:var(--line);stroke-width:1}
+  .edge{fill:none;opacity:.5;transition:opacity .15s}
+  .edge.dim{opacity:.08}
+  .edge.hot{opacity:.95}
+  /* drawer */
+  .drawer{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--card);border-top:1px solid var(--line);border-radius:16px 16px 0 0;padding:16px 18px 22px;transform:translateY(110%);transition:transform .22s ease;max-height:62dvh;overflow:auto;box-shadow:0 -16px 40px rgba(0,0,0,.5)}
+  .drawer.open{transform:translateY(0)}
+  .drawer .x{position:absolute;right:14px;top:12px;background:var(--ink-soft);border:1px solid var(--line);color:var(--muted);border-radius:8px;width:30px;height:30px;font-size:16px;cursor:pointer}
+  .chip{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--line)}
   .chip.done{color:var(--done);border-color:#15402f;background:#0c241b}
   .chip.scheduled{color:var(--sched);border-color:#40340f;background:#241c08}
-  .chip.live{color:var(--live);border-color:#401520;background:#240b10}
-  .crow{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px;margin-bottom:6px}
-  .card h3{margin:2px 0 6px;font-size:18px;line-height:1.25}
-  .why{margin:0 0 10px;color:#cdd9ea}
-  .ents{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
-  .ent{font-size:11px;color:var(--muted);background:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:2px 7px}
-  .links{margin:8px 0 0;border-top:1px dashed var(--line);padding-top:9px}
-  .lk{font-size:12.5px;margin:5px 0;color:#bcd}
-  .lk b{color:var(--accent);font-weight:700}
-  .lk .ev{display:block;color:var(--muted);font-size:11.5px;margin-top:2px}
-  .conf{font-variant-numeric:tabular-nums;color:var(--muted);font-size:11px}
-  .watch{margin:8px 0 0;font-size:12px;color:var(--muted)}
-  .watch b{color:#cdd9ea;font-weight:600}
-  section.insights{margin-top:38px}
-  section.insights h2{font-size:16px;letter-spacing:.04em;margin:0 0 12px}
-  .ins{background:var(--ink-soft);border:1px solid var(--line);border-left:3px solid var(--accent-dim);border-radius:10px;padding:12px 14px;margin:0 0 10px}
-  .ins h4{margin:0 0 4px;font-size:14px}
-  .ins p{margin:0;color:var(--muted);font-size:13px}
-  .ins .pv{float:right;font-size:11px;color:var(--accent-dim);font-weight:700}
-  footer{margin-top:46px;border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:12.5px}
-  .skeleton{height:96px;border-radius:14px;background:linear-gradient(90deg,var(--card),#17202e,var(--card));background-size:200% 100%;animation:sh 1.3s infinite;margin:0 0 12px}
-  @keyframes sh{to{background-position:-200% 0}}
-  .err{background:#240b10;border:1px solid #401520;color:#ffd5dd;border-radius:12px;padding:14px;margin-top:18px}
-  .note{background:#241c08;border:1px solid #40340f;color:#f3dca0;border-radius:10px;padding:10px 13px;font-size:12.5px;margin:14px 0}
+  .drawer h3{margin:8px 0 6px;font-size:19px;padding-right:34px}
+  .why{margin:0 0 12px;color:#cdd9ea;font-size:14px}
+  .ents{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+  .ent{font-size:11px;color:var(--muted);background:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+  .lk{font-size:13px;margin:9px 0;border-left:2px solid var(--line);padding-left:10px}
+  .lk b{font-weight:800}
+  .lk .ev{display:block;color:var(--muted);font-size:12px;margin-top:2px}
+  .conf{color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+  .watch{margin-top:10px;font-size:12.5px;color:var(--muted)}
+  .watch b{color:#cdd9ea}
+  .sectlabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin:14px 0 4px}
+  .err{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);background:#240b10;border:1px solid #401520;color:#ffd5dd;border-radius:12px;padding:14px 18px;text-align:center}
+  .foot{flex:0 0 auto;border-top:1px solid var(--line);padding:7px 16px;color:var(--muted);font-size:11px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  @media (max-width:560px){ .subbar .t{display:none} }
 </style>
 </head>
 <body>
-<header>
-  <div class="hd">
-    <div class="brand"><span class="dot"></span> Powflow <small data-i="wc">World Cup 2026</small></div>
+<div class="app">
+  <header>
+    <div class="hd">
+      <div class="brand"><span class="dot"></span> Powflow <small data-i="wc">World Cup 2026</small></div>
+      <span class="spacer"></span>
+      <div class="updated" id="updated"></div>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="vi" aria-pressed="true">VI</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div class="subbar">
+      <span class="t" data-i="sub"></span>
+      <span class="spacer"></span>
+      <span class="legend">
+        <i><span class="pip" style="background:var(--done)"></span> <span data-i="lg_done"></span></i>
+        <i><span class="pip" style="background:var(--sched)"></span> <span data-i="lg_sched"></span></i>
+        <i><span class="swatch" style="background:var(--r-accelerated)"></span> <span data-i="lg_link"></span></i>
+      </span>
+    </div>
+  </header>
+
+  <div class="stage" id="stage">
+    <div class="hint" id="hint"></div>
+  </div>
+
+  <div class="foot">
+    <span data-i="foot"></span>
     <span class="spacer"></span>
-    <div class="lang" role="group" aria-label="Language">
-      <button data-lang="vi" aria-pressed="true">VI</button>
-      <button data-lang="en" aria-pressed="false">EN</button>
-    </div>
-    <div class="updated" id="updated"></div>
+    <a href="https://github.com/causari/causari-data" target="_blank" rel="noopener">causari-data</a>
+    <span>· CC-BY-SA 4.0</span>
   </div>
-</header>
+</div>
 
-<div class="wrap">
-  <h1 class="title" data-i="title"></h1>
-  <p class="sub" data-i="sub"></p>
-  <div class="note" data-i="srcnote"></div>
-
-  <div class="legend">
-    <i><span class="pip" style="background:var(--done)"></span> <span data-i="lg_done"></span></i>
-    <i><span class="pip" style="background:var(--sched)"></span> <span data-i="lg_sched"></span></i>
-    <i><span data-i="lg_link"></span></i>
-  </div>
-
-  <div id="timeline" class="timeline" aria-live="polite"></div>
-
-  <section class="insights" id="insights-wrap" hidden>
-    <h2 data-i="patterns"></h2>
-    <div id="insights"></div>
-  </section>
-
-  <footer>
-    <div data-i="foot"></div>
-    <div style="margin-top:8px">
-      <a href="https://github.com/causari/causari-data" target="_blank" rel="noopener">causari/causari-data</a> ·
-      <a href="https://causari.ai" target="_blank" rel="noopener">causari.ai</a> ·
-      <span data-i="license">CC-BY-SA 4.0</span>
-    </div>
-  </footer>
+<div class="drawer" id="drawer" aria-hidden="true">
+  <button class="x" id="drawerClose" aria-label="close">×</button>
+  <div id="drawerBody"></div>
 </div>
 
 <script>
-// ── Powflow World Cup 2026 — standalone page ────────────────────────────────
-// Fetches the open pack from causari-data at runtime (same-origin under GitHub
-// Pages, so no CORS) and renders a day-scale causal timeline. No build step.
-const BASE = '../packs/worldcup-2026';     // relative → /causari-data/packs/...
-const FALLBACK = 'https://raw.githubusercontent.com/causari/causari-data/main/packs/worldcup-2026'; // CORS:* for local dev
+// ── Powflow World Cup 2026 — visual causal canvas ───────────────────────────
+// Glanceable timeline: each match is a NODE on a day axis, causal links are
+// drawn EDGES. Heavy text (why it matters / evidence) lives in a tap-to-open
+// drawer, so the canvas stays visual. Fetches the open pack at runtime.
+const BASE = '../packs/worldcup-2026';
+const FALLBACK = 'https://raw.githubusercontent.com/causari/causari-data/main/packs/worldcup-2026';
 const REFRESH_MS = 5 * 60 * 1000;
 
 const I18N = {
-  vi: {
-    wc: 'World Cup 2026', title: 'World Cup 2026 — bản đồ nhân quả',
-    sub: 'Không chỉ tỉ số. Mỗi kết quả là một mắt xích: nó đổi cục diện bảng đấu, ảnh hưởng đội nào, và đẩy trận nào thành điểm nóng tiếp theo.',
-    srcnote: '⚠️ Kết quả là thật, nhưng nguồn trích dẫn đang được bổ sung dần. Coi mỗi tỉ số là “đang xác minh” cho tới khi có nguồn chính thức.',
-    lg_done: 'Đã đấu', lg_sched: 'Sắp đấu', lg_link: '⚡ mũi tên = quan hệ nhân quả',
-    patterns: 'Mẫu hình lặp lại', foot: 'Dữ liệu nhân quả mở · cập nhật theo ngày trong giải.',
-    license: 'Giấy phép CC-BY-SA 4.0',
-    updated: (t) => 'Cập nhật: ' + t, loading: 'Đang tải dữ liệu…',
-    err: 'Không tải được dữ liệu. Thử lại sau giây lát.',
-    rel: { caused:'gây ra', enabled:'mở đường cho', accelerated:'thúc đẩy', inspired:'truyền cảm hứng', delayed:'trì hoãn', prevented:'ngăn cản' },
-    st: { completed:'Đã đấu', scheduled:'Sắp đấu', live:'Đang đấu', forecast:'Dự báo' },
-    watch: 'Đáng xem tiếp', conf: 'độ tin', empty: 'Chưa có sự kiện nào.'
-  },
-  en: {
-    wc: 'World Cup 2026', title: 'World Cup 2026 — a causal map',
-    sub: 'Not just scores. Each result is a link in a chain: it shifts the group race, affects certain teams, and turns the next fixture into a watchpoint.',
-    srcnote: '⚠️ Results are real, but inline citations are being backfilled. Treat each scoreline as “pending verification” until it carries an official source.',
-    lg_done: 'Played', lg_sched: 'Upcoming', lg_link: '⚡ arrow = causal link',
-    patterns: 'Recurring patterns', foot: 'Open causal data · updated daily during the tournament.',
-    license: 'Licensed CC-BY-SA 4.0',
-    updated: (t) => 'Updated: ' + t, loading: 'Loading data…',
-    err: 'Could not load data. Please try again shortly.',
-    rel: { caused:'caused', enabled:'enabled', accelerated:'accelerated', inspired:'inspired', delayed:'delayed', prevented:'prevented' },
-    st: { completed:'Played', scheduled:'Upcoming', live:'Live', forecast:'Forecast' },
-    watch: 'Watch next', conf: 'conf', empty: 'No events yet.'
-  }
+  vi:{ wc:'World Cup 2026',
+    sub:'Mỗi trận là một mắt xích — chạm vào node để xem vì sao nó đổi cục diện.',
+    lg_done:'Đã đấu', lg_sched:'Sắp đấu', lg_link:'nhân quả',
+    foot:'Dữ liệu nhân quả mở · cập nhật theo ngày.',
+    updated:t=>'Cập nhật: '+t, hint:'Cuộn ngang để xem cả giải · chạm node để xem chi tiết',
+    err:'Không tải được dữ liệu. Thử lại sau giây lát.',
+    rel:{caused:'gây ra',enabled:'mở đường cho',accelerated:'thúc đẩy',inspired:'truyền cảm hứng',delayed:'trì hoãn',prevented:'ngăn cản'},
+    st:{completed:'Đã đấu',scheduled:'Sắp đấu',live:'Đang đấu',forecast:'Dự báo'},
+    leads:'Dẫn tới', caused_by:'Bắt nguồn từ', watch:'Đáng xem tiếp', conf:'tin', vs:'gặp' },
+  en:{ wc:'World Cup 2026',
+    sub:'Each match is a link — tap a node to see why it shifts the race.',
+    lg_done:'Played', lg_sched:'Upcoming', lg_link:'causal',
+    foot:'Open causal data · updated daily.',
+    updated:t=>'Updated: '+t, hint:'Scroll sideways for the whole tournament · tap a node for detail',
+    err:'Could not load data. Please try again shortly.',
+    rel:{caused:'caused',enabled:'enabled',accelerated:'accelerated',inspired:'inspired',delayed:'delayed',prevented:'prevented'},
+    st:{completed:'Played',scheduled:'Upcoming',live:'Live',forecast:'Forecast'},
+    leads:'Leads to', caused_by:'Comes from', watch:'Watch next', conf:'conf', vs:'vs' }
 };
+let lang = (navigator.language||'vi').startsWith('en') ? 'en' : 'vi';
+let DATA=null, NODES=null, selId=null;
 
-let lang = (navigator.language || 'vi').startsWith('en') ? 'en' : 'vi';
-let DATA = null;
+const $=(s,r=document)=>r.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const short=(s,n=11)=>{s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s;};
 
-const $ = (s, r=document) => r.querySelector(s);
-const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
-async function load() {
-  for (const base of [BASE, FALLBACK]) {
-    try {
-      const [events, links, insights] = await Promise.all([
-        fetch(`${base}/events.json`, {cache:'no-store'}).then(r => { if(!r.ok) throw 0; return r.json(); }),
-        fetch(`${base}/links.json`, {cache:'no-store'}).then(r => r.ok ? r.json() : []),
-        fetch(`${base}/insights.json`, {cache:'no-store'}).then(r => r.ok ? r.json() : []),
+async function load(){
+  for(const base of [BASE,FALLBACK]){
+    try{
+      const [events,links,insights]=await Promise.all([
+        fetch(`${base}/events.json`,{cache:'no-store'}).then(r=>{if(!r.ok)throw 0;return r.json();}),
+        fetch(`${base}/links.json`,{cache:'no-store'}).then(r=>r.ok?r.json():[]),
+        fetch(`${base}/insights.json`,{cache:'no-store'}).then(r=>r.ok?r.json():[]),
       ]);
-      DATA = { events, links, insights };
-      return true;
-    } catch (e) { /* try next base */ }
+      DATA={events,links,insights};return true;
+    }catch(e){}
   }
   return false;
 }
 
-function applyStatic() {
-  const t = I18N[lang];
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-i]').forEach(el => {
-    const v = t[el.getAttribute('data-i')];
-    if (typeof v === 'string') el.textContent = v;
+function teams(ev){ return (ev.entities||[]).filter(e=>!/group/i.test(e)); }
+function score(ev){ const m=String(ev.description||'').match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/); return m?m[1]+'–'+m[2]:null; }
+
+function applyStatic(){
+  const t=I18N[lang]; document.documentElement.lang=lang;
+  document.querySelectorAll('[data-i]').forEach(el=>{const v=t[el.getAttribute('data-i')];if(typeof v==='string')el.textContent=v;});
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===lang)));
+  $('#hint').textContent=t.hint;
+}
+
+// ── layout: columns by date, lanes stacked within a date (no overlap) ───────
+function layout(){
+  const t=I18N[lang];
+  const evs=[...DATA.events].sort((a,b)=>String(a.date||a.yearNum).localeCompare(String(b.date||b.yearNum)));
+  const dates=[...new Set(evs.map(e=>e.date||e.yearLabel))];
+  const COLW=168, ROWH=70, NW=140, NH=50, TOP=46, PADX=24, PADY=14;
+  const laneOf={}; const colCount={};
+  const nodes=evs.map(ev=>{
+    const key=ev.date||ev.yearLabel; const col=dates.indexOf(key);
+    const lane=(colCount[key]=(colCount[key]||0)); colCount[key]++;
+    const x=PADX+col*COLW+COLW/2, y=TOP+PADY+lane*ROWH+NH/2;
+    laneOf[ev.id]={x,y};
+    const tm=teams(ev), sc=score(ev);
+    return {ev,x,y,col,lane,key,teamA:tm[0]||'',teamB:tm[1]||'',score:sc,
+      label:ev.dateLabel||ev.yearLabel};
   });
-  document.querySelectorAll('.lang button').forEach(b =>
-    b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+  const maxLane=Math.max(0,...Object.values(colCount))-1;
+  const W=PADX*2+dates.length*COLW, H=TOP+PADY*2+(maxLane+1)*ROWH;
+  return {nodes,pos:laneOf,dates,W,H,COLW,NW,NH,TOP,PADX};
 }
 
-function render() {
-  const t = I18N[lang];
-  const tl = $('#timeline');
-  if (!DATA) { tl.innerHTML = `<div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>`; return; }
-  const { events, links, insights } = DATA;
-
-  // index + sort
-  const byId = Object.fromEntries(events.map(e => [e.id, e]));
-  const outLinks = {};
-  for (const l of links) (outLinks[l.fromEvent] ||= []).push(l);
-  const sorted = [...events].sort((a,b) => String(a.date||a.yearNum).localeCompare(String(b.date||b.yearNum)));
-
-  // freshest update label
-  const lastDone = sorted.filter(e => e.status === 'completed').slice(-1)[0];
-  $('#updated').textContent = t.updated(lastDone?.dateLabel || '—');
-
-  // group by date
-  const groups = [];
-  for (const ev of sorted) {
-    const key = ev.dateLabel || ev.yearLabel;
-    let g = groups.find(x => x.key === key);
-    if (!g) { g = { key, items: [] }; groups.push(g); }
-    g.items.push(ev);
-  }
-
-  if (!events.length) { tl.innerHTML = `<p class="sub">${esc(t.empty)}</p>`; return; }
-
-  tl.innerHTML = groups.map(g => `
-    <div class="day">
-      <div class="day-label">${esc(g.key)}</div>
-      ${g.items.map(ev => card(ev, outLinks[ev.id] || [], byId, t)).join('')}
-    </div>`).join('');
-
-  // insights
-  const iw = $('#insights-wrap');
-  if (insights.length) {
-    iw.hidden = false;
-    $('#insights').innerHTML = insights.map(ins => `
-      <div class="ins">
-        <span class="pv">${Math.round((ins.predictiveValue||0)*100)}%</span>
-        <h4>${esc(ins.pattern)}</h4>
-        <p>${esc(ins.description)}</p>
-      </div>`).join('');
-  } else iw.hidden = true;
+function edgePath(a,b,NW){
+  const x1=a.x+NW/2, y1=a.y, x2=b.x-NW/2, y2=b.y;
+  const dx=Math.max(40,(x2-x1)/2);
+  return `M${x1},${y1} C${x1+dx},${y1} ${x2-dx},${y2} ${x2},${y2}`;
 }
 
-function card(ev, outs, byId, t) {
-  const st = ev.status || 'completed';
-  const cls = st === 'completed' ? 'done' : (st === 'scheduled' ? 'scheduled' : st);
-  const ents = (ev.entities || []).map(e => `<span class="ent">${esc(e)}</span>`).join('');
-  const links = outs.map(l => {
-    const to = byId[l.toEvent];
-    const rel = t.rel[l.relationship] || l.relationship;
-    const conf = l.confidence != null ? `<span class="conf"> · ${t.conf} ${Math.round(l.confidence*100)}%</span>` : '';
-    return `<div class="lk">⚡ <b>${esc(rel)}</b> → ${esc(to ? to.title : l.toEvent)}${conf}
+function render(){
+  const t=I18N[lang], stage=$('#stage');
+  if(!DATA){ stage.innerHTML='<div class="hint" id="hint"></div>'; return; }
+  if(!DATA.events.length){ stage.innerHTML=`<div class="err">${esc(t.err)}</div>`; return; }
+  const L=layout(); NODES=L;
+  const byId=Object.fromEntries(L.nodes.map(n=>[n.ev.id,n]));
+  const lastDone=[...DATA.events].filter(e=>e.status==='completed').sort((a,b)=>String(a.date).localeCompare(String(b.date))).slice(-1)[0];
+  $('#updated').textContent=t.updated(lastDone?.dateLabel||'—');
+
+  // day ticks + labels
+  let ticks='';
+  L.dates.forEach((d,i)=>{
+    const x=L.PADX+i*L.COLW+L.COLW/2;
+    const lbl=byId[L.nodes.find(n=>n.col===i)?.ev.id]?.label||d;
+    ticks+=`<line class="daytick" x1="${x}" y1="${L.TOP}" x2="${x}" y2="${L.H}"/>
+      <text class="daylabel" x="${x}" y="${L.TOP-16}" text-anchor="middle">${esc(lbl)}</text>`;
+  });
+
+  // edges
+  let edges='';
+  DATA.links.forEach((l,i)=>{
+    const a=byId[l.fromEvent], b=byId[l.toEvent]; if(!a||!b) return;
+    const col=getComputedStyle(document.documentElement).getPropertyValue('--r-'+l.relationship)||'var(--accent)';
+    const w=1+Math.round((l.confidence||0.6)*3);
+    edges+=`<path class="edge" data-from="${esc(l.fromEvent)}" data-to="${esc(l.toEvent)}" d="${edgePath(a,b,L.NW)}" stroke="${col.trim()||'#00f2ff'}" stroke-width="${w}" marker-end="url(#arr)"/>`;
+  });
+
+  // nodes
+  let nodes='';
+  L.nodes.forEach(n=>{
+    const st=n.ev.status||'completed';
+    const cls=st==='completed'?'done':(st==='scheduled'?'scheduled':st);
+    const fill=st==='completed'?'#15243a':'#231d10';
+    const stroke=st==='completed'?'#22d3a0':'#f0b43a';
+    const x=n.x-L.NW/2, y=n.y-L.NH/2;
+    const mid=n.score?`<text class="nscore" x="${n.x}" y="${n.y+2}" text-anchor="middle">${esc(n.teamA?short(n.teamA,8):'')} ${esc(n.score)} ${esc(n.teamB?short(n.teamB,8):'')}</text>`
+      :`<text class="nteam" x="${n.x}" y="${n.y+3}" text-anchor="middle">${esc(short(n.teamA,8))} ${esc(t.vs)} ${esc(short(n.teamB,8))}</text>`;
+    nodes+=`<g class="node" data-id="${esc(n.ev.id)}" tabindex="0">
+      <rect x="${x}" y="${y}" width="${L.NW}" height="${L.NH}" rx="11" fill="${fill}" stroke="${stroke}" stroke-width="1" ${st==='scheduled'?'stroke-dasharray="4 3"':''}/>
+      ${mid}
+    </g>`;
+  });
+
+  stage.innerHTML=`<svg width="${L.W}" height="${Math.max(L.H, stage.clientHeight-2)}" viewBox="0 0 ${L.W} ${L.H}" xmlns="http://www.w3.org/2000/svg">
+    <defs><marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 Z" fill="#5f7a99"/></marker></defs>
+    <g>${ticks}</g><g>${edges}</g><g>${nodes}</g>
+  </svg><div class="hint" id="hint">${esc(t.hint)}</div>`;
+
+  stage.querySelectorAll('.node').forEach(g=>{
+    g.addEventListener('click',()=>select(g.dataset.id));
+    g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(g.dataset.id);}});
+  });
+  if(selId) highlight(selId);
+}
+
+function highlight(id){
+  document.querySelectorAll('.node').forEach(g=>g.classList.toggle('sel',g.dataset.id===id));
+  document.querySelectorAll('.edge').forEach(p=>{
+    const on=p.dataset.from===id||p.dataset.to===id;
+    p.classList.toggle('hot',on); p.classList.toggle('dim',!on);
+  });
+}
+
+function select(id){
+  selId=id; highlight(id);
+  const t=I18N[lang]; const ev=DATA.events.find(e=>e.id===id); if(!ev) return;
+  const st=ev.status||'completed'; const cls=st==='completed'?'done':'scheduled';
+  const outs=DATA.links.filter(l=>l.fromEvent===id);
+  const ins=DATA.links.filter(l=>l.toEvent===id);
+  const byId=Object.fromEntries(DATA.events.map(e=>[e.id,e]));
+  const lk=(l,dir)=>{
+    const other=byId[dir==='out'?l.toEvent:l.fromEvent];
+    const col=`var(--r-${l.relationship})`;
+    return `<div class="lk" style="border-color:${col}"><b style="color:${col}">${esc(t.rel[l.relationship]||l.relationship)}</b> → ${esc(other?other.title:'?')}
+      <span class="conf"> · ${t.conf} ${Math.round((l.confidence||0)*100)}%</span>
       <span class="ev">${esc(l.evidence||'')}</span></div>`;
-  }).join('');
-  const watch = (ev.nextWatchpoints||[]).length
-    ? `<div class="watch"><b>${esc(t.watch)}:</b> ${ev.nextWatchpoints.map(esc).join(' · ')}</div>` : '';
-  return `
-    <article class="card ${cls}">
-      <div class="crow"><span class="chip ${cls}">${esc(t.st[st]||st)}</span></div>
-      <h3>${esc(ev.title)}</h3>
-      <p class="why">${esc(ev.whyItMatters || ev.description || '')}</p>
-      <div class="ents">${ents}</div>
-      ${links ? `<div class="links">${links}</div>` : ''}
-      ${watch}
-    </article>`;
+  };
+  let body=`<span class="chip ${cls}">${esc(t.st[st]||st)}</span> <span class="conf">${esc(ev.dateLabel||'')}</span>
+    <h3>${esc(ev.title)}</h3>
+    <p class="why">${esc(ev.whyItMatters||ev.description||'')}</p>
+    <div class="ents">${(ev.entities||[]).map(e=>`<span class="ent">${esc(e)}</span>`).join('')}</div>`;
+  if(outs.length){ body+=`<div class="sectlabel">${esc(t.leads)}</div>${outs.map(l=>lk(l,'out')).join('')}`; }
+  if(ins.length){ body+=`<div class="sectlabel">${esc(t.caused_by)}</div>${ins.map(l=>lk(l,'in')).join('')}`; }
+  if((ev.nextWatchpoints||[]).length){ body+=`<div class="watch"><b>${esc(t.watch)}:</b> ${ev.nextWatchpoints.map(esc).join(' · ')}</div>`; }
+  $('#drawerBody').innerHTML=body;
+  $('#drawer').classList.add('open'); $('#drawer').setAttribute('aria-hidden','false');
 }
+function closeDrawer(){ $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden','true'); selId=null; highlight('__none__'); }
+$('#drawerClose').addEventListener('click',closeDrawer);
 
-function setLang(l) { lang = l; applyStatic(); render(); }
-document.querySelectorAll('.lang button').forEach(b =>
-  b.addEventListener('click', () => setLang(b.dataset.lang)));
+function setLang(l){ lang=l; applyStatic(); render(); if(selId)select(selId); }
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
 
-async function boot() {
-  applyStatic();
-  render(); // skeleton
-  const ok = await load();
-  if (!ok) { $('#timeline').innerHTML = `<div class="err">${esc(I18N[lang].err)}</div>`; return; }
-  render();
-}
+async function boot(){ applyStatic(); const ok=await load(); if(!ok){$('#stage').innerHTML=`<div class="err">${esc(I18N[lang].err)}</div>`;return;} render(); }
 boot();
-setInterval(async () => { if (await load()) render(); }, REFRESH_MS);
+setInterval(async()=>{ if(await load()) render(); }, REFRESH_MS);
 </script>
 </body>
 </html>
