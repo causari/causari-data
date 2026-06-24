@@ -4,9 +4,9 @@
 
 This pack is a proof of concept for using Causari as a public communication layer for fast-moving events.
 
-> ⚠️ **Data status — sourcing in progress.** The match results in this pack are **real**, but not every result yet carries an inline `sources` citation. Citations are being backfilled, and the daily live-update workflow ([../../docs/LIVE-UPDATES.md](../../docs/LIVE-UPDATES.md)) requires every new `completed` result to cite an official source. Until a result carries a `sources` entry, treat its citation as **pending verification**, not as unsourced opinion. The brand stakes its credibility on calibrated, sourced data.
+> ✅ **Data status — real & sourced.** Every match is ingested from **[openfootball/worldcup.json](https://github.com/openfootball/worldcup.json)** (public-domain football data) and carries an inline `sources` citation. The pack refreshes from that source via `scripts/ingest-openfootball.mjs`, run daily by `.github/workflows/ingest.yml` — so it tracks the tournament with no manual editing.
 >
-> **Current contents:** 16 events (10 completed results + 6 `scheduled` upcoming fixtures), 9 causal links, 5 insight patterns. Validated by `scripts/validate-pack.mjs`.
+> **Current contents:** all **104 matches** (12 groups + knockouts) — completed results and upcoming fixtures — plus a sparse causal layer over notable (large-margin) results. Validated by `scripts/validate-pack.mjs`.
 
 Instead of only listing match results, it models how each result changes the tournament state:
 

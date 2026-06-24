@@ -1,274 +1,3642 @@
 [
   {
-    "id": "wc2026-mexico-beats-south-africa",
-    "title": "Mexico beat South Africa in the opening Group A match",
-    "description": "Mexico opened the tournament with a 2-0 win over South Africa. The result gave the co-host a clean start and immediately put pressure on the rest of Group A.",
+    "id": "wc2026-mexico-south-africa-0611",
+    "title": "Mexico 2–0 South Africa",
+    "description": "Mexico beat South Africa 2–0 in Group A.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.58,
-    "tags": ["world-cup-2026", "group-a", "mexico", "south-africa", "opening-match"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-a",
+      "mexico",
+      "south-africa"
+    ],
     "date": "2026-06-11",
     "dateLabel": "June 11, 2026",
     "status": "completed",
-    "entities": ["Mexico", "South Africa", "Group A"],
-    "whyItMatters": "Opening wins create immediate table leverage and reduce pressure before the second group match.",
-    "nextWatchpoints": ["Mexico vs South Korea", "Czechia vs South Africa"]
+    "entities": [
+      "Mexico",
+      "South Africa",
+      "Group A"
+    ],
+    "whyItMatters": "Scorers: Julián Quiñones, Raúl Jiménez.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-brazil-draws-morocco",
-    "title": "Brazil draw Morocco in Group C",
-    "description": "Brazil started Group C with a 1-1 draw against Morocco. The result prevented Brazil from taking early control of the group and elevated Morocco as a credible challenger.",
+    "id": "wc2026-south-korea-czech-republic-0611",
+    "title": "South Korea 2–1 Czech Republic",
+    "description": "South Korea beat Czech Republic 2–1 in Group A.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.72,
-    "tags": ["world-cup-2026", "group-c", "brazil", "morocco", "draw", "volatility"],
-    "date": "2026-06-13",
-    "dateLabel": "June 13, 2026",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-a",
+      "south-korea",
+      "czech-republic"
+    ],
+    "date": "2026-06-11",
+    "dateLabel": "June 11, 2026",
     "status": "completed",
-    "entities": ["Brazil", "Morocco", "Scotland", "Group C"],
-    "whyItMatters": "A favorite dropping points early increases group volatility and makes later fixtures more consequential.",
-    "nextWatchpoints": ["Brazil vs Haiti", "Scotland vs Morocco", "Scotland vs Brazil"]
+    "entities": [
+      "South Korea",
+      "Czech Republic",
+      "Group A"
+    ],
+    "whyItMatters": "Scorers: Hwang In-Beom, Oh Hyeon-Gyu, Ladislav Krejcí.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-germany-routs-curacao",
-    "title": "Germany rout Curacao 7-1",
-    "description": "Germany produced the strongest early statement of the tournament with a 7-1 win over Curacao. The result created a major goal-difference cushion and established Germany as one of the tournament's form teams.",
+    "id": "wc2026-czech-republic-south-africa-0618",
+    "title": "Czech Republic 1–1 South Africa",
+    "description": "Czech Republic drew South Africa 1–1 in Group A.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.76,
-    "tags": ["world-cup-2026", "group-e", "germany", "curacao", "blowout", "goal-difference"],
-    "date": "2026-06-14",
-    "dateLabel": "June 14, 2026",
-    "status": "completed",
-    "entities": ["Germany", "Curacao", "Group E"],
-    "whyItMatters": "A large opening win changes both the table math and the perception of a team's ceiling.",
-    "nextWatchpoints": ["Germany vs Ivory Coast", "Ecuador vs Germany"]
-  },
-  {
-    "id": "wc2026-canada-routs-qatar",
-    "title": "Canada rout Qatar 6-0",
-    "description": "Canada beat Qatar 6-0 in Group B. The result turned Canada into an early dark-horse candidate and made goal difference a central factor in the group race.",
-    "yearNum": 2026,
-    "yearLabel": "2026",
-    "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.74,
-    "tags": ["world-cup-2026", "group-b", "canada", "qatar", "dark-horse", "goal-difference"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-a",
+      "czech-republic",
+      "south-africa"
+    ],
     "date": "2026-06-18",
     "dateLabel": "June 18, 2026",
     "status": "completed",
-    "entities": ["Canada", "Qatar", "Switzerland", "Group B"],
-    "whyItMatters": "A heavy win can convert a contender from outsider to credible knockout-stage threat.",
-    "nextWatchpoints": ["Switzerland vs Canada", "Bosnia and Herzegovina vs Qatar"]
+    "entities": [
+      "Czech Republic",
+      "South Africa",
+      "Group A"
+    ],
+    "whyItMatters": "Scorers: Michal Sadílek, Teboho Mokoena.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-brazil-beats-haiti",
-    "title": "Brazil beat Haiti 3-0 to recover momentum",
-    "description": "Brazil responded to the Morocco draw with a 3-0 win over Haiti. The result restored some momentum and improved Brazil's goal difference before the decisive Scotland match.",
+    "id": "wc2026-mexico-south-korea-0618",
+    "title": "Mexico 1–0 South Korea",
+    "description": "Mexico beat South Korea 1–0 in Group A.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.68,
-    "tags": ["world-cup-2026", "group-c", "brazil", "haiti", "recovery", "momentum"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-a",
+      "mexico",
+      "south-korea"
+    ],
+    "date": "2026-06-18",
+    "dateLabel": "June 18, 2026",
+    "status": "completed",
+    "entities": [
+      "Mexico",
+      "South Korea",
+      "Group A"
+    ],
+    "whyItMatters": "Scorers: Luis Romo.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-czech-republic-mexico-0624",
+    "title": "Czech Republic vs Mexico",
+    "description": "Group A fixture: Czech Republic vs Mexico, June 24, 2026 at Mexico City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-a",
+      "czech-republic",
+      "mexico"
+    ],
+    "date": "2026-06-24",
+    "dateLabel": "June 24, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Czech Republic",
+      "Mexico",
+      "Group A"
+    ],
+    "whyItMatters": "Upcoming Group A match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-south-africa-south-korea-0624",
+    "title": "South Africa vs South Korea",
+    "description": "Group A fixture: South Africa vs South Korea, June 24, 2026 at Monterrey (Guadalupe).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-a",
+      "south-africa",
+      "south-korea"
+    ],
+    "date": "2026-06-24",
+    "dateLabel": "June 24, 2026",
+    "status": "scheduled",
+    "entities": [
+      "South Africa",
+      "South Korea",
+      "Group A"
+    ],
+    "whyItMatters": "Upcoming Group A match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-canada-bosnia-and-herzegovina-0612",
+    "title": "Canada 1–1 Bosnia & Herzegovina",
+    "description": "Canada drew Bosnia & Herzegovina 1–1 in Group B.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-b",
+      "canada",
+      "bosnia-and-herzegovina"
+    ],
+    "date": "2026-06-12",
+    "dateLabel": "June 12, 2026",
+    "status": "completed",
+    "entities": [
+      "Canada",
+      "Bosnia & Herzegovina",
+      "Group B"
+    ],
+    "whyItMatters": "Scorers: Cyle Larin, Jovo Lukić.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-qatar-switzerland-0613",
+    "title": "Qatar 1–1 Switzerland",
+    "description": "Qatar drew Switzerland 1–1 in Group B.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-b",
+      "qatar",
+      "switzerland"
+    ],
+    "date": "2026-06-13",
+    "dateLabel": "June 13, 2026",
+    "status": "completed",
+    "entities": [
+      "Qatar",
+      "Switzerland",
+      "Group B"
+    ],
+    "whyItMatters": "Scorers: Miro Muheim, Breel Embolo.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-switzerland-bosnia-and-herzegovina-0618",
+    "title": "Switzerland 4–1 Bosnia & Herzegovina",
+    "description": "Switzerland beat Bosnia & Herzegovina 4–1 in Group B.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.67,
+    "tags": [
+      "world-cup-2026",
+      "group-b",
+      "switzerland",
+      "bosnia-and-herzegovina"
+    ],
+    "date": "2026-06-18",
+    "dateLabel": "June 18, 2026",
+    "status": "completed",
+    "entities": [
+      "Switzerland",
+      "Bosnia & Herzegovina",
+      "Group B"
+    ],
+    "whyItMatters": "Scorers: Johan Manzambi, Rubén Vargas, Johan Manzambi, Granit Xhaka, Ermin Mahmic.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-canada-qatar-0618",
+    "title": "Canada 6–0 Qatar",
+    "description": "Canada beat Qatar 6–0 in Group B.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.78,
+    "tags": [
+      "world-cup-2026",
+      "group-b",
+      "canada",
+      "qatar"
+    ],
+    "date": "2026-06-18",
+    "dateLabel": "June 18, 2026",
+    "status": "completed",
+    "entities": [
+      "Canada",
+      "Qatar",
+      "Group B"
+    ],
+    "whyItMatters": "Scorers: Cyle Larin, Jonathan David, Jonathan David, Nathan Saliba, Mohamed Manai, Jonathan David.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-switzerland-canada-0624",
+    "title": "Switzerland vs Canada",
+    "description": "Group B fixture: Switzerland vs Canada, June 24, 2026 at Vancouver.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-b",
+      "switzerland",
+      "canada"
+    ],
+    "date": "2026-06-24",
+    "dateLabel": "June 24, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Switzerland",
+      "Canada",
+      "Group B"
+    ],
+    "whyItMatters": "Upcoming Group B match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-bosnia-and-herzegovina-qatar-0624",
+    "title": "Bosnia & Herzegovina vs Qatar",
+    "description": "Group B fixture: Bosnia & Herzegovina vs Qatar, June 24, 2026 at Seattle.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-b",
+      "bosnia-and-herzegovina",
+      "qatar"
+    ],
+    "date": "2026-06-24",
+    "dateLabel": "June 24, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Bosnia & Herzegovina",
+      "Qatar",
+      "Group B"
+    ],
+    "whyItMatters": "Upcoming Group B match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-brazil-morocco-0613",
+    "title": "Brazil 1–1 Morocco",
+    "description": "Brazil drew Morocco 1–1 in Group C.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-c",
+      "brazil",
+      "morocco"
+    ],
+    "date": "2026-06-13",
+    "dateLabel": "June 13, 2026",
+    "status": "completed",
+    "entities": [
+      "Brazil",
+      "Morocco",
+      "Group C"
+    ],
+    "whyItMatters": "Scorers: Vinícius Júnior, Ismael Saibari.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-haiti-scotland-0613",
+    "title": "Haiti 0–1 Scotland",
+    "description": "Haiti lost to Scotland 0–1 in Group C.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-c",
+      "haiti",
+      "scotland"
+    ],
+    "date": "2026-06-13",
+    "dateLabel": "June 13, 2026",
+    "status": "completed",
+    "entities": [
+      "Haiti",
+      "Scotland",
+      "Group C"
+    ],
+    "whyItMatters": "Scorers: John McGinn.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-scotland-morocco-0619",
+    "title": "Scotland 0–1 Morocco",
+    "description": "Scotland lost to Morocco 0–1 in Group C.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-c",
+      "scotland",
+      "morocco"
+    ],
     "date": "2026-06-19",
     "dateLabel": "June 19, 2026",
     "status": "completed",
-    "entities": ["Brazil", "Haiti", "Morocco", "Scotland", "Group C"],
-    "whyItMatters": "The win reduced the cost of Brazil's opening draw and kept them positioned for group control.",
-    "nextWatchpoints": ["Scotland vs Brazil", "Morocco vs Haiti"]
+    "entities": [
+      "Scotland",
+      "Morocco",
+      "Group C"
+    ],
+    "whyItMatters": "Scorers: Ismael Saibari.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-argentina-beats-algeria",
-    "title": "Argentina beat Algeria 3-0",
-    "description": "Argentina began Group J with a controlled 3-0 win over Algeria. The result gave Argentina immediate control and reinforced their profile as one of the most stable title contenders.",
+    "id": "wc2026-brazil-haiti-0619",
+    "title": "Brazil 3–0 Haiti",
+    "description": "Brazil beat Haiti 3–0 in Group C.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.71,
-    "tags": ["world-cup-2026", "group-j", "argentina", "algeria", "clean-sheet", "title-contender"],
-    "date": "2026-06-16",
-    "dateLabel": "June 16, 2026",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.67,
+    "tags": [
+      "world-cup-2026",
+      "group-c",
+      "brazil",
+      "haiti"
+    ],
+    "date": "2026-06-19",
+    "dateLabel": "June 19, 2026",
     "status": "completed",
-    "entities": ["Argentina", "Algeria", "Group J"],
-    "whyItMatters": "A clean opening win gives an elite team flexibility to manage risk and rotation later in the group.",
-    "nextWatchpoints": ["Argentina vs Austria", "Jordan vs Algeria"]
+    "entities": [
+      "Brazil",
+      "Haiti",
+      "Group C"
+    ],
+    "whyItMatters": "Scorers: Matheus Cunha, Matheus Cunha, Vinícius Júnior.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-argentina-beats-austria",
-    "title": "Argentina beat Austria 2-0",
-    "description": "Argentina followed their opening win with a 2-0 victory over Austria. With two wins and no goals conceded, Argentina became one of the tournament's clearest early control teams.",
+    "id": "wc2026-scotland-brazil-0624",
+    "title": "Scotland vs Brazil",
+    "description": "Group C fixture: Scotland vs Brazil, June 24, 2026 at Miami (Miami Gardens).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-c",
+      "scotland",
+      "brazil"
+    ],
+    "date": "2026-06-24",
+    "dateLabel": "June 24, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Scotland",
+      "Brazil",
+      "Group C"
+    ],
+    "whyItMatters": "Upcoming Group C match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-morocco-haiti-0624",
+    "title": "Morocco vs Haiti",
+    "description": "Group C fixture: Morocco vs Haiti, June 24, 2026 at Atlanta.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-c",
+      "morocco",
+      "haiti"
+    ],
+    "date": "2026-06-24",
+    "dateLabel": "June 24, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Morocco",
+      "Haiti",
+      "Group C"
+    ],
+    "whyItMatters": "Upcoming Group C match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-usa-paraguay-0612",
+    "title": "USA 4–1 Paraguay",
+    "description": "USA beat Paraguay 4–1 in Group D.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.67,
+    "tags": [
+      "world-cup-2026",
+      "group-d",
+      "usa",
+      "paraguay"
+    ],
+    "date": "2026-06-12",
+    "dateLabel": "June 12, 2026",
+    "status": "completed",
+    "entities": [
+      "USA",
+      "Paraguay",
+      "Group D"
+    ],
+    "whyItMatters": "Scorers: Damian Bobadilla, Folarin Balogun, Folarin Balogun, Giovanni Reyna, Mauricio.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-australia-turkey-0613",
+    "title": "Australia 2–0 Turkey",
+    "description": "Australia beat Turkey 2–0 in Group D.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-d",
+      "australia",
+      "turkey"
+    ],
+    "date": "2026-06-13",
+    "dateLabel": "June 13, 2026",
+    "status": "completed",
+    "entities": [
+      "Australia",
+      "Turkey",
+      "Group D"
+    ],
+    "whyItMatters": "Scorers: Nestory Irankunda, Connor Metcalfe.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-usa-australia-0619",
+    "title": "USA 2–0 Australia",
+    "description": "USA beat Australia 2–0 in Group D.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-d",
+      "usa",
+      "australia"
+    ],
+    "date": "2026-06-19",
+    "dateLabel": "June 19, 2026",
+    "status": "completed",
+    "entities": [
+      "USA",
+      "Australia",
+      "Group D"
+    ],
+    "whyItMatters": "Scorers: Cameron Burgess, Alex Freeman.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-turkey-paraguay-0619",
+    "title": "Turkey 0–1 Paraguay",
+    "description": "Turkey lost to Paraguay 0–1 in Group D.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-d",
+      "turkey",
+      "paraguay"
+    ],
+    "date": "2026-06-19",
+    "dateLabel": "June 19, 2026",
+    "status": "completed",
+    "entities": [
+      "Turkey",
+      "Paraguay",
+      "Group D"
+    ],
+    "whyItMatters": "Scorers: Matías Galarza.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-turkey-usa-0625",
+    "title": "Turkey vs USA",
+    "description": "Group D fixture: Turkey vs USA, June 25, 2026 at Los Angeles (Inglewood).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-d",
+      "turkey",
+      "usa"
+    ],
+    "date": "2026-06-25",
+    "dateLabel": "June 25, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Turkey",
+      "USA",
+      "Group D"
+    ],
+    "whyItMatters": "Upcoming Group D match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-paraguay-australia-0625",
+    "title": "Paraguay vs Australia",
+    "description": "Group D fixture: Paraguay vs Australia, June 25, 2026 at San Francisco Bay Area (Santa Clara).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-d",
+      "paraguay",
+      "australia"
+    ],
+    "date": "2026-06-25",
+    "dateLabel": "June 25, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Paraguay",
+      "Australia",
+      "Group D"
+    ],
+    "whyItMatters": "Upcoming Group D match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-germany-curacao-0614",
+    "title": "Germany 7–1 Curaçao",
+    "description": "Germany beat Curaçao 7–1 in Group E.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.78,
-    "tags": ["world-cup-2026", "group-j", "argentina", "austria", "clean-sheet", "control"],
-    "date": "2026-06-22",
-    "dateLabel": "June 22, 2026",
+    "tags": [
+      "world-cup-2026",
+      "group-e",
+      "germany",
+      "curacao"
+    ],
+    "date": "2026-06-14",
+    "dateLabel": "June 14, 2026",
     "status": "completed",
-    "entities": ["Argentina", "Austria", "Algeria", "Jordan", "Group J"],
-    "whyItMatters": "Back-to-back clean wins shift a team from promising start to near-secure qualification path.",
-    "nextWatchpoints": ["Jordan vs Argentina", "Algeria vs Austria"]
+    "entities": [
+      "Germany",
+      "Curaçao",
+      "Group E"
+    ],
+    "whyItMatters": "Scorers: Felix Nmecha, Nico Schlotterbeck, Kai Havertz, Kai Havertz, Jamal Musiala, Nathaniel Brown, Deniz Undav, Livano Comenencia.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-portugal-draws-dr-congo",
-    "title": "Portugal draw DR Congo in Group K",
-    "description": "Portugal opened Group K with a 1-1 draw against DR Congo. The result created early pressure because Colombia won their opener and took control of the group race.",
+    "id": "wc2026-ivory-coast-ecuador-0614",
+    "title": "Ivory Coast 1–0 Ecuador",
+    "description": "Ivory Coast beat Ecuador 1–0 in Group E.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.7,
-    "tags": ["world-cup-2026", "group-k", "portugal", "dr-congo", "draw", "pressure"],
-    "date": "2026-06-17",
-    "dateLabel": "June 17, 2026",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-e",
+      "ivory-coast",
+      "ecuador"
+    ],
+    "date": "2026-06-14",
+    "dateLabel": "June 14, 2026",
     "status": "completed",
-    "entities": ["Portugal", "DR Congo", "Colombia", "Uzbekistan", "Group K"],
-    "whyItMatters": "A favorite losing two points early can turn the second match into a pressure fixture.",
-    "nextWatchpoints": ["Portugal vs Uzbekistan", "Colombia vs DR Congo", "Colombia vs Portugal"]
+    "entities": [
+      "Ivory Coast",
+      "Ecuador",
+      "Group E"
+    ],
+    "whyItMatters": "Scorers: Amad Diallo.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-colombia-beats-uzbekistan",
-    "title": "Colombia beat Uzbekistan 3-1",
-    "description": "Colombia beat Uzbekistan 3-1 in Group K. Combined with Portugal's draw, the result put Colombia in the early lead and increased pressure on Portugal.",
+    "id": "wc2026-germany-ivory-coast-0620",
+    "title": "Germany 2–1 Ivory Coast",
+    "description": "Germany beat Ivory Coast 2–1 in Group E.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.66,
-    "tags": ["world-cup-2026", "group-k", "colombia", "uzbekistan", "portugal", "group-lead"],
-    "date": "2026-06-17",
-    "dateLabel": "June 17, 2026",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-e",
+      "germany",
+      "ivory-coast"
+    ],
+    "date": "2026-06-20",
+    "dateLabel": "June 20, 2026",
     "status": "completed",
-    "entities": ["Colombia", "Uzbekistan", "Portugal", "DR Congo", "Group K"],
-    "whyItMatters": "A rival's win can be as important as a favorite's dropped points because it changes the table leverage immediately.",
-    "nextWatchpoints": ["Portugal vs Uzbekistan", "Colombia vs DR Congo", "Colombia vs Portugal"]
+    "entities": [
+      "Germany",
+      "Ivory Coast",
+      "Group E"
+    ],
+    "whyItMatters": "Scorers: Deniz Undav, Deniz Undav, Franck Kessié.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-japan-beats-tunisia",
-    "title": "Japan beat Tunisia 4-0",
-    "description": "Japan beat Tunisia 4-0 in Group F. The result strengthened Japan's dark-horse profile and made the final group match against Sweden a key test of their ceiling.",
+    "id": "wc2026-ecuador-curacao-0620",
+    "title": "Ecuador 0–0 Curaçao",
+    "description": "Ecuador drew Curaçao 0–0 in Group E.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.69,
-    "tags": ["world-cup-2026", "group-f", "japan", "tunisia", "dark-horse", "asia"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-e",
+      "ecuador",
+      "curacao"
+    ],
+    "date": "2026-06-20",
+    "dateLabel": "June 20, 2026",
+    "status": "completed",
+    "entities": [
+      "Ecuador",
+      "Curaçao",
+      "Group E"
+    ],
+    "whyItMatters": "Full-time 0–0 at Kansas City.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-curacao-ivory-coast-0625",
+    "title": "Curaçao vs Ivory Coast",
+    "description": "Group E fixture: Curaçao vs Ivory Coast, June 25, 2026 at Philadelphia.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-e",
+      "curacao",
+      "ivory-coast"
+    ],
+    "date": "2026-06-25",
+    "dateLabel": "June 25, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Curaçao",
+      "Ivory Coast",
+      "Group E"
+    ],
+    "whyItMatters": "Upcoming Group E match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-ecuador-germany-0625",
+    "title": "Ecuador vs Germany",
+    "description": "Group E fixture: Ecuador vs Germany, June 25, 2026 at New York/New Jersey (East Rutherford).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-e",
+      "ecuador",
+      "germany"
+    ],
+    "date": "2026-06-25",
+    "dateLabel": "June 25, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Ecuador",
+      "Germany",
+      "Group E"
+    ],
+    "whyItMatters": "Upcoming Group E match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-netherlands-japan-0614",
+    "title": "Netherlands 2–2 Japan",
+    "description": "Netherlands drew Japan 2–2 in Group F.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-f",
+      "netherlands",
+      "japan"
+    ],
+    "date": "2026-06-14",
+    "dateLabel": "June 14, 2026",
+    "status": "completed",
+    "entities": [
+      "Netherlands",
+      "Japan",
+      "Group F"
+    ],
+    "whyItMatters": "Scorers: Virgil van Dijk, Crysencio Summerville, Keito Nakamura, Daichi Kamada.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-sweden-tunisia-0614",
+    "title": "Sweden 5–1 Tunisia",
+    "description": "Sweden beat Tunisia 5–1 in Group F.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.72,
+    "tags": [
+      "world-cup-2026",
+      "group-f",
+      "sweden",
+      "tunisia"
+    ],
+    "date": "2026-06-14",
+    "dateLabel": "June 14, 2026",
+    "status": "completed",
+    "entities": [
+      "Sweden",
+      "Tunisia",
+      "Group F"
+    ],
+    "whyItMatters": "Scorers: Yasin Ayari, Alexander Isak, Viktor Gyökeres, Mattias Svanberg, Yasin Ayari, Omar Rekik.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-netherlands-sweden-0620",
+    "title": "Netherlands 5–1 Sweden",
+    "description": "Netherlands beat Sweden 5–1 in Group F.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.72,
+    "tags": [
+      "world-cup-2026",
+      "group-f",
+      "netherlands",
+      "sweden"
+    ],
+    "date": "2026-06-20",
+    "dateLabel": "June 20, 2026",
+    "status": "completed",
+    "entities": [
+      "Netherlands",
+      "Sweden",
+      "Group F"
+    ],
+    "whyItMatters": "Scorers: Brian Brobbey, Brian Brobbey, Cody Gakpo, Cody Gakpo, Crysencio Summerville, Anthony Elanga.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-tunisia-japan-0620",
+    "title": "Tunisia 0–4 Japan",
+    "description": "Tunisia lost to Japan 0–4 in Group F.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.72,
+    "tags": [
+      "world-cup-2026",
+      "group-f",
+      "tunisia",
+      "japan"
+    ],
+    "date": "2026-06-20",
+    "dateLabel": "June 20, 2026",
+    "status": "completed",
+    "entities": [
+      "Tunisia",
+      "Japan",
+      "Group F"
+    ],
+    "whyItMatters": "Scorers: Daichi Kamada, Ayase Ueda, Junya Ito, Ayase Ueda.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-japan-sweden-0625",
+    "title": "Japan vs Sweden",
+    "description": "Group F fixture: Japan vs Sweden, June 25, 2026 at Dallas (Arlington).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-f",
+      "japan",
+      "sweden"
+    ],
+    "date": "2026-06-25",
+    "dateLabel": "June 25, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Japan",
+      "Sweden",
+      "Group F"
+    ],
+    "whyItMatters": "Upcoming Group F match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-tunisia-netherlands-0625",
+    "title": "Tunisia vs Netherlands",
+    "description": "Group F fixture: Tunisia vs Netherlands, June 25, 2026 at Kansas City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-f",
+      "tunisia",
+      "netherlands"
+    ],
+    "date": "2026-06-25",
+    "dateLabel": "June 25, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Tunisia",
+      "Netherlands",
+      "Group F"
+    ],
+    "whyItMatters": "Upcoming Group F match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-belgium-egypt-0615",
+    "title": "Belgium 1–1 Egypt",
+    "description": "Belgium drew Egypt 1–1 in Group G.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-g",
+      "belgium",
+      "egypt"
+    ],
+    "date": "2026-06-15",
+    "dateLabel": "June 15, 2026",
+    "status": "completed",
+    "entities": [
+      "Belgium",
+      "Egypt",
+      "Group G"
+    ],
+    "whyItMatters": "Scorers: Mohamed Hany, Emam Ashour.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-iran-new-zealand-0615",
+    "title": "Iran 2–2 New Zealand",
+    "description": "Iran drew New Zealand 2–2 in Group G.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-g",
+      "iran",
+      "new-zealand"
+    ],
+    "date": "2026-06-15",
+    "dateLabel": "June 15, 2026",
+    "status": "completed",
+    "entities": [
+      "Iran",
+      "New Zealand",
+      "Group G"
+    ],
+    "whyItMatters": "Scorers: Ramin Rezaeian, Mohammad Mohebbi, Elijah Just, Elijah Just.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-belgium-iran-0621",
+    "title": "Belgium 0–0 Iran",
+    "description": "Belgium drew Iran 0–0 in Group G.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-g",
+      "belgium",
+      "iran"
+    ],
     "date": "2026-06-21",
     "dateLabel": "June 21, 2026",
     "status": "completed",
-    "entities": ["Japan", "Tunisia", "Sweden", "Netherlands", "Group F"],
-    "whyItMatters": "Dominant wins by non-favorites reshape public expectations and create knockout-stage caution for traditional powers.",
-    "nextWatchpoints": ["Japan vs Sweden", "Tunisia vs Netherlands"]
+    "entities": [
+      "Belgium",
+      "Iran",
+      "Group G"
+    ],
+    "whyItMatters": "Full-time 0–0 at Los Angeles (Inglewood).",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-scotland-vs-brazil",
-    "title": "Scotland vs Brazil — Group C decider (scheduled)",
-    "description": "The final Group C fixture between Scotland and Brazil. After Brazil's opening draw and recovery win, this match becomes the decisive test of whether the favorite secures top spot.",
+    "id": "wc2026-new-zealand-egypt-0621",
+    "title": "New Zealand 1–3 Egypt",
+    "description": "New Zealand lost to Egypt 1–3 in Group G.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.6,
-    "tags": ["world-cup-2026", "group-c", "scotland", "brazil", "decider", "watchpoint"],
-    "date": "2026-06-24",
-    "dateLabel": "June 24, 2026",
-    "status": "scheduled",
-    "entities": ["Scotland", "Brazil", "Group C"],
-    "whyItMatters": "A favorite that dropped early points must convert the decider to control the group; an upset reshapes the bracket.",
-    "nextWatchpoints": ["Group C final standings", "Round of 32 seeding"]
-  },
-  {
-    "id": "wc2026-portugal-vs-colombia",
-    "title": "Portugal vs Colombia — Group K decider (scheduled)",
-    "description": "The Group K head-to-head between Portugal and Colombia. Portugal's draw and Colombia's win set this up as a pressure fixture that decides the group lead.",
-    "yearNum": 2026,
-    "yearLabel": "2026",
-    "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.62,
-    "tags": ["world-cup-2026", "group-k", "portugal", "colombia", "decider", "watchpoint"],
-    "date": "2026-06-25",
-    "dateLabel": "June 25, 2026",
-    "status": "scheduled",
-    "entities": ["Portugal", "Colombia", "Group K"],
-    "whyItMatters": "When a favorite drops points and a rival wins, the head-to-head becomes a direct contest for control instead of routine qualification.",
-    "nextWatchpoints": ["Group K final standings"]
+    "tags": [
+      "world-cup-2026",
+      "group-g",
+      "new-zealand",
+      "egypt"
+    ],
+    "date": "2026-06-21",
+    "dateLabel": "June 21, 2026",
+    "status": "completed",
+    "entities": [
+      "New Zealand",
+      "Egypt",
+      "Group G"
+    ],
+    "whyItMatters": "Scorers: Finn Surman, Mostafa Zico, Mohamed Salah, Trézéguet.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   },
   {
-    "id": "wc2026-argentina-vs-jordan",
-    "title": "Argentina vs Jordan — Group J final round (scheduled)",
-    "description": "Argentina's final group match against Jordan. With two clean wins already banked, Argentina can seal qualification and manage rotation ahead of the knockouts.",
+    "id": "wc2026-egypt-iran-0626",
+    "title": "Egypt vs Iran",
+    "description": "Group G fixture: Egypt vs Iran, June 26, 2026 at Seattle.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.55,
-    "tags": ["world-cup-2026", "group-j", "argentina", "jordan", "watchpoint"],
-    "date": "2026-06-25",
-    "dateLabel": "June 25, 2026",
-    "status": "scheduled",
-    "entities": ["Argentina", "Jordan", "Group J"],
-    "whyItMatters": "A control team with two clean wins can use the final group match to secure top spot and rest key players.",
-    "nextWatchpoints": ["Argentina knockout seeding"]
-  },
-  {
-    "id": "wc2026-germany-vs-ivory-coast",
-    "title": "Germany vs Ivory Coast — Group E test (scheduled)",
-    "description": "Germany's next Group E fixture against Ivory Coast. After a 7-1 statement win, this match tests whether Germany's form is real or flattered by a weak opener.",
-    "yearNum": 2026,
-    "yearLabel": "2026",
-    "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.58,
-    "tags": ["world-cup-2026", "group-e", "germany", "ivory-coast", "watchpoint"],
-    "date": "2026-06-23",
-    "dateLabel": "June 23, 2026",
-    "status": "scheduled",
-    "entities": ["Germany", "Ivory Coast", "Group E"],
-    "whyItMatters": "A statement win raises expectations; the next match against credible opposition is where that perception is confirmed or corrected.",
-    "nextWatchpoints": ["Group E standings"]
-  },
-  {
-    "id": "wc2026-switzerland-vs-canada",
-    "title": "Switzerland vs Canada — Group B test (scheduled)",
-    "description": "Canada's next Group B fixture against Switzerland. After routing Qatar, Canada face their first real test of dark-horse credibility against seeded opposition.",
-    "yearNum": 2026,
-    "yearLabel": "2026",
-    "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.6,
-    "tags": ["world-cup-2026", "group-b", "switzerland", "canada", "watchpoint"],
-    "date": "2026-06-24",
-    "dateLabel": "June 24, 2026",
-    "status": "scheduled",
-    "entities": ["Switzerland", "Canada", "Group B"],
-    "whyItMatters": "Dark-horse narratives are validated or punctured against seeded opposition, not against the weakest team in the group.",
-    "nextWatchpoints": ["Group B standings"]
-  },
-  {
-    "id": "wc2026-japan-vs-sweden",
-    "title": "Japan vs Sweden — Group F ceiling test (scheduled)",
-    "description": "Japan's final Group F fixture against Sweden. After a 4-0 win, this match measures Japan's true ceiling against a traditional power.",
-    "yearNum": 2026,
-    "yearLabel": "2026",
-    "precision": "day",
-    "domains": ["culture", "systems"],
-    "impactScore": 0.6,
-    "tags": ["world-cup-2026", "group-f", "japan", "sweden", "watchpoint"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-g",
+      "egypt",
+      "iran"
+    ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
     "status": "scheduled",
-    "entities": ["Japan", "Sweden", "Group F"],
-    "whyItMatters": "A dominant win over a weaker side raises the question of ceiling; the answer comes against a traditional power.",
-    "nextWatchpoints": ["Group F standings", "Round of 32 matchups"]
+    "entities": [
+      "Egypt",
+      "Iran",
+      "Group G"
+    ],
+    "whyItMatters": "Upcoming Group G match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-new-zealand-belgium-0626",
+    "title": "New Zealand vs Belgium",
+    "description": "Group G fixture: New Zealand vs Belgium, June 26, 2026 at Vancouver.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-g",
+      "new-zealand",
+      "belgium"
+    ],
+    "date": "2026-06-26",
+    "dateLabel": "June 26, 2026",
+    "status": "scheduled",
+    "entities": [
+      "New Zealand",
+      "Belgium",
+      "Group G"
+    ],
+    "whyItMatters": "Upcoming Group G match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-spain-cape-verde-0615",
+    "title": "Spain 0–0 Cape Verde",
+    "description": "Spain drew Cape Verde 0–0 in Group H.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-h",
+      "spain",
+      "cape-verde"
+    ],
+    "date": "2026-06-15",
+    "dateLabel": "June 15, 2026",
+    "status": "completed",
+    "entities": [
+      "Spain",
+      "Cape Verde",
+      "Group H"
+    ],
+    "whyItMatters": "Full-time 0–0 at Atlanta.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-saudi-arabia-uruguay-0615",
+    "title": "Saudi Arabia 1–1 Uruguay",
+    "description": "Saudi Arabia drew Uruguay 1–1 in Group H.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-h",
+      "saudi-arabia",
+      "uruguay"
+    ],
+    "date": "2026-06-15",
+    "dateLabel": "June 15, 2026",
+    "status": "completed",
+    "entities": [
+      "Saudi Arabia",
+      "Uruguay",
+      "Group H"
+    ],
+    "whyItMatters": "Scorers: Abdulelah Al-Amri, Maxi Araújo.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-spain-saudi-arabia-0621",
+    "title": "Spain 4–0 Saudi Arabia",
+    "description": "Spain beat Saudi Arabia 4–0 in Group H.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.72,
+    "tags": [
+      "world-cup-2026",
+      "group-h",
+      "spain",
+      "saudi-arabia"
+    ],
+    "date": "2026-06-21",
+    "dateLabel": "June 21, 2026",
+    "status": "completed",
+    "entities": [
+      "Spain",
+      "Saudi Arabia",
+      "Group H"
+    ],
+    "whyItMatters": "Scorers: Lamine Yamal, Mikel Oyarzabal, Mikel Oyarzabal, Hassan Al-Tambakti.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-uruguay-cape-verde-0621",
+    "title": "Uruguay 2–2 Cape Verde",
+    "description": "Uruguay drew Cape Verde 2–2 in Group H.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-h",
+      "uruguay",
+      "cape-verde"
+    ],
+    "date": "2026-06-21",
+    "dateLabel": "June 21, 2026",
+    "status": "completed",
+    "entities": [
+      "Uruguay",
+      "Cape Verde",
+      "Group H"
+    ],
+    "whyItMatters": "Scorers: Maxi Araújo, Agustín Cano, Kevin Pina, Hélio Varela.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-cape-verde-saudi-arabia-0626",
+    "title": "Cape Verde vs Saudi Arabia",
+    "description": "Group H fixture: Cape Verde vs Saudi Arabia, June 26, 2026 at Houston.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-h",
+      "cape-verde",
+      "saudi-arabia"
+    ],
+    "date": "2026-06-26",
+    "dateLabel": "June 26, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Cape Verde",
+      "Saudi Arabia",
+      "Group H"
+    ],
+    "whyItMatters": "Upcoming Group H match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-uruguay-spain-0626",
+    "title": "Uruguay vs Spain",
+    "description": "Group H fixture: Uruguay vs Spain, June 26, 2026 at Guadalajara (Zapopan).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-h",
+      "uruguay",
+      "spain"
+    ],
+    "date": "2026-06-26",
+    "dateLabel": "June 26, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Uruguay",
+      "Spain",
+      "Group H"
+    ],
+    "whyItMatters": "Upcoming Group H match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-france-senegal-0616",
+    "title": "France 3–1 Senegal",
+    "description": "France beat Senegal 3–1 in Group I.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-i",
+      "france",
+      "senegal"
+    ],
+    "date": "2026-06-16",
+    "dateLabel": "June 16, 2026",
+    "status": "completed",
+    "entities": [
+      "France",
+      "Senegal",
+      "Group I"
+    ],
+    "whyItMatters": "Scorers: Kylian Mbappé, Bradley Barcola, Kylian Mbappé, Ibrahim Mbaye.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-iraq-norway-0616",
+    "title": "Iraq 1–4 Norway",
+    "description": "Iraq lost to Norway 1–4 in Group I.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.67,
+    "tags": [
+      "world-cup-2026",
+      "group-i",
+      "iraq",
+      "norway"
+    ],
+    "date": "2026-06-16",
+    "dateLabel": "June 16, 2026",
+    "status": "completed",
+    "entities": [
+      "Iraq",
+      "Norway",
+      "Group I"
+    ],
+    "whyItMatters": "Scorers: Aymen Hussein, Erling Haaland, Erling Haaland, Leo Østigard, Aymen Hussein.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-france-iraq-0622",
+    "title": "France 3–0 Iraq",
+    "description": "France beat Iraq 3–0 in Group I.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.67,
+    "tags": [
+      "world-cup-2026",
+      "group-i",
+      "france",
+      "iraq"
+    ],
+    "date": "2026-06-22",
+    "dateLabel": "June 22, 2026",
+    "status": "completed",
+    "entities": [
+      "France",
+      "Iraq",
+      "Group I"
+    ],
+    "whyItMatters": "Scorers: Kylian Mbappé, Kylian Mbappé, Ousmane Dembélé.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-norway-senegal-0622",
+    "title": "Norway 3–2 Senegal",
+    "description": "Norway beat Senegal 3–2 in Group I.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-i",
+      "norway",
+      "senegal"
+    ],
+    "date": "2026-06-22",
+    "dateLabel": "June 22, 2026",
+    "status": "completed",
+    "entities": [
+      "Norway",
+      "Senegal",
+      "Group I"
+    ],
+    "whyItMatters": "Scorers: Marcus Holmgren Pedersen, Erling Haaland, Erling Haaland, Ismaïla Sarr, Ismaïla Sarr.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-norway-france-0626",
+    "title": "Norway vs France",
+    "description": "Group I fixture: Norway vs France, June 26, 2026 at Boston (Foxborough).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-i",
+      "norway",
+      "france"
+    ],
+    "date": "2026-06-26",
+    "dateLabel": "June 26, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Norway",
+      "France",
+      "Group I"
+    ],
+    "whyItMatters": "Upcoming Group I match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-senegal-iraq-0626",
+    "title": "Senegal vs Iraq",
+    "description": "Group I fixture: Senegal vs Iraq, June 26, 2026 at Toronto.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-i",
+      "senegal",
+      "iraq"
+    ],
+    "date": "2026-06-26",
+    "dateLabel": "June 26, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Senegal",
+      "Iraq",
+      "Group I"
+    ],
+    "whyItMatters": "Upcoming Group I match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-argentina-algeria-0616",
+    "title": "Argentina 3–0 Algeria",
+    "description": "Argentina beat Algeria 3–0 in Group J.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.67,
+    "tags": [
+      "world-cup-2026",
+      "group-j",
+      "argentina",
+      "algeria"
+    ],
+    "date": "2026-06-16",
+    "dateLabel": "June 16, 2026",
+    "status": "completed",
+    "entities": [
+      "Argentina",
+      "Algeria",
+      "Group J"
+    ],
+    "whyItMatters": "Scorers: Lionel Messi, Lionel Messi, Lionel Messi.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-austria-jordan-0616",
+    "title": "Austria 3–1 Jordan",
+    "description": "Austria beat Jordan 3–1 in Group J.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-j",
+      "austria",
+      "jordan"
+    ],
+    "date": "2026-06-16",
+    "dateLabel": "June 16, 2026",
+    "status": "completed",
+    "entities": [
+      "Austria",
+      "Jordan",
+      "Group J"
+    ],
+    "whyItMatters": "Scorers: Romano Schmid, Yazan Al-Arab, Marko Arnautovic, Ali Olwan.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-argentina-austria-0622",
+    "title": "Argentina 2–0 Austria",
+    "description": "Argentina beat Austria 2–0 in Group J.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-j",
+      "argentina",
+      "austria"
+    ],
+    "date": "2026-06-22",
+    "dateLabel": "June 22, 2026",
+    "status": "completed",
+    "entities": [
+      "Argentina",
+      "Austria",
+      "Group J"
+    ],
+    "whyItMatters": "Scorers: Lionel Messi, Lionel Messi.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-jordan-algeria-0622",
+    "title": "Jordan 1–2 Algeria",
+    "description": "Jordan lost to Algeria 1–2 in Group J.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-j",
+      "jordan",
+      "algeria"
+    ],
+    "date": "2026-06-22",
+    "dateLabel": "June 22, 2026",
+    "status": "completed",
+    "entities": [
+      "Jordan",
+      "Algeria",
+      "Group J"
+    ],
+    "whyItMatters": "Scorers: Nizar Al-Rashdan, Nadhir Benbouali, Amine Gouiri.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-algeria-austria-0627",
+    "title": "Algeria vs Austria",
+    "description": "Group J fixture: Algeria vs Austria, June 27, 2026 at Kansas City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-j",
+      "algeria",
+      "austria"
+    ],
+    "date": "2026-06-27",
+    "dateLabel": "June 27, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Algeria",
+      "Austria",
+      "Group J"
+    ],
+    "whyItMatters": "Upcoming Group J match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-jordan-argentina-0627",
+    "title": "Jordan vs Argentina",
+    "description": "Group J fixture: Jordan vs Argentina, June 27, 2026 at Dallas (Arlington).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-j",
+      "jordan",
+      "argentina"
+    ],
+    "date": "2026-06-27",
+    "dateLabel": "June 27, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Jordan",
+      "Argentina",
+      "Group J"
+    ],
+    "whyItMatters": "Upcoming Group J match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-portugal-dr-congo-0617",
+    "title": "Portugal 1–1 DR Congo",
+    "description": "Portugal drew DR Congo 1–1 in Group K.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-k",
+      "portugal",
+      "dr-congo"
+    ],
+    "date": "2026-06-17",
+    "dateLabel": "June 17, 2026",
+    "status": "completed",
+    "entities": [
+      "Portugal",
+      "DR Congo",
+      "Group K"
+    ],
+    "whyItMatters": "Scorers: João Neves, Yoane Wissa.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-uzbekistan-colombia-0617",
+    "title": "Uzbekistan 1–3 Colombia",
+    "description": "Uzbekistan lost to Colombia 1–3 in Group K.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-k",
+      "uzbekistan",
+      "colombia"
+    ],
+    "date": "2026-06-17",
+    "dateLabel": "June 17, 2026",
+    "status": "completed",
+    "entities": [
+      "Uzbekistan",
+      "Colombia",
+      "Group K"
+    ],
+    "whyItMatters": "Scorers: Abbosbek Fayzullaev, Daniel Muñoz, Luis Díaz, Jáminton Campaz.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-portugal-uzbekistan-0623",
+    "title": "Portugal 5–0 Uzbekistan",
+    "description": "Portugal beat Uzbekistan 5–0 in Group K.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.77,
+    "tags": [
+      "world-cup-2026",
+      "group-k",
+      "portugal",
+      "uzbekistan"
+    ],
+    "date": "2026-06-23",
+    "dateLabel": "June 23, 2026",
+    "status": "completed",
+    "entities": [
+      "Portugal",
+      "Uzbekistan",
+      "Group K"
+    ],
+    "whyItMatters": "Scorers: Cristiano Ronaldo, Nuno Mendes, Cristiano Ronaldo, Abduvohid Nematov, Rafael Leão.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-colombia-dr-congo-0623",
+    "title": "Colombia 1–0 DR Congo",
+    "description": "Colombia beat DR Congo 1–0 in Group K.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-k",
+      "colombia",
+      "dr-congo"
+    ],
+    "date": "2026-06-23",
+    "dateLabel": "June 23, 2026",
+    "status": "completed",
+    "entities": [
+      "Colombia",
+      "DR Congo",
+      "Group K"
+    ],
+    "whyItMatters": "Scorers: Daniel Muñoz.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-colombia-portugal-0627",
+    "title": "Colombia vs Portugal",
+    "description": "Group K fixture: Colombia vs Portugal, June 27, 2026 at Miami (Miami Gardens).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-k",
+      "colombia",
+      "portugal"
+    ],
+    "date": "2026-06-27",
+    "dateLabel": "June 27, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Colombia",
+      "Portugal",
+      "Group K"
+    ],
+    "whyItMatters": "Upcoming Group K match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-dr-congo-uzbekistan-0627",
+    "title": "DR Congo vs Uzbekistan",
+    "description": "Group K fixture: DR Congo vs Uzbekistan, June 27, 2026 at Atlanta.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-k",
+      "dr-congo",
+      "uzbekistan"
+    ],
+    "date": "2026-06-27",
+    "dateLabel": "June 27, 2026",
+    "status": "scheduled",
+    "entities": [
+      "DR Congo",
+      "Uzbekistan",
+      "Group K"
+    ],
+    "whyItMatters": "Upcoming Group K match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-england-croatia-0617",
+    "title": "England 4–2 Croatia",
+    "description": "England beat Croatia 4–2 in Group L.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup-2026",
+      "group-l",
+      "england",
+      "croatia"
+    ],
+    "date": "2026-06-17",
+    "dateLabel": "June 17, 2026",
+    "status": "completed",
+    "entities": [
+      "England",
+      "Croatia",
+      "Group L"
+    ],
+    "whyItMatters": "Scorers: Harry Kane, Harry Kane, Jude Bellingham, Marcus Rashford, Martin Baturina, Petar Musa.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-ghana-panama-0617",
+    "title": "Ghana 1–0 Panama",
+    "description": "Ghana beat Panama 1–0 in Group L.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-l",
+      "ghana",
+      "panama"
+    ],
+    "date": "2026-06-17",
+    "dateLabel": "June 17, 2026",
+    "status": "completed",
+    "entities": [
+      "Ghana",
+      "Panama",
+      "Group L"
+    ],
+    "whyItMatters": "Scorers: Caleb Yirenkyi.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-england-ghana-0623",
+    "title": "England 0–0 Ghana",
+    "description": "England drew Ghana 0–0 in Group L.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "group-l",
+      "england",
+      "ghana"
+    ],
+    "date": "2026-06-23",
+    "dateLabel": "June 23, 2026",
+    "status": "completed",
+    "entities": [
+      "England",
+      "Ghana",
+      "Group L"
+    ],
+    "whyItMatters": "Full-time 0–0 at Boston (Foxborough).",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-panama-croatia-0623",
+    "title": "Panama 0–1 Croatia",
+    "description": "Panama lost to Croatia 0–1 in Group L.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "group-l",
+      "panama",
+      "croatia"
+    ],
+    "date": "2026-06-23",
+    "dateLabel": "June 23, 2026",
+    "status": "completed",
+    "entities": [
+      "Panama",
+      "Croatia",
+      "Group L"
+    ],
+    "whyItMatters": "Scorers: Ante Budimir.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-panama-england-0627",
+    "title": "Panama vs England",
+    "description": "Group L fixture: Panama vs England, June 27, 2026 at New York/New Jersey (East Rutherford).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-l",
+      "panama",
+      "england"
+    ],
+    "date": "2026-06-27",
+    "dateLabel": "June 27, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Panama",
+      "England",
+      "Group L"
+    ],
+    "whyItMatters": "Upcoming Group L match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-croatia-ghana-0627",
+    "title": "Croatia vs Ghana",
+    "description": "Group L fixture: Croatia vs Ghana, June 27, 2026 at Philadelphia.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "group-l",
+      "croatia",
+      "ghana"
+    ],
+    "date": "2026-06-27",
+    "dateLabel": "June 27, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Croatia",
+      "Ghana",
+      "Group L"
+    ],
+    "whyItMatters": "Upcoming Group L match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-2a-2b-0628",
+    "title": "2A vs 2B",
+    "description": "Round of 32 fixture: 2A vs 2B, June 28, 2026 at Los Angeles (Inglewood).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "2a",
+      "2b"
+    ],
+    "date": "2026-06-28",
+    "dateLabel": "June 28, 2026",
+    "status": "scheduled",
+    "entities": [
+      "2A",
+      "2B",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-germany-3a-b-c-d-f-0629",
+    "title": "Germany vs 3A/B/C/D/F",
+    "description": "Round of 32 fixture: Germany vs 3A/B/C/D/F, June 29, 2026 at Boston (Foxborough).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "germany",
+      "3a-b-c-d-f"
+    ],
+    "date": "2026-06-29",
+    "dateLabel": "June 29, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Germany",
+      "3A/B/C/D/F",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1f-2c-0629",
+    "title": "1F vs 2C",
+    "description": "Round of 32 fixture: 1F vs 2C, June 29, 2026 at Monterrey (Guadalupe).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1f",
+      "2c"
+    ],
+    "date": "2026-06-29",
+    "dateLabel": "June 29, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1F",
+      "2C",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1c-2f-0629",
+    "title": "1C vs 2F",
+    "description": "Round of 32 fixture: 1C vs 2F, June 29, 2026 at Houston.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1c",
+      "2f"
+    ],
+    "date": "2026-06-29",
+    "dateLabel": "June 29, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1C",
+      "2F",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1i-3c-d-f-g-h-0630",
+    "title": "1I vs 3C/D/F/G/H",
+    "description": "Round of 32 fixture: 1I vs 3C/D/F/G/H, June 30, 2026 at New York/New Jersey (East Rutherford).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1i",
+      "3c-d-f-g-h"
+    ],
+    "date": "2026-06-30",
+    "dateLabel": "June 30, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1I",
+      "3C/D/F/G/H",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-2e-2i-0630",
+    "title": "2E vs 2I",
+    "description": "Round of 32 fixture: 2E vs 2I, June 30, 2026 at Dallas (Arlington).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "2e",
+      "2i"
+    ],
+    "date": "2026-06-30",
+    "dateLabel": "June 30, 2026",
+    "status": "scheduled",
+    "entities": [
+      "2E",
+      "2I",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-mexico-3c-e-f-h-i-0630",
+    "title": "Mexico vs 3C/E/F/H/I",
+    "description": "Round of 32 fixture: Mexico vs 3C/E/F/H/I, June 30, 2026 at Mexico City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "mexico",
+      "3c-e-f-h-i"
+    ],
+    "date": "2026-06-30",
+    "dateLabel": "June 30, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Mexico",
+      "3C/E/F/H/I",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1l-3e-h-i-j-k-0701",
+    "title": "1L vs 3E/H/I/J/K",
+    "description": "Round of 32 fixture: 1L vs 3E/H/I/J/K, July 1, 2026 at Atlanta.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1l",
+      "3e-h-i-j-k"
+    ],
+    "date": "2026-07-01",
+    "dateLabel": "July 1, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1L",
+      "3E/H/I/J/K",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-usa-3b-e-f-i-j-0701",
+    "title": "USA vs 3B/E/F/I/J",
+    "description": "Round of 32 fixture: USA vs 3B/E/F/I/J, July 1, 2026 at San Francisco Bay Area (Santa Clara).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "usa",
+      "3b-e-f-i-j"
+    ],
+    "date": "2026-07-01",
+    "dateLabel": "July 1, 2026",
+    "status": "scheduled",
+    "entities": [
+      "USA",
+      "3B/E/F/I/J",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1g-3a-e-h-i-j-0701",
+    "title": "1G vs 3A/E/H/I/J",
+    "description": "Round of 32 fixture: 1G vs 3A/E/H/I/J, July 1, 2026 at Seattle.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1g",
+      "3a-e-h-i-j"
+    ],
+    "date": "2026-07-01",
+    "dateLabel": "July 1, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1G",
+      "3A/E/H/I/J",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-2k-2l-0702",
+    "title": "2K vs 2L",
+    "description": "Round of 32 fixture: 2K vs 2L, July 2, 2026 at Toronto.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "2k",
+      "2l"
+    ],
+    "date": "2026-07-02",
+    "dateLabel": "July 2, 2026",
+    "status": "scheduled",
+    "entities": [
+      "2K",
+      "2L",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1h-2j-0702",
+    "title": "1H vs 2J",
+    "description": "Round of 32 fixture: 1H vs 2J, July 2, 2026 at Los Angeles (Inglewood).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1h",
+      "2j"
+    ],
+    "date": "2026-07-02",
+    "dateLabel": "July 2, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1H",
+      "2J",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1b-3e-f-g-i-j-0702",
+    "title": "1B vs 3E/F/G/I/J",
+    "description": "Round of 32 fixture: 1B vs 3E/F/G/I/J, July 2, 2026 at Vancouver.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1b",
+      "3e-f-g-i-j"
+    ],
+    "date": "2026-07-02",
+    "dateLabel": "July 2, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1B",
+      "3E/F/G/I/J",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1j-2h-0703",
+    "title": "1J vs 2H",
+    "description": "Round of 32 fixture: 1J vs 2H, July 3, 2026 at Miami (Miami Gardens).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1j",
+      "2h"
+    ],
+    "date": "2026-07-03",
+    "dateLabel": "July 3, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1J",
+      "2H",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-1k-3d-e-i-j-l-0703",
+    "title": "1K vs 3D/E/I/J/L",
+    "description": "Round of 32 fixture: 1K vs 3D/E/I/J/L, July 3, 2026 at Kansas City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "1k",
+      "3d-e-i-j-l"
+    ],
+    "date": "2026-07-03",
+    "dateLabel": "July 3, 2026",
+    "status": "scheduled",
+    "entities": [
+      "1K",
+      "3D/E/I/J/L",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-2d-2g-0703",
+    "title": "2D vs 2G",
+    "description": "Round of 32 fixture: 2D vs 2G, July 3, 2026 at Dallas (Arlington).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-32",
+      "2d",
+      "2g"
+    ],
+    "date": "2026-07-03",
+    "dateLabel": "July 3, 2026",
+    "status": "scheduled",
+    "entities": [
+      "2D",
+      "2G",
+      "Round of 32"
+    ],
+    "whyItMatters": "Upcoming Round of 32 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w74-w77-0704",
+    "title": "W74 vs W77",
+    "description": "Round of 16 fixture: W74 vs W77, July 4, 2026 at Philadelphia.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w74",
+      "w77"
+    ],
+    "date": "2026-07-04",
+    "dateLabel": "July 4, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W74",
+      "W77",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w73-w75-0704",
+    "title": "W73 vs W75",
+    "description": "Round of 16 fixture: W73 vs W75, July 4, 2026 at Houston.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w73",
+      "w75"
+    ],
+    "date": "2026-07-04",
+    "dateLabel": "July 4, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W73",
+      "W75",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w76-w78-0705",
+    "title": "W76 vs W78",
+    "description": "Round of 16 fixture: W76 vs W78, July 5, 2026 at New York/New Jersey (East Rutherford).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w76",
+      "w78"
+    ],
+    "date": "2026-07-05",
+    "dateLabel": "July 5, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W76",
+      "W78",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w79-w80-0705",
+    "title": "W79 vs W80",
+    "description": "Round of 16 fixture: W79 vs W80, July 5, 2026 at Mexico City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w79",
+      "w80"
+    ],
+    "date": "2026-07-05",
+    "dateLabel": "July 5, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W79",
+      "W80",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w83-w84-0706",
+    "title": "W83 vs W84",
+    "description": "Round of 16 fixture: W83 vs W84, July 6, 2026 at Dallas (Arlington).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w83",
+      "w84"
+    ],
+    "date": "2026-07-06",
+    "dateLabel": "July 6, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W83",
+      "W84",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w81-w82-0706",
+    "title": "W81 vs W82",
+    "description": "Round of 16 fixture: W81 vs W82, July 6, 2026 at Seattle.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w81",
+      "w82"
+    ],
+    "date": "2026-07-06",
+    "dateLabel": "July 6, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W81",
+      "W82",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w86-w88-0707",
+    "title": "W86 vs W88",
+    "description": "Round of 16 fixture: W86 vs W88, July 7, 2026 at Atlanta.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w86",
+      "w88"
+    ],
+    "date": "2026-07-07",
+    "dateLabel": "July 7, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W86",
+      "W88",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w85-w87-0707",
+    "title": "W85 vs W87",
+    "description": "Round of 16 fixture: W85 vs W87, July 7, 2026 at Vancouver.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "round-of-16",
+      "w85",
+      "w87"
+    ],
+    "date": "2026-07-07",
+    "dateLabel": "July 7, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W85",
+      "W87",
+      "Round of 16"
+    ],
+    "whyItMatters": "Upcoming Round of 16 match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w89-w90-0709",
+    "title": "W89 vs W90",
+    "description": "Quarter-final fixture: W89 vs W90, July 9, 2026 at Boston (Foxborough).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "w89",
+      "w90"
+    ],
+    "date": "2026-07-09",
+    "dateLabel": "July 9, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W89",
+      "W90",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Upcoming Quarter-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w93-w94-0710",
+    "title": "W93 vs W94",
+    "description": "Quarter-final fixture: W93 vs W94, July 10, 2026 at Los Angeles (Inglewood).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "w93",
+      "w94"
+    ],
+    "date": "2026-07-10",
+    "dateLabel": "July 10, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W93",
+      "W94",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Upcoming Quarter-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w91-w92-0711",
+    "title": "W91 vs W92",
+    "description": "Quarter-final fixture: W91 vs W92, July 11, 2026 at Miami (Miami Gardens).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "w91",
+      "w92"
+    ],
+    "date": "2026-07-11",
+    "dateLabel": "July 11, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W91",
+      "W92",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Upcoming Quarter-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w95-w96-0711",
+    "title": "W95 vs W96",
+    "description": "Quarter-final fixture: W95 vs W96, July 11, 2026 at Kansas City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "w95",
+      "w96"
+    ],
+    "date": "2026-07-11",
+    "dateLabel": "July 11, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W95",
+      "W96",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Upcoming Quarter-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w97-w98-0714",
+    "title": "W97 vs W98",
+    "description": "Semi-final fixture: W97 vs W98, July 14, 2026 at Dallas (Arlington).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "semi-final",
+      "w97",
+      "w98"
+    ],
+    "date": "2026-07-14",
+    "dateLabel": "July 14, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W97",
+      "W98",
+      "Semi-final"
+    ],
+    "whyItMatters": "Upcoming Semi-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w99-w100-0715",
+    "title": "W99 vs W100",
+    "description": "Semi-final fixture: W99 vs W100, July 15, 2026 at Atlanta.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "semi-final",
+      "w99",
+      "w100"
+    ],
+    "date": "2026-07-15",
+    "dateLabel": "July 15, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W99",
+      "W100",
+      "Semi-final"
+    ],
+    "whyItMatters": "Upcoming Semi-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-l101-l102-0718",
+    "title": "L101 vs L102",
+    "description": "Match for third place fixture: L101 vs L102, July 18, 2026 at Miami (Miami Gardens).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "match-for-third-place",
+      "l101",
+      "l102"
+    ],
+    "date": "2026-07-18",
+    "dateLabel": "July 18, 2026",
+    "status": "scheduled",
+    "entities": [
+      "L101",
+      "L102",
+      "Match for third place"
+    ],
+    "whyItMatters": "Upcoming Match for third place match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-w101-w102-0719",
+    "title": "W101 vs W102",
+    "description": "Final fixture: W101 vs W102, July 19, 2026 at New York/New Jersey (East Rutherford).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "final",
+      "w101",
+      "w102"
+    ],
+    "date": "2026-07-19",
+    "dateLabel": "July 19, 2026",
+    "status": "scheduled",
+    "entities": [
+      "W101",
+      "W102",
+      "Final"
+    ],
+    "whyItMatters": "Upcoming Final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   }
 ]

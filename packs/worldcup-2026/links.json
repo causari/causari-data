@@ -1,74 +1,106 @@
 [
   {
-    "id": "wc2026-brazil-draws-morocco--accelerated-->wc2026-brazil-beats-haiti",
-    "fromEvent": "wc2026-brazil-draws-morocco",
-    "toEvent": "wc2026-brazil-beats-haiti",
+    "id": "wc2026-switzerland-bosnia-and-herzegovina-0618--accelerated-->wc2026-switzerland-canada-0624",
+    "fromEvent": "wc2026-switzerland-bosnia-and-herzegovina-0618",
+    "toEvent": "wc2026-switzerland-canada-0624",
     "relationship": "accelerated",
-    "confidence": 0.72,
-    "evidence": "Brazil's opening draw made the Haiti match more important for restoring momentum and goal difference. The later 3-0 win directly answered the pressure created by the draw."
+    "confidence": 0.62,
+    "evidence": "Switzerland's 4–1 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
-    "id": "wc2026-brazil-beats-haiti--enabled-->wc2026-scotland-vs-brazil",
-    "fromEvent": "wc2026-brazil-beats-haiti",
-    "toEvent": "wc2026-scotland-vs-brazil",
-    "relationship": "enabled",
-    "confidence": 0.7,
-    "evidence": "Brazil's recovery win kept them in contention and set up the final group fixture against Scotland as the decider for top spot."
-  },
-  {
-    "id": "wc2026-argentina-beats-algeria--enabled-->wc2026-argentina-beats-austria",
-    "fromEvent": "wc2026-argentina-beats-algeria",
-    "toEvent": "wc2026-argentina-beats-austria",
-    "relationship": "enabled",
-    "confidence": 0.74,
-    "evidence": "Argentina's first clean win reduced pressure and allowed a controlled second performance. The Austria win built on the stability created against Algeria."
-  },
-  {
-    "id": "wc2026-argentina-beats-austria--enabled-->wc2026-argentina-vs-jordan",
-    "fromEvent": "wc2026-argentina-beats-austria",
-    "toEvent": "wc2026-argentina-vs-jordan",
-    "relationship": "enabled",
-    "confidence": 0.68,
-    "evidence": "Two clean wins put Argentina in command of Group J, turning the final Jordan fixture into a chance to seal top spot and rotate ahead of the knockouts."
-  },
-  {
-    "id": "wc2026-germany-routs-curacao--accelerated-->wc2026-germany-vs-ivory-coast",
-    "fromEvent": "wc2026-germany-routs-curacao",
-    "toEvent": "wc2026-germany-vs-ivory-coast",
+    "id": "wc2026-canada-qatar-0618--accelerated-->wc2026-switzerland-canada-0624",
+    "fromEvent": "wc2026-canada-qatar-0618",
+    "toEvent": "wc2026-switzerland-canada-0624",
     "relationship": "accelerated",
-    "confidence": 0.66,
-    "evidence": "A 7-1 result raised expectations and made the following Ivory Coast match the real test of whether Germany's form was genuine or flattered by a weak opener."
+    "confidence": 0.62,
+    "evidence": "Canada's 6–0 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
-    "id": "wc2026-canada-routs-qatar--accelerated-->wc2026-switzerland-vs-canada",
-    "fromEvent": "wc2026-canada-routs-qatar",
-    "toEvent": "wc2026-switzerland-vs-canada",
+    "id": "wc2026-brazil-haiti-0619--accelerated-->wc2026-scotland-brazil-0624",
+    "fromEvent": "wc2026-brazil-haiti-0619",
+    "toEvent": "wc2026-scotland-brazil-0624",
     "relationship": "accelerated",
-    "confidence": 0.68,
-    "evidence": "Canada's heavy win raised their perceived ceiling and set up the Switzerland fixture as the first real test of their dark-horse credibility against seeded opposition."
+    "confidence": 0.62,
+    "evidence": "Brazil's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
-    "id": "wc2026-japan-beats-tunisia--accelerated-->wc2026-japan-vs-sweden",
-    "fromEvent": "wc2026-japan-beats-tunisia",
-    "toEvent": "wc2026-japan-vs-sweden",
+    "id": "wc2026-usa-paraguay-0612--accelerated-->wc2026-usa-australia-0619",
+    "fromEvent": "wc2026-usa-paraguay-0612",
+    "toEvent": "wc2026-usa-australia-0619",
     "relationship": "accelerated",
-    "confidence": 0.67,
-    "evidence": "Japan's dominant 4-0 win strengthened their tournament narrative and made the Sweden fixture a measure of their true ceiling against a traditional power."
+    "confidence": 0.62,
+    "evidence": "USA's 4–1 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
-    "id": "wc2026-portugal-draws-dr-congo--accelerated-->wc2026-portugal-vs-colombia",
-    "fromEvent": "wc2026-portugal-draws-dr-congo",
-    "toEvent": "wc2026-portugal-vs-colombia",
+    "id": "wc2026-germany-curacao-0614--accelerated-->wc2026-germany-ivory-coast-0620",
+    "fromEvent": "wc2026-germany-curacao-0614",
+    "toEvent": "wc2026-germany-ivory-coast-0620",
     "relationship": "accelerated",
-    "confidence": 0.76,
-    "evidence": "Portugal's opening draw raised the stakes of the Colombia head-to-head because they could no longer rely on a perfect start to control the group."
+    "confidence": 0.62,
+    "evidence": "Germany's 7–1 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
-    "id": "wc2026-colombia-beats-uzbekistan--accelerated-->wc2026-portugal-vs-colombia",
-    "fromEvent": "wc2026-colombia-beats-uzbekistan",
-    "toEvent": "wc2026-portugal-vs-colombia",
+    "id": "wc2026-sweden-tunisia-0614--accelerated-->wc2026-netherlands-sweden-0620",
+    "fromEvent": "wc2026-sweden-tunisia-0614",
+    "toEvent": "wc2026-netherlands-sweden-0620",
     "relationship": "accelerated",
-    "confidence": 0.73,
-    "evidence": "Colombia's win created a direct table contrast with Portugal's draw, turning their head-to-head into a contest for group control rather than routine qualification."
+    "confidence": 0.62,
+    "evidence": "Sweden's 5–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-netherlands-sweden-0620--accelerated-->wc2026-tunisia-netherlands-0625",
+    "fromEvent": "wc2026-netherlands-sweden-0620",
+    "toEvent": "wc2026-tunisia-netherlands-0625",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Netherlands's 5–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-tunisia-japan-0620--accelerated-->wc2026-japan-sweden-0625",
+    "fromEvent": "wc2026-tunisia-japan-0620",
+    "toEvent": "wc2026-japan-sweden-0625",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Japan's 0–4 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-spain-saudi-arabia-0621--accelerated-->wc2026-uruguay-spain-0626",
+    "fromEvent": "wc2026-spain-saudi-arabia-0621",
+    "toEvent": "wc2026-uruguay-spain-0626",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Spain's 4–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-iraq-norway-0616--accelerated-->wc2026-norway-senegal-0622",
+    "fromEvent": "wc2026-iraq-norway-0616",
+    "toEvent": "wc2026-norway-senegal-0622",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Norway's 1–4 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-france-iraq-0622--accelerated-->wc2026-norway-france-0626",
+    "fromEvent": "wc2026-france-iraq-0622",
+    "toEvent": "wc2026-norway-france-0626",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "France's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-argentina-algeria-0616--accelerated-->wc2026-argentina-austria-0622",
+    "fromEvent": "wc2026-argentina-algeria-0616",
+    "toEvent": "wc2026-argentina-austria-0622",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Argentina's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-portugal-uzbekistan-0623--accelerated-->wc2026-colombia-portugal-0627",
+    "fromEvent": "wc2026-portugal-uzbekistan-0623",
+    "toEvent": "wc2026-colombia-portugal-0627",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Portugal's 5–0 win was a statement result and a goal-difference cushion heading into the next fixture."
   }
 ]
