@@ -1,5 +1,13 @@
 [
   {
+    "id": "wc2026-czech-republic-mexico-0624--accelerated-->wc2026-mexico-3c-e-f-h-i-0630",
+    "fromEvent": "wc2026-czech-republic-mexico-0624",
+    "toEvent": "wc2026-mexico-3c-e-f-h-i-0630",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Mexico's 0–3 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
     "id": "wc2026-switzerland-bosnia-and-herzegovina-0618--accelerated-->wc2026-switzerland-canada-0624",
     "fromEvent": "wc2026-switzerland-bosnia-and-herzegovina-0618",
     "toEvent": "wc2026-switzerland-canada-0624",

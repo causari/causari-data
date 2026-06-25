@@ -141,8 +141,8 @@
   },
   {
     "id": "wc2026-czech-republic-mexico-0624",
-    "title": "Czech Republic vs Mexico",
-    "description": "Group A fixture: Czech Republic vs Mexico, June 24, 2026 at Mexico City.",
+    "title": "Czech Republic 0–3 Mexico",
+    "description": "Czech Republic lost to Mexico 0–3 in Group A.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -150,7 +150,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "group-a",
@@ -159,13 +159,13 @@
     ],
     "date": "2026-06-24",
     "dateLabel": "June 24, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Czech Republic",
       "Mexico",
       "Group A"
     ],
-    "whyItMatters": "Upcoming Group A match.",
+    "whyItMatters": "Scorers: Mateo Chávez, Julián Quiñones, Álvaro Fidalgo.",
     "sources": [
       {
         "type": "open-data",
@@ -176,8 +176,8 @@
   },
   {
     "id": "wc2026-south-africa-south-korea-0624",
-    "title": "South Africa vs South Korea",
-    "description": "Group A fixture: South Africa vs South Korea, June 24, 2026 at Monterrey (Guadalupe).",
+    "title": "South Africa 1–0 South Korea",
+    "description": "South Africa beat South Korea 1–0 in Group A.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -185,7 +185,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "group-a",
@@ -194,13 +194,13 @@
     ],
     "date": "2026-06-24",
     "dateLabel": "June 24, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "South Africa",
       "South Korea",
       "Group A"
     ],
-    "whyItMatters": "Upcoming Group A match.",
+    "whyItMatters": "Scorers: Thapelo Maseko.",
     "sources": [
       {
         "type": "open-data",
@@ -305,7 +305,7 @@
       "Bosnia & Herzegovina",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Johan Manzambi, Rubén Vargas, Johan Manzambi, Granit Xhaka, Ermin Mahmic.",
+    "whyItMatters": "Scorers: Johan Manzambi, Johan Manzambi, Rubén Vargas, Granit Xhaka, Ermin Mahmic.",
     "sources": [
       {
         "type": "open-data",
@@ -351,8 +351,8 @@
   },
   {
     "id": "wc2026-switzerland-canada-0624",
-    "title": "Switzerland vs Canada",
-    "description": "Group B fixture: Switzerland vs Canada, June 24, 2026 at Vancouver.",
+    "title": "Switzerland 2–1 Canada",
+    "description": "Switzerland beat Canada 2–1 in Group B.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -360,7 +360,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "group-b",
@@ -369,13 +369,13 @@
     ],
     "date": "2026-06-24",
     "dateLabel": "June 24, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Switzerland",
       "Canada",
       "Group B"
     ],
-    "whyItMatters": "Upcoming Group B match.",
+    "whyItMatters": "Scorers: Rubén Vargas, Johan Manzambi, Promise David.",
     "sources": [
       {
         "type": "open-data",
@@ -386,8 +386,8 @@
   },
   {
     "id": "wc2026-bosnia-and-herzegovina-qatar-0624",
-    "title": "Bosnia & Herzegovina vs Qatar",
-    "description": "Group B fixture: Bosnia & Herzegovina vs Qatar, June 24, 2026 at Seattle.",
+    "title": "Bosnia & Herzegovina 3–1 Qatar",
+    "description": "Bosnia & Herzegovina beat Qatar 3–1 in Group B.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -395,7 +395,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "group-b",
@@ -404,13 +404,13 @@
     ],
     "date": "2026-06-24",
     "dateLabel": "June 24, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Bosnia & Herzegovina",
       "Qatar",
       "Group B"
     ],
-    "whyItMatters": "Upcoming Group B match.",
+    "whyItMatters": "Scorers: Kerim Alajbegovic, Mahmoud Abunada, Ermin Mahmic, Hassan Al-Haydos.",
     "sources": [
       {
         "type": "open-data",
@@ -561,8 +561,8 @@
   },
   {
     "id": "wc2026-scotland-brazil-0624",
-    "title": "Scotland vs Brazil",
-    "description": "Group C fixture: Scotland vs Brazil, June 24, 2026 at Miami (Miami Gardens).",
+    "title": "Scotland 0–3 Brazil",
+    "description": "Scotland lost to Brazil 0–3 in Group C.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -570,7 +570,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "group-c",
@@ -579,13 +579,13 @@
     ],
     "date": "2026-06-24",
     "dateLabel": "June 24, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Scotland",
       "Brazil",
       "Group C"
     ],
-    "whyItMatters": "Upcoming Group C match.",
+    "whyItMatters": "Scorers: Vinícius Júnior, Vinícius Júnior, Matheus Cunha.",
     "sources": [
       {
         "type": "open-data",
@@ -596,8 +596,8 @@
   },
   {
     "id": "wc2026-morocco-haiti-0624",
-    "title": "Morocco vs Haiti",
-    "description": "Group C fixture: Morocco vs Haiti, June 24, 2026 at Atlanta.",
+    "title": "Morocco 4–2 Haiti",
+    "description": "Morocco beat Haiti 4–2 in Group C.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -605,7 +605,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "group-c",
@@ -614,13 +614,13 @@
     ],
     "date": "2026-06-24",
     "dateLabel": "June 24, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Morocco",
       "Haiti",
       "Group C"
     ],
-    "whyItMatters": "Upcoming Group C match.",
+    "whyItMatters": "Scorers: Achraf Hakimi, Ismael Saibari, Soufiane Rahimi, Gessime Yassine, Yassine Bounou, Wilson Isidor.",
     "sources": [
       {
         "type": "open-data",
@@ -1110,7 +1110,7 @@
       "Tunisia",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Yasin Ayari, Alexander Isak, Viktor Gyökeres, Mattias Svanberg, Yasin Ayari, Omar Rekik.",
+    "whyItMatters": "Scorers: Yasin Ayari, Yasin Ayari, Alexander Isak, Viktor Gyökeres, Mattias Svanberg, Omar Rekik.",
     "sources": [
       {
         "type": "open-data",
@@ -1180,7 +1180,7 @@
       "Japan",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Daichi Kamada, Ayase Ueda, Junya Ito, Ayase Ueda.",
+    "whyItMatters": "Scorers: Daichi Kamada, Ayase Ueda, Ayase Ueda, Junya Ito.",
     "sources": [
       {
         "type": "open-data",
@@ -1705,7 +1705,7 @@
       "Senegal",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Kylian Mbappé, Bradley Barcola, Kylian Mbappé, Ibrahim Mbaye.",
+    "whyItMatters": "Scorers: Kylian Mbappé, Kylian Mbappé, Bradley Barcola, Ibrahim Mbaye.",
     "sources": [
       {
         "type": "open-data",
@@ -2195,7 +2195,7 @@
       "Uzbekistan",
       "Group K"
     ],
-    "whyItMatters": "Scorers: Cristiano Ronaldo, Nuno Mendes, Cristiano Ronaldo, Abduvohid Nematov, Rafael Leão.",
+    "whyItMatters": "Scorers: Cristiano Ronaldo, Cristiano Ronaldo, Nuno Mendes, Abduvohid Nematov, Rafael Leão.",
     "sources": [
       {
         "type": "open-data",
