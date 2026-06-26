@@ -32,6 +32,14 @@
     "evidence": "Brazil's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
+    "id": "wc2026-scotland-brazil-0624--accelerated-->wc2026-brazil-2f-0629",
+    "fromEvent": "wc2026-scotland-brazil-0624",
+    "toEvent": "wc2026-brazil-2f-0629",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Brazil's 0–3 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
     "id": "wc2026-usa-paraguay-0612--accelerated-->wc2026-usa-australia-0619",
     "fromEvent": "wc2026-usa-paraguay-0612",
     "toEvent": "wc2026-usa-australia-0619",
