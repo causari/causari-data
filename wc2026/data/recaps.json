@@ -1,0 +1,162 @@
+{
+  "version": "0.1.0",
+  "title": "World Cup 2026 Causal Recap",
+  "description": "Daily Vietnamese recap data for the FIFA Men's World Cup 2026, structured for causal timeline visualization.",
+  "lastUpdated": "2026-06-27T20:15:00Z",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update once per completed match day.",
+  "focusTeams": ["Argentina", "Brazil", "Portugal"],
+  "recaps": [
+    {
+      "date": "2026-06-23",
+      "title": "Portugal respond, Colombia take control of Group K",
+      "summary": "Portugal recovered from their opening draw by beating Uzbekistan 5-0, while Colombia defeated DR Congo 1-0 to move into a commanding position in Group K. The day turned the final Colombia vs Portugal match into a direct fight for group control.",
+      "results": [
+        { "group": "K", "home": "Portugal", "away": "Uzbekistan", "homeScore": 5, "awayScore": 0, "status": "complete" },
+        { "group": "L", "home": "England", "away": "Ghana", "homeScore": 0, "awayScore": 0, "status": "complete" },
+        { "group": "L", "home": "Panama", "away": "Croatia", "homeScore": 0, "awayScore": 1, "status": "complete" },
+        { "group": "K", "home": "Colombia", "away": "DR Congo", "homeScore": 1, "awayScore": 0, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Portugal turned a pressure fixture into a confidence-restoring 5-0 win.",
+        "Colombia kept a perfect group-stage start alive and forced Portugal to chase the group lead.",
+        "England's draw with Ghana kept Group L tighter than expected."
+      ],
+      "tournamentImpact": [
+        "Group K shifted into a Colombia vs Portugal control race.",
+        "Portugal's goal difference recovered sharply after the DR Congo draw.",
+        "Croatia's win over Panama reopened the Group L qualification picture."
+      ],
+      "standoutPlayers": [
+        { "name": "Portugal attacking unit", "team": "Portugal", "note": "Turned a must-win game into a dominant margin." },
+        { "name": "Colombia defensive unit", "team": "Colombia", "note": "Protected a narrow win and strengthened Colombia's group control." }
+      ],
+      "focus": {
+        "Argentina": "Did not play. Remained in strong position after two clean wins.",
+        "Brazil": "Did not play. Still preparing for the decisive Group C closeout.",
+        "Portugal": "Main story of the day. The 5-0 win restored momentum and made Colombia vs Portugal a top watchpoint."
+      },
+      "watchNext": ["Brazil vs Scotland", "Switzerland vs Canada", "Mexico vs Czechia"],
+      "causalTimeline": [
+        { "from": "Portugal 1-1 DR Congo", "link": "accelerated", "to": "Portugal pressure fixture vs Uzbekistan" },
+        { "from": "Portugal 5-0 Uzbekistan", "link": "enabled", "to": "Portugal re-enters Group K control race" },
+        { "from": "Colombia 1-0 DR Congo", "link": "caused", "to": "Colombia vs Portugal becomes group-control match" }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "title": "Brazil settle Group C, Mexico and Switzerland finish strong",
+      "summary": "Brazil beat Scotland 3-0 to stabilize Group C after their early draw with Morocco. Morocco also beat Haiti 4-2, while Mexico and Switzerland closed their groups with wins.",
+      "results": [
+        { "group": "B", "home": "Switzerland", "away": "Canada", "homeScore": 2, "awayScore": 1, "status": "complete" },
+        { "group": "B", "home": "Bosnia and Herzegovina", "away": "Qatar", "homeScore": 3, "awayScore": 1, "status": "complete" },
+        { "group": "C", "home": "Scotland", "away": "Brazil", "homeScore": 0, "awayScore": 3, "status": "complete" },
+        { "group": "C", "home": "Morocco", "away": "Haiti", "homeScore": 4, "awayScore": 2, "status": "complete" },
+        { "group": "A", "home": "Czechia", "away": "Mexico", "homeScore": 0, "awayScore": 3, "status": "complete" },
+        { "group": "A", "home": "South Africa", "away": "South Korea", "homeScore": 1, "awayScore": 0, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Brazil answered the Group C pressure with a clean 3-0 win over Scotland.",
+        "Morocco confirmed their group-stage credibility with a 4-2 win over Haiti.",
+        "Mexico finished Group A with a convincing 3-0 win over Czechia."
+      ],
+      "tournamentImpact": [
+        "Brazil moved from questioned favorite to stabilized knockout contender.",
+        "Morocco became a dangerous non-favorite with real knockout upset potential.",
+        "Switzerland's win over Canada sharpened the Round of 32 picture."
+      ],
+      "standoutPlayers": [
+        { "name": "Brazil front line", "team": "Brazil", "note": "Converted pressure into a comfortable scoreline." },
+        { "name": "Morocco attacking unit", "team": "Morocco", "note": "Kept Morocco's high-momentum group campaign alive." }
+      ],
+      "focus": {
+        "Argentina": "Did not play. Still one of the cleanest early contenders.",
+        "Brazil": "Core story of the day. The Scotland win reduced doubts from the Morocco draw and set up Brazil's knockout route.",
+        "Portugal": "Did not play. Colombia remained the key Group K obstacle."
+      },
+      "watchNext": ["Ecuador vs Germany", "Japan vs Sweden", "Turkey vs United States"],
+      "causalTimeline": [
+        { "from": "Brazil 1-1 Morocco", "link": "accelerated", "to": "Brazil pressure vs Scotland" },
+        { "from": "Scotland 0-3 Brazil", "link": "enabled", "to": "Brazil knockout confidence restored" },
+        { "from": "Morocco 4-2 Haiti", "link": "accelerated", "to": "Morocco dark-horse narrative" }
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "title": "Ecuador shock Germany, Japan and Sweden survive",
+      "summary": "Ecuador produced one of the tournament's biggest group-stage surprises by beating Germany 2-1. In Group F, Japan and Sweden drew 1-1 while the Netherlands beat Tunisia 3-1.",
+      "results": [
+        { "group": "E", "home": "Ecuador", "away": "Germany", "homeScore": 2, "awayScore": 1, "status": "complete" },
+        { "group": "E", "home": "Curacao", "away": "Ivory Coast", "homeScore": 0, "awayScore": 2, "status": "complete" },
+        { "group": "F", "home": "Tunisia", "away": "Netherlands", "homeScore": 1, "awayScore": 3, "status": "complete" },
+        { "group": "F", "home": "Japan", "away": "Sweden", "homeScore": 1, "awayScore": 1, "status": "complete" },
+        { "group": "D", "home": "Turkey", "away": "United States", "homeScore": 3, "awayScore": 2, "status": "complete" },
+        { "group": "D", "home": "Paraguay", "away": "Australia", "homeScore": 0, "awayScore": 0, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Ecuador beat Germany 2-1 and created a major perception shift around Group E.",
+        "Japan's draw with Sweden kept both teams in the knockout conversation.",
+        "Turkey's win over the United States made Group D more chaotic."
+      ],
+      "tournamentImpact": [
+        "Germany remained a contender but lost some aura after the Ecuador defeat.",
+        "Brazil's likely Round of 32 path became clearer with Japan emerging from Group F.",
+        "The United States lost momentum despite previous strong results."
+      ],
+      "standoutPlayers": [
+        { "name": "Ecuador match winners", "team": "Ecuador", "note": "Turned an underdog fixture into one of the defining group-stage upsets." },
+        { "name": "Japan defensive block", "team": "Japan", "note": "Protected a draw that preserved knockout viability." }
+      ],
+      "focus": {
+        "Argentina": "Did not play. Their controlled campaign looked stronger as other contenders showed volatility.",
+        "Brazil": "Did not play, but Japan's result made Brazil vs Japan a major Round of 32 storyline.",
+        "Portugal": "Did not play. Still waiting for Colombia in a group-control match."
+      },
+      "watchNext": ["France vs Norway", "Spain vs Uruguay", "Belgium vs New Zealand"],
+      "causalTimeline": [
+        { "from": "Germany 7-1 Curacao", "link": "created", "to": "Germany high-expectation narrative" },
+        { "from": "Ecuador 2-1 Germany", "link": "prevented", "to": "Germany flawless group-stage narrative" },
+        { "from": "Japan 1-1 Sweden", "link": "enabled", "to": "Brazil vs Japan knockout watchpoint" }
+      ]
+    },
+    {
+      "date": "2026-06-26",
+      "title": "France go perfect, Belgium and Spain finish the job",
+      "summary": "France beat Norway 4-1 to finish Group I strongly, Belgium routed New Zealand 5-1, and Spain edged Uruguay 1-0. Cape Verde's draw with Saudi Arabia became one of the feel-good qualification stories of the group stage.",
+      "results": [
+        { "group": "I", "home": "Norway", "away": "France", "homeScore": 1, "awayScore": 4, "status": "complete" },
+        { "group": "I", "home": "Senegal", "away": "Iraq", "homeScore": 5, "awayScore": 0, "status": "complete" },
+        { "group": "H", "home": "Uruguay", "away": "Spain", "homeScore": 0, "awayScore": 1, "status": "complete" },
+        { "group": "H", "home": "Cape Verde", "away": "Saudi Arabia", "homeScore": 0, "awayScore": 0, "status": "complete" },
+        { "group": "G", "home": "New Zealand", "away": "Belgium", "homeScore": 1, "awayScore": 5, "status": "complete" },
+        { "group": "G", "home": "Egypt", "away": "Iran", "homeScore": 1, "awayScore": 1, "status": "complete" }
+      ],
+      "bigMoments": [
+        "France's 4-1 win over Norway reinforced them as one of the cleanest title contenders.",
+        "Belgium's 5-1 win over New Zealand arrived at exactly the right time.",
+        "Spain's 1-0 win over Uruguay protected their top-team profile, while Cape Verde stayed alive with a historic result."
+      ],
+      "tournamentImpact": [
+        "France joined Argentina among the most controlled early contenders.",
+        "Belgium repaired their group-stage narrative with a heavy win.",
+        "Spain advanced with less attacking flash but strong tournament management."
+      ],
+      "standoutPlayers": [
+        { "name": "France attack", "team": "France", "note": "Kept pressure high and turned a contender test into a statement." },
+        { "name": "Belgium veteran core", "team": "Belgium", "note": "Delivered when Belgium needed a convincing final group performance." },
+        { "name": "Cape Verde defensive unit", "team": "Cape Verde", "note": "Produced a result that preserved a historic knockout path." }
+      ],
+      "focus": {
+        "Argentina": "Did not play. France's form made Argentina's clean-sheet profile even more important in the title-race comparison.",
+        "Brazil": "Did not play. Brazil's likely knockout route now sits beside a field of strong European contenders.",
+        "Portugal": "Did not play. Colombia vs Portugal remained one of the final group-stage matches with major bracket implications."
+      },
+      "watchNext": ["Argentina vs Jordan", "Colombia vs Portugal", "England vs Panama"],
+      "causalTimeline": [
+        { "from": "France 4-1 Norway", "link": "accelerated", "to": "France top-tier contender status" },
+        { "from": "Belgium 5-1 New Zealand", "link": "enabled", "to": "Belgium narrative reset" },
+        { "from": "Cape Verde 0-0 Saudi Arabia", "link": "enabled", "to": "Cape Verde knockout story" }
+      ]
+    }
+  ]
+}
