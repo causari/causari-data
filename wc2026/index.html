@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Cup 2026 Causal Recap · Causari Data</title>
+  <meta name="description" content="Vietnamese causal recap dashboard for the FIFA World Cup 2026." />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #071016;
+      --panel: #0d1b24;
+      --panel-2: #102636;
+      --text: #e8f2f7;
+      --muted: #99adba;
+      --line: #244657;
+      --accent: #72f2c6;
+      --accent-2: #8cc8ff;
+      --warn: #ffd27a;
+      --danger: #ff9b9b;
+      --shadow: 0 18px 60px rgba(0, 0, 0, .35);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(114, 242, 198, .16), transparent 30rem),
+        radial-gradient(circle at top right, rgba(140, 200, 255, .14), transparent 26rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a { color: var(--accent-2); }
+    .shell { max-width: 1180px; margin: 0 auto; padding: 32px 20px 64px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(16, 38, 54, .92), rgba(13, 27, 36, .92));
+      border: 1px solid rgba(114, 242, 198, .16);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    .hero-main { padding: 28px; }
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    h1 { margin: 10px 0 8px; font-size: clamp(32px, 5vw, 60px); line-height: 1.02; }
+    .subtitle { color: var(--muted); max-width: 760px; font-size: 17px; }
+    .hero-side { padding: 22px; display: grid; gap: 12px; }
+    .metric {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(7, 16, 22, .35);
+    }
+    .metric-value { font-size: 28px; font-weight: 800; }
+    .metric-label { color: var(--muted); font-size: 13px; }
+
+    .layout { display: grid; grid-template-columns: 320px 1fr; gap: 20px; align-items: start; }
+    .sidebar { position: sticky; top: 16px; padding: 16px; }
+    .day-list { display: grid; gap: 10px; margin-top: 12px; }
+    .day-button {
+      border: 1px solid var(--line);
+      background: rgba(7, 16, 22, .36);
+      color: var(--text);
+      border-radius: 16px;
+      padding: 12px;
+      text-align: left;
+      cursor: pointer;
+      transition: .18s ease;
+      width: 100%;
+    }
+    .day-button:hover, .day-button.active {
+      border-color: rgba(114, 242, 198, .72);
+      background: rgba(114, 242, 198, .1);
+      transform: translateY(-1px);
+    }
+    .day-date { color: var(--accent); font-size: 12px; font-weight: 800; }
+    .day-title { font-weight: 750; margin-top: 4px; }
+
+    .content { display: grid; gap: 18px; }
+    .section { padding: 22px; }
+    .section h2 { margin: 0 0 12px; font-size: 22px; }
+    .summary { color: var(--muted); font-size: 16px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .result {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      background: rgba(7, 16, 22, .32);
+    }
+    .group { color: var(--accent); font-size: 12px; font-weight: 800; margin-bottom: 6px; }
+    .scoreline { display: flex; justify-content: space-between; gap: 8px; font-weight: 760; }
+    .score { color: var(--warn); }
+
+    .pill-list, .watch-list { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+    .pill-list li, .watch-list li {
+      border: 1px solid var(--line);
+      background: rgba(7, 16, 22, .34);
+      border-radius: 999px;
+      padding: 8px 11px;
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    .players { display: grid; gap: 10px; }
+    .player {
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(7, 16, 22, .32);
+    }
+    .player strong { color: var(--accent-2); }
+    .focus-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    .focus-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+      background: rgba(7, 16, 22, .32);
+    }
+    .focus-card h3 { margin: 0 0 8px; font-size: 16px; }
+    .focus-card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+    .timeline { position: relative; display: grid; gap: 12px; }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(var(--accent), var(--accent-2));
+      opacity: .55;
+    }
+    .edge {
+      position: relative;
+      padding: 12px 12px 12px 44px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(7, 16, 22, .34);
+    }
+    .edge::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 18px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 5px rgba(114, 242, 198, .12);
+    }
+    .edge-link { color: var(--warn); font-weight: 800; text-transform: uppercase; font-size: 12px; letter-spacing: .08em; }
+    .muted { color: var(--muted); }
+    .footer { color: var(--muted); margin-top: 24px; font-size: 13px; }
+    .error { color: var(--danger); }
+
+    @media (max-width: 880px) {
+      .hero, .layout, .grid, .focus-grid { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="card hero-main">
+        <div class="eyebrow">Causari Data · WC2026</div>
+        <h1>World Cup 2026 Causal Recap</h1>
+        <p class="subtitle">Bản tổng kết tiếng Việt theo hướng causal timeline: không chỉ biết tỷ số, mà hiểu kết quả đó làm thay đổi cục diện giải đấu như thế nào.</p>
+      </div>
+      <div class="card hero-side">
+        <div class="metric"><div class="metric-value" id="metric-days">—</div><div class="metric-label">ngày recap</div></div>
+        <div class="metric"><div class="metric-value" id="metric-results">—</div><div class="metric-label">trận đã ghi nhận</div></div>
+        <div class="metric"><div class="metric-value" id="metric-updated">—</div><div class="metric-label">lần cập nhật gần nhất</div></div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="card sidebar">
+        <strong>Ngày thi đấu</strong>
+        <div class="day-list" id="day-list"></div>
+      </aside>
+      <section class="content" id="content">
+        <div class="card section"><p class="muted">Đang tải dữ liệu recap…</p></div>
+      </section>
+    </section>
+
+    <footer class="footer">
+      Data lives in <code>wc2026/data/recaps.json</code>. Built for <a href="https://github.com/causari/causari-data">causari/causari-data</a>.
+    </footer>
+  </main>
+
+  <script>
+    const state = { data: null, selectedIndex: 0 };
+    const $ = (id) => document.getElementById(id);
+    const escapeHtml = (value = '') => String(value)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
+
+    function fmtDate(iso) {
+      if (!iso) return '—';
+      return new Intl.DateTimeFormat('vi-VN', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Ho_Chi_Minh' }).format(new Date(iso));
+    }
+
+    function renderMetrics(data) {
+      const recaps = data.recaps || [];
+      $('metric-days').textContent = recaps.length;
+      $('metric-results').textContent = recaps.reduce((sum, day) => sum + (day.results || []).length, 0);
+      $('metric-updated').textContent = fmtDate(data.lastUpdated);
+    }
+
+    function renderDayList(recaps) {
+      $('day-list').innerHTML = recaps.map((day, index) => `
+        <button class="day-button ${index === state.selectedIndex ? 'active' : ''}" data-index="${index}">
+          <div class="day-date">${escapeHtml(day.date)}</div>
+          <div class="day-title">${escapeHtml(day.title)}</div>
+        </button>
+      `).join('');
+
+      document.querySelectorAll('.day-button').forEach((button) => {
+        button.addEventListener('click', () => {
+          state.selectedIndex = Number(button.dataset.index);
+          render();
+        });
+      });
+    }
+
+    function renderResults(results = []) {
+      return `<div class="grid">${results.map((r) => `
+        <div class="result">
+          <div class="group">Bảng ${escapeHtml(r.group)}</div>
+          <div class="scoreline"><span>${escapeHtml(r.home)}</span><span class="score">${r.homeScore}–${r.awayScore}</span><span>${escapeHtml(r.away)}</span></div>
+        </div>
+      `).join('')}</div>`;
+    }
+
+    function renderList(items = [], className = 'pill-list') {
+      return `<ul class="${className}">${items.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+    }
+
+    function renderPlayers(players = []) {
+      return `<div class="players">${players.map((p) => `
+        <div class="player"><strong>${escapeHtml(p.name)}</strong> <span class="muted">· ${escapeHtml(p.team)}</span><br>${escapeHtml(p.note)}</div>
+      `).join('')}</div>`;
+    }
+
+    function renderFocus(focus = {}) {
+      return `<div class="focus-grid">${['Argentina', 'Brazil', 'Portugal'].map((team) => `
+        <div class="focus-card"><h3>${team}</h3><p>${escapeHtml(focus[team] || 'Không có cập nhật riêng trong ngày này.')}</p></div>
+      `).join('')}</div>`;
+    }
+
+    function renderTimeline(edges = []) {
+      return `<div class="timeline">${edges.map((edge) => `
+        <div class="edge">
+          <div>${escapeHtml(edge.from)}</div>
+          <div class="edge-link">${escapeHtml(edge.link)}</div>
+          <div>${escapeHtml(edge.to)}</div>
+        </div>
+      `).join('')}</div>`;
+    }
+
+    function renderContent(day) {
+      $('content').innerHTML = `
+        <article class="card section">
+          <div class="eyebrow">${escapeHtml(day.date)}</div>
+          <h2>${escapeHtml(day.title)}</h2>
+          <p class="summary">${escapeHtml(day.summary)}</p>
+        </article>
+        <section class="card section"><h2>Kết quả</h2>${renderResults(day.results)}</section>
+        <section class="card section"><h2>Khoảnh khắc lớn</h2>${renderList(day.bigMoments)}</section>
+        <section class="card section"><h2>Tác động cục diện</h2>${renderList(day.tournamentImpact)}</section>
+        <section class="card section"><h2>Cầu thủ / nhóm nổi bật</h2>${renderPlayers(day.standoutPlayers)}</section>
+        <section class="card section"><h2>Argentina · Brazil · Portugal</h2>${renderFocus(day.focus)}</section>
+        <section class="card section"><h2>Causal timeline</h2>${renderTimeline(day.causalTimeline)}</section>
+        <section class="card section"><h2>Ngày tới xem gì</h2>${renderList(day.watchNext, 'watch-list')}</section>
+      `;
+    }
+
+    function render() {
+      const recaps = state.data.recaps || [];
+      if (!recaps.length) {
+        $('content').innerHTML = '<div class="card section"><p class="muted">Chưa có recap nào.</p></div>';
+        return;
+      }
+      renderMetrics(state.data);
+      renderDayList(recaps);
+      renderContent(recaps[state.selectedIndex]);
+    }
+
+    fetch('./data/recaps.json', { cache: 'no-store' })
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      })
+      .then((data) => {
+        state.data = data;
+        state.selectedIndex = Math.max(0, (data.recaps || []).length - 1);
+        render();
+      })
+      .catch((error) => {
+        $('content').innerHTML = `<div class="card section"><p class="error">Không tải được dữ liệu recap: ${escapeHtml(error.message)}</p></div>`;
+      });
+  </script>
+</body>
+</html>
