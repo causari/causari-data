@@ -1401,8 +1401,8 @@
   },
   {
     "id": "wc2026-egypt-iran-0626",
-    "title": "Egypt vs Iran",
-    "description": "Group G fixture: Egypt vs Iran, June 26, 2026 at Seattle.",
+    "title": "Egypt 1–1 Iran",
+    "description": "Egypt drew Iran 1–1 in Group G.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -1410,7 +1410,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "group-g",
@@ -1419,13 +1419,13 @@
     ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Egypt",
       "Iran",
       "Group G"
     ],
-    "whyItMatters": "Upcoming Group G match.",
+    "whyItMatters": "Scorers: Mahmoud Saber, Ramin Rezaeian.",
     "sources": [
       {
         "type": "open-data",
@@ -1436,8 +1436,8 @@
   },
   {
     "id": "wc2026-new-zealand-belgium-0626",
-    "title": "New Zealand vs Belgium",
-    "description": "Group G fixture: New Zealand vs Belgium, June 26, 2026 at Vancouver.",
+    "title": "New Zealand 1–5 Belgium",
+    "description": "New Zealand lost to Belgium 1–5 in Group G.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -1445,7 +1445,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.72,
     "tags": [
       "world-cup-2026",
       "group-g",
@@ -1454,13 +1454,13 @@
     ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "New Zealand",
       "Belgium",
       "Group G"
     ],
-    "whyItMatters": "Upcoming Group G match.",
+    "whyItMatters": "Scorers: Elijah Just, Leandro Trossard, Leandro Trossard, Kevin De Bruyne, Romelu Lukaku, Alexis Saelemaekers.",
     "sources": [
       {
         "type": "open-data",
@@ -1611,8 +1611,8 @@
   },
   {
     "id": "wc2026-cape-verde-saudi-arabia-0626",
-    "title": "Cape Verde vs Saudi Arabia",
-    "description": "Group H fixture: Cape Verde vs Saudi Arabia, June 26, 2026 at Houston.",
+    "title": "Cape Verde 0–0 Saudi Arabia",
+    "description": "Cape Verde drew Saudi Arabia 0–0 in Group H.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -1620,7 +1620,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "group-h",
@@ -1629,13 +1629,13 @@
     ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Cape Verde",
       "Saudi Arabia",
       "Group H"
     ],
-    "whyItMatters": "Upcoming Group H match.",
+    "whyItMatters": "Full-time 0–0 at Houston.",
     "sources": [
       {
         "type": "open-data",
@@ -1646,8 +1646,8 @@
   },
   {
     "id": "wc2026-uruguay-spain-0626",
-    "title": "Uruguay vs Spain",
-    "description": "Group H fixture: Uruguay vs Spain, June 26, 2026 at Guadalajara (Zapopan).",
+    "title": "Uruguay 0–1 Spain",
+    "description": "Uruguay lost to Spain 0–1 in Group H.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -1655,7 +1655,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "group-h",
@@ -1664,13 +1664,13 @@
     ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Uruguay",
       "Spain",
       "Group H"
     ],
-    "whyItMatters": "Upcoming Group H match.",
+    "whyItMatters": "Scorers: Álex Baena.",
     "sources": [
       {
         "type": "open-data",
@@ -1821,8 +1821,8 @@
   },
   {
     "id": "wc2026-norway-france-0626",
-    "title": "Norway vs France",
-    "description": "Group I fixture: Norway vs France, June 26, 2026 at Boston (Foxborough).",
+    "title": "Norway 1–4 France",
+    "description": "Norway lost to France 1–4 in Group I.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -1830,7 +1830,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "group-i",
@@ -1839,13 +1839,13 @@
     ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Norway",
       "France",
       "Group I"
     ],
-    "whyItMatters": "Upcoming Group I match.",
+    "whyItMatters": "Scorers: Thelo Aasgaard, Ousmane Dembélé, Ousmane Dembélé, Ousmane Dembélé, Désiré Doué.",
     "sources": [
       {
         "type": "open-data",
@@ -1856,8 +1856,8 @@
   },
   {
     "id": "wc2026-senegal-iraq-0626",
-    "title": "Senegal vs Iraq",
-    "description": "Group I fixture: Senegal vs Iraq, June 26, 2026 at Toronto.",
+    "title": "Senegal 5–0 Iraq",
+    "description": "Senegal beat Iraq 5–0 in Group I.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -1865,7 +1865,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.77,
     "tags": [
       "world-cup-2026",
       "group-i",
@@ -1874,13 +1874,13 @@
     ],
     "date": "2026-06-26",
     "dateLabel": "June 26, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Senegal",
       "Iraq",
       "Group I"
     ],
-    "whyItMatters": "Upcoming Group I match.",
+    "whyItMatters": "Scorers: Habib Diarra, Ismaïla Sarr, Pape Gueye, Pape Gueye, Iliman Ndiaye.",
     "sources": [
       {
         "type": "open-data",
@@ -2590,9 +2590,9 @@
     ]
   },
   {
-    "id": "wc2026-1f-morocco-0629",
-    "title": "1F vs Morocco",
-    "description": "Round of 32 fixture: 1F vs Morocco, June 29, 2026 at Monterrey (Guadalupe).",
+    "id": "wc2026-netherlands-morocco-0629",
+    "title": "Netherlands vs Morocco",
+    "description": "Round of 32 fixture: Netherlands vs Morocco, June 29, 2026 at Monterrey (Guadalupe).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2604,14 +2604,14 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1f",
+      "netherlands",
       "morocco"
     ],
     "date": "2026-06-29",
     "dateLabel": "June 29, 2026",
     "status": "scheduled",
     "entities": [
-      "1F",
+      "Netherlands",
       "Morocco",
       "Round of 32"
     ],
@@ -2625,9 +2625,9 @@
     ]
   },
   {
-    "id": "wc2026-brazil-2f-0629",
-    "title": "Brazil vs 2F",
-    "description": "Round of 32 fixture: Brazil vs 2F, June 29, 2026 at Houston.",
+    "id": "wc2026-brazil-japan-0629",
+    "title": "Brazil vs Japan",
+    "description": "Round of 32 fixture: Brazil vs Japan, June 29, 2026 at Houston.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2640,14 +2640,14 @@
       "world-cup-2026",
       "round-of-32",
       "brazil",
-      "2f"
+      "japan"
     ],
     "date": "2026-06-29",
     "dateLabel": "June 29, 2026",
     "status": "scheduled",
     "entities": [
       "Brazil",
-      "2F",
+      "Japan",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2695,9 +2695,9 @@
     ]
   },
   {
-    "id": "wc2026-2e-2i-0630",
-    "title": "2E vs 2I",
-    "description": "Round of 32 fixture: 2E vs 2I, June 30, 2026 at Dallas (Arlington).",
+    "id": "wc2026-ivory-coast-2i-0630",
+    "title": "Ivory Coast vs 2I",
+    "description": "Round of 32 fixture: Ivory Coast vs 2I, June 30, 2026 at Dallas (Arlington).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2709,14 +2709,14 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "2e",
+      "ivory-coast",
       "2i"
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
     "status": "scheduled",
     "entities": [
-      "2E",
+      "Ivory Coast",
       "2I",
       "Round of 32"
     ],
@@ -3045,9 +3045,9 @@
     ]
   },
   {
-    "id": "wc2026-2d-2g-0703",
-    "title": "2D vs 2G",
-    "description": "Round of 32 fixture: 2D vs 2G, July 3, 2026 at Dallas (Arlington).",
+    "id": "wc2026-australia-2g-0703",
+    "title": "Australia vs 2G",
+    "description": "Round of 32 fixture: Australia vs 2G, July 3, 2026 at Dallas (Arlington).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3059,14 +3059,14 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "2d",
+      "australia",
       "2g"
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
     "status": "scheduled",
     "entities": [
-      "2D",
+      "Australia",
       "2G",
       "Round of 32"
     ],
