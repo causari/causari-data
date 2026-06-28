@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "title": "World Cup 2026 Causal Recap",
   "description": "Daily Vietnamese recap data for the FIFA Men's World Cup 2026, structured for causal timeline visualization.",
-  "lastUpdated": "2026-06-28T06:20:00Z",
+  "lastUpdated": "2026-06-28T09:05:00Z",
   "timezone": "Asia/Ho_Chi_Minh",
   "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update once per completed match day.",
   "focusTeams": ["Argentina", "Brazil", "Portugal"],
@@ -34,11 +34,11 @@
         "Vòng bảng khép lại với nhiều cặp đáng chú ý: Brazil vs Japan, Argentina vs Cape Verde, Portugal vs Croatia, England vs DR Congo."
       ],
       "standoutPlayers": [
-        { "name": "Lionel Messi", "team": "Argentina", "note": "Ghi bàn từ đá phạt, kéo dài chuỗi ghi bàn World Cup liên tiếp và tiếp tục là biểu tượng định đoạt trận đấu." },
+        { "name": "Lionel Messi", "team": "Argentina", "note": "Ghi bàn từ đá phạt sau khi vào sân từ ghế dự bị, giúp Argentina hoàn tất vòng bảng toàn thắng." },
         { "name": "Jude Bellingham", "team": "England", "note": "Ghi bàn mở khóa trận đấu và kiến tạo cho Harry Kane trước Panama." },
         { "name": "Harry Kane", "team": "England", "note": "Ghi bàn thứ 11 tại World Cup, vượt Gary Lineker để trở thành chân sút World Cup số một của England." },
         { "name": "Yoane Wissa", "team": "DR Congo", "note": "Lập cú đúp trong màn ngược dòng 3-1 trước Uzbekistan." },
-        { "name": "Luka Modric", "team": "Croatia", "note": "Kiến tạo bàn quyết định cho Nikola Vlasic và trở thành cầu thủ lớn tuổi nhất có kiến tạo tại World Cup theo Reuters." }
+        { "name": "Luka Modric", "team": "Croatia", "note": "Kiến tạo bàn quyết định cho Nikola Vlasic; Reuters ghi nhận đây là một cột mốc tuổi tác đáng chú ý tại World Cup." }
       ],
       "focus": {
         "Argentina": "Argentina thắng Jordan 3-1 dù xoay tua đội hình, toàn thắng vòng bảng và gặp Cape Verde ở vòng 32 đội. Điểm trừ nhỏ là họ lần đầu thủng lưới tại giải, nhưng tổng thể vẫn là một trong các ứng viên ổn định nhất.",
@@ -64,7 +64,7 @@
         { "name": "Reuters - Colombia draw Portugal", "url": "https://www.reuters.com/sports/soccer/colombia-top-group-after-goalless-draw-with-portugal-2026-06-28/" },
         { "name": "Reuters - England beat Panama", "url": "https://www.reuters.com/sports/soccer/england-beat-panama-2-0-win-group-l-2026-06-27/" },
         { "name": "Reuters - Croatia beat Ghana", "url": "https://www.reuters.com/sports/soccer/vlasic-header-sends-croatia-into-world-cup-knockouts-with-2-1-win-over-ghana-2026-06-27/" },
-        { "name": "Reuters - DR Congo beat Uzbekistan", "url": "https://www.reuters.com/sports/soccer/dr-congo-seal-place-world-cup-knockouts-with-comeback-win-over-uzbekistan-2026-06-28/" }
+        { "name": "Guardian - DR Congo beat Uzbekistan", "url": "https://www.theguardian.com/football/live/2026/jun/27/dr-congo-v-uzbekistan-world-cup-2026-live" }
       ]
     }
   ]
