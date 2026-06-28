@@ -1,0 +1,51 @@
+{
+  "date": "2026-06-24",
+  "title": "Portugal reset, Colombia take control, Group L tightens",
+  "summary": "Ngày 24/6 theo giờ Việt Nam có bốn trận bảng K và L. Portugal thắng Uzbekistan 5-0 để phục hồi mạnh sau trận ra quân, Colombia thắng DR Congo 1-0 để nắm quyền kiểm soát bảng K, England hòa Ghana 0-0 và Croatia thắng Panama 1-0 ở bảng L.",
+  "results": [
+    { "group": "K", "home": "Portugal", "away": "Uzbekistan", "homeScore": 5, "awayScore": 0, "status": "complete" },
+    { "group": "L", "home": "England", "away": "Ghana", "homeScore": 0, "awayScore": 0, "status": "complete" },
+    { "group": "L", "home": "Panama", "away": "Croatia", "homeScore": 0, "awayScore": 1, "status": "complete" },
+    { "group": "K", "home": "Colombia", "away": "DR Congo", "homeScore": 1, "awayScore": 0, "status": "complete" }
+  ],
+  "bigMoments": [
+    "Portugal thắng Uzbekistan 5-0, biến một trận áp lực thành màn reset niềm tin.",
+    "Colombia thắng DR Congo 1-0, tạo lợi thế rõ rệt trước trận cuối gặp Portugal.",
+    "England hòa Ghana 0-0, khiến bảng L chưa thể ngã ngũ sớm.",
+    "Croatia thắng Panama 1-0, khôi phục đường đi tiếp sau khởi đầu khó khăn."
+  ],
+  "tournamentImpact": [
+    "Bảng K chuyển thành cuộc đua Colombia vs Portugal cho ngôi đầu.",
+    "Portugal phục hồi hiệu số và tâm lý, nhưng vẫn cần trận cuối tốt trước Colombia.",
+    "Colombia bước vào lượt cuối với lợi thế bảng đấu và quyền chọn nhánh tốt hơn.",
+    "Bảng L mở hơn dự kiến vì England bị Ghana cầm hòa, trong khi Croatia sống lại nhờ thắng Panama."
+  ],
+  "standoutPlayers": [
+    { "name": "Portugal attacking unit", "team": "Portugal", "note": "Tạo chiến thắng 5-0 để xóa áp lực sau trận hòa mở màn." },
+    { "name": "Colombia defensive unit", "team": "Colombia", "note": "Bảo vệ chiến thắng tối thiểu trước DR Congo và củng cố vị trí đầu bảng." },
+    { "name": "Croatia control core", "team": "Croatia", "note": "Giữ trận đấu trước Panama đủ chặt để lấy ba điểm sống còn." },
+    { "name": "Ghana defensive block", "team": "Ghana", "note": "Cầm hòa England 0-0 và giữ hy vọng đi tiếp."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu ngày 24/6 và vẫn ở trạng thái kiểm soát bảng J sau hai lượt đầu.",
+    "Brazil": "Brazil không thi đấu ngày 24/6 theo giờ Việt Nam; áp lực dồn sang trận Scotland vs Brazil ngày 25/6.",
+    "Portugal": "Portugal là story chính. Chiến thắng 5-0 trước Uzbekistan phục hồi momentum, nhưng Colombia cũng thắng nên trận Colombia vs Portugal vẫn quyết định ngôi đầu bảng K."
+  },
+  "watchNext": [
+    "Scotland vs Brazil: trận kiểm tra Brazil sau cú sảy chân trước Morocco.",
+    "Morocco vs Haiti: Morocco có cơ hội xác nhận vai trò ngựa ô bảng C.",
+    "Switzerland vs Canada: trận quyết định vị thế bảng B.",
+    "Czechia vs Mexico và South Africa vs South Korea: khép lại bảng A."
+  ],
+  "causalTimeline": [
+    { "from": "Portugal 1-1 DR Congo", "link": "accelerated", "to": "Portugal pressure fixture vs Uzbekistan" },
+    { "from": "Portugal 5-0 Uzbekistan", "link": "enabled", "to": "Portugal trở lại cuộc đua ngôi đầu bảng K" },
+    { "from": "Colombia 1-0 DR Congo", "link": "caused", "to": "Colombia giữ quyền kiểm soát bảng K trước lượt cuối" },
+    { "from": "England 0-0 Ghana", "link": "enabled", "to": "Group L remains open" },
+    { "from": "Panama 0-1 Croatia", "link": "accelerated", "to": "Croatia comeback path in Group L" }
+  ],
+  "sources": [
+    { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-24" }
+  ]
+}
