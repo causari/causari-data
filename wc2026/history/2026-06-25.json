@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-25",
+  "title": "Brazil stabilize Group C, Mexico and Switzerland finish strong",
+  "summary": "Ngày 25/6 theo giờ Việt Nam khép lại các bảng A, B và C. Brazil thắng Scotland 3-0 để ổn định lại sau trận hòa Morocco, Morocco thắng Haiti 4-2, Switzerland thắng Canada 2-1, Bosnia and Herzegovina thắng Qatar 3-1, Mexico thắng Czechia 3-0 và South Africa thắng South Korea 1-0.",
+  "results": [
+    { "group": "B", "home": "Switzerland", "away": "Canada", "homeScore": 2, "awayScore": 1, "status": "complete" },
+    { "group": "B", "home": "Bosnia and Herzegovina", "away": "Qatar", "homeScore": 3, "awayScore": 1, "status": "complete" },
+    { "group": "C", "home": "Scotland", "away": "Brazil", "homeScore": 0, "awayScore": 3, "status": "complete" },
+    { "group": "C", "home": "Morocco", "away": "Haiti", "homeScore": 4, "awayScore": 2, "status": "complete" },
+    { "group": "A", "home": "Czechia", "away": "Mexico", "homeScore": 0, "awayScore": 3, "status": "complete" },
+    { "group": "A", "home": "South Africa", "away": "South Korea", "homeScore": 1, "awayScore": 0, "status": "complete" }
+  ],
+  "bigMoments": [
+    "Brazil thắng Scotland 3-0, trả lời trực tiếp nghi ngờ sau trận hòa Morocco.",
+    "Morocco thắng Haiti 4-2, xác nhận mình không chỉ là đội gây khó dễ cho Brazil mà là một ứng viên ngựa ô thật sự.",
+    "Switzerland thắng Canada 2-1, chốt vị thế mạnh ở bảng B.",
+    "Mexico thắng Czechia 3-0, hoàn tất bảng A bằng một màn thể hiện thuyết phục.",
+    "South Africa thắng South Korea 1-0, tạo thêm biến động ở nhóm tranh vé."
+  ],
+  "tournamentImpact": [
+    "Brazil đi từ trạng thái bị nghi ngờ sang trạng thái đã ổn định trước knock-out.",
+    "Morocco trở thành đội có thể gây rắc rối cho bất kỳ đối thủ nào ở vòng 32 đội.",
+    "Switzerland và Canada đều có profile đi tiếp, nhưng Switzerland bước vào knock-out với vị thế tốt hơn.",
+    "Mexico giữ được momentum chủ nhà và có lợi thế tinh thần lớn.",
+    "Scotland bị đặt vào thế rất khó trong cuộc đua nhóm hạng ba."
+  ],
+  "standoutPlayers": [
+    { "name": "Brazil front line", "team": "Brazil", "note": "Chuyển hóa áp lực thành chiến thắng 3-0, phục hồi hình ảnh ứng viên vô địch." },
+    { "name": "Morocco attack", "team": "Morocco", "note": "Ghi bốn bàn trước Haiti và duy trì narrative ngựa ô." },
+    { "name": "Switzerland control core", "team": "Switzerland", "note": "Thắng Canada trong trận có giá trị cao về vị thế bảng B." },
+    { "name": "Mexico attacking unit", "team": "Mexico", "note": "Tạo chiến thắng 3-0 giúp chủ nhà kết thúc bảng A mạnh mẽ." }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu ngày 25/6. Việc Brazil thắng lớn khiến cuộc đua ứng viên Nam Mỹ trở nên rõ hơn: Argentina ổn định, Brazil đã phục hồi.",
+    "Brazil": "Brazil là tâm điểm. Chiến thắng 3-0 trước Scotland xóa phần lớn áp lực từ trận hòa Morocco và mở đường cho họ vào vòng 32 đội với momentum tốt hơn.",
+    "Portugal": "Portugal không thi đấu ngày 25/6. Nhưng chiến thắng của Brazil cho thấy các ứng viên lớn có thể phục hồi nhanh sau một trận mở màn không như ý, tương tự bài toán của Portugal."
+  },
+  "watchNext": [
+    "Ecuador vs Germany: kiểm tra Germany sau hai trận đầu rất mạnh.",
+    "Japan vs Sweden: trận định hình đối thủ tương lai của Brazil.",
+    "Turkey vs United States và Paraguay vs Australia: khép lại bảng D.",
+    "Tunisia vs Netherlands: Netherlands có cơ hội giữ vị thế đầu bảng F."
+  ],
+  "causalTimeline": [
+    { "from": "Brazil 1-1 Morocco", "link": "accelerated", "to": "Brazil pressure vs Scotland" },
+    { "from": "Scotland 0-3 Brazil", "link": "enabled", "to": "Brazil restored contender narrative" },
+    { "from": "Morocco 4-2 Haiti", "link": "accelerated", "to": "Morocco dark-horse status" },
+    { "from": "Switzerland 2-1 Canada", "link": "caused", "to": "Switzerland finishes above Canada in Group B race" },
+    { "from": "Czechia 0-3 Mexico", "link": "accelerated", "to": "Mexico host momentum before knock-out" }
+  ],
+  "sources": [
+    { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-25" },
+    { "name": "Guardian - Scotland eliminated context", "url": "https://www.theguardian.com/football/2026/jun/28/scotland-eliminated-from-world-cup" }
+  ]
+}
