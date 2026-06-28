@@ -1,0 +1,143 @@
+[
+  {
+    "id": "pattern--info-democratization",
+    "pattern": "Information Democratization Cycle",
+    "description": "When a new medium dramatically lowers the cost of distributing knowledge, an institutional monopoly breaks within ~50 years. Pattern: writing → priesthood breaks; printing → clergy/state breaks; internet → mass media breaks; LLMs → expert credential systems break.",
+    "instances": [
+      "lang--enabled-->write",
+      "write--enabled-->alex",
+      "printing--caused-->rena",
+      "internet--enabled-->web",
+      "transformer--caused-->ai"
+    ],
+    "predictiveValue": 0.85,
+    "domains": [
+      "humanities",
+      "technology",
+      "systems"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--substrate-substitution",
+    "pattern": "Substrate Substitution",
+    "description": "A capability historically running on substrate A migrates to substrate B once B becomes cheaper or more flexible. Mechanical → electrical (1900s); analog → digital (1970s); silicon → quantum (forecast). The migration creates discontinuities in adjacent industries.",
+    "instances": [
+      "indus--enabled-->darwin_ev",
+      "turing_m--enabled-->transformer",
+      "forecast_quantum--enabled-->forecast_quantum_net"
+    ],
+    "predictiveValue": 0.78,
+    "domains": [
+      "technology",
+      "science"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--coordination-scale-jump",
+    "pattern": "Coordination Scale Jump",
+    "description": "Each new communication infrastructure enables a step-change in social organization scale. Writing → cities. Printing → nations. Internet → platforms. Universal translation → ?. Pattern: ~3-4 orders of magnitude per cycle.",
+    "instances": [
+      "write--enabled-->alex",
+      "printing--enabled-->indus",
+      "internet--enabled-->web",
+      "forecast_language--enabled-->forecast_distributed"
+    ],
+    "predictiveValue": 0.72,
+    "domains": [
+      "systems",
+      "geopolitics",
+      "humanities"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--information-as-physics",
+    "pattern": "Information as Physical Substrate",
+    "description": "Across the 20th century, information progressively moves from \"abstract\" to \"physical\": Shannon's information theory, DNA as code, Landauer's principle, quantum information. The boundary between bits and matter dissolves.",
+    "instances": [
+      "turing_m--enabled-->dna_disc",
+      "dna_disc--enabled-->internet",
+      "forecast_synthesis--enabled-->forecast_bio_ai"
+    ],
+    "predictiveValue": 0.68,
+    "domains": [
+      "science",
+      "technology"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--abstraction-layer-migration",
+    "pattern": "Abstraction Layer Migration",
+    "description": "Computing advances by adding abstraction layers that hide complexity. Assembly → C → Python → LLM prompts. Each layer sacrifices some control for dramatically wider accessibility. The new layer never fully replaces the old — it sits on top, and experts still drop down when needed.",
+    "instances": [
+      "fortran--enabled-->c_language",
+      "c_language--enabled-->python",
+      "c_language--enabled-->java",
+      "javascript--caused-->typescript",
+      "docker--caused-->kubernetes",
+      "transformer--caused-->ai"
+    ],
+    "predictiveValue": 0.82,
+    "domains": [
+      "technology"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--standardization-cycle",
+    "pattern": "Standardization Cycle",
+    "description": "Technology follows a boom → fragmentation → standard → new boom cycle. Networking: many protocols → TCP/IP wins → web boom. Databases: many models → SQL standard → NoSQL reaction → NewSQL synthesis. Containers: many runtimes → OCI standard → K8s orchestration. The standard that wins is usually \"good enough\" technically but has the strongest ecosystem.",
+    "instances": [
+      "tcp_ip_standard--enabled-->web",
+      "relational_db--caused-->postgresql",
+      "relational_db--enabled-->nosql_movement",
+      "docker--caused-->kubernetes",
+      "rest_api--enabled-->graphql"
+    ],
+    "predictiveValue": 0.78,
+    "domains": [
+      "technology",
+      "systems"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--open-vs-proprietary-substrate",
+    "pattern": "Open vs Proprietary Substrate",
+    "description": "When a technology layer becomes infrastructure, open implementations eventually dominate. Unix/proprietary → Linux/open. IE/proprietary → Chrome/open-source. AWS/proprietary → K8s/open orchestration. The pattern: proprietary wins early (resources, polish), open wins long-term (ecosystem, trust, vendor independence).",
+    "instances": [
+      "gnu_project--enabled-->linux",
+      "unix--inspired-->linux",
+      "linux--enabled-->docker",
+      "linux--enabled-->aws",
+      "git--caused-->github"
+    ],
+    "predictiveValue": 0.75,
+    "domains": [
+      "technology",
+      "economy",
+      "systems"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--prerequisite-cascade",
+    "pattern": "Prerequisite Cascade in Future Tech",
+    "description": "Forecasted breakthroughs cluster: each enables 2-3 downstream forecasts. Quantum compute enables both quantum internet and accelerated AGI. Mars settlement enables space commerce. This means timeline confidence in node N requires confidence in all upstream nodes — uncertainty compounds.",
+    "instances": [
+      "forecast_quantum--enabled-->forecast_agi",
+      "forecast_quantum--enabled-->forecast_quantum_net",
+      "forecast_mars--enabled-->forecast_space_trade",
+      "forecast_agi--enabled-->forecast_distributed"
+    ],
+    "predictiveValue": 0.6,
+    "domains": [
+      "technology",
+      "systems"
+    ],
+    "contributedBy": "system"
+  }
+]
