@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-23",
+  "title": "Argentina and France stay clean, Norway win thriller",
+  "summary": "Ngày 23/6 theo giờ Việt Nam chứng kiến Argentina thắng Austria 2-0, France thắng Iraq 3-0, Norway vượt Senegal 3-2 và Algeria thắng Jordan 2-1. Argentina cùng France tiếp tục cho thấy profile ứng viên ổn định, trong khi Norway nổi lên như một đội có momentum cao ở bảng I.",
+  "results": [
+    { "group": "J", "home": "Argentina", "away": "Austria", "homeScore": 2, "awayScore": 0, "status": "complete" },
+    { "group": "I", "home": "France", "away": "Iraq", "homeScore": 3, "awayScore": 0, "status": "complete" },
+    { "group": "I", "home": "Norway", "away": "Senegal", "homeScore": 3, "awayScore": 2, "status": "complete" },
+    { "group": "J", "home": "Jordan", "away": "Algeria", "homeScore": 1, "awayScore": 2, "status": "complete" }
+  ],
+  "bigMoments": [
+    "Argentina thắng Austria 2-0 và giữ sạch lưới trận thứ hai liên tiếp.",
+    "France thắng Iraq 3-0, tiếp tục xây hình ảnh ứng viên có khả năng kiểm soát bảng đấu.",
+    "Norway thắng Senegal 3-2 trong trận đấu mở ra cuộc đua rất căng ở bảng I.",
+    "Algeria thắng Jordan 2-1, giữ hy vọng cạnh tranh suất đi tiếp ở bảng J."
+  ],
+  "tournamentImpact": [
+    "Argentina gần như khóa vị trí đi tiếp và có lợi thế lớn để xoay tua ở lượt cuối.",
+    "France củng cố ngôi đầu bảng I trước trận gặp Norway.",
+    "Norway biến trận gặp France thành bài test thực sự về ngôi đầu và sức mạnh knock-out.",
+    "Bảng J tách thành Argentina kiểm soát phía trên, Algeria/Austria/Jordan tranh phần còn lại."
+  ],
+  "standoutPlayers": [
+    { "name": "Argentina defensive unit", "team": "Argentina", "note": "Hai trận thắng liên tiếp không thủng lưới, tạo nền kiểm soát cho cả bảng J." },
+    { "name": "France attack", "team": "France", "note": "Ghi ba bàn trước Iraq và duy trì hiệu suất ổn định." },
+    { "name": "Norway attacking unit", "team": "Norway", "note": "Thắng Senegal 3-2, thể hiện khả năng tạo khác biệt trong trận mở." },
+    { "name": "Algeria response", "team": "Algeria", "note": "Lấy ba điểm trước Jordan để giữ bảng J còn cạnh tranh."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina là tâm điểm của ngày. Chiến thắng 2-0 trước Austria giúp họ đạt hai trận thắng, hai clean sheet và bước vào lượt cuối với quyền kiểm soát gần như tuyệt đối.",
+    "Brazil": "Brazil không thi đấu ngày 23/6. Nhưng phong độ ổn định của Argentina và France làm áp lực lên Brazil trước trận quyết định với Scotland tăng rõ rệt.",
+    "Portugal": "Portugal không thi đấu ngày 23/6 nhưng bước vào ngày 24/6 với áp lực lớn sau trận hòa DR Congo trước đó."
+  },
+  "watchNext": [
+    "Portugal vs Uzbekistan: trận buộc phải thắng để Portugal sửa sai sau trận hòa mở màn.",
+    "Colombia vs DR Congo: trận có thể giúp Colombia nắm quyền kiểm soát bảng K.",
+    "England vs Ghana và Panama vs Croatia: hai trận định hình bảng L."
+  ],
+  "causalTimeline": [
+    { "from": "Argentina 3-0 Algeria", "link": "enabled", "to": "Argentina kiểm soát rủi ro trước Austria" },
+    { "from": "Argentina 2-0 Austria", "link": "accelerated", "to": "Argentina trở thành ứng viên ổn định nhất vòng bảng" },
+    { "from": "France 3-0 Iraq", "link": "accelerated", "to": "France duy trì nhóm ứng viên Tier S" },
+    { "from": "Norway 3-2 Senegal", "link": "enabled", "to": "France vs Norway trở thành trận quyết định bảng I" }
+  ],
+  "sources": [
+    { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-23" }
+  ]
+}
