@@ -1,0 +1,71 @@
+{
+  "version": "0.2.0",
+  "title": "World Cup 2026 Causal Recap",
+  "description": "Daily Vietnamese recap data for the FIFA Men's World Cup 2026, structured for causal timeline visualization.",
+  "lastUpdated": "2026-06-28T06:20:00Z",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update once per completed match day.",
+  "focusTeams": ["Argentina", "Brazil", "Portugal"],
+  "recaps": [
+    {
+      "date": "2026-06-27",
+      "title": "Argentina perfect, Colombia top Group K, England set DR Congo clash",
+      "summary": "Ngày 27/6 khép lại vòng bảng J, K và L. Argentina thắng Jordan 3-1 để toàn thắng bảng J; Colombia hòa Portugal 0-0 để giữ ngôi đầu bảng K; England hạ Panama 2-0 để đứng đầu bảng L; Croatia thắng Ghana 2-1 để đi tiếp; DR Congo ngược dòng Uzbekistan 3-1 và tạo cột mốc lịch sử.",
+      "results": [
+        { "group": "L", "home": "Panama", "away": "England", "homeScore": 0, "awayScore": 2, "status": "complete" },
+        { "group": "L", "home": "Croatia", "away": "Ghana", "homeScore": 2, "awayScore": 1, "status": "complete" },
+        { "group": "K", "home": "Colombia", "away": "Portugal", "homeScore": 0, "awayScore": 0, "status": "complete" },
+        { "group": "K", "home": "DR Congo", "away": "Uzbekistan", "homeScore": 3, "awayScore": 1, "status": "complete" },
+        { "group": "J", "home": "Jordan", "away": "Argentina", "homeScore": 1, "awayScore": 3, "status": "complete" },
+        { "group": "J", "home": "Algeria", "away": "Austria", "homeScore": 3, "awayScore": 3, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Lionel Messi vào sân từ ghế dự bị và ghi cú đá phạt muộn, giúp Argentina thắng Jordan 3-1 và toàn thắng vòng bảng.",
+        "Colombia hòa Portugal 0-0, giữ ngôi đầu Group K với 7 điểm; Portugal đứng nhì bảng và gặp Croatia ở vòng 32 đội.",
+        "England thắng Panama 2-0 nhờ Jude Bellingham và Harry Kane, qua đó đứng đầu Group L và gặp DR Congo.",
+        "DR Congo thắng ngược Uzbekistan 3-1, có chiến thắng World Cup đầu tiên và giành vé gặp England.",
+        "Croatia thắng Ghana 2-1 nhờ bàn quyết định của Nikola Vlasic từ kiến tạo của Luka Modric."
+      ],
+      "tournamentImpact": [
+        "Argentina đi tiếp với tư cách nhất Group J và sẽ gặp Cape Verde ở vòng 32 đội.",
+        "Colombia nhất Group K và gặp Ghana; Portugal nhì Group K và gặp Croatia.",
+        "England nhất Group L và gặp DR Congo, một cặp đấu có độ chênh tên tuổi nhưng DR Congo đang có momentum rất tốt.",
+        "Croatia giành vị trí nhì Group L; Ghana vẫn có đường vào vòng 32 đội theo nhóm đội hạng ba tốt.",
+        "Vòng bảng khép lại với nhiều cặp đáng chú ý: Brazil vs Japan, Argentina vs Cape Verde, Portugal vs Croatia, England vs DR Congo."
+      ],
+      "standoutPlayers": [
+        { "name": "Lionel Messi", "team": "Argentina", "note": "Ghi bàn từ đá phạt, kéo dài chuỗi ghi bàn World Cup liên tiếp và tiếp tục là biểu tượng định đoạt trận đấu." },
+        { "name": "Jude Bellingham", "team": "England", "note": "Ghi bàn mở khóa trận đấu và kiến tạo cho Harry Kane trước Panama." },
+        { "name": "Harry Kane", "team": "England", "note": "Ghi bàn thứ 11 tại World Cup, vượt Gary Lineker để trở thành chân sút World Cup số một của England." },
+        { "name": "Yoane Wissa", "team": "DR Congo", "note": "Lập cú đúp trong màn ngược dòng 3-1 trước Uzbekistan." },
+        { "name": "Luka Modric", "team": "Croatia", "note": "Kiến tạo bàn quyết định cho Nikola Vlasic và trở thành cầu thủ lớn tuổi nhất có kiến tạo tại World Cup theo Reuters." }
+      ],
+      "focus": {
+        "Argentina": "Argentina thắng Jordan 3-1 dù xoay tua đội hình, toàn thắng vòng bảng và gặp Cape Verde ở vòng 32 đội. Điểm trừ nhỏ là họ lần đầu thủng lưới tại giải, nhưng tổng thể vẫn là một trong các ứng viên ổn định nhất.",
+        "Brazil": "Brazil không thi đấu ngày 27/6, nhưng bức tranh vòng 32 đội đã rõ hơn: Brazil sẽ gặp Japan vào ngày 29/6. Đây là bài test tốc độ, pressing và kỷ luật chiến thuật rất đáng xem.",
+        "Portugal": "Portugal hòa Colombia 0-0, mất cơ hội nhất Group K và phải gặp Croatia ở vòng 32 đội. Đây là nhánh khó hơn kỳ vọng vì Croatia có kinh nghiệm knockout và vừa thắng trận quyết định trước Ghana."
+      },
+      "watchNext": [
+        "South Africa vs Canada mở màn vòng 32 đội ngày 28/6.",
+        "Brazil vs Japan ngày 29/6: bài test đầu tiên thật sự của Brazil ở vòng knock-out.",
+        "Germany vs Paraguay và Netherlands vs Morocco cũng là các cặp đáng chú ý sớm của vòng 32 đội.",
+        "Theo dõi thể lực Ghana sau chấn thương mắt cá của Antoine Semenyo cuối trận Croatia."
+      ],
+      "causalTimeline": [
+        { "from": "Argentina toàn thắng hai lượt đầu", "link": "enabled", "to": "Scaloni xoay tua trước Jordan mà vẫn giữ quyền kiểm soát bảng J" },
+        { "from": "Messi đá phạt thành bàn trước Jordan", "link": "accelerated", "to": "Argentina bước vào vòng 32 đội với aura ứng viên vô địch rất mạnh" },
+        { "from": "Colombia 0-0 Portugal", "link": "caused", "to": "Colombia gặp Ghana, Portugal phải gặp Croatia" },
+        { "from": "DR Congo 3-1 Uzbekistan", "link": "enabled", "to": "England vs DR Congo trở thành cặp đấu tương phản giữa ứng viên lớn và câu chuyện lịch sử" },
+        { "from": "Croatia 2-1 Ghana", "link": "caused", "to": "Portugal vs Croatia trở thành một trong các trận vòng 32 đội đáng xem nhất" }
+      ],
+      "sources": [
+        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-27" },
+        { "name": "Reuters - Argentina beat Jordan", "url": "https://www.reuters.com/sports/soccer/seventh-heaven-messi-argentina-beat-jordan-3-1-2026-06-28/" },
+        { "name": "Reuters - Colombia draw Portugal", "url": "https://www.reuters.com/sports/soccer/colombia-top-group-after-goalless-draw-with-portugal-2026-06-28/" },
+        { "name": "Reuters - England beat Panama", "url": "https://www.reuters.com/sports/soccer/england-beat-panama-2-0-win-group-l-2026-06-27/" },
+        { "name": "Reuters - Croatia beat Ghana", "url": "https://www.reuters.com/sports/soccer/vlasic-header-sends-croatia-into-world-cup-knockouts-with-2-1-win-over-ghana-2026-06-27/" },
+        { "name": "Reuters - DR Congo beat Uzbekistan", "url": "https://www.reuters.com/sports/soccer/dr-congo-seal-place-world-cup-knockouts-with-comeback-win-over-uzbekistan-2026-06-28/" }
+      ]
+    }
+  ]
+}
