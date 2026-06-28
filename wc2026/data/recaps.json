@@ -2,11 +2,164 @@
   "version": "0.2.0",
   "title": "World Cup 2026 Causal Recap",
   "description": "Daily Vietnamese recap data for the FIFA Men's World Cup 2026, structured for causal timeline visualization.",
-  "lastUpdated": "2026-06-28T09:12:00Z",
+  "lastUpdated": "2026-06-28T09:20:00Z",
   "timezone": "Asia/Ho_Chi_Minh",
   "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update once per completed match day.",
   "focusTeams": ["Argentina", "Brazil", "Portugal"],
   "recaps": [
+    {
+      "date": "2026-06-23",
+      "title": "Argentina and France stay clean, Norway win thriller",
+      "summary": "Ngày 23/6 theo giờ Việt Nam chứng kiến Argentina thắng Austria 2-0, France thắng Iraq 3-0, Norway vượt Senegal 3-2 và Algeria thắng Jordan 2-1. Argentina cùng France tiếp tục cho thấy profile ứng viên ổn định, trong khi Norway nổi lên như một đội có momentum cao ở bảng I.",
+      "results": [
+        { "group": "J", "home": "Argentina", "away": "Austria", "homeScore": 2, "awayScore": 0, "status": "complete" },
+        { "group": "I", "home": "France", "away": "Iraq", "homeScore": 3, "awayScore": 0, "status": "complete" },
+        { "group": "I", "home": "Norway", "away": "Senegal", "homeScore": 3, "awayScore": 2, "status": "complete" },
+        { "group": "J", "home": "Jordan", "away": "Algeria", "homeScore": 1, "awayScore": 2, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Argentina thắng Austria 2-0 và giữ sạch lưới trận thứ hai liên tiếp.",
+        "France thắng Iraq 3-0, tiếp tục xây hình ảnh ứng viên có khả năng kiểm soát bảng đấu.",
+        "Norway thắng Senegal 3-2 trong trận đấu mở ra cuộc đua rất căng ở bảng I.",
+        "Algeria thắng Jordan 2-1, giữ hy vọng cạnh tranh suất đi tiếp ở bảng J."
+      ],
+      "tournamentImpact": [
+        "Argentina gần như khóa vị trí đi tiếp và có lợi thế lớn để xoay tua ở lượt cuối.",
+        "France củng cố ngôi đầu bảng I trước trận gặp Norway.",
+        "Norway biến trận gặp France thành bài test thực sự về ngôi đầu và sức mạnh knock-out.",
+        "Bảng J tách thành Argentina kiểm soát phía trên, Algeria/Austria/Jordan tranh phần còn lại."
+      ],
+      "standoutPlayers": [
+        { "name": "Argentina defensive unit", "team": "Argentina", "note": "Hai trận thắng liên tiếp không thủng lưới, tạo nền kiểm soát cho cả bảng J." },
+        { "name": "France attack", "team": "France", "note": "Ghi ba bàn trước Iraq và duy trì hiệu suất ổn định." },
+        { "name": "Norway attacking unit", "team": "Norway", "note": "Thắng Senegal 3-2, thể hiện khả năng tạo khác biệt trong trận mở." },
+        { "name": "Algeria response", "team": "Algeria", "note": "Lấy ba điểm trước Jordan để giữ bảng J còn cạnh tranh." }
+      ],
+      "focus": {
+        "Argentina": "Argentina là tâm điểm của ngày. Chiến thắng 2-0 trước Austria giúp họ đạt hai trận thắng, hai clean sheet và bước vào lượt cuối với quyền kiểm soát gần như tuyệt đối.",
+        "Brazil": "Brazil không thi đấu ngày 23/6. Nhưng phong độ ổn định của Argentina và France làm áp lực lên Brazil trước trận quyết định với Scotland tăng rõ rệt.",
+        "Portugal": "Portugal không thi đấu ngày 23/6 nhưng bước vào ngày 24/6 với áp lực lớn sau trận hòa DR Congo trước đó."
+      },
+      "watchNext": [
+        "Portugal vs Uzbekistan: trận buộc phải thắng để Portugal sửa sai sau trận hòa mở màn.",
+        "Colombia vs DR Congo: trận có thể giúp Colombia nắm quyền kiểm soát bảng K.",
+        "England vs Ghana và Panama vs Croatia: hai trận định hình bảng L."
+      ],
+      "causalTimeline": [
+        { "from": "Argentina 3-0 Algeria", "link": "enabled", "to": "Argentina kiểm soát rủi ro trước Austria" },
+        { "from": "Argentina 2-0 Austria", "link": "accelerated", "to": "Argentina trở thành ứng viên ổn định nhất vòng bảng" },
+        { "from": "France 3-0 Iraq", "link": "accelerated", "to": "France duy trì nhóm ứng viên Tier S" },
+        { "from": "Norway 3-2 Senegal", "link": "enabled", "to": "France vs Norway trở thành trận quyết định bảng I" }
+      ],
+      "sources": [
+        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-23" }
+      ]
+    },
+    {
+      "date": "2026-06-24",
+      "title": "Portugal reset, Colombia take control, Group L tightens",
+      "summary": "Ngày 24/6 theo giờ Việt Nam có bốn trận bảng K và L. Portugal thắng Uzbekistan 5-0 để phục hồi mạnh sau trận ra quân, Colombia thắng DR Congo 1-0 để nắm quyền kiểm soát bảng K, England hòa Ghana 0-0 và Croatia thắng Panama 1-0 ở bảng L.",
+      "results": [
+        { "group": "K", "home": "Portugal", "away": "Uzbekistan", "homeScore": 5, "awayScore": 0, "status": "complete" },
+        { "group": "L", "home": "England", "away": "Ghana", "homeScore": 0, "awayScore": 0, "status": "complete" },
+        { "group": "L", "home": "Panama", "away": "Croatia", "homeScore": 0, "awayScore": 1, "status": "complete" },
+        { "group": "K", "home": "Colombia", "away": "DR Congo", "homeScore": 1, "awayScore": 0, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Portugal thắng Uzbekistan 5-0, biến một trận áp lực thành màn reset niềm tin.",
+        "Colombia thắng DR Congo 1-0, tạo lợi thế rõ rệt trước trận cuối gặp Portugal.",
+        "England hòa Ghana 0-0, khiến bảng L chưa thể ngã ngũ sớm.",
+        "Croatia thắng Panama 1-0, khôi phục đường đi tiếp sau khởi đầu khó khăn."
+      ],
+      "tournamentImpact": [
+        "Bảng K chuyển thành cuộc đua Colombia vs Portugal cho ngôi đầu.",
+        "Portugal phục hồi hiệu số và tâm lý, nhưng vẫn cần trận cuối tốt trước Colombia.",
+        "Colombia bước vào lượt cuối với lợi thế bảng đấu và quyền chọn nhánh tốt hơn.",
+        "Bảng L mở hơn dự kiến vì England bị Ghana cầm hòa, trong khi Croatia sống lại nhờ thắng Panama."
+      ],
+      "standoutPlayers": [
+        { "name": "Portugal attacking unit", "team": "Portugal", "note": "Tạo chiến thắng 5-0 để xóa áp lực sau trận hòa mở màn." },
+        { "name": "Colombia defensive unit", "team": "Colombia", "note": "Bảo vệ chiến thắng tối thiểu trước DR Congo và củng cố vị trí đầu bảng." },
+        { "name": "Croatia control core", "team": "Croatia", "note": "Giữ trận đấu trước Panama đủ chặt để lấy ba điểm sống còn." },
+        { "name": "Ghana defensive block", "team": "Ghana", "note": "Cầm hòa England 0-0 và giữ hy vọng đi tiếp." }
+      ],
+      "focus": {
+        "Argentina": "Argentina không thi đấu ngày 24/6 và vẫn ở trạng thái kiểm soát bảng J sau hai lượt đầu.",
+        "Brazil": "Brazil không thi đấu ngày 24/6 theo giờ Việt Nam; áp lực dồn sang trận Scotland vs Brazil ngày 25/6.",
+        "Portugal": "Portugal là story chính. Chiến thắng 5-0 trước Uzbekistan phục hồi momentum, nhưng Colombia cũng thắng nên trận Colombia vs Portugal vẫn quyết định ngôi đầu bảng K."
+      },
+      "watchNext": [
+        "Scotland vs Brazil: trận kiểm tra Brazil sau cú sảy chân trước Morocco.",
+        "Morocco vs Haiti: Morocco có cơ hội xác nhận vai trò ngựa ô bảng C.",
+        "Switzerland vs Canada: trận quyết định vị thế bảng B.",
+        "Czechia vs Mexico và South Africa vs South Korea: khép lại bảng A."
+      ],
+      "causalTimeline": [
+        { "from": "Portugal 1-1 DR Congo", "link": "accelerated", "to": "Portugal pressure fixture vs Uzbekistan" },
+        { "from": "Portugal 5-0 Uzbekistan", "link": "enabled", "to": "Portugal trở lại cuộc đua ngôi đầu bảng K" },
+        { "from": "Colombia 1-0 DR Congo", "link": "caused", "to": "Colombia giữ quyền kiểm soát bảng K trước lượt cuối" },
+        { "from": "England 0-0 Ghana", "link": "enabled", "to": "Group L remains open" },
+        { "from": "Panama 0-1 Croatia", "link": "accelerated", "to": "Croatia comeback path in Group L" }
+      ],
+      "sources": [
+        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-24" }
+      ]
+    },
+    {
+      "date": "2026-06-25",
+      "title": "Brazil stabilize Group C, Mexico and Switzerland finish strong",
+      "summary": "Ngày 25/6 theo giờ Việt Nam khép lại các bảng A, B và C. Brazil thắng Scotland 3-0 để ổn định lại sau trận hòa Morocco, Morocco thắng Haiti 4-2, Switzerland thắng Canada 2-1, Bosnia and Herzegovina thắng Qatar 3-1, Mexico thắng Czechia 3-0 và South Africa thắng South Korea 1-0.",
+      "results": [
+        { "group": "B", "home": "Switzerland", "away": "Canada", "homeScore": 2, "awayScore": 1, "status": "complete" },
+        { "group": "B", "home": "Bosnia and Herzegovina", "away": "Qatar", "homeScore": 3, "awayScore": 1, "status": "complete" },
+        { "group": "C", "home": "Scotland", "away": "Brazil", "homeScore": 0, "awayScore": 3, "status": "complete" },
+        { "group": "C", "home": "Morocco", "away": "Haiti", "homeScore": 4, "awayScore": 2, "status": "complete" },
+        { "group": "A", "home": "Czechia", "away": "Mexico", "homeScore": 0, "awayScore": 3, "status": "complete" },
+        { "group": "A", "home": "South Africa", "away": "South Korea", "homeScore": 1, "awayScore": 0, "status": "complete" }
+      ],
+      "bigMoments": [
+        "Brazil thắng Scotland 3-0, trả lời trực tiếp nghi ngờ sau trận hòa Morocco.",
+        "Morocco thắng Haiti 4-2, xác nhận mình không chỉ là đội gây khó dễ cho Brazil mà là một ứng viên ngựa ô thật sự.",
+        "Switzerland thắng Canada 2-1, chốt vị thế mạnh ở bảng B.",
+        "Mexico thắng Czechia 3-0, hoàn tất bảng A bằng một màn thể hiện thuyết phục.",
+        "South Africa thắng South Korea 1-0, tạo thêm biến động ở nhóm tranh vé."
+      ],
+      "tournamentImpact": [
+        "Brazil đi từ trạng thái bị nghi ngờ sang trạng thái đã ổn định trước knock-out.",
+        "Morocco trở thành đội có thể gây rắc rối cho bất kỳ đối thủ nào ở vòng 32 đội.",
+        "Switzerland và Canada đều có profile đi tiếp, nhưng Switzerland bước vào knock-out với vị thế tốt hơn.",
+        "Mexico giữ được momentum chủ nhà và có lợi thế tinh thần lớn.",
+        "Scotland bị đặt vào thế rất khó trong cuộc đua nhóm hạng ba."
+      ],
+      "standoutPlayers": [
+        { "name": "Brazil front line", "team": "Brazil", "note": "Chuyển hóa áp lực thành chiến thắng 3-0, phục hồi hình ảnh ứng viên vô địch." },
+        { "name": "Morocco attack", "team": "Morocco", "note": "Ghi bốn bàn trước Haiti và duy trì narrative ngựa ô." },
+        { "name": "Switzerland control core", "team": "Switzerland", "note": "Thắng Canada trong trận có giá trị cao về vị thế bảng B." },
+        { "name": "Mexico attacking unit", "team": "Mexico", "note": "Tạo chiến thắng 3-0 giúp chủ nhà kết thúc bảng A mạnh mẽ." }
+      ],
+      "focus": {
+        "Argentina": "Argentina không thi đấu ngày 25/6. Việc Brazil thắng lớn khiến cuộc đua ứng viên Nam Mỹ trở nên rõ hơn: Argentina ổn định, Brazil đã phục hồi.",
+        "Brazil": "Brazil là tâm điểm. Chiến thắng 3-0 trước Scotland xóa phần lớn áp lực từ trận hòa Morocco và mở đường cho họ vào vòng 32 đội với momentum tốt hơn.",
+        "Portugal": "Portugal không thi đấu ngày 25/6. Nhưng chiến thắng của Brazil cho thấy các ứng viên lớn có thể phục hồi nhanh sau một trận mở màn không như ý, tương tự bài toán của Portugal."
+      },
+      "watchNext": [
+        "Ecuador vs Germany: kiểm tra Germany sau hai trận đầu rất mạnh.",
+        "Japan vs Sweden: trận định hình đối thủ tương lai của Brazil.",
+        "Turkey vs United States và Paraguay vs Australia: khép lại bảng D.",
+        "Tunisia vs Netherlands: Netherlands có cơ hội giữ vị thế đầu bảng F."
+      ],
+      "causalTimeline": [
+        { "from": "Brazil 1-1 Morocco", "link": "accelerated", "to": "Brazil pressure vs Scotland" },
+        { "from": "Scotland 0-3 Brazil", "link": "enabled", "to": "Brazil restored contender narrative" },
+        { "from": "Morocco 4-2 Haiti", "link": "accelerated", "to": "Morocco dark-horse status" },
+        { "from": "Switzerland 2-1 Canada", "link": "caused", "to": "Switzerland finishes above Canada in Group B race" },
+        { "from": "Czechia 0-3 Mexico", "link": "accelerated", "to": "Mexico host momentum before knock-out" }
+      ],
+      "sources": [
+        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-25" },
+        { "name": "Guardian - Scotland eliminated context", "url": "https://www.theguardian.com/football/2026/jun/28/scotland-eliminated-from-world-cup" }
+      ]
+    },
     {
       "date": "2026-06-26",
       "title": "Ecuador stun Germany, Japan and Sweden survive, Group D locks in",
