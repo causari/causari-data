@@ -1,9 +1,7 @@
 name: pages
 
-# Serve the pack data via GitHub Pages, gated on validation.
-# The deploy job `needs: validate`, so a bad commit (dangling link, broken schema)
-# fails validation and the deploy is SKIPPED — the live visual keeps serving the
-# last-good data instead of publishing a broken graph.
+# Serve Causari data and static visual pages via GitHub Pages.
+# The deploy job is gated on validation so broken pack data does not publish.
 
 on:
   push:
@@ -13,6 +11,7 @@ on:
       - "data/**"
       - "schema/**"
       - "wc/**"
+      - "wc2026/**"
       - "scripts/validate-pack.mjs"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
@@ -34,7 +33,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Validate all packs (gate)
+      - name: Validate all packs
         run: node scripts/validate-pack.mjs
 
   deploy:
@@ -45,12 +44,39 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Stage data for Pages
+      - name: Stage site for Pages
         run: |
           mkdir -p _site
-          # Copy only the data dirs that exist (data/ may not be present yet).
-          for d in packs data schema wc; do [ -d "$d" ] && cp -r "$d" _site/; done
-          printf '%s' '{"note":"Causari open data - JSON served for live consumers","packs":["worldcup-2026"]}' > _site/index.json
+          for d in packs data schema wc wc2026; do
+            if [ -d "$d" ]; then cp -r "$d" _site/; fi
+          done
+          touch _site/.nojekyll
+          cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Causari Data</title>
+            <style>
+              body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:40px;line-height:1.5;max-width:760px;background:#071016;color:#e8f2f7}
+              a{color:#72f2c6}
+              code{background:#102636;padding:2px 6px;border-radius:6px}
+            </style>
+          </head>
+          <body>
+            <h1>Causari Data</h1>
+            <p>Open causal knowledge graph for AI agents and humans.</p>
+            <ul>
+              <li><a href="./wc2026/">World Cup 2026 Causal Recap</a></li>
+              <li><a href="./packs/worldcup-2026/events.json">World Cup 2026 events JSON</a></li>
+              <li><a href="./packs/worldcup-2026/links.json">World Cup 2026 links JSON</a></li>
+              <li><a href="./packs/worldcup-2026/insights.json">World Cup 2026 insights JSON</a></li>
+            </ul>
+          </body>
+          </html>
+          HTML
+          printf '%s' '{"note":"Causari open data - JSON served for live consumers","routes":["/wc2026/"],"packs":["worldcup-2026"]}' > _site/index.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
