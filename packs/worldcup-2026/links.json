@@ -1,8 +1,8 @@
 [
   {
-    "id": "wc2026-czech-republic-mexico-0624--accelerated-->wc2026-mexico-3c-e-f-h-i-0630",
+    "id": "wc2026-czech-republic-mexico-0624--accelerated-->wc2026-mexico-ecuador-0630",
     "fromEvent": "wc2026-czech-republic-mexico-0624",
-    "toEvent": "wc2026-mexico-3c-e-f-h-i-0630",
+    "toEvent": "wc2026-mexico-ecuador-0630",
     "relationship": "accelerated",
     "confidence": 0.62,
     "evidence": "Mexico's 0–3 win was a statement result and a goal-difference cushion heading into the next fixture."
@@ -80,6 +80,14 @@
     "evidence": "Japan's 0–4 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
+    "id": "wc2026-new-zealand-belgium-0626--accelerated-->wc2026-belgium-senegal-0701",
+    "fromEvent": "wc2026-new-zealand-belgium-0626",
+    "toEvent": "wc2026-belgium-senegal-0701",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Belgium's 1–5 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
     "id": "wc2026-spain-saudi-arabia-0621--accelerated-->wc2026-uruguay-spain-0626",
     "fromEvent": "wc2026-spain-saudi-arabia-0621",
     "toEvent": "wc2026-uruguay-spain-0626",
@@ -102,6 +110,22 @@
     "relationship": "accelerated",
     "confidence": 0.62,
     "evidence": "France's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-norway-france-0626--accelerated-->wc2026-france-sweden-0630",
+    "fromEvent": "wc2026-norway-france-0626",
+    "toEvent": "wc2026-france-sweden-0630",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "France's 1–4 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-senegal-iraq-0626--accelerated-->wc2026-belgium-senegal-0701",
+    "fromEvent": "wc2026-senegal-iraq-0626",
+    "toEvent": "wc2026-belgium-senegal-0701",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Senegal's 5–0 win was a statement result and a goal-difference cushion heading into the next fixture."
   },
   {
     "id": "wc2026-argentina-algeria-0616--accelerated-->wc2026-argentina-austria-0622",

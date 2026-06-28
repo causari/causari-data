@@ -2031,8 +2031,8 @@
   },
   {
     "id": "wc2026-algeria-austria-0627",
-    "title": "Algeria vs Austria",
-    "description": "Group J fixture: Algeria vs Austria, June 27, 2026 at Kansas City.",
+    "title": "Algeria 3–3 Austria",
+    "description": "Algeria drew Austria 3–3 in Group J.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2040,7 +2040,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "group-j",
@@ -2049,13 +2049,13 @@
     ],
     "date": "2026-06-27",
     "dateLabel": "June 27, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Algeria",
       "Austria",
       "Group J"
     ],
-    "whyItMatters": "Upcoming Group J match.",
+    "whyItMatters": "Scorers: Rafik Belghali, Riyad Mahrez, Riyad Mahrez, Marko Arnautovic, Marcel Sabitzer, Sasa Kalajdzic.",
     "sources": [
       {
         "type": "open-data",
@@ -2066,8 +2066,8 @@
   },
   {
     "id": "wc2026-jordan-argentina-0627",
-    "title": "Jordan vs Argentina",
-    "description": "Group J fixture: Jordan vs Argentina, June 27, 2026 at Dallas (Arlington).",
+    "title": "Jordan 1–3 Argentina",
+    "description": "Jordan lost to Argentina 1–3 in Group J.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2075,7 +2075,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "group-j",
@@ -2084,13 +2084,13 @@
     ],
     "date": "2026-06-27",
     "dateLabel": "June 27, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Jordan",
       "Argentina",
       "Group J"
     ],
-    "whyItMatters": "Upcoming Group J match.",
+    "whyItMatters": "Scorers: Mousa Al-Tamari, Giovani Lo Celso, Lautaro Martínez, Lionel Messi.",
     "sources": [
       {
         "type": "open-data",
@@ -2241,8 +2241,8 @@
   },
   {
     "id": "wc2026-colombia-portugal-0627",
-    "title": "Colombia vs Portugal",
-    "description": "Group K fixture: Colombia vs Portugal, June 27, 2026 at Miami (Miami Gardens).",
+    "title": "Colombia 0–0 Portugal",
+    "description": "Colombia drew Portugal 0–0 in Group K.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2250,7 +2250,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "group-k",
@@ -2259,13 +2259,13 @@
     ],
     "date": "2026-06-27",
     "dateLabel": "June 27, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Colombia",
       "Portugal",
       "Group K"
     ],
-    "whyItMatters": "Upcoming Group K match.",
+    "whyItMatters": "Full-time 0–0 at Miami (Miami Gardens).",
     "sources": [
       {
         "type": "open-data",
@@ -2276,8 +2276,8 @@
   },
   {
     "id": "wc2026-dr-congo-uzbekistan-0627",
-    "title": "DR Congo vs Uzbekistan",
-    "description": "Group K fixture: DR Congo vs Uzbekistan, June 27, 2026 at Atlanta.",
+    "title": "DR Congo 3–1 Uzbekistan",
+    "description": "DR Congo beat Uzbekistan 3–1 in Group K.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2285,7 +2285,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "group-k",
@@ -2294,13 +2294,13 @@
     ],
     "date": "2026-06-27",
     "dateLabel": "June 27, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "DR Congo",
       "Uzbekistan",
       "Group K"
     ],
-    "whyItMatters": "Upcoming Group K match.",
+    "whyItMatters": "Scorers: Yoane Wissa, Fiston Mayele, Yoane Wissa, Eldor Shomurodov.",
     "sources": [
       {
         "type": "open-data",
@@ -2451,8 +2451,8 @@
   },
   {
     "id": "wc2026-panama-england-0627",
-    "title": "Panama vs England",
-    "description": "Group L fixture: Panama vs England, June 27, 2026 at New York/New Jersey (East Rutherford).",
+    "title": "Panama 0–2 England",
+    "description": "Panama lost to England 0–2 in Group L.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2460,7 +2460,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "group-l",
@@ -2469,13 +2469,13 @@
     ],
     "date": "2026-06-27",
     "dateLabel": "June 27, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Panama",
       "England",
       "Group L"
     ],
-    "whyItMatters": "Upcoming Group L match.",
+    "whyItMatters": "Scorers: Jude Bellingham, Harry Kane.",
     "sources": [
       {
         "type": "open-data",
@@ -2486,8 +2486,8 @@
   },
   {
     "id": "wc2026-croatia-ghana-0627",
-    "title": "Croatia vs Ghana",
-    "description": "Group L fixture: Croatia vs Ghana, June 27, 2026 at Philadelphia.",
+    "title": "Croatia 2–1 Ghana",
+    "description": "Croatia beat Ghana 2–1 in Group L.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2495,7 +2495,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "group-l",
@@ -2504,13 +2504,13 @@
     ],
     "date": "2026-06-27",
     "dateLabel": "June 27, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Croatia",
       "Ghana",
       "Group L"
     ],
-    "whyItMatters": "Upcoming Group L match.",
+    "whyItMatters": "Scorers: Petar Sucic, Nikola Vlasic, Derrick Luckassen.",
     "sources": [
       {
         "type": "open-data",
@@ -2555,9 +2555,9 @@
     ]
   },
   {
-    "id": "wc2026-germany-3a-b-c-d-f-0629",
-    "title": "Germany vs 3A/B/C/D/F",
-    "description": "Round of 32 fixture: Germany vs 3A/B/C/D/F, June 29, 2026 at Boston (Foxborough).",
+    "id": "wc2026-germany-paraguay-0629",
+    "title": "Germany vs Paraguay",
+    "description": "Round of 32 fixture: Germany vs Paraguay, June 29, 2026 at Boston (Foxborough).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2570,14 +2570,14 @@
       "world-cup-2026",
       "round-of-32",
       "germany",
-      "3a-b-c-d-f"
+      "paraguay"
     ],
     "date": "2026-06-29",
     "dateLabel": "June 29, 2026",
     "status": "scheduled",
     "entities": [
       "Germany",
-      "3A/B/C/D/F",
+      "Paraguay",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2660,9 +2660,9 @@
     ]
   },
   {
-    "id": "wc2026-1i-3c-d-f-g-h-0630",
-    "title": "1I vs 3C/D/F/G/H",
-    "description": "Round of 32 fixture: 1I vs 3C/D/F/G/H, June 30, 2026 at New York/New Jersey (East Rutherford).",
+    "id": "wc2026-france-sweden-0630",
+    "title": "France vs Sweden",
+    "description": "Round of 32 fixture: France vs Sweden, June 30, 2026 at New York/New Jersey (East Rutherford).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2674,15 +2674,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1i",
-      "3c-d-f-g-h"
+      "france",
+      "sweden"
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
     "status": "scheduled",
     "entities": [
-      "1I",
-      "3C/D/F/G/H",
+      "France",
+      "Sweden",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2695,9 +2695,9 @@
     ]
   },
   {
-    "id": "wc2026-ivory-coast-2i-0630",
-    "title": "Ivory Coast vs 2I",
-    "description": "Round of 32 fixture: Ivory Coast vs 2I, June 30, 2026 at Dallas (Arlington).",
+    "id": "wc2026-ivory-coast-norway-0630",
+    "title": "Ivory Coast vs Norway",
+    "description": "Round of 32 fixture: Ivory Coast vs Norway, June 30, 2026 at Dallas (Arlington).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2710,14 +2710,14 @@
       "world-cup-2026",
       "round-of-32",
       "ivory-coast",
-      "2i"
+      "norway"
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
     "status": "scheduled",
     "entities": [
       "Ivory Coast",
-      "2I",
+      "Norway",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2730,9 +2730,9 @@
     ]
   },
   {
-    "id": "wc2026-mexico-3c-e-f-h-i-0630",
-    "title": "Mexico vs 3C/E/F/H/I",
-    "description": "Round of 32 fixture: Mexico vs 3C/E/F/H/I, June 30, 2026 at Mexico City.",
+    "id": "wc2026-mexico-ecuador-0630",
+    "title": "Mexico vs Ecuador",
+    "description": "Round of 32 fixture: Mexico vs Ecuador, June 30, 2026 at Mexico City.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2745,14 +2745,14 @@
       "world-cup-2026",
       "round-of-32",
       "mexico",
-      "3c-e-f-h-i"
+      "ecuador"
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
     "status": "scheduled",
     "entities": [
       "Mexico",
-      "3C/E/F/H/I",
+      "Ecuador",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2765,9 +2765,9 @@
     ]
   },
   {
-    "id": "wc2026-1l-3e-h-i-j-k-0701",
-    "title": "1L vs 3E/H/I/J/K",
-    "description": "Round of 32 fixture: 1L vs 3E/H/I/J/K, July 1, 2026 at Atlanta.",
+    "id": "wc2026-england-dr-congo-0701",
+    "title": "England vs DR Congo",
+    "description": "Round of 32 fixture: England vs DR Congo, July 1, 2026 at Atlanta.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2779,15 +2779,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1l",
-      "3e-h-i-j-k"
+      "england",
+      "dr-congo"
     ],
     "date": "2026-07-01",
     "dateLabel": "July 1, 2026",
     "status": "scheduled",
     "entities": [
-      "1L",
-      "3E/H/I/J/K",
+      "England",
+      "DR Congo",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2800,9 +2800,9 @@
     ]
   },
   {
-    "id": "wc2026-usa-3b-e-f-i-j-0701",
-    "title": "USA vs 3B/E/F/I/J",
-    "description": "Round of 32 fixture: USA vs 3B/E/F/I/J, July 1, 2026 at San Francisco Bay Area (Santa Clara).",
+    "id": "wc2026-usa-bosnia-and-herzegovina-0701",
+    "title": "USA vs Bosnia & Herzegovina",
+    "description": "Round of 32 fixture: USA vs Bosnia & Herzegovina, July 1, 2026 at San Francisco Bay Area (Santa Clara).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2815,14 +2815,14 @@
       "world-cup-2026",
       "round-of-32",
       "usa",
-      "3b-e-f-i-j"
+      "bosnia-and-herzegovina"
     ],
     "date": "2026-07-01",
     "dateLabel": "July 1, 2026",
     "status": "scheduled",
     "entities": [
       "USA",
-      "3B/E/F/I/J",
+      "Bosnia & Herzegovina",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2835,9 +2835,9 @@
     ]
   },
   {
-    "id": "wc2026-1g-3a-e-h-i-j-0701",
-    "title": "1G vs 3A/E/H/I/J",
-    "description": "Round of 32 fixture: 1G vs 3A/E/H/I/J, July 1, 2026 at Seattle.",
+    "id": "wc2026-belgium-senegal-0701",
+    "title": "Belgium vs Senegal",
+    "description": "Round of 32 fixture: Belgium vs Senegal, July 1, 2026 at Seattle.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2849,15 +2849,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1g",
-      "3a-e-h-i-j"
+      "belgium",
+      "senegal"
     ],
     "date": "2026-07-01",
     "dateLabel": "July 1, 2026",
     "status": "scheduled",
     "entities": [
-      "1G",
-      "3A/E/H/I/J",
+      "Belgium",
+      "Senegal",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2870,9 +2870,9 @@
     ]
   },
   {
-    "id": "wc2026-2k-2l-0702",
-    "title": "2K vs 2L",
-    "description": "Round of 32 fixture: 2K vs 2L, July 2, 2026 at Toronto.",
+    "id": "wc2026-portugal-croatia-0702",
+    "title": "Portugal vs Croatia",
+    "description": "Round of 32 fixture: Portugal vs Croatia, July 2, 2026 at Toronto.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2884,15 +2884,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "2k",
-      "2l"
+      "portugal",
+      "croatia"
     ],
     "date": "2026-07-02",
     "dateLabel": "July 2, 2026",
     "status": "scheduled",
     "entities": [
-      "2K",
-      "2L",
+      "Portugal",
+      "Croatia",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2905,9 +2905,9 @@
     ]
   },
   {
-    "id": "wc2026-1h-2j-0702",
-    "title": "1H vs 2J",
-    "description": "Round of 32 fixture: 1H vs 2J, July 2, 2026 at Los Angeles (Inglewood).",
+    "id": "wc2026-spain-austria-0702",
+    "title": "Spain vs Austria",
+    "description": "Round of 32 fixture: Spain vs Austria, July 2, 2026 at Los Angeles (Inglewood).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2919,15 +2919,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1h",
-      "2j"
+      "spain",
+      "austria"
     ],
     "date": "2026-07-02",
     "dateLabel": "July 2, 2026",
     "status": "scheduled",
     "entities": [
-      "1H",
-      "2J",
+      "Spain",
+      "Austria",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2940,9 +2940,9 @@
     ]
   },
   {
-    "id": "wc2026-switzerland-3e-f-g-i-j-0702",
-    "title": "Switzerland vs 3E/F/G/I/J",
-    "description": "Round of 32 fixture: Switzerland vs 3E/F/G/I/J, July 2, 2026 at Vancouver.",
+    "id": "wc2026-switzerland-algeria-0702",
+    "title": "Switzerland vs Algeria",
+    "description": "Round of 32 fixture: Switzerland vs Algeria, July 2, 2026 at Vancouver.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2955,14 +2955,14 @@
       "world-cup-2026",
       "round-of-32",
       "switzerland",
-      "3e-f-g-i-j"
+      "algeria"
     ],
     "date": "2026-07-02",
     "dateLabel": "July 2, 2026",
     "status": "scheduled",
     "entities": [
       "Switzerland",
-      "3E/F/G/I/J",
+      "Algeria",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -2975,9 +2975,9 @@
     ]
   },
   {
-    "id": "wc2026-1j-2h-0703",
-    "title": "1J vs 2H",
-    "description": "Round of 32 fixture: 1J vs 2H, July 3, 2026 at Miami (Miami Gardens).",
+    "id": "wc2026-argentina-cape-verde-0703",
+    "title": "Argentina vs Cape Verde",
+    "description": "Round of 32 fixture: Argentina vs Cape Verde, July 3, 2026 at Miami (Miami Gardens).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2989,15 +2989,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1j",
-      "2h"
+      "argentina",
+      "cape-verde"
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
     "status": "scheduled",
     "entities": [
-      "1J",
-      "2H",
+      "Argentina",
+      "Cape Verde",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -3010,9 +3010,9 @@
     ]
   },
   {
-    "id": "wc2026-1k-3d-e-i-j-l-0703",
-    "title": "1K vs 3D/E/I/J/L",
-    "description": "Round of 32 fixture: 1K vs 3D/E/I/J/L, July 3, 2026 at Kansas City.",
+    "id": "wc2026-colombia-ghana-0703",
+    "title": "Colombia vs Ghana",
+    "description": "Round of 32 fixture: Colombia vs Ghana, July 3, 2026 at Kansas City.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3024,15 +3024,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-32",
-      "1k",
-      "3d-e-i-j-l"
+      "colombia",
+      "ghana"
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
     "status": "scheduled",
     "entities": [
-      "1K",
-      "3D/E/I/J/L",
+      "Colombia",
+      "Ghana",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",
@@ -3045,9 +3045,9 @@
     ]
   },
   {
-    "id": "wc2026-australia-2g-0703",
-    "title": "Australia vs 2G",
-    "description": "Round of 32 fixture: Australia vs 2G, July 3, 2026 at Dallas (Arlington).",
+    "id": "wc2026-australia-egypt-0703",
+    "title": "Australia vs Egypt",
+    "description": "Round of 32 fixture: Australia vs Egypt, July 3, 2026 at Dallas (Arlington).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3060,14 +3060,14 @@
       "world-cup-2026",
       "round-of-32",
       "australia",
-      "2g"
+      "egypt"
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
     "status": "scheduled",
     "entities": [
       "Australia",
-      "2G",
+      "Egypt",
       "Round of 32"
     ],
     "whyItMatters": "Upcoming Round of 32 match.",

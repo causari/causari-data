@@ -4,7 +4,7 @@
     "pattern": "Statement Win Creates Momentum and Goal-Difference Cushion",
     "description": "A large-margin win generates both a practical goal-difference advantage and narrative momentum that carries into the next fixture.",
     "instances": [
-      "wc2026-czech-republic-mexico-0624--accelerated-->wc2026-mexico-3c-e-f-h-i-0630",
+      "wc2026-czech-republic-mexico-0624--accelerated-->wc2026-mexico-ecuador-0630",
       "wc2026-switzerland-bosnia-and-herzegovina-0618--accelerated-->wc2026-switzerland-canada-0624",
       "wc2026-canada-qatar-0618--accelerated-->wc2026-switzerland-canada-0624",
       "wc2026-brazil-haiti-0619--accelerated-->wc2026-scotland-brazil-0624",
@@ -14,9 +14,12 @@
       "wc2026-sweden-tunisia-0614--accelerated-->wc2026-netherlands-sweden-0620",
       "wc2026-netherlands-sweden-0620--accelerated-->wc2026-tunisia-netherlands-0625",
       "wc2026-tunisia-japan-0620--accelerated-->wc2026-japan-sweden-0625",
+      "wc2026-new-zealand-belgium-0626--accelerated-->wc2026-belgium-senegal-0701",
       "wc2026-spain-saudi-arabia-0621--accelerated-->wc2026-uruguay-spain-0626",
       "wc2026-iraq-norway-0616--accelerated-->wc2026-norway-senegal-0622",
       "wc2026-france-iraq-0622--accelerated-->wc2026-norway-france-0626",
+      "wc2026-norway-france-0626--accelerated-->wc2026-france-sweden-0630",
+      "wc2026-senegal-iraq-0626--accelerated-->wc2026-belgium-senegal-0701",
       "wc2026-argentina-algeria-0616--accelerated-->wc2026-argentina-austria-0622",
       "wc2026-portugal-uzbekistan-0623--accelerated-->wc2026-colombia-portugal-0627"
     ],
