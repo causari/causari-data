@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-26",
+  "title": "Ecuador stun Germany, Japan and Sweden survive, Group D locks in",
+  "summary": "Ngày 26/6 theo giờ Việt Nam khép lại các bảng D, E và F. Ecuador tạo cú sốc khi thắng Germany 2-1; Ivory Coast hạ Curacao 2-0; Netherlands thắng Tunisia 3-1; Japan hòa Sweden 1-1; Turkey thắng United States 3-2; Paraguay hòa Australia 0-0.",
+  "results": [
+    { "group": "E", "home": "Ecuador", "away": "Germany", "homeScore": 2, "awayScore": 1, "status": "complete" },
+    { "group": "E", "home": "Curacao", "away": "Ivory Coast", "homeScore": 0, "awayScore": 2, "status": "complete" },
+    { "group": "F", "home": "Tunisia", "away": "Netherlands", "homeScore": 1, "awayScore": 3, "status": "complete" },
+    { "group": "F", "home": "Japan", "away": "Sweden", "homeScore": 1, "awayScore": 1, "status": "complete" },
+    { "group": "D", "home": "Turkey", "away": "United States", "homeScore": 3, "awayScore": 2, "status": "complete" },
+    { "group": "D", "home": "Paraguay", "away": "Australia", "homeScore": 0, "awayScore": 0, "status": "complete" }
+  ],
+  "bigMoments": [
+    "Ecuador thắng Germany 2-1, phá vỡ aura bất bại của Đức sau hai lượt đầu rất mạnh.",
+    "Japan hòa Sweden 1-1, đủ để giữ nhịp tiến vào vòng knock-out và tạo ra cặp Brazil vs Japan rất đáng xem.",
+    "Australia hòa Paraguay 0-0, qua đó giữ vị trí nhì bảng D và đi tiếp.",
+    "Turkey thắng United States 3-2 trong một trận nhiều bàn, nhưng không đảo ngược được cục diện bảng D.",
+    "Netherlands thắng Tunisia 3-1 để củng cố vị thế nhất bảng F."
+  ],
+  "tournamentImpact": [
+    "Germany vẫn đi tiếp nhưng mất đi hình ảnh hủy diệt tuyệt đối trước vòng knock-out.",
+    "Ecuador đi tiếp và trở thành một đội hạng ba rất khó chịu, sau khi thắng trực tiếp một ứng viên lớn.",
+    "Brazil chịu tác động gián tiếp vì Japan trở thành đối thủ vòng 32 đội, một bài test về tốc độ, pressing và tổ chức.",
+    "Australia giữ được nhánh đi tiếp, còn Paraguay nhiều khả năng vẫn sống nhờ nhóm hạng ba tốt.",
+    "Netherlands và Sweden/Japan làm bảng F trở thành nguồn đối thủ nguy hiểm ở nhánh knock-out."
+  ],
+  "standoutPlayers": [
+    { "name": "Ecuador collective", "team": "Ecuador", "note": "Tạo một trong các cú sốc lớn nhất vòng bảng bằng chiến thắng 2-1 trước Germany." },
+    { "name": "Netherlands attack", "team": "Netherlands", "note": "Duy trì hiệu suất ghi bàn cao và kết thúc bảng F với momentum tốt." },
+    { "name": "Japan structure", "team": "Japan", "note": "Giữ được trận hòa trước Sweden và bước vào vòng knock-out với profile kỷ luật cao." },
+    { "name": "Australia defensive unit", "team": "Australia", "note": "Giữ sạch lưới trước Paraguay để bảo vệ suất đi tiếp." },
+    { "name": "Turkey attack", "team": "Turkey", "note": "Tạo trận thắng 3-2 trước United States, một điểm sáng dù cục diện bảng không đổi nhiều."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu ngày 26/6. Việc Germany thua Ecuador khiến profile ổn định của Argentina càng nổi bật hơn trước khi họ đá lượt cuối bảng J.",
+    "Brazil": "Brazil không thi đấu, nhưng chịu tác động rõ: Japan nổi lên như đối thủ vòng 32 đội. Đây là cặp đấu đáng chú ý vì Japan có tính tổ chức và chuyển trạng thái tốt.",
+    "Portugal": "Portugal không thi đấu. Nhưng ngày 26/6 làm bức tranh ứng viên thêm nhiễu: các đội lớn như Germany đã cho thấy vẫn có thể bị kéo vào trận đấu hỗn loạn."
+  },
+  "watchNext": [
+    "Argentina vs Jordan: kiểm tra liệu Argentina có toàn thắng bảng J hay không.",
+    "Colombia vs Portugal: trận quyết định ngôi đầu bảng K và nhánh đấu của Portugal.",
+    "England vs Panama và Croatia vs Ghana: hoàn tất cục diện bảng L.",
+    "Theo dõi Brazil vs Japan sau khi cặp đấu này trở thành một trong các điểm nóng vòng 32 đội."
+  ],
+  "causalTimeline": [
+    { "from": "Germany 7-1 Curacao và 2-1 Ivory Coast", "link": "created", "to": "Germany high-control narrative" },
+    { "from": "Ecuador 2-1 Germany", "link": "prevented", "to": "Germany flawless group-stage narrative" },
+    { "from": "Japan 1-1 Sweden", "link": "enabled", "to": "Brazil vs Japan knockout watchpoint" },
+    { "from": "Paraguay 0-0 Australia", "link": "enabled", "to": "Australia protects second-place path" },
+    { "from": "Turkey 3-2 United States", "link": "accelerated", "to": "Group D volatility narrative, despite fixed top positions" }
+  ],
+  "sources": [
+    { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-26" },
+    { "name": "Bavarian Football Works - Ecuador beat Germany reaction", "url": "https://www.bavarianfootballworks.com/germany-international-soccer/221626/fifa-world-cup-germany-lose-ecuador-comeback-joshua-kimmich-round-of-32-knockouts" },
+    { "name": "News.com.au - Australia progress after Paraguay draw", "url": "https://www.news.com.au/sport/football/world-cup/world-cup-live-blog-socceroos-hero-on-chopping-block-as-tony-popovic-faces-selection-headaches/live-coverage/e099783ab3f8ff1659f484d070a59436" }
+  ]
+}
