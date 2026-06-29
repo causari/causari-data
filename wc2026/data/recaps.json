@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "title": "World Cup 2026 Causal Recap",
   "description": "Daily Vietnamese recap data for the FIFA Men's World Cup 2026, structured for causal timeline visualization.",
-  "lastUpdated": "2026-06-28T09:20:00Z",
+  "lastUpdated": "2026-06-29T06:27:39Z",
   "timezone": "Asia/Ho_Chi_Minh",
   "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update once per completed match day.",
   "focusTeams": ["Argentina", "Brazil", "Portugal"],
@@ -17,43 +17,23 @@
         { "group": "I", "home": "Norway", "away": "Senegal", "homeScore": 3, "awayScore": 2, "status": "complete" },
         { "group": "J", "home": "Jordan", "away": "Algeria", "homeScore": 1, "awayScore": 2, "status": "complete" }
       ],
-      "bigMoments": [
-        "Argentina thắng Austria 2-0 và giữ sạch lưới trận thứ hai liên tiếp.",
-        "France thắng Iraq 3-0, tiếp tục xây hình ảnh ứng viên có khả năng kiểm soát bảng đấu.",
-        "Norway thắng Senegal 3-2 trong trận đấu mở ra cuộc đua rất căng ở bảng I.",
-        "Algeria thắng Jordan 2-1, giữ hy vọng cạnh tranh suất đi tiếp ở bảng J."
-      ],
-      "tournamentImpact": [
-        "Argentina gần như khóa vị trí đi tiếp và có lợi thế lớn để xoay tua ở lượt cuối.",
-        "France củng cố ngôi đầu bảng I trước trận gặp Norway.",
-        "Norway biến trận gặp France thành bài test thực sự về ngôi đầu và sức mạnh knock-out.",
-        "Bảng J tách thành Argentina kiểm soát phía trên, Algeria/Austria/Jordan tranh phần còn lại."
-      ],
+      "bigMoments": ["Argentina thắng Austria 2-0 và giữ sạch lưới trận thứ hai liên tiếp.", "France thắng Iraq 3-0, tiếp tục xây hình ảnh ứng viên có khả năng kiểm soát bảng đấu.", "Norway thắng Senegal 3-2 trong trận đấu mở ra cuộc đua rất căng ở bảng I.", "Algeria thắng Jordan 2-1, giữ hy vọng cạnh tranh suất đi tiếp ở bảng J."],
+      "tournamentImpact": ["Argentina gần như khóa vị trí đi tiếp và có lợi thế lớn để xoay tua ở lượt cuối.", "France củng cố ngôi đầu bảng I trước trận gặp Norway.", "Norway biến trận gặp France thành bài test thực sự về ngôi đầu và sức mạnh knock-out.", "Bảng J tách thành Argentina kiểm soát phía trên, Algeria/Austria/Jordan tranh phần còn lại."],
       "standoutPlayers": [
         { "name": "Argentina defensive unit", "team": "Argentina", "note": "Hai trận thắng liên tiếp không thủng lưới, tạo nền kiểm soát cho cả bảng J." },
         { "name": "France attack", "team": "France", "note": "Ghi ba bàn trước Iraq và duy trì hiệu suất ổn định." },
         { "name": "Norway attacking unit", "team": "Norway", "note": "Thắng Senegal 3-2, thể hiện khả năng tạo khác biệt trong trận mở." },
         { "name": "Algeria response", "team": "Algeria", "note": "Lấy ba điểm trước Jordan để giữ bảng J còn cạnh tranh." }
       ],
-      "focus": {
-        "Argentina": "Argentina là tâm điểm của ngày. Chiến thắng 2-0 trước Austria giúp họ đạt hai trận thắng, hai clean sheet và bước vào lượt cuối với quyền kiểm soát gần như tuyệt đối.",
-        "Brazil": "Brazil không thi đấu ngày 23/6. Nhưng phong độ ổn định của Argentina và France làm áp lực lên Brazil trước trận quyết định với Scotland tăng rõ rệt.",
-        "Portugal": "Portugal không thi đấu ngày 23/6 nhưng bước vào ngày 24/6 với áp lực lớn sau trận hòa DR Congo trước đó."
-      },
-      "watchNext": [
-        "Portugal vs Uzbekistan: trận buộc phải thắng để Portugal sửa sai sau trận hòa mở màn.",
-        "Colombia vs DR Congo: trận có thể giúp Colombia nắm quyền kiểm soát bảng K.",
-        "England vs Ghana và Panama vs Croatia: hai trận định hình bảng L."
-      ],
+      "focus": { "Argentina": "Argentina là tâm điểm của ngày. Chiến thắng 2-0 trước Austria giúp họ đạt hai trận thắng, hai clean sheet và bước vào lượt cuối với quyền kiểm soát gần như tuyệt đối.", "Brazil": "Brazil không thi đấu ngày 23/6. Nhưng phong độ ổn định của Argentina và France làm áp lực lên Brazil trước trận quyết định với Scotland tăng rõ rệt.", "Portugal": "Portugal không thi đấu ngày 23/6 nhưng bước vào ngày 24/6 với áp lực lớn sau trận hòa DR Congo trước đó." },
+      "watchNext": ["Portugal vs Uzbekistan: trận buộc phải thắng để Portugal sửa sai sau trận hòa mở màn.", "Colombia vs DR Congo: trận có thể giúp Colombia nắm quyền kiểm soát bảng K.", "England vs Ghana và Panama vs Croatia: hai trận định hình bảng L."],
       "causalTimeline": [
         { "from": "Argentina 3-0 Algeria", "link": "enabled", "to": "Argentina kiểm soát rủi ro trước Austria" },
         { "from": "Argentina 2-0 Austria", "link": "accelerated", "to": "Argentina trở thành ứng viên ổn định nhất vòng bảng" },
         { "from": "France 3-0 Iraq", "link": "accelerated", "to": "France duy trì nhóm ứng viên Tier S" },
         { "from": "Norway 3-2 Senegal", "link": "enabled", "to": "France vs Norway trở thành trận quyết định bảng I" }
       ],
-      "sources": [
-        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-23" }
-      ]
+      "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-23" }]
     },
     {
       "date": "2026-06-24",
@@ -65,35 +45,16 @@
         { "group": "L", "home": "Panama", "away": "Croatia", "homeScore": 0, "awayScore": 1, "status": "complete" },
         { "group": "K", "home": "Colombia", "away": "DR Congo", "homeScore": 1, "awayScore": 0, "status": "complete" }
       ],
-      "bigMoments": [
-        "Portugal thắng Uzbekistan 5-0, biến một trận áp lực thành màn reset niềm tin.",
-        "Colombia thắng DR Congo 1-0, tạo lợi thế rõ rệt trước trận cuối gặp Portugal.",
-        "England hòa Ghana 0-0, khiến bảng L chưa thể ngã ngũ sớm.",
-        "Croatia thắng Panama 1-0, khôi phục đường đi tiếp sau khởi đầu khó khăn."
-      ],
-      "tournamentImpact": [
-        "Bảng K chuyển thành cuộc đua Colombia vs Portugal cho ngôi đầu.",
-        "Portugal phục hồi hiệu số và tâm lý, nhưng vẫn cần trận cuối tốt trước Colombia.",
-        "Colombia bước vào lượt cuối với lợi thế bảng đấu và quyền chọn nhánh tốt hơn.",
-        "Bảng L mở hơn dự kiến vì England bị Ghana cầm hòa, trong khi Croatia sống lại nhờ thắng Panama."
-      ],
+      "bigMoments": ["Portugal thắng Uzbekistan 5-0, biến một trận áp lực thành màn reset niềm tin.", "Colombia thắng DR Congo 1-0, tạo lợi thế rõ rệt trước trận cuối gặp Portugal.", "England hòa Ghana 0-0, khiến bảng L chưa thể ngã ngũ sớm.", "Croatia thắng Panama 1-0, khôi phục đường đi tiếp sau khởi đầu khó khăn."],
+      "tournamentImpact": ["Bảng K chuyển thành cuộc đua Colombia vs Portugal cho ngôi đầu.", "Portugal phục hồi hiệu số và tâm lý, nhưng vẫn cần trận cuối tốt trước Colombia.", "Colombia bước vào lượt cuối với lợi thế bảng đấu và quyền chọn nhánh tốt hơn.", "Bảng L mở hơn dự kiến vì England bị Ghana cầm hòa, trong khi Croatia sống lại nhờ thắng Panama."],
       "standoutPlayers": [
         { "name": "Portugal attacking unit", "team": "Portugal", "note": "Tạo chiến thắng 5-0 để xóa áp lực sau trận hòa mở màn." },
         { "name": "Colombia defensive unit", "team": "Colombia", "note": "Bảo vệ chiến thắng tối thiểu trước DR Congo và củng cố vị trí đầu bảng." },
         { "name": "Croatia control core", "team": "Croatia", "note": "Giữ trận đấu trước Panama đủ chặt để lấy ba điểm sống còn." },
         { "name": "Ghana defensive block", "team": "Ghana", "note": "Cầm hòa England 0-0 và giữ hy vọng đi tiếp." }
       ],
-      "focus": {
-        "Argentina": "Argentina không thi đấu ngày 24/6 và vẫn ở trạng thái kiểm soát bảng J sau hai lượt đầu.",
-        "Brazil": "Brazil không thi đấu ngày 24/6 theo giờ Việt Nam; áp lực dồn sang trận Scotland vs Brazil ngày 25/6.",
-        "Portugal": "Portugal là story chính. Chiến thắng 5-0 trước Uzbekistan phục hồi momentum, nhưng Colombia cũng thắng nên trận Colombia vs Portugal vẫn quyết định ngôi đầu bảng K."
-      },
-      "watchNext": [
-        "Scotland vs Brazil: trận kiểm tra Brazil sau cú sảy chân trước Morocco.",
-        "Morocco vs Haiti: Morocco có cơ hội xác nhận vai trò ngựa ô bảng C.",
-        "Switzerland vs Canada: trận quyết định vị thế bảng B.",
-        "Czechia vs Mexico và South Africa vs South Korea: khép lại bảng A."
-      ],
+      "focus": { "Argentina": "Argentina không thi đấu ngày 24/6 và vẫn ở trạng thái kiểm soát bảng J sau hai lượt đầu.", "Brazil": "Brazil không thi đấu ngày 24/6 theo giờ Việt Nam; áp lực dồn sang trận Scotland vs Brazil ngày 25/6.", "Portugal": "Portugal là story chính. Chiến thắng 5-0 trước Uzbekistan phục hồi momentum, nhưng Colombia cũng thắng nên trận Colombia vs Portugal vẫn quyết định ngôi đầu bảng K." },
+      "watchNext": ["Scotland vs Brazil: trận kiểm tra Brazil sau cú sảy chân trước Morocco.", "Morocco vs Haiti: Morocco có cơ hội xác nhận vai trò ngựa ô bảng C.", "Switzerland vs Canada: trận quyết định vị thế bảng B.", "Czechia vs Mexico và South Africa vs South Korea: khép lại bảng A."],
       "causalTimeline": [
         { "from": "Portugal 1-1 DR Congo", "link": "accelerated", "to": "Portugal pressure fixture vs Uzbekistan" },
         { "from": "Portugal 5-0 Uzbekistan", "link": "enabled", "to": "Portugal trở lại cuộc đua ngôi đầu bảng K" },
@@ -101,9 +62,7 @@
         { "from": "England 0-0 Ghana", "link": "enabled", "to": "Group L remains open" },
         { "from": "Panama 0-1 Croatia", "link": "accelerated", "to": "Croatia comeback path in Group L" }
       ],
-      "sources": [
-        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-24" }
-      ]
+      "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-24" }]
     },
     {
       "date": "2026-06-25",
@@ -117,37 +76,16 @@
         { "group": "A", "home": "Czechia", "away": "Mexico", "homeScore": 0, "awayScore": 3, "status": "complete" },
         { "group": "A", "home": "South Africa", "away": "South Korea", "homeScore": 1, "awayScore": 0, "status": "complete" }
       ],
-      "bigMoments": [
-        "Brazil thắng Scotland 3-0, trả lời trực tiếp nghi ngờ sau trận hòa Morocco.",
-        "Morocco thắng Haiti 4-2, xác nhận mình không chỉ là đội gây khó dễ cho Brazil mà là một ứng viên ngựa ô thật sự.",
-        "Switzerland thắng Canada 2-1, chốt vị thế mạnh ở bảng B.",
-        "Mexico thắng Czechia 3-0, hoàn tất bảng A bằng một màn thể hiện thuyết phục.",
-        "South Africa thắng South Korea 1-0, tạo thêm biến động ở nhóm tranh vé."
-      ],
-      "tournamentImpact": [
-        "Brazil đi từ trạng thái bị nghi ngờ sang trạng thái đã ổn định trước knock-out.",
-        "Morocco trở thành đội có thể gây rắc rối cho bất kỳ đối thủ nào ở vòng 32 đội.",
-        "Switzerland và Canada đều có profile đi tiếp, nhưng Switzerland bước vào knock-out với vị thế tốt hơn.",
-        "Mexico giữ được momentum chủ nhà và có lợi thế tinh thần lớn.",
-        "Scotland bị đặt vào thế rất khó trong cuộc đua nhóm hạng ba."
-      ],
+      "bigMoments": ["Brazil thắng Scotland 3-0, trả lời trực tiếp nghi ngờ sau trận hòa Morocco.", "Morocco thắng Haiti 4-2, xác nhận mình không chỉ là đội gây khó dễ cho Brazil mà là một ứng viên ngựa ô thật sự.", "Switzerland thắng Canada 2-1, chốt vị thế mạnh ở bảng B.", "Mexico thắng Czechia 3-0, hoàn tất bảng A bằng một màn thể hiện thuyết phục.", "South Africa thắng South Korea 1-0, tạo thêm biến động ở nhóm tranh vé."],
+      "tournamentImpact": ["Brazil đi từ trạng thái bị nghi ngờ sang trạng thái đã ổn định trước knock-out.", "Morocco trở thành đội có thể gây rắc rối cho bất kỳ đối thủ nào ở vòng 32 đội.", "Switzerland và Canada đều có profile đi tiếp, nhưng Switzerland bước vào knock-out với vị thế tốt hơn.", "Mexico giữ được momentum chủ nhà và có lợi thế tinh thần lớn.", "Scotland bị đặt vào thế rất khó trong cuộc đua nhóm hạng ba."],
       "standoutPlayers": [
         { "name": "Brazil front line", "team": "Brazil", "note": "Chuyển hóa áp lực thành chiến thắng 3-0, phục hồi hình ảnh ứng viên vô địch." },
         { "name": "Morocco attack", "team": "Morocco", "note": "Ghi bốn bàn trước Haiti và duy trì narrative ngựa ô." },
         { "name": "Switzerland control core", "team": "Switzerland", "note": "Thắng Canada trong trận có giá trị cao về vị thế bảng B." },
         { "name": "Mexico attacking unit", "team": "Mexico", "note": "Tạo chiến thắng 3-0 giúp chủ nhà kết thúc bảng A mạnh mẽ." }
       ],
-      "focus": {
-        "Argentina": "Argentina không thi đấu ngày 25/6. Việc Brazil thắng lớn khiến cuộc đua ứng viên Nam Mỹ trở nên rõ hơn: Argentina ổn định, Brazil đã phục hồi.",
-        "Brazil": "Brazil là tâm điểm. Chiến thắng 3-0 trước Scotland xóa phần lớn áp lực từ trận hòa Morocco và mở đường cho họ vào vòng 32 đội với momentum tốt hơn.",
-        "Portugal": "Portugal không thi đấu ngày 25/6. Nhưng chiến thắng của Brazil cho thấy các ứng viên lớn có thể phục hồi nhanh sau một trận mở màn không như ý, tương tự bài toán của Portugal."
-      },
-      "watchNext": [
-        "Ecuador vs Germany: kiểm tra Germany sau hai trận đầu rất mạnh.",
-        "Japan vs Sweden: trận định hình đối thủ tương lai của Brazil.",
-        "Turkey vs United States và Paraguay vs Australia: khép lại bảng D.",
-        "Tunisia vs Netherlands: Netherlands có cơ hội giữ vị thế đầu bảng F."
-      ],
+      "focus": { "Argentina": "Argentina không thi đấu ngày 25/6. Việc Brazil thắng lớn khiến cuộc đua ứng viên Nam Mỹ trở nên rõ hơn: Argentina ổn định, Brazil đã phục hồi.", "Brazil": "Brazil là tâm điểm. Chiến thắng 3-0 trước Scotland xóa phần lớn áp lực từ trận hòa Morocco và mở đường cho họ vào vòng 32 đội với momentum tốt hơn.", "Portugal": "Portugal không thi đấu ngày 25/6. Nhưng chiến thắng của Brazil cho thấy các ứng viên lớn có thể phục hồi nhanh sau một trận mở màn không như ý, tương tự bài toán của Portugal." },
+      "watchNext": ["Ecuador vs Germany: kiểm tra Germany sau hai trận đầu rất mạnh.", "Japan vs Sweden: trận định hình đối thủ tương lai của Brazil.", "Turkey vs United States và Paraguay vs Australia: khép lại bảng D.", "Tunisia vs Netherlands: Netherlands có cơ hội giữ vị thế đầu bảng F."],
       "causalTimeline": [
         { "from": "Brazil 1-1 Morocco", "link": "accelerated", "to": "Brazil pressure vs Scotland" },
         { "from": "Scotland 0-3 Brazil", "link": "enabled", "to": "Brazil restored contender narrative" },
@@ -155,10 +93,7 @@
         { "from": "Switzerland 2-1 Canada", "link": "caused", "to": "Switzerland finishes above Canada in Group B race" },
         { "from": "Czechia 0-3 Mexico", "link": "accelerated", "to": "Mexico host momentum before knock-out" }
       ],
-      "sources": [
-        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-25" },
-        { "name": "Guardian - Scotland eliminated context", "url": "https://www.theguardian.com/football/2026/jun/28/scotland-eliminated-from-world-cup" }
-      ]
+      "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-25" }, { "name": "Guardian - Scotland eliminated context", "url": "https://www.theguardian.com/football/2026/jun/28/scotland-eliminated-from-world-cup" }]
     },
     {
       "date": "2026-06-26",
@@ -172,20 +107,8 @@
         { "group": "D", "home": "Turkey", "away": "United States", "homeScore": 3, "awayScore": 2, "status": "complete" },
         { "group": "D", "home": "Paraguay", "away": "Australia", "homeScore": 0, "awayScore": 0, "status": "complete" }
       ],
-      "bigMoments": [
-        "Ecuador thắng Germany 2-1, phá vỡ aura bất bại của Đức sau hai lượt đầu rất mạnh.",
-        "Japan hòa Sweden 1-1, đủ để giữ nhịp tiến vào vòng knock-out và tạo ra cặp Brazil vs Japan rất đáng xem.",
-        "Australia hòa Paraguay 0-0, qua đó giữ vị trí nhì bảng D và đi tiếp.",
-        "Turkey thắng United States 3-2 trong một trận nhiều bàn, nhưng không đảo ngược được cục diện bảng D.",
-        "Netherlands thắng Tunisia 3-1 để củng cố vị thế nhất bảng F."
-      ],
-      "tournamentImpact": [
-        "Germany vẫn đi tiếp nhưng mất đi hình ảnh hủy diệt tuyệt đối trước vòng knock-out.",
-        "Ecuador đi tiếp và trở thành một đội hạng ba rất khó chịu, sau khi thắng trực tiếp một ứng viên lớn.",
-        "Brazil chịu tác động gián tiếp vì Japan trở thành đối thủ vòng 32 đội, một bài test về tốc độ, pressing và tổ chức.",
-        "Australia giữ được nhánh đi tiếp, còn Paraguay nhiều khả năng vẫn sống nhờ nhóm hạng ba tốt.",
-        "Netherlands và Sweden/Japan làm bảng F trở thành nguồn đối thủ nguy hiểm ở nhánh knock-out."
-      ],
+      "bigMoments": ["Ecuador thắng Germany 2-1, phá vỡ aura bất bại của Đức sau hai lượt đầu rất mạnh.", "Japan hòa Sweden 1-1, đủ để giữ nhịp tiến vào vòng knock-out và tạo ra cặp Brazil vs Japan rất đáng xem.", "Australia hòa Paraguay 0-0, qua đó giữ vị trí nhì bảng D và đi tiếp.", "Turkey thắng United States 3-2 trong một trận nhiều bàn, nhưng không đảo ngược được cục diện bảng D.", "Netherlands thắng Tunisia 3-1 để củng cố vị thế nhất bảng F."],
+      "tournamentImpact": ["Germany vẫn đi tiếp nhưng mất đi hình ảnh hủy diệt tuyệt đối trước vòng knock-out.", "Ecuador đi tiếp và trở thành một đội hạng ba rất khó chịu, sau khi thắng trực tiếp một ứng viên lớn.", "Brazil chịu tác động gián tiếp vì Japan trở thành đối thủ vòng 32 đội, một bài test về tốc độ, pressing và tổ chức.", "Australia giữ được nhánh đi tiếp, còn Paraguay nhiều khả năng vẫn sống nhờ nhóm hạng ba tốt.", "Netherlands và Sweden/Japan làm bảng F trở thành nguồn đối thủ nguy hiểm ở nhánh knock-out."],
       "standoutPlayers": [
         { "name": "Ecuador collective", "team": "Ecuador", "note": "Tạo một trong các cú sốc lớn nhất vòng bảng bằng chiến thắng 2-1 trước Germany." },
         { "name": "Netherlands attack", "team": "Netherlands", "note": "Duy trì hiệu suất ghi bàn cao và kết thúc bảng F với momentum tốt." },
@@ -193,17 +116,8 @@
         { "name": "Australia defensive unit", "team": "Australia", "note": "Giữ sạch lưới trước Paraguay để bảo vệ suất đi tiếp." },
         { "name": "Turkey attack", "team": "Turkey", "note": "Tạo trận thắng 3-2 trước United States, một điểm sáng dù cục diện bảng không đổi nhiều." }
       ],
-      "focus": {
-        "Argentina": "Argentina không thi đấu ngày 26/6. Việc Germany thua Ecuador khiến profile ổn định của Argentina càng nổi bật hơn trước khi họ đá lượt cuối bảng J.",
-        "Brazil": "Brazil không thi đấu, nhưng chịu tác động rõ: Japan nổi lên như đối thủ vòng 32 đội. Đây là cặp đấu đáng chú ý vì Japan có tính tổ chức và chuyển trạng thái tốt.",
-        "Portugal": "Portugal không thi đấu. Nhưng ngày 26/6 làm bức tranh ứng viên thêm nhiễu: các đội lớn như Germany đã cho thấy vẫn có thể bị kéo vào trận đấu hỗn loạn."
-      },
-      "watchNext": [
-        "Argentina vs Jordan: kiểm tra liệu Argentina có toàn thắng bảng J hay không.",
-        "Colombia vs Portugal: trận quyết định ngôi đầu bảng K và nhánh đấu của Portugal.",
-        "England vs Panama và Croatia vs Ghana: hoàn tất cục diện bảng L.",
-        "Theo dõi Brazil vs Japan sau khi cặp đấu này trở thành một trong các điểm nóng vòng 32 đội."
-      ],
+      "focus": { "Argentina": "Argentina không thi đấu ngày 26/6. Việc Germany thua Ecuador khiến profile ổn định của Argentina càng nổi bật hơn trước khi họ đá lượt cuối bảng J.", "Brazil": "Brazil không thi đấu, nhưng chịu tác động rõ: Japan nổi lên như đối thủ vòng 32 đội. Đây là cặp đấu đáng chú ý vì Japan có tính tổ chức và chuyển trạng thái tốt.", "Portugal": "Portugal không thi đấu. Nhưng ngày 26/6 làm bức tranh ứng viên thêm nhiễu: các đội lớn như Germany đã cho thấy vẫn có thể bị kéo vào trận đấu hỗn loạn." },
+      "watchNext": ["Argentina vs Jordan: kiểm tra liệu Argentina có toàn thắng bảng J hay không.", "Colombia vs Portugal: trận quyết định ngôi đầu bảng K và nhánh đấu của Portugal.", "England vs Panama và Croatia vs Ghana: hoàn tất cục diện bảng L.", "Theo dõi Brazil vs Japan sau khi cặp đấu này trở thành một trong các điểm nóng vòng 32 đội."],
       "causalTimeline": [
         { "from": "Germany 7-1 Curacao và 2-1 Ivory Coast", "link": "created", "to": "Germany high-control narrative" },
         { "from": "Ecuador 2-1 Germany", "link": "prevented", "to": "Germany flawless group-stage narrative" },
@@ -211,11 +125,7 @@
         { "from": "Paraguay 0-0 Australia", "link": "enabled", "to": "Australia protects second-place path" },
         { "from": "Turkey 3-2 United States", "link": "accelerated", "to": "Group D volatility narrative, despite fixed top positions" }
       ],
-      "sources": [
-        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-26" },
-        { "name": "Bavarian Football Works - Ecuador beat Germany reaction", "url": "https://www.bavarianfootballworks.com/germany-international-soccer/221626/fifa-world-cup-germany-lose-ecuador-comeback-joshua-kimmich-round-of-32-knockouts" },
-        { "name": "News.com.au - Australia progress after Paraguay draw", "url": "https://www.news.com.au/sport/football/world-cup/world-cup-live-blog-socceroos-hero-on-chopping-block-as-tony-popovic-faces-selection-headaches/live-coverage/e099783ab3f8ff1659f484d070a59436" }
-      ]
+      "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-26" }, { "name": "Bavarian Football Works - Ecuador beat Germany reaction", "url": "https://www.bavarianfootballworks.com/germany-international-soccer/221626/fifa-world-cup-germany-lose-ecuador-comeback-joshua-kimmich-round-of-32-knockouts" }, { "name": "News.com.au - Australia progress after Paraguay draw", "url": "https://www.news.com.au/sport/football/world-cup/world-cup-live-blog-socceroos-hero-on-chopping-block-as-tony-popovic-faces-selection-headaches/live-coverage/e099783ab3f8ff1659f484d070a59436" }]
     },
     {
       "date": "2026-06-27",
@@ -229,20 +139,8 @@
         { "group": "J", "home": "Jordan", "away": "Argentina", "homeScore": 1, "awayScore": 3, "status": "complete" },
         { "group": "J", "home": "Algeria", "away": "Austria", "homeScore": 3, "awayScore": 3, "status": "complete" }
       ],
-      "bigMoments": [
-        "Lionel Messi vào sân từ ghế dự bị và ghi cú đá phạt muộn, giúp Argentina thắng Jordan 3-1 và toàn thắng vòng bảng.",
-        "Colombia hòa Portugal 0-0, giữ ngôi đầu Group K với 7 điểm; Portugal đứng nhì bảng và gặp Croatia ở vòng 32 đội.",
-        "England thắng Panama 2-0 nhờ Jude Bellingham và Harry Kane, qua đó đứng đầu Group L và gặp DR Congo.",
-        "DR Congo thắng ngược Uzbekistan 3-1, có chiến thắng World Cup đầu tiên và giành vé gặp England.",
-        "Croatia thắng Ghana 2-1 nhờ bàn quyết định của Nikola Vlasic từ kiến tạo của Luka Modric."
-      ],
-      "tournamentImpact": [
-        "Argentina đi tiếp với tư cách nhất Group J và sẽ gặp Cape Verde ở vòng 32 đội.",
-        "Colombia nhất Group K và gặp Ghana; Portugal nhì Group K và gặp Croatia.",
-        "England nhất Group L và gặp DR Congo, một cặp đấu có độ chênh tên tuổi nhưng DR Congo đang có momentum rất tốt.",
-        "Croatia giành vị trí nhì Group L; Ghana vẫn có đường vào vòng 32 đội theo nhóm đội hạng ba tốt.",
-        "Vòng bảng khép lại với nhiều cặp đáng chú ý: Brazil vs Japan, Argentina vs Cape Verde, Portugal vs Croatia, England vs DR Congo."
-      ],
+      "bigMoments": ["Lionel Messi vào sân từ ghế dự bị và ghi cú đá phạt muộn, giúp Argentina thắng Jordan 3-1 và toàn thắng vòng bảng.", "Colombia hòa Portugal 0-0, giữ ngôi đầu Group K với 7 điểm; Portugal đứng nhì bảng và gặp Croatia ở vòng 32 đội.", "England thắng Panama 2-0 nhờ Jude Bellingham và Harry Kane, qua đó đứng đầu Group L và gặp DR Congo.", "DR Congo thắng ngược Uzbekistan 3-1, có chiến thắng World Cup đầu tiên và giành vé gặp England.", "Croatia thắng Ghana 2-1 nhờ bàn quyết định của Nikola Vlasic từ kiến tạo của Luka Modric."],
+      "tournamentImpact": ["Argentina đi tiếp với tư cách nhất Group J và sẽ gặp Cape Verde ở vòng 32 đội.", "Colombia nhất Group K và gặp Ghana; Portugal nhì Group K và gặp Croatia.", "England nhất Group L và gặp DR Congo, một cặp đấu có độ chênh tên tuổi nhưng DR Congo đang có momentum rất tốt.", "Croatia giành vị trí nhì Group L; Ghana vẫn có đường vào vòng 32 đội theo nhóm đội hạng ba tốt.", "Vòng bảng khép lại với nhiều cặp đáng chú ý: Brazil vs Japan, Argentina vs Cape Verde, Portugal vs Croatia, England vs DR Congo."],
       "standoutPlayers": [
         { "name": "Lionel Messi", "team": "Argentina", "note": "Ghi bàn từ đá phạt sau khi vào sân từ ghế dự bị, giúp Argentina hoàn tất vòng bảng toàn thắng." },
         { "name": "Jude Bellingham", "team": "England", "note": "Ghi bàn mở khóa trận đấu và kiến tạo cho Harry Kane trước Panama." },
@@ -250,17 +148,8 @@
         { "name": "Yoane Wissa", "team": "DR Congo", "note": "Lập cú đúp trong màn ngược dòng 3-1 trước Uzbekistan." },
         { "name": "Luka Modric", "team": "Croatia", "note": "Kiến tạo bàn quyết định cho Nikola Vlasic; Reuters ghi nhận đây là một cột mốc tuổi tác đáng chú ý tại World Cup." }
       ],
-      "focus": {
-        "Argentina": "Argentina thắng Jordan 3-1 dù xoay tua đội hình, toàn thắng vòng bảng và gặp Cape Verde ở vòng 32 đội. Điểm trừ nhỏ là họ lần đầu thủng lưới tại giải, nhưng tổng thể vẫn là một trong các ứng viên ổn định nhất.",
-        "Brazil": "Brazil không thi đấu ngày 27/6, nhưng bức tranh vòng 32 đội đã rõ hơn: Brazil sẽ gặp Japan vào ngày 29/6. Đây là bài test tốc độ, pressing và kỷ luật chiến thuật rất đáng xem.",
-        "Portugal": "Portugal hòa Colombia 0-0, mất cơ hội nhất Group K và phải gặp Croatia ở vòng 32 đội. Đây là nhánh khó hơn kỳ vọng vì Croatia có kinh nghiệm knockout và vừa thắng trận quyết định trước Ghana."
-      },
-      "watchNext": [
-        "South Africa vs Canada mở màn vòng 32 đội ngày 28/6.",
-        "Brazil vs Japan ngày 29/6: bài test đầu tiên thật sự của Brazil ở vòng knock-out.",
-        "Germany vs Paraguay và Netherlands vs Morocco cũng là các cặp đáng chú ý sớm của vòng 32 đội.",
-        "Theo dõi thể lực Ghana sau chấn thương mắt cá của Antoine Semenyo cuối trận Croatia."
-      ],
+      "focus": { "Argentina": "Argentina thắng Jordan 3-1 dù xoay tua đội hình, toàn thắng vòng bảng và gặp Cape Verde ở vòng 32 đội. Điểm trừ nhỏ là họ lần đầu thủng lưới tại giải, nhưng tổng thể vẫn là một trong các ứng viên ổn định nhất.", "Brazil": "Brazil không thi đấu ngày 27/6, nhưng bức tranh vòng 32 đội đã rõ hơn: Brazil sẽ gặp Japan vào ngày 29/6. Đây là bài test tốc độ, pressing và kỷ luật chiến thuật rất đáng xem.", "Portugal": "Portugal hòa Colombia 0-0, mất cơ hội nhất Group K và phải gặp Croatia ở vòng 32 đội. Đây là nhánh khó hơn kỳ vọng vì Croatia có kinh nghiệm knockout và vừa thắng trận quyết định trước Ghana." },
+      "watchNext": ["South Africa vs Canada mở màn vòng 32 đội ngày 28/6.", "Brazil vs Japan ngày 29/6: bài test đầu tiên thật sự của Brazil ở vòng knock-out.", "Germany vs Paraguay và Netherlands vs Morocco cũng là các cặp đáng chú ý sớm của vòng 32 đội.", "Theo dõi thể lực Ghana sau chấn thương mắt cá của Antoine Semenyo cuối trận Croatia."],
       "causalTimeline": [
         { "from": "Argentina toàn thắng hai lượt đầu", "link": "enabled", "to": "Scaloni xoay tua trước Jordan mà vẫn giữ quyền kiểm soát bảng J" },
         { "from": "Messi đá phạt thành bàn trước Jordan", "link": "accelerated", "to": "Argentina bước vào vòng 32 đội với aura ứng viên vô địch rất mạnh" },
@@ -268,14 +157,33 @@
         { "from": "DR Congo 3-1 Uzbekistan", "link": "enabled", "to": "England vs DR Congo trở thành cặp đấu tương phản giữa ứng viên lớn và câu chuyện lịch sử" },
         { "from": "Croatia 2-1 Ghana", "link": "caused", "to": "Portugal vs Croatia trở thành một trong các trận vòng 32 đội đáng xem nhất" }
       ],
-      "sources": [
-        { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-27" },
-        { "name": "Reuters - Argentina beat Jordan", "url": "https://www.reuters.com/sports/soccer/seventh-heaven-messi-argentina-beat-jordan-3-1-2026-06-28/" },
-        { "name": "Reuters - Colombia draw Portugal", "url": "https://www.reuters.com/sports/soccer/colombia-top-group-after-goalless-draw-with-portugal-2026-06-28/" },
-        { "name": "Reuters - England beat Panama", "url": "https://www.reuters.com/sports/soccer/england-beat-panama-2-0-win-group-l-2026-06-27/" },
-        { "name": "Reuters - Croatia beat Ghana", "url": "https://www.reuters.com/sports/soccer/vlasic-header-sends-croatia-into-world-cup-knockouts-with-2-1-win-over-ghana-2026-06-27/" },
-        { "name": "Guardian - DR Congo beat Uzbekistan", "url": "https://www.theguardian.com/football/live/2026/jun/27/dr-congo-v-uzbekistan-world-cup-2026-live" }
-      ]
+      "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-27" }, { "name": "Reuters - Argentina beat Jordan", "url": "https://www.reuters.com/sports/soccer/seventh-heaven-messi-argentina-beat-jordan-3-1-2026-06-28/" }, { "name": "Reuters - Colombia draw Portugal", "url": "https://www.reuters.com/sports/soccer/colombia-top-group-after-goalless-draw-with-portugal-2026-06-28/" }, { "name": "Reuters - England beat Panama", "url": "https://www.reuters.com/sports/soccer/england-beat-panama-2-0-win-group-l-2026-06-27/" }, { "name": "Reuters - Croatia beat Ghana", "url": "https://www.reuters.com/sports/soccer/vlasic-header-sends-croatia-into-world-cup-knockouts-with-2-1-win-over-ghana-2026-06-27/" }, { "name": "Guardian - DR Congo beat Uzbekistan", "url": "https://www.theguardian.com/football/live/2026/jun/27/dr-congo-v-uzbekistan-world-cup-2026-live" }]
+    },
+    {
+      "date": "2026-06-28",
+      "title": "Canada make history with stoppage-time knockout win",
+      "summary": "Ngày 28/6 theo giờ địa phương, Canada thắng South Africa 1-0 trong trận mở màn vòng 32 đội World Cup 2026. Stephen Eustaquio ghi bàn ở phút bù giờ 90+2, đưa Canada lần đầu tiên trong lịch sử vào vòng 16 đội. South Africa rời giải sau hành trình tốt nhất của họ tại World Cup, còn Canada chờ đội thắng cặp Netherlands vs Morocco.",
+      "results": [
+        { "stage": "Round of 32", "home": "South Africa", "away": "Canada", "homeScore": 0, "awayScore": 1, "status": "complete", "winner": "Canada", "advancesTo": "Round of 16 vs Netherlands/Morocco winner" }
+      ],
+      "bigMoments": ["Stephen Eustaquio ghi bàn quyết định ở phút 90+2 bằng cú dứt điểm mạnh từ ngoài vùng cấm.", "Canada lần đầu tiên trong lịch sử vượt qua một vòng knock-out World Cup nam.", "Alphonso Davies trở lại từ ghế dự bị trong hiệp hai, tăng thêm sức tấn công cho Canada.", "South Africa bị loại nhưng khép lại giải đấu bằng thành tích knock-out tốt nhất trong lịch sử đội tuyển."],
+      "tournamentImpact": ["Canada trở thành đội đầu tiên vào vòng 16 đội của World Cup 2026.", "Nhánh đấu của Canada được xác định một nửa: họ sẽ gặp đội thắng giữa Netherlands và Morocco vào ngày 4/7 tại Houston.", "Chiến thắng này củng cố narrative chủ nhà Bắc Mỹ: Canada không chỉ tham dự, mà đã tạo cột mốc lịch sử.", "South Africa dừng lại nhưng vẫn rời giải với hình ảnh tích cực sau khi lần đầu vượt qua vòng bảng với tư cách đội dự vòng loại."],
+      "standoutPlayers": [
+        { "name": "Stephen Eustaquio", "team": "Canada", "note": "Ghi bàn thắng phút 90+2 đưa Canada vào vòng 16 đội." },
+        { "name": "Alphonso Davies", "team": "Canada", "note": "Trở lại trong hiệp hai sau chấn thương, giúp Canada có thêm đột biến ở đoạn cuối." },
+        { "name": "Moise Bombito", "team": "Canada", "note": "Trở lại đội hình và góp phần giúp Canada giữ sạch lưới." },
+        { "name": "South Africa defensive block", "team": "South Africa", "note": "Giữ trận đấu chặt chẽ gần hết 90 phút trước khi thủng lưới ở bù giờ." }
+      ],
+      "focus": { "Argentina": "Argentina không thi đấu ngày 28/6. Việc Canada đi tiếp không tác động trực tiếp đến nhánh gần của Argentina, nhưng mở màn knock-out bằng một trận thắng muộn cho thấy vòng 32 đội có thể rất khắc nghiệt với các đội cửa trên.", "Brazil": "Brazil chưa thi đấu ở vòng 32 đội; trận Brazil vs Japan diễn ra ngày 29/6 theo giờ địa phương. Canada thắng muộn là lời nhắc rằng các đội tổ chức tốt có thể kéo trận đấu vào trạng thái rủi ro cao.", "Portugal": "Portugal chưa thi đấu ở vòng 32 đội; họ sẽ gặp Croatia ngày 2/7 theo giờ địa phương. Bài học từ trận Canada là kinh nghiệm knock-out và khả năng giải quyết trận đấu muộn sẽ rất quan trọng." },
+      "watchNext": ["Brazil vs Japan: bài test lớn đầu tiên của Brazil ở vòng knock-out, đặc biệt trước một đội có pressing và tổ chức tốt.", "Germany vs Paraguay: Germany cần phản ứng sau trận thua Ecuador, còn Paraguay có tâm lý cửa dưới nguy hiểm.", "Netherlands vs Morocco: trận quyết định đối thủ vòng 16 đội của Canada, đồng thời là một trong các cặp cân bằng nhất vòng 32 đội.", "Theo dõi thể lực Alphonso Davies và vai trò của Eustaquio trong cấu trúc Canada trước vòng 16 đội."],
+      "causalTimeline": [
+        { "from": "Canada thua Switzerland 1-2 ở lượt cuối bảng B", "link": "created", "to": "Canada bước vào vòng 32 đội với áp lực phải chứng minh mình không chỉ đi tiếp nhờ lợi thế sân nhà" },
+        { "from": "South Africa thắng South Korea 1-0 để vượt qua vòng bảng", "link": "enabled", "to": "South Africa tạo trận knock-out lịch sử trước Canada" },
+        { "from": "South Africa phòng ngự thấp và kéo trận đấu tới cuối trận", "link": "accelerated", "to": "Canada phải thắng bằng khoảnh khắc cá nhân muộn" },
+        { "from": "Eustaquio ghi bàn phút 90+2", "link": "caused", "to": "Canada vào vòng 16 đội lần đầu tiên" },
+        { "from": "Canada 1-0 South Africa", "link": "enabled", "to": "Canada chờ Netherlands/Morocco ở Houston ngày 4/7" }
+      ],
+      "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-28" }, { "name": "Reuters - Canada score late winner", "url": "https://www.reuters.com/sports/soccer/canada-score-late-winner-advance-last-16-world-cup-2026-06-28/" }, { "name": "AP - Canada beats South Africa", "url": "https://apnews.com/article/704407e25c4ec253daaa2803996d58b0" }, { "name": "Guardian - South Africa vs Canada report", "url": "https://www.theguardian.com/football/2026/jun/28/south-africa-canada-world-cup-last-32-match-report" }]
     }
   ]
 }
