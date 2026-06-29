@@ -2521,8 +2521,8 @@
   },
   {
     "id": "wc2026-south-africa-canada-0628",
-    "title": "South Africa vs Canada",
-    "description": "Round of 32 fixture: South Africa vs Canada, June 28, 2026 at Los Angeles (Inglewood).",
+    "title": "South Africa 0–1 Canada",
+    "description": "South Africa lost to Canada 0–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2530,7 +2530,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2539,13 +2539,13 @@
     ],
     "date": "2026-06-28",
     "dateLabel": "June 28, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "South Africa",
       "Canada",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Stephan Eustáquio.",
     "sources": [
       {
         "type": "open-data",
