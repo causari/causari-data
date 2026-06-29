@@ -1,0 +1,50 @@
+{
+  "date": "2026-06-28",
+  "title": "Canada make history with stoppage-time knockout win",
+  "summary": "Ngày 28/6 theo giờ địa phương, Canada thắng South Africa 1-0 trong trận mở màn vòng 32 đội World Cup 2026. Stephen Eustaquio ghi bàn ở phút bù giờ 90+2, đưa Canada lần đầu tiên trong lịch sử vào vòng 16 đội. South Africa rời giải sau hành trình tốt nhất của họ tại World Cup, còn Canada chờ đội thắng cặp Netherlands vs Morocco.",
+  "results": [
+    { "stage": "Round of 32", "home": "South Africa", "away": "Canada", "homeScore": 0, "awayScore": 1, "status": "complete", "winner": "Canada", "advancesTo": "Round of 16 vs Netherlands/Morocco winner" }
+  ],
+  "bigMoments": [
+    "Stephen Eustaquio ghi bàn quyết định ở phút 90+2 bằng cú dứt điểm mạnh từ ngoài vùng cấm.",
+    "Canada lần đầu tiên trong lịch sử vượt qua một vòng knock-out World Cup nam.",
+    "Alphonso Davies trở lại từ ghế dự bị trong hiệp hai, tăng thêm sức tấn công cho Canada.",
+    "South Africa bị loại nhưng khép lại giải đấu bằng thành tích knock-out tốt nhất trong lịch sử đội tuyển."
+  ],
+  "tournamentImpact": [
+    "Canada trở thành đội đầu tiên vào vòng 16 đội của World Cup 2026.",
+    "Nhánh đấu của Canada được xác định một nửa: họ sẽ gặp đội thắng giữa Netherlands và Morocco vào ngày 4/7 tại Houston.",
+    "Chiến thắng này củng cố narrative chủ nhà Bắc Mỹ: Canada không chỉ tham dự, mà đã tạo cột mốc lịch sử.",
+    "South Africa dừng lại nhưng vẫn rời giải với hình ảnh tích cực sau khi lần đầu vượt qua vòng bảng với tư cách đội dự vòng loại."
+  ],
+  "standoutPlayers": [
+    { "name": "Stephen Eustaquio", "team": "Canada", "note": "Ghi bàn thắng phút 90+2 đưa Canada vào vòng 16 đội." },
+    { "name": "Alphonso Davies", "team": "Canada", "note": "Trở lại trong hiệp hai sau chấn thương, giúp Canada có thêm đột biến ở đoạn cuối." },
+    { "name": "Moise Bombito", "team": "Canada", "note": "Trở lại đội hình và góp phần giúp Canada giữ sạch lưới." },
+    { "name": "South Africa defensive block", "team": "South Africa", "note": "Giữ trận đấu chặt chẽ gần hết 90 phút trước khi thủng lưới ở bù giờ." }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu ngày 28/6. Việc Canada đi tiếp không tác động trực tiếp đến nhánh gần của Argentina, nhưng mở màn knock-out bằng một trận thắng muộn cho thấy vòng 32 đội có thể rất khắc nghiệt với các đội cửa trên.",
+    "Brazil": "Brazil chưa thi đấu ở vòng 32 đội; trận Brazil vs Japan diễn ra ngày 29/6 theo giờ địa phương. Canada thắng muộn là lời nhắc rằng các đội tổ chức tốt có thể kéo trận đấu vào trạng thái rủi ro cao.",
+    "Portugal": "Portugal chưa thi đấu ở vòng 32 đội; họ sẽ gặp Croatia ngày 2/7 theo giờ địa phương. Bài học từ trận Canada là kinh nghiệm knock-out và khả năng giải quyết trận đấu muộn sẽ rất quan trọng."
+  },
+  "watchNext": [
+    "Brazil vs Japan: bài test lớn đầu tiên của Brazil ở vòng knock-out, đặc biệt trước một đội có pressing và tổ chức tốt.",
+    "Germany vs Paraguay: Germany cần phản ứng sau trận thua Ecuador, còn Paraguay có tâm lý cửa dưới nguy hiểm.",
+    "Netherlands vs Morocco: trận quyết định đối thủ vòng 16 đội của Canada, đồng thời là một trong các cặp cân bằng nhất vòng 32 đội.",
+    "Theo dõi thể lực Alphonso Davies và vai trò của Eustaquio trong cấu trúc Canada trước vòng 16 đội."
+  ],
+  "causalTimeline": [
+    { "from": "Canada thua Switzerland 1-2 ở lượt cuối bảng B", "link": "created", "to": "Canada bước vào vòng 32 đội với áp lực phải chứng minh mình không chỉ đi tiếp nhờ lợi thế sân nhà" },
+    { "from": "South Africa thắng South Korea 1-0 để vượt qua vòng bảng", "link": "enabled", "to": "South Africa tạo trận knock-out lịch sử trước Canada" },
+    { "from": "South Africa phòng ngự thấp và kéo trận đấu tới cuối trận", "link": "accelerated", "to": "Canada phải thắng bằng khoảnh khắc cá nhân muộn" },
+    { "from": "Eustaquio ghi bàn phút 90+2", "link": "caused", "to": "Canada vào vòng 16 đội lần đầu tiên" },
+    { "from": "Canada 1-0 South Africa", "link": "enabled", "to": "Canada chờ Netherlands/Morocco ở Houston ngày 4/7" }
+  ],
+  "sources": [
+    { "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-28" },
+    { "name": "Reuters - Canada score late winner", "url": "https://www.reuters.com/sports/soccer/canada-score-late-winner-advance-last-16-world-cup-2026-06-28/" },
+    { "name": "AP - Canada beats South Africa", "url": "https://apnews.com/article/704407e25c4ec253daaa2803996d58b0" },
+    { "name": "Guardian - South Africa vs Canada report", "url": "https://www.theguardian.com/football/2026/jun/28/south-africa-canada-world-cup-last-32-match-report" }
+  ]
+}
