@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "title": "World Cup 2026 Causal Recap",
   "description": "Daily Vietnamese recap data for the FIFA Men's World Cup 2026, structured for causal timeline visualization.",
-  "lastUpdated": "2026-06-29T06:27:39Z",
+  "lastUpdated": "2026-06-30T06:55:52Z",
   "timezone": "Asia/Ho_Chi_Minh",
   "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update once per completed match day.",
   "focusTeams": ["Argentina", "Brazil", "Portugal"],
@@ -184,6 +184,37 @@
         { "from": "Canada 1-0 South Africa", "link": "enabled", "to": "Canada chờ Netherlands/Morocco ở Houston ngày 4/7" }
       ],
       "sources": [{ "name": "FIFA/GenUI schedule snapshot", "url": "internal:soccer_schedule_summary_source:2026-06-28" }, { "name": "Reuters - Canada score late winner", "url": "https://www.reuters.com/sports/soccer/canada-score-late-winner-advance-last-16-world-cup-2026-06-28/" }, { "name": "AP - Canada beats South Africa", "url": "https://apnews.com/article/704407e25c4ec253daaa2803996d58b0" }, { "name": "Guardian - South Africa vs Canada report", "url": "https://www.theguardian.com/football/2026/jun/28/south-africa-canada-world-cup-last-32-match-report" }]
+    },
+    {
+      "date": "2026-06-29",
+      "title": "Brazil survive Japan, Morocco and Paraguay win shootout shocks",
+      "summary": "Ngày 29/6 theo giờ địa phương có ba trận vòng 32 đội cực căng. Brazil thắng Japan 2-1 nhờ bàn quyết định phút 90+5 của Gabriel Martinelli. Morocco loại Netherlands 3-2 trên chấm luân lưu sau trận hòa 1-1. Paraguay tạo cú sốc lớn khi loại Germany 4-3 trên chấm luân lưu sau trận hòa 1-1 qua 120 phút.",
+      "results": [
+        { "stage": "Round of 32", "home": "Brazil", "away": "Japan", "homeScore": 2, "awayScore": 1, "status": "complete", "winner": "Brazil", "advancesTo": "Quarter-finals vs Norway/Ivory Coast winner" },
+        { "stage": "Round of 32", "home": "Netherlands", "away": "Morocco", "homeScore": 1, "awayScore": 1, "status": "complete", "winner": "Morocco", "shootout": { "homeScore": 2, "awayScore": 3 }, "advancesTo": "Round of 16 vs Canada" },
+        { "stage": "Round of 32", "home": "Germany", "away": "Paraguay", "homeScore": 1, "awayScore": 1, "status": "complete", "winner": "Paraguay", "shootout": { "homeScore": 3, "awayScore": 4 }, "advancesTo": "Round of 16 vs France/Sweden winner" }
+      ],
+      "bigMoments": ["Gabriel Martinelli ghi bàn phút 90+5, giúp Brazil vượt qua Japan 2-1 trong một trận knock-out đầy áp lực.", "Japan dẫn trước nhờ Kaishu Sano và buộc Brazil phải lộ rõ điểm yếu khi bị pressing và chuyển trạng thái nhanh.", "Morocco gỡ hòa Netherlands ở thời gian bù giờ rồi thắng 3-2 trên chấm luân lưu, xác nhận vị thế ngựa ô lớn của giải.", "Paraguay loại Germany trên chấm luân lưu, tạo một trong những cú sốc lớn nhất World Cup 2026.", "Germany lần đầu thua một loạt luân lưu World Cup, làm sâu thêm cuộc khủng hoảng knock-out của họ."],
+      "tournamentImpact": ["Brazil đi tiếp nhưng không tạo cảm giác hủy diệt; trận gặp Japan cho thấy họ vẫn dễ bị kéo vào kịch bản rủi ro cao.", "Morocco sẽ gặp Canada ở vòng 16 đội, biến nhánh này thành cuộc đấu giữa chủ nhà đang thăng hoa và đội châu Phi có bản lĩnh knock-out.", "Paraguay mở ra một nhánh rất bất ngờ và sẽ gặp đội thắng giữa France và Sweden.", "Germany bị loại sớm sau khi từng được xem là ứng viên mạnh, làm thay đổi đáng kể cán cân nhóm châu Âu.", "Vòng 32 đội tiếp tục cho thấy các đội cửa dưới có thể sống sót bằng tổ chức phòng ngự, thủ môn và bản lĩnh đá luân lưu."],
+      "standoutPlayers": [
+        { "name": "Gabriel Martinelli", "team": "Brazil", "note": "Ghi bàn quyết định phút 90+5, cứu Brazil khỏi nguy cơ hiệp phụ trước Japan." },
+        { "name": "Casemiro", "team": "Brazil", "note": "Đánh đầu gỡ hòa phút 56, đưa Brazil trở lại trận đấu sau hiệp một khó khăn." },
+        { "name": "Kaishu Sano", "team": "Japan", "note": "Ghi bàn mở tỷ số và là biểu tượng cho màn trình diễn táo bạo của Japan." },
+        { "name": "Ismael Saibari", "team": "Morocco", "note": "Thực hiện quả luân lưu quyết định, đưa Morocco vào vòng 16 đội." },
+        { "name": "Orlando Gill", "team": "Paraguay", "note": "Tỏa sáng trong loạt luân lưu trước Germany với các pha cản phá then chốt." },
+        { "name": "Julio Enciso", "team": "Paraguay", "note": "Ghi bàn mở tỷ số trước Germany và giúp Paraguay tin vào kịch bản upset." }
+      ],
+      "focus": { "Argentina": "Argentina không thi đấu ngày 29/6. Nhưng việc Germany bị loại và Brazil phải thắng muộn cho thấy nhánh knock-out đang rất khó lường; sự ổn định của Argentina trước Cape Verde càng có giá trị nếu họ tránh được trận đấu hỗn loạn.", "Brazil": "Brazil là tâm điểm của ngày. Họ thắng Japan 2-1 nhờ Martinelli ở phút 90+5, nhưng màn trình diễn này vừa là tín hiệu bản lĩnh, vừa là cảnh báo: Brazil vẫn có thể bị các đội tổ chức tốt kéo vào thế rất nguy hiểm.", "Portugal": "Portugal chưa thi đấu nhưng chịu tác động chiến thuật rõ: Croatia có thể nhìn vào Japan, Morocco và Paraguay để thấy rằng phòng ngự kỷ luật, kéo dài trận đấu và chờ khoảnh khắc là cách làm khó ứng viên lớn." },
+      "watchNext": ["France vs Sweden: đội thắng sẽ gặp Paraguay, nên đây là trận có tác động lớn tới nhánh knock-out vừa mở ra sau cú sốc Germany.", "Norway vs Ivory Coast: đội thắng sẽ gặp Brazil, rất đáng chú ý vì Brazil vừa bộc lộ rủi ro trước Japan.", "Theo dõi phản ứng của Brazil sau trận thắng muộn: Ancelotti cần vá khoảng trống khi bị pressing và bảo vệ khu vực sau lưng hàng thủ.", "Canada vs Morocco đã thành hình ở vòng 16 đội: một cặp đấu giàu năng lượng và có khả năng kéo dài tới hiệp phụ/luân lưu."],
+      "causalTimeline": [
+        { "from": "Brazil hòa Morocco ở vòng bảng", "link": "created", "to": "Nghi ngờ về khả năng Brazil xử lý các đội tổ chức tốt" },
+        { "from": "Japan dẫn Brazil 1-0", "link": "accelerated", "to": "Brazil bị kéo vào trạng thái knock-out rủi ro cao" },
+        { "from": "Martinelli ghi bàn phút 90+5", "link": "caused", "to": "Brazil vào tứ kết dù chưa tạo cảm giác áp đảo" },
+        { "from": "Morocco gỡ hòa Netherlands ở bù giờ", "link": "enabled", "to": "Morocco thắng luân lưu và gặp Canada" },
+        { "from": "Paraguay cầm Germany 1-1 sau 120 phút", "link": "enabled", "to": "Paraguay loại Germany trên chấm luân lưu" },
+        { "from": "Germany bị loại", "link": "accelerated", "to": "Nhánh knock-out châu Âu mở ra khoảng trống lớn cho các ứng viên còn lại" }
+      ],
+      "sources": [{ "name": "Reuters - Brazil edge Japan", "url": "https://www.reuters.com/sports/soccer/martinelli-rescue-brazil-edge-japan-2-1-last-32-2026-06-29/" }, { "name": "Guardian - Netherlands vs Morocco live report", "url": "https://www.theguardian.com/football/live/2026/jun/29/netherlands-v-morocco-world-cup-2026-live" }, { "name": "Reuters - Paraguay knock Germany out", "url": "https://www.reuters.com/sports/soccer/paraguay-knock-germany-out-world-cup-penalties-major-upset-2026-06-29/" }, { "name": "AP - Paraguay stun Germany", "url": "https://apnews.com/article/819ffc6e897f8be74f48d6b9d3e76e9b" }]
     }
   ]
 }
