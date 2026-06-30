@@ -2556,8 +2556,8 @@
   },
   {
     "id": "wc2026-germany-paraguay-0629",
-    "title": "Germany vs Paraguay",
-    "description": "Round of 32 fixture: Germany vs Paraguay, June 29, 2026 at Boston (Foxborough).",
+    "title": "Germany 1–1 Paraguay",
+    "description": "Germany drew Paraguay 1–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2565,7 +2565,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2574,13 +2574,13 @@
     ],
     "date": "2026-06-29",
     "dateLabel": "June 29, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Germany",
       "Paraguay",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Kai Havertz, Julio Enciso.",
     "sources": [
       {
         "type": "open-data",
@@ -2591,8 +2591,8 @@
   },
   {
     "id": "wc2026-netherlands-morocco-0629",
-    "title": "Netherlands vs Morocco",
-    "description": "Round of 32 fixture: Netherlands vs Morocco, June 29, 2026 at Monterrey (Guadalupe).",
+    "title": "Netherlands 1–1 Morocco",
+    "description": "Netherlands drew Morocco 1–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2600,7 +2600,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2609,13 +2609,13 @@
     ],
     "date": "2026-06-29",
     "dateLabel": "June 29, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Netherlands",
       "Morocco",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Cody Gakpo, Issa Diop.",
     "sources": [
       {
         "type": "open-data",
@@ -2626,8 +2626,8 @@
   },
   {
     "id": "wc2026-brazil-japan-0629",
-    "title": "Brazil vs Japan",
-    "description": "Round of 32 fixture: Brazil vs Japan, June 29, 2026 at Houston.",
+    "title": "Brazil 2–1 Japan",
+    "description": "Brazil beat Japan 2–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2635,7 +2635,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2644,13 +2644,13 @@
     ],
     "date": "2026-06-29",
     "dateLabel": "June 29, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Brazil",
       "Japan",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Casemiro, Gabriel Martinelli, Kaishu Sano.",
     "sources": [
       {
         "type": "open-data",
@@ -3115,9 +3115,9 @@
     ]
   },
   {
-    "id": "wc2026-w73-w75-0704",
-    "title": "W73 vs W75",
-    "description": "Round of 16 fixture: W73 vs W75, July 4, 2026 at Houston.",
+    "id": "wc2026-canada-w75-0704",
+    "title": "Canada vs W75",
+    "description": "Round of 16 fixture: Canada vs W75, July 4, 2026 at Houston.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3129,14 +3129,14 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w73",
+      "canada",
       "w75"
     ],
     "date": "2026-07-04",
     "dateLabel": "July 4, 2026",
     "status": "scheduled",
     "entities": [
-      "W73",
+      "Canada",
       "W75",
       "Round of 16"
     ],
