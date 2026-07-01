@@ -1,0 +1,55 @@
+{
+  "date": "2026-06-30",
+  "title": "Mbappe powers France, Haaland sets Brazil showdown",
+  "summary": "Ngày 30/6 theo giờ địa phương có hai trận vòng 32 đội. France thắng Sweden 3-0 nhờ cú đúp của Kylian Mbappe và bàn của Bradley Barcola, giữ mạch toàn thắng và vào vòng 16 đội gặp Paraguay. Norway thắng Ivory Coast 2-1 nhờ bàn muộn của Erling Haaland, qua đó tạo cặp đấu rất đáng xem với Brazil.",
+  "results": [
+    { "stage": "Round of 32", "home": "France", "away": "Sweden", "homeScore": 3, "awayScore": 0, "status": "complete", "winner": "France", "advancesTo": "Round of 16 vs Paraguay" },
+    { "stage": "Round of 32", "home": "Norway", "away": "Ivory Coast", "homeScore": 2, "awayScore": 1, "status": "complete", "winner": "Norway", "advancesTo": "Round of 16 vs Brazil" }
+  ],
+  "bigMoments": [
+    "Kylian Mbappe ghi hai bàn, nâng tổng số bàn tại World Cup 2026 lên 6 và cân bằng cuộc đua ghi bàn với Lionel Messi.",
+    "Bradley Barcola ghi bàn thứ ba cho France sau đường kiến tạo nổi bật của Michael Olise, cho thấy chiều sâu hàng công Pháp rất đáng sợ.",
+    "France thắng trận thứ tư liên tiếp, ghi ít nhất ba bàn trong mỗi trận và tiếp tục là ứng viên có phong độ ổn định nhất nhánh châu Âu.",
+    "Antonio Nusa mở tỷ số cho Norway, Amad Diallo gỡ hòa cho Ivory Coast ở phút 74, nhưng Erling Haaland ghi bàn quyết định phút 86.",
+    "Norway vào vòng 16 đội World Cup lần đầu sau 28 năm và lập tức biến trận gặp Brazil thành điểm nóng lớn của vòng sau."
+  ],
+  "tournamentImpact": [
+    "France gặp Paraguay ở vòng 16 đội; sau khi Paraguay loại Germany, đây là bài test giữa sức mạnh áp đảo và một đội cửa dưới cực kỳ khó chịu.",
+    "Norway gặp Brazil, tạo cặp đấu có tính chiến thuật cao: Brazil cần kiểm soát chuyển trạng thái, còn Norway có Haaland để trừng phạt mọi khoảng trống.",
+    "Ivory Coast rời giải nhưng để lại dấu ấn tích cực: trở lại World Cup sau 2014, vượt qua vòng bảng và chỉ thua vì khoảnh khắc cuối trận.",
+    "Sweden bị loại khá rõ ràng, cho thấy khoảng cách với nhóm ứng viên hàng đầu khi gặp đội có tốc độ, chiều sâu và hiệu suất cao như France.",
+    "Nhánh knock-out tiếp tục củng cố pattern: các đội lớn đi tiếp nếu có ngôi sao kết liễu trận đấu đúng thời điểm."
+  ],
+  "standoutPlayers": [
+    { "name": "Kylian Mbappe", "team": "France", "note": "Ghi cú đúp trước Sweden, đạt 6 bàn tại giải và tiếp tục là ứng viên Golden Boot." },
+    { "name": "Michael Olise", "team": "France", "note": "Tạo thêm một kiến tạo, trở thành nguồn sáng tạo quan trọng trong hệ thống tấn công của France." },
+    { "name": "Bradley Barcola", "team": "France", "note": "Ghi bàn thứ ba, xác nhận chiều sâu hàng công Pháp không chỉ phụ thuộc vào Mbappe." },
+    { "name": "Erling Haaland", "team": "Norway", "note": "Ghi bàn quyết định phút 86 trước Ivory Coast, bàn thứ năm của anh tại giải." },
+    { "name": "Antonio Nusa", "team": "Norway", "note": "Mở tỷ số và giúp Norway có nền tảng để kiểm soát nhịp trận." },
+    { "name": "Amad Diallo", "team": "Ivory Coast", "note": "Vào sân từ ghế dự bị, ghi bàn gỡ hòa phút 74 và suýt kéo trận đấu sang hiệp phụ." }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu ngày 30/6, nhưng Mbappe cân bằng nhóm dẫn đầu cuộc đua ghi bàn với Messi. Trước trận gặp Cape Verde, Argentina sẽ càng cần giữ cấu trúc ổn định để tránh bị kéo vào một đêm knock-out bất thường.",
+    "Brazil": "Brazil bị ảnh hưởng trực tiếp: đối thủ tiếp theo là Norway. Sau khi bị Japan gây khó, Brazil phải chuẩn bị cho một mẫu rủi ro khác: bóng dài, chuyển trạng thái nhanh và Haaland trong vòng cấm.",
+    "Portugal": "Portugal chưa thi đấu, nhưng ngày 30/6 nhắc lại một bài học rõ: ở knock-out, ứng viên lớn cần ngôi sao giải quyết trận đấu. Đây là áp lực đặt lên Cristiano Ronaldo/Bruno Fernandes và cả cấu trúc kiểm soát của Portugal trước Croatia."
+  },
+  "watchNext": [
+    "Portugal vs Croatia: bài kiểm tra lớn cho Portugal trước một đối thủ giàu kinh nghiệm knock-out.",
+    "England vs DR Congo: England được đánh giá cao hơn, nhưng DR Congo đang có momentum sau chiến thắng lịch sử ở vòng bảng.",
+    "Egypt vs New Zealand và Colombia vs Ghana: hai trận có thể tạo thêm biến động ở nhóm cửa dưới/cửa trên.",
+    "Theo dõi France vs Paraguay và Brazil vs Norway đã thành hình: đây là hai cặp rất quan trọng để đọc sức mạnh thật của các ứng viên."
+  ],
+  "causalTimeline": [
+    { "from": "Paraguay loại Germany trên chấm luân lưu", "link": "created", "to": "France gặp một đối thủ cửa dưới có niềm tin lớn ở vòng 16 đội" },
+    { "from": "France 3-0 Sweden", "link": "accelerated", "to": "France củng cố narrative ứng viên ổn định nhất nhánh châu Âu" },
+    { "from": "Mbappe ghi cú đúp", "link": "accelerated", "to": "Cuộc đua Golden Boot với Messi nóng lên trước Argentina vs Cape Verde" },
+    { "from": "Brazil thắng Japan phút 90+5", "link": "created", "to": "Brazil bước vào trận gặp Norway với nhiều câu hỏi phòng ngự" },
+    { "from": "Haaland ghi bàn phút 86 trước Ivory Coast", "link": "caused", "to": "Norway gặp Brazil và tạo một trong những trận vòng 16 đội đáng xem nhất" }
+  ],
+  "sources": [
+    { "name": "Reuters - Mbappe double as France ease past Sweden", "url": "https://www.reuters.com/sports/soccer/mbappe-double-france-ease-past-sweden-3-0-reach-last-16-2026-06-30/" },
+    { "name": "AP - Mbappe scores twice as France beats Sweden", "url": "https://apnews.com/article/ca2b876fbf1c4c879bfdb57bc1445989" },
+    { "name": "Reuters - Haaland the hero as Norway edge Ivory Coast", "url": "https://www.reuters.com/sports/soccer/haaland-hero-again-norway-edge-ivory-coast-advance-world-cup-2026-06-30/" },
+    { "name": "People - Haaland sends Norway into Round of 16", "url": "https://people.com/norway-star-erling-haaland-scores-game-winning-goal-secure-world-cup-win-12009042" }
+  ]
+}
