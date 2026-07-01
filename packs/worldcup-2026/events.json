@@ -2661,8 +2661,8 @@
   },
   {
     "id": "wc2026-france-sweden-0630",
-    "title": "France vs Sweden",
-    "description": "Round of 32 fixture: France vs Sweden, June 30, 2026 at New York/New Jersey (East Rutherford).",
+    "title": "France 3–0 Sweden",
+    "description": "France beat Sweden 3–0 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2670,7 +2670,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2679,13 +2679,13 @@
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "France",
       "Sweden",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Kylian Mbappé, Bradley Barcola, Kylian Mbappé.",
     "sources": [
       {
         "type": "open-data",
@@ -2696,8 +2696,8 @@
   },
   {
     "id": "wc2026-ivory-coast-norway-0630",
-    "title": "Ivory Coast vs Norway",
-    "description": "Round of 32 fixture: Ivory Coast vs Norway, June 30, 2026 at Dallas (Arlington).",
+    "title": "Ivory Coast 1–2 Norway",
+    "description": "Ivory Coast lost to Norway 1–2 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2705,7 +2705,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2714,13 +2714,13 @@
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Ivory Coast",
       "Norway",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Amad Diallo, Antonio Nusa, Erling Haaland.",
     "sources": [
       {
         "type": "open-data",
@@ -2731,8 +2731,8 @@
   },
   {
     "id": "wc2026-mexico-ecuador-0630",
-    "title": "Mexico vs Ecuador",
-    "description": "Round of 32 fixture: Mexico vs Ecuador, June 30, 2026 at Mexico City.",
+    "title": "Mexico 2–0 Ecuador",
+    "description": "Mexico beat Ecuador 2–0 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2740,7 +2740,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2749,13 +2749,13 @@
     ],
     "date": "2026-06-30",
     "dateLabel": "June 30, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Mexico",
       "Ecuador",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Julián Quiñones, Raúl Jiménez.",
     "sources": [
       {
         "type": "open-data",
@@ -3080,9 +3080,9 @@
     ]
   },
   {
-    "id": "wc2026-w74-w77-0704",
-    "title": "W74 vs W77",
-    "description": "Round of 16 fixture: W74 vs W77, July 4, 2026 at Philadelphia.",
+    "id": "wc2026-paraguay-france-0704",
+    "title": "Paraguay vs France",
+    "description": "Round of 16 fixture: Paraguay vs France, July 4, 2026 at Philadelphia.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3094,15 +3094,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w74",
-      "w77"
+      "paraguay",
+      "france"
     ],
     "date": "2026-07-04",
     "dateLabel": "July 4, 2026",
     "status": "scheduled",
     "entities": [
-      "W74",
-      "W77",
+      "Paraguay",
+      "France",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
@@ -3115,9 +3115,9 @@
     ]
   },
   {
-    "id": "wc2026-canada-w75-0704",
-    "title": "Canada vs W75",
-    "description": "Round of 16 fixture: Canada vs W75, July 4, 2026 at Houston.",
+    "id": "wc2026-canada-morocco-0704",
+    "title": "Canada vs Morocco",
+    "description": "Round of 16 fixture: Canada vs Morocco, July 4, 2026 at Houston.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3130,14 +3130,14 @@
       "world-cup-2026",
       "round-of-16",
       "canada",
-      "w75"
+      "morocco"
     ],
     "date": "2026-07-04",
     "dateLabel": "July 4, 2026",
     "status": "scheduled",
     "entities": [
       "Canada",
-      "W75",
+      "Morocco",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
@@ -3150,9 +3150,9 @@
     ]
   },
   {
-    "id": "wc2026-w76-w78-0705",
-    "title": "W76 vs W78",
-    "description": "Round of 16 fixture: W76 vs W78, July 5, 2026 at New York/New Jersey (East Rutherford).",
+    "id": "wc2026-brazil-norway-0705",
+    "title": "Brazil vs Norway",
+    "description": "Round of 16 fixture: Brazil vs Norway, July 5, 2026 at New York/New Jersey (East Rutherford).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3164,15 +3164,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w76",
-      "w78"
+      "brazil",
+      "norway"
     ],
     "date": "2026-07-05",
     "dateLabel": "July 5, 2026",
     "status": "scheduled",
     "entities": [
-      "W76",
-      "W78",
+      "Brazil",
+      "Norway",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
