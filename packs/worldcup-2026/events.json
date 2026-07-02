@@ -2766,8 +2766,8 @@
   },
   {
     "id": "wc2026-england-dr-congo-0701",
-    "title": "England vs DR Congo",
-    "description": "Round of 32 fixture: England vs DR Congo, July 1, 2026 at Atlanta.",
+    "title": "England 2–1 DR Congo",
+    "description": "England beat DR Congo 2–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2775,7 +2775,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2784,13 +2784,13 @@
     ],
     "date": "2026-07-01",
     "dateLabel": "July 1, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "England",
       "DR Congo",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Harry Kane, Harry Kane, Brian Cipenga.",
     "sources": [
       {
         "type": "open-data",
@@ -2801,8 +2801,8 @@
   },
   {
     "id": "wc2026-usa-bosnia-and-herzegovina-0701",
-    "title": "USA vs Bosnia & Herzegovina",
-    "description": "Round of 32 fixture: USA vs Bosnia & Herzegovina, July 1, 2026 at San Francisco Bay Area (Santa Clara).",
+    "title": "USA 2–0 Bosnia & Herzegovina",
+    "description": "USA beat Bosnia & Herzegovina 2–0 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2810,7 +2810,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2819,13 +2819,13 @@
     ],
     "date": "2026-07-01",
     "dateLabel": "July 1, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "USA",
       "Bosnia & Herzegovina",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Folarin Balogun, Malik Tillman.",
     "sources": [
       {
         "type": "open-data",
@@ -2836,8 +2836,8 @@
   },
   {
     "id": "wc2026-belgium-senegal-0701",
-    "title": "Belgium vs Senegal",
-    "description": "Round of 32 fixture: Belgium vs Senegal, July 1, 2026 at Seattle.",
+    "title": "Belgium 2–2 Senegal",
+    "description": "Belgium drew Senegal 2–2 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2845,7 +2845,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2854,13 +2854,13 @@
     ],
     "date": "2026-07-01",
     "dateLabel": "July 1, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Belgium",
       "Senegal",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Romelu Lukaku, Youri Tielemans, Youri Tielemans, Habib Diarra, Ismaïla Sarr.",
     "sources": [
       {
         "type": "open-data",
@@ -3185,9 +3185,9 @@
     ]
   },
   {
-    "id": "wc2026-w79-w80-0705",
-    "title": "W79 vs W80",
-    "description": "Round of 16 fixture: W79 vs W80, July 5, 2026 at Mexico City.",
+    "id": "wc2026-mexico-england-0705",
+    "title": "Mexico vs England",
+    "description": "Round of 16 fixture: Mexico vs England, July 5, 2026 at Mexico City.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3199,15 +3199,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w79",
-      "w80"
+      "mexico",
+      "england"
     ],
     "date": "2026-07-05",
     "dateLabel": "July 5, 2026",
     "status": "scheduled",
     "entities": [
-      "W79",
-      "W80",
+      "Mexico",
+      "England",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
@@ -3255,9 +3255,9 @@
     ]
   },
   {
-    "id": "wc2026-w81-w82-0706",
-    "title": "W81 vs W82",
-    "description": "Round of 16 fixture: W81 vs W82, July 6, 2026 at Seattle.",
+    "id": "wc2026-usa-belgium-0706",
+    "title": "USA vs Belgium",
+    "description": "Round of 16 fixture: USA vs Belgium, July 6, 2026 at Seattle.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3269,15 +3269,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w81",
-      "w82"
+      "usa",
+      "belgium"
     ],
     "date": "2026-07-06",
     "dateLabel": "July 6, 2026",
     "status": "scheduled",
     "entities": [
-      "W81",
-      "W82",
+      "USA",
+      "Belgium",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
