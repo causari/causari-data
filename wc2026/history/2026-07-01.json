@@ -1,0 +1,57 @@
+{
+  "date": "2026-07-01",
+  "title": "Belgium escape Senegal, Kane rescues England",
+  "summary": "Ngày 1/7 theo giờ địa phương có hai trận vòng 32 đội World Cup 2026. Belgium tạo màn lội ngược dòng khó tin trước Senegal, thắng 3-2 sau hiệp phụ dù bị dẫn 0-2 tới cuối trận. England cũng thoát hiểm trước DR Congo, thắng 2-1 nhờ cú đúp muộn của Harry Kane. Hai đội lớn cùng đi tiếp, nhưng cả hai đều để lộ rủi ro lớn trước các đối thủ giàu thể lực, kỷ luật và không sợ kéo trận đấu vào vùng hỗn loạn.",
+  "results": [
+    { "stage": "Round of 32", "home": "Belgium", "away": "Senegal", "homeScore": 3, "awayScore": 2, "status": "complete", "winner": "Belgium", "afterExtraTime": true, "advancesTo": "Round of 16 vs United States/Bosnia and Herzegovina winner" },
+    { "stage": "Round of 32", "home": "England", "away": "DR Congo", "homeScore": 2, "awayScore": 1, "status": "complete", "winner": "England", "advancesTo": "Round of 16 vs Mexico" }
+  ],
+  "bigMoments": [
+    "Belgium bị Senegal dẫn 2-0, nhưng Romelu Lukaku và Youri Tielemans ghi hai bàn cuối trận để kéo trận vào hiệp phụ.",
+    "Youri Tielemans ghi bàn quyết định trên chấm phạt đền ở phút 125 sau VAR, một trong những khoảnh khắc muộn và gây tranh cãi nhất giải.",
+    "Senegal chơi phần lớn trận đấu tốt hơn, có bàn của Habib Diarra và Ismaila Sarr, nhưng sụp đổ ở đoạn cuối.",
+    "DR Congo dẫn England từ phút thứ 7 nhờ Brian Cipenga và khiến ứng viên lớn đứng trước nguy cơ bị loại sớm.",
+    "Harry Kane ghi hai bàn ở phút 75 và 86, đưa England vào vòng 16 đội và nâng tầm narrative thủ lĩnh knock-out."
+  ],
+  "tournamentImpact": [
+    "Belgium vào vòng 16 đội và sẽ gặp đội thắng giữa United States và Bosnia and Herzegovina; đây là nhánh có thể mở ra nếu họ giữ được bản lĩnh nhưng cần vá khả năng nhập cuộc chậm.",
+    "England gặp Mexico ở vòng 16 đội tại Mexico City, một bài test rất khó vì áp lực chủ nhà, độ cao và bầu không khí sân Azteca.",
+    "Senegal và DR Congo bị loại nhưng cùng để lại dấu ấn mạnh cho bóng đá châu Phi: Senegal suýt loại Belgium, DR Congo suýt tạo cú sốc trước England.",
+    "Hai trận cùng củng cố pattern của vòng knock-out: cửa trên vẫn sống nhờ khoảnh khắc ngôi sao, nhưng không còn nhiều trận dễ dàng.",
+    "Các ứng viên còn lại như Portugal và Argentina nhận thêm lời cảnh báo: quản trị rủi ro đầu trận và khả năng kết liễu trước phút 90 sẽ quyết định số phận."
+  ],
+  "standoutPlayers": [
+    { "name": "Youri Tielemans", "team": "Belgium", "note": "Ghi bàn gỡ hòa muộn và penalty quyết định trong hiệp phụ, trở thành nhân vật chính của màn lội ngược dòng." },
+    { "name": "Romelu Lukaku", "team": "Belgium", "note": "Vào sân và ghi bàn mở màn comeback, thay đổi hoàn toàn năng lượng tấn công của Belgium." },
+    { "name": "Ismaila Sarr", "team": "Senegal", "note": "Ghi bàn nâng tỷ số 2-0 và là biểu tượng cho màn trình diễn táo bạo của Senegal." },
+    { "name": "Harry Kane", "team": "England", "note": "Ghi cú đúp muộn để lật ngược DR Congo, đưa England vào vòng 16 đội gặp Mexico." },
+    { "name": "Anthony Gordon", "team": "England", "note": "Tạo tác động từ ghế dự bị, kiến tạo cho bàn gỡ của Kane và giúp England tăng tốc ở cuối trận." },
+    { "name": "Lionel Mpasi", "team": "DR Congo", "note": "Có nhiều pha cứu thua giúp DR Congo giữ hy vọng upset tới cuối trận." }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu ngày 1/7, nhưng ngày này là một cảnh báo rõ trước trận gặp Cape Verde: nếu để đối thủ cửa dưới dẫn trước hoặc kéo trận vào trạng thái cảm xúc cao, ngay cả đội mạnh cũng có thể mất kiểm soát rất nhanh.",
+    "Brazil": "Brazil không thi đấu ngày 1/7. Tuy nhiên, việc Belgium và England đều phải lội ngược dòng nhấn mạnh bài toán mà Brazil đã gặp trước Japan: knock-out đang trừng phạt mọi đội nhập cuộc thiếu sắc bén.",
+    "Portugal": "Portugal bị tác động trực tiếp về mặt bối cảnh. Trước trận Croatia, màn thoát hiểm của Belgium và England cho thấy kinh nghiệm knock-out không đủ nếu nhập cuộc chậm; Portugal cần kiểm soát nhịp trận sớm và tránh để Croatia kéo sang hiệp phụ/luân lưu."
+  },
+  "watchNext": [
+    "Portugal vs Croatia: trận có áp lực lớn nhất với nhóm focus, có thể là bài kiểm tra bản lĩnh cuối World Cup của Ronaldo và Modric.",
+    "Egypt vs New Zealand: cơ hội để Mohamed Salah kéo Egypt đi sâu hơn và tạo thêm biến động ở nhánh knock-out.",
+    "Colombia vs Ghana: Colombia đang có profile ổn định, nhưng Ghana là kiểu đối thủ có thể khiến trận đấu bị kéo dài và khó đoán.",
+    "United States vs Bosnia and Herzegovina: đội thắng sẽ gặp Belgium, nên đây là trận định hình trực tiếp nhánh kế tiếp."
+  ],
+  "causalTimeline": [
+    { "from": "Senegal dẫn Belgium 2-0", "link": "created", "to": "Belgium bị kéo vào kịch bản bị loại sớm" },
+    { "from": "Lukaku vào sân và ghi bàn", "link": "enabled", "to": "Belgium có năng lượng comeback cuối trận" },
+    { "from": "Tielemans ghi bàn muộn và penalty hiệp phụ", "link": "caused", "to": "Belgium vào vòng 16 đội" },
+    { "from": "DR Congo dẫn England phút 7", "link": "accelerated", "to": "England đối mặt cú sốc knock-out" },
+    { "from": "Kane ghi cú đúp phút 75 và 86", "link": "caused", "to": "England gặp Mexico ở vòng 16 đội" },
+    { "from": "Belgium và England đều thoát hiểm", "link": "accelerated", "to": "Các ứng viên còn lại phải ưu tiên kiểm soát rủi ro đầu trận" }
+  ],
+  "sources": [
+    { "name": "FIFA scores & fixtures", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures" },
+    { "name": "Reuters - Belgium through with dramatic win over Senegal", "url": "https://www.reuters.com/sports/soccer/belgium-through-world-cup-last-16-with-dramatic-3-2-win-over-senegal-2026-07-01/" },
+    { "name": "AP - Belgium comes back from two goals down", "url": "https://apnews.com/article/461f08dc7297b99741a449cdcbd89ac6" },
+    { "name": "Reuters - Kane double rescues England", "url": "https://www.reuters.com/sports/soccer/kane-double-rescues-england-comeback-win-over-dr-congo-2026-07-01/" },
+    { "name": "Guardian - England vs DR Congo live report", "url": "https://www.theguardian.com/football/live/2026/jul/01/england-v-dr-congo-world-cup-2026-last-32-live" }
+  ]
+}
