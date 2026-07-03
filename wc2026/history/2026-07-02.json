@@ -1,0 +1,109 @@
+{
+  "date": "2026-07-02",
+  "status": "partial",
+  "title": "USA survive with ten men, Spain send a title-warning",
+  "summary": "Hai trận mới hoàn tất kể từ lần cập nhật trước tạo hai câu chuyện trái ngược ở vòng 32 đội: United States thắng Bosnia and Herzegovina 2-0 dù phải chơi thiếu người, còn Spain thắng Austria 3-0 bằng màn kiểm soát rất thuyết phục. USA vào vòng 16 đội gặp Belgium; Spain chờ đội thắng cặp Portugal vs Croatia.",
+  "results": [
+    {
+      "round": "Round of 32",
+      "home": "United States",
+      "away": "Bosnia and Herzegovina",
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "complete"
+    },
+    {
+      "round": "Round of 32",
+      "home": "Spain",
+      "away": "Austria",
+      "homeScore": 3,
+      "awayScore": 0,
+      "status": "complete"
+    }
+  ],
+  "bigMoments": [
+    "United States thắng Bosnia and Herzegovina 2-0 trong trận họ phải chơi với 10 người sau thẻ đỏ của Folarin Balogun.",
+    "Balogun mở tỷ số trước khi bị truất quyền thi đấu; Malik Tillman ấn định chiến thắng bằng cú đá phạt muộn.",
+    "Spain thắng Austria 3-0, giữ sạch lưới trận thứ tư liên tiếp và có chiến thắng knock-out World Cup đầu tiên kể từ chức vô địch 2010.",
+    "Mikel Oyarzabal ghi cú đúp, Pedro Porro ghi bàn đầu tiên cho tuyển quốc gia."
+  ],
+  "tournamentImpact": [
+    "United States vào vòng 16 đội gặp Belgium, nhưng mất Balogun vì án treo giò là tổn thất lớn cho hàng công.",
+    "Chiến thắng của USA làm nhánh đấu của Belgium trở nên khó đoán hơn: Belgium có kinh nghiệm, USA có lợi thế chủ nhà và momentum cảm xúc.",
+    "Spain tự đặt mình trở lại nhóm ứng viên rất nặng ký nhờ khả năng kiểm soát bóng, pressing và clean-sheet streak.",
+    "Spain sẽ gặp Portugal hoặc Croatia; điều này khiến trận Portugal vs Croatia trở thành trận có tác động lớn trực tiếp tới một nhánh knock-out rất nặng."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Malik Tillman",
+      "team": "United States",
+      "note": "Ghi bàn từ đá phạt để khóa chiến thắng trong thế thiếu người."
+    },
+    {
+      "name": "Folarin Balogun",
+      "team": "United States",
+      "note": "Mở tỷ số nhưng sau đó nhận thẻ đỏ, tạo ra cả bước ngoặt tích cực lẫn rủi ro cho vòng sau."
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "note": "Ghi hai bàn, là điểm kết thúc sắc bén trong trận Spain kiểm soát hoàn toàn."
+    },
+    {
+      "name": "Unai Simon",
+      "team": "Spain",
+      "note": "Góp phần vào chuỗi bốn trận sạch lưới của Spain."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina chưa thi đấu trong cụm trận này. Nhưng cách USA và Spain thắng cho thấy vòng knock-out đang chia thành hai kiểu rủi ro: ứng viên kiểm soát trận đấu tốt như Spain, hoặc đội phải sống sót bằng bản lĩnh như USA.",
+    "Brazil": "Brazil không thi đấu trong cụm trận này. Spain giữ sạch lưới bốn trận liên tiếp là tín hiệu cạnh tranh trực tiếp về độ ổn định của nhóm ứng viên vô địch.",
+    "Portugal": "Portugal bị ảnh hưởng trực tiếp: đội thắng Portugal vs Croatia sẽ gặp Spain. Nếu Portugal vượt qua Croatia, họ sẽ bước ngay vào một bài test cực nặng về kiểm soát bóng, pressing và khả năng thoát áp lực."
+  },
+  "watchNext": [
+    "Portugal vs Croatia: trận quyết định đối thủ của Spain, đồng thời có thể là dấu mốc lớn trong kỳ World Cup cuối của Cristiano Ronaldo.",
+    "Egypt vs New Zealand và Colombia vs Ghana: hai cặp đấu có thể tiếp tục mở rộng narrative các đội ngoài nhóm ứng viên truyền thống.",
+    "Argentina vs Cape Verde: trận đáng chú ý vì Cape Verde là hiện tượng lớn còn Argentina là một trong các ứng viên ổn định nhất."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Balogun goal vs Bosnia",
+      "link": "enabled",
+      "to": "United States control the first-half scoreboard"
+    },
+    {
+      "from": "Balogun red card",
+      "link": "caused",
+      "to": "USA forced into survival block before Belgium tie"
+    },
+    {
+      "from": "Tillman free kick",
+      "link": "accelerated",
+      "to": "USA advances to face Belgium"
+    },
+    {
+      "from": "Spain 3-0 Austria",
+      "link": "accelerated",
+      "to": "Spain restored as elite contender before Portugal/Croatia winner"
+    },
+    {
+      "from": "Spain fourth consecutive clean sheet",
+      "link": "enabled",
+      "to": "Knockout path framed around control and defensive stability"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Reuters - US keep World Cup dream alive with gutsy win over Bosnia",
+      "url": "https://www.reuters.com/sports/soccer/update1-soccer-us-keep-world-cup-dream-alive-with-gutsy-win-over-bosnia-2026-07-02/"
+    },
+    {
+      "name": "The Guardian - USA 2-0 Bosnia and Herzegovina live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/01/usa-v-bosnia-and-herzegovina-world-cup-2026-last-32-live"
+    },
+    {
+      "name": "The Guardian - Spain 3-0 Austria live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/02/spain-v-austria-world-cup-2026-last-32-live"
+    }
+  ]
+}
