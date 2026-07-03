@@ -2871,8 +2871,8 @@
   },
   {
     "id": "wc2026-portugal-croatia-0702",
-    "title": "Portugal vs Croatia",
-    "description": "Round of 32 fixture: Portugal vs Croatia, July 2, 2026 at Toronto.",
+    "title": "Portugal 2–1 Croatia",
+    "description": "Portugal beat Croatia 2–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2880,7 +2880,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2889,13 +2889,13 @@
     ],
     "date": "2026-07-02",
     "dateLabel": "July 2, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Portugal",
       "Croatia",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Cristiano Ronaldo, Gonçalo Ramos, Ivan Perisic.",
     "sources": [
       {
         "type": "open-data",
@@ -2906,8 +2906,8 @@
   },
   {
     "id": "wc2026-spain-austria-0702",
-    "title": "Spain vs Austria",
-    "description": "Round of 32 fixture: Spain vs Austria, July 2, 2026 at Los Angeles (Inglewood).",
+    "title": "Spain 3–0 Austria",
+    "description": "Spain beat Austria 3–0 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2915,7 +2915,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2924,13 +2924,13 @@
     ],
     "date": "2026-07-02",
     "dateLabel": "July 2, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Spain",
       "Austria",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Mikel Oyarzabal, Pedro Porro, Mikel Oyarzabal.",
     "sources": [
       {
         "type": "open-data",
@@ -2941,8 +2941,8 @@
   },
   {
     "id": "wc2026-switzerland-algeria-0702",
-    "title": "Switzerland vs Algeria",
-    "description": "Round of 32 fixture: Switzerland vs Algeria, July 2, 2026 at Vancouver.",
+    "title": "Switzerland 2–0 Algeria",
+    "description": "Switzerland beat Algeria 2–0 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2950,7 +2950,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2959,13 +2959,13 @@
     ],
     "date": "2026-07-02",
     "dateLabel": "July 2, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Switzerland",
       "Algeria",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Breel Embolo, Dan Ndoye.",
     "sources": [
       {
         "type": "open-data",
