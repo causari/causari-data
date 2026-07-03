@@ -1,8 +1,8 @@
 {
   "date": "2026-07-02",
   "status": "partial",
-  "title": "USA, Spain, Portugal and Egypt advance as knock-out pressure spikes",
-  "summary": "Ngày 2/7 theo giờ Việt Nam tiếp tục vòng 32 đội với bốn kết quả đã hoàn tất: United States thắng Bosnia and Herzegovina 2-0 dù chơi thiếu người; Spain thắng Austria 3-0 và giữ sạch lưới trận thứ tư liên tiếp; Portugal vượt Croatia 2-1 bằng bàn muộn của Goncalo Ramos; Egypt thắng New Zealand 3-1 để lần đầu tạo dấu mốc đi tiếp ở vòng knock-out World Cup. Đây là cụm trận cho thấy các ứng viên lớn vẫn thắng, nhưng rủi ro knock-out đang tăng rõ: chỉ một pha VAR, một thẻ đỏ hoặc một bàn muộn có thể xoay cả nhánh đấu.",
+  "title": "USA, Spain, Portugal, Egypt and Switzerland advance as knock-out pressure spikes",
+  "summary": "Ngày 2/7 theo lịch thi đấu World Cup tiếp tục vòng 32 đội với các kết quả đã hoàn tất: United States thắng Bosnia and Herzegovina 2-0 dù chơi thiếu người; Spain thắng Austria 3-0 và giữ sạch lưới trận thứ tư liên tiếp; Portugal vượt Croatia 2-1 bằng bàn muộn của Goncalo Ramos; Egypt thắng New Zealand 3-1; Switzerland thắng Algeria 2-0 để vào vòng 16 đội. Đây là cụm trận cho thấy các đội cửa trên vẫn giữ được quyền kiểm soát, nhưng rủi ro knock-out đang tăng rõ: thẻ đỏ, VAR, bàn muộn và sai số phòng ngự đều có thể xoay cả nhánh đấu.",
   "results": [
     {
       "round": "Round of 32",
@@ -35,6 +35,14 @@
       "homeScore": 3,
       "awayScore": 1,
       "status": "complete"
+    },
+    {
+      "round": "Round of 32",
+      "home": "Switzerland",
+      "away": "Algeria",
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "complete"
     }
   ],
   "bigMoments": [
@@ -42,14 +50,16 @@
     "Spain thắng Austria 3-0, Mikel Oyarzabal ghi cú đúp và Spain tiếp tục giữ sạch lưới, phát tín hiệu rất mạnh về cấu trúc phòng ngự.",
     "Portugal bị Croatia dẫn trước bởi Ivan Perisic, sau đó Cristiano Ronaldo gỡ hòa từ chấm phạt đền trước khi Goncalo Ramos ghi bàn quyết định phút bù giờ.",
     "Một bàn gỡ muộn của Croatia bị từ chối vì lỗi việt vị sau kiểm tra công nghệ/VAR, tạo tranh luận lớn nhưng Portugal vẫn là đội đi tiếp.",
-    "Egypt thắng New Zealand 3-1, mở ra nhánh đấu đáng chú ý với Australia và tiếp tục kéo spotlight về Mohamed Salah trong kỳ World Cup có thể là cuối cùng của anh."
+    "Egypt thắng New Zealand 3-1, mở ra nhánh đấu đáng chú ý với Australia và tiếp tục kéo spotlight về Mohamed Salah trong kỳ World Cup có thể là cuối cùng của anh.",
+    "Switzerland thắng Algeria 2-0 tại Vancouver; Johan Manzambi tạo đột biến ở bàn mở tỷ số cho Breel Embolo, trước khi Dan Ndoye tận dụng sai số phòng ngự để chốt trận."
   ],
   "tournamentImpact": [
     "United States vào vòng 16 đội gặp Belgium, nhưng việc Balogun bị treo giò khiến bài toán hàng công trước một đối thủ già kinh nghiệm trở nên khó hơn.",
     "Spain sẽ gặp Portugal ở vòng 16 đội, tạo một trong những cặp đấu nặng nhất nhánh này: Spain kiểm soát, pressing và phòng ngự ổn định; Portugal có bản lĩnh và nhiều khoảnh khắc cá nhân.",
     "Croatia bị loại, có thể khép lại chương World Cup của Luka Modric, đồng thời kết thúc chu kỳ thành công kéo dài từ 2018 đến 2022.",
     "Egypt đi tiếp và sẽ gặp Australia; đây là cơ hội lịch sử cho cả hai đội trong việc tạo bước nhảy ở knock-out World Cup.",
-    "Nhìn toàn cảnh, vòng 32 đội đang tạo pattern rõ: các đội cửa trên vẫn thắng, nhưng rất nhiều trận phải giải quyết bằng bàn muộn, hiệp phụ, penalty hoặc VAR."
+    "Switzerland vào vòng 16 đội và sẽ gặp đội thắng của Colombia vs Ghana, đồng thời nối dài momentum bằng chuỗi ba trận thắng liên tiếp ở World Cup.",
+    "Nhìn toàn cảnh, vòng 32 đội đang tạo pattern rõ: các đội cửa trên vẫn thắng, nhưng nhiều trận phải giải quyết bằng bàn muộn, hiệp phụ, penalty hoặc VAR."
   ],
   "standoutPlayers": [
     {
@@ -76,15 +86,30 @@
       "name": "Mohamed Salah",
       "team": "Egypt",
       "note": "Tiếp tục là trung tâm narrative của Egypt trong hành trình knock-out lịch sử."
+    },
+    {
+      "name": "Johan Manzambi",
+      "team": "Switzerland",
+      "note": "Tạo pha đột biến dẫn tới bàn mở tỷ số của Breel Embolo và tiếp tục là breakout player của Switzerland."
+    },
+    {
+      "name": "Breel Embolo",
+      "team": "Switzerland",
+      "note": "Mở tỷ số sớm, giúp Switzerland kéo trận đấu về thế kiểm soát."
+    },
+    {
+      "name": "Dan Ndoye",
+      "team": "Switzerland",
+      "note": "Ghi bàn thứ hai sau giờ nghỉ, biến lợi thế kiểm soát thành kết quả an toàn."
     }
   ],
   "focus": {
     "Argentina": "Argentina chưa thi đấu trong cụm trận này. Nhưng xu hướng chung là lời nhắc rất rõ: các ứng viên lớn không được nhập cuộc chậm ở knock-out, vì nhiều trận đang bị kéo tới kịch bản bàn muộn hoặc VAR.",
-    "Brazil": "Brazil không thi đấu trong cụm trận này. Spain và Portugal cùng đi tiếp khiến nhóm ứng viên châu Âu giữ áp lực lớn lên Brazil trước trận gặp Norway.",
+    "Brazil": "Brazil không thi đấu trong cụm trận này. Spain, Portugal và Switzerland cùng đi tiếp khiến nhóm ứng viên/challenger ở nhánh knock-out dày hơn trước trận Brazil gặp Norway.",
     "Portugal": "Portugal là trọng tâm. Trận thắng Croatia 2-1 vừa giúp họ sống sót, vừa đặt họ vào thử thách cực nặng trước Spain. Điểm tích cực là bản lĩnh cuối trận và chiều sâu với Ramos; điểm cần cảnh giác là Portugal vẫn để Croatia tạo đủ áp lực để trận đấu bị kéo vào tranh cãi VAR cuối trận."
   },
   "watchNext": [
-    "Colombia vs Ghana: trận còn lại đáng chú ý trong cụm này, với yếu tố Carlos Queiroz gặp lại Colombia và Ghana có cơ hội tạo thêm cú sốc châu Phi.",
+    "Colombia vs Ghana: đội thắng sẽ gặp Switzerland, nên trận này trực tiếp định hình nhánh đấu của Swiss sau chiến thắng trước Algeria.",
     "Argentina vs Cape Verde: Argentina gặp một hiện tượng lần đầu vào knock-out; bài test là phá khối phòng ngự có tổ chức mà không tự đưa trận đấu vào thế căng cuối trận.",
     "Brazil vs Norway: Haaland/Norway là kiểu đối thủ có thể trừng phạt mọi sai số chuyển trạng thái của Brazil.",
     "Spain vs Portugal: cặp vòng 16 đội đã được xác định và có thể trở thành một trận bản lề cho cả nhánh knock-out."
@@ -129,6 +154,16 @@
       "from": "Egypt 3-1 New Zealand",
       "link": "enabled",
       "to": "Egypt sets up Australia knockout tie"
+    },
+    {
+      "from": "Manzambi carry before Embolo goal",
+      "link": "enabled",
+      "to": "Switzerland early control vs Algeria"
+    },
+    {
+      "from": "Ndoye second-half goal",
+      "link": "accelerated",
+      "to": "Switzerland advances to face Colombia/Ghana winner"
     }
   ],
   "sources": [
@@ -147,6 +182,14 @@
     {
       "name": "Reuters - Egypt coach unsure if Salah will start against Australia",
       "url": "https://www.reuters.com/sports/soccer/egypt-coach-unsure-if-salah-will-start-against-australia-2026-07-02/"
+    },
+    {
+      "name": "The Guardian - Switzerland 2-0 Algeria live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/03/fifa-world-cup-2026-live-switzerland-v-algeria-updates-sui-vs-alg-last-round-32-match-score-latest"
+    },
+    {
+      "name": "FIFA social update - Switzerland are through",
+      "url": "https://x.com/FIFAcom"
     }
   ]
 }
