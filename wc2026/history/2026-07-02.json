@@ -1,8 +1,8 @@
 {
   "date": "2026-07-02",
   "status": "partial",
-  "title": "USA survive with ten men, Spain send a title-warning",
-  "summary": "Hai trận mới hoàn tất kể từ lần cập nhật trước tạo hai câu chuyện trái ngược ở vòng 32 đội: United States thắng Bosnia and Herzegovina 2-0 dù phải chơi thiếu người, còn Spain thắng Austria 3-0 bằng màn kiểm soát rất thuyết phục. USA vào vòng 16 đội gặp Belgium; Spain chờ đội thắng cặp Portugal vs Croatia.",
+  "title": "USA, Spain, Portugal and Egypt advance as knock-out pressure spikes",
+  "summary": "Ngày 2/7 theo giờ Việt Nam tiếp tục vòng 32 đội với bốn kết quả đã hoàn tất: United States thắng Bosnia and Herzegovina 2-0 dù chơi thiếu người; Spain thắng Austria 3-0 và giữ sạch lưới trận thứ tư liên tiếp; Portugal vượt Croatia 2-1 bằng bàn muộn của Goncalo Ramos; Egypt thắng New Zealand 3-1 để lần đầu tạo dấu mốc đi tiếp ở vòng knock-out World Cup. Đây là cụm trận cho thấy các ứng viên lớn vẫn thắng, nhưng rủi ro knock-out đang tăng rõ: chỉ một pha VAR, một thẻ đỏ hoặc một bàn muộn có thể xoay cả nhánh đấu.",
   "results": [
     {
       "round": "Round of 32",
@@ -19,19 +19,37 @@
       "homeScore": 3,
       "awayScore": 0,
       "status": "complete"
+    },
+    {
+      "round": "Round of 32",
+      "home": "Portugal",
+      "away": "Croatia",
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "complete"
+    },
+    {
+      "round": "Round of 32",
+      "home": "Egypt",
+      "away": "New Zealand",
+      "homeScore": 3,
+      "awayScore": 1,
+      "status": "complete"
     }
   ],
   "bigMoments": [
     "United States thắng Bosnia and Herzegovina 2-0 trong trận họ phải chơi với 10 người sau thẻ đỏ của Folarin Balogun.",
-    "Balogun mở tỷ số trước khi bị truất quyền thi đấu; Malik Tillman ấn định chiến thắng bằng cú đá phạt muộn.",
-    "Spain thắng Austria 3-0, giữ sạch lưới trận thứ tư liên tiếp và có chiến thắng knock-out World Cup đầu tiên kể từ chức vô địch 2010.",
-    "Mikel Oyarzabal ghi cú đúp, Pedro Porro ghi bàn đầu tiên cho tuyển quốc gia."
+    "Spain thắng Austria 3-0, Mikel Oyarzabal ghi cú đúp và Spain tiếp tục giữ sạch lưới, phát tín hiệu rất mạnh về cấu trúc phòng ngự.",
+    "Portugal bị Croatia dẫn trước bởi Ivan Perisic, sau đó Cristiano Ronaldo gỡ hòa từ chấm phạt đền trước khi Goncalo Ramos ghi bàn quyết định phút bù giờ.",
+    "Một bàn gỡ muộn của Croatia bị từ chối vì lỗi việt vị sau kiểm tra công nghệ/VAR, tạo tranh luận lớn nhưng Portugal vẫn là đội đi tiếp.",
+    "Egypt thắng New Zealand 3-1, mở ra nhánh đấu đáng chú ý với Australia và tiếp tục kéo spotlight về Mohamed Salah trong kỳ World Cup có thể là cuối cùng của anh."
   ],
   "tournamentImpact": [
-    "United States vào vòng 16 đội gặp Belgium, nhưng mất Balogun vì án treo giò là tổn thất lớn cho hàng công.",
-    "Chiến thắng của USA làm nhánh đấu của Belgium trở nên khó đoán hơn: Belgium có kinh nghiệm, USA có lợi thế chủ nhà và momentum cảm xúc.",
-    "Spain tự đặt mình trở lại nhóm ứng viên rất nặng ký nhờ khả năng kiểm soát bóng, pressing và clean-sheet streak.",
-    "Spain sẽ gặp Portugal hoặc Croatia; điều này khiến trận Portugal vs Croatia trở thành trận có tác động lớn trực tiếp tới một nhánh knock-out rất nặng."
+    "United States vào vòng 16 đội gặp Belgium, nhưng việc Balogun bị treo giò khiến bài toán hàng công trước một đối thủ già kinh nghiệm trở nên khó hơn.",
+    "Spain sẽ gặp Portugal ở vòng 16 đội, tạo một trong những cặp đấu nặng nhất nhánh này: Spain kiểm soát, pressing và phòng ngự ổn định; Portugal có bản lĩnh và nhiều khoảnh khắc cá nhân.",
+    "Croatia bị loại, có thể khép lại chương World Cup của Luka Modric, đồng thời kết thúc chu kỳ thành công kéo dài từ 2018 đến 2022.",
+    "Egypt đi tiếp và sẽ gặp Australia; đây là cơ hội lịch sử cho cả hai đội trong việc tạo bước nhảy ở knock-out World Cup.",
+    "Nhìn toàn cảnh, vòng 32 đội đang tạo pattern rõ: các đội cửa trên vẫn thắng, nhưng rất nhiều trận phải giải quyết bằng bàn muộn, hiệp phụ, penalty hoặc VAR."
   ],
   "standoutPlayers": [
     {
@@ -40,30 +58,36 @@
       "note": "Ghi bàn từ đá phạt để khóa chiến thắng trong thế thiếu người."
     },
     {
-      "name": "Folarin Balogun",
-      "team": "United States",
-      "note": "Mở tỷ số nhưng sau đó nhận thẻ đỏ, tạo ra cả bước ngoặt tích cực lẫn rủi ro cho vòng sau."
-    },
-    {
       "name": "Mikel Oyarzabal",
       "team": "Spain",
       "note": "Ghi hai bàn, là điểm kết thúc sắc bén trong trận Spain kiểm soát hoàn toàn."
     },
     {
-      "name": "Unai Simon",
-      "team": "Spain",
-      "note": "Góp phần vào chuỗi bốn trận sạch lưới của Spain."
+      "name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "note": "Gỡ hòa từ chấm phạt đền trong trận knock-out nhiều áp lực trước Croatia."
+    },
+    {
+      "name": "Goncalo Ramos",
+      "team": "Portugal",
+      "note": "Ghi bàn quyết định ở phút bù giờ, đưa Portugal vào vòng 16 đội gặp Spain."
+    },
+    {
+      "name": "Mohamed Salah",
+      "team": "Egypt",
+      "note": "Tiếp tục là trung tâm narrative của Egypt trong hành trình knock-out lịch sử."
     }
   ],
   "focus": {
-    "Argentina": "Argentina chưa thi đấu trong cụm trận này. Nhưng cách USA và Spain thắng cho thấy vòng knock-out đang chia thành hai kiểu rủi ro: ứng viên kiểm soát trận đấu tốt như Spain, hoặc đội phải sống sót bằng bản lĩnh như USA.",
-    "Brazil": "Brazil không thi đấu trong cụm trận này. Spain giữ sạch lưới bốn trận liên tiếp là tín hiệu cạnh tranh trực tiếp về độ ổn định của nhóm ứng viên vô địch.",
-    "Portugal": "Portugal bị ảnh hưởng trực tiếp: đội thắng Portugal vs Croatia sẽ gặp Spain. Nếu Portugal vượt qua Croatia, họ sẽ bước ngay vào một bài test cực nặng về kiểm soát bóng, pressing và khả năng thoát áp lực."
+    "Argentina": "Argentina chưa thi đấu trong cụm trận này. Nhưng xu hướng chung là lời nhắc rất rõ: các ứng viên lớn không được nhập cuộc chậm ở knock-out, vì nhiều trận đang bị kéo tới kịch bản bàn muộn hoặc VAR.",
+    "Brazil": "Brazil không thi đấu trong cụm trận này. Spain và Portugal cùng đi tiếp khiến nhóm ứng viên châu Âu giữ áp lực lớn lên Brazil trước trận gặp Norway.",
+    "Portugal": "Portugal là trọng tâm. Trận thắng Croatia 2-1 vừa giúp họ sống sót, vừa đặt họ vào thử thách cực nặng trước Spain. Điểm tích cực là bản lĩnh cuối trận và chiều sâu với Ramos; điểm cần cảnh giác là Portugal vẫn để Croatia tạo đủ áp lực để trận đấu bị kéo vào tranh cãi VAR cuối trận."
   },
   "watchNext": [
-    "Portugal vs Croatia: trận quyết định đối thủ của Spain, đồng thời có thể là dấu mốc lớn trong kỳ World Cup cuối của Cristiano Ronaldo.",
-    "Egypt vs New Zealand và Colombia vs Ghana: hai cặp đấu có thể tiếp tục mở rộng narrative các đội ngoài nhóm ứng viên truyền thống.",
-    "Argentina vs Cape Verde: trận đáng chú ý vì Cape Verde là hiện tượng lớn còn Argentina là một trong các ứng viên ổn định nhất."
+    "Colombia vs Ghana: trận còn lại đáng chú ý trong cụm này, với yếu tố Carlos Queiroz gặp lại Colombia và Ghana có cơ hội tạo thêm cú sốc châu Phi.",
+    "Argentina vs Cape Verde: Argentina gặp một hiện tượng lần đầu vào knock-out; bài test là phá khối phòng ngự có tổ chức mà không tự đưa trận đấu vào thế căng cuối trận.",
+    "Brazil vs Norway: Haaland/Norway là kiểu đối thủ có thể trừng phạt mọi sai số chuyển trạng thái của Brazil.",
+    "Spain vs Portugal: cặp vòng 16 đội đã được xác định và có thể trở thành một trận bản lề cho cả nhánh knock-out."
   ],
   "causalTimeline": [
     {
@@ -87,23 +111,42 @@
       "to": "Spain restored as elite contender before Portugal/Croatia winner"
     },
     {
-      "from": "Spain fourth consecutive clean sheet",
+      "from": "Perisic opener for Croatia",
+      "link": "caused",
+      "to": "Portugal forced into high-pressure comeback state"
+    },
+    {
+      "from": "Ronaldo penalty equaliser",
       "link": "enabled",
-      "to": "Knockout path framed around control and defensive stability"
+      "to": "Portugal reopens tie before late winner"
+    },
+    {
+      "from": "Ramos 90+4 winner",
+      "link": "accelerated",
+      "to": "Portugal advances to Spain showdown"
+    },
+    {
+      "from": "Egypt 3-1 New Zealand",
+      "link": "enabled",
+      "to": "Egypt sets up Australia knockout tie"
     }
   ],
   "sources": [
     {
-      "name": "Reuters - US keep World Cup dream alive with gutsy win over Bosnia",
-      "url": "https://www.reuters.com/sports/soccer/update1-soccer-us-keep-world-cup-dream-alive-with-gutsy-win-over-bosnia-2026-07-02/"
+      "name": "Reuters - Croatia coach Dalic slams bad refereeing in 2-1 loss to Portugal",
+      "url": "https://www.reuters.com/sports/soccer/croatia-coach-dalic-slams-bad-refereeing-2-1-loss-portugal-2026-07-03/"
     },
     {
-      "name": "The Guardian - USA 2-0 Bosnia and Herzegovina live report",
-      "url": "https://www.theguardian.com/football/live/2026/jul/01/usa-v-bosnia-and-herzegovina-world-cup-2026-last-32-live"
+      "name": "The Guardian - Portugal 2-1 Croatia live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/02/portugal-v-croatia-world-cup-2026-last-32-live"
     },
     {
-      "name": "The Guardian - Spain 3-0 Austria live report",
-      "url": "https://www.theguardian.com/football/live/2026/jul/02/spain-v-austria-world-cup-2026-last-32-live"
+      "name": "The Liverpool Offside - Egypt defeat New Zealand 3-1 context",
+      "url": "https://liverpooloffside.sbnation.com/liverpool-fc-tactics-longform/81617/egypt-liverpool-legend-mohamed-salah-legacy-world-cup-best-forward-african-player-weah-drogba"
+    },
+    {
+      "name": "Reuters - Egypt coach unsure if Salah will start against Australia",
+      "url": "https://www.reuters.com/sports/soccer/egypt-coach-unsure-if-salah-will-start-against-australia-2026-07-02/"
     }
   ]
 }
