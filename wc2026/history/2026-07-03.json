@@ -1,0 +1,140 @@
+{
+  "date": "2026-07-03",
+  "status": "partial",
+  "title": "Egypt win on penalties, Argentina survive Cape Verde scare",
+  "summary": "Ngày 3/7 theo lịch thi đấu World Cup khép lại thêm hai trận vòng 32 đội: Egypt hòa Australia 1-1 sau 120 phút rồi thắng 4-2 trên chấm luân lưu để có chiến thắng knock-out World Cup đầu tiên; Argentina vượt Cape Verde 3-2 sau hiệp phụ trong một trận hú vía của nhà đương kim vô địch. Colombia vs Ghana chưa hoàn tất trong mốc cập nhật này, nên recap hiện là partial.",
+  "results": [
+    {
+      "round": "Round of 32",
+      "home": "Australia",
+      "away": "Egypt",
+      "homeScore": 1,
+      "awayScore": 1,
+      "afterExtraTime": true,
+      "penalties": {
+        "home": 2,
+        "away": 4
+      },
+      "winner": "Egypt",
+      "status": "complete"
+    },
+    {
+      "round": "Round of 32",
+      "home": "Argentina",
+      "away": "Cape Verde",
+      "homeScore": 3,
+      "awayScore": 2,
+      "afterExtraTime": true,
+      "winner": "Argentina",
+      "status": "complete"
+    }
+  ],
+  "bigMoments": [
+    "Egypt vượt Australia 4-2 trên chấm luân lưu sau trận hòa 1-1, tạo cột mốc chiến thắng knock-out World Cup đầu tiên của họ.",
+    "Emam Ashour mở tỷ số sớm cho Egypt, Australia gỡ hòa nhờ bàn phản lưới của Mohamed Hany, rồi trận đấu bị kéo tới hiệp phụ và loạt penalty.",
+    "Egypt thực hiện thành công cả bốn lượt sút, trong đó Hossam Abdelmaguid đá quả quyết định; Australia hỏng hai lượt sút quan trọng.",
+    "Argentina bị Cape Verde kéo vào hiệp phụ dù Lionel Messi mở tỷ số và tiếp tục chuỗi ghi bàn World Cup rất dài.",
+    "Cape Verde hai lần gỡ hòa, biến trận đấu thành một trong những màn suýt tạo địa chấn lớn nhất vòng 32 đội.",
+    "Cristian Romero ghi bàn quyết định trong hiệp phụ, giữ Argentina sống sót nhưng cũng để lại cảnh báo lớn về thể lực và khả năng kiểm soát trận knock-out."
+  ],
+  "tournamentImpact": [
+    "Egypt vào vòng 16 đội và sẽ gặp Argentina, tạo cặp đấu có narrative rất mạnh giữa Mohamed Salah và nhà đương kim vô địch.",
+    "Australia bị loại sau một trận giàu nỗ lực nhưng không đủ bản lĩnh ở loạt penalty; quyết định thay thủ môn trước luân lưu có thể còn bị mổ xẻ.",
+    "Argentina đi tiếp nhưng không thắng theo kiểu ứng viên áp đảo. Việc phải đá hiệp phụ trong điều kiện nóng ở Miami có thể ảnh hưởng tới hồi phục trước vòng 16 đội.",
+    "Cape Verde dừng lại nhưng rời giải với hình ảnh rất tích cực: một tân binh World Cup có tổ chức, đủ bản lĩnh kéo Argentina tới sát ranh giới khủng hoảng.",
+    "Nhánh đấu đã rõ thêm một cặp vòng 16 đội: Argentina vs Egypt. Colombia vs Ghana vẫn còn là mảnh ghép cuối để xác định đối thủ của Switzerland."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Mohamed Salah",
+      "team": "Egypt",
+      "note": "Trở lại và thực hiện penalty bình tĩnh trong loạt sút, tiếp tục là thủ lĩnh biểu tượng của Egypt."
+    },
+    {
+      "name": "Hossam Abdelmaguid",
+      "team": "Egypt",
+      "note": "Đá quả luân lưu quyết định, chốt chiến thắng lịch sử trước Australia."
+    },
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "note": "Ghi bàn thứ 20 trong sự nghiệp World Cup, nâng chuỗi ghi bàn ở World Cup lên tám trận và dẫn đầu cuộc đua Golden Boot theo AP."
+    },
+    {
+      "name": "Cristian Romero",
+      "team": "Argentina",
+      "note": "Ghi bàn quyết định trong hiệp phụ, cứu Argentina khỏi nguy cơ bị kéo tới penalty hoặc cú sốc lớn."
+    },
+    {
+      "name": "Cape Verde collective block",
+      "team": "Cape Verde",
+      "note": "Hai lần gỡ hòa trước Argentina và cho thấy cấu trúc thi đấu rất đáng nể với một đội lần đầu dự World Cup."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina đi tiếp nhưng đây là tín hiệu cảnh báo. Messi vẫn tạo khác biệt và Romero ghi bàn quyết định, nhưng việc Cape Verde hai lần gỡ hòa cho thấy Argentina chưa kiểm soát đủ sạch ở trạng thái knock-out. Trận gặp Egypt sẽ không dễ nếu bị kéo vào cường độ cảm xúc và chuyển trạng thái tương tự.",
+    "Brazil": "Brazil không thi đấu trong cụm cập nhật này. Nhưng kết quả Argentina phải đá hiệp phụ là lời nhắc cho Brazil trước Norway: ứng viên lớn không chỉ cần thắng, mà còn cần tránh tiêu hao quá mức trước các đối thủ có điểm nổ cá nhân.",
+    "Portugal": "Portugal không thi đấu trong cụm cập nhật này. Sau khi cũng vừa thắng Croatia bằng kịch bản muộn, họ và Argentina đang cùng cho thấy một pattern: các siêu sao vẫn quan trọng, nhưng chiều sâu đội hình và khả năng sống sót ở hiệp phụ/bàn muộn mới quyết định knock-out."
+  },
+  "watchNext": [
+    "Colombia vs Ghana: trận còn lại của ngày 3/7, đội thắng sẽ gặp Switzerland ở vòng 16 đội.",
+    "Argentina vs Egypt: cặp vòng 16 đội mới xác định, đáng chú ý vì Egypt vừa thắng penalty còn Argentina vừa trải qua 120 phút căng thẳng.",
+    "Canada vs Morocco: mở màn vòng 16 đội tiếp theo, kiểm tra momentum của Morocco sau vòng 32 đội.",
+    "Paraguay vs France: France bước vào giai đoạn knock-out sâu hơn với áp lực ứng viên rõ ràng.",
+    "Brazil vs Norway: Haaland/Norway là bài test chuyển trạng thái lớn cho Brazil."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Emam Ashour early header",
+      "link": "enabled",
+      "to": "Egypt protect a narrow knockout-state lead vs Australia"
+    },
+    {
+      "from": "Mohamed Hany own goal",
+      "link": "caused",
+      "to": "Australia force Egypt into extra time and penalties"
+    },
+    {
+      "from": "Egypt perfect penalty execution",
+      "link": "accelerated",
+      "to": "Egypt first World Cup knockout win and Round of 16 tie vs Argentina"
+    },
+    {
+      "from": "Messi opener vs Cape Verde",
+      "link": "enabled",
+      "to": "Argentina initial control"
+    },
+    {
+      "from": "Cape Verde second-half equaliser",
+      "link": "caused",
+      "to": "Argentina forced into extra time"
+    },
+    {
+      "from": "Cristian Romero extra-time winner",
+      "link": "accelerated",
+      "to": "Argentina advances but carries fatigue and control-risk signals"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Reuters - Egypt beat Australia on penalties to reach World Cup Round of 16",
+      "url": "https://www.reuters.com/sports/soccer/egypt-beat-australia-penalties-reach-world-cup-round-16-2026-07-03/"
+    },
+    {
+      "name": "Reuters - Penalties taken in the zone put Egypt in World Cup Round of 16",
+      "url": "https://www.reuters.com/sports/soccer/penalties-taken-in-zone-put-egypt-world-cup-round-16-2026-07-03/"
+    },
+    {
+      "name": "AP - Lionel Messi scores 20th World Cup goal in Argentina win over Cape Verde",
+      "url": "https://apnews.com/article/64fe1029d7f5ca97976cd5ac09075c28"
+    },
+    {
+      "name": "The Guardian - Argentina 3-2 Cape Verde live reaction",
+      "url": "https://www.theguardian.com/football/live/2026/jul/03/argentina-v-cape-verde-world-cup-2026-last-32-live"
+    },
+    {
+      "name": "FIFA - Matchday 23 preview and official schedule context",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/matchday-23-preview-round-of-32"
+    }
+  ]
+}
