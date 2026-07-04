@@ -1,8 +1,8 @@
 {
   "date": "2026-07-03",
-  "status": "partial",
-  "title": "Egypt win on penalties, Argentina survive Cape Verde scare",
-  "summary": "Ngày 3/7 theo lịch thi đấu World Cup khép lại thêm hai trận vòng 32 đội: Egypt hòa Australia 1-1 sau 120 phút rồi thắng 4-2 trên chấm luân lưu để có chiến thắng knock-out World Cup đầu tiên; Argentina vượt Cape Verde 3-2 sau hiệp phụ trong một trận hú vía của nhà đương kim vô địch. Colombia vs Ghana chưa hoàn tất trong mốc cập nhật này, nên recap hiện là partial.",
+  "status": "final",
+  "title": "Egypt win on penalties, Argentina survive, Colombia complete the Round of 32",
+  "summary": "Ngày 3/7 theo lịch thi đấu World Cup đã hoàn tất ba trận vòng 32 đội: Egypt hòa Australia 1-1 sau 120 phút rồi thắng 4-2 trên chấm luân lưu; Argentina vượt Cape Verde 3-2 sau hiệp phụ; Colombia thắng Ghana 1-0 để lấy suất cuối cùng vào vòng 16 đội. Ngày đấu này làm rõ hai cặp tiếp theo: Argentina vs Egypt và Switzerland vs Colombia.",
   "results": [
     {
       "round": "Round of 32",
@@ -27,6 +27,15 @@
       "afterExtraTime": true,
       "winner": "Argentina",
       "status": "complete"
+    },
+    {
+      "round": "Round of 32",
+      "home": "Colombia",
+      "away": "Ghana",
+      "homeScore": 1,
+      "awayScore": 0,
+      "winner": "Colombia",
+      "status": "complete"
     }
   ],
   "bigMoments": [
@@ -35,14 +44,18 @@
     "Egypt thực hiện thành công cả bốn lượt sút, trong đó Hossam Abdelmaguid đá quả quyết định; Australia hỏng hai lượt sút quan trọng.",
     "Argentina bị Cape Verde kéo vào hiệp phụ dù Lionel Messi mở tỷ số và tiếp tục chuỗi ghi bàn World Cup rất dài.",
     "Cape Verde hai lần gỡ hòa, biến trận đấu thành một trong những màn suýt tạo địa chấn lớn nhất vòng 32 đội.",
-    "Cristian Romero ghi bàn quyết định trong hiệp phụ, giữ Argentina sống sót nhưng cũng để lại cảnh báo lớn về thể lực và khả năng kiểm soát trận knock-out."
+    "Cristian Romero ghi bàn quyết định trong hiệp phụ, giữ Argentina sống sót nhưng cũng để lại cảnh báo lớn về thể lực và khả năng kiểm soát trận knock-out.",
+    "Jhon Arias ghi bàn duy nhất phút 14, giúp Colombia vượt Ghana 1-0 và khép lại vòng 32 đội.",
+    "Colombia kiểm soát phần lớn trận đấu trong điều kiện nóng ẩm ở Kansas City, còn Ghana thiếu sức sáng tạo khi Mohammed Kudus vắng mặt vì chấn thương."
   ],
   "tournamentImpact": [
     "Egypt vào vòng 16 đội và sẽ gặp Argentina, tạo cặp đấu có narrative rất mạnh giữa Mohamed Salah và nhà đương kim vô địch.",
     "Australia bị loại sau một trận giàu nỗ lực nhưng không đủ bản lĩnh ở loạt penalty; quyết định thay thủ môn trước luân lưu có thể còn bị mổ xẻ.",
     "Argentina đi tiếp nhưng không thắng theo kiểu ứng viên áp đảo. Việc phải đá hiệp phụ trong điều kiện nóng ở Miami có thể ảnh hưởng tới hồi phục trước vòng 16 đội.",
     "Cape Verde dừng lại nhưng rời giải với hình ảnh rất tích cực: một tân binh World Cup có tổ chức, đủ bản lĩnh kéo Argentina tới sát ranh giới khủng hoảng.",
-    "Nhánh đấu đã rõ thêm một cặp vòng 16 đội: Argentina vs Egypt. Colombia vs Ghana vẫn còn là mảnh ghép cuối để xác định đối thủ của Switzerland."
+    "Colombia giành suất cuối cùng vào vòng 16 đội và sẽ gặp Switzerland ở Vancouver.",
+    "Ghana bị loại trong lần trở lại knock-out World Cup đầu tiên kể từ 2010, khi hàng công không tạo đủ áp lực rõ ràng trước khối phòng ngự Colombia.",
+    "Vòng 32 đội khép lại với đủ các cặp vòng 16 đội: nhánh dưới có thêm Argentina vs Egypt và Switzerland vs Colombia, trong khi Brazil và Portugal chuẩn bị bước vào các bài test rất nặng."
   ],
   "standoutPlayers": [
     {
@@ -66,9 +79,19 @@
       "note": "Ghi bàn quyết định trong hiệp phụ, cứu Argentina khỏi nguy cơ bị kéo tới penalty hoặc cú sốc lớn."
     },
     {
-      "name": "Cape Verde collective block",
-      "team": "Cape Verde",
-      "note": "Hai lần gỡ hòa trước Argentina và cho thấy cấu trúc thi đấu rất đáng nể với một đội lần đầu dự World Cup."
+      "name": "Jhon Arias",
+      "team": "Colombia",
+      "note": "Ghi bàn duy nhất trước Ghana, đưa Colombia vào vòng 16 đội."
+    },
+    {
+      "name": "Luis Suarez",
+      "team": "Colombia",
+      "note": "Vào sân sớm vì chấn thương của Jhon Cordoba và kiến tạo bàn quyết định cho Arias."
+    },
+    {
+      "name": "Lawrence Ati-Zigi",
+      "team": "Ghana",
+      "note": "Giữ Ghana còn hy vọng bằng nhiều pha cứu thua trước sức ép của Colombia."
     }
   ],
   "focus": {
@@ -77,11 +100,11 @@
     "Portugal": "Portugal không thi đấu trong cụm cập nhật này. Sau khi cũng vừa thắng Croatia bằng kịch bản muộn, họ và Argentina đang cùng cho thấy một pattern: các siêu sao vẫn quan trọng, nhưng chiều sâu đội hình và khả năng sống sót ở hiệp phụ/bàn muộn mới quyết định knock-out."
   },
   "watchNext": [
-    "Colombia vs Ghana: trận còn lại của ngày 3/7, đội thắng sẽ gặp Switzerland ở vòng 16 đội.",
-    "Argentina vs Egypt: cặp vòng 16 đội mới xác định, đáng chú ý vì Egypt vừa thắng penalty còn Argentina vừa trải qua 120 phút căng thẳng.",
     "Canada vs Morocco: mở màn vòng 16 đội tiếp theo, kiểm tra momentum của Morocco sau vòng 32 đội.",
     "Paraguay vs France: France bước vào giai đoạn knock-out sâu hơn với áp lực ứng viên rõ ràng.",
-    "Brazil vs Norway: Haaland/Norway là bài test chuyển trạng thái lớn cho Brazil."
+    "Brazil vs Norway: Haaland/Norway là bài test chuyển trạng thái lớn cho Brazil.",
+    "Mexico vs England: kiểm tra bản lĩnh chủ nhà Mexico trước một đối thủ nhiều kinh nghiệm knock-out.",
+    "Portugal vs Spain: cặp đại chiến châu Âu có thể định hình lại nhánh đấu ứng viên."
   ],
   "causalTimeline": [
     {
@@ -113,6 +136,16 @@
       "from": "Cristian Romero extra-time winner",
       "link": "accelerated",
       "to": "Argentina advances but carries fatigue and control-risk signals"
+    },
+    {
+      "from": "Luis Suarez early substitution impact",
+      "link": "enabled",
+      "to": "Jhon Arias 14th-minute winner vs Ghana"
+    },
+    {
+      "from": "Colombia defensive control and Ghana low chance creation",
+      "link": "caused",
+      "to": "Colombia protect 1-0 lead and set Switzerland Round of 16 tie"
     }
   ],
   "sources": [
@@ -133,8 +166,16 @@
       "url": "https://www.theguardian.com/football/live/2026/jul/03/argentina-v-cape-verde-world-cup-2026-last-32-live"
     },
     {
-      "name": "FIFA - Matchday 23 preview and official schedule context",
-      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/matchday-23-preview-round-of-32"
+      "name": "FIFA - Colombia v Ghana match centre",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021517"
+    },
+    {
+      "name": "Reuters - Colombia beat Ghana 1-0 to set up Switzerland showdown",
+      "url": "https://www.reuters.com/sports/soccer/colombia-beat-ghana-1-0-set-up-switzerland-showdown-2026-07-04/"
+    },
+    {
+      "name": "The Guardian - Jhon Arias goal sends Colombia into last 16 as Ghana bow out",
+      "url": "https://www.theguardian.com/football/2026/jul/04/colombia-ghana-world-cup-2026-last-32-match-report"
     }
   ]
 }
