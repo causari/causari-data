@@ -150,5 +150,13 @@
     "relationship": "accelerated",
     "confidence": 0.62,
     "evidence": "France's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+  },
+  {
+    "id": "wc2026-spain-austria-0702--accelerated-->wc2026-portugal-spain-0706",
+    "fromEvent": "wc2026-spain-austria-0702",
+    "toEvent": "wc2026-portugal-spain-0706",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Spain's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
   }
 ]

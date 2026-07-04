@@ -2685,7 +2685,7 @@
       "Sweden",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Kylian Mbappé, Bradley Barcola, Kylian Mbappé.",
+    "whyItMatters": "Scorers: Kylian Mbappé, Kylian Mbappé, Bradley Barcola.",
     "sources": [
       {
         "type": "open-data",
@@ -2930,7 +2930,7 @@
       "Austria",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Mikel Oyarzabal, Pedro Porro, Mikel Oyarzabal.",
+    "whyItMatters": "Scorers: Mikel Oyarzabal, Mikel Oyarzabal, Pedro Porro.",
     "sources": [
       {
         "type": "open-data",
@@ -2976,8 +2976,8 @@
   },
   {
     "id": "wc2026-argentina-cape-verde-0703",
-    "title": "Argentina vs Cape Verde",
-    "description": "Round of 32 fixture: Argentina vs Cape Verde, July 3, 2026 at Miami (Miami Gardens).",
+    "title": "Argentina 1–1 Cape Verde",
+    "description": "Argentina drew Cape Verde 1–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -2985,7 +2985,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2994,13 +2994,13 @@
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Argentina",
       "Cape Verde",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Lionel Messi, Lisandro Martínez, Diney Borges, Deroy Duarte, Sidny Lopes Cabral.",
     "sources": [
       {
         "type": "open-data",
@@ -3011,8 +3011,8 @@
   },
   {
     "id": "wc2026-colombia-ghana-0703",
-    "title": "Colombia vs Ghana",
-    "description": "Round of 32 fixture: Colombia vs Ghana, July 3, 2026 at Kansas City.",
+    "title": "Colombia 1–0 Ghana",
+    "description": "Colombia beat Ghana 1–0 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3020,7 +3020,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -3029,13 +3029,13 @@
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Colombia",
       "Ghana",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Jhon Arias.",
     "sources": [
       {
         "type": "open-data",
@@ -3046,8 +3046,8 @@
   },
   {
     "id": "wc2026-australia-egypt-0703",
-    "title": "Australia vs Egypt",
-    "description": "Round of 32 fixture: Australia vs Egypt, July 3, 2026 at Dallas (Arlington).",
+    "title": "Australia 1–1 Egypt",
+    "description": "Australia drew Egypt 1–1 in Round of 32.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3055,7 +3055,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -3064,13 +3064,13 @@
     ],
     "date": "2026-07-03",
     "dateLabel": "July 3, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Australia",
       "Egypt",
       "Round of 32"
     ],
-    "whyItMatters": "Upcoming Round of 32 match.",
+    "whyItMatters": "Scorers: Mohamed Hany, Emam Ashour.",
     "sources": [
       {
         "type": "open-data",
@@ -3220,9 +3220,9 @@
     ]
   },
   {
-    "id": "wc2026-w83-w84-0706",
-    "title": "W83 vs W84",
-    "description": "Round of 16 fixture: W83 vs W84, July 6, 2026 at Dallas (Arlington).",
+    "id": "wc2026-portugal-spain-0706",
+    "title": "Portugal vs Spain",
+    "description": "Round of 16 fixture: Portugal vs Spain, July 6, 2026 at Dallas (Arlington).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3234,15 +3234,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w83",
-      "w84"
+      "portugal",
+      "spain"
     ],
     "date": "2026-07-06",
     "dateLabel": "July 6, 2026",
     "status": "scheduled",
     "entities": [
-      "W83",
-      "W84",
+      "Portugal",
+      "Spain",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
@@ -3325,9 +3325,9 @@
     ]
   },
   {
-    "id": "wc2026-w85-w87-0707",
-    "title": "W85 vs W87",
-    "description": "Round of 16 fixture: W85 vs W87, July 7, 2026 at Vancouver.",
+    "id": "wc2026-switzerland-w87-0707",
+    "title": "Switzerland vs W87",
+    "description": "Round of 16 fixture: Switzerland vs W87, July 7, 2026 at Vancouver.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3339,14 +3339,14 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w85",
+      "switzerland",
       "w87"
     ],
     "date": "2026-07-07",
     "dateLabel": "July 7, 2026",
     "status": "scheduled",
     "entities": [
-      "W85",
+      "Switzerland",
       "W87",
       "Round of 16"
     ],
