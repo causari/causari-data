@@ -5,6 +5,11 @@ This is the prompt/contract for the **scheduled agent** (Codex/ChatGPT) that upd
 exist because this agent commits to a **public** repo that feeds a **public live visual** — a wrong
 or unsourced scoreline is a public credibility failure.
 
+> **The causal quality bar lives in [`docs/CAUSAL-CONTRACT.md`](./CAUSAL-CONTRACT.md).** Read it
+> first — it explains why a mechanical "Scorers: …" feed makes the page *disprove* Causari, and
+> defines exactly what a real `whyItMatters` / `nextWatchpoints` / typed-link set must contain.
+> The prompt below now also runs `scripts/causal-quality.mjs`, the gate that FAILS templated data.
+
 ---
 
 ## Non-negotiable rules
@@ -48,8 +53,10 @@ Each run, do exactly this:
 
 3. Apply + validate:
        node scripts/add-match-day.mjs scripts/match-day.json
-       node scripts/validate-pack.mjs worldcup-2026
-   If either command exits non-zero, fix the input and retry. Do NOT proceed on failure.
+       node scripts/validate-pack.mjs worldcup-2026     # structure
+       node scripts/causal-quality.mjs worldcup-2026    # semantic causal gate
+   If any command exits non-zero, fix the input and retry. Do NOT proceed on failure.
+   (add-match-day.mjs already runs the causal-quality gate in memory before writing.)
 
 4. Commit only if validation passed:
        git add packs/worldcup-2026

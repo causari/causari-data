@@ -5,12 +5,14 @@ on:
     paths:
       - "packs/**"
       - "scripts/validate-pack.mjs"
+      - "scripts/causal-quality.mjs"
       - "schema/**"
       - ".github/workflows/validate-packs.yml"
   pull_request:
     paths:
       - "packs/**"
       - "scripts/validate-pack.mjs"
+      - "scripts/causal-quality.mjs"
       - "schema/**"
 
 jobs:
@@ -23,3 +25,5 @@ jobs:
           node-version: "20"
       - name: Validate all packs (schema + referential integrity)
         run: node scripts/validate-pack.mjs
+      - name: Causal-quality gate (semantic — no templated substrate)
+        run: node scripts/causal-quality.mjs
