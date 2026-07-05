@@ -1,0 +1,139 @@
+{
+  "date": "2026-07-04",
+  "status": "final",
+  "title": "Morocco and France reach the quarter-finals",
+  "summary": "Ngày 4/7 theo lịch thi đấu World Cup mở màn vòng 16 đội với hai trận: Morocco thắng Canada 3-0 để lấy vé tứ kết đầu tiên, còn France vượt Paraguay 1-0 nhờ quả penalty của Kylian Mbappe. Cặp tứ kết đầu tiên được xác định: Morocco vs France vào ngày 9/7.",
+  "results": [
+    {
+      "round": "Round of 16",
+      "home": "Canada",
+      "away": "Morocco",
+      "homeScore": 0,
+      "awayScore": 3,
+      "winner": "Morocco",
+      "status": "complete"
+    },
+    {
+      "round": "Round of 16",
+      "home": "Paraguay",
+      "away": "France",
+      "homeScore": 0,
+      "awayScore": 1,
+      "winner": "France",
+      "status": "complete"
+    }
+  ],
+  "bigMoments": [
+    "Morocco thắng Canada 3-0 sau hiệp hai bùng nổ, trở thành đội đầu tiên vào tứ kết World Cup 2026.",
+    "Canada chơi giàu năng lượng trong hiệp một nhưng không tận dụng được cơ hội, rồi bị Morocco trừng phạt sau giờ nghỉ.",
+    "Azzedine Ounahi ghi cú đúp, trong đó có bàn mở tỷ số từ một tình huống đá phạt được dàn xếp thông minh.",
+    "Soufiane Rahimi vào sân và ghi bàn muộn, đóng lại hành trình lịch sử nhưng cũng còn nhiều tiếc nuối của Canada trên sân nhà.",
+    "France thắng Paraguay 1-0 trong trận đấu căng và nhiều va chạm ở Philadelphia.",
+    "Kylian Mbappe ghi bàn duy nhất trên chấm penalty phút 70 sau khi VAR xác nhận pha phạm lỗi với Desire Doue.",
+    "Paraguay kéo France vào một trận đấu rất khó chịu về nhịp độ và thể chất, nhưng không đủ chất lượng tấn công để tạo cú sốc."
+  ],
+  "tournamentImpact": [
+    "Morocco vào tứ kết World Cup lần thứ hai liên tiếp và tiếp tục xác nhận vị thế đội knock-out rất khó chịu.",
+    "Canada dừng bước nhưng rời giải với nhiều cột mốc: chủ nhà có chiến thắng World Cup đầu tiên, vượt qua vòng bảng và có trải nghiệm knock-out đầu tiên.",
+    "France đi tiếp nhưng chưa tạo cảm giác áp đảo. Việc chỉ thắng Paraguay bằng một quả penalty cho thấy họ vẫn còn vấn đề ở khả năng kết liễu trận đấu.",
+    "Paraguay bị loại sau hành trình giàu bản lĩnh, bao gồm việc vượt Germany ở vòng 32 đội bằng loạt luân lưu.",
+    "Cặp tứ kết Morocco vs France được xác định. Đây là trận rất đáng xem giữa một Morocco có tổ chức, chuyển trạng thái sắc và một France có Mbappe nhưng đang cần tăng độ sắc nét."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Azzedine Ounahi",
+      "team": "Morocco",
+      "note": "Ghi cú đúp trước Canada và được nhắc tới như cầu thủ nổi bật nhất trận."
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "team": "Morocco",
+      "note": "Ghi bàn thứ ba trong thời gian bù giờ, chốt chiến thắng 3-0."
+    },
+    {
+      "name": "Kylian Mbappe",
+      "team": "France",
+      "note": "Giữ bình tĩnh trên chấm penalty, ghi bàn duy nhất đưa France vào tứ kết."
+    },
+    {
+      "name": "Desire Doue",
+      "team": "France",
+      "note": "Tạo ra tình huống penalty quyết định sau pha phạm lỗi được VAR xác nhận."
+    },
+    {
+      "name": "Canada pressing unit",
+      "team": "Canada",
+      "note": "Tạo sức ép tốt trong hiệp một nhưng thiếu hiệu quả ở các pha kết thúc."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu trong cụm cập nhật này. Nhưng Morocco và France đều cho thấy bài học quan trọng cho Argentina trước Egypt: knock-out không chỉ là kiểm soát bóng, mà là tận dụng khoảnh khắc và tránh để đối thủ kéo trận đấu vào trạng thái cảm xúc khó lường.",
+    "Brazil": "Brazil chưa thi đấu ở vòng 16 đội. Trước Norway, họ cần nhìn vào France như một cảnh báo: ứng viên lớn có thể đi tiếp nhưng vẫn bị đặt dấu hỏi nếu thiếu độ sắc ở phần sân cuối cùng.",
+    "Portugal": "Portugal chưa thi đấu trong ngày này và vẫn chờ đại chiến Spain. Việc France chỉ thắng tối thiểu càng làm rõ rằng các trận vòng 16 đội giữa các đội có tổ chức sẽ rất dễ biến thành bài test bản lĩnh, không phải màn trình diễn đẹp mắt."
+  },
+  "watchNext": [
+    "Brazil vs Norway: Haaland và khả năng chuyển trạng thái của Norway là bài test lớn cho hàng thủ Brazil.",
+    "Mexico vs England: chủ nhà Mexico gặp một đối thủ có nhiều kinh nghiệm knock-out.",
+    "Portugal vs Spain: đại chiến châu Âu có thể định hình cả nhánh tứ kết.",
+    "United States vs Belgium: một trận cân bằng giữa lợi thế chủ nhà và chất lượng cá nhân của Belgium.",
+    "Argentina vs Egypt: Messi/Salah narrative, cộng với câu hỏi hồi phục thể lực sau khi Argentina phải đá hiệp phụ ở vòng trước."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Canada missed first-half chances",
+      "link": "enabled",
+      "to": "Morocco survive early pressure and keep the match scoreless at half-time"
+    },
+    {
+      "from": "Azzedine Ounahi second-half opener",
+      "link": "caused",
+      "to": "Canada forced to chase the game and Morocco gain transition space"
+    },
+    {
+      "from": "Morocco counterattack quality and late Rahimi goal",
+      "link": "accelerated",
+      "to": "Morocco 3-0 Canada and second consecutive World Cup quarter-final"
+    },
+    {
+      "from": "Paraguay compact and physical defensive approach",
+      "link": "caused",
+      "to": "France struggle to create clean open-play chances"
+    },
+    {
+      "from": "VAR-confirmed foul on Desire Doue",
+      "link": "enabled",
+      "to": "Kylian Mbappe penalty winner"
+    },
+    {
+      "from": "France survive Paraguay disruption",
+      "link": "caused",
+      "to": "Morocco vs France quarter-final set for 2026-07-09"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FOX Sports - Canada vs Morocco final score",
+      "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-canada-vs-morocco-jul-04-2026-game-boxscore-607920"
+    },
+    {
+      "name": "Reuters - Clinical Morocco ease past Canada 3-0 to reach World Cup quarter-finals",
+      "url": "https://www.reuters.com/sports/soccer/morocco-beat-canada-3-0-reach-world-cup-quarter-finals-2026-07-04/"
+    },
+    {
+      "name": "ESPN - Canada 0-3 Morocco final score",
+      "url": "https://www.espn.com/soccer/match/_/gameId/760502/morocco-canada"
+    },
+    {
+      "name": "FOX Sports - Paraguay vs France highlights and reaction",
+      "url": "https://www.foxsports.com/watch/fmc-l5d1f3kf18is3ej7"
+    },
+    {
+      "name": "The Guardian - Paraguay 0-1 France live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/04/france-v-paraguay-world-cup-last-32-live"
+    },
+    {
+      "name": "SBS - Paraguay v France highlights",
+      "url": "https://www.sbs.com.au/sport/video/fifa-world-cup-2026-highlights-paraguay-v-france-round-of-16/wwg6qjoll"
+    }
+  ]
+}
