@@ -5,7 +5,7 @@
     "toEvent": "wc2026-mexico-ecuador-0630",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Mexico's 0–3 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Mexico's 3–0 win banked a goal-difference cushion heading into Mexico vs Ecuador."
   },
   {
     "id": "wc2026-switzerland-bosnia-and-herzegovina-0618--accelerated-->wc2026-switzerland-canada-0624",
@@ -13,7 +13,7 @@
     "toEvent": "wc2026-switzerland-canada-0624",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Switzerland's 4–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Switzerland's 4–1 win banked a goal-difference cushion heading into Switzerland vs Canada."
   },
   {
     "id": "wc2026-canada-qatar-0618--accelerated-->wc2026-switzerland-canada-0624",
@@ -21,7 +21,7 @@
     "toEvent": "wc2026-switzerland-canada-0624",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Canada's 6–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Canada's 6–0 win banked a goal-difference cushion heading into Canada vs Switzerland."
   },
   {
     "id": "wc2026-brazil-haiti-0619--accelerated-->wc2026-scotland-brazil-0624",
@@ -29,7 +29,7 @@
     "toEvent": "wc2026-scotland-brazil-0624",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Brazil's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Brazil's 3–0 win banked a goal-difference cushion heading into Brazil vs Scotland."
   },
   {
     "id": "wc2026-scotland-brazil-0624--accelerated-->wc2026-brazil-japan-0629",
@@ -37,15 +37,22 @@
     "toEvent": "wc2026-brazil-japan-0629",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Brazil's 0–3 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Brazil's 3–0 win banked a goal-difference cushion heading into Brazil vs Japan."
   },
   {
     "id": "wc2026-usa-paraguay-0612--accelerated-->wc2026-usa-australia-0619",
     "fromEvent": "wc2026-usa-paraguay-0612",
     "toEvent": "wc2026-usa-australia-0619",
     "relationship": "accelerated",
-    "confidence": 0.62,
-    "evidence": "USA's 4–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "confidence": 0.5,
+    "evidence": "The USA’s emphatic 4–1 opener built goal difference and home momentum that fed a composed 2–0 win over Australia in their second match.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
   },
   {
     "id": "wc2026-germany-curacao-0614--accelerated-->wc2026-germany-ivory-coast-0620",
@@ -53,7 +60,7 @@
     "toEvent": "wc2026-germany-ivory-coast-0620",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Germany's 7–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Germany's 7–1 win banked a goal-difference cushion heading into Germany vs Ivory Coast."
   },
   {
     "id": "wc2026-sweden-tunisia-0614--accelerated-->wc2026-netherlands-sweden-0620",
@@ -61,7 +68,7 @@
     "toEvent": "wc2026-netherlands-sweden-0620",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Sweden's 5–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Sweden's 5–1 win banked a goal-difference cushion heading into Sweden vs Netherlands."
   },
   {
     "id": "wc2026-netherlands-sweden-0620--accelerated-->wc2026-tunisia-netherlands-0625",
@@ -69,7 +76,7 @@
     "toEvent": "wc2026-tunisia-netherlands-0625",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Netherlands's 5–1 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Netherlands's 5–1 win banked a goal-difference cushion heading into Netherlands vs Tunisia."
   },
   {
     "id": "wc2026-tunisia-japan-0620--accelerated-->wc2026-japan-sweden-0625",
@@ -77,7 +84,7 @@
     "toEvent": "wc2026-japan-sweden-0625",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Japan's 0–4 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Japan's 4–0 win banked a goal-difference cushion heading into Japan vs Sweden."
   },
   {
     "id": "wc2026-new-zealand-belgium-0626--accelerated-->wc2026-belgium-senegal-0701",
@@ -85,7 +92,7 @@
     "toEvent": "wc2026-belgium-senegal-0701",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Belgium's 1–5 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Belgium's 5–1 win banked a goal-difference cushion heading into Belgium vs Senegal."
   },
   {
     "id": "wc2026-spain-saudi-arabia-0621--accelerated-->wc2026-uruguay-spain-0626",
@@ -93,7 +100,7 @@
     "toEvent": "wc2026-uruguay-spain-0626",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Spain's 4–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Spain's 4–0 win banked a goal-difference cushion heading into Spain vs Uruguay."
   },
   {
     "id": "wc2026-iraq-norway-0616--accelerated-->wc2026-norway-senegal-0622",
@@ -101,7 +108,7 @@
     "toEvent": "wc2026-norway-senegal-0622",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Norway's 1–4 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Norway's 4–1 win banked a goal-difference cushion heading into Norway vs Senegal."
   },
   {
     "id": "wc2026-france-iraq-0622--accelerated-->wc2026-norway-france-0626",
@@ -109,7 +116,7 @@
     "toEvent": "wc2026-norway-france-0626",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "France's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "France's 3–0 win banked a goal-difference cushion heading into France vs Norway."
   },
   {
     "id": "wc2026-norway-france-0626--accelerated-->wc2026-france-sweden-0630",
@@ -117,7 +124,7 @@
     "toEvent": "wc2026-france-sweden-0630",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "France's 1–4 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "France's 4–1 win banked a goal-difference cushion heading into France vs Sweden."
   },
   {
     "id": "wc2026-senegal-iraq-0626--accelerated-->wc2026-belgium-senegal-0701",
@@ -125,7 +132,7 @@
     "toEvent": "wc2026-belgium-senegal-0701",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Senegal's 5–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Senegal's 5–0 win banked a goal-difference cushion heading into Senegal vs Belgium."
   },
   {
     "id": "wc2026-argentina-algeria-0616--accelerated-->wc2026-argentina-austria-0622",
@@ -133,7 +140,7 @@
     "toEvent": "wc2026-argentina-austria-0622",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Argentina's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Argentina's 3–0 win banked a goal-difference cushion heading into Argentina vs Austria."
   },
   {
     "id": "wc2026-portugal-uzbekistan-0623--accelerated-->wc2026-colombia-portugal-0627",
@@ -141,7 +148,7 @@
     "toEvent": "wc2026-colombia-portugal-0627",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Portugal's 5–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Portugal's 5–0 win banked a goal-difference cushion heading into Portugal vs Colombia."
   },
   {
     "id": "wc2026-france-sweden-0630--accelerated-->wc2026-paraguay-france-0704",
@@ -149,7 +156,7 @@
     "toEvent": "wc2026-paraguay-france-0704",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "France's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "France's 3–0 win banked a goal-difference cushion heading into France vs Paraguay."
   },
   {
     "id": "wc2026-spain-austria-0702--accelerated-->wc2026-portugal-spain-0706",
@@ -157,6 +164,1275 @@
     "toEvent": "wc2026-portugal-spain-0706",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Spain's 3–0 win was a statement result and a goal-difference cushion heading into the next fixture."
+    "evidence": "Spain's 3–0 win banked a goal-difference cushion and momentum heading into the next fixture."
+  },
+  {
+    "id": "folk-football--inspired-->public-school-football",
+    "fromEvent": "folk-football",
+    "toEvent": "public-school-football",
+    "relationship": "inspired",
+    "confidence": 0.6,
+    "evidence": "Public schools adapted the inherited folk-football impulse into formalized games, each writing its own code from the same raw tradition.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "public-school-football--caused-->fa-codification-1863",
+    "fromEvent": "public-school-football",
+    "toEvent": "fa-codification-1863",
+    "relationship": "caused",
+    "confidence": 0.8,
+    "evidence": "The incompatibility between competing public-school codes — especially over handling the ball — created the direct need that the 1863 FA meeting resolved with a single rulebook.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "folk-football--enabled-->fa-codification-1863",
+    "fromEvent": "folk-football",
+    "toEvent": "fa-codification-1863",
+    "relationship": "enabled",
+    "confidence": 0.6,
+    "evidence": "A widespread popular game existed to be codified; without an established folk practice there was nothing for the FA to standardize.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fa-codification-1863--enabled-->professionalism-1885",
+    "fromEvent": "fa-codification-1863",
+    "toEvent": "professionalism-1885",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Standard rules made organized competitive matches possible, which in turn created clubs willing to pay for the best players — the basis for legalized professionalism.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fa-codification-1863--enabled-->football-league-1888",
+    "fromEvent": "fa-codification-1863",
+    "toEvent": "football-league-1888",
+    "relationship": "enabled",
+    "confidence": 0.8,
+    "evidence": "A shared rulebook was the precondition for a regular fixture list between clubs; you cannot run a league without agreed laws.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "professionalism-1885--caused-->football-league-1888",
+    "fromEvent": "professionalism-1885",
+    "toEvent": "football-league-1888",
+    "relationship": "caused",
+    "confidence": 0.75,
+    "evidence": "Paid professional players needed regular, revenue-generating fixtures to be financially sustainable, directly motivating the founding of a scheduled league.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "football-league-1888--inspired-->fifa-sponsorship-1978",
+    "fromEvent": "football-league-1888",
+    "toEvent": "fifa-sponsorship-1978",
+    "relationship": "inspired",
+    "confidence": 0.45,
+    "evidence": "The Football League established the gate-and-fixture commercial template that later international competitions and FIFA scaled up commercially.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fa-codification-1863--enabled-->british-empire-football-spread",
+    "fromEvent": "fa-codification-1863",
+    "toEvent": "british-empire-football-spread",
+    "relationship": "enabled",
+    "confidence": 0.75,
+    "evidence": "A single portable rulebook let British traders and sailors teach the same game everywhere they went; an un-codified folk game could not have spread as a consistent sport.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "british-empire-football-spread--caused-->fifa-founded-1904",
+    "fromEvent": "british-empire-football-spread",
+    "toEvent": "fifa-founded-1904",
+    "relationship": "caused",
+    "confidence": 0.75,
+    "evidence": "Once multiple nations played the same codified game, a body to govern matches between them became necessary — the explicit purpose for which FIFA was founded.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fa-codification-1863--enabled-->fifa-founded-1904",
+    "fromEvent": "fa-codification-1863",
+    "toEvent": "fifa-founded-1904",
+    "relationship": "enabled",
+    "confidence": 0.8,
+    "evidence": "FIFA adopted the FA's Laws of the Game as its basis; the international body presupposed an existing shared code to govern.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "football-league-1888--inspired-->fifa-founded-1904",
+    "fromEvent": "football-league-1888",
+    "toEvent": "fifa-founded-1904",
+    "relationship": "inspired",
+    "confidence": 0.5,
+    "evidence": "The organizational model of a governing association running structured competition informed how international football was institutionalized.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-founded-1904--enabled-->olympic-football-1908",
+    "fromEvent": "fifa-founded-1904",
+    "toEvent": "olympic-football-1908",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "FIFA provided the international governance that let an Olympic football tournament be run as a sanctioned competition between national associations.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-founded-1904--caused-->first-world-cup-1930",
+    "fromEvent": "fifa-founded-1904",
+    "toEvent": "first-world-cup-1930",
+    "relationship": "caused",
+    "confidence": 0.85,
+    "evidence": "The first World Cup was organized and run by FIFA; the world championship existed only because an international governing body existed to stage it.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "olympic-football-1908--accelerated-->first-world-cup-1930",
+    "fromEvent": "olympic-football-1908",
+    "toEvent": "first-world-cup-1930",
+    "relationship": "accelerated",
+    "confidence": 0.65,
+    "evidence": "The popularity of Olympic football, and its amateur-only restriction, demonstrated demand for a professional world championship and hastened FIFA's decision to launch one.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "british-empire-football-spread--enabled-->first-world-cup-1930",
+    "fromEvent": "british-empire-football-spread",
+    "toEvent": "first-world-cup-1930",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "A genuine world championship required competitive national teams on multiple continents, which the earlier spread of the game had produced — Uruguay, Argentina, and Brazil were already strong.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "first-world-cup-1930--enabled-->world-cup-soft-power-1934",
+    "fromEvent": "first-world-cup-1930",
+    "toEvent": "world-cup-soft-power-1934",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Once a recurring world championship existed, host nations could appropriate it; Italy 1934 was the first to weaponize hosting for state propaganda.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "first-world-cup-1930--enabled-->maracanazo-1950",
+    "fromEvent": "first-world-cup-1930",
+    "toEvent": "maracanazo-1950",
+    "relationship": "enabled",
+    "confidence": 0.6,
+    "evidence": "The Maracanazo's national trauma was only possible because the World Cup had become the supreme prize whose loss could wound a nation.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "world-cup-soft-power-1934--inspired-->havelange-presidency-1974",
+    "fromEvent": "world-cup-soft-power-1934",
+    "toEvent": "havelange-presidency-1974",
+    "relationship": "inspired",
+    "confidence": 0.45,
+    "evidence": "The early demonstration that hosting projects national power shaped FIFA's later willingness to award tournaments strategically across regions.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "first-world-cup-1930--enabled-->tv-broadcast-1954",
+    "fromEvent": "first-world-cup-1930",
+    "toEvent": "tv-broadcast-1954",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "A regular, marquee international tournament gave early television a premium live event worth broadcasting; the World Cup format was the content TV needed.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "tv-broadcast-1954--enabled-->satellite-broadcast-1970",
+    "fromEvent": "tv-broadcast-1954",
+    "toEvent": "satellite-broadcast-1970",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Television broadcasting of the World Cup established the audience and demand that justified investing in live satellite transmission a generation later.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "satellite-broadcast-1970--caused-->fifa-sponsorship-1978",
+    "fromEvent": "satellite-broadcast-1970",
+    "toEvent": "fifa-sponsorship-1978",
+    "relationship": "caused",
+    "confidence": 0.75,
+    "evidence": "Worldwide simultaneous satellite broadcast created a global advertising surface, which is precisely what made large multinational sponsorship deals valuable to FIFA.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "tv-broadcast-1954--enabled-->fifa-sponsorship-1978",
+    "fromEvent": "tv-broadcast-1954",
+    "toEvent": "fifa-sponsorship-1978",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "Televised reach turned matches into marketable media, the precondition for brands paying to be associated with the tournament.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "havelange-presidency-1974--caused-->fifa-sponsorship-1978",
+    "fromEvent": "havelange-presidency-1974",
+    "toEvent": "fifa-sponsorship-1978",
+    "relationship": "caused",
+    "confidence": 0.8,
+    "evidence": "Havelange explicitly pursued corporate sponsorship and TV-rights revenue, signing the Coca-Cola and Adidas partnerships that built FIFA's commercial base.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "havelange-presidency-1974--caused-->expansion-24-teams-1982",
+    "fromEvent": "havelange-presidency-1974",
+    "toEvent": "expansion-24-teams-1982",
+    "relationship": "caused",
+    "confidence": 0.8,
+    "evidence": "Havelange won the presidency by promising more World Cup places to African and Asian federations and delivered the first expansion to 24 teams.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "satellite-broadcast-1970--enabled-->havelange-presidency-1974",
+    "fromEvent": "satellite-broadcast-1970",
+    "toEvent": "havelange-presidency-1974",
+    "relationship": "enabled",
+    "confidence": 0.55,
+    "evidence": "The globalized broadcast reach of the 1970 tournament made FIFA a commercially valuable property, the platform Havelange built his commercial presidency upon.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-sponsorship-1978--enabled-->expansion-24-teams-1982",
+    "fromEvent": "fifa-sponsorship-1978",
+    "toEvent": "expansion-24-teams-1982",
+    "relationship": "enabled",
+    "confidence": 0.6,
+    "evidence": "Guaranteed sponsorship and broadcast revenue gave FIFA the financial confidence to enlarge the tournament and absorb the added logistical cost.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "expansion-24-teams-1982--inspired-->expansion-48-teams-2017",
+    "fromEvent": "expansion-24-teams-1982",
+    "toEvent": "expansion-48-teams-2017",
+    "relationship": "inspired",
+    "confidence": 0.65,
+    "evidence": "The 1982 expansion established the precedent and political logic — more slots for under-represented confederations — that the 2026 jump to 48 teams extended.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "expansion-24-teams-1982--accelerated-->usa-1994-hosting",
+    "fromEvent": "expansion-24-teams-1982",
+    "toEvent": "usa-1994-hosting",
+    "relationship": "accelerated",
+    "confidence": 0.5,
+    "evidence": "A larger, more global tournament increased FIFA's appetite to enter major untapped markets like the United States.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-sponsorship-1978--caused-->usa-1994-hosting",
+    "fromEvent": "fifa-sponsorship-1978",
+    "toEvent": "usa-1994-hosting",
+    "relationship": "caused",
+    "confidence": 0.7,
+    "evidence": "FIFA awarded 1994 to the USA explicitly to open the lucrative American consumer and sponsorship market, the logical extension of its commercialization strategy.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "usa-1994-hosting--caused-->mls-founded-1996",
+    "fromEvent": "usa-1994-hosting",
+    "toEvent": "mls-founded-1996",
+    "relationship": "caused",
+    "confidence": 0.85,
+    "evidence": "Launching a domestic professional league was a condition of the US 1994 bid; MLS was founded in 1996 as a direct consequence.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "mls-founded-1996--enabled-->united-bid-2018",
+    "fromEvent": "mls-founded-1996",
+    "toEvent": "united-bid-2018",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "Two decades of MLS built the stadiums, audiences, and football infrastructure that made the United States a credible anchor for the 2026 bid.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "usa-1994-hosting--enabled-->united-bid-2018",
+    "fromEvent": "usa-1994-hosting",
+    "toEvent": "united-bid-2018",
+    "relationship": "enabled",
+    "confidence": 0.6,
+    "evidence": "The commercial and organizational success of USA 1994 demonstrated North America could stage and monetize the tournament, paving the way for the 2026 award.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "professionalism-1885--enabled-->bosman-ruling-1995",
+    "fromEvent": "professionalism-1885",
+    "toEvent": "bosman-ruling-1995",
+    "relationship": "enabled",
+    "confidence": 0.55,
+    "evidence": "A professional labour market for players had to exist before a court could rule on the legality of restricting their movement; Bosman acted on a century-old professional system.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "bosman-ruling-1995--caused-->galactico-globalization-2000",
+    "fromEvent": "bosman-ruling-1995",
+    "toEvent": "galactico-globalization-2000",
+    "relationship": "caused",
+    "confidence": 0.75,
+    "evidence": "By freeing player movement and removing EU foreigner limits, Bosman triggered wage inflation and multinational squad-building — the galáctico star economy.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "champions-league-1992--caused-->galactico-globalization-2000",
+    "fromEvent": "champions-league-1992",
+    "toEvent": "galactico-globalization-2000",
+    "relationship": "caused",
+    "confidence": 0.7,
+    "evidence": "Champions League TV and sponsorship money gave elite clubs the budgets to assemble squads of global superstars, defining the galáctico era.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "satellite-broadcast-1970--enabled-->champions-league-1992",
+    "fromEvent": "satellite-broadcast-1970",
+    "toEvent": "champions-league-1992",
+    "relationship": "enabled",
+    "confidence": 0.55,
+    "evidence": "Global live broadcast made club competitions valuable enough to repackage as a premium, sponsor-funded Champions League product.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "galactico-globalization-2000--enabled-->world-cup-2026",
+    "fromEvent": "galactico-globalization-2000",
+    "toEvent": "world-cup-2026",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "Decades of player globalization built worldwide fan attachment to stars and leagues, broadening the global audience the 2026 tournament is sized to serve.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "havelange-presidency-1974--inspired-->korea-japan-2002",
+    "fromEvent": "havelange-presidency-1974",
+    "toEvent": "korea-japan-2002",
+    "relationship": "inspired",
+    "confidence": 0.5,
+    "evidence": "Havelange's drive to take the tournament beyond Europe and the Americas set the policy direction that produced the first Asian World Cup.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "korea-japan-2002--accelerated-->south-africa-2010",
+    "fromEvent": "korea-japan-2002",
+    "toEvent": "south-africa-2010",
+    "relationship": "accelerated",
+    "confidence": 0.55,
+    "evidence": "The success of the first Asian and first co-hosted tournament reinforced FIFA's rotation policy of awarding hosting to new regions, including Africa.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "korea-japan-2002--inspired-->tri-nation-hosting-2026",
+    "fromEvent": "korea-japan-2002",
+    "toEvent": "tri-nation-hosting-2026",
+    "relationship": "inspired",
+    "confidence": 0.7,
+    "evidence": "Korea/Japan 2002 proved that splitting a World Cup across countries was logistically workable, providing the template the tri-nation 2026 model extended to three hosts.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "south-africa-2010--enabled-->united-bid-2018",
+    "fromEvent": "south-africa-2010",
+    "toEvent": "united-bid-2018",
+    "relationship": "enabled",
+    "confidence": 0.45,
+    "evidence": "FIFA's rotation logic and the global-hosting norm made a return of the tournament to North America in 2026 fit an established pattern of spreading hosting worldwide.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "satellite-broadcast-1970--enabled-->goal-line-tech-2014",
+    "fromEvent": "satellite-broadcast-1970",
+    "toEvent": "goal-line-tech-2014",
+    "relationship": "enabled",
+    "confidence": 0.55,
+    "evidence": "Multi-angle broadcast replays publicly exposed officiating errors, building the pressure that led FIFA to admit goal-line technology into the laws.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "goal-line-tech-2014--caused-->var-2018",
+    "fromEvent": "goal-line-tech-2014",
+    "toEvent": "var-2018",
+    "relationship": "caused",
+    "confidence": 0.7,
+    "evidence": "Accepting goal-line technology broke FIFA's resistance to in-game tech and directly opened the path to the more comprehensive video assistant referee system.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "var-2018--enabled-->streaming-rights-2022",
+    "fromEvent": "var-2018",
+    "toEvent": "streaming-rights-2022",
+    "relationship": "enabled",
+    "confidence": 0.4,
+    "evidence": "Tech-mediated, replay-rich officiating suited the interactive digital broadcast experience that streaming platforms monetize.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "tv-broadcast-1954--enabled-->streaming-rights-2022",
+    "fromEvent": "tv-broadcast-1954",
+    "toEvent": "streaming-rights-2022",
+    "relationship": "enabled",
+    "confidence": 0.55,
+    "evidence": "The decades-long television rights model established the media-rights revenue framework that streaming platforms later inherited and extended.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-sponsorship-1978--enabled-->fifa-corruption-2015",
+    "fromEvent": "fifa-sponsorship-1978",
+    "toEvent": "fifa-corruption-2015",
+    "relationship": "enabled",
+    "confidence": 0.6,
+    "evidence": "The vast media-rights and sponsorship money flowing through FIFA created the very incentives for the bribery the 2015 indictments exposed.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "havelange-presidency-1974--enabled-->fifa-corruption-2015",
+    "fromEvent": "havelange-presidency-1974",
+    "toEvent": "fifa-corruption-2015",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "Havelange's commercialization concentrated enormous revenue and discretionary power in FIFA, the structural conditions in which the later corruption flourished.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-corruption-2015--caused-->infantino-presidency-2016",
+    "fromEvent": "fifa-corruption-2015",
+    "toEvent": "infantino-presidency-2016",
+    "relationship": "caused",
+    "confidence": 0.8,
+    "evidence": "The scandal forced out Sepp Blatter and triggered the election Infantino won on a reform-and-expansion platform.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "infantino-presidency-2016--caused-->expansion-48-teams-2017",
+    "fromEvent": "infantino-presidency-2016",
+    "toEvent": "expansion-48-teams-2017",
+    "relationship": "caused",
+    "confidence": 0.8,
+    "evidence": "Infantino championed the 48-team format to grow revenue and secure votes from smaller federations; the 2017 expansion was the centerpiece of his agenda.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "fifa-corruption-2015--enabled-->united-bid-2018",
+    "fromEvent": "fifa-corruption-2015",
+    "toEvent": "united-bid-2018",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "Post-scandal reforms produced a more transparent, member-vote host-selection process that favored the low-risk, infrastructure-rich United bid.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "expansion-48-teams-2017--caused-->united-bid-2018",
+    "fromEvent": "expansion-48-teams-2017",
+    "toEvent": "united-bid-2018",
+    "relationship": "caused",
+    "confidence": 0.75,
+    "evidence": "A 48-team, 104-match tournament demanded a host with abundant existing stadiums and transport, which is exactly why the multi-country United bid was chosen.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "expansion-48-teams-2017--caused-->tri-nation-hosting-2026",
+    "fromEvent": "expansion-48-teams-2017",
+    "toEvent": "tri-nation-hosting-2026",
+    "relationship": "caused",
+    "confidence": 0.75,
+    "evidence": "The sheer scale of 48 teams made spreading matches across three countries the practical way to stage the tournament.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "united-bid-2018--caused-->tri-nation-hosting-2026",
+    "fromEvent": "united-bid-2018",
+    "toEvent": "tri-nation-hosting-2026",
+    "relationship": "caused",
+    "confidence": 0.9,
+    "evidence": "The winning bid was itself a three-nation proposal, so the 2026 tri-nation hosting model is the direct realization of that bid.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "united-bid-2018--caused-->world-cup-2026",
+    "fromEvent": "united-bid-2018",
+    "toEvent": "world-cup-2026",
+    "relationship": "caused",
+    "confidence": 0.9,
+    "evidence": "Winning the 2018 vote awarded the USA, Canada, and Mexico the right to stage the 2026 World Cup.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "expansion-48-teams-2017--caused-->world-cup-2026",
+    "fromEvent": "expansion-48-teams-2017",
+    "toEvent": "world-cup-2026",
+    "relationship": "caused",
+    "confidence": 0.9,
+    "evidence": "The 2017 decision is what makes 2026 the first 48-team World Cup; the tournament's defining format comes directly from it.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "tri-nation-hosting-2026--enabled-->world-cup-2026",
+    "fromEvent": "tri-nation-hosting-2026",
+    "toEvent": "world-cup-2026",
+    "relationship": "enabled",
+    "confidence": 0.8,
+    "evidence": "The agreed tri-nation logistics framework is the operational basis on which the 2026 tournament is staged.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "mexico-three-time-host-2026--enabled-->world-cup-2026",
+    "fromEvent": "mexico-three-time-host-2026",
+    "toEvent": "world-cup-2026",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "Mexico's proven hosting infrastructure from 1970 and 1986 made it a low-risk co-host, strengthening the bid that delivered 2026.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "united-bid-2018--caused-->mexico-three-time-host-2026",
+    "fromEvent": "united-bid-2018",
+    "toEvent": "mexico-three-time-host-2026",
+    "relationship": "caused",
+    "confidence": 0.85,
+    "evidence": "Mexico's inclusion in the winning United bid is what makes it a three-time World Cup host in 2026.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "satellite-broadcast-1970--enabled-->mexico-three-time-host-2026",
+    "fromEvent": "satellite-broadcast-1970",
+    "toEvent": "mexico-three-time-host-2026",
+    "relationship": "enabled",
+    "confidence": 0.45,
+    "evidence": "Mexico's landmark 1970 tournament built the stadium and broadcast heritage that underpins its standing as a repeat host into 2026.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "womens-game-globalization-2019--enabled-->world-cup-2026",
+    "fromEvent": "womens-game-globalization-2019",
+    "toEvent": "world-cup-2026",
+    "relationship": "enabled",
+    "confidence": 0.4,
+    "evidence": "The women's game's commercial breakthrough widened football's global audience and sponsorship base, part of the growth the expanded 2026 tournament is built to capture.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "streaming-rights-2022--enabled-->world-cup-2026",
+    "fromEvent": "streaming-rights-2022",
+    "toEvent": "world-cup-2026",
+    "relationship": "enabled",
+    "confidence": 0.45,
+    "evidence": "Streaming-era media rights broaden global access and revenue, helping fund and distribute the larger 2026 tournament.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "champions-league-1992--enabled-->world-cup-2026",
+    "fromEvent": "champions-league-1992",
+    "toEvent": "world-cup-2026",
+    "relationship": "enabled",
+    "confidence": 0.4,
+    "evidence": "The Champions League globalized year-round club fandom, sustaining the worldwide football audience the 2026 World Cup addresses.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "world-cup-soft-power-1934--inspired-->united-bid-2018",
+    "fromEvent": "world-cup-soft-power-1934",
+    "toEvent": "united-bid-2018",
+    "relationship": "inspired",
+    "confidence": 0.45,
+    "evidence": "The enduring understanding of hosting as national soft power motivates nations — including the 2026 co-hosts — to invest in winning bids.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "wc2026-france-sweden-0630--enabled-->wc2026-paraguay-france-0704",
+    "fromEvent": "wc2026-france-sweden-0630",
+    "toEvent": "wc2026-paraguay-france-0704",
+    "relationship": "enabled",
+    "confidence": 0.6,
+    "evidence": "France's clinical 3–0 knockout opener restored the holders' rhythm and a clean-sheet base they carried into a tight win over Paraguay.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-paraguay-france-0704--inspired-->wc2026-canada-morocco-0704",
+    "fromEvent": "wc2026-paraguay-france-0704",
+    "toEvent": "wc2026-canada-morocco-0704",
+    "relationship": "inspired",
+    "confidence": 0.4,
+    "evidence": "France and Morocco both winning on July 4 set up the Morocco–France quarter-final — two concurrent R16 results that together framed the last-eight tie, not one causing the other.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-brazil-japan-0629--accelerated-->wc2026-brazil-norway-0705",
+    "fromEvent": "wc2026-brazil-japan-0629",
+    "toEvent": "wc2026-brazil-norway-0705",
+    "relationship": "accelerated",
+    "confidence": 0.55,
+    "evidence": "Brazil’s laboured 2–1 over Japan exposed a shaky defence and framed the Norway tie as a genuine upset opportunity rather than a formality.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-mexico-ecuador-0630--enabled-->wc2026-mexico-england-0705",
+    "fromEvent": "wc2026-mexico-ecuador-0630",
+    "toEvent": "wc2026-mexico-england-0705",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Mexico’s composed 2–0 over Ecuador secured the Round-of-16 place and set up a home tie with England, keeping the co-host story alive into the knockouts.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "maracanazo-1950--inspired-->wc2026-canada-morocco-0704",
+    "fromEvent": "maracanazo-1950",
+    "toEvent": "wc2026-canada-morocco-0704",
+    "relationship": "inspired",
+    "confidence": 0.4,
+    "evidence": "Canada’s home exit echoes the World Cup’s oldest host-heartbreak template — the 1950 Maracanazo — where the tournament’s stakes are measured in a host nation’s collective memory.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "expansion-48-teams-2017--caused-->wc2026-mexico-england-0705",
+    "fromEvent": "expansion-48-teams-2017",
+    "toEvent": "wc2026-mexico-england-0705",
+    "relationship": "caused",
+    "confidence": 0.6,
+    "evidence": "The 2017 vote to expand to 48 teams reshaped the knockout bracket; ties like Mexico–England sit inside the enlarged, redrawn path that expansion produced.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "mexico-three-time-host-2026--enabled-->wc2026-mexico-ecuador-0630",
+    "fromEvent": "mexico-three-time-host-2026",
+    "toEvent": "wc2026-mexico-ecuador-0630",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "Mexico’s deep hosting heritage — a third World Cup after 1970 and 1986 — is the backdrop to a co-host advancing on home soil in 2026.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "galactico-globalization-2000--enabled-->wc2026-canada-morocco-0704",
+    "fromEvent": "galactico-globalization-2000",
+    "toEvent": "wc2026-canada-morocco-0704",
+    "relationship": "enabled",
+    "confidence": 0.4,
+    "evidence": "Decades of globalized player development — Morocco’s squad drawn from Europe’s top leagues — underpin a non-traditional power reaching consecutive World Cup quarter-finals.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-mexico-south-africa-0611--accelerated-->wc2026-mexico-south-korea-0618",
+    "fromEvent": "wc2026-mexico-south-africa-0611",
+    "toEvent": "wc2026-mexico-south-korea-0618",
+    "relationship": "accelerated",
+    "confidence": 0.5,
+    "evidence": "Mexico’s confident 2–0 opening-night win banked early points and belief that carried into a controlled second-match win over South Korea.",
+    "sources": [
+      {
+        "type": "editorial",
+        "reliability": 0.8,
+        "citation": "Causari WC2026 daily causal editorial"
+      }
+    ]
   }
 ]

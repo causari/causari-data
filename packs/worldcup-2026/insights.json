@@ -30,5 +30,91 @@
       "culture",
       "systems"
     ]
+  },
+  {
+    "id": "pattern--codification-enables-scale",
+    "pattern": "Codification Enables Scale",
+    "description": "A shared, written rulebook converts a fragmented local activity into a coordinable system that can scale across clubs, nations, and continents. The 1863 FA Laws turned folk football into a portable game; that single code enabled professional leagues, international spread, and ultimately a world governing body and championship. The pattern recurs wherever standardization precedes growth: no common standard, no scale.",
+    "instances": [
+      "public-school-football--caused-->fa-codification-1863",
+      "fa-codification-1863--enabled-->football-league-1888",
+      "fa-codification-1863--enabled-->british-empire-football-spread",
+      "fa-codification-1863--enabled-->fifa-founded-1904",
+      "british-empire-football-spread--caused-->fifa-founded-1904"
+    ],
+    "predictiveValue": 0.74,
+    "domains": [
+      "systems",
+      "culture"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--media-drives-globalization",
+    "pattern": "Media Drives Globalization & Commercialization",
+    "description": "Each leap in broadcast reach turns the tournament into a larger global advertising surface, which pulls in sponsorship and TV money, which funds expansion and further globalization. Television (1954) then satellite (1970) created worldwide simultaneous audiences; that reach made multinational sponsorship valuable, financed Havelange-era commercialization, and underwrote successive tournament expansions. Media capacity, not sporting merit, repeatedly sets the ceiling on how global and how lucrative the event can be.",
+    "instances": [
+      "satellite-broadcast-1970--caused-->fifa-sponsorship-1978",
+      "tv-broadcast-1954--enabled-->fifa-sponsorship-1978",
+      "fifa-sponsorship-1978--enabled-->expansion-24-teams-1982",
+      "champions-league-1992--caused-->galactico-globalization-2000",
+      "bosman-ruling-1995--caused-->galactico-globalization-2000"
+    ],
+    "predictiveValue": 0.72,
+    "domains": [
+      "technology",
+      "economy",
+      "culture"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--hosting-as-soft-power",
+    "pattern": "Host Selection as Soft Power",
+    "description": "Hosting the World Cup is repeatedly chosen and contested as an instrument of national projection and market entry, not merely sport. Italy 1934 weaponized hosting for state propaganda; the USA 1994 award targeted a commercial market and forced the creation of MLS; rotation took the tournament to Asia (2002) and Africa (2010); and the 2026 United bid leveraged North American infrastructure and soft-power ambition. Who hosts is decided by geopolitics, market size, and prestige as much as by footballing readiness.",
+    "instances": [
+      "first-world-cup-1930--enabled-->world-cup-soft-power-1934",
+      "fifa-sponsorship-1978--caused-->usa-1994-hosting",
+      "usa-1994-hosting--caused-->mls-founded-1996",
+      "korea-japan-2002--inspired-->tri-nation-hosting-2026",
+      "expansion-48-teams-2017--caused-->united-bid-2018"
+    ],
+    "predictiveValue": 0.66,
+    "domains": [
+      "geopolitics",
+      "economy",
+      "culture"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--expansion-creates-new-structure",
+    "pattern": "Expansion Creates New Tournament Structure",
+    "description": "Every expansion of the field forces a new competitive structure that did not exist before, which then reshapes how the whole tournament plays out. The jump from 32 to 48 teams (approved 2017) created a brand-new knockout round of 32 in 2026 — a stage with no precedent — and made the eight best third-placed teams a live qualification path. The lesson recurs across the World Cup's history: changing the size of the field is never just \"more games,\" it rewrites the bracket and the incentives within it.",
+    "instances": [
+      "expansion-48-teams-2017--caused-->wc2026-mexico-england-0705",
+      "expansion-48-teams-2017--caused-->tri-nation-hosting-2026"
+    ],
+    "predictiveValue": 0.7,
+    "domains": [
+      "systems",
+      "culture"
+    ],
+    "contributedBy": "system"
+  },
+  {
+    "id": "pattern--host-momentum-from-opening-result",
+    "pattern": "Host Momentum from the Opening Result",
+    "description": "A host nation's early results disproportionately shape the mood and the maths of its tournament. Confident wins (Mexico 2–0 and USA 4–1 on opening day; Canada's 6–0 rout on matchday 2) bank goal difference and galvanise the home crowd; a later stumble (Turkey 3–2 USA) can swing momentum just as sharply. Because group-of-four standings often turn on goal difference, the host's margins echo all the way into knockout seeding.",
+    "instances": [
+      "wc2026-mexico-south-africa-0611--accelerated-->wc2026-mexico-south-korea-0618",
+      "wc2026-usa-paraguay-0612--accelerated-->wc2026-usa-australia-0619"
+    ],
+    "predictiveValue": 0.55,
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "contributedBy": "system"
   }
 ]
