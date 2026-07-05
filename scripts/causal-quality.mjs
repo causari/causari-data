@@ -155,7 +155,8 @@ export function assessCausalQuality({ events, links, insights }, packId = 'pack'
         const ev = String(l.evidence ?? '');
         // evidence of the form "<winner>'s a–b win" must state the winner's own
         // margin (higher–lower), never the reversed pair from a losing-order title.
-        const claim = new RegExp(`${escapeRe(winner)}[’'`+`\\u2019]?s\\s+(\\d{1,2})\\s*[–-]\\s*(\\d{1,2})\\s+win`, 'i');
+        // The [’'] class covers a curly or straight apostrophe after the team name.
+        const claim = new RegExp(`${escapeRe(winner)}['’]?s\\s+(\\d{1,2})\\s*[–-]\\s*(\\d{1,2})\\s+win`, 'i');
         const mm = ev.match(claim);
         if (mm && +mm[1] < +mm[2]) {
           reportedBackwards.add(l.id);
