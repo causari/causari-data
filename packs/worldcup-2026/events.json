@@ -3081,8 +3081,8 @@
   },
   {
     "id": "wc2026-paraguay-france-0704",
-    "title": "Paraguay vs France",
-    "description": "Round of 16 fixture: Paraguay vs France, July 4, 2026 at Philadelphia.",
+    "title": "Paraguay 0–1 France",
+    "description": "Paraguay lost to France 0–1 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3090,7 +3090,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3099,13 +3099,13 @@
     ],
     "date": "2026-07-04",
     "dateLabel": "July 4, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Paraguay",
       "France",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Scorers: Kylian Mbappé.",
     "sources": [
       {
         "type": "open-data",
@@ -3116,8 +3116,8 @@
   },
   {
     "id": "wc2026-canada-morocco-0704",
-    "title": "Canada vs Morocco",
-    "description": "Round of 16 fixture: Canada vs Morocco, July 4, 2026 at Houston.",
+    "title": "Canada 0–3 Morocco",
+    "description": "Canada lost to Morocco 0–3 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3125,7 +3125,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3134,13 +3134,13 @@
     ],
     "date": "2026-07-04",
     "dateLabel": "July 4, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Canada",
       "Morocco",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Scorers: Azzedine Ounahi, Azzedine Ounahi, Soufiane Rahimi.",
     "sources": [
       {
         "type": "open-data",
@@ -3290,9 +3290,9 @@
     ]
   },
   {
-    "id": "wc2026-w86-w88-0707",
-    "title": "W86 vs W88",
-    "description": "Round of 16 fixture: W86 vs W88, July 7, 2026 at Atlanta.",
+    "id": "wc2026-argentina-egypt-0707",
+    "title": "Argentina vs Egypt",
+    "description": "Round of 16 fixture: Argentina vs Egypt, July 7, 2026 at Atlanta.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3304,15 +3304,15 @@
     "tags": [
       "world-cup-2026",
       "round-of-16",
-      "w86",
-      "w88"
+      "argentina",
+      "egypt"
     ],
     "date": "2026-07-07",
     "dateLabel": "July 7, 2026",
     "status": "scheduled",
     "entities": [
-      "W86",
-      "W88",
+      "Argentina",
+      "Egypt",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
@@ -3325,9 +3325,9 @@
     ]
   },
   {
-    "id": "wc2026-switzerland-w87-0707",
-    "title": "Switzerland vs W87",
-    "description": "Round of 16 fixture: Switzerland vs W87, July 7, 2026 at Vancouver.",
+    "id": "wc2026-switzerland-colombia-0707",
+    "title": "Switzerland vs Colombia",
+    "description": "Round of 16 fixture: Switzerland vs Colombia, July 7, 2026 at Vancouver.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3340,14 +3340,14 @@
       "world-cup-2026",
       "round-of-16",
       "switzerland",
-      "w87"
+      "colombia"
     ],
     "date": "2026-07-07",
     "dateLabel": "July 7, 2026",
     "status": "scheduled",
     "entities": [
       "Switzerland",
-      "W87",
+      "Colombia",
       "Round of 16"
     ],
     "whyItMatters": "Upcoming Round of 16 match.",
