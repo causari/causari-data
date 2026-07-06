@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-05",
+  "status": "partial",
+  "title": "Norway stun Brazil as Haaland takes over the knock-out stage",
+  "summary": "Ngày 5/7 theo lịch thi đấu World Cup có cú sốc lớn nhất vòng 16 đội cho tới lúc này: Norway thắng Brazil 2-1 nhờ cú đúp muộn của Erling Haaland. Brazil bị loại sớm nhất kể từ 1990, còn Norway lần đầu vào tứ kết World Cup và sẽ gặp đội thắng cặp Mexico vs England.",
+  "results": [
+    {
+      "round": "Round of 16",
+      "home": "Brazil",
+      "away": "Norway",
+      "homeScore": 1,
+      "awayScore": 2,
+      "winner": "Norway",
+      "status": "complete"
+    }
+  ],
+  "bigMoments": [
+    "Norway loại Brazil 2-1 ở vòng 16 đội, tạo một trong những cú sốc lớn nhất World Cup 2026.",
+    "Bruno Guimaraes đá hỏng penalty trong hiệp một, khiến Brazil bỏ lỡ cơ hội kiểm soát trận đấu từ sớm.",
+    "Erling Haaland ghi hai bàn muộn: một pha đánh đầu và một cú dứt điểm quyết đoán sau các tình huống lên bóng từ cánh của Norway.",
+    "Neymar rút ngắn tỷ số bằng penalty ở thời gian bù giờ, nhưng Brazil không đủ thời gian để kéo trận đấu trở lại.",
+    "Orjan Nyland có trận đấu bản lề với pha cản penalty và nhiều tình huống giữ nhịp phòng ngự cho Norway."
+  ],
+  "tournamentImpact": [
+    "Brazil dừng bước ở vòng 16 đội, đánh dấu lần đầu tiên từ 1990 họ không thể vào tứ kết World Cup.",
+    "Norway lần đầu vào tứ kết World Cup, biến hành trình của họ từ câu chuyện trở lại sau nhiều năm vắng mặt thành một run knock-out thực sự.",
+    "Haaland vươn lên nhóm dẫn đầu cuộc đua Golden Boot với 7 bàn, ngang các ứng viên hàng đầu như Lionel Messi và Kylian Mbappe theo tường thuật sau trận.",
+    "Nhánh đấu của Norway sẽ nối với đội thắng Mexico vs England, khiến trận này trở thành điểm then chốt xác định đối thủ tiếp theo của hiện tượng Norway.",
+    "Cú ngã của Brazil làm thay đổi mạnh cán cân ứng viên: Argentina, France, Portugal/Spain và các đội châu Âu còn lại sẽ nhìn knock-out với cảm giác rủi ro cao hơn."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "note": "Ghi cú đúp muộn để loại Brazil và đưa Norway vào tứ kết World Cup lần đầu tiên."
+    },
+    {
+      "name": "Orjan Nyland",
+      "team": "Norway",
+      "note": "Cản penalty của Bruno Guimaraes và giữ Norway sống trong giai đoạn Brazil kiểm soát thế trận."
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "team": "Norway",
+      "note": "Tạo khác biệt từ biên, góp phần trực tiếp vào các pha bóng giúp Haaland kết liễu trận đấu."
+    },
+    {
+      "name": "Neymar",
+      "team": "Brazil",
+      "note": "Ghi penalty muộn nhưng không thể cứu Brazil khỏi thất bại; đây có thể là khoảnh khắc World Cup rất nặng cảm xúc với anh."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu trong cụm cập nhật này, nhưng cú sốc Brazil là cảnh báo rất rõ trước Egypt: một trận knock-out có thể đổi chiều chỉ bằng vài khoảnh khắc chuyển trạng thái và một siêu sao biết kết liễu trận đấu.",
+    "Brazil": "Brazil là story chính và là cú ngã lớn. Họ có cơ hội sớm với penalty nhưng không tận dụng, sau đó bị Norway kéo vào thế trận kiên nhẫn và bị Haaland trừng phạt ở cuối trận. Đây là thất bại làm rung lại toàn bộ narrative ứng viên của giải.",
+    "Portugal": "Portugal chưa thi đấu trong ngày này và vẫn chờ Spain. Nhưng bài học Brazil rất trực tiếp: các ứng viên lớn không chỉ cần kiểm soát bóng, mà phải có phương án chống chuyển trạng thái và tránh để trận đấu trôi tới vùng rủi ro cuối trận."
+  },
+  "watchNext": [
+    "Mexico vs England: trận đang/chưa hoàn tất ở thời điểm cập nhật này; đội thắng sẽ gặp Norway ở tứ kết.",
+    "Portugal vs Spain: đại chiến châu Âu, đồng thời là bài test xem ứng viên lớn nào đủ ổn định sau cú ngã của Brazil.",
+    "United States vs Belgium: lợi thế chủ nhà gặp chất lượng cá nhân của Belgium.",
+    "Argentina vs Egypt: Argentina cần tránh kịch bản bị kéo vào trận đấu cảm xúc giống Brazil trước Norway.",
+    "Morocco vs France ở tứ kết: cặp đấu đã xác định trước đó và càng đáng chú ý sau khi các đội cửa trên liên tục bị đặt vào thế khó."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Bruno Guimaraes missed first-half penalty",
+      "link": "enabled",
+      "to": "Norway survive Brazil's early control phase"
+    },
+    {
+      "from": "Orjan Nyland penalty save and Norway defensive discipline",
+      "link": "caused",
+      "to": "Brazil fail to convert territorial control into a safe lead"
+    },
+    {
+      "from": "Stale Solbakken second-half adjustments and Norway wing service",
+      "link": "enabled",
+      "to": "Erling Haaland late brace"
+    },
+    {
+      "from": "Erling Haaland late brace",
+      "link": "caused",
+      "to": "Norway 2-1 Brazil and first World Cup quarter-final"
+    },
+    {
+      "from": "Brazil round-of-16 elimination",
+      "link": "caused",
+      "to": "Tournament contender map shifts away from one of the pre-knockout favorites"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Reuters - Haaland double as Norway stun Brazil to reach World Cup quarter-finals",
+      "url": "https://www.reuters.com/sports/soccer/haaland-double-norway-stun-brazil-reach-world-cup-quarter-finals-2026-07-05/"
+    },
+    {
+      "name": "The Guardian - Brazil 1-2 Norway live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/05/brazil-v-norway-world-cup-2026-last-16-live"
+    },
+    {
+      "name": "FOX Sports - Brazil vs Norway highlights and reaction",
+      "url": "https://www.foxsports.com/watch/fmc-irbsz63gl1em22lu"
+    },
+    {
+      "name": "SBS - Brazil v Norway highlights",
+      "url": "https://www.sbs.com.au/sport/video/fifa-world-cup-2026-highlights-brazil-v-norway-round-of-16/j5p5kjs7f"
+    }
+  ]
+}
