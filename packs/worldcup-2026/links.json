@@ -1434,5 +1434,13 @@
         "citation": "Causari WC2026 daily causal editorial"
       }
     ]
+  },
+  {
+    "id": "wc2026-canada-morocco-0704--accelerated-->wc2026-france-morocco-0709",
+    "fromEvent": "wc2026-canada-morocco-0704",
+    "toEvent": "wc2026-france-morocco-0709",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Morocco's 3–0 win banked a goal-difference cushion heading into Morocco vs France."
   }
 ]
