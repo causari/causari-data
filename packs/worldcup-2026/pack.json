@@ -1,0 +1,19 @@
+{
+  "id": "worldcup-2026",
+  "title": "FIFA World Cup 2026",
+  "description": "Causal map of the FIFA World Cup: the 160-year historical lineage leading to the 48-team 2026 tournament plus a daily feed of real, sourced fixtures/results with causal why/watchpoints/typed links.",
+  "version": "1.2.0",
+  "schemaVersion": "1.0",
+  "domains": [
+    "culture",
+    "geopolitics",
+    "economy",
+    "systems"
+  ],
+  "exportedAt": "2026-07-05T16:09:33.162556+00:00",
+  "counts": {
+    "events": 138,
+    "links": 92,
+    "insights": 6
+  }
+}

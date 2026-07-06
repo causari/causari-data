@@ -25,13 +25,18 @@
       "South Africa",
       "Group A"
     ],
-    "whyItMatters": "Scorers: Julián Quiñones, Raúl Jiménez.",
+    "whyItMatters": "Mexico open the tournament with a controlled 2-0 win, banking three points and a clean sheet to seize early command of Group A.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Mexico can back up the win against South Korea",
+      "South Africa's need to respond after an opening-day defeat",
+      "Group A's clean-sheet and goal-difference race taking shape"
     ]
   },
   {
@@ -45,7 +50,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-a",
@@ -60,13 +65,18 @@
       "Czech Republic",
       "Group A"
     ],
-    "whyItMatters": "Scorers: Hwang In-Beom, Oh Hyeon-Gyu, Ladislav Krejcí.",
+    "whyItMatters": "South Korea edge a 2-1 thriller to draw level with Mexico on points, leaving the Czechs already chasing in a tight Group A.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "South Korea vs Mexico as an early group-topping decider",
+      "Czech Republic needing points off South Africa to stay alive",
+      "One-goal margins hinting at fine Group A tiebreakers"
     ]
   },
   {
@@ -95,13 +105,18 @@
       "South Africa",
       "Group A"
     ],
-    "whyItMatters": "Scorers: Michal Sadílek, Teboho Mokoena.",
+    "whyItMatters": "A 1-1 stalemate hands both sides a single point neither can afford, keeping Czech Republic and South Africa on the brink in Group A.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Both teams facing must-win finales to reach the knockouts",
+      "How the shared point reshuffles Group A's bottom two",
+      "Goal difference becoming decisive if results converge"
     ]
   },
   {
@@ -115,7 +130,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-a",
@@ -130,13 +145,18 @@
       "South Korea",
       "Group A"
     ],
-    "whyItMatters": "Scorers: Luis Romo.",
+    "whyItMatters": "Mexico's narrow 1-0 win over South Korea makes it two from two, all but sealing their route out of Group A with a game to spare.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Mexico can top the group with a win over Czech Republic",
+      "South Korea now reliant on the final round to progress",
+      "The single goal keeping Mexico's GD lead slim but intact"
     ]
   },
   {
@@ -165,13 +185,18 @@
       "Mexico",
       "Group A"
     ],
-    "whyItMatters": "Scorers: Mateo Chávez, Julián Quiñones, Álvaro Fidalgo.",
+    "whyItMatters": "Mexico close the group in style with a 3-0 rout, topping Group A on a healthy goal difference while the Czechs crash out bottom.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which knockout seed Mexico's group win earns them",
+      "The three-goal swing padding Mexico's goal-difference edge",
+      "Czech Republic's early exit after a promising opener"
     ]
   },
   {
@@ -185,7 +210,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-a",
@@ -200,13 +225,18 @@
       "South Korea",
       "Group A"
     ],
-    "whyItMatters": "Scorers: Thapelo Maseko.",
+    "whyItMatters": "South Africa grab a first win 1-0 to gatecrash the qualification picture, sending South Korea home and reshaping Group A's runners-up spot.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the win lifts South Africa into the knockout places",
+      "South Korea's exit after failing to convert their opening points",
+      "How the result settles second place behind Mexico"
     ]
   },
   {
@@ -235,13 +265,18 @@
       "Bosnia & Herzegovina",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Cyle Larin, Jovo Lukić.",
+    "whyItMatters": "Co-hosts Canada are held 1-1 by Bosnia & Herzegovina, a shared point that leaves Group B wide open on the opening weekend.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Canada chasing a first win to justify home-tournament hopes",
+      "Bosnia's point offering a platform to build on",
+      "An early logjam forming at the top of Group B"
     ]
   },
   {
@@ -270,13 +305,18 @@
       "Switzerland",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Miro Muheim, Breel Embolo.",
+    "whyItMatters": "Switzerland drop two points in a 1-1 draw with Qatar, an early stumble that keeps the Swiss level with the pack in Group B.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Switzerland needing wins to recover the dropped points",
+      "Qatar buoyed by a share of the spoils against a fancied side",
+      "Group B's fine margins after two opening draws"
     ]
   },
   {
@@ -305,13 +345,18 @@
       "Bosnia & Herzegovina",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Johan Manzambi, Johan Manzambi, Rubén Vargas, Granit Xhaka, Ermin Mahmic.",
+    "whyItMatters": "A ruthless 4-1 win rockets Switzerland up Group B and hands them a commanding goal difference that could prove decisive at the death.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Switzerland's goal-difference cushion in a tight group",
+      "Bosnia left needing results after a heavy defeat",
+      "The Swiz-Canada meeting shaping as a group-topping clash"
     ]
   },
   {
@@ -340,13 +385,18 @@
       "Qatar",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Cyle Larin, Jonathan David, Jonathan David, Nathan Saliba, Mohamed Manai, Jonathan David.",
+    "whyItMatters": "Canada erupt for a 6-0 demolition of Qatar, a statement that banks a huge goal difference and vaults the hosts into the driving seat of Group B.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Canada's six-goal haul as a potential tiebreaker weapon",
+      "Qatar all but eliminated after a chastening loss",
+      "Whether Canada can seal top spot against Switzerland"
     ]
   },
   {
@@ -360,7 +410,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-b",
@@ -375,13 +425,18 @@
       "Canada",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Rubén Vargas, Johan Manzambi, Promise David.",
+    "whyItMatters": "Switzerland edge the co-hosts 2-1 to snatch top spot in Group B, leaving Canada to settle for a runners-up finish on the final day.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The seeding Switzerland's group win secures",
+      "Canada dropping to second despite their goal-difference cushion",
+      "Which knockout path each side now faces"
     ]
   },
   {
@@ -410,13 +465,18 @@
       "Qatar",
       "Group B"
     ],
-    "whyItMatters": "Scorers: Kerim Alajbegovic, Mahmoud Abunada, Ermin Mahmic, Hassan Al-Haydos.",
+    "whyItMatters": "Bosnia sign off with a 3-1 win over Qatar, restoring pride and boosting their goal difference even as both nations exit Group B.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the win lifts Bosnia in any best-third-place reckoning",
+      "Qatar finishing bottom without a victory",
+      "The final Group B standings behind the Swiss and Canada"
     ]
   },
   {
@@ -445,13 +505,18 @@
       "Morocco",
       "Group C"
     ],
-    "whyItMatters": "Scorers: Vinícius Júnior, Ismael Saibari.",
+    "whyItMatters": "Morocco share the points with Brazil in a 1-1 draw, a marquee result that dents the favourites and blows Group C wide open.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Brazil regrouping to top the group after dropped points",
+      "Morocco's statement draw fuelling their qualification push",
+      "Group C's leaders separated by only fine margins"
     ]
   },
   {
@@ -465,7 +530,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-c",
@@ -480,13 +545,18 @@
       "Scotland",
       "Group C"
     ],
-    "whyItMatters": "Scorers: John McGinn.",
+    "whyItMatters": "Scotland grind out a 1-0 win over Haiti, a precious first three points that puts them level with Brazil at the top of Group C.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Scotland aiming to convert momentum against Morocco",
+      "Haiti chasing a first point after an opening loss",
+      "How a single goal keeps Scotland's GD tight"
     ]
   },
   {
@@ -500,7 +570,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-c",
@@ -515,13 +585,18 @@
       "Morocco",
       "Group C"
     ],
-    "whyItMatters": "Scorers: Ismael Saibari.",
+    "whyItMatters": "Morocco's 1-0 win over Scotland moves them clear in Group C and leaves the Scots needing a result against Brazil to survive.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Scotland facing a must-not-lose finale against Brazil",
+      "Morocco closing in on top spot in the group",
+      "The qualification maths tightening in Group C's middle"
     ]
   },
   {
@@ -550,13 +625,18 @@
       "Haiti",
       "Group C"
     ],
-    "whyItMatters": "Scorers: Matheus Cunha, Matheus Cunha, Vinícius Júnior.",
+    "whyItMatters": "Brazil find their rhythm with a 3-0 win, banking goal difference and reasserting themselves as Group C favourites after a slow start.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Brazil vs Scotland shaping as a decider for top spot",
+      "The clean sheet and margin bolstering Brazil's GD",
+      "Haiti facing elimination after a second defeat"
     ]
   },
   {
@@ -585,13 +665,18 @@
       "Brazil",
       "Group C"
     ],
-    "whyItMatters": "Scorers: Vinícius Júnior, Vinícius Júnior, Matheus Cunha.",
+    "whyItMatters": "Brazil sign off the group with a 3-0 win to claim top spot, while the defeat leaves Scotland sweating on qualification maths.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Scotland's points are enough to sneak through",
+      "Brazil's dominant goal difference heading into the knockouts",
+      "The knockout seed Brazil's group win secures"
     ]
   },
   {
@@ -620,13 +705,18 @@
       "Haiti",
       "Group C"
     ],
-    "whyItMatters": "Scorers: Achraf Hakimi, Ismael Saibari, Soufiane Rahimi, Gessime Yassine, Yassine Bounou, Wilson Isidor.",
+    "whyItMatters": "Morocco outscore Haiti 4-2 in a goal fest that seals their progress and pads a goal difference that could matter in the seedings.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Where Morocco finish in Group C's final order",
+      "The four goals boosting Morocco's GD tiebreaker",
+      "Haiti bowing out after a spirited but losing finale"
     ]
   },
   {
@@ -655,13 +745,18 @@
       "Paraguay",
       "Group D"
     ],
-    "whyItMatters": "Scorers: Damian Bobadilla, Folarin Balogun, Folarin Balogun, Giovanni Reyna, Mauricio.",
+    "whyItMatters": "The USA open with a resounding 4-1 win over Paraguay, banking early goal difference and momentum atop Group D as co-hosts.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The USA carrying form into a clash with Australia",
+      "Paraguay needing a response after conceding four",
+      "Early goal-difference leaders emerging in Group D"
     ]
   },
   {
@@ -690,13 +785,18 @@
       "Turkey",
       "Group D"
     ],
-    "whyItMatters": "Scorers: Nestory Irankunda, Connor Metcalfe.",
+    "whyItMatters": "Australia stun Turkey 2-0 to open Group D level with the USA, a clean-sheet win that upsets the balance of power early.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Australia meeting the USA in a group-topping test",
+      "Turkey searching for a first point after the upset loss",
+      "Group D's clean-sheet race shaping the tiebreakers"
     ]
   },
   {
@@ -725,13 +825,18 @@
       "Australia",
       "Group D"
     ],
-    "whyItMatters": "Scorers: Cameron Burgess, Alex Freeman.",
+    "whyItMatters": "A second 2-0 win puts the USA on the brink of the knockouts and hands the co-hosts control of Group D with a game to spare.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the USA can top Group D outright",
+      "Australia now needing points against Paraguay to advance",
+      "The USA's back-to-back clean sheets strengthening their GD"
     ]
   },
   {
@@ -745,7 +850,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-d",
@@ -760,13 +865,18 @@
       "Paraguay",
       "Group D"
     ],
-    "whyItMatters": "Scorers: Matías Galarza.",
+    "whyItMatters": "Paraguay's 1-0 win over Turkey revives their campaign and drags Group D wide open heading into the decisive final round.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Paraguay eyeing a knockout berth against Australia",
+      "Turkey facing a must-win finale versus the USA",
+      "How one goal reshuffles Group D's chasing pack"
     ]
   },
   {
@@ -780,7 +890,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-d",
@@ -795,13 +905,18 @@
       "USA",
       "Group D"
     ],
-    "whyItMatters": "Scorers: Arda Güler, Baris Alper Yilmaz, Kaan Ayhan, Auston Trusty, Sebastian Berhalter.",
+    "whyItMatters": "Turkey stun the USA 3-2 in a five-goal thriller, salvaging their campaign and denting the co-hosts' bid to win Group D.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the loss costs the USA top spot and a friendlier draw",
+      "Turkey's dramatic revival in the qualification race",
+      "The goals-for tally swinging Group D's tiebreakers"
     ]
   },
   {
@@ -830,13 +945,18 @@
       "Australia",
       "Group D"
     ],
-    "whyItMatters": "Full-time 0–0 at San Francisco Bay Area (Santa Clara).",
+    "whyItMatters": "A goalless draw settles nothing cleanly, leaving Paraguay and Australia to sweat over qualification maths on the final Group D matchday.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which of the two edges through on points or goal difference",
+      "How results elsewhere in Group D decide their fate",
+      "The stalemate keeping both sides' GD unchanged"
     ]
   },
   {
@@ -865,13 +985,18 @@
       "Curaçao",
       "Group E"
     ],
-    "whyItMatters": "Scorers: Felix Nmecha, Nico Schlotterbeck, Kai Havertz, Kai Havertz, Jamal Musiala, Nathaniel Brown, Deniz Undav, Livano Comenencia.",
+    "whyItMatters": "Germany announce themselves with a 7-1 rout of Curaçao, stockpiling a goal difference that could tip the balance in a tight Group E.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Germany's huge GD cushion as a potential tiebreaker",
+      "Curaçao regrouping after a chastening debut",
+      "Whether Germany can carry the form into tougher tests"
     ]
   },
   {
@@ -885,7 +1010,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-e",
@@ -900,13 +1025,18 @@
       "Ecuador",
       "Group E"
     ],
-    "whyItMatters": "Scorers: Amad Diallo.",
+    "whyItMatters": "Ivory Coast edge Ecuador 1-0, a hard-earned three points that installs them as early challengers to Germany in Group E.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Ivory Coast's showdown with Germany for top spot",
+      "Ecuador needing a rebound after an opening blank",
+      "The single goal keeping Ivory Coast's GD modest"
     ]
   },
   {
@@ -920,7 +1050,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-e",
@@ -935,13 +1065,18 @@
       "Ivory Coast",
       "Group E"
     ],
-    "whyItMatters": "Scorers: Deniz Undav, Deniz Undav, Franck Kessié.",
+    "whyItMatters": "Germany survive a 2-1 test against Ivory Coast to make it two wins from two and edge toward sealing top spot in Group E.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Germany can clinch the group in the final round",
+      "Ivory Coast still fighting for a qualification place",
+      "The narrow margin keeping Group E's chasers in touch"
     ]
   },
   {
@@ -970,13 +1105,18 @@
       "Curaçao",
       "Group E"
     ],
-    "whyItMatters": "Full-time 0–0 at Kansas City.",
+    "whyItMatters": "Ecuador and Curaçao play out a goalless draw that leaves both scrapping for survival in the lower reaches of Group E.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Ecuador needing a final-round win to progress",
+      "Curaçao chasing a first goal and a shock result",
+      "How the shared point tightens Group E's bottom half"
     ]
   },
   {
@@ -1005,13 +1145,18 @@
       "Ivory Coast",
       "Group E"
     ],
-    "whyItMatters": "Scorers: Nicolas Pépé, Nicolas Pépé.",
+    "whyItMatters": "Ivory Coast's 2-0 win over Curaçao keeps their qualification hopes alive and books a strong finish to the Group E campaign.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Ivory Coast's points secure a knockout berth",
+      "Curaçao finishing bottom without a win",
+      "The clean sheet nudging Ivory Coast's goal difference"
     ]
   },
   {
@@ -1025,7 +1170,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-e",
@@ -1040,13 +1185,18 @@
       "Germany",
       "Group E"
     ],
-    "whyItMatters": "Scorers: Nilson Angulo, Gonzalo Plata, Leroy Sané.",
+    "whyItMatters": "Ecuador pull off a 2-1 upset of Germany to shake Group E's final table, proving the favourites are anything but untouchable.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the result costs Germany top spot and seeding",
+      "Ecuador surging into contention with a marquee win",
+      "How the upset reshuffles Group E's qualification order"
     ]
   },
   {
@@ -1075,13 +1225,18 @@
       "Japan",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Virgil van Dijk, Crysencio Summerville, Keito Nakamura, Daichi Kamada.",
+    "whyItMatters": "Japan rally to a 2-2 draw with the Netherlands, a statement result that shares the spoils and cracks Group F wide open early.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The Netherlands regrouping after surrendering a lead",
+      "Japan's momentum carrying into the rest of Group F",
+      "An early three-way scramble at the top of the group"
     ]
   },
   {
@@ -1110,13 +1265,18 @@
       "Tunisia",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Yasin Ayari, Yasin Ayari, Alexander Isak, Viktor Gyökeres, Mattias Svanberg, Omar Rekik.",
+    "whyItMatters": "Sweden thump Tunisia 5-1 to storm out of the blocks, banking a lavish goal difference that could decide Group F's tiebreakers.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Sweden's GD cushion in a competitive Group F",
+      "Tunisia needing a swift recovery after conceding five",
+      "Whether Sweden can sustain the scoring against Japan"
     ]
   },
   {
@@ -1145,13 +1305,18 @@
       "Sweden",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Brian Brobbey, Brian Brobbey, Cody Gakpo, Cody Gakpo, Crysencio Summerville, Anthony Elanga.",
+    "whyItMatters": "The Netherlands answer with a 5-1 demolition of Sweden, reclaiming Group F momentum and flipping the goal-difference battle in their favour.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The Dutch surging up Group F on goal difference",
+      "Sweden's earlier GD advantage wiped out in one night",
+      "How the top of Group F now hinges on the final round"
     ]
   },
   {
@@ -1180,13 +1345,18 @@
       "Japan",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Daichi Kamada, Ayase Ueda, Ayase Ueda, Junya Ito.",
+    "whyItMatters": "Japan's 4-0 win over Tunisia vaults them into the qualification places and leaves Tunisia facing elimination in Group F.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Japan's improved goal difference in a crowded group",
+      "Tunisia on the brink after a second heavy defeat",
+      "Whether Japan can secure progress against Sweden"
     ]
   },
   {
@@ -1215,13 +1385,18 @@
       "Sweden",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Daizen Maeda, Anthony Elanga.",
+    "whyItMatters": "A 1-1 draw splits the points and keeps Group F on a knife-edge, with Japan and Sweden both left checking the final-round permutations.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which of the two claims the remaining qualification spot",
+      "How goal difference separates a bunched Group F",
+      "The shared point leaving fates undecided until the whistle"
     ]
   },
   {
@@ -1250,13 +1425,18 @@
       "Netherlands",
       "Group F"
     ],
-    "whyItMatters": "Scorers: Hazem Mastouri, Ellyes Skhiri, Brian Brobbey, Jan Paul van Hecke.",
+    "whyItMatters": "The Netherlands see off Tunisia 3-1 to confirm their qualification and lock in a top-two finish in Group F.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Where the Dutch land in the final Group F order",
+      "Tunisia exiting after a winless campaign",
+      "The knockout seed the Netherlands' finish secures"
     ]
   },
   {
@@ -1285,13 +1465,18 @@
       "Egypt",
       "Group G"
     ],
-    "whyItMatters": "Scorers: Mohamed Hany, Emam Ashour.",
+    "whyItMatters": "Egypt hold Belgium to a 1-1 draw, denting the favourites' opening and setting an unpredictable tone across Group G.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Belgium chasing wins to recover dropped points",
+      "Egypt buoyed by a share against a fancied side",
+      "Group G's leaders separated by the finest of margins"
     ]
   },
   {
@@ -1320,13 +1505,18 @@
       "New Zealand",
       "Group G"
     ],
-    "whyItMatters": "Scorers: Ramin Rezaeian, Mohammad Mohebbi, Elijah Just, Elijah Just.",
+    "whyItMatters": "Iran and New Zealand trade blows in a 2-2 draw, a share of the spoils that leaves Group G tightly bunched from the outset.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Both sides needing wins to climb out of the pack",
+      "New Zealand's spirited point as an early marker",
+      "How the draw feeds into Group G's tight table"
     ]
   },
   {
@@ -1355,13 +1545,18 @@
       "Iran",
       "Group G"
     ],
-    "whyItMatters": "Full-time 0–0 at Los Angeles (Inglewood).",
+    "whyItMatters": "A goalless stalemate frustrates Belgium again, leaving the favourites still chasing a first win and Group G more open than expected.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Belgium needing a final-round win to guarantee progress",
+      "Iran's resilient point keeping their hopes alive",
+      "The blank scoreline leaving both GDs untouched"
     ]
   },
   {
@@ -1390,13 +1585,18 @@
       "Egypt",
       "Group G"
     ],
-    "whyItMatters": "Scorers: Finn Surman, Mostafa Zico, Mohamed Salah, Trézéguet.",
+    "whyItMatters": "Egypt's 3-1 win over New Zealand lifts them clear in Group G and leaves the Kiwis needing a miracle on the final matchday.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Egypt can convert form into top spot",
+      "New Zealand facing elimination after the defeat",
+      "The two-goal margin boosting Egypt's GD standing"
     ]
   },
   {
@@ -1425,13 +1625,18 @@
       "Iran",
       "Group G"
     ],
-    "whyItMatters": "Scorers: Mahmoud Saber, Ramin Rezaeian.",
+    "whyItMatters": "Egypt and Iran share a 1-1 draw that settles Group G's fine margins, with qualification decided on the thinnest of tiebreakers.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "How the point shapes Egypt and Iran's final placings",
+      "Whether goal difference sends one through and one home",
+      "The knock-on effect on Group G's runners-up spot"
     ]
   },
   {
@@ -1460,13 +1665,18 @@
       "Belgium",
       "Group G"
     ],
-    "whyItMatters": "Scorers: Elijah Just, Leandro Trossard, Leandro Trossard, Kevin De Bruyne, Romelu Lukaku, Alexis Saelemaekers.",
+    "whyItMatters": "Belgium finally click with a 5-1 rout of New Zealand, surging up Group G and banking the goal difference that could reshape their seeding.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the emphatic win lifts Belgium to top spot",
+      "New Zealand ending the group without a win",
+      "The five goals transforming Belgium's GD in one game"
     ]
   },
   {
@@ -1495,13 +1705,18 @@
       "Cape Verde",
       "Group H"
     ],
-    "whyItMatters": "Full-time 0–0 at Atlanta.",
+    "whyItMatters": "Cape Verde stun the group by holding Spain to a goalless draw, a landmark point that immediately levels the Group H picture.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Spain needing wins to recover from dropped points",
+      "Cape Verde's historic point fuelling belief",
+      "How the blank scoreline leaves Group H wide open"
     ]
   },
   {
@@ -1530,13 +1745,18 @@
       "Uruguay",
       "Group H"
     ],
-    "whyItMatters": "Scorers: Abdulelah Al-Amri, Maxi Araújo.",
+    "whyItMatters": "Saudi Arabia earn a creditable 1-1 draw with Uruguay, denting the South Americans and keeping Group H tightly poised early on.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Uruguay chasing wins after dropping opening points",
+      "Saudi Arabia buoyed by a share against a seeded side",
+      "Group H's four sides bunched after two draws"
     ]
   },
   {
@@ -1565,13 +1785,18 @@
       "Saudi Arabia",
       "Group H"
     ],
-    "whyItMatters": "Scorers: Lamine Yamal, Mikel Oyarzabal, Mikel Oyarzabal, Hassan Al-Tambakti.",
+    "whyItMatters": "Spain roar back with a 4-0 win, banking a big goal difference and reasserting themselves as Group H's team to beat.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Spain's goal-difference swing after the slow start",
+      "Saudi Arabia's hopes fading after a heavy loss",
+      "Whether Spain can top the group against Uruguay"
     ]
   },
   {
@@ -1600,13 +1825,18 @@
       "Cape Verde",
       "Group H"
     ],
-    "whyItMatters": "Scorers: Maxi Araújo, Agustín Cano, Kevin Pina, Hélio Varela.",
+    "whyItMatters": "Cape Verde again refuse to lose, holding Uruguay to a 2-2 draw that keeps them in the hunt and dents Uruguay's qualification maths.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Uruguay needing a result against Spain to advance",
+      "Cape Verde's fairytale run staying alive",
+      "How the shared points squeeze Group H's middle"
     ]
   },
   {
@@ -1635,13 +1865,18 @@
       "Saudi Arabia",
       "Group H"
     ],
-    "whyItMatters": "Full-time 0–0 at Houston.",
+    "whyItMatters": "A goalless draw leaves Cape Verde and Saudi Arabia clinging to slim qualification hopes as Group H comes down to the final margins.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Cape Verde's point is enough to sneak through",
+      "Saudi Arabia bowing out without a win",
+      "How results elsewhere settle Group H's second spot"
     ]
   },
   {
@@ -1655,7 +1890,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-h",
@@ -1670,13 +1905,18 @@
       "Spain",
       "Group H"
     ],
-    "whyItMatters": "Scorers: Álex Baena.",
+    "whyItMatters": "Spain edge Uruguay 1-0 to top Group H, while the defeat leaves Uruguay sweating on the fine print of qualification.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Uruguay's tally is enough to progress",
+      "The seed Spain's group win earns them",
+      "The single goal deciding a tense Group H finale"
     ]
   },
   {
@@ -1705,13 +1945,18 @@
       "Senegal",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Kylian Mbappé, Kylian Mbappé, Bradley Barcola, Ibrahim Mbaye.",
+    "whyItMatters": "France open with an assured 3-1 win over Senegal, banking three points and momentum as early frontrunners in Group I.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "France carrying form into the rest of Group I",
+      "Senegal needing a response after conceding three",
+      "The margin giving France an early GD edge"
     ]
   },
   {
@@ -1740,13 +1985,18 @@
       "Norway",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Aymen Hussein, Erling Haaland, Erling Haaland, Leo Østigard, Aymen Hussein.",
+    "whyItMatters": "Norway announce their arrival with a 4-1 win over Iraq, banking a hefty goal difference to sit level with France atop Group I.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Norway and France on course for a group-topping clash",
+      "Iraq needing a rebound after conceding four",
+      "The four goals padding Norway's GD tiebreaker"
     ]
   },
   {
@@ -1775,13 +2025,18 @@
       "Iraq",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Kylian Mbappé, Kylian Mbappé, Ousmane Dembélé.",
+    "whyItMatters": "France's clinical 3-0 win over Iraq makes it two from two and puts them on the verge of sealing top spot in Group I.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether France can win the group against Norway",
+      "Iraq facing elimination after a second defeat",
+      "France's clean sheet strengthening their GD"
     ]
   },
   {
@@ -1795,7 +2050,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-i",
@@ -1810,13 +2065,18 @@
       "Senegal",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Marcus Holmgren Pedersen, Erling Haaland, Erling Haaland, Ismaïla Sarr, Ismaïla Sarr.",
+    "whyItMatters": "Norway hold off Senegal 3-2 in a five-goal shootout, keeping pace with France and all but ending Senegal's qualification hopes.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Norway vs France as a decider for first place",
+      "Senegal needing results to escape Group I",
+      "How goals-for could tip Group I's tiebreakers"
     ]
   },
   {
@@ -1845,13 +2105,18 @@
       "France",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Thelo Aasgaard, Ousmane Dembélé, Ousmane Dembélé, Ousmane Dembélé, Désiré Doué.",
+    "whyItMatters": "France sign off with a 4-1 win over Norway to snatch top spot, flipping the group's goal-difference battle on the final day.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The knockout seed France's group win secures",
+      "Norway dropping to second despite an earlier GD lead",
+      "How the four goals reshuffle Group I's final order"
     ]
   },
   {
@@ -1880,13 +2145,18 @@
       "Iraq",
       "Group I"
     ],
-    "whyItMatters": "Scorers: Habib Diarra, Ismaïla Sarr, Pape Gueye, Pape Gueye, Iliman Ndiaye.",
+    "whyItMatters": "Senegal salvage pride with a 5-0 thrashing of Iraq, a huge win that boosts their goal difference in any best-third-place reckoning.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the emphatic margin keeps Senegal in the mix",
+      "Iraq exiting bottom without a point",
+      "The five goals lifting Senegal's GD tiebreaker"
     ]
   },
   {
@@ -1915,13 +2185,18 @@
       "Algeria",
       "Group J"
     ],
-    "whyItMatters": "Scorers: Lionel Messi, Lionel Messi, Lionel Messi.",
+    "whyItMatters": "Argentina open with a commanding 3-0 win over Algeria, laying down an early marker and topping Group J with a clean sheet.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Argentina looking to cruise through Group J",
+      "Algeria needing to bounce back from an opening loss",
+      "The clean-sheet win giving Argentina a GD head start"
     ]
   },
   {
@@ -1950,13 +2225,18 @@
       "Jordan",
       "Group J"
     ],
-    "whyItMatters": "Scorers: Romano Schmid, Yazan Al-Arab, Marko Arnautovic, Ali Olwan.",
+    "whyItMatters": "Austria see off Jordan 3-1 to open Group J level with Argentina, banking three points and a positive goal difference.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Austria facing Argentina in a group-topping test",
+      "Jordan chasing a first result after the defeat",
+      "Group J's early goal-difference picture forming"
     ]
   },
   {
@@ -1985,13 +2265,18 @@
       "Austria",
       "Group J"
     ],
-    "whyItMatters": "Scorers: Lionel Messi, Lionel Messi.",
+    "whyItMatters": "Argentina's 2-0 win over Austria makes it two from two and moves them to the cusp of sealing top spot in Group J.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Argentina can go through with a perfect record",
+      "Austria still needing points to secure progress",
+      "Argentina's back-to-back clean sheets padding their GD"
     ]
   },
   {
@@ -2005,7 +2290,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-j",
@@ -2020,13 +2305,18 @@
       "Algeria",
       "Group J"
     ],
-    "whyItMatters": "Scorers: Nizar Al-Rashdan, Nadhir Benbouali, Amine Gouiri.",
+    "whyItMatters": "Algeria edge Jordan 2-1 for a crucial first win, reviving their campaign and dragging Group J's qualification race wide open.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Algeria eyeing a knockout berth in the final round",
+      "Jordan facing elimination after a second defeat",
+      "How one goal reshapes Group J's chasing pack"
     ]
   },
   {
@@ -2055,13 +2345,18 @@
       "Austria",
       "Group J"
     ],
-    "whyItMatters": "Scorers: Rafik Belghali, Riyad Mahrez, Riyad Mahrez, Marko Arnautovic, Marcel Sabitzer, Sasa Kalajdzic.",
+    "whyItMatters": "A wild 3-3 draw shares the points and leaves Algeria and Austria's qualification hanging on the finest of Group J tiebreakers.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the shared point is enough for either to advance",
+      "How goal difference settles Group J's runners-up spot",
+      "The six goals reshaping both sides' GD in one night"
     ]
   },
   {
@@ -2090,13 +2385,18 @@
       "Argentina",
       "Group J"
     ],
-    "whyItMatters": "Scorers: Mousa Al-Tamari, Giovani Lo Celso, Lautaro Martínez, Lionel Messi.",
+    "whyItMatters": "Argentina complete a perfect group with a 3-1 win, topping Group J on nine points as Jordan bow out at the bottom.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The knockout seed Argentina's flawless group earns",
+      "Jordan exiting without a win from the group",
+      "Argentina's goal difference among the tournament's best"
     ]
   },
   {
@@ -2125,13 +2425,18 @@
       "DR Congo",
       "Group K"
     ],
-    "whyItMatters": "Scorers: João Neves, Yoane Wissa.",
+    "whyItMatters": "DR Congo hold Portugal to a 1-1 draw, an eye-catching result that denies the favourites early control of Group K.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Portugal needing wins after dropping opening points",
+      "DR Congo's statement point fuelling their run",
+      "Group K bunching up after a surprise opener"
     ]
   },
   {
@@ -2160,13 +2465,18 @@
       "Colombia",
       "Group K"
     ],
-    "whyItMatters": "Scorers: Abbosbek Fayzullaev, Daniel Muñoz, Luis Díaz, Jáminton Campaz.",
+    "whyItMatters": "Colombia mark their debut with a 3-1 win over Uzbekistan, banking three points and goal difference to lead Group K early.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Colombia building on a strong opening in Group K",
+      "Uzbekistan needing a rebound after conceding three",
+      "The margin giving Colombia an early GD advantage"
     ]
   },
   {
@@ -2195,13 +2505,18 @@
       "Uzbekistan",
       "Group K"
     ],
-    "whyItMatters": "Scorers: Cristiano Ronaldo, Cristiano Ronaldo, Nuno Mendes, Abduvohid Nematov, Rafael Leão.",
+    "whyItMatters": "Portugal rediscover their touch with a 5-0 rout of Uzbekistan, banking a big goal difference and reasserting their Group K credentials.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Portugal's GD swing after a stuttering opener",
+      "Uzbekistan facing elimination after a heavy defeat",
+      "Whether Portugal can top the group against Colombia"
     ]
   },
   {
@@ -2215,7 +2530,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-k",
@@ -2230,13 +2545,18 @@
       "DR Congo",
       "Group K"
     ],
-    "whyItMatters": "Scorers: Daniel Muñoz.",
+    "whyItMatters": "Colombia grind out a 1-0 win over DR Congo to move to the brink of qualification and keep the pressure on at the top of Group K.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Colombia can win the group against Portugal",
+      "DR Congo now needing a final-round result to advance",
+      "The single goal keeping Colombia's GD lead slim"
     ]
   },
   {
@@ -2265,13 +2585,18 @@
       "Portugal",
       "Group K"
     ],
-    "whyItMatters": "Full-time 0–0 at Miami (Miami Gardens).",
+    "whyItMatters": "A goalless draw sees Colombia and Portugal share the points and progress, leaving the top of Group K decided by fine tiebreakers.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which side claims top spot on goal difference",
+      "The seeding consequences of finishing first or second",
+      "How the blank scoreline leaves both GDs unchanged"
     ]
   },
   {
@@ -2300,13 +2625,18 @@
       "Uzbekistan",
       "Group K"
     ],
-    "whyItMatters": "Scorers: Yoane Wissa, Fiston Mayele, Yoane Wissa, Eldor Shomurodov.",
+    "whyItMatters": "DR Congo's 3-1 win over Uzbekistan boosts their qualification hopes and could prove decisive in any best-third-place reckoning.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether DR Congo's points sneak them into the knockouts",
+      "Uzbekistan exiting bottom of Group K",
+      "The two-goal margin lifting DR Congo's GD"
     ]
   },
   {
@@ -2335,13 +2665,18 @@
       "Croatia",
       "Group L"
     ],
-    "whyItMatters": "Scorers: Harry Kane, Harry Kane, Jude Bellingham, Marcus Rashford, Martin Baturina, Petar Musa.",
+    "whyItMatters": "England win a 4-2 six-goal opener against Croatia, banking three points and a healthy goal difference to lead Group L from the front.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "England carrying momentum into the rest of Group L",
+      "Croatia needing a response after conceding four",
+      "The goal glut shaping Group L's early tiebreakers"
     ]
   },
   {
@@ -2355,7 +2690,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-l",
@@ -2370,13 +2705,18 @@
       "Panama",
       "Group L"
     ],
-    "whyItMatters": "Scorers: Caleb Yirenkyi.",
+    "whyItMatters": "Ghana edge Panama 1-0 for a vital opening win that installs them alongside England as early pace-setters in Group L.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Ghana meeting England in a group-topping test",
+      "Panama chasing a first point after the defeat",
+      "The narrow win keeping Ghana's GD tight"
     ]
   },
   {
@@ -2405,13 +2745,18 @@
       "Ghana",
       "Group L"
     ],
-    "whyItMatters": "Full-time 0–0 at Boston (Foxborough).",
+    "whyItMatters": "A goalless draw between England and Ghana shares the points and keeps Group L competitive heading into the final round.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "England needing a point to seal top spot",
+      "Ghana still chasing qualification in a tight group",
+      "How the stalemate leaves both GDs unchanged"
     ]
   },
   {
@@ -2425,7 +2770,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-l",
@@ -2440,13 +2785,18 @@
       "Croatia",
       "Group L"
     ],
-    "whyItMatters": "Scorers: Ante Budimir.",
+    "whyItMatters": "Croatia's 1-0 win over Panama revives their campaign and keeps their Group L qualification hopes alive into the last matchday.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Croatia needing a final-round result to advance",
+      "Panama facing elimination after a second defeat",
+      "The single goal nudging Croatia back into contention"
     ]
   },
   {
@@ -2475,13 +2825,18 @@
       "England",
       "Group L"
     ],
-    "whyItMatters": "Scorers: Jude Bellingham, Harry Kane.",
+    "whyItMatters": "England sign off the group with a 2-0 win to confirm top spot in Group L, while Panama exit without a point.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The knockout seed England's group win secures",
+      "Panama finishing bottom of the group",
+      "England's clean sheet reinforcing their goal difference"
     ]
   },
   {
@@ -2495,7 +2850,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "group-l",
@@ -2510,13 +2865,18 @@
       "Ghana",
       "Group L"
     ],
-    "whyItMatters": "Scorers: Petar Sucic, Nikola Vlasic, Derrick Luckassen.",
+    "whyItMatters": "Croatia edge Ghana 2-1 to snatch a qualification place, leaving Ghana to rue a final-day defeat in a tight Group L finish.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Croatia's late surge earns a knockout berth",
+      "Ghana slipping out after leading the group early",
+      "How the result settles Group L's runners-up spot"
     ]
   },
   {
@@ -2530,7 +2890,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2545,13 +2905,18 @@
       "Canada",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Stephan Eustáquio.",
+    "whyItMatters": "Canada win a tense 1-0 Round of 32 tie to reach the last 16, ending South Africa's run with a single decisive goal.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Canada's Round-of-16 opponent and momentum",
+      "How the co-hosts' knockout run captures home support",
+      "South Africa's tournament ending at the knockout hurdle"
     ]
   },
   {
@@ -2580,13 +2945,18 @@
       "Paraguay",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Kai Havertz, Julio Enciso.",
+    "whyItMatters": "A 1–1 draw sent the tie to penalties, where Paraguay held their nerve to knock the pre-tournament pick Germany out — one of the shocks of the round.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Paraguay’s quarter-final path",
+      "How Germany regroup after an early exit",
+      "Whether more favourites fall on penalties"
     ]
   },
   {
@@ -2615,13 +2985,18 @@
       "Morocco",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Cody Gakpo, Issa Diop.",
+    "whyItMatters": "Level at 1–1, the tie went to penalties and Morocco advanced, ending the Netherlands’ run and extending Morocco’s march through the knockouts.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Morocco’s next knockout opponent",
+      "Whether Morocco’s shootout nerve holds again",
+      "Dutch post-tournament questions"
     ]
   },
   {
@@ -2635,7 +3010,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2650,13 +3025,18 @@
       "Japan",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Casemiro, Gabriel Martinelli, Kaishu Sano.",
+    "whyItMatters": "Brazil edge a spirited Japan 2–1 to advance, riding out a real second-half scare. The five-time champions look beatable — a warning as the draw hardens into knockout ties.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Brazil vs Norway in the Round of 16 (July 5)",
+      "Haaland's Norway as a live threat to a wobbling favourite",
+      "Whether Brazil tighten up defensively before the quarters"
     ]
   },
   {
@@ -2685,13 +3065,17 @@
       "Sweden",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Kylian Mbappé, Kylian Mbappé, Bradley Barcola.",
+    "whyItMatters": "France open the knockouts with a clinical 3–0 over Sweden, the kind of statement the holders needed after a quiet group stage. It banks momentum and a clean sheet heading into the Round of 16.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "France vs Paraguay in the Round of 16",
+      "Whether the front line clicks against tougher defences"
     ]
   },
   {
@@ -2705,7 +3089,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2720,13 +3104,18 @@
       "Norway",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Amad Diallo, Antonio Nusa, Erling Haaland.",
+    "whyItMatters": "Norway edge Ivory Coast 2-1 to reach the last 16, ending an African challenge and advancing their surprise tournament run.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Norway's Round-of-16 opponent and rising momentum",
+      "Ivory Coast bowing out at the knockout stage",
+      "Whether Norway's form can carry them deeper"
     ]
   },
   {
@@ -2755,13 +3144,18 @@
       "Ecuador",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Julián Quiñones, Raúl Jiménez.",
+    "whyItMatters": "Co-host Mexico beat Ecuador 2–0 to reach the Round of 16 in front of a home crowd, keeping the host-nation story alive deep into the knockouts. A composed, low-risk win sets up a marquee tie with England.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Mexico vs England in the Round of 16 (July 5)",
+      "Can a co-host reach the quarter-finals on home soil?",
+      "Azteca atmosphere as the host run continues"
     ]
   },
   {
@@ -2775,7 +3169,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2790,13 +3184,18 @@
       "DR Congo",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Harry Kane, Harry Kane, Brian Cipenga.",
+    "whyItMatters": "England grind past DR Congo 2-1 to reach the last 16, weathering a scare to keep their deep-run ambitions on track.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "England's Round-of-16 draw after a testing tie",
+      "DR Congo's fairytale run ending in the last 32",
+      "Whether England can find their best form in the knockouts"
     ]
   },
   {
@@ -2825,13 +3224,18 @@
       "Bosnia & Herzegovina",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Folarin Balogun, Malik Tillman.",
+    "whyItMatters": "The co-hosts USA see off Bosnia 2-0 to reach the last 16, a composed knockout win that keeps the home dream alive.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The USA's Round-of-16 opponent and home momentum",
+      "Bosnia's tournament ending at the knockout stage",
+      "Whether the co-hosts can extend their run"
     ]
   },
   {
@@ -2860,13 +3264,18 @@
       "Senegal",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Romelu Lukaku, Youri Tielemans, Youri Tielemans, Habib Diarra, Ismaïla Sarr.",
+    "whyItMatters": "Belgium survive a tense knockout against Senegal by the odd goal, advancing on a night that could have gone either way — the kind of fine-margin win that keeps a fading contender alive.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Belgium’s next knockout opponent",
+      "Whether Belgium’s veterans can raise their level",
+      "Senegal’s exit after a fine campaign"
     ]
   },
   {
@@ -2880,7 +3289,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -2895,13 +3304,18 @@
       "Croatia",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Cristiano Ronaldo, Gonçalo Ramos, Ivan Perisic.",
+    "whyItMatters": "Portugal edge a 2-1 heavyweight tie with Croatia to reach the last 16, ending a storied rival's run at the knockout stage.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Portugal's Round-of-16 opponent after a marquee win",
+      "Croatia's tournament ending in the last 32",
+      "Whether Portugal can sustain form deeper into the draw"
     ]
   },
   {
@@ -2930,13 +3344,18 @@
       "Austria",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Mikel Oyarzabal, Mikel Oyarzabal, Pedro Porro.",
+    "whyItMatters": "Spain cruise past Austria 3-0 to reach the last 16, a commanding knockout win that stamps them as genuine contenders.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Spain's Round-of-16 test after an emphatic display",
+      "Austria bowing out at the knockout stage",
+      "Whether Spain's form makes them tournament favourites"
     ]
   },
   {
@@ -2965,13 +3384,18 @@
       "Algeria",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Breel Embolo, Dan Ndoye.",
+    "whyItMatters": "Switzerland win a controlled 2-0 knockout tie against Algeria to reach the last 16 and continue their steady tournament march.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Switzerland's Round-of-16 opponent and momentum",
+      "Algeria's run ending at the knockout hurdle",
+      "Whether the clean sheet signals Swiss knockout resilience"
     ]
   },
   {
@@ -3000,13 +3424,18 @@
       "Cape Verde",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Lionel Messi, Lisandro Martínez, Diney Borges, Deroy Duarte, Sidny Lopes Cabral.",
+    "whyItMatters": "Argentina edge a stubborn Cape Verde in a tie decided by fine margins, advancing but far from convincing — a warning sign for the favourites as the draw hardens.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Argentina find their level in the next round",
+      "Cape Verde exit as one of the tournament’s stories",
+      "Argentina’s path deeper into the knockouts"
     ]
   },
   {
@@ -3020,7 +3449,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-32",
@@ -3035,13 +3464,18 @@
       "Ghana",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Jhon Arias.",
+    "whyItMatters": "Colombia squeeze past Ghana 1-0 to reach the last 16, a single decisive goal keeping their tournament run intact.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Colombia's Round-of-16 opponent and momentum",
+      "Ghana's tournament ending in the last 32",
+      "Whether Colombia can build on a gritty knockout win"
     ]
   },
   {
@@ -3070,13 +3504,18 @@
       "Egypt",
       "Round of 32"
     ],
-    "whyItMatters": "Scorers: Mohamed Hany, Emam Ashour.",
+    "whyItMatters": "A 1–1 draw was settled on penalties, where Egypt edged Australia to reach the next round — a fine-margins result that could have gone either way.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Egypt’s next knockout tie",
+      "Whether spot-kicks keep deciding this round",
+      "Australia’s tournament assessment"
     ]
   },
   {
@@ -3090,7 +3529,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5700000000000001,
+    "impactScore": 0.57,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3105,13 +3544,18 @@
       "France",
       "Round of 16"
     ],
-    "whyItMatters": "Scorers: Kylian Mbappé.",
+    "whyItMatters": "France grind past a compact Paraguay 1–0 to reach the quarter-finals — an ugly, efficient win that says as much about their tournament temperament as any rout. The holders' path now runs through Morocco.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Morocco vs France quarter-final (July 9) — two contrasting styles",
+      "Can France raise their ceiling after a laboured knockout opener?",
+      "Mbappé’s form against a disciplined Moroccan back line"
     ]
   },
   {
@@ -3140,13 +3584,18 @@
       "Morocco",
       "Round of 16"
     ],
-    "whyItMatters": "Scorers: Azzedine Ounahi, Azzedine Ounahi, Soufiane Rahimi.",
+    "whyItMatters": "Morocco dismantle co-host Canada 3–0 to reach a second straight World Cup quarter-final, confirming their counter-attacking model travels. Canada's dream home run ends at the last 16 — the deepest a Canadian men's side has ever gone.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Morocco vs France quarter-final (July 9) — a rematch of rising vs established power",
+      "Whether Morocco's transition game can trouble the holders",
+      "Canada exit as the best-performing debutant co-host since the format expanded"
     ]
   },
   {
@@ -3175,13 +3624,17 @@
       "Norway",
       "Round of 16"
     ],
-    "whyItMatters": "Scorers: Neymar, Erling Haaland, Erling Haaland.",
+    "whyItMatters": "Brazil's title credentials meet Haaland's Norway in the Round of 16 — a classic favourite-vs-disruptor tie. Brazil looked shaky against Japan; Norway have the one player who can punish it.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Haaland vs the Brazil centre-backs",
+      "The quarter-final spot on the France/Morocco side of the draw"
     ]
   },
   {
@@ -3210,13 +3663,17 @@
       "England",
       "Round of 16"
     ],
-    "whyItMatters": "Scorers: Julián Quiñones, Raúl Jiménez, Jude Bellingham, Jude Bellingham, Harry Kane.",
+    "whyItMatters": "Co-host Mexico face England in the Round of 16 with a home quarter-final on the line — the biggest test yet of whether a host can go deep in 2026.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "England's tournament-tested spine vs a raucous home crowd",
+      "A host nation reaching the last eight on home soil"
     ]
   },
   {
@@ -3245,13 +3702,17 @@
       "Spain",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "An all-Iberian Round of 16 tie pits Portugal against Spain — a derby with a quarter-final at stake and no love lost. Whoever wins lands on the softer-looking side of the bracket.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which Iberian side reaches the quarter-finals",
+      "Spain’s possession game vs Portugal’s directness"
     ]
   },
   {
@@ -3280,13 +3741,17 @@
       "Belgium",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Co-host USA meet a fading-but-dangerous Belgium in the Round of 16 — the last realistic barrier between the principal host and a home quarter-final that would electrify the tournament.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether the USA can extend the host run to the last eight",
+      "Belgium's experience vs the home crowd"
     ]
   },
   {
@@ -3315,13 +3780,17 @@
       "Egypt",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Argentina, who stumbled in the group stage, face Egypt in the Round of 16 — a test of whether the pre-tournament favourites can find their level before the quarters.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Whether Argentina rediscover their group-stage ceiling",
+      "Egypt's chance to author a signature upset"
     ]
   },
   {
@@ -3350,13 +3819,17 @@
       "Colombia",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Switzerland's organised, in-form side meet a fluid Colombia in the Round of 16 — an evenly matched tie that could send either into an open quarter-final section.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which side reaches an open-looking quarter-final",
+      "Switzerland's defensive record vs Colombia's attacking flair"
     ]
   },
   {
@@ -3385,13 +3858,18 @@
       "Morocco",
       "Quarter-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "A quarter-final with a semi-final place on the line — the winner moves within two games of the World Cup title.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which last-16 winners emerge to fill this tie",
+      "The semi-final berth awaiting the victor",
+      "How the bracket's top half takes shape"
     ]
   },
   {
@@ -3420,13 +3898,18 @@
       "W94",
       "Quarter-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "Two last-16 winners collide for a semi-final spot, with the stakes of a deep World Cup run riding on ninety minutes.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The identities of the two qualifying sides",
+      "The last-four place on offer to the winner",
+      "Where this tie sits in the overall bracket"
     ]
   },
   {
@@ -3455,13 +3938,18 @@
       "W92",
       "Quarter-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "This quarter-final decides who advances to the semi-finals — a win here puts a side on the doorstep of the final.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which Round-of-16 victors book this fixture",
+      "The semi-final showdown the winner earns",
+      "How the bottom half of the bracket resolves"
     ]
   },
   {
@@ -3490,13 +3978,18 @@
       "W96",
       "Quarter-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "A place in the final four is the prize as two last-16 winners meet in a decisive World Cup quarter-final.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The two sides who progress to contest this tie",
+      "The semi-final berth at stake for the winner",
+      "How this result shapes the run to the final"
     ]
   },
   {
@@ -3525,13 +4018,18 @@
       "W98",
       "Semi-final"
     ],
-    "whyItMatters": "Upcoming Semi-final match.",
+    "whyItMatters": "A World Cup semi-final with a place in the showpiece final on the line — the winner is ninety minutes from glory.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which quarter-final winners set up this last-four clash",
+      "The final berth awaiting the victor",
+      "The loser's date with the third-place play-off"
     ]
   },
   {
@@ -3560,13 +4058,18 @@
       "W100",
       "Semi-final"
     ],
-    "whyItMatters": "Upcoming Semi-final match.",
+    "whyItMatters": "The second semi-final decides who joins the other finalist — one step from the World Cup, one step from heartbreak.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "The two quarter-final winners contesting this tie",
+      "The final place the winner secures",
+      "The loser dropping into the third-place match"
     ]
   },
   {
@@ -3595,13 +4098,18 @@
       "L102",
       "Match for third place"
     ],
-    "whyItMatters": "Upcoming Match for third place match.",
+    "whyItMatters": "The two beaten semi-finalists meet in the third-place play-off, a chance to finish the tournament on the podium.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "nextWatchpoints": [
+      "Which sides fall into this consolation tie",
+      "The bronze-medal finish on offer",
+      "How each side responds to semi-final disappointment"
     ]
   },
   {
@@ -3630,12 +4138,1003 @@
       "W102",
       "Final"
     ],
-    "whyItMatters": "Upcoming Final match.",
+    "whyItMatters": "The World Cup 2026 final — two semi-final winners meet with the trophy and a place in football history at stake.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ],
+    "nextWatchpoints": [
+      "Which two nations emerge from the semi-finals",
+      "The world title decided in a single match",
+      "The tournament's champion crowned to close the summer"
+    ]
+  },
+  {
+    "id": "folk-football",
+    "title": "Folk Football",
+    "description": "For centuries, towns across medieval Britain and Europe played chaotic, rule-less mob football — unlimited players, no fixed pitch, frequent injury. It was a shared cultural impulse with no codified system, so it could not scale beyond the village.",
+    "yearNum": 1400,
+    "yearLabel": "pre-1800s",
+    "precision": "century",
+    "domains": [
+      "culture"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "football",
+      "folk",
+      "origins",
+      "mob-football",
+      "medieval"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "public-school-football",
+    "title": "Public School Football Codes",
+    "description": "In 19th-century England, individual public schools (Eton, Rugby, Harrow) each wrote their own football rules. The incompatibility between codes — especially handling the ball — created the pressing need for a single shared rulebook.",
+    "yearNum": 1840,
+    "yearLabel": "1840s",
+    "precision": "decade",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.55,
+    "tags": [
+      "football",
+      "rules",
+      "public-school",
+      "rugby",
+      "england"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "fa-codification-1863",
+    "title": "FA Codification (Laws of the Game)",
+    "description": "The Football Association codified a single set of rules in 1863, banning handling and the most violent play — the split that separated association football from rugby. A shared rulebook turned a fragmented folk activity into a system that could scale across clubs, cities, and eventually nations.",
+    "yearNum": 1863,
+    "yearLabel": "1863",
+    "precision": "year",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.85,
+    "tags": [
+      "football",
+      "rules",
+      "codification",
+      "fa",
+      "england",
+      "laws-of-the-game"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "professionalism-1885",
+    "title": "Legalization of Professionalism",
+    "description": "The FA legalized paid players in 1885 after northern English clubs openly paid working-class talent. Professionalism converted football from a gentleman's pastime into a labour market — the first step toward the player-as-economic-asset that defines the modern game.",
+    "yearNum": 1885,
+    "yearLabel": "1885",
+    "precision": "year",
+    "domains": [
+      "economy",
+      "culture"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "football",
+      "professionalism",
+      "labour",
+      "economy",
+      "england"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "football-league-1888",
+    "title": "Football League Founded",
+    "description": "The Football League (1888) introduced regular, scheduled, competitive fixtures with league tables. Predictable recurring matches created reliable gate revenue and mass spectator habits — the commercial template every later professional league copied.",
+    "yearNum": 1888,
+    "yearLabel": "1888",
+    "precision": "year",
+    "domains": [
+      "economy",
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "football",
+      "league",
+      "competition",
+      "commercial",
+      "spectator"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "british-empire-football-spread",
+    "title": "Football Spreads Along Trade & Empire Routes",
+    "description": "British sailors, engineers, traders, and teachers carried football to South America (Argentina, Uruguay, Brazil) and continental Europe in the late 1800s. The codified game travelled with British commerce, seeding the rival football cultures that would later contest the World Cup.",
+    "yearNum": 1890,
+    "yearLabel": "1880s-1900s",
+    "precision": "decade",
+    "domains": [
+      "geopolitics",
+      "culture",
+      "economy"
+    ],
+    "impactScore": 0.66,
+    "tags": [
+      "football",
+      "globalization",
+      "empire",
+      "trade",
+      "south-america"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "fifa-founded-1904",
+    "title": "FIFA Founded",
+    "description": "Seven European nations founded the Fédération Internationale de Football Association in Paris in 1904 to govern matches between countries. A single international body was the precondition for any genuine world championship — without it, cross-border football stayed ad hoc.",
+    "yearNum": 1904,
+    "yearLabel": "1904",
+    "precision": "year",
+    "domains": [
+      "systems",
+      "geopolitics",
+      "culture"
+    ],
+    "impactScore": 0.8,
+    "tags": [
+      "fifa",
+      "governance",
+      "international",
+      "football",
+      "paris"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "olympic-football-1908",
+    "title": "Olympic Football Tournament",
+    "description": "Football became a full Olympic medal event from 1908, run under FIFA from 1914. The Olympic tournaments proved there was global appetite for international football competition — and exposed the limits of an amateur-only event, motivating a professional world championship.",
+    "yearNum": 1908,
+    "yearLabel": "1908",
+    "precision": "year",
+    "domains": [
+      "culture",
+      "geopolitics"
+    ],
+    "impactScore": 0.58,
+    "tags": [
+      "olympics",
+      "football",
+      "international",
+      "amateur",
+      "tournament"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "first-world-cup-1930",
+    "title": "First FIFA World Cup (Uruguay 1930)",
+    "description": "FIFA president Jules Rimet launched the first World Cup in Uruguay in 1930 with 13 teams — open to professionals, unlike the Olympics. It established the recurring four-year world championship format that has run ever since and made FIFA the dominant force in the global game.",
+    "yearNum": 1930,
+    "yearLabel": "1930",
+    "precision": "year",
+    "domains": [
+      "culture",
+      "geopolitics",
+      "systems"
+    ],
+    "impactScore": 0.88,
+    "tags": [
+      "world-cup",
+      "fifa",
+      "1930",
+      "uruguay",
+      "rimet",
+      "tournament"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-soft-power-1934",
+    "title": "World Cup as State Propaganda (Italy 1934)",
+    "description": "Mussolini's Italy hosted and won the 1934 World Cup, using it as a showcase for the fascist state. It was the first clear demonstration that hosting the tournament could project national power — a soft-power logic that has shaped host bidding ever since.",
+    "yearNum": 1934,
+    "yearLabel": "1934",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "culture"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "world-cup",
+      "soft-power",
+      "propaganda",
+      "italy",
+      "nationalism",
+      "hosting"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "maracanazo-1950",
+    "title": "Maracanazo (Brazil 1950)",
+    "description": "Uruguay beat host Brazil in front of ~200,000 fans at the Maracanã in 1950, a national trauma still invoked in Brazil. It cemented the World Cup as an event capable of defining national identity and collective memory — raising the cultural stakes of hosting and winning.",
+    "yearNum": 1950,
+    "yearLabel": "1950",
+    "precision": "year",
+    "domains": [
+      "culture"
+    ],
+    "impactScore": 0.55,
+    "tags": [
+      "world-cup",
+      "brazil",
+      "uruguay",
+      "maracana",
+      "1950",
+      "identity"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "tv-broadcast-1954",
+    "title": "First Televised World Cup (1954)",
+    "description": "The 1954 World Cup in Switzerland was the first broadcast on television. TV detached the audience from the stadium gate — for the first time the global reach of a match was limited by signal, not seating — and set football on the path to becoming a media product.",
+    "yearNum": 1954,
+    "yearLabel": "1954",
+    "precision": "year",
+    "domains": [
+      "technology",
+      "culture"
+    ],
+    "impactScore": 0.7,
+    "tags": [
+      "world-cup",
+      "television",
+      "broadcast",
+      "1954",
+      "media",
+      "switzerland"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "satellite-broadcast-1970",
+    "title": "First Satellite / Color World Cup (Mexico 1970)",
+    "description": "The 1970 World Cup in Mexico was broadcast live worldwide via satellite, much of it in color. A single match could now be watched simultaneously across continents — turning the tournament into a genuinely global shared event and a premium global advertising surface.",
+    "yearNum": 1970,
+    "yearLabel": "1970",
+    "precision": "year",
+    "domains": [
+      "technology",
+      "culture",
+      "economy"
+    ],
+    "impactScore": 0.74,
+    "tags": [
+      "world-cup",
+      "satellite",
+      "color-tv",
+      "1970",
+      "mexico",
+      "global-broadcast"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "havelange-presidency-1974",
+    "title": "João Havelange Becomes FIFA President",
+    "description": "Havelange took the FIFA presidency in 1974 on a platform of expanding the game commercially and beyond Europe. He brought in corporate sponsorship and TV-rights deals at scale, transforming FIFA from a sporting federation into a global commercial enterprise.",
+    "yearNum": 1974,
+    "yearLabel": "1974",
+    "precision": "year",
+    "domains": [
+      "economy",
+      "geopolitics",
+      "systems"
+    ],
+    "impactScore": 0.68,
+    "tags": [
+      "fifa",
+      "havelange",
+      "commercialization",
+      "sponsorship",
+      "governance"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "fifa-sponsorship-1978",
+    "title": "Corporate Sponsorship Model (Coca-Cola / Adidas)",
+    "description": "From the late 1970s FIFA signed long-term global partnerships with Coca-Cola, Adidas, and others. Guaranteed sponsorship revenue, independent of gate receipts, gave FIFA the financial base to expand the tournament and reach new markets — the money engine of the modern World Cup.",
+    "yearNum": 1978,
+    "yearLabel": "1970s-1980s",
+    "precision": "decade",
+    "domains": [
+      "economy"
+    ],
+    "impactScore": 0.66,
+    "tags": [
+      "fifa",
+      "sponsorship",
+      "coca-cola",
+      "adidas",
+      "commercialization",
+      "revenue"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "expansion-24-teams-1982",
+    "title": "World Cup Expands to 24 Teams (1982)",
+    "description": "The finals grew from 16 to 24 teams in 1982, adding more slots for Africa, Asia, and CONCACAF. Expansion was driven by Havelange's promise to non-European federations and the commercial logic that more nations means more engaged markets — the first of several expansions.",
+    "yearNum": 1982,
+    "yearLabel": "1982",
+    "precision": "year",
+    "domains": [
+      "systems",
+      "geopolitics",
+      "economy"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "world-cup",
+      "expansion",
+      "24-teams",
+      "1982",
+      "globalization"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "usa-1994-hosting",
+    "title": "World Cup in the USA (1994)",
+    "description": "FIFA awarded the 1994 World Cup to the United States — a country without a top-tier professional league — explicitly to open the large US market. Record attendances followed, and the bid required the US to launch a professional league, directly birthing MLS.",
+    "yearNum": 1994,
+    "yearLabel": "1994",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "economy",
+      "culture"
+    ],
+    "impactScore": 0.66,
+    "tags": [
+      "world-cup",
+      "usa",
+      "1994",
+      "market-expansion",
+      "hosting"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "mls-founded-1996",
+    "title": "Major League Soccer Founded",
+    "description": "MLS launched in 1996 as a condition of the 1994 World Cup bid, giving the US a durable top-flight league. It built the domestic football infrastructure — stadiums, audiences, players — that underpins the United States' role as a 2026 co-host.",
+    "yearNum": 1996,
+    "yearLabel": "1996",
+    "precision": "year",
+    "domains": [
+      "economy",
+      "culture"
+    ],
+    "impactScore": 0.55,
+    "tags": [
+      "mls",
+      "usa",
+      "league",
+      "1996",
+      "infrastructure"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "bosman-ruling-1995",
+    "title": "Bosman Ruling",
+    "description": "A 1995 European Court of Justice ruling let out-of-contract players move freely between EU clubs and struck down limits on foreign EU players. It demolished the old transfer-restriction system, exploded player wages and transfer fees, and globalized squad composition across European football.",
+    "yearNum": 1995,
+    "yearLabel": "1995",
+    "precision": "year",
+    "domains": [
+      "economy",
+      "geopolitics",
+      "systems"
+    ],
+    "impactScore": 0.7,
+    "tags": [
+      "bosman",
+      "transfer",
+      "labour",
+      "eu",
+      "economy",
+      "free-movement"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "champions-league-1992",
+    "title": "UEFA Champions League Rebrand",
+    "description": "The European Cup was rebranded as the Champions League in 1992 with a group stage and a lucrative TV/sponsorship package. It concentrated money and the best players in a handful of elite clubs, accelerating the commercial and talent gap that reshaped the global game.",
+    "yearNum": 1992,
+    "yearLabel": "1992",
+    "precision": "year",
+    "domains": [
+      "economy",
+      "culture"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "champions-league",
+      "uefa",
+      "club-football",
+      "commercialization",
+      "tv-rights"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "galactico-globalization-2000",
+    "title": "Global Star Economy (\"Galácticos\")",
+    "description": "Around 2000, post-Bosman wage inflation and global TV reach let top clubs assemble multinational squads of global superstars. Players became transnational brands, and football talent flowed from every continent into a few European leagues — deepening the global integration of the sport.",
+    "yearNum": 2000,
+    "yearLabel": "2000s",
+    "precision": "decade",
+    "domains": [
+      "economy",
+      "culture"
+    ],
+    "impactScore": 0.55,
+    "tags": [
+      "globalization",
+      "transfers",
+      "galacticos",
+      "wages",
+      "brands",
+      "stars"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "korea-japan-2002",
+    "title": "First Asian World Cup (Korea/Japan 2002)",
+    "description": "The 2002 World Cup, co-hosted by South Korea and Japan, was the first held in Asia and the first with two host nations. It proved both that the tournament could be exported beyond its European/American heartland and that co-hosting across countries was logistically workable — a template for 2026.",
+    "yearNum": 2002,
+    "yearLabel": "2002",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "culture"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "world-cup",
+      "asia",
+      "co-hosting",
+      "2002",
+      "korea",
+      "japan"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "south-africa-2010",
+    "title": "First African World Cup (South Africa 2010)",
+    "description": "South Africa 2010 was the first World Cup on the African continent, awarded under FIFA's rotation policy. It demonstrated FIFA's commitment to spreading hosting globally as a development and soft-power tool, reinforcing the expectation that hosting rotates across regions.",
+    "yearNum": 2010,
+    "yearLabel": "2010",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "culture"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "world-cup",
+      "africa",
+      "south-africa",
+      "2010",
+      "rotation",
+      "soft-power"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "goal-line-tech-2014",
+    "title": "Goal-Line Technology Introduced (2014)",
+    "description": "FIFA adopted goal-line technology at the 2014 World Cup after high-profile officiating errors. It marked FIFA's shift toward accepting technology inside the laws of the game, opening the door to the more intrusive video review that followed.",
+    "yearNum": 2014,
+    "yearLabel": "2014",
+    "precision": "year",
+    "domains": [
+      "technology",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "goal-line",
+      "technology",
+      "officiating",
+      "2014",
+      "rules"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "var-2018",
+    "title": "Video Assistant Referee (VAR) at the World Cup",
+    "description": "VAR debuted at a World Cup in 2018, letting officials review key decisions on video. It changed the texture of officiating and fan experience, and confirmed that technology-mediated decisions are now part of the tournament — a precondition for further tech adoption in 2026.",
+    "yearNum": 2018,
+    "yearLabel": "2018",
+    "precision": "year",
+    "domains": [
+      "technology",
+      "systems",
+      "culture"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "var",
+      "technology",
+      "officiating",
+      "2018",
+      "video-review"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "fifa-corruption-2015",
+    "title": "FIFA Corruption Scandal (2015)",
+    "description": "A 2015 US Department of Justice investigation indicted senior FIFA officials for decades of bribery around media rights and host selection, toppling president Sepp Blatter. The scandal forced governance reforms and a more transparent, expansion-friendly host-selection process.",
+    "yearNum": 2015,
+    "yearLabel": "2015",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "economy",
+      "systems"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "fifa",
+      "corruption",
+      "scandal",
+      "2015",
+      "blatter",
+      "governance"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "infantino-presidency-2016",
+    "title": "Gianni Infantino Becomes FIFA President",
+    "description": "Infantino won the FIFA presidency in 2016 promising reform and, crucially, expansion of the World Cup to grow revenue and votes from smaller federations. His expansion agenda is the direct political driver of the 48-team 2026 format.",
+    "yearNum": 2016,
+    "yearLabel": "2016",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "systems",
+      "economy"
+    ],
+    "impactScore": 0.58,
+    "tags": [
+      "fifa",
+      "infantino",
+      "governance",
+      "2016",
+      "expansion",
+      "reform"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "expansion-48-teams-2017",
+    "title": "FIFA Approves 48-Team World Cup (2017)",
+    "description": "In 2017 the FIFA Council voted to expand the finals from 32 to 48 teams starting in 2026. More slots — especially for Africa, Asia, and CONCACAF — broadened global participation and revenue, but required a host able to stage a far larger tournament.",
+    "yearNum": 2017,
+    "yearLabel": "2017",
+    "precision": "year",
+    "domains": [
+      "systems",
+      "geopolitics",
+      "economy"
+    ],
+    "impactScore": 0.72,
+    "tags": [
+      "world-cup",
+      "expansion",
+      "48-teams",
+      "2017",
+      "fifa",
+      "format"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "united-bid-2018",
+    "title": "United Bid Wins 2026 Hosting Rights",
+    "description": "In 2018 FIFA awarded the 2026 World Cup to the \"United\" bid of the USA, Canada, and Mexico over Morocco. The three nations' existing stadiums and infrastructure made them uniquely able to absorb a 48-team, 104-match tournament — the practical reason a tri-nation host won.",
+    "yearNum": 2018,
+    "yearLabel": "2018",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "economy",
+      "systems"
+    ],
+    "impactScore": 0.68,
+    "tags": [
+      "world-cup",
+      "2026",
+      "united-bid",
+      "hosting",
+      "usa",
+      "canada",
+      "mexico"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "tri-nation-hosting-2026",
+    "title": "Tri-Nation Hosting Model (USA/Canada/Mexico)",
+    "description": "For the first time the World Cup is split across three countries in 2026, with the bulk of matches in the USA. The model reflects both the scale demanded by 48 teams and the co-hosting precedent set in 2002 — sharing logistics and risk across nations.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "systems"
+    ],
+    "impactScore": 0.62,
+    "tags": [
+      "world-cup",
+      "2026",
+      "tri-nation",
+      "co-hosting",
+      "usa",
+      "canada",
+      "mexico"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "world-cup-2026",
+    "title": "FIFA World Cup 2026",
+    "description": "The 2026 FIFA World Cup is the first 48-team tournament and the first hosted by three nations (USA, Canada, Mexico), expanding to 104 matches. It is the culmination of a 160-year arc from codified folk football to a globalized, commercialized, technology-mediated mega-event.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "year",
+    "domains": [
+      "culture",
+      "geopolitics",
+      "economy"
+    ],
+    "impactScore": 0.82,
+    "tags": [
+      "world-cup",
+      "2026",
+      "fifa",
+      "48-teams",
+      "usa",
+      "canada",
+      "mexico",
+      "tournament"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "mexico-three-time-host-2026",
+    "title": "Mexico Becomes First Three-Time Host",
+    "description": "With 2026, Mexico becomes the first country to host (or co-host) the World Cup three times, after 1970 and 1986. Its proven stadium infrastructure and broadcast history from earlier tournaments made it a low-risk partner in the United bid.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "year",
+    "domains": [
+      "geopolitics",
+      "culture"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup",
+      "2026",
+      "mexico",
+      "hosting",
+      "three-time-host"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "womens-game-globalization-2019",
+    "title": "Women's World Cup Global Breakthrough",
+    "description": "The 2019 Women's World Cup drew record global audiences and intensified debates on pay equity and investment. Its commercial breakthrough broadened football's global market and audience base, part of the wider globalization that the 2026 expansion seeks to monetize.",
+    "yearNum": 2019,
+    "yearLabel": "2019",
+    "precision": "year",
+    "domains": [
+      "culture",
+      "economy"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "womens-football",
+      "world-cup",
+      "2019",
+      "globalization",
+      "equity"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
+      }
+    ]
+  },
+  {
+    "id": "streaming-rights-2022",
+    "title": "Streaming-Era Media Rights",
+    "description": "By the 2020s, World Cup media rights increasingly flowed through streaming platforms and digital broadcasters alongside traditional TV. The shift to streaming widened global access and reshaped the revenue model that funds tournament expansion.",
+    "yearNum": 2022,
+    "yearLabel": "2020s",
+    "precision": "decade",
+    "domains": [
+      "technology",
+      "economy",
+      "culture"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "streaming",
+      "media-rights",
+      "broadcast",
+      "digital",
+      "revenue"
+    ],
+    "scope": "world",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.85,
+        "citation": "Causari curated pack — World Cup 2026"
       }
     ]
   }

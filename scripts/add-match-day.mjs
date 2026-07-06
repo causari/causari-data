@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validatePackData } from './validate-pack.mjs';
+import { assessCausalQuality } from './causal-quality.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -98,10 +99,22 @@ for (const ni of input.newInsights || []) {
 const merged = { events: [...eventsById.values()], links, insights };
 
 // 5) Validate BEFORE writing. Nothing is written if invalid.
+//    (a) structural validation — ids resolve, enums in range, referential integrity.
 const errors = validatePackData(merged, packId);
 if (errors.length > 0) {
   console.error(`✗ ${errors.length} validation error(s) — nothing written:`);
   for (const e of errors) console.error(`  - ${e}`);
+  process.exit(1);
+}
+//    (b) causal-quality gate — the layer must be real, not templated. Catches a
+//    "Scorers: …" whyItMatters, a single-relationship graph, a backwards scoreline,
+//    a scheduled event carrying a result, an unresolved round/team, etc. This is
+//    what keeps the daily editorial honest even when structure is fine.
+const { errors: qErrors, warnings: qWarnings } = assessCausalQuality(merged, packId);
+for (const w of qWarnings) console.warn(`  ! ${w}`);
+if (qErrors.length > 0) {
+  console.error(`✗ ${qErrors.length} causal-quality error(s) — nothing written:`);
+  for (const e of qErrors) console.error(`  - ${e}`);
   process.exit(1);
 }
 
