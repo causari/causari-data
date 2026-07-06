@@ -1,0 +1,184 @@
+{
+  "date": "2026-07-05",
+  "status": "final",
+  "title": "Norway shock Brazil, England survive Mexico thriller to set quarter-final",
+  "summary": "Ngày 5/7 của vòng 16 đội khép lại với hai trận có sức nặng lớn: Norway loại Brazil 2-1 nhờ cú đúp muộn của Erling Haaland, còn England thắng Mexico 3-2 trong trận cầu hỗn loạn tại Azteca dù phải chơi thiếu người. Cặp tứ kết tiếp theo đã rõ: Norway vs England.",
+  "results": [
+    {
+      "round": "Round of 16",
+      "home": "Brazil",
+      "away": "Norway",
+      "homeScore": 1,
+      "awayScore": 2,
+      "winner": "Norway",
+      "status": "complete"
+    },
+    {
+      "round": "Round of 16",
+      "home": "Mexico",
+      "away": "England",
+      "homeScore": 2,
+      "awayScore": 3,
+      "winner": "England",
+      "status": "complete"
+    }
+  ],
+  "bigMoments": [
+    "Norway loại Brazil 2-1 ở vòng 16 đội, tạo một trong những cú sốc lớn nhất World Cup 2026.",
+    "Bruno Guimaraes đá hỏng penalty trong hiệp một, khiến Brazil bỏ lỡ cơ hội kiểm soát trận đấu từ sớm.",
+    "Erling Haaland ghi hai bàn muộn: một pha đánh đầu và một cú dứt điểm quyết đoán sau các tình huống lên bóng từ cánh của Norway.",
+    "Neymar rút ngắn tỷ số bằng penalty ở thời gian bù giờ, nhưng Brazil không đủ thời gian để kéo trận đấu trở lại.",
+    "Mexico vs England bị lùi giờ vì thời tiết cực đoan, rồi biến thành một trận knock-out giàu kịch tính ở Azteca.",
+    "Jude Bellingham ghi hai bàn rất nhanh trong hiệp một, giúp England tạo lợi thế lớn trước sức ép chủ nhà.",
+    "Jarell Quansah nhận thẻ đỏ ở phút 54, khiến England phải bảo vệ lợi thế trong thế thiếu người.",
+    "Harry Kane ghi penalty quan trọng, còn Jordan Pickford và hàng thủ England sống sót qua áp lực cuối trận để thắng 3-2."
+  ],
+  "tournamentImpact": [
+    "Brazil dừng bước ở vòng 16 đội, đánh dấu lần đầu tiên từ 1990 họ không thể vào tứ kết World Cup.",
+    "Norway lần đầu vào tứ kết World Cup, biến hành trình của họ từ câu chuyện trở lại sau nhiều năm vắng mặt thành một run knock-out thực sự.",
+    "Haaland vươn lên nhóm dẫn đầu cuộc đua Golden Boot với 7 bàn, ngang các ứng viên hàng đầu như Lionel Messi và Kylian Mbappe theo tường thuật sau trận Brazil vs Norway.",
+    "England loại đồng chủ nhà Mexico và vào tứ kết thứ ba liên tiếp ở World Cup, nhưng cái giá là thể lực, thẻ phạt và áp lực phòng ngự rất lớn.",
+    "Cặp tứ kết Norway vs England đã được xác định; đây là màn đối đầu giữa cú hích Haaland và bản lĩnh sống sót của England.",
+    "Cú ngã của Brazil làm thay đổi mạnh cán cân ứng viên: Argentina, France, Portugal/Spain và England sẽ nhìn knock-out với cảm giác rủi ro cao hơn."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Erling Haaland",
+      "team": "Norway",
+      "note": "Ghi cú đúp muộn để loại Brazil và đưa Norway vào tứ kết World Cup lần đầu tiên."
+    },
+    {
+      "name": "Orjan Nyland",
+      "team": "Norway",
+      "note": "Cản penalty của Bruno Guimaraes và giữ Norway sống trong giai đoạn Brazil kiểm soát thế trận."
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "team": "Norway",
+      "note": "Tạo khác biệt từ biên, góp phần trực tiếp vào các pha bóng giúp Haaland kết liễu trận đấu."
+    },
+    {
+      "name": "Neymar",
+      "team": "Brazil",
+      "note": "Ghi penalty muộn nhưng không thể cứu Brazil khỏi thất bại; đây có thể là khoảnh khắc World Cup rất nặng cảm xúc với anh."
+    },
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "note": "Ghi cú đúp trong hiệp một trước Mexico và là nhân vật xoay trục trận đấu cho England."
+    },
+    {
+      "name": "Harry Kane",
+      "team": "England",
+      "note": "Ghi penalty quyết định, giúp England tái lập khoảng cách hai bàn trước khi phải sống sót trong thế thiếu người."
+    },
+    {
+      "name": "Jordan Pickford",
+      "team": "England",
+      "note": "Có các pha cứu thua và chỉ huy vòng cấm quan trọng khi England bị Mexico ép cuối trận."
+    },
+    {
+      "name": "Raul Jimenez",
+      "team": "Mexico",
+      "note": "Ghi bàn từ penalty để kéo Mexico trở lại 2-3, tạo sức ép lớn trong đoạn cuối trận."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina không thi đấu trong cụm cập nhật này, nhưng cú sốc Brazil là cảnh báo rất rõ trước Egypt: một trận knock-out có thể đổi chiều chỉ bằng vài khoảnh khắc chuyển trạng thái và một siêu sao biết kết liễu trận đấu.",
+    "Brazil": "Brazil là story chính và là cú ngã lớn. Họ có cơ hội sớm với penalty nhưng không tận dụng, sau đó bị Norway kéo vào thế trận kiên nhẫn và bị Haaland trừng phạt ở cuối trận. Đây là thất bại làm rung lại toàn bộ narrative ứng viên của giải.",
+    "Portugal": "Portugal chưa thi đấu trong ngày này và vẫn chờ Spain. Nhưng bài học Brazil và Mexico rất trực tiếp: các ứng viên lớn không chỉ cần kiểm soát bóng, mà phải có phương án chống chuyển trạng thái, chống áp lực khán đài và tránh để trận đấu trôi tới vùng rủi ro cuối trận."
+  },
+  "watchNext": [
+    "Portugal vs Spain: đại chiến châu Âu, đồng thời là bài test xem ứng viên lớn nào đủ ổn định sau cú ngã của Brazil.",
+    "United States vs Belgium: lợi thế chủ nhà gặp chất lượng cá nhân của Belgium.",
+    "Argentina vs Egypt: Argentina cần tránh kịch bản bị kéo vào trận đấu cảm xúc giống Brazil trước Norway.",
+    "Switzerland vs Colombia: cặp đấu cân bằng giữa kỷ luật, chuyển trạng thái và phong độ ổn định.",
+    "Morocco vs France và Norway vs England: hai cặp tứ kết đã rõ, đều có một đội tạo narrative rất mạnh từ vòng knock-out."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Bruno Guimaraes missed first-half penalty",
+      "link": "enabled",
+      "to": "Norway survive Brazil's early control phase"
+    },
+    {
+      "from": "Orjan Nyland penalty save and Norway defensive discipline",
+      "link": "caused",
+      "to": "Brazil fail to convert territorial control into a safe lead"
+    },
+    {
+      "from": "Stale Solbakken second-half adjustments and Norway wing service",
+      "link": "enabled",
+      "to": "Erling Haaland late brace"
+    },
+    {
+      "from": "Erling Haaland late brace",
+      "link": "caused",
+      "to": "Norway 2-1 Brazil and first World Cup quarter-final"
+    },
+    {
+      "from": "Brazil round-of-16 elimination",
+      "link": "caused",
+      "to": "Tournament contender map shifts away from one of the pre-knockout favorites"
+    },
+    {
+      "from": "Extreme weather delay around Mexico City Stadium",
+      "link": "caused",
+      "to": "Mexico vs England kick-off delayed and match rhythm disrupted before play"
+    },
+    {
+      "from": "Jude Bellingham first-half brace",
+      "link": "caused",
+      "to": "England build early two-goal cushion against Mexico"
+    },
+    {
+      "from": "Jarell Quansah red card",
+      "link": "caused",
+      "to": "England forced into prolonged low-block survival phase"
+    },
+    {
+      "from": "Harry Kane penalty plus Jordan Pickford saves",
+      "link": "enabled",
+      "to": "England hold 3-2 lead and advance to Norway quarter-final"
+    },
+    {
+      "from": "Mexico elimination at home",
+      "link": "caused",
+      "to": "Co-host narrative narrows and England's contender case strengthens despite volatility"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Reuters - Haaland double as Norway stun Brazil to reach World Cup quarter-finals",
+      "url": "https://www.reuters.com/sports/soccer/haaland-double-norway-stun-brazil-reach-world-cup-quarter-finals-2026-07-05/"
+    },
+    {
+      "name": "The Guardian - Brazil 1-2 Norway live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/05/brazil-v-norway-world-cup-2026-last-16-live"
+    },
+    {
+      "name": "FOX Sports - Brazil vs Norway highlights and reaction",
+      "url": "https://www.foxsports.com/watch/fmc-irbsz63gl1em22lu"
+    },
+    {
+      "name": "SBS - Brazil v Norway highlights",
+      "url": "https://www.sbs.com.au/sport/video/fifa-world-cup-2026-highlights-brazil-v-norway-round-of-16/j5p5kjs7f"
+    },
+    {
+      "name": "Al Jazeera - Mexico 2-3 England live report",
+      "url": "https://www.aljazeera.com/sports/liveblog/2026/7/5/mexico-vs-england-live-fifa-world-cup-2026-last-16"
+    },
+    {
+      "name": "The Guardian - England's 10 men hang on after Kane penalty to beat Mexico",
+      "url": "https://www.theguardian.com/football/2026/jul/06/england-mexico-match-report-jude-bellingham-harry-kane-world-cup"
+    },
+    {
+      "name": "FOX Sports - England vs Mexico delayed due to extreme weather",
+      "url": "https://www.foxsports.com/stories/soccer/england-vs-mexico-world-cup-round-16-match-delayed-due-extreme-weather"
+    },
+    {
+      "name": "CBS Sports - Mexico vs England live updates and result",
+      "url": "https://www.cbssports.com/soccer/news/mexico-england-live-updates-world-cup-2026-score-result/live/"
+    }
+  ]
+}
