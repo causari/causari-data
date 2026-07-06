@@ -3151,8 +3151,8 @@
   },
   {
     "id": "wc2026-brazil-norway-0705",
-    "title": "Brazil vs Norway",
-    "description": "Round of 16 fixture: Brazil vs Norway, July 5, 2026 at New York/New Jersey (East Rutherford).",
+    "title": "Brazil 1–2 Norway",
+    "description": "Brazil lost to Norway 1–2 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3160,7 +3160,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3169,13 +3169,13 @@
     ],
     "date": "2026-07-05",
     "dateLabel": "July 5, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Brazil",
       "Norway",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Scorers: Neymar, Erling Haaland, Erling Haaland.",
     "sources": [
       {
         "type": "open-data",
@@ -3186,8 +3186,8 @@
   },
   {
     "id": "wc2026-mexico-england-0705",
-    "title": "Mexico vs England",
-    "description": "Round of 16 fixture: Mexico vs England, July 5, 2026 at Mexico City.",
+    "title": "Mexico 2–3 England",
+    "description": "Mexico lost to England 2–3 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3195,7 +3195,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3204,13 +3204,13 @@
     ],
     "date": "2026-07-05",
     "dateLabel": "July 5, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Mexico",
       "England",
       "Round of 16"
     ],
-    "whyItMatters": "Upcoming Round of 16 match.",
+    "whyItMatters": "Scorers: Julián Quiñones, Raúl Jiménez, Jude Bellingham, Jude Bellingham, Harry Kane.",
     "sources": [
       {
         "type": "open-data",
@@ -3360,9 +3360,9 @@
     ]
   },
   {
-    "id": "wc2026-w89-w90-0709",
-    "title": "W89 vs W90",
-    "description": "Quarter-final fixture: W89 vs W90, July 9, 2026 at Boston (Foxborough).",
+    "id": "wc2026-france-morocco-0709",
+    "title": "France vs Morocco",
+    "description": "Quarter-final fixture: France vs Morocco, July 9, 2026 at Boston (Foxborough).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3374,15 +3374,15 @@
     "tags": [
       "world-cup-2026",
       "quarter-final",
-      "w89",
-      "w90"
+      "france",
+      "morocco"
     ],
     "date": "2026-07-09",
     "dateLabel": "July 9, 2026",
     "status": "scheduled",
     "entities": [
-      "W89",
-      "W90",
+      "France",
+      "Morocco",
       "Quarter-final"
     ],
     "whyItMatters": "Upcoming Quarter-final match.",
