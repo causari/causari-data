@@ -3678,8 +3678,8 @@
   },
   {
     "id": "wc2026-portugal-spain-0706",
-    "title": "Portugal vs Spain",
-    "description": "Round of 16 fixture: Portugal vs Spain, July 6, 2026 at Dallas (Arlington).",
+    "title": "Portugal 0–1 Spain",
+    "description": "Portugal lost to Spain 0–1 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3687,7 +3687,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3696,7 +3696,7 @@
     ],
     "date": "2026-07-06",
     "dateLabel": "July 6, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Portugal",
       "Spain",
@@ -3717,8 +3717,8 @@
   },
   {
     "id": "wc2026-usa-belgium-0706",
-    "title": "USA vs Belgium",
-    "description": "Round of 16 fixture: USA vs Belgium, July 6, 2026 at Seattle.",
+    "title": "USA 1–4 Belgium",
+    "description": "USA lost to Belgium 1–4 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3726,7 +3726,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.67,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3735,7 +3735,7 @@
     ],
     "date": "2026-07-06",
     "dateLabel": "July 6, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "USA",
       "Belgium",
