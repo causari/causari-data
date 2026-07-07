@@ -1,8 +1,8 @@
 {
   "date": "2026-07-06",
-  "status": "partial",
-  "title": "Spain break Portugal late as Iberian derby reshapes the quarter-final bracket",
-  "summary": "Ngày 6/7 mới có một trận vòng 16 đội hoàn tất: Spain thắng Portugal 1-0 nhờ bàn muộn của Mikel Merino ở phút 90+1. Portugal bị loại, Cristiano Ronaldo rời kỳ World Cup cuối cùng trong một đêm rất nặng cảm xúc. Spain vào tứ kết và chờ đội thắng cặp United States vs Belgium, trận vẫn đang diễn ra ở thời điểm cập nhật.",
+  "status": "final",
+  "title": "Spain break Portugal late, Belgium rout USA to complete quarter-final path",
+  "summary": "Ngày 6/7 khép lại với hai trận vòng 16 đội: Spain thắng Portugal 1-0 bằng bàn muộn của Mikel Merino ở phút 90+1, còn Belgium thắng United States 4-1 nhờ màn trình diễn rất sắc của Charles De Ketelaere. Portugal và đội chủ nhà United States cùng dừng bước; Spain sẽ gặp Belgium ở tứ kết. Sau Brazil và Portugal, nhóm focus chỉ còn Argentina là ứng viên lớn chưa bị loại trong bộ ba Argentina/Brazil/Portugal.",
   "results": [
     {
       "round": "Round of 16",
@@ -12,21 +12,32 @@
       "awayScore": 1,
       "winner": "Spain",
       "status": "complete"
+    },
+    {
+      "round": "Round of 16",
+      "home": "United States",
+      "away": "Belgium",
+      "homeScore": 1,
+      "awayScore": 4,
+      "winner": "Belgium",
+      "status": "complete"
     }
   ],
   "bigMoments": [
     "Mikel Merino vào sân từ ghế dự bị rồi ghi bàn quyết định ở phút 90+1, sau pha phối hợp nhanh với Ferran Torres.",
     "Diogo Costa giữ Portugal sống trong phần lớn trận đấu bằng nhiều pha cản phá trước sức ép của Spain.",
     "Cristiano Ronaldo bị Unai Simon từ chối trong một cơ hội đáng chú ý và không thể kéo Portugal trở lại trước khi trận đấu khép lại.",
-    "Portugal có cơ hội muộn với Bernardo Silva nhưng cú đánh đầu đi vọt xà, khiến nỗ lực cuối cùng của họ không đủ để đưa trận đấu sang hiệp phụ.",
-    "Spain không bùng nổ như trận thắng Austria, nhưng thể hiện bản lĩnh kiểm soát rủi ro và kết liễu trận đấu đúng thời điểm."
+    "Charles De Ketelaere mở tỷ số sớm cho Belgium, rồi tiếp tục tạo khác biệt bằng cú đúp và ảnh hưởng trực tiếp tới thế trận.",
+    "Malik Tillman ghi bàn từ đá phạt để giúp United States gỡ 1-1 trong hiệp một, nhưng Belgium lập tức lấy lại lợi thế và kiểm soát phần còn lại của trận đấu.",
+    "Romelu Lukaku ghi bàn ở thời gian bù giờ, chốt chiến thắng 4-1 và biến trận đấu thành lời khẳng định sức mạnh của Belgium trước tứ kết."
   ],
   "tournamentImpact": [
-    "Spain trở thành đội tiếp theo vào tứ kết và sẽ gặp đội thắng cặp United States vs Belgium.",
+    "Spain vào tứ kết sau chiến thắng 1-0 trước Portugal và sẽ gặp Belgium.",
+    "Belgium loại United States 4-1, khép lại hành trình World Cup trên sân nhà của đội chủ nhà cuối cùng còn lại trong nhánh này.",
+    "Cặp tứ kết Spain vs Belgium đã rõ: đây là cuộc đối đầu giữa khả năng kiểm soát và kết liễu muộn của Spain với tốc độ, thể chất và tính trực diện của Belgium.",
     "Portugal bị loại ở vòng 16 đội, khép lại một chiến dịch có nhiều kỳ vọng nhưng thiếu khoảnh khắc tấn công đủ sắc ở trận knock-out lớn nhất của họ.",
-    "Trận này củng cố narrative rằng vòng knock-out 2026 đang cực kỳ khắc nghiệt với các ứng viên lớn: Brazil đã rơi trước Norway, Portugal tiếp tục rời giải trước Spain.",
-    "Nếu Belgium vượt qua United States, tứ kết Spain vs Belgium sẽ là bài test kiểm soát bóng trước chất lượng chuyển trạng thái. Nếu United States lội ngược dòng, Spain sẽ gặp đội chủ nhà còn lại của giải.",
-    "Portugal rời giải cũng làm nhóm focus của người dùng chuyển mạnh sang Argentina: sau Brazil và Portugal, Argentina là đội lớn tiếp theo phải chứng minh khả năng sống sót ở vòng 16 đội."
+    "Sau Brazil và Portugal, bản đồ ứng viên tiếp tục biến động mạnh. Argentina bước vào trận gặp Egypt với áp lực lớn hơn vì họ là đội focus còn lại chưa đá vòng 16 đội.",
+    "United States rời giải dù có một số dấu mốc tích cực như thắng bảng và có trận thắng knock-out trước Bosnia and Herzegovina, nhưng thất bại 1-4 cho thấy khoảng cách lớn trước nhóm elite châu Âu."
   ],
   "standoutPlayers": [
     {
@@ -45,9 +56,19 @@
       "note": "Có pha cản phá quan trọng trước Cristiano Ronaldo, giữ sạch lưới trong trận derby căng thẳng."
     },
     {
-      "name": "Diogo Costa",
-      "team": "Portugal",
-      "note": "Cứu Portugal khỏi việc thủng lưới sớm hơn, đặc biệt trong giai đoạn Spain tăng sức ép ở hiệp hai."
+      "name": "Charles De Ketelaere",
+      "team": "Belgium",
+      "note": "Ghi cú đúp và là nhân vật trung tâm trong chiến thắng 4-1 trước United States."
+    },
+    {
+      "name": "Malik Tillman",
+      "team": "United States",
+      "note": "Ghi bàn từ đá phạt để kéo United States về 1-1 trong hiệp một, điểm sáng lớn nhất của đội chủ nhà."
+    },
+    {
+      "name": "Romelu Lukaku",
+      "team": "Belgium",
+      "note": "Ghi bàn ở thời gian bù giờ, khép lại trận thắng đậm và củng cố đà tiến của Belgium."
     },
     {
       "name": "Cristiano Ronaldo",
@@ -56,15 +77,15 @@
     }
   ],
   "focus": {
-    "Argentina": "Argentina chưa thi đấu trong cụm cập nhật này, nhưng áp lực đang tăng lên rõ rệt: Brazil đã bị Norway loại, Portugal bị Spain loại, nên trận gặp Egypt không còn là bài test bình thường mà là phép thử bản lĩnh sống sót của ứng viên lớn tiếp theo.",
-    "Brazil": "Brazil đã bị loại từ ngày 5/7. Sau thất bại của Portugal, cú ngã của Brazil không còn là ngoại lệ đơn lẻ mà trở thành một phần của pattern knock-out: đội lớn nếu không kết liễu sớm sẽ dễ bị trừng phạt bởi một khoảnh khắc muộn.",
+    "Argentina": "Argentina chưa thi đấu trong cụm cập nhật này, nhưng áp lực đang tăng lên rõ rệt: Brazil đã bị Norway loại, Portugal bị Spain loại, United States cũng rời giải trước Belgium. Trận gặp Egypt vì vậy không còn là bài test bình thường mà là phép thử bản lĩnh sống sót của ứng viên lớn tiếp theo.",
+    "Brazil": "Brazil đã bị loại từ ngày 5/7. Sau thất bại của Portugal, cú ngã của Brazil không còn là ngoại lệ đơn lẻ mà trở thành một phần của pattern knock-out: đội lớn nếu không kết liễu sớm sẽ dễ bị trừng phạt bởi một khoảnh khắc muộn hoặc một cá nhân đối thủ bùng nổ.",
     "Portugal": "Portugal là trọng tâm buồn của ngày. Họ phòng ngự tốt trong phần lớn trận đấu nhưng thiếu nhịp tấn công đủ sắc, rồi bị Merino kết liễu ở phút 90+1. Đây có thể là dấu chấm hết cho hành trình World Cup của Ronaldo."
   },
   "watchNext": [
-    "United States vs Belgium: trận vẫn đang diễn ra và sẽ xác định đối thủ của Spain ở tứ kết.",
-    "Argentina vs Egypt: Argentina cần tránh cú sốc tiếp theo cho nhóm ứng viên lớn.",
+    "Argentina vs Egypt: Argentina cần tránh cú sốc tiếp theo cho nhóm ứng viên lớn, đặc biệt khi Egypt vừa có momentum sau chiến thắng penalty trước Australia.",
     "Switzerland vs Colombia: cặp đấu cân bằng, nhiều khả năng được quyết định bởi chuyển trạng thái và khả năng tận dụng khoảnh khắc.",
     "Morocco vs France: tứ kết đã rõ, Morocco có momentum còn France vẫn sống bằng bản lĩnh knock-out.",
+    "Spain vs Belgium: tứ kết mới xác định, nơi Spain phải xử lý tốc độ và sự sắc bén của Belgium sau trận thắng đậm United States.",
     "Norway vs England: Haaland gặp một England vừa sống sót qua trận hỗn loạn trước Mexico."
   ],
   "causalTimeline": [
@@ -94,6 +115,26 @@
       "to": "Cristiano Ronaldo World Cup career likely ends without a knockout rescue moment"
     },
     {
+      "from": "Charles De Ketelaere early goal",
+      "link": "caused",
+      "to": "United States forced to chase match against Belgium"
+    },
+    {
+      "from": "Malik Tillman free-kick equalizer",
+      "link": "enabled",
+      "to": "United States briefly restore belief at 1-1"
+    },
+    {
+      "from": "Belgium immediate response and United States defensive lapses",
+      "link": "caused",
+      "to": "Belgium regain control and stretch lead in second half"
+    },
+    {
+      "from": "Belgium 4-1 United States",
+      "link": "caused",
+      "to": "Spain vs Belgium quarter-final confirmed"
+    },
+    {
       "from": "Brazil and Portugal eliminated in consecutive knockout days",
       "link": "caused",
       "to": "Tournament contender map shifts and pressure increases on Argentina before Egypt"
@@ -113,12 +154,16 @@
       "url": "https://www.theguardian.com/football/live/2026/jul/06/portugal-v-spain-world-cup-2026-last-16-live"
     },
     {
-      "name": "FOX Sports - Portugal vs Spain final score",
-      "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-portugal-vs-spain-jul-06-2026-game-boxscore-607923"
+      "name": "U.S. Soccer - USMNT exits FIFA World Cup 2026 with 4-1 loss to Belgium",
+      "url": "https://www.ussoccer.com/stories/2026/07/usmnt/match-recap-highlights-vs-belgium-world-cup-round-of-16"
     },
     {
-      "name": "The Sporting News - USA vs Belgium live score and highlights",
-      "url": "https://www.sportingnews.com/us/soccer/news/usa-vs-belgium-world-cup-live-score-result-highlights/025e4e52bfdf8bb1180f0950"
+      "name": "AP News - Belgium beats US 4-1 to reach World Cup quarterfinals",
+      "url": "https://apnews.com/article/0325e8102be7a88e852079deffd70ca0"
+    },
+    {
+      "name": "ESPN - USA 1-4 Belgium final score",
+      "url": "https://www.espn.com/soccer/match/_/gameId/760507/belgium-united-states"
     }
   ]
 }
