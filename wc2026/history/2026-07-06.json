@@ -1,0 +1,124 @@
+{
+  "date": "2026-07-06",
+  "status": "partial",
+  "title": "Spain break Portugal late as Iberian derby reshapes the quarter-final bracket",
+  "summary": "Ngày 6/7 mới có một trận vòng 16 đội hoàn tất: Spain thắng Portugal 1-0 nhờ bàn muộn của Mikel Merino ở phút 90+1. Portugal bị loại, Cristiano Ronaldo rời kỳ World Cup cuối cùng trong một đêm rất nặng cảm xúc. Spain vào tứ kết và chờ đội thắng cặp United States vs Belgium, trận vẫn đang diễn ra ở thời điểm cập nhật.",
+  "results": [
+    {
+      "round": "Round of 16",
+      "home": "Portugal",
+      "away": "Spain",
+      "homeScore": 0,
+      "awayScore": 1,
+      "winner": "Spain",
+      "status": "complete"
+    }
+  ],
+  "bigMoments": [
+    "Mikel Merino vào sân từ ghế dự bị rồi ghi bàn quyết định ở phút 90+1, sau pha phối hợp nhanh với Ferran Torres.",
+    "Diogo Costa giữ Portugal sống trong phần lớn trận đấu bằng nhiều pha cản phá trước sức ép của Spain.",
+    "Cristiano Ronaldo bị Unai Simon từ chối trong một cơ hội đáng chú ý và không thể kéo Portugal trở lại trước khi trận đấu khép lại.",
+    "Portugal có cơ hội muộn với Bernardo Silva nhưng cú đánh đầu đi vọt xà, khiến nỗ lực cuối cùng của họ không đủ để đưa trận đấu sang hiệp phụ.",
+    "Spain không bùng nổ như trận thắng Austria, nhưng thể hiện bản lĩnh kiểm soát rủi ro và kết liễu trận đấu đúng thời điểm."
+  ],
+  "tournamentImpact": [
+    "Spain trở thành đội tiếp theo vào tứ kết và sẽ gặp đội thắng cặp United States vs Belgium.",
+    "Portugal bị loại ở vòng 16 đội, khép lại một chiến dịch có nhiều kỳ vọng nhưng thiếu khoảnh khắc tấn công đủ sắc ở trận knock-out lớn nhất của họ.",
+    "Trận này củng cố narrative rằng vòng knock-out 2026 đang cực kỳ khắc nghiệt với các ứng viên lớn: Brazil đã rơi trước Norway, Portugal tiếp tục rời giải trước Spain.",
+    "Nếu Belgium vượt qua United States, tứ kết Spain vs Belgium sẽ là bài test kiểm soát bóng trước chất lượng chuyển trạng thái. Nếu United States lội ngược dòng, Spain sẽ gặp đội chủ nhà còn lại của giải.",
+    "Portugal rời giải cũng làm nhóm focus của người dùng chuyển mạnh sang Argentina: sau Brazil và Portugal, Argentina là đội lớn tiếp theo phải chứng minh khả năng sống sót ở vòng 16 đội."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Mikel Merino",
+      "team": "Spain",
+      "note": "Ghi bàn thắng duy nhất ở phút 90+1 sau khi vào sân từ ghế dự bị, đưa Spain vào tứ kết."
+    },
+    {
+      "name": "Ferran Torres",
+      "team": "Spain",
+      "note": "Tham gia trực tiếp vào pha phối hợp tạo bàn quyết định cho Merino."
+    },
+    {
+      "name": "Unai Simon",
+      "team": "Spain",
+      "note": "Có pha cản phá quan trọng trước Cristiano Ronaldo, giữ sạch lưới trong trận derby căng thẳng."
+    },
+    {
+      "name": "Diogo Costa",
+      "team": "Portugal",
+      "note": "Cứu Portugal khỏi việc thủng lưới sớm hơn, đặc biệt trong giai đoạn Spain tăng sức ép ở hiệp hai."
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "team": "Portugal",
+      "note": "Chơi đủ 90 phút ở tuổi 41 trong trận có thể là lần cuối cùng của anh tại World Cup."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina chưa thi đấu trong cụm cập nhật này, nhưng áp lực đang tăng lên rõ rệt: Brazil đã bị Norway loại, Portugal bị Spain loại, nên trận gặp Egypt không còn là bài test bình thường mà là phép thử bản lĩnh sống sót của ứng viên lớn tiếp theo.",
+    "Brazil": "Brazil đã bị loại từ ngày 5/7. Sau thất bại của Portugal, cú ngã của Brazil không còn là ngoại lệ đơn lẻ mà trở thành một phần của pattern knock-out: đội lớn nếu không kết liễu sớm sẽ dễ bị trừng phạt bởi một khoảnh khắc muộn.",
+    "Portugal": "Portugal là trọng tâm buồn của ngày. Họ phòng ngự tốt trong phần lớn trận đấu nhưng thiếu nhịp tấn công đủ sắc, rồi bị Merino kết liễu ở phút 90+1. Đây có thể là dấu chấm hết cho hành trình World Cup của Ronaldo."
+  },
+  "watchNext": [
+    "United States vs Belgium: trận vẫn đang diễn ra và sẽ xác định đối thủ của Spain ở tứ kết.",
+    "Argentina vs Egypt: Argentina cần tránh cú sốc tiếp theo cho nhóm ứng viên lớn.",
+    "Switzerland vs Colombia: cặp đấu cân bằng, nhiều khả năng được quyết định bởi chuyển trạng thái và khả năng tận dụng khoảnh khắc.",
+    "Morocco vs France: tứ kết đã rõ, Morocco có momentum còn France vẫn sống bằng bản lĩnh knock-out.",
+    "Norway vs England: Haaland gặp một England vừa sống sót qua trận hỗn loạn trước Mexico."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Spain second-half possession and territorial pressure",
+      "link": "enabled",
+      "to": "Portugal forced into deeper defensive survival phase"
+    },
+    {
+      "from": "Diogo Costa saves and Portugal compact block",
+      "link": "enabled",
+      "to": "Portugal keep match scoreless until stoppage time"
+    },
+    {
+      "from": "Ferran Torres quick combination in stoppage time",
+      "link": "caused",
+      "to": "Mikel Merino receives decisive chance in the box"
+    },
+    {
+      "from": "Mikel Merino 90+1 winner",
+      "link": "caused",
+      "to": "Spain 1-0 Portugal and Spain advance to quarter-final"
+    },
+    {
+      "from": "Portugal round-of-16 elimination",
+      "link": "caused",
+      "to": "Cristiano Ronaldo World Cup career likely ends without a knockout rescue moment"
+    },
+    {
+      "from": "Brazil and Portugal eliminated in consecutive knockout days",
+      "link": "caused",
+      "to": "Tournament contender map shifts and pressure increases on Argentina before Egypt"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FIFA - World Cup 2026 match schedule and results",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    },
+    {
+      "name": "Reuters - Merino strikes late as Spain edge Portugal to reach World Cup quarter-finals",
+      "url": "https://www.reuters.com/sports/soccer/merino-strikes-late-spain-edge-portugal-reach-world-cup-quarter-finals-2026-07-06/"
+    },
+    {
+      "name": "The Guardian - Portugal 0-1 Spain live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/06/portugal-v-spain-world-cup-2026-last-16-live"
+    },
+    {
+      "name": "FOX Sports - Portugal vs Spain final score",
+      "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-portugal-vs-spain-jul-06-2026-game-boxscore-607923"
+    },
+    {
+      "name": "The Sporting News - USA vs Belgium live score and highlights",
+      "url": "https://www.sportingnews.com/us/soccer/news/usa-vs-belgium-world-cup-live-score-result-highlights/025e4e52bfdf8bb1180f0950"
+    }
+  ]
+}
