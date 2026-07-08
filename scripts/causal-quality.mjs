@@ -250,6 +250,36 @@ export function assessCausalQuality({ events, links, insights }, packId = 'pack'
     W(`nextWatchpoints: ${withWatch.length}/${completed.length} completed matches (${Math.round(watchCoverage * 100)}%) carry watchpoints — target ≥90%`);
   }
 
+  // ── 8b. bilingual coverage — every EN causal string wants a fluent VI twin ─
+  // VI is ADDITIVE: a missing _vi falls back to English on the page, so these are
+  // warnings (they degrade the page, they don't break it) — but the coverage % is
+  // printed so a regression in the daily VI output is visible in CI.
+  const sameText = (a, b) => normalizeEvidence(a) === normalizeEvidence(b) && String(a ?? '').trim() !== '';
+  const withWhy = live.filter((e) => String(e.whyItMatters ?? '').trim() && !TEMPLATED_WHY.some((re) => re.test(String(e.whyItMatters))));
+  let whyViCount = 0;
+  for (const e of withWhy) {
+    const vi = String(e.whyItMatters_vi ?? '').trim();
+    if (!vi) { W(`event ${e.id}: has whyItMatters but no whyItMatters_vi — a Vietnamese reader sees English fallback`); continue; }
+    whyViCount++;
+    if (sameText(e.whyItMatters_vi, e.whyItMatters)) {
+      W(`event ${e.id}: whyItMatters_vi is identical to the English — it was not actually translated`);
+    }
+  }
+  const withWatchAll = live.filter((e) => Array.isArray(e.nextWatchpoints) && e.nextWatchpoints.length > 0);
+  let watchViCount = 0;
+  for (const e of withWatchAll) {
+    const vi = e.nextWatchpoints_vi;
+    if (!Array.isArray(vi) || vi.length === 0) { W(`event ${e.id}: has nextWatchpoints but no nextWatchpoints_vi`); continue; }
+    if (vi.length !== e.nextWatchpoints.length) {
+      W(`event ${e.id}: nextWatchpoints_vi has ${vi.length} item(s) but nextWatchpoints has ${e.nextWatchpoints.length} — one VI string per EN watchpoint`);
+    }
+    watchViCount++;
+    const identical = vi.every((v, i) => sameText(v, e.nextWatchpoints[i]));
+    if (identical) W(`event ${e.id}: nextWatchpoints_vi is identical to the English — not actually translated`);
+  }
+  const whyViCoverage = withWhy.length ? whyViCount / withWhy.length : 1;
+  const watchViCoverage = withWatchAll.length ? watchViCount / withWatchAll.length : 1;
+
   // ── 9. lineage + insight presence (the substrate must not be empty) ──────
   const lineage = evList.filter((e) => !e.status && !e.date); // static history-spine events
   if (lineage.length === 0) {
@@ -265,6 +295,9 @@ export function assessCausalQuality({ events, links, insights }, packId = 'pack'
     lineage: lineage.length, distinctRels, relCounts,
     distinctConf: new Set(confs.map((c) => c.toFixed(2))).size,
     templatedWhy, watchCoverage: Math.round(watchCoverage * 100),
+    whyViCoverage: Math.round(whyViCoverage * 100),
+    watchViCoverage: Math.round(watchViCoverage * 100),
+    whyViCount, whyTotal: withWhy.length, watchViCount, watchTotal: withWatchAll.length,
   };
   return { errors, warnings, stats };
 }
@@ -307,6 +340,8 @@ function main() {
     console.log(`  events=${stats.events} (completed ${stats.completed}, scheduled ${stats.scheduled}) links=${stats.links} insights=${stats.insights} lineage=${stats.lineage}`);
     console.log(`  relationships=${stats.distinctRels} distinct ${JSON.stringify(stats.relCounts)} · confidence=${stats.distinctConf} distinct`);
     console.log(`  templated whyItMatters=${stats.templatedWhy} · watchpoint coverage=${stats.watchCoverage}%`);
+    const viExcl = stats.templatedWhy ? ` (excludes ${stats.templatedWhy} templated)` : '';
+    console.log(`  VI coverage: whyItMatters_vi ${stats.whyViCount}/${stats.whyTotal} (${stats.whyViCoverage}%)${viExcl} · nextWatchpoints_vi ${stats.watchViCount}/${stats.watchTotal} (${stats.watchViCoverage}%)`);
     for (const w of warnings) console.log(`  ! WARN ${w}`);
     if (errors.length) {
       failed = true;

@@ -7,6 +7,12 @@
 > This document is the quality bar every daily update must clear — and the reason a
 > mechanical "here's the scoreline + who scored" feed makes the page *disprove* the
 > product instead of proving it.
+>
+> **The page is bilingual (Vietnamese + English).** A Vietnamese reader who switches
+> the page to VI must see the causal prose *in Vietnamese*, not English fallback. So
+> every causal string the page renders ships in BOTH languages: English in the
+> canonical field (`whyItMatters`, `nextWatchpoints`) and fluent Vietnamese in the
+> `_vi` twin (`whyItMatters_vi`, `nextWatchpoints_vi`). See §2b.
 
 This is the contract the daily process must satisfy. It is enforced in code by
 `scripts/causal-quality.mjs` (a gate that FAILS on templated/broken causal data) and
@@ -48,7 +54,9 @@ For **each completed match** (a `status:"completed"` event):
 | `title` | `"<TeamA> <a>–<b> <TeamB>"` — real, sourced scoreline. For a KO decided on penalties: `"A 1–1 B (4–2 pens)"`. The winner's score is the higher number in the *winner's* order. |
 | `description` | 1–2 sentences: what happened, in context (not just the scoreline). |
 | `whyItMatters` | **The stakes.** What this result *changes* and what it *sets up*. Never `"Scorers: …"`, never `"Full-time …"`. See §2. |
+| `whyItMatters_vi` | **Fluent Vietnamese twin** of `whyItMatters` — same stakes, natural football-fan tone, not machine-literal. **Required whenever `whyItMatters` is present.** See §2b. |
 | `nextWatchpoints` | **2–5** concrete things to watch next (the fixture it sets up, the GD race, a returning suspension, an echo to watch). |
+| `nextWatchpoints_vi` | **Fluent Vietnamese twin** of `nextWatchpoints` — same array length, one VI string per EN watchpoint. **Required whenever `nextWatchpoints` is present.** See §2b. |
 | `entities` | Both teams (names the UI resolves — see §5) + the group or round label + optionally the venue. |
 | `sources` | **REQUIRED** — a real citation URL where the scoreline is verifiable. `add-match-day.mjs` rejects a completed result with no source. |
 | `date` / `dateLabel` / `status` | ISO `YYYY-MM-DD` / `"June 24, 2026"` / `"completed"`. |
@@ -65,6 +73,9 @@ For **each result**, add **2–5 typed causal links** with:
   everything is 0.62.
 - **Specific evidence** — one sentence naming the actual mechanism, not a reusable
   template. The same evidence string appearing twice is a FAIL.
+- **`evidence_vi` (optional but encouraged)** — a fluent Vietnamese twin of the
+  evidence sentence. Not gated (links are dense and secondary), but when cheap to
+  author it lets the page render the causal-link tooltips in Vietnamese too.
 - **event → event** endpoints that both exist in the pack. A "sets up the next fixture"
   link points at a real `scheduled` event.
 
@@ -103,6 +114,70 @@ Worked examples from the **actual current matches** (rewrite the live templated 
 
 ---
 
+## 2b. Bilingual causal prose — `_vi` is not optional
+
+The page ships in **Vietnamese and English**. When a reader picks VI, the drawer reads
+`whyItMatters_vi` / `nextWatchpoints_vi` and falls back to the English canonical field
+only when the `_vi` twin is absent. A Vietnamese reader seeing English detail text is a
+visible quality failure — the whole point of the causal layer is lost in translation.
+
+**So every daily update emits BOTH languages:**
+
+| EN field (canonical) | VI twin (required when EN present) | Type |
+|----------------------|------------------------------------|------|
+| `whyItMatters` | `whyItMatters_vi` | string |
+| `nextWatchpoints` | `nextWatchpoints_vi` | string[] (same length) |
+| `evidence` (on links) | `evidence_vi` (encouraged, not gated) | string |
+| `pattern` / `description` (on insights) | `pattern_vi` / `description_vi` (encouraged) | string |
+
+The current pack ships `evidence_vi` on **all** links and `pattern_vi`/`description_vi`
+on **all** insights as the new baseline — future daily updates should keep them bilingual
+too (add the VI twin whenever you add or edit the EN).
+
+**Translation quality bar — natural, not machine-literal:**
+
+- Write Vietnamese a football fan would actually read — the register of a VnExpress /
+  Bongdaplus match report, not Google-Translate word order.
+- **Keep proper nouns sensible.** Team, player, competition, and venue names stay in
+  their common Vietnamese sports-press form: countries use the familiar VI name
+  (`Mexico → Mexico`, `South Africa → Nam Phi`, `Netherlands → Hà Lan`,
+  `Ivory Coast → Bờ Biển Ngà`, `USA → Mỹ`, `South Korea → Hàn Quốc`), while player and
+  city names stay as written. Do **not** transliterate team names into something the
+  bracket can't recognise — the `_vi` text is prose, the `entities` stay canonical EN.
+- **Preserve the causal tone.** `whyItMatters` is stakes → what it changes → what it
+  sets up; the VI twin must carry the same causal arc, not a flat "đội A thắng đội B".
+- **`nextWatchpoints_vi` is 1:1** — one VI string per EN watchpoint, same order, same
+  count. The validator warns if the lengths differ.
+- **Never a copy of the EN.** A `_vi` value byte-identical to its EN twin is treated as
+  "not translated" and warned (see §4).
+- **The EN canonical field is the source of truth and is never edited to fit the VI.**
+  Fix a bad EN line in EN; the VI follows.
+
+Worked VI examples (translating the §2 lines above — fluent, causal, fan-register):
+
+| Match | `whyItMatters` (EN) | `whyItMatters_vi` (VI) |
+|-------|---------------------|------------------------|
+| Mexico 2–0 South Africa | A clean home win on opening night puts co-host Mexico in control of Group A and gives the tournament a confident, on-script start at the Azteca. | Chiến thắng sạch lưới ngay trận khai mạc trên sân nhà giúp đồng chủ nhà Mexico nắm quyền kiểm soát bảng A, mở màn giải đấu đúng kịch bản ngay tại Azteca. |
+| Canada 6–0 Qatar | Canada's first-ever men's World Cup win banks a commanding goal difference — often the tie-breaker in a group of four — turning a milestone into a real qualification platform. | Chiến thắng đầu tiên trong lịch sử dự World Cup của tuyển nam Canada mang về hiệu số bàn thắng vượt trội — thứ thường phân định ngôi đầu ở bảng bốn đội — biến cột mốc lịch sử thành bàn đạp đi tiếp thực sự. |
+| Morocco 3–0 Canada (QF) | Morocco reach a second straight World Cup quarter-final and confirm their counter-attacking model travels; Canada's dream host run ends at the last eight. | Morocco lần thứ hai liên tiếp vào tứ kết World Cup và chứng minh lối chơi phản công của họ phát huy hiệu quả ở mọi sân chơi; hành trình mơ mộng của chủ nhà Canada dừng lại ở vòng tám đội mạnh nhất. |
+
+Worked `nextWatchpoints_vi` (1:1 with the EN array on Mexico 2–0 South Africa):
+
+```
+"nextWatchpoints": [
+  "Whether Mexico can back up the win against South Korea",
+  "South Africa's need to respond after an opening-day defeat",
+  "Group A's clean-sheet and goal-difference race taking shape"
+],
+"nextWatchpoints_vi": [
+  "Liệu Mexico có duy trì được phong độ trước Hàn Quốc",
+  "Sức ép buộc Nam Phi phải đáp trả sau thất bại ngày ra quân",
+  "Cuộc đua sạch lưới và hiệu số bàn thắng ở bảng A đang định hình"
+]
+```
+
+---
+
 ## 3. Daily process (paste this into the scheduled updater)
 
 ```
@@ -121,13 +196,18 @@ Each run:
    completed result produce a REAL, non-templated:
      - title  "TeamA a–b TeamB"  (winner's order; penalties as "A 1–1 B (4–2 pens)")
      - whyItMatters  — stakes / what it changes / what it sets up (NEVER "Scorers: …")
+     - whyItMatters_vi — the SAME line in fluent Vietnamese (fan register, causal tone,
+       proper nouns sensible — see §2b). REQUIRED alongside whyItMatters.
      - nextWatchpoints — 2–5 concrete things to watch next
+     - nextWatchpoints_vi — the SAME array in Vietnamese, one VI string per EN item,
+       same order + length. REQUIRED alongside nextWatchpoints.
      - entities — both teams (UI-resolvable names) + group/round + optional venue
      - sources — REQUIRED citation URL
      - kickoff (recommended) — ISO datetime for the fixtures this sets up
    Then 2–5 typed links per result with VARIED relationships (caused/enabled/
    accelerated/inspired/delayed/prevented — include negative causation), honest
    VARIED confidence, and SPECIFIC evidence (never a reused template sentence).
+   Add evidence_vi (fluent VI twin of the evidence) where cheap — encouraged, not gated.
    Where a result echoes World Cup history, add a link into the lineage spine.
    Attach new links to an existing insight pattern via insightInstances, or add a
    genuinely new pattern under newInsights.
@@ -167,6 +247,18 @@ A push FAILS if any of these are true (this is what the live pack currently trip
 
 Warnings (not fatal, but tracked): thin `whyItMatters`, missing lineage, < 2 insights,
 under-calibrated confidence, watchpoint coverage 50–90 %.
+
+**Bilingual coverage (warnings — VI is additive, so it degrades gracefully rather than
+blocking a push):**
+
+- An event has `whyItMatters` but no `whyItMatters_vi` (VI coverage gap).
+- An event has `nextWatchpoints` but no `nextWatchpoints_vi`, or the two arrays differ
+  in length (a watchpoint went untranslated).
+- A `_vi` value is byte-identical to its EN twin (not actually translated).
+
+These are warnings, not hard failures: a Vietnamese reader falls back to English when a
+`_vi` is missing, so a coverage gap degrades the page rather than breaking it. The gate
+prints the VI coverage percentage so a regression is visible in CI even while soft.
 
 ---
 

@@ -30,7 +30,9 @@
     "domains": [
       "culture",
       "systems"
-    ]
+    ],
+    "pattern_vi": "Chiến thắng đậm tạo khí thế và hiệu số bàn thắng dự phòng",
+    "description_vi": "Một chiến thắng cách biệt lớn vừa mang lại lợi thế hiệu số bàn thắng thực tế, vừa tạo ra đà tâm lý hưng phấn kéo dài sang trận kế tiếp."
   },
   {
     "id": "pattern--codification-enables-scale",
@@ -48,7 +50,9 @@
       "systems",
       "culture"
     ],
-    "contributedBy": "system"
+    "contributedBy": "system",
+    "pattern_vi": "Luật hóa mở đường cho sự bành trướng",
+    "description_vi": "Một bộ luật chung được viết thành văn bản biến một hoạt động địa phương manh mún thành một hệ thống có thể phối hợp và nhân rộng qua các câu lạc bộ, quốc gia và châu lục. Bộ Luật của FA năm 1863 đã biến bóng đá dân gian thành một trò chơi có thể mang đi khắp nơi; chính bộ luật ấy tạo tiền đề cho các giải chuyên nghiệp, sự lan tỏa quốc tế, và cuối cùng là một tổ chức quản lý cùng một giải vô địch toàn cầu. Quy luật này lặp lại ở mọi nơi mà sự chuẩn hóa đi trước tăng trưởng: không có chuẩn chung thì không có quy mô."
   },
   {
     "id": "pattern--media-drives-globalization",
@@ -67,7 +71,9 @@
       "economy",
       "culture"
     ],
-    "contributedBy": "system"
+    "contributedBy": "system",
+    "pattern_vi": "Truyền thông thúc đẩy toàn cầu hóa và thương mại hóa",
+    "description_vi": "Mỗi bước nhảy vọt về độ phủ sóng biến giải đấu thành một bề mặt quảng cáo toàn cầu lớn hơn, kéo theo tiền tài trợ và bản quyền truyền hình, rồi số tiền ấy lại tài trợ cho việc mở rộng và toàn cầu hóa sâu hơn. Truyền hình (1954) rồi vệ tinh (1970) tạo ra lượng khán giả toàn cầu xem cùng lúc; độ phủ đó khiến tài trợ đa quốc gia trở nên giá trị, cấp vốn cho làn sóng thương mại hóa thời Havelange và bảo chứng cho những lần mở rộng giải liên tiếp. Chính năng lực truyền thông, chứ không phải giá trị chuyên môn, mới là thứ nhiều lần định trần cho mức độ toàn cầu và lợi nhuận của sự kiện."
   },
   {
     "id": "pattern--hosting-as-soft-power",
@@ -86,7 +92,9 @@
       "economy",
       "culture"
     ],
-    "contributedBy": "system"
+    "contributedBy": "system",
+    "pattern_vi": "Quyền đăng cai như một công cụ quyền lực mềm",
+    "description_vi": "Đăng cai World Cup nhiều lần được lựa chọn và tranh giành như một công cụ phô diễn hình ảnh quốc gia và thâm nhập thị trường, chứ không đơn thuần là thể thao. Italy 1934 biến việc đăng cai thành công cụ tuyên truyền của nhà nước; quyền đăng cai World Cup 1994 trao cho Mỹ nhắm tới một thị trường thương mại và buộc phải khai sinh giải MLS; cơ chế luân phiên đưa giải đến châu Á (2002) và châu Phi (2010); còn hồ sơ chung của khu vực Bắc Mỹ năm 2026 tận dụng hạ tầng sẵn có cùng tham vọng quyền lực mềm. Ai được đăng cai được định đoạt bởi địa chính trị, quy mô thị trường và uy tín chẳng kém gì sự sẵn sàng về chuyên môn bóng đá."
   },
   {
     "id": "pattern--expansion-creates-new-structure",
@@ -101,7 +109,9 @@
       "systems",
       "culture"
     ],
-    "contributedBy": "system"
+    "contributedBy": "system",
+    "pattern_vi": "Mở rộng số đội tạo ra cấu trúc giải mới",
+    "description_vi": "Mỗi lần mở rộng số đội tham dự lại buộc phải tạo ra một cấu trúc thi đấu chưa từng tồn tại, và cấu trúc mới ấy định hình lại cách cả giải đấu diễn ra. Bước nhảy từ 32 lên 48 đội (được phê duyệt năm 2017) khai sinh vòng loại trực tiếp 1/16 hoàn toàn mới ở kỳ 2026 — một vòng đấu chưa có tiền lệ — và biến tám đội xếp thứ ba xuất sắc nhất thành một con đường đi tiếp thực sự. Bài học ấy lặp lại xuyên suốt lịch sử World Cup: thay đổi số đội tham dự không bao giờ chỉ là \"thêm vài trận\", mà viết lại cả nhánh đấu lẫn các động lực bên trong nó."
   },
   {
     "id": "pattern--host-momentum-from-opening-result",
@@ -116,6 +126,8 @@
       "culture",
       "systems"
     ],
-    "contributedBy": "system"
+    "contributedBy": "system",
+    "pattern_vi": "Đà tâm lý của chủ nhà từ kết quả ra quân",
+    "description_vi": "Kết quả sớm của đội chủ nhà tác động một cách vượt trội đến bầu không khí và cả bài toán điểm số của giải đấu với họ. Những chiến thắng đầy tự tin (Mexico thắng 2–0 và Mỹ thắng 4–1 ngày khai mạc; Canada vùi dập 6–0 ở lượt hai) mang về hiệu số bàn thắng và thổi bùng khí thế khán giả nhà; còn một cú sảy chân về sau (Turkey thắng Mỹ 3–2) có thể đảo chiều đà tâm lý cũng nhanh không kém. Bởi thứ hạng ở bảng bốn đội thường được phân định bằng hiệu số bàn thắng, nên cách biệt tỷ số của chủ nhà vọng mãi đến tận suất xếp hạt giống vòng knock-out."
   }
 ]
