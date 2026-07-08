@@ -3756,8 +3756,8 @@
   },
   {
     "id": "wc2026-argentina-egypt-0707",
-    "title": "Argentina vs Egypt",
-    "description": "Round of 16 fixture: Argentina vs Egypt, July 7, 2026 at Atlanta.",
+    "title": "Argentina 3–2 Egypt",
+    "description": "Argentina beat Egypt 3–2 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3765,7 +3765,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3774,7 +3774,7 @@
     ],
     "date": "2026-07-07",
     "dateLabel": "July 7, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Argentina",
       "Egypt",
@@ -3795,8 +3795,8 @@
   },
   {
     "id": "wc2026-switzerland-colombia-0707",
-    "title": "Switzerland vs Colombia",
-    "description": "Round of 16 fixture: Switzerland vs Colombia, July 7, 2026 at Vancouver.",
+    "title": "Switzerland 0–0 Colombia",
+    "description": "Switzerland drew Colombia 0–0 in Round of 16.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -3804,7 +3804,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "round-of-16",
@@ -3813,7 +3813,7 @@
     ],
     "date": "2026-07-07",
     "dateLabel": "July 7, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Switzerland",
       "Colombia",
@@ -5162,6 +5162,41 @@
     "entities": [
       "Norway",
       "England",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Upcoming Quarter-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-spain-belgium-0710",
+    "title": "Spain vs Belgium",
+    "description": "Quarter-final fixture: Spain vs Belgium, July 10, 2026 at Los Angeles (Inglewood).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "spain",
+      "belgium"
+    ],
+    "date": "2026-07-10",
+    "dateLabel": "July 10, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Spain",
+      "Belgium",
       "Quarter-final"
     ],
     "whyItMatters": "Upcoming Quarter-final match.",

@@ -1442,5 +1442,13 @@
     "relationship": "accelerated",
     "confidence": 0.62,
     "evidence": "Morocco's 3–0 win banked a goal-difference cushion heading into Morocco vs France."
+  },
+  {
+    "id": "wc2026-usa-belgium-0706--accelerated-->wc2026-spain-belgium-0710",
+    "fromEvent": "wc2026-usa-belgium-0706",
+    "toEvent": "wc2026-spain-belgium-0710",
+    "relationship": "accelerated",
+    "confidence": 0.62,
+    "evidence": "Belgium's 4–1 win banked a goal-difference cushion heading into Belgium vs Spain."
   }
 ]
