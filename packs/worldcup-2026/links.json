@@ -5,7 +5,8 @@
     "toEvent": "wc2026-mexico-ecuador-0630",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Mexico's 3–0 win banked a goal-difference cushion heading into Mexico vs Ecuador."
+    "evidence": "Mexico's 3–0 win banked a goal-difference cushion heading into Mexico vs Ecuador.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Mexico tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Mexico gặp Ecuador."
   },
   {
     "id": "wc2026-switzerland-bosnia-and-herzegovina-0618--accelerated-->wc2026-switzerland-canada-0624",
@@ -13,7 +14,8 @@
     "toEvent": "wc2026-switzerland-canada-0624",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Switzerland's 4–1 win banked a goal-difference cushion heading into Switzerland vs Canada."
+    "evidence": "Switzerland's 4–1 win banked a goal-difference cushion heading into Switzerland vs Canada.",
+    "evidence_vi": "Chiến thắng 4–1 giúp Thụy Sĩ tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Thụy Sĩ gặp Canada."
   },
   {
     "id": "wc2026-canada-qatar-0618--accelerated-->wc2026-switzerland-canada-0624",
@@ -21,7 +23,8 @@
     "toEvent": "wc2026-switzerland-canada-0624",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Canada's 6–0 win banked a goal-difference cushion heading into Canada vs Switzerland."
+    "evidence": "Canada's 6–0 win banked a goal-difference cushion heading into Canada vs Switzerland.",
+    "evidence_vi": "Chiến thắng 6–0 giúp Canada tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Canada gặp Thụy Sĩ."
   },
   {
     "id": "wc2026-brazil-haiti-0619--accelerated-->wc2026-scotland-brazil-0624",
@@ -29,7 +32,8 @@
     "toEvent": "wc2026-scotland-brazil-0624",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Brazil's 3–0 win banked a goal-difference cushion heading into Brazil vs Scotland."
+    "evidence": "Brazil's 3–0 win banked a goal-difference cushion heading into Brazil vs Scotland.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Brazil tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Brazil gặp Scotland."
   },
   {
     "id": "wc2026-scotland-brazil-0624--accelerated-->wc2026-brazil-japan-0629",
@@ -37,7 +41,8 @@
     "toEvent": "wc2026-brazil-japan-0629",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Brazil's 3–0 win banked a goal-difference cushion heading into Brazil vs Japan."
+    "evidence": "Brazil's 3–0 win banked a goal-difference cushion heading into Brazil vs Japan.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Brazil tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Brazil gặp Nhật Bản."
   },
   {
     "id": "wc2026-usa-paraguay-0612--accelerated-->wc2026-usa-australia-0619",
@@ -52,7 +57,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Màn ra quân thuyết phục với chiến thắng 4–1 giúp Mỹ vừa cải thiện hiệu số bàn thắng vừa có được khí thế trên sân nhà, làm nền cho chiến thắng đĩnh đạc 2–0 trước Australia ở trận thứ hai."
   },
   {
     "id": "wc2026-germany-curacao-0614--accelerated-->wc2026-germany-ivory-coast-0620",
@@ -60,7 +66,8 @@
     "toEvent": "wc2026-germany-ivory-coast-0620",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Germany's 7–1 win banked a goal-difference cushion heading into Germany vs Ivory Coast."
+    "evidence": "Germany's 7–1 win banked a goal-difference cushion heading into Germany vs Ivory Coast.",
+    "evidence_vi": "Chiến thắng 7–1 giúp Đức tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Đức gặp Bờ Biển Ngà."
   },
   {
     "id": "wc2026-sweden-tunisia-0614--accelerated-->wc2026-netherlands-sweden-0620",
@@ -68,7 +75,8 @@
     "toEvent": "wc2026-netherlands-sweden-0620",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Sweden's 5–1 win banked a goal-difference cushion heading into Sweden vs Netherlands."
+    "evidence": "Sweden's 5–1 win banked a goal-difference cushion heading into Sweden vs Netherlands.",
+    "evidence_vi": "Chiến thắng 5–1 giúp Thụy Điển tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Thụy Điển gặp Hà Lan."
   },
   {
     "id": "wc2026-netherlands-sweden-0620--accelerated-->wc2026-tunisia-netherlands-0625",
@@ -76,7 +84,8 @@
     "toEvent": "wc2026-tunisia-netherlands-0625",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Netherlands's 5–1 win banked a goal-difference cushion heading into Netherlands vs Tunisia."
+    "evidence": "Netherlands's 5–1 win banked a goal-difference cushion heading into Netherlands vs Tunisia.",
+    "evidence_vi": "Chiến thắng 5–1 giúp Hà Lan tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Hà Lan gặp Tunisia."
   },
   {
     "id": "wc2026-tunisia-japan-0620--accelerated-->wc2026-japan-sweden-0625",
@@ -84,7 +93,8 @@
     "toEvent": "wc2026-japan-sweden-0625",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Japan's 4–0 win banked a goal-difference cushion heading into Japan vs Sweden."
+    "evidence": "Japan's 4–0 win banked a goal-difference cushion heading into Japan vs Sweden.",
+    "evidence_vi": "Chiến thắng 4–0 giúp Nhật Bản tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Nhật Bản gặp Thụy Điển."
   },
   {
     "id": "wc2026-new-zealand-belgium-0626--accelerated-->wc2026-belgium-senegal-0701",
@@ -92,7 +102,8 @@
     "toEvent": "wc2026-belgium-senegal-0701",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Belgium's 5–1 win banked a goal-difference cushion heading into Belgium vs Senegal."
+    "evidence": "Belgium's 5–1 win banked a goal-difference cushion heading into Belgium vs Senegal.",
+    "evidence_vi": "Chiến thắng 5–1 giúp Bỉ tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Bỉ gặp Senegal."
   },
   {
     "id": "wc2026-spain-saudi-arabia-0621--accelerated-->wc2026-uruguay-spain-0626",
@@ -100,7 +111,8 @@
     "toEvent": "wc2026-uruguay-spain-0626",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Spain's 4–0 win banked a goal-difference cushion heading into Spain vs Uruguay."
+    "evidence": "Spain's 4–0 win banked a goal-difference cushion heading into Spain vs Uruguay.",
+    "evidence_vi": "Chiến thắng 4–0 giúp Tây Ban Nha tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Tây Ban Nha gặp Uruguay."
   },
   {
     "id": "wc2026-iraq-norway-0616--accelerated-->wc2026-norway-senegal-0622",
@@ -108,7 +120,8 @@
     "toEvent": "wc2026-norway-senegal-0622",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Norway's 4–1 win banked a goal-difference cushion heading into Norway vs Senegal."
+    "evidence": "Norway's 4–1 win banked a goal-difference cushion heading into Norway vs Senegal.",
+    "evidence_vi": "Chiến thắng 4–1 giúp Na Uy tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Na Uy gặp Senegal."
   },
   {
     "id": "wc2026-france-iraq-0622--accelerated-->wc2026-norway-france-0626",
@@ -116,7 +129,8 @@
     "toEvent": "wc2026-norway-france-0626",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "France's 3–0 win banked a goal-difference cushion heading into France vs Norway."
+    "evidence": "France's 3–0 win banked a goal-difference cushion heading into France vs Norway.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Pháp tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Pháp gặp Na Uy."
   },
   {
     "id": "wc2026-norway-france-0626--accelerated-->wc2026-france-sweden-0630",
@@ -124,7 +138,8 @@
     "toEvent": "wc2026-france-sweden-0630",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "France's 4–1 win banked a goal-difference cushion heading into France vs Sweden."
+    "evidence": "France's 4–1 win banked a goal-difference cushion heading into France vs Sweden.",
+    "evidence_vi": "Chiến thắng 4–1 giúp Pháp tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Pháp gặp Thụy Điển."
   },
   {
     "id": "wc2026-senegal-iraq-0626--accelerated-->wc2026-belgium-senegal-0701",
@@ -132,7 +147,8 @@
     "toEvent": "wc2026-belgium-senegal-0701",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Senegal's 5–0 win banked a goal-difference cushion heading into Senegal vs Belgium."
+    "evidence": "Senegal's 5–0 win banked a goal-difference cushion heading into Senegal vs Belgium.",
+    "evidence_vi": "Chiến thắng 5–0 giúp Senegal tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Senegal gặp Bỉ."
   },
   {
     "id": "wc2026-argentina-algeria-0616--accelerated-->wc2026-argentina-austria-0622",
@@ -140,7 +156,8 @@
     "toEvent": "wc2026-argentina-austria-0622",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Argentina's 3–0 win banked a goal-difference cushion heading into Argentina vs Austria."
+    "evidence": "Argentina's 3–0 win banked a goal-difference cushion heading into Argentina vs Austria.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Argentina tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Argentina gặp Áo."
   },
   {
     "id": "wc2026-portugal-uzbekistan-0623--accelerated-->wc2026-colombia-portugal-0627",
@@ -148,7 +165,8 @@
     "toEvent": "wc2026-colombia-portugal-0627",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Portugal's 5–0 win banked a goal-difference cushion heading into Portugal vs Colombia."
+    "evidence": "Portugal's 5–0 win banked a goal-difference cushion heading into Portugal vs Colombia.",
+    "evidence_vi": "Chiến thắng 5–0 giúp Bồ Đào Nha tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Bồ Đào Nha gặp Colombia."
   },
   {
     "id": "wc2026-france-sweden-0630--accelerated-->wc2026-paraguay-france-0704",
@@ -156,7 +174,8 @@
     "toEvent": "wc2026-paraguay-france-0704",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "France's 3–0 win banked a goal-difference cushion heading into France vs Paraguay."
+    "evidence": "France's 3–0 win banked a goal-difference cushion heading into France vs Paraguay.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Pháp tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Pháp gặp Paraguay."
   },
   {
     "id": "wc2026-spain-austria-0702--accelerated-->wc2026-portugal-spain-0706",
@@ -164,7 +183,8 @@
     "toEvent": "wc2026-portugal-spain-0706",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Spain's 3–0 win banked a goal-difference cushion and momentum heading into the next fixture."
+    "evidence": "Spain's 3–0 win banked a goal-difference cushion and momentum heading into the next fixture.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Tây Ban Nha vừa tích lũy lợi thế hiệu số bàn thắng vừa có được khí thế trước khi bước vào trận đấu kế tiếp."
   },
   {
     "id": "folk-football--inspired-->public-school-football",
@@ -182,7 +202,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Các trường công lập đã biến bản năng bóng đá dân gian được thừa hưởng thành những trò chơi có luật lệ, mỗi trường tự viết ra bộ luật riêng dựa trên cùng một truyền thống thô sơ."
   },
   {
     "id": "public-school-football--caused-->fa-codification-1863",
@@ -200,7 +221,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Sự khác biệt không tương thích giữa các bộ luật của những trường công lập — đặc biệt là quy định về việc dùng tay chơi bóng — đã tạo ra nhu cầu trực tiếp mà cuộc họp thành lập FA năm 1863 giải quyết bằng một bộ luật thống nhất."
   },
   {
     "id": "folk-football--enabled-->fa-codification-1863",
@@ -218,7 +240,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Phải có một trò chơi phổ biến rộng rãi thì mới có cái để đưa vào luật; nếu không có sẵn tập tục bóng đá dân gian thì FA chẳng có gì để chuẩn hóa."
   },
   {
     "id": "fa-codification-1863--enabled-->professionalism-1885",
@@ -236,7 +259,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Luật chơi thống nhất khiến các trận đấu tranh tài có tổ chức trở nên khả thi, từ đó sinh ra những câu lạc bộ sẵn sàng trả tiền để có cầu thủ giỏi nhất — nền tảng cho việc hợp pháp hóa bóng đá chuyên nghiệp."
   },
   {
     "id": "fa-codification-1863--enabled-->football-league-1888",
@@ -254,7 +278,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một bộ luật chung là điều kiện tiên quyết để có lịch thi đấu định kỳ giữa các câu lạc bộ; không thể vận hành một giải đấu nếu không có luật lệ được nhất trí."
   },
   {
     "id": "professionalism-1885--caused-->football-league-1888",
@@ -272,7 +297,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Các cầu thủ chuyên nghiệp được trả lương cần những trận đấu định kỳ sinh ra doanh thu để duy trì tài chính, điều này trực tiếp thúc đẩy việc thành lập một giải đấu có lịch trình cố định."
   },
   {
     "id": "football-league-1888--inspired-->fifa-sponsorship-1978",
@@ -290,7 +316,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Football League đã thiết lập mô hình thương mại dựa trên bán vé và lịch thi đấu mà các giải quốc tế và FIFA sau này mở rộng lên quy mô lớn hơn."
   },
   {
     "id": "fa-codification-1863--enabled-->british-empire-football-spread",
@@ -308,7 +335,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một bộ luật thống nhất và dễ mang theo giúp thương nhân và thủy thủ Anh dạy cùng một môn thể thao ở bất cứ nơi nào họ đặt chân đến; một trò chơi dân gian không có luật thì không thể lan rộng thành một môn thể thao nhất quán."
   },
   {
     "id": "british-empire-football-spread--caused-->fifa-founded-1904",
@@ -326,7 +354,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một khi nhiều quốc gia cùng chơi một môn thể thao đã được luật hóa, thì việc có một tổ chức điều hành các trận đấu giữa họ trở nên cần thiết — đó chính là mục đích rõ ràng mà FIFA được thành lập."
   },
   {
     "id": "fa-codification-1863--enabled-->fifa-founded-1904",
@@ -344,7 +373,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "FIFA lấy Luật Chơi của FA làm nền tảng; tổ chức quốc tế này ra đời trên tiền đề đã có sẵn một bộ luật chung để điều hành."
   },
   {
     "id": "football-league-1888--inspired-->fifa-founded-1904",
@@ -362,7 +392,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Mô hình tổ chức của một liên đoàn điều hành hệ thống thi đấu có cấu trúc đã định hình cách bóng đá quốc tế được thể chế hóa."
   },
   {
     "id": "fifa-founded-1904--enabled-->olympic-football-1908",
@@ -380,7 +411,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "FIFA cung cấp cơ chế điều hành quốc tế cho phép giải bóng đá Olympic được tổ chức như một cuộc tranh tài chính thức giữa các liên đoàn quốc gia."
   },
   {
     "id": "fifa-founded-1904--caused-->first-world-cup-1930",
@@ -398,7 +430,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Kỳ World Cup đầu tiên do FIFA tổ chức và điều hành; giải vô địch thế giới chỉ tồn tại được vì đã có một tổ chức điều hành quốc tế đứng ra đăng cai."
   },
   {
     "id": "olympic-football-1908--accelerated-->first-world-cup-1930",
@@ -416,7 +449,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Sức hút của bóng đá Olympic, cùng với quy định chỉ dành cho cầu thủ nghiệp dư, đã chứng minh nhu cầu về một giải vô địch thế giới chuyên nghiệp và thúc đẩy FIFA nhanh chóng quyết định khởi động giải đấu này."
   },
   {
     "id": "british-empire-football-spread--enabled-->first-world-cup-1930",
@@ -434,7 +468,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một giải vô địch thế giới thực thụ đòi hỏi các đội tuyển quốc gia đủ sức tranh tài ở nhiều châu lục, điều mà quá trình lan tỏa môn thể thao trước đó đã tạo ra — Uruguay, Argentina và Brazil khi ấy đã rất mạnh."
   },
   {
     "id": "first-world-cup-1930--enabled-->world-cup-soft-power-1934",
@@ -452,7 +487,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một khi đã có một giải vô địch thế giới diễn ra định kỳ, các nước chủ nhà có thể lợi dụng nó; Italy 1934 là nước đầu tiên biến việc đăng cai thành công cụ tuyên truyền cho nhà nước."
   },
   {
     "id": "first-world-cup-1930--enabled-->maracanazo-1950",
@@ -470,7 +506,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Nỗi đau quốc gia mang tên Maracanazo chỉ có thể xảy ra vì World Cup đã trở thành danh hiệu tối cao mà việc để tuột mất có thể làm tổn thương cả một dân tộc."
   },
   {
     "id": "world-cup-soft-power-1934--inspired-->havelange-presidency-1974",
@@ -488,7 +525,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc sớm chứng minh rằng đăng cai giải đấu giúp phô trương sức mạnh quốc gia đã định hình sự sẵn lòng của FIFA sau này trong việc trao quyền tổ chức một cách chiến lược cho các khu vực khác nhau."
   },
   {
     "id": "first-world-cup-1930--enabled-->tv-broadcast-1954",
@@ -506,7 +544,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một giải đấu quốc tế đỉnh cao diễn ra định kỳ đã mang đến cho truyền hình non trẻ một sự kiện trực tiếp hạng sang đáng để phát sóng; thể thức World Cup chính là nội dung mà truyền hình cần."
   },
   {
     "id": "tv-broadcast-1954--enabled-->satellite-broadcast-1970",
@@ -524,7 +563,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc truyền hình phát sóng World Cup đã tạo dựng lượng khán giả và nhu cầu đủ lớn để biện minh cho khoản đầu tư vào truyền dẫn vệ tinh trực tiếp một thế hệ sau đó."
   },
   {
     "id": "satellite-broadcast-1970--caused-->fifa-sponsorship-1978",
@@ -542,7 +582,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc phát sóng vệ tinh đồng thời trên toàn cầu đã tạo ra một mặt bằng quảng cáo mang tính toàn cầu, và đây chính là thứ khiến các hợp đồng tài trợ đa quốc gia lớn trở nên giá trị với FIFA."
   },
   {
     "id": "tv-broadcast-1954--enabled-->fifa-sponsorship-1978",
@@ -560,7 +601,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Độ phủ sóng của truyền hình đã biến các trận đấu thành sản phẩm truyền thông có thể khai thác thương mại, tiền đề để các thương hiệu chi tiền gắn tên mình với giải đấu."
   },
   {
     "id": "havelange-presidency-1974--caused-->fifa-sponsorship-1978",
@@ -578,7 +620,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Havelange chủ động theo đuổi nguồn thu từ tài trợ doanh nghiệp và bản quyền truyền hình, ký các hợp đồng với Coca-Cola và Adidas để dựng nên nền tảng thương mại của FIFA."
   },
   {
     "id": "havelange-presidency-1974--caused-->expansion-24-teams-1982",
@@ -596,7 +639,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Havelange giành chức chủ tịch bằng lời hứa dành thêm suất dự World Cup cho các liên đoàn châu Phi và châu Á, rồi hiện thực hóa bằng lần mở rộng đầu tiên lên 24 đội."
   },
   {
     "id": "satellite-broadcast-1970--enabled-->havelange-presidency-1974",
@@ -614,7 +658,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Độ phủ sóng toàn cầu của kỳ World Cup 1970 đã biến FIFA thành một tài sản giá trị về mặt thương mại, nền tảng để Havelange xây dựng nhiệm kỳ chủ tịch mang màu sắc thương mại của mình."
   },
   {
     "id": "fifa-sponsorship-1978--enabled-->expansion-24-teams-1982",
@@ -632,7 +677,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Nguồn thu được bảo đảm từ tài trợ và bản quyền truyền hình đã cho FIFA sự tự tin về tài chính để mở rộng giải đấu và gánh thêm chi phí hậu cần phát sinh."
   },
   {
     "id": "expansion-24-teams-1982--inspired-->expansion-48-teams-2017",
@@ -650,7 +696,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Lần mở rộng năm 1982 đã tạo ra tiền lệ và lý lẽ chính trị — thêm suất cho các liên đoàn ít được đại diện — mà bước nhảy lên 48 đội vào năm 2026 tiếp nối."
   },
   {
     "id": "expansion-24-teams-1982--accelerated-->usa-1994-hosting",
@@ -668,7 +715,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một giải đấu lớn hơn và mang tính toàn cầu hơn đã làm tăng khát vọng của FIFA trong việc thâm nhập những thị trường lớn chưa khai phá như nước Mỹ."
   },
   {
     "id": "fifa-sponsorship-1978--caused-->usa-1994-hosting",
@@ -686,7 +734,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "FIFA trao quyền đăng cai năm 1994 cho Mỹ với mục đích rõ ràng là mở cánh cửa vào thị trường tiêu dùng và tài trợ béo bở của nước Mỹ, phần mở rộng hợp lý của chiến lược thương mại hóa."
   },
   {
     "id": "usa-1994-hosting--caused-->mls-founded-1996",
@@ -704,7 +753,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc lập một giải bóng đá chuyên nghiệp trong nước là điều kiện trong hồ sơ đăng cai World Cup 1994 của Mỹ; MLS ra đời năm 1996 như một hệ quả trực tiếp."
   },
   {
     "id": "mls-founded-1996--enabled-->united-bid-2018",
@@ -722,7 +772,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Hai thập kỷ MLS đã xây nên các sân vận động, lượng khán giả và hạ tầng bóng đá giúp nước Mỹ trở thành trụ cột đáng tin cậy cho hồ sơ đăng cai 2026."
   },
   {
     "id": "usa-1994-hosting--enabled-->united-bid-2018",
@@ -740,7 +791,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Thành công về thương mại và tổ chức của World Cup 1994 tại Mỹ đã chứng minh Bắc Mỹ có thể đăng cai và khai thác lợi nhuận từ giải đấu, mở đường cho việc được trao quyền tổ chức năm 2026."
   },
   {
     "id": "professionalism-1885--enabled-->bosman-ruling-1995",
@@ -758,7 +810,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Phải tồn tại một thị trường lao động chuyên nghiệp cho cầu thủ thì tòa án mới có thể phán quyết về tính hợp pháp của việc hạn chế quyền di chuyển của họ; phán quyết Bosman tác động lên một hệ thống chuyên nghiệp đã có cả trăm năm tuổi."
   },
   {
     "id": "bosman-ruling-1995--caused-->galactico-globalization-2000",
@@ -776,7 +829,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Bằng cách giải phóng quyền chuyển nhượng cầu thủ và xóa bỏ giới hạn cầu thủ ngoại trong EU, phán quyết Bosman đã châm ngòi cho cuộc lạm phát lương và việc xây dựng đội hình đa quốc gia — nền kinh tế ngôi sao galáctico."
   },
   {
     "id": "champions-league-1992--caused-->galactico-globalization-2000",
@@ -794,7 +848,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Tiền bản quyền truyền hình và tài trợ của Champions League đã mang lại cho các câu lạc bộ hàng đầu ngân sách để chiêu mộ dàn siêu sao toàn cầu, định hình nên kỷ nguyên galáctico."
   },
   {
     "id": "satellite-broadcast-1970--enabled-->champions-league-1992",
@@ -812,7 +867,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc phát sóng trực tiếp toàn cầu khiến các giải đấu cấp câu lạc bộ đủ giá trị để được đóng gói lại thành một sản phẩm cao cấp do nhà tài trợ chống lưng mang tên Champions League."
   },
   {
     "id": "galactico-globalization-2000--enabled-->world-cup-2026",
@@ -830,7 +886,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Hàng chục năm toàn cầu hóa cầu thủ đã tạo dựng sự gắn bó của người hâm mộ khắp thế giới với các ngôi sao và các giải đấu, mở rộng lượng khán giả toàn cầu mà giải 2026 được thiết kế để phục vụ."
   },
   {
     "id": "havelange-presidency-1974--inspired-->korea-japan-2002",
@@ -848,7 +905,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Nỗ lực của Havelange nhằm đưa giải đấu ra ngoài châu Âu và châu Mỹ đã định ra hướng đi chính sách dẫn tới kỳ World Cup đầu tiên trên đất châu Á."
   },
   {
     "id": "korea-japan-2002--accelerated-->south-africa-2010",
@@ -866,7 +924,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Thành công của kỳ World Cup đầu tiên tại châu Á và cũng là kỳ đầu tiên có hai nước đồng chủ nhà đã củng cố chính sách xoay vòng của FIFA trong việc trao quyền đăng cai cho những khu vực mới, bao gồm cả châu Phi."
   },
   {
     "id": "korea-japan-2002--inspired-->tri-nation-hosting-2026",
@@ -884,7 +943,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Hàn Quốc/Nhật Bản 2002 đã chứng minh việc chia một kỳ World Cup ra nhiều quốc gia là khả thi về mặt hậu cần, cung cấp khuôn mẫu mà mô hình ba nước đồng chủ nhà năm 2026 mở rộng lên ba quốc gia."
   },
   {
     "id": "south-africa-2010--enabled-->united-bid-2018",
@@ -902,7 +962,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Logic xoay vòng của FIFA và chuẩn mực đăng cai toàn cầu khiến việc giải đấu trở lại Bắc Mỹ năm 2026 khớp với một khuôn mẫu đã được thiết lập là trải rộng quyền đăng cai ra khắp thế giới."
   },
   {
     "id": "satellite-broadcast-1970--enabled-->goal-line-tech-2014",
@@ -920,7 +981,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Các pha quay chậm đa góc trên truyền hình đã phơi bày công khai những sai sót của trọng tài, tạo nên áp lực khiến FIFA phải chấp nhận đưa công nghệ goal-line vào luật."
   },
   {
     "id": "goal-line-tech-2014--caused-->var-2018",
@@ -938,7 +1000,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc chấp nhận công nghệ goal-line đã phá vỡ sự phản kháng của FIFA đối với công nghệ trong trận đấu và trực tiếp mở đường cho hệ thống trợ lý trọng tài video toàn diện hơn."
   },
   {
     "id": "var-2018--enabled-->streaming-rights-2022",
@@ -956,7 +1019,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Công tác điều hành trận đấu dựa trên công nghệ và giàu pha quay chậm rất phù hợp với trải nghiệm phát sóng số mang tính tương tác mà các nền tảng streaming khai thác lợi nhuận."
   },
   {
     "id": "tv-broadcast-1954--enabled-->streaming-rights-2022",
@@ -974,7 +1038,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Mô hình bản quyền truyền hình kéo dài hàng chục năm đã thiết lập khung doanh thu bản quyền truyền thông mà các nền tảng streaming sau này thừa hưởng và mở rộng."
   },
   {
     "id": "fifa-sponsorship-1978--enabled-->fifa-corruption-2015",
@@ -992,7 +1057,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Khoản tiền khổng lồ từ bản quyền truyền thông và tài trợ chảy qua FIFA đã tạo ra chính những động cơ dẫn tới nạn hối lộ mà các cáo trạng năm 2015 phanh phui."
   },
   {
     "id": "havelange-presidency-1974--enabled-->fifa-corruption-2015",
@@ -1010,7 +1076,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Quá trình thương mại hóa của Havelange đã dồn nguồn thu khổng lồ và quyền lực tùy nghi vào tay FIFA, tạo nên những điều kiện cơ cấu để nạn tham nhũng sau này sinh sôi."
   },
   {
     "id": "fifa-corruption-2015--caused-->infantino-presidency-2016",
@@ -1028,7 +1095,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Vụ bê bối buộc Sepp Blatter phải ra đi và châm ngòi cho cuộc bầu cử mà Infantino giành chiến thắng với cương lĩnh cải tổ và mở rộng."
   },
   {
     "id": "infantino-presidency-2016--caused-->expansion-48-teams-2017",
@@ -1046,7 +1114,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Infantino cổ vũ thể thức 48 đội để tăng doanh thu và giành phiếu bầu từ các liên đoàn nhỏ; lần mở rộng năm 2017 là trọng tâm trong chương trình hành động của ông."
   },
   {
     "id": "fifa-corruption-2015--enabled-->united-bid-2018",
@@ -1064,7 +1133,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Các cải cách hậu bê bối đã tạo ra một quy trình chọn chủ nhà minh bạch hơn dựa trên phiếu bầu của các thành viên, vốn có lợi cho hồ sơ United ít rủi ro và giàu hạ tầng."
   },
   {
     "id": "expansion-48-teams-2017--caused-->united-bid-2018",
@@ -1082,7 +1152,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Một giải đấu 48 đội với 104 trận đòi hỏi chủ nhà phải có sẵn dồi dào sân vận động và hạ tầng giao thông, đó chính là lý do hồ sơ đa quốc gia United được chọn."
   },
   {
     "id": "expansion-48-teams-2017--caused-->tri-nation-hosting-2026",
@@ -1100,7 +1171,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Quy mô khổng lồ của 48 đội khiến việc trải các trận đấu ra ba quốc gia trở thành cách khả thi để tổ chức giải đấu."
   },
   {
     "id": "united-bid-2018--caused-->tri-nation-hosting-2026",
@@ -1118,7 +1190,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Bản thân hồ sơ chiến thắng vốn đã là một đề xuất ba quốc gia, nên mô hình ba nước đồng đăng cai năm 2026 là sự hiện thực hóa trực tiếp của hồ sơ ấy."
   },
   {
     "id": "united-bid-2018--caused-->world-cup-2026",
@@ -1136,7 +1209,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Chiến thắng trong cuộc bỏ phiếu năm 2018 đã trao cho Mỹ, Canada và Mexico quyền đăng cai World Cup 2026."
   },
   {
     "id": "expansion-48-teams-2017--caused-->world-cup-2026",
@@ -1154,7 +1228,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Quyết định năm 2017 chính là thứ khiến 2026 trở thành kỳ World Cup 48 đội đầu tiên; thể thức mang tính định danh của giải đấu đến trực tiếp từ quyết định đó."
   },
   {
     "id": "tri-nation-hosting-2026--enabled-->world-cup-2026",
@@ -1172,7 +1247,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Khung hậu cần ba nước đồng chủ nhà đã được nhất trí chính là nền tảng vận hành để tổ chức giải đấu năm 2026."
   },
   {
     "id": "mexico-three-time-host-2026--enabled-->world-cup-2026",
@@ -1190,7 +1266,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Hạ tầng tổ chức đã được kiểm chứng của Mexico từ các năm 1970 và 1986 khiến nước này trở thành đồng chủ nhà ít rủi ro, góp phần củng cố hồ sơ mang lại quyền đăng cai 2026."
   },
   {
     "id": "united-bid-2018--caused-->mexico-three-time-host-2026",
@@ -1208,7 +1285,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Việc Mexico góp mặt trong hồ sơ United chiến thắng chính là điều khiến nước này trở thành chủ nhà World Cup ba lần vào năm 2026."
   },
   {
     "id": "satellite-broadcast-1970--enabled-->mexico-three-time-host-2026",
@@ -1226,7 +1304,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Kỳ World Cup mang tính cột mốc năm 1970 đã tạo dựng cho Mexico di sản về sân vận động và truyền hình, làm nền cho vị thế chủ nhà nhiều lần của nước này đến tận năm 2026."
   },
   {
     "id": "womens-game-globalization-2019--enabled-->world-cup-2026",
@@ -1244,7 +1323,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Bước đột phá thương mại của bóng đá nữ đã mở rộng lượng khán giả toàn cầu và nền tảng tài trợ của bóng đá, một phần trong đà tăng trưởng mà giải đấu mở rộng năm 2026 được xây dựng để nắm bắt."
   },
   {
     "id": "streaming-rights-2022--enabled-->world-cup-2026",
@@ -1262,7 +1342,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Bản quyền truyền thông thời kỳ streaming mở rộng khả năng tiếp cận và nguồn thu toàn cầu, góp phần tài trợ và phân phối kỳ World Cup lớn hơn vào năm 2026."
   },
   {
     "id": "champions-league-1992--enabled-->world-cup-2026",
@@ -1280,7 +1361,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Champions League đã toàn cầu hóa văn hóa cổ vũ câu lạc bộ quanh năm, duy trì lượng khán giả bóng đá khắp thế giới mà World Cup 2026 hướng tới."
   },
   {
     "id": "world-cup-soft-power-1934--inspired-->united-bid-2018",
@@ -1298,7 +1380,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "evidence_vi": "Nhận thức bền bỉ rằng đăng cai là một dạng quyền lực mềm quốc gia đã thôi thúc các nước — bao gồm cả những đồng chủ nhà năm 2026 — đầu tư để giành quyền tổ chức."
   },
   {
     "id": "wc2026-france-sweden-0630--enabled-->wc2026-paraguay-france-0704",
@@ -1313,7 +1396,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Màn ra quân sắc lẹm với chiến thắng 3–0 ở vòng knock-out đã giúp nhà đương kim vô địch Pháp tìm lại nhịp điệu và một nền tảng sạch lưới mà họ mang theo vào chiến thắng nhọc nhằn trước Paraguay."
   },
   {
     "id": "wc2026-paraguay-france-0704--inspired-->wc2026-canada-morocco-0704",
@@ -1328,7 +1412,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Việc cả Pháp và Morocco cùng thắng trong ngày 4/7 đã tạo nên cặp tứ kết Morocco–Pháp — hai kết quả vòng 1/8 diễn ra song song cùng nhau định hình cặp đấu tứ kết, chứ không phải kết quả này gây ra kết quả kia."
   },
   {
     "id": "wc2026-brazil-japan-0629--accelerated-->wc2026-brazil-norway-0705",
@@ -1343,7 +1428,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Chiến thắng chật vật 2–1 trước Nhật Bản đã phơi bày một hàng thủ chông chênh của Brazil và biến cặp đấu với Na Uy thành một cơ hội tạo bất ngờ thực sự chứ không còn là chuyện đương nhiên."
   },
   {
     "id": "wc2026-mexico-ecuador-0630--enabled-->wc2026-mexico-england-0705",
@@ -1358,7 +1444,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Chiến thắng đĩnh đạc 2–0 trước Ecuador đã giúp Mexico giành vé vào vòng 1/8 và tạo nên cặp đấu trên sân nhà với Anh, giữ cho câu chuyện của nước đồng chủ nhà tiếp diễn vào vòng knock-out."
   },
   {
     "id": "maracanazo-1950--inspired-->wc2026-canada-morocco-0704",
@@ -1373,7 +1460,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Việc Canada bị loại ngay trên sân nhà gợi nhớ về khuôn mẫu nỗi đau chủ nhà lâu đời nhất của World Cup — Maracanazo năm 1950 — nơi thành bại của giải đấu được đong đếm bằng ký ức tập thể của một dân tộc chủ nhà."
   },
   {
     "id": "expansion-48-teams-2017--caused-->wc2026-mexico-england-0705",
@@ -1388,7 +1476,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Cuộc bỏ phiếu năm 2017 mở rộng lên 48 đội đã tái định hình nhánh knock-out; những cặp đấu như Mexico–Anh nằm trong lộ trình đã được vẽ lại và mở rộng mà việc tăng số đội tạo ra."
   },
   {
     "id": "mexico-three-time-host-2026--enabled-->wc2026-mexico-ecuador-0630",
@@ -1403,7 +1492,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Bề dày di sản đăng cai của Mexico — lần thứ ba tổ chức World Cup sau các năm 1970 và 1986 — là phông nền cho việc một nước đồng chủ nhà đi tiếp ngay trên sân nhà vào năm 2026."
   },
   {
     "id": "galactico-globalization-2000--enabled-->wc2026-canada-morocco-0704",
@@ -1418,7 +1508,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Hàng chục năm phát triển cầu thủ theo hướng toàn cầu hóa — đội hình Morocco quy tụ từ các giải hàng đầu châu Âu — làm nền cho việc một thế lực phi truyền thống lọt vào tứ kết World Cup hai kỳ liên tiếp."
   },
   {
     "id": "wc2026-mexico-south-africa-0611--accelerated-->wc2026-mexico-south-korea-0618",
@@ -1433,7 +1524,8 @@
         "reliability": 0.8,
         "citation": "Causari WC2026 daily causal editorial"
       }
-    ]
+    ],
+    "evidence_vi": "Chiến thắng 2–0 đầy tự tin trong đêm khai mạc đã giúp Mexico bỏ túi những điểm số và niềm tin sớm, mang theo vào một chiến thắng chủ động trước Hàn Quốc ở trận thứ hai."
   },
   {
     "id": "wc2026-canada-morocco-0704--accelerated-->wc2026-france-morocco-0709",
@@ -1441,7 +1533,8 @@
     "toEvent": "wc2026-france-morocco-0709",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Morocco's 3–0 win banked a goal-difference cushion heading into Morocco vs France."
+    "evidence": "Morocco's 3–0 win banked a goal-difference cushion heading into Morocco vs France.",
+    "evidence_vi": "Chiến thắng 3–0 giúp Morocco tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Morocco gặp Pháp."
   },
   {
     "id": "wc2026-usa-belgium-0706--accelerated-->wc2026-spain-belgium-0710",
@@ -1449,6 +1542,7 @@
     "toEvent": "wc2026-spain-belgium-0710",
     "relationship": "accelerated",
     "confidence": 0.62,
-    "evidence": "Belgium's 4–1 win banked a goal-difference cushion heading into Belgium vs Spain."
+    "evidence": "Belgium's 4–1 win banked a goal-difference cushion heading into Belgium vs Spain.",
+    "evidence_vi": "Chiến thắng 4–1 giúp Bỉ tích lũy lợi thế hiệu số bàn thắng trước khi bước vào trận Bỉ gặp Tây Ban Nha."
   }
 ]
