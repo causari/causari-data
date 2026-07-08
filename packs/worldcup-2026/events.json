@@ -5846,5 +5846,40 @@
       "Suất bán kết đang chờ đội chiến thắng",
       "Nửa trên của nhánh đấu sẽ định hình ra sao"
     ]
+  },
+  {
+    "id": "wc2026-argentina-switzerland-0711",
+    "title": "Argentina vs Switzerland",
+    "description": "Quarter-final fixture: Argentina vs Switzerland, July 11, 2026 at Kansas City.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "argentina",
+      "switzerland"
+    ],
+    "date": "2026-07-11",
+    "dateLabel": "July 11, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Argentina",
+      "Switzerland",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Upcoming Quarter-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   }
 ]
