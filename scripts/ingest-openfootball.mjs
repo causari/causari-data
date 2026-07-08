@@ -159,6 +159,10 @@ function mergeEvent(existing, fresh) {
   if (!existing.whyItMatters || isTemplatedWhy(existing.whyItMatters)) {
     merged.whyItMatters = fresh.whyItMatters;
     delete merged.whyItMatters_vi;
+    // Drop the VI watchpoints too: a stale whyItMatters this templated has no
+    // curated causal layer worth captioning in Vietnamese; the editorial pass
+    // re-authors watchpoints + their VI twin together.
+    delete merged.nextWatchpoints_vi;
   }
   // entities: keep the richer set (curated may add a venue / round label).
   if (Array.isArray(existing.entities) && existing.entities.length >= (fresh.entities?.length ?? 0)) {

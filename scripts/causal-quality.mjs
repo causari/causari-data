@@ -340,7 +340,8 @@ function main() {
     console.log(`  events=${stats.events} (completed ${stats.completed}, scheduled ${stats.scheduled}) links=${stats.links} insights=${stats.insights} lineage=${stats.lineage}`);
     console.log(`  relationships=${stats.distinctRels} distinct ${JSON.stringify(stats.relCounts)} · confidence=${stats.distinctConf} distinct`);
     console.log(`  templated whyItMatters=${stats.templatedWhy} · watchpoint coverage=${stats.watchCoverage}%`);
-    console.log(`  VI coverage: whyItMatters_vi ${stats.whyViCount}/${stats.whyTotal} (${stats.whyViCoverage}%) · nextWatchpoints_vi ${stats.watchViCount}/${stats.watchTotal} (${stats.watchViCoverage}%)`);
+    const viExcl = stats.templatedWhy ? ` (excludes ${stats.templatedWhy} templated)` : '';
+    console.log(`  VI coverage: whyItMatters_vi ${stats.whyViCount}/${stats.whyTotal} (${stats.whyViCoverage}%)${viExcl} · nextWatchpoints_vi ${stats.watchViCount}/${stats.watchTotal} (${stats.watchViCoverage}%)`);
     for (const w of warnings) console.log(`  ! WARN ${w}`);
     if (errors.length) {
       failed = true;

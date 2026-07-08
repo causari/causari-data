@@ -128,6 +128,11 @@ visible quality failure — the whole point of the causal layer is lost in trans
 | `whyItMatters` | `whyItMatters_vi` | string |
 | `nextWatchpoints` | `nextWatchpoints_vi` | string[] (same length) |
 | `evidence` (on links) | `evidence_vi` (encouraged, not gated) | string |
+| `pattern` / `description` (on insights) | `pattern_vi` / `description_vi` (encouraged) | string |
+
+The current pack ships `evidence_vi` on **all** links and `pattern_vi`/`description_vi`
+on **all** insights as the new baseline — future daily updates should keep them bilingual
+too (add the VI twin whenever you add or edit the EN).
 
 **Translation quality bar — natural, not machine-literal:**
 
