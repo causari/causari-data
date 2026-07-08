@@ -141,7 +141,9 @@ function buildInsights(links) {
 // ── Merge an ingest event onto whatever curated event is already on disk ──────
 // Refresh only the fields openfootball owns; preserve every curated field. A
 // templated whyItMatters is refreshed; a curated one is kept. Curated entities /
-// tags / nextWatchpoints / kickoff survive untouched.
+// tags / nextWatchpoints / kickoff — and their bilingual _vi twins — survive
+// untouched (the whole spread of `existing` carries them through; the openfootball
+// feed never produces a _vi field so it can only ADD, never wipe, Vietnamese prose).
 function mergeEvent(existing, fresh) {
   if (!existing) return fresh;                       // brand-new fixture
   const merged = { ...existing };
@@ -150,8 +152,14 @@ function mergeEvent(existing, fresh) {
   if (!existing.description || /^\w[\w '&-]* (?:beat|lost to|drew) /.test(existing.description) || /fixture:/.test(existing.description)) {
     merged.description = fresh.description;
   }
-  // whyItMatters: replace ONLY if the existing one is templated/empty.
-  if (!existing.whyItMatters || isTemplatedWhy(existing.whyItMatters)) merged.whyItMatters = fresh.whyItMatters;
+  // whyItMatters: replace ONLY if the existing one is templated/empty. When we DO
+  // overwrite a stale EN line with the ingest fallback, drop the now-orphaned VI
+  // twin so it can't caption an EN string it no longer matches (the editorial pass
+  // re-authors both). A curated whyItMatters is kept, and its whyItMatters_vi with it.
+  if (!existing.whyItMatters || isTemplatedWhy(existing.whyItMatters)) {
+    merged.whyItMatters = fresh.whyItMatters;
+    delete merged.whyItMatters_vi;
+  }
   // entities: keep the richer set (curated may add a venue / round label).
   if (Array.isArray(existing.entities) && existing.entities.length >= (fresh.entities?.length ?? 0)) {
     merged.entities = existing.entities;
