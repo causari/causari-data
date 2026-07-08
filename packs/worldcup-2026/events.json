@@ -5781,13 +5781,24 @@
       "England",
       "Quarter-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "A quarter-final pitting England's tournament pedigree against a Norway side riding Haaland's firepower — the winner books a semi-final and moves within touching distance of the final.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "whyItMatters_vi": "Một trận tứ kết đặt bề dày kinh nghiệm ở các giải lớn của tuyển Anh trước một Na Uy đang nương vào hỏa lực của Haaland — đội thắng giành vé bán kết và tiến đến sát ngưỡng cửa chung kết.",
+    "nextWatchpoints": [
+      "Whether Norway's attack can outgun England's defensive structure",
+      "The semi-final place on the line for the victor",
+      "Where this tie sits in the overall bracket"
+    ],
+    "nextWatchpoints_vi": [
+      "Liệu hàng công của Na Uy có áp đảo được hệ thống phòng ngự của tuyển Anh",
+      "Tấm vé bán kết đặt cược cho đội chiến thắng",
+      "Vị trí của cặp đấu này trong toàn bộ nhánh đấu"
     ]
   },
   {
@@ -5816,13 +5827,24 @@
       "Belgium",
       "Quarter-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "A heavyweight quarter-final that sends the winner within two games of the title — Spain's possession game against a Belgium side chasing a golden-generation breakthrough, with a semi-final place the prize.",
     "sources": [
       {
         "type": "open-data",
         "citation": "openfootball/worldcup.json (public domain)",
         "url": "https://github.com/openfootball/worldcup.json"
       }
+    ],
+    "whyItMatters_vi": "Một trận tứ kết hạng nặng đưa đội thắng đến chỗ chỉ còn hai trận là chạm tay vào chức vô địch — lối chơi kiểm soát bóng của Tây Ban Nha đọ sức với một Bỉ đang khao khát cú đột phá của thế hệ vàng, phần thưởng là tấm vé bán kết.",
+    "nextWatchpoints": [
+      "Whether Spain's midfield control can smother Belgium's counters",
+      "The semi-final berth awaiting the winner",
+      "How the top half of the bracket takes shape"
+    ],
+    "nextWatchpoints_vi": [
+      "Liệu khả năng kiểm soát tuyến giữa của Tây Ban Nha có bóp nghẹt được những pha phản công của Bỉ",
+      "Suất bán kết đang chờ đội chiến thắng",
+      "Nửa trên của nhánh đấu sẽ định hình ra sao"
     ]
   }
 ]
