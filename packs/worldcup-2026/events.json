@@ -4403,8 +4403,8 @@
   },
   {
     "id": "wc2026-france-morocco-0709",
-    "title": "France vs Morocco",
-    "description": "Quarter-final fixture: France vs Morocco, July 9, 2026 at Boston (Foxborough).",
+    "title": "France 2–0 Morocco",
+    "description": "France beat Morocco 2–0 in Quarter-final.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -4412,7 +4412,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "quarter-final",
@@ -4421,7 +4421,7 @@
     ],
     "date": "2026-07-09",
     "dateLabel": "July 9, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "France",
       "Morocco",
