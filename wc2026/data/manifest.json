@@ -1,0 +1,109 @@
+{
+  "pack": "wc2026",
+  "version": "0.3.0",
+  "title": "World Cup 2026 Causal Recap",
+  "description": "Manifest index for daily Vietnamese recap files. Use history/YYYY-MM-DD.json for full daily/event data; recaps.json is legacy aggregate data.",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "lastUpdated": "2026-07-10T01:19:47Z",
+  "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update only when new matches are completed.",
+  "focusTeams": ["Argentina", "Brazil", "Portugal"],
+  "legacyAggregate": "wc2026/data/recaps.json",
+  "latest": {
+    "date": "2026-07-09",
+    "path": "wc2026/history/2026-07-09.json",
+    "status": "final",
+    "title": "France end Morocco run to open the quarter-finals"
+  },
+  "recaps": [
+    {
+      "date": "2026-06-23",
+      "path": "wc2026/data/recaps.json#2026-06-23",
+      "status": "legacy",
+      "title": "Argentina and France stay clean, Norway win thriller"
+    },
+    {
+      "date": "2026-06-24",
+      "path": "wc2026/data/recaps.json#2026-06-24",
+      "status": "legacy",
+      "title": "Portugal reset, Colombia take control, Group L tightens"
+    },
+    {
+      "date": "2026-06-25",
+      "path": "wc2026/data/recaps.json#2026-06-25",
+      "status": "legacy",
+      "title": "Brazil stabilize Group C, Mexico and Switzerland finish strong"
+    },
+    {
+      "date": "2026-06-26",
+      "path": "wc2026/data/recaps.json#2026-06-26",
+      "status": "legacy",
+      "title": "Ecuador stun Germany, Japan and Sweden survive, Group D locks in"
+    },
+    {
+      "date": "2026-06-27",
+      "path": "wc2026/data/recaps.json#2026-06-27",
+      "status": "legacy",
+      "title": "Argentina perfect, Colombia top Group K, England set DR Congo clash"
+    },
+    {
+      "date": "2026-06-28",
+      "path": "wc2026/data/recaps.json#2026-06-28",
+      "status": "legacy",
+      "title": "Canada make history with stoppage-time knockout win"
+    },
+    {
+      "date": "2026-06-29",
+      "path": "wc2026/data/recaps.json#2026-06-29",
+      "status": "legacy",
+      "title": "Brazil survive Japan, Morocco and Paraguay win shootout shocks"
+    },
+    {
+      "date": "2026-06-30",
+      "path": "wc2026/data/recaps.json#2026-06-30",
+      "status": "legacy",
+      "title": "Mbappe powers France, Haaland sets Brazil showdown"
+    },
+    {
+      "date": "2026-07-02",
+      "path": "wc2026/history/2026-07-02.json",
+      "status": "partial",
+      "title": "USA, Spain, Portugal, Egypt and Switzerland advance as knock-out pressure spikes"
+    },
+    {
+      "date": "2026-07-03",
+      "path": "wc2026/history/2026-07-03.json",
+      "status": "final",
+      "title": "Egypt win on penalties, Argentina survive, Colombia complete the Round of 32"
+    },
+    {
+      "date": "2026-07-04",
+      "path": "wc2026/history/2026-07-04.json",
+      "status": "final",
+      "title": "Morocco and France reach the quarter-finals"
+    },
+    {
+      "date": "2026-07-05",
+      "path": "wc2026/history/2026-07-05.json",
+      "status": "final",
+      "title": "Norway shock Brazil, England survive Mexico thriller to set quarter-final"
+    },
+    {
+      "date": "2026-07-06",
+      "path": "wc2026/history/2026-07-06.json",
+      "status": "final",
+      "title": "Spain break Portugal late, Belgium rout USA to complete quarter-final path"
+    },
+    {
+      "date": "2026-07-07",
+      "path": "wc2026/history/2026-07-07.json",
+      "status": "final",
+      "title": "Argentina and Switzerland advance"
+    },
+    {
+      "date": "2026-07-09",
+      "path": "wc2026/history/2026-07-09.json",
+      "status": "final",
+      "title": "France end Morocco run to open the quarter-finals"
+    }
+  ]
+}
