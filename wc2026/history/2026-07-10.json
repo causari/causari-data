@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-10",
+  "status": "final",
+  "title": "Spain edge Belgium late to book France semi-final",
+  "summary": "Spain thắng Belgium 2-1 tại tứ kết World Cup 2026. Fabian Ruiz mở tỷ số phút 30, Charles De Ketelaere gỡ hòa trước giờ nghỉ, rồi Mikel Merino ghi bàn quyết định phút 88 sau tình huống bóng bật ra trong vùng cấm. Spain vào bán kết gặp France; Belgium dừng bước sau trận đấu cạnh tranh nhất của họ tại giải.",
+  "results": [
+    {
+      "round": "Quarter-final",
+      "home": "Spain",
+      "away": "Belgium",
+      "homeScore": 2,
+      "awayScore": 1,
+      "winner": "Spain",
+      "status": "complete",
+      "venue": "Los Angeles Stadium / SoFi Stadium, Inglewood"
+    }
+  ],
+  "bigMoments": [
+    "Fabian Ruiz đưa Spain vượt lên phút 30 sau một tình huống dứt điểm từ bóng hai, giúp đội kiểm soát thế trận sớm.",
+    "Charles De Ketelaere đánh đầu gỡ 1-1 trước giờ nghỉ, trở thành cầu thủ đầu tiên chọc thủng lưới Spain tại World Cup 2026.",
+    "Thibaut Courtois rời sân vì chấn thương; Senne Lammens vào thay và phải đối mặt với sức ép cuối trận.",
+    "Mikel Merino, vào sân từ ghế dự bị, ghi bàn quyết định phút 88 sau pha bóng bật ra, tiếp tục duyên ghi bàn ở vòng knock-out.",
+    "Lamine Yamal là nguồn sáng tạo nổi bật nhất của Spain và liên tục kéo giãn cấu trúc phòng ngự Belgium."
+  ],
+  "tournamentImpact": [
+    "Spain vào bán kết gặp France, tạo nên cặp đấu giữa hai ứng viên mạnh nhất còn lại ở nhánh này.",
+    "Belgium bị loại nhưng rời giải với một màn trình diễn cạnh tranh, cho thấy quá trình chuyển giao thế hệ đã có tín hiệu tích cực.",
+    "Spain lần đầu để thủng lưới tại giải, cho thấy France có thể khai thác được khoảng trống nếu buộc họ rời khỏi trạng thái kiểm soát quen thuộc.",
+    "Mikel Merino tiếp tục chứng minh giá trị của chiều sâu đội hình Spain: trận đấu được định đoạt bởi một cầu thủ vào sân từ ghế dự bị.",
+    "Hai suất bán kết đầu tiên đã xác định: France và Spain. Hai suất còn lại sẽ đến từ Norway vs England và Argentina vs Switzerland."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Mikel Merino",
+      "team": "Spain",
+      "note": "Ghi bàn quyết định phút 88 sau khi vào sân từ ghế dự bị."
+    },
+    {
+      "name": "Fabian Ruiz",
+      "team": "Spain",
+      "note": "Mở tỷ số và giúp Spain thiết lập thế kiểm soát trong phần lớn trận đấu."
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "team": "Belgium",
+      "note": "Đánh đầu gỡ hòa và trở thành người đầu tiên ghi bàn vào lưới Spain tại giải."
+    },
+    {
+      "name": "Lamine Yamal",
+      "team": "Spain",
+      "note": "Tạo sức ép liên tục ở biên và là nguồn sáng tạo nổi bật nhất của Spain."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina chưa thi đấu trong cụm cập nhật này và sẽ gặp Switzerland ở tứ kết. Việc Spain phải chờ tới phút 88 mới định đoạt trận đấu là lời nhắc rằng ở vòng này, chiều sâu băng ghế dự bị và khả năng xử lý cuối trận có thể quan trọng hơn việc áp đảo thế trận.",
+    "Brazil": "Brazil đã bị Norway loại nên không có thay đổi trực tiếp. Spain vào bán kết càng cho thấy khác biệt giữa đội còn sống và đội đã bị loại nằm ở khả năng duy trì cấu trúc và vẫn tạo được bàn thắng muộn khi trận đấu bị khóa chặt.",
+    "Portugal": "Portugal đã bị Spain loại ở vòng 16 đội. Spain tiếp tục tiến sâu cho thấy thất bại tối thiểu của Portugal đến trước một đối thủ có chiều sâu và độ ổn định rất cao, nhưng trận Belgium cũng chứng minh Spain không bất khả xâm phạm."
+  },
+  "watchNext": [
+    "Norway vs England, 11/7 theo giờ Bắc Mỹ: Erling Haaland đối đầu hàng thủ England; đội thắng sẽ vào bán kết.",
+    "Argentina vs Switzerland, 11/7 theo giờ Bắc Mỹ / sáng 12/7 giờ Việt Nam: Argentina là đội focus duy nhất còn lại sau khi Brazil và Portugal đã bị loại.",
+    "France vs Spain ở bán kết: theo dõi tình trạng của Kylian Mbappe và cách France khai thác việc Spain vừa để thủng lưới lần đầu tại giải.",
+    "Theo dõi tình trạng của Thibaut Courtois sau khi anh rời sân vì chấn thương trong hiệp hai."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Spain sustain pressure and win second ball around Belgium box",
+      "link": "enabled",
+      "to": "Fabian Ruiz opens scoring in minute 30"
+    },
+    {
+      "from": "Belgium respond through wide delivery",
+      "link": "caused",
+      "to": "Charles De Ketelaere equalises before half-time"
+    },
+    {
+      "from": "Thibaut Courtois injury forces goalkeeper change",
+      "link": "enabled",
+      "to": "Senne Lammens faces late Spain pressure"
+    },
+    {
+      "from": "Late rebound inside Belgium penalty area",
+      "link": "enabled",
+      "to": "Mikel Merino scores 88th-minute winner"
+    },
+    {
+      "from": "Spain 2-1 Belgium",
+      "link": "caused",
+      "to": "Spain advance to face France in the semi-final"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FIFA - World Cup 2026 match schedule, fixtures and results",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    },
+    {
+      "name": "The Guardian - Spain 2-1 Belgium quarter-final live report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/10/spain-v-belgium-world-cup-2026-quarter-final-live"
+    },
+    {
+      "name": "FOX Sports - Spain vs Belgium highlights",
+      "url": "https://www.foxsports.com/watch/fmc-u3m50nqpfl9cx2u4"
+    },
+    {
+      "name": "ESPN - Spain vs Belgium match page",
+      "url": "https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain"
+    }
+  ]
+}
