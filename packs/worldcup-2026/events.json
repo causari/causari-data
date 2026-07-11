@@ -5803,8 +5803,8 @@
   },
   {
     "id": "wc2026-spain-belgium-0710",
-    "title": "Spain vs Belgium",
-    "description": "Quarter-final fixture: Spain vs Belgium, July 10, 2026 at Los Angeles (Inglewood).",
+    "title": "Spain 2–1 Belgium",
+    "description": "Spain beat Belgium 2–1 in Quarter-final.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5812,7 +5812,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.5700000000000001,
     "tags": [
       "world-cup-2026",
       "quarter-final",
@@ -5821,7 +5821,7 @@
     ],
     "date": "2026-07-10",
     "dateLabel": "July 10, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Spain",
       "Belgium",
