@@ -1,8 +1,8 @@
 {
   "date": "2026-07-11",
-  "status": "partial",
-  "title": "Bellingham sends England past Norway; Argentina-Switzerland still in progress",
-  "summary": "England thắng Norway 2-1 sau hiệp phụ ở tứ kết World Cup 2026. Andreas Schjelderup mở tỷ số cho Norway phút 36, Jude Bellingham gỡ hòa trước giờ nghỉ rồi ghi bàn quyết định trong hiệp phụ. England vào bán kết và chờ đội thắng cặp Argentina vs Switzerland, trận vẫn đang diễn ra tại thời điểm cập nhật.",
+  "status": "final",
+  "title": "Bellingham sends England through; Argentina outlast 10-man Switzerland",
+  "summary": "Ngày tứ kết cuối cùng khép lại với hai trận phải đá hiệp phụ. England thắng Norway 2-1 nhờ cú đúp của Jude Bellingham. Argentina sau đó vượt qua Switzerland 3-1: Alexis Mac Allister mở tỷ số, Dan Ndoye gỡ hòa, Breel Embolo bị đuổi sau VAR, rồi Julián Álvarez và Lautaro Martínez ghi bàn trong hiệp phụ. Hai cặp bán kết đã hoàn tất: France vs Spain và England vs Argentina.",
   "results": [
     {
       "round": "Quarter-final",
@@ -13,48 +13,64 @@
       "winner": "England",
       "status": "complete_after_extra_time",
       "venue": "Miami Stadium, Miami Gardens"
+    },
+    {
+      "round": "Quarter-final",
+      "home": "Argentina",
+      "away": "Switzerland",
+      "homeScore": 3,
+      "awayScore": 1,
+      "winner": "Argentina",
+      "status": "complete_after_extra_time",
+      "venue": "Kansas City Stadium, Kansas City"
     }
   ],
   "bigMoments": [
-    "Andreas Schjelderup đưa Norway vượt lên phút 36 sau khi khai thác sai sót phòng ngự của England.",
-    "Jude Bellingham gỡ 1-1 ngay trước giờ nghỉ, giúp England tránh bước vào hiệp hai trong thế phải rượt đuổi.",
-    "Một bàn thắng của Norway trong hiệp hai bị từ chối sau VAR vì lỗi của Erling Haaland trong tình huống trước đó.",
-    "Bellingham ghi bàn thứ hai trong hiệp phụ sau khi thủ môn Orjan Nyland không xử lý gọn cú sút, định đoạt trận đấu.",
-    "Haaland bị khóa chặt và lần đầu không ghi bàn tại giải, khiến Norway mất phương án kết liễu quan trọng nhất."
+    "Andreas Schjelderup đưa Norway vượt lên phút 36, nhưng Jude Bellingham gỡ hòa trước giờ nghỉ rồi ghi bàn quyết định trong hiệp phụ cho England.",
+    "Một bàn thắng của Norway trong hiệp hai bị VAR từ chối vì lỗi của Erling Haaland trong tình huống trước đó.",
+    "Alexis Mac Allister đánh đầu từ quả phạt góc của Lionel Messi để Argentina mở tỷ số sớm trước Switzerland.",
+    "Dan Ndoye gỡ hòa phút 67, đưa trận đấu vào thế giằng co và sau đó kéo dài tới hiệp phụ.",
+    "Breel Embolo bị truất quyền thi đấu phút 72 sau khi VAR xem lại tình huống bị xác định là giả vờ, bước ngoặt gây tranh cãi của trận đấu.",
+    "Julián Álvarez ghi bàn từ xa phút 112, trước khi Lautaro Martínez ấn định chiến thắng 3-1 trong thời gian bù giờ hiệp phụ."
   ],
   "tournamentImpact": [
-    "England trở thành đội thứ ba vào bán kết, sau France và Spain.",
-    "England sẽ gặp đội thắng Argentina vs Switzerland ở bán kết.",
-    "Norway dừng bước sau hành trình đột phá, trong đó điểm nhấn lớn nhất là chiến thắng loại Brazil ở vòng trước.",
-    "Bellingham vươn lên nhóm cạnh tranh Vua phá lưới và tiếp tục là nhân tố quyết định nhất của England ở vòng knock-out.",
-    "Ngày thi đấu chưa hoàn tất vì Argentina vs Switzerland vẫn đang diễn ra; recap sẽ được cập nhật idempotently thành final khi có kết quả chính thức."
+    "England vào bán kết sau 120 phút và sẽ gặp Argentina.",
+    "Argentina tiếp tục hành trình bảo vệ chức vô địch, đồng thời đứng trước cơ hội trở thành đội đầu tiên bảo vệ thành công World Cup kể từ Brazil năm 1962.",
+    "Switzerland dừng bước ở lần đầu vào tứ kết World Cup kể từ năm 1954; chiếc thẻ đỏ của Embolo làm thay đổi mạnh cán cân trận đấu.",
+    "Bốn đội bán kết đã được xác định: France, Spain, England và Argentina.",
+    "Cả England lẫn Argentina đều phải chơi hiệp phụ, khiến khả năng hồi phục thể lực trở thành biến số quan trọng trước bán kết."
   ],
   "standoutPlayers": [
     {
       "name": "Jude Bellingham",
       "team": "England",
-      "note": "Ghi cả hai bàn, gồm bàn quyết định trong hiệp phụ."
+      "note": "Ghi cả hai bàn, gồm bàn quyết định trong hiệp phụ trước Norway."
     },
     {
-      "name": "Andreas Schjelderup",
-      "team": "Norway",
-      "note": "Mở tỷ số và là mối đe dọa nổi bật nhất của Norway."
+      "name": "Julián Álvarez",
+      "team": "Argentina",
+      "note": "Phá thế cân bằng bằng cú sút xa ở phút 112."
     },
     {
-      "name": "Jordan Pickford",
-      "team": "England",
-      "note": "Có pha cứu thua quan trọng trước Haaland và giúp England trụ lại trong giai đoạn khó khăn."
+      "name": "Alexis Mac Allister",
+      "team": "Argentina",
+      "note": "Mở tỷ số sớm và giúp Argentina kiểm soát nhịp độ trong phần lớn thời gian chính thức."
+    },
+    {
+      "name": "Dan Ndoye",
+      "team": "Switzerland",
+      "note": "Ghi bàn gỡ hòa và là mối đe dọa trực diện nhất của Switzerland."
     }
   ],
   "focus": {
-    "Argentina": "Argentina đang thi đấu với Switzerland ở trận tứ kết cuối cùng. Đội thắng sẽ gặp England tại bán kết; chưa có kết luận trong bản partial này.",
-    "Brazil": "Brazil đã bị chính Norway loại ở vòng trước. Việc Norway gây khó khăn lớn cho England cho thấy thất bại của Brazil đến trước một đối thủ có tổ chức và khả năng chuyển trạng thái thực sự nguy hiểm.",
-    "Portugal": "Portugal đã bị loại bởi Spain. Không có thay đổi trực tiếp trong cụm trận mới hoàn tất."
+    "Argentina": "Argentina thắng Switzerland 3-1 sau hiệp phụ và vào bán kết gặp England. Đội vẫn cho thấy sức chịu đựng tốt trong trận knock-out, nhưng phải tiêu hao 120 phút và chỉ tạo khác biệt rõ rệt sau khi đối thủ còn 10 người.",
+    "Brazil": "Brazil đã bị Norway loại ở vòng trước. Norway tiếp tục buộc England phải đá hiệp phụ, cho thấy thất bại của Brazil đến trước một đối thủ có tổ chức và khả năng chuyển trạng thái nguy hiểm.",
+    "Portugal": "Portugal đã bị Spain loại. Spain hiện đã vào bán kết gặp France, đặt thất bại tối thiểu của Portugal trong bối cảnh họ gặp một trong bốn đội mạnh nhất giải."
   },
   "watchNext": [
-    "Kết quả cuối cùng Argentina vs Switzerland để xác định đối thủ bán kết của England.",
-    "France vs Spain ở bán kết: cuộc đối đầu giữa tốc độ chuyển trạng thái của France và khả năng kiểm soát của Spain.",
-    "Theo dõi thể lực England sau 120 phút trong điều kiện nóng và khả năng hồi phục của hàng thủ trước bán kết."
+    "France vs Spain: Mbappé và Dembélé đối đầu hệ thống kiểm soát cùng chiều sâu đội hình của Spain.",
+    "England vs Argentina: Bellingham đối đầu Messi, trong trận đấu mà khả năng hồi phục sau 120 phút của cả hai đội sẽ rất quan trọng.",
+    "Theo dõi án kỷ luật và đánh giá chính thức quanh thẻ đỏ gây tranh cãi của Breel Embolo."
   ],
   "causalTimeline": [
     {
@@ -73,14 +89,34 @@
       "to": "Norway second goal is disallowed"
     },
     {
-      "from": "Nyland fails to hold extra-time shot",
-      "link": "enabled",
-      "to": "Bellingham scores the winner"
+      "from": "Bellingham extra-time winner",
+      "link": "caused",
+      "to": "England reach the semi-final"
     },
     {
-      "from": "Norway 1-2 England after extra time",
+      "from": "Messi corner",
+      "link": "enabled",
+      "to": "Mac Allister opens scoring"
+    },
+    {
+      "from": "Ndoye equaliser",
+      "link": "extended",
+      "to": "Argentina-Switzerland reaches extra time"
+    },
+    {
+      "from": "VAR review of Embolo simulation",
       "link": "caused",
-      "to": "England advance to the semi-final"
+      "to": "Switzerland reduced to ten men"
+    },
+    {
+      "from": "Argentina numerical advantage",
+      "link": "enabled",
+      "to": "Álvarez and Martínez score in extra time"
+    },
+    {
+      "from": "Argentina 3-1 Switzerland after extra time",
+      "link": "caused",
+      "to": "Argentina reach the semi-final against England"
     }
   ],
   "sources": [
@@ -97,8 +133,8 @@
       "url": "https://apnews.com/article/f246f138c3a8563cb5a0e3f4037e930a"
     },
     {
-      "name": "The Guardian - Norway 1-2 England quarter-final report",
-      "url": "https://www.theguardian.com/football/live/2026/jul/11/norway-v-england-world-cup-2026-quarter-final-live"
+      "name": "Reuters - Argentina beat Switzerland 3-1 after extra time",
+      "url": "https://www.reuters.com/sports/soccer/argentina-beat-switzerland-3-1-after-extra-time-reach-world-cup-semi-finals-2026-07-12/"
     }
   ]
 }
