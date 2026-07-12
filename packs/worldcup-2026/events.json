@@ -5757,8 +5757,8 @@
   },
   {
     "id": "wc2026-norway-england-0711",
-    "title": "Norway vs England",
-    "description": "Quarter-final fixture: Norway vs England, July 11, 2026 at Miami (Miami Gardens).",
+    "title": "Norway 1–1 England",
+    "description": "Norway drew England 1–1 in Quarter-final.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5766,7 +5766,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "quarter-final",
@@ -5775,7 +5775,7 @@
     ],
     "date": "2026-07-11",
     "dateLabel": "July 11, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Norway",
       "England",
@@ -5849,8 +5849,43 @@
   },
   {
     "id": "wc2026-argentina-switzerland-0711",
-    "title": "Argentina vs Switzerland",
-    "description": "Quarter-final fixture: Argentina vs Switzerland, July 11, 2026 at Kansas City.",
+    "title": "Argentina 1–1 Switzerland",
+    "description": "Argentina drew Switzerland 1–1 in Quarter-final.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.52,
+    "tags": [
+      "world-cup-2026",
+      "quarter-final",
+      "argentina",
+      "switzerland"
+    ],
+    "date": "2026-07-11",
+    "dateLabel": "July 11, 2026",
+    "status": "completed",
+    "entities": [
+      "Argentina",
+      "Switzerland",
+      "Quarter-final"
+    ],
+    "whyItMatters": "Scorers: Alexis Mac Allister, Julián Álvarez, Lautaro Martínez, Dan Ndoye.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-france-spain-0714",
+    "title": "France vs Spain",
+    "description": "Semi-final fixture: France vs Spain, July 14, 2026 at Dallas (Arlington).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5861,19 +5896,19 @@
     "impactScore": 0.5,
     "tags": [
       "world-cup-2026",
-      "quarter-final",
-      "argentina",
-      "switzerland"
+      "semi-final",
+      "france",
+      "spain"
     ],
-    "date": "2026-07-11",
-    "dateLabel": "July 11, 2026",
+    "date": "2026-07-14",
+    "dateLabel": "July 14, 2026",
     "status": "scheduled",
     "entities": [
-      "Argentina",
-      "Switzerland",
-      "Quarter-final"
+      "France",
+      "Spain",
+      "Semi-final"
     ],
-    "whyItMatters": "Upcoming Quarter-final match.",
+    "whyItMatters": "Upcoming Semi-final match.",
     "sources": [
       {
         "type": "open-data",
