@@ -4,15 +4,15 @@
   "title": "World Cup 2026 Causal Recap",
   "description": "Manifest index for daily Vietnamese recap files. Use history/YYYY-MM-DD.json for full daily/event data; recaps.json is legacy aggregate data.",
   "timezone": "Asia/Ho_Chi_Minh",
-  "lastUpdated": "2026-07-11T01:01:25Z",
+  "lastUpdated": "2026-07-12T01:02:24Z",
   "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update only when new matches are completed.",
   "focusTeams": ["Argentina", "Brazil", "Portugal"],
   "legacyAggregate": "wc2026/data/recaps.json",
   "latest": {
-    "date": "2026-07-10",
-    "path": "wc2026/history/2026-07-10.json",
-    "status": "final",
-    "title": "Spain edge Belgium late to book France semi-final"
+    "date": "2026-07-11",
+    "path": "wc2026/history/2026-07-11.json",
+    "status": "partial",
+    "title": "Bellingham sends England past Norway; Argentina-Switzerland still in progress"
   },
   "recaps": [
     {
@@ -110,6 +110,12 @@
       "path": "wc2026/history/2026-07-10.json",
       "status": "final",
       "title": "Spain edge Belgium late to book France semi-final"
+    },
+    {
+      "date": "2026-07-11",
+      "path": "wc2026/history/2026-07-11.json",
+      "status": "partial",
+      "title": "Bellingham sends England past Norway; Argentina-Switzerland still in progress"
     }
   ]
 }
