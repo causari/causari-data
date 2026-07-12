@@ -1,0 +1,104 @@
+{
+  "date": "2026-07-11",
+  "status": "partial",
+  "title": "Bellingham sends England past Norway; Argentina-Switzerland still in progress",
+  "summary": "England thắng Norway 2-1 sau hiệp phụ ở tứ kết World Cup 2026. Andreas Schjelderup mở tỷ số cho Norway phút 36, Jude Bellingham gỡ hòa trước giờ nghỉ rồi ghi bàn quyết định trong hiệp phụ. England vào bán kết và chờ đội thắng cặp Argentina vs Switzerland, trận vẫn đang diễn ra tại thời điểm cập nhật.",
+  "results": [
+    {
+      "round": "Quarter-final",
+      "home": "Norway",
+      "away": "England",
+      "homeScore": 1,
+      "awayScore": 2,
+      "winner": "England",
+      "status": "complete_after_extra_time",
+      "venue": "Miami Stadium, Miami Gardens"
+    }
+  ],
+  "bigMoments": [
+    "Andreas Schjelderup đưa Norway vượt lên phút 36 sau khi khai thác sai sót phòng ngự của England.",
+    "Jude Bellingham gỡ 1-1 ngay trước giờ nghỉ, giúp England tránh bước vào hiệp hai trong thế phải rượt đuổi.",
+    "Một bàn thắng của Norway trong hiệp hai bị từ chối sau VAR vì lỗi của Erling Haaland trong tình huống trước đó.",
+    "Bellingham ghi bàn thứ hai trong hiệp phụ sau khi thủ môn Orjan Nyland không xử lý gọn cú sút, định đoạt trận đấu.",
+    "Haaland bị khóa chặt và lần đầu không ghi bàn tại giải, khiến Norway mất phương án kết liễu quan trọng nhất."
+  ],
+  "tournamentImpact": [
+    "England trở thành đội thứ ba vào bán kết, sau France và Spain.",
+    "England sẽ gặp đội thắng Argentina vs Switzerland ở bán kết.",
+    "Norway dừng bước sau hành trình đột phá, trong đó điểm nhấn lớn nhất là chiến thắng loại Brazil ở vòng trước.",
+    "Bellingham vươn lên nhóm cạnh tranh Vua phá lưới và tiếp tục là nhân tố quyết định nhất của England ở vòng knock-out.",
+    "Ngày thi đấu chưa hoàn tất vì Argentina vs Switzerland vẫn đang diễn ra; recap sẽ được cập nhật idempotently thành final khi có kết quả chính thức."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "note": "Ghi cả hai bàn, gồm bàn quyết định trong hiệp phụ."
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "team": "Norway",
+      "note": "Mở tỷ số và là mối đe dọa nổi bật nhất của Norway."
+    },
+    {
+      "name": "Jordan Pickford",
+      "team": "England",
+      "note": "Có pha cứu thua quan trọng trước Haaland và giúp England trụ lại trong giai đoạn khó khăn."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina đang thi đấu với Switzerland ở trận tứ kết cuối cùng. Đội thắng sẽ gặp England tại bán kết; chưa có kết luận trong bản partial này.",
+    "Brazil": "Brazil đã bị chính Norway loại ở vòng trước. Việc Norway gây khó khăn lớn cho England cho thấy thất bại của Brazil đến trước một đối thủ có tổ chức và khả năng chuyển trạng thái thực sự nguy hiểm.",
+    "Portugal": "Portugal đã bị loại bởi Spain. Không có thay đổi trực tiếp trong cụm trận mới hoàn tất."
+  },
+  "watchNext": [
+    "Kết quả cuối cùng Argentina vs Switzerland để xác định đối thủ bán kết của England.",
+    "France vs Spain ở bán kết: cuộc đối đầu giữa tốc độ chuyển trạng thái của France và khả năng kiểm soát của Spain.",
+    "Theo dõi thể lực England sau 120 phút trong điều kiện nóng và khả năng hồi phục của hàng thủ trước bán kết."
+  ],
+  "causalTimeline": [
+    {
+      "from": "England defensive error",
+      "link": "enabled",
+      "to": "Andreas Schjelderup opens scoring in minute 36"
+    },
+    {
+      "from": "England respond before half-time",
+      "link": "enabled",
+      "to": "Jude Bellingham equalises"
+    },
+    {
+      "from": "VAR identifies Haaland foul",
+      "link": "caused",
+      "to": "Norway second goal is disallowed"
+    },
+    {
+      "from": "Nyland fails to hold extra-time shot",
+      "link": "enabled",
+      "to": "Bellingham scores the winner"
+    },
+    {
+      "from": "Norway 1-2 England after extra time",
+      "link": "caused",
+      "to": "England advance to the semi-final"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FIFA - World Cup 2026 match schedule, fixtures and results",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    },
+    {
+      "name": "Reuters - Bellingham double guides England to World Cup semis",
+      "url": "https://www.reuters.com/sports/soccer/bellingham-double-guides-england-world-cup-semis-extra-time-win-over-norway-2026-07-11/"
+    },
+    {
+      "name": "AP - Bellingham scores twice to lift England past Norway",
+      "url": "https://apnews.com/article/f246f138c3a8563cb5a0e3f4037e930a"
+    },
+    {
+      "name": "The Guardian - Norway 1-2 England quarter-final report",
+      "url": "https://www.theguardian.com/football/live/2026/jul/11/norway-v-england-world-cup-2026-quarter-final-live"
+    }
+  ]
+}
