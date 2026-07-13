@@ -5916,5 +5916,40 @@
         "url": "https://github.com/openfootball/worldcup.json"
       }
     ]
+  },
+  {
+    "id": "wc2026-england-argentina-0715",
+    "title": "England vs Argentina",
+    "description": "Semi-final fixture: England vs Argentina, July 15, 2026 at Atlanta.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "semi-final",
+      "england",
+      "argentina"
+    ],
+    "date": "2026-07-15",
+    "dateLabel": "July 15, 2026",
+    "status": "scheduled",
+    "entities": [
+      "England",
+      "Argentina",
+      "Semi-final"
+    ],
+    "whyItMatters": "Upcoming Semi-final match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
   }
 ]
