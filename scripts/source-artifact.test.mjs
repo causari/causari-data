@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { validateSourceCapture } from './source-artifact.mjs';
+import { validateEventSources } from './validate-source-artifacts.mjs';
 
 function assert(condition, message) {
   if (!condition) throw new Error(message);
@@ -57,5 +58,29 @@ const retainedArtifact = validateSourceCapture({
   },
 });
 assert(retainedArtifact.length === 0, retainedArtifact.join('; '));
+
+const packErrors = validateEventSources([
+  {
+    id: 'safe-event',
+    sources: [{
+      type: 'official',
+      citation: 'FIFA match centre',
+      url: 'https://example.com/match',
+      capture: { mode: 'connector', truncated: false },
+    }],
+  },
+  {
+    id: 'unsafe-event',
+    sources: [{
+      type: 'official',
+      citation: 'Preview only',
+      capture: { mode: 'connector', truncated: true },
+    }],
+  },
+], 'fixture');
+assert(
+  packErrors.some((error) => error.includes('unsafe-event') && error.includes('artifact')),
+  'pack validator must reject a truncated capture without a full artifact',
+);
 
 console.log('✓ source artifact safety tests passed');
