@@ -18,7 +18,6 @@
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { validateSourceCapture } from './source-artifact.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PACKS_DIR = join(ROOT, 'packs');
@@ -68,18 +67,6 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
     if (ev.entities !== undefined && !Array.isArray(ev.entities)) E(`event ${id}: entities must be an array`);
     if (ev.nextWatchpoints !== undefined && !Array.isArray(ev.nextWatchpoints)) E(`event ${id}: nextWatchpoints must be an array`);
     if (ev.forecastConfidence !== undefined && !isNum01(ev.forecastConfidence)) E(`event ${id}: forecastConfidence must be 0-1`);
-
-    // Optional connector provenance. Legacy direct URL citations remain valid.
-    if (ev.sources !== undefined) {
-      if (!Array.isArray(ev.sources)) {
-        E(`event ${id}: sources must be an array`);
-      } else {
-        ev.sources.forEach((source, index) => {
-          const sourceErrors = validateSourceCapture(source, `event ${id}.sources[${index}]`);
-          for (const sourceError of sourceErrors) E(sourceError);
-        });
-      }
-    }
   }
 
   // --- Links (referential integrity is the point) ---
