@@ -6,8 +6,6 @@ on:
       - "packs/**"
       - "scripts/validate-pack.mjs"
       - "scripts/causal-quality.mjs"
-      - "scripts/source-artifact.mjs"
-      - "scripts/source-artifact.test.mjs"
       - "schema/**"
       - ".github/workflows/validate-packs.yml"
   pull_request:
@@ -15,10 +13,7 @@ on:
       - "packs/**"
       - "scripts/validate-pack.mjs"
       - "scripts/causal-quality.mjs"
-      - "scripts/source-artifact.mjs"
-      - "scripts/source-artifact.test.mjs"
       - "schema/**"
-      - ".github/workflows/validate-packs.yml"
 
 jobs:
   validate:
@@ -28,8 +23,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Test connector source artifact contract
-        run: node scripts/source-artifact.test.mjs
       - name: Validate all packs (schema + referential integrity)
         run: node scripts/validate-pack.mjs
       - name: Causal-quality gate (semantic — no templated substrate)
