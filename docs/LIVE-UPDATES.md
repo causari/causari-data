@@ -50,10 +50,13 @@ whole pack in memory, writing nothing if anything is broken**. The scheduled age
 
 1. **Write the day's input** — copy [`scripts/match-day.example.json`](../scripts/match-day.example.json)
    to `scripts/match-day.json` and fill in the day's **real, sourced** results, next fixtures, and links.
-   Every completed result needs a `sources` citation (the script rejects results without one).
+   Every completed result needs a `sources` citation (the script rejects results without one). If the
+   citation was obtained through a connector, follow [SOURCE-ARTIFACT-CONTRACT.md](SOURCE-ARTIFACT-CONTRACT.md):
+   declare truncation explicitly and retain a checksummed full artifact when a response was truncated.
 2. **Apply + validate** (writes only if clean):
    ```bash
    node scripts/add-match-day.mjs scripts/match-day.json
+   node scripts/source-artifact.test.mjs
    node scripts/validate-pack.mjs worldcup-2026
    ```
    If either exits non-zero, fix the input and retry — never commit a broken pack.
@@ -84,6 +87,11 @@ A `completed` result is a factual claim. Every one must carry a source, e.g.:
 ```
 
 Until a result is sourced, keep the pack README's "illustrative / proof-of-concept" banner. Calibrated, sourced data is the whole brand promise — do not publish invented scorelines as fact.
+
+A connector preview is not automatically the full source. When `capture.mode` is `connector`,
+`capture.truncated` must be explicit. A truncated capture is valid only when the complete payload is
+retained behind a checksummed artifact reference and the updater reads that artifact (or verifies the
+authoritative URL) before publishing.
 
 ---
 
