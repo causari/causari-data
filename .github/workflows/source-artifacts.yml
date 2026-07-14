@@ -1,0 +1,32 @@
+name: source-artifacts
+
+on:
+  push:
+    paths:
+      - "packs/**"
+      - "scripts/add-match-day.mjs"
+      - "scripts/source-artifact.mjs"
+      - "scripts/source-artifact.test.mjs"
+      - "scripts/validate-source-artifacts.mjs"
+      - ".github/workflows/source-artifacts.yml"
+  pull_request:
+    paths:
+      - "packs/**"
+      - "scripts/add-match-day.mjs"
+      - "scripts/source-artifact.mjs"
+      - "scripts/source-artifact.test.mjs"
+      - "scripts/validate-source-artifacts.mjs"
+      - ".github/workflows/source-artifacts.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Test source artifact contract
+        run: node scripts/source-artifact.test.mjs
+      - name: Validate source captures in all packs
+        run: node scripts/validate-source-artifacts.mjs
