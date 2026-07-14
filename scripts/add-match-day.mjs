@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validatePackData } from './validate-pack.mjs';
+import { validateEventSources } from './validate-source-artifacts.mjs';
 import { assessCausalQuality } from './causal-quality.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -106,7 +107,17 @@ if (errors.length > 0) {
   for (const e of errors) console.error(`  - ${e}`);
   process.exit(1);
 }
-//    (b) causal-quality gate — the layer must be real, not templated. Catches a
+
+//    (b) source-artifact validation — connector truncation must be explicit and
+//    any truncated preview must retain a checksummed full-payload reference.
+const sourceErrors = validateEventSources(merged.events, packId);
+if (sourceErrors.length > 0) {
+  console.error(`✗ ${sourceErrors.length} source artifact error(s) — nothing written:`);
+  for (const e of sourceErrors) console.error(`  - ${e}`);
+  process.exit(1);
+}
+
+//    (c) causal-quality gate — the layer must be real, not templated. Catches a
 //    "Scorers: …" whyItMatters, a single-relationship graph, a backwards scoreline,
 //    a scheduled event carrying a result, an unresolved round/team, etc. This is
 //    what keeps the daily editorial honest even when structure is fine.
