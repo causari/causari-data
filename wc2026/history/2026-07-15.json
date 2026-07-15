@@ -1,0 +1,82 @@
+{
+  "date": "2026-07-15",
+  "status": "final",
+  "title": "Argentina edge England to set up Spain final",
+  "summary": "Argentina thắng England 2-1 ở bán kết tại Atlanta và giành quyền gặp Spain trong trận chung kết World Cup 2026. Kết quả chính thức của FIFA xác nhận England thua 1-2. Argentina tiếp tục hành trình bảo vệ chức vô địch, trong khi England chuyển sang trận tranh hạng ba gặp France.",
+  "results": [
+    {
+      "round": "Semi-final",
+      "home": "England",
+      "away": "Argentina",
+      "homeScore": 1,
+      "awayScore": 2,
+      "winner": "Argentina",
+      "status": "complete",
+      "venue": "Atlanta Stadium, Atlanta"
+    }
+  ],
+  "bigMoments": [
+    "Argentina vượt qua England 2-1 trong trận bán kết cuối cùng để tiếp tục bảo vệ chức vô địch.",
+    "Kết quả hoàn tất cặp chung kết Spain vs Argentina và đẩy England xuống trận tranh hạng ba với France.",
+    "Trận đấu khép lại một cặp bán kết giàu sức nặng lịch sử, nơi Argentina kiểm soát tốt hơn những thời điểm quyết định."
+  ],
+  "tournamentImpact": [
+    "Argentina trở thành đội thứ hai giành vé vào chung kết World Cup 2026.",
+    "Chung kết được xác định là Spain vs Argentina vào ngày 19/7/2026.",
+    "France vs England là cặp tranh hạng ba vào ngày 18/7/2026.",
+    "Argentina còn cách việc trở thành đội đầu tiên bảo vệ thành công World Cup kể từ Brazil năm 1962 đúng một trận đấu."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Lionel Messi",
+      "team": "Argentina",
+      "note": "Tiếp tục là trung tâm sáng tạo và thủ lĩnh của Argentina trên hành trình vào chung kết."
+    },
+    {
+      "name": "Jude Bellingham",
+      "team": "England",
+      "note": "Là điểm tựa lớn nhất của England trong giai đoạn knock-out, dù đội tuyển dừng bước ở bán kết."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina thắng England 2-1 và vào chung kết gặp Spain. Thử thách cuối cùng là xuyên phá hệ thống kiểm soát và phòng ngự ổn định nhất giải.",
+    "Brazil": "Brazil đã bị loại từ vòng 16 đội. Argentina hiện là đại diện Nam Mỹ duy nhất còn cơ hội vô địch.",
+    "Portugal": "Portugal đã bị Spain loại ở vòng 16 đội. Spain hiện là đối thủ cuối cùng của Argentina trong trận tranh chức vô địch."
+  },
+  "watchNext": [
+    "France vs England ngày 18/7: hai đội cần phản ứng nhanh sau thất bại bán kết để tranh hạng ba.",
+    "Spain vs Argentina ngày 19/7: Spain có cấu trúc cân bằng nhất giải; Argentina sở hữu kinh nghiệm trận lớn và cơ hội bảo vệ ngai vàng.",
+    "Theo dõi cuộc đấu tuyến giữa, cách Spain hạn chế Messi và khả năng Argentina khai thác khoảng trống khi Spain dâng cao."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Argentina win 2-1 against England",
+      "link": "caused",
+      "to": "Argentina reach the 2026 World Cup final"
+    },
+    {
+      "from": "Argentina advance from the second semi-final",
+      "link": "completed",
+      "to": "Spain vs Argentina final pairing"
+    },
+    {
+      "from": "England lose the semi-final",
+      "link": "caused",
+      "to": "France vs England third-place match"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FIFA - England v Argentina match centre",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540"
+    },
+    {
+      "name": "FIFA - World Cup 2026 scores and fixtures",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures"
+    },
+    {
+      "name": "Reuters - Messi, Bellingham and history collide in Argentina-England semi-final",
+      "url": "https://www.reuters.com/sports/soccer/messi-bellingham-history-collide-argentina-england-semi-final-2026-07-13/"
+    }
+  ]
+}
