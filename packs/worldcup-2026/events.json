@@ -5884,8 +5884,8 @@
   },
   {
     "id": "wc2026-france-spain-0714",
-    "title": "France vs Spain",
-    "description": "Semi-final fixture: France vs Spain, July 14, 2026 at Dallas (Arlington).",
+    "title": "France 0–2 Spain",
+    "description": "France lost to Spain 0–2 in Semi-final.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5893,7 +5893,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "semi-final",
@@ -5902,13 +5902,13 @@
     ],
     "date": "2026-07-14",
     "dateLabel": "July 14, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "France",
       "Spain",
       "Semi-final"
     ],
-    "whyItMatters": "Upcoming Semi-final match.",
+    "whyItMatters": "Scorers: Mikel Oyarzabal, Pedro Porro.",
     "sources": [
       {
         "type": "open-data",
