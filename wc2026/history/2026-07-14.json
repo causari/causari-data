@@ -1,0 +1,98 @@
+{
+  "date": "2026-07-14",
+  "status": "final",
+  "title": "Spain shut out France to reach the World Cup final",
+  "summary": "Spain thắng France 2-0 ở bán kết đầu tiên. Mikel Oyarzabal mở tỷ số từ chấm phạt đền phút 22 sau khi Lamine Yamal kiếm được lỗi; Pedro Porro nhân đôi cách biệt phút 58 sau pha phối hợp với Dani Olmo. Spain giữ sạch lưới trước hàng công Mbappé–Dembélé–Olise và vào chung kết gặp đội thắng cặp England–Argentina. France chuyển sang trận tranh hạng ba.",
+  "results": [
+    {
+      "round": "Semi-final",
+      "home": "France",
+      "away": "Spain",
+      "homeScore": 0,
+      "awayScore": 2,
+      "winner": "Spain",
+      "status": "complete",
+      "venue": "Dallas Stadium, Arlington"
+    }
+  ],
+  "bigMoments": [
+    "Lamine Yamal tạo bước ngoặt khi kiếm về quả phạt đền; Mikel Oyarzabal thực hiện thành công phút 22.",
+    "Yamal từng đưa bóng vào lưới nhưng bàn thắng không được công nhận vì việt vị.",
+    "Pedro Porro nâng tỷ số lên 2-0 phút 58 sau pha bật nhả với Dani Olmo.",
+    "Spain vô hiệu hóa bộ ba Kylian Mbappé, Ousmane Dembélé và Michael Olise, hoàn tất trận giữ sạch lưới thứ sáu trong bảy trận tại giải."
+  ],
+  "tournamentImpact": [
+    "Spain trở thành đội đầu tiên giành vé vào chung kết World Cup 2026.",
+    "Spain chờ đội thắng bán kết England vs Argentina vào ngày 15/7.",
+    "France lỡ cơ hội vào trận chung kết World Cup thứ ba liên tiếp và sẽ đá trận tranh hạng ba ngày 18/7.",
+    "Khả năng kiểm soát nhịp độ và phòng ngự của Spain tiếp tục là nền tảng lớn nhất trong hành trình tranh chức vô địch."
+  ],
+  "standoutPlayers": [
+    {
+      "name": "Lamine Yamal",
+      "team": "Spain",
+      "note": "Kiếm quả phạt đền mở nút thắt, liên tục kéo giãn hàng thủ France và là nguồn sáng tạo nổi bật nhất trận."
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "team": "Spain",
+      "note": "Thực hiện thành công quả phạt đền mở tỷ số phút 22."
+    },
+    {
+      "name": "Pedro Porro",
+      "team": "Spain",
+      "note": "Ghi bàn ấn định tỷ số 2-0 sau pha phối hợp với Dani Olmo."
+    },
+    {
+      "name": "Rodri",
+      "team": "Spain",
+      "note": "Điều tiết tuyến giữa và giúp Spain kiểm soát tốc độ trận đấu."
+    }
+  ],
+  "focus": {
+    "Argentina": "Argentina gặp England ở bán kết còn lại. Spain đã chờ sẵn ở chung kết; Argentina cần tránh để mất quyền kiểm soát tuyến giữa và phải tìm cách xuyên qua một hệ thống phòng ngự mới chỉ thủng lưới một lần tại giải.",
+    "Brazil": "Brazil đã bị loại từ vòng 16 đội. Không có thay đổi mới trong ngày thi đấu này.",
+    "Portugal": "Portugal đã bị Spain loại ở vòng 16 đội. Việc Spain tiến tới chung kết phần nào cho thấy Portugal đã dừng bước trước đội có cấu trúc và độ ổn định cao nhất giải."
+  },
+  "watchNext": [
+    "England vs Argentina: xác định đối thủ của Spain ở chung kết; trọng tâm là Bellingham đối đầu tuyến giữa Argentina và khả năng Messi tạo khác biệt trong trận knock-out lớn.",
+    "Theo dõi thể lực của cả England lẫn Argentina sau khi hai đội đều phải đá 120 phút tại tứ kết.",
+    "France sẽ chờ đội thua England–Argentina ở trận tranh hạng ba ngày 18/7."
+  ],
+  "causalTimeline": [
+    {
+      "from": "Lamine Yamal draws a foul in the penalty area",
+      "link": "caused",
+      "to": "Mikel Oyarzabal opens scoring from the penalty spot"
+    },
+    {
+      "from": "Spain control midfield tempo",
+      "link": "limited",
+      "to": "France attacking trio creates few clear chances"
+    },
+    {
+      "from": "Dani Olmo and Pedro Porro combine",
+      "link": "enabled",
+      "to": "Porro doubles Spain lead in minute 58"
+    },
+    {
+      "from": "Spain 2-0 France",
+      "link": "caused",
+      "to": "Spain reach the 2026 World Cup final"
+    }
+  ],
+  "sources": [
+    {
+      "name": "FIFA - World Cup 2026 match schedule, fixtures and results",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"
+    },
+    {
+      "name": "Reuters - France fail World Cup Spanish test in spectacular fashion",
+      "url": "https://www.reuters.com/sports/soccer/france-fail-world-cup-spanish-test-spectacular-fashion-2026-07-14/"
+    },
+    {
+      "name": "AP - Spain shuts down France and advances to the World Cup final",
+      "url": "https://apnews.com/article/87fb7740fa552edf4bfd28d0e8727c23"
+    }
+  ]
+}
