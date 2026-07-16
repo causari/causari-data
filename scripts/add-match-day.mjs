@@ -1,21 +1,20 @@
 #!/usr/bin/env node
-// Add a match-day to a live pack — deterministically and safely.
-//
-// The daily updater (scheduled Codex job or a human) supplies a small input file
-// describing the day's results + new fixtures + causal links. This script does the
-// mechanical, error-prone parts (id wiring, status flips, defaults) and — crucially —
-// validates the WHOLE pack in memory and refuses to write if anything is broken.
-// It also enforces the honesty rule: every completed result must cite a source.
-//
-//   node scripts/add-match-day.mjs <input.json> [packId=worldcup-2026]
-//
-// Exit 0 = pack updated + valid. Exit 1 = nothing written (see printed errors).
+// Add a match-day to a live pack deterministically and safely.
+// Human/agent inputs may enrich the same match from additional sources, but a
+// stable matchNumber is used to reconcile identity and factual conflicts fail
+// closed unless an explicit reviewed correction is supplied.
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validatePackData } from './validate-pack.mjs';
 import { assessCausalQuality } from './causal-quality.mjs';
+import {
+  asMatchNumber,
+  factFingerprint,
+  matchKey,
+  mergeSources,
+} from './worldcup-facts.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -40,76 +39,134 @@ const insights = readJson(insightsPath);
 const input = readJson(inputPath);
 
 const eventsById = new Map(events.map((e) => [e.id, e]));
+const eventsByMatchNumber = new Map();
+for (const event of events) {
+  const n = asMatchNumber(event.matchNumber);
+  if (n == null) continue;
+  if (eventsByMatchNumber.has(n)) die(`pack already contains duplicate matchNumber ${n}`);
+  eventsByMatchNumber.set(n, event);
+}
 const linkIds = new Set(links.map((l) => l.id));
 const insightsById = new Map(insights.map((i) => [i.id, i]));
+const aliases = new Map();
 
-const DEFAULTS = { domains: ['culture', 'systems'], precision: 'day', yearNum: 2026, yearLabel: '2026', impactScore: 0.6, tags: [] };
+const DEFAULTS = {
+  domains: ['culture', 'systems'],
+  precision: 'day',
+  yearNum: 2026,
+  yearLabel: '2026',
+  impactScore: 0.6,
+  tags: [],
+};
 const topDate = input.date;
 const topDateLabel = input.dateLabel;
 
-function upsertEvent(src, status) {
-  if (!src.id) die(`an event in input has no id`);
-  const existing = eventsById.get(src.id) || {};
-  const ev = {
-    ...DEFAULTS,
-    ...existing,
-    ...src,
-    status,
-    date: src.date || existing.date || topDate,
-    dateLabel: src.dateLabel || existing.dateLabel || topDateLabel,
-  };
-  if (!ev.date) die(`event ${src.id}: no date (set input.date or per-event date)`);
-  eventsById.set(ev.id, ev);
+function looksLikeKnockout(src) {
+  const text = [src.title, ...(Array.isArray(src.entities) ? src.entities : [])].join(' ');
+  return /round of 32|round of 16|quarter|semi|final|third place/i.test(text);
 }
 
-// 1) Completed results — honesty gate: each MUST carry a source.
-for (const r of input.results || []) {
-  if (!Array.isArray(r.sources) || r.sources.length === 0) {
-    die(`result ${r.id || '<no id>'}: a completed result requires a non-empty "sources" citation (honesty rule)`);
+function assertCompatibleFacts(existing, incoming) {
+  if (!existing) return;
+  const oldFact = factFingerprint(existing);
+  const newFact = factFingerprint(incoming);
+  if (!oldFact || !newFact || oldFact === newFact) return;
+  const correction = incoming.factCorrection;
+  if (!correction || !String(correction.reason ?? '').trim()) {
+    die(`result conflict for ${incoming.matchNumber ? `match ${incoming.matchNumber}` : incoming.id}: existing and incoming facts differ; add factCorrection.reason only after manual source review`);
   }
-  upsertEvent(r, 'completed');
 }
 
-// 2) New upcoming fixtures.
-for (const s of input.scheduled || []) upsertEvent(s, 'scheduled');
+function upsertEvent(src, status) {
+  if (!src.id) die('an event in input has no id');
+  const n = asMatchNumber(src.matchNumber);
+  if (packId === 'worldcup-2026' && looksLikeKnockout(src) && n == null) {
+    die(`event ${src.id}: knockout fixtures/results require matchNumber so W91-style placeholders reconcile safely`);
+  }
 
-// 3) Causal links (event -> event). Id is derived; dupes skipped.
-for (const l of input.links || []) {
-  if (!l.fromEvent || !l.toEvent || !l.relationship) die(`a link is missing fromEvent/toEvent/relationship`);
-  const id = `${l.fromEvent}--${l.relationship}-->${l.toEvent}`;
+  const byNumber = n == null ? null : eventsByMatchNumber.get(n);
+  const byId = eventsById.get(src.id);
+  if (byNumber && byId && byNumber.id !== byId.id) {
+    die(`event ${src.id}: id and matchNumber ${n} point to different existing events`);
+  }
+  const existing = byNumber || byId || null;
+  const canonicalId = existing?.id || src.id;
+  if (src.id !== canonicalId) aliases.set(src.id, canonicalId);
+
+  const candidate = {
+    ...DEFAULTS,
+    ...(existing || {}),
+    ...src,
+    id: canonicalId,
+    status,
+    date: src.date || existing?.date || topDate,
+    dateLabel: src.dateLabel || existing?.dateLabel || topDateLabel,
+    sources: mergeSources(existing?.sources, src.sources),
+    ...(n != null ? { matchNumber: n, matchKey: matchKey(n) } : {}),
+  };
+  if (!candidate.date) die(`event ${src.id}: no date (set input.date or per-event date)`);
+  assertCompatibleFacts(existing, candidate);
+  delete candidate.factCorrection;
+
+  if (existing && existing.id !== candidate.id) eventsById.delete(existing.id);
+  eventsById.set(candidate.id, candidate);
+  if (n != null) eventsByMatchNumber.set(n, candidate);
+}
+
+// Completed facts require citations. An AI-generated recap is not itself a score source.
+for (const result of input.results || []) {
+  if (!Array.isArray(result.sources) || result.sources.length === 0) {
+    die(`result ${result.id || '<no id>'}: a completed result requires a non-empty "sources" citation`);
+  }
+  upsertEvent(result, 'completed');
+}
+
+for (const scheduled of input.scheduled || []) upsertEvent(scheduled, 'scheduled');
+
+const resolveAlias = (id) => aliases.get(id) || id;
+for (const sourceLink of input.links || []) {
+  if (!sourceLink.fromEvent || !sourceLink.toEvent || !sourceLink.relationship) {
+    die('a link is missing fromEvent/toEvent/relationship');
+  }
+  const fromEvent = resolveAlias(sourceLink.fromEvent);
+  const toEvent = resolveAlias(sourceLink.toEvent);
+  const id = `${fromEvent}--${sourceLink.relationship}-->${toEvent}`;
   if (linkIds.has(id)) continue;
-  links.push({ id, fromEvent: l.fromEvent, toEvent: l.toEvent, relationship: l.relationship, confidence: l.confidence, evidence: l.evidence });
+  links.push({
+    id,
+    fromEvent,
+    toEvent,
+    relationship: sourceLink.relationship,
+    confidence: sourceLink.confidence,
+    evidence: sourceLink.evidence,
+  });
   linkIds.add(id);
 }
 
-// 4) Attach links to insight patterns (dedup) or add whole new insights.
-for (const u of input.insightInstances || []) {
-  const ins = insightsById.get(u.insightId);
-  if (!ins) die(`insightInstances: unknown insight "${u.insightId}"`);
-  const set = new Set(ins.instances);
-  for (const lid of u.addLinkIds || []) set.add(lid);
-  ins.instances = [...set];
+for (const update of input.insightInstances || []) {
+  const insight = insightsById.get(update.insightId);
+  if (!insight) die(`insightInstances: unknown insight "${update.insightId}"`);
+  const set = new Set(insight.instances);
+  for (const rawId of update.addLinkIds || []) {
+    const link = links.find((l) => l.id === rawId);
+    if (link) set.add(rawId);
+  }
+  insight.instances = [...set];
 }
-for (const ni of input.newInsights || []) {
-  if (insightsById.has(ni.id)) die(`newInsights: insight "${ni.id}" already exists`);
-  insights.push(ni);
-  insightsById.set(ni.id, ni);
+for (const newInsight of input.newInsights || []) {
+  if (insightsById.has(newInsight.id)) die(`newInsights: insight "${newInsight.id}" already exists`);
+  insights.push(newInsight);
+  insightsById.set(newInsight.id, newInsight);
 }
 
 const merged = { events: [...eventsById.values()], links, insights };
-
-// 5) Validate BEFORE writing. Nothing is written if invalid.
-//    (a) structural validation — ids resolve, enums in range, referential integrity.
 const errors = validatePackData(merged, packId);
 if (errors.length > 0) {
   console.error(`✗ ${errors.length} validation error(s) — nothing written:`);
   for (const e of errors) console.error(`  - ${e}`);
   process.exit(1);
 }
-//    (b) causal-quality gate — the layer must be real, not templated. Catches a
-//    "Scorers: …" whyItMatters, a single-relationship graph, a backwards scoreline,
-//    a scheduled event carrying a result, an unresolved round/team, etc. This is
-//    what keeps the daily editorial honest even when structure is fine.
+
 const { errors: qErrors, warnings: qWarnings } = assessCausalQuality(merged, packId);
 for (const w of qWarnings) console.warn(`  ! ${w}`);
 if (qErrors.length > 0) {
@@ -124,4 +181,5 @@ write(linksPath, merged.links);
 write(insightsPath, merged.insights);
 
 console.log(`✓ ${packId} updated: ${merged.events.length} events, ${merged.links.length} links, ${merged.insights.length} insights`);
+console.log(`  reconciled aliases: ${aliases.size}`);
 console.log('  Review the diff, then commit. CI re-validates on push.');
