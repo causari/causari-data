@@ -1,46 +1,51 @@
 #!/usr/bin/env node
-// Ingest the REAL World Cup 2026 schedule + results from openfootball (public
-// domain, no API key) and MERGE them into the worldcup-2026 pack. Every fixture
-// becomes an event with an openfootball source citation; the ingest owns ONLY the
-// mechanical facts (title, scoreline, date, status). It MERGES rather than
-// overwrites, so the curated causal layer — real whyItMatters, nextWatchpoints,
-// typed links, the 160-year lineage, curated insights — SURVIVES the daily run.
-// Validates in memory (structure + causal quality); writes nothing on error.
+// Ingest World Cup 2026 schedule/results from openfootball and reconcile them
+// against the curated pack without treating a human-readable event id as the
+// identity of a match. Match number is the stable identity when the source
+// provides it; title/team/date ids remain presentation-friendly aliases.
 //
-//   node scripts/ingest-openfootball.mjs           # fetch live + merge into pack
-//   node scripts/ingest-openfootball.mjs <file.json>   # use a local snapshot
-//
-// Run daily (see .github/workflows/ingest.yml) so the pack tracks the tournament.
-//
-// ── MERGE CONTRACT (why this stopped clobbering the causal graph) ────────────
-// For an event the ingest already knows (same id), it refreshes ONLY the fields
-// openfootball is authoritative for (title/description-if-thin/date/status/
-// impactScore) and PRESERVES any curated fields already on disk (a real
-// whyItMatters, nextWatchpoints, richer entities, extra tags). It NEVER deletes
-// events it didn't create — the history-spine lineage and any editorially-added
-// events stay. Links + insights already on disk are preserved and de-duplicated;
-// the ingest only ADDS its own mechanical links when a curated one isn't present.
-// See docs/CAUSAL-CONTRACT.md for the editorial quality bar the daily process must meet.
+// Facts owned by the feed: participants, schedule, status and structured result.
+// Editorial fields owned by Causari: whyItMatters, watchpoints, bilingual prose,
+// causal links and insight patterns. Source citations are UNIONED, never replaced.
+// Cross-source factual conflicts fail closed for manual review.
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validatePackData } from './validate-pack.mjs';
 import { assessCausalQuality } from './causal-quality.mjs';
+import {
+  asMatchNumber,
+  assertNoIndependentFactConflict,
+  eventTeamPair,
+  formatResultDescription,
+  formatResultTitle,
+  isPlaceholderEvent,
+  isPlaceholderTeam,
+  matchKey,
+  mergeSources,
+  normalizeOutcome,
+  outcomeWinner,
+} from './worldcup-facts.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = join(ROOT, 'packs', 'worldcup-2026');
 const SRC = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json';
-const SOURCE = { type: 'open-data', citation: 'openfootball/worldcup.json (public domain)', url: 'https://github.com/openfootball/worldcup.json' };
+const SOURCE = {
+  type: 'open-data',
+  role: 'schedule-result-feed',
+  sourceId: 'openfootball:worldcup-2026',
+  citation: 'openfootball/worldcup.json (public domain)',
+  url: 'https://github.com/openfootball/worldcup.json',
+};
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
-// Fields openfootball is authoritative for and may refresh on an existing event.
-// Everything else already on disk (curated whyItMatters, nextWatchpoints, extra
-// entities/tags, kickoff) is PRESERVED — that is the whole point of the merge.
-const INGEST_OWNED = new Set(['title', 'date', 'dateLabel', 'status', 'yearNum', 'yearLabel', 'precision', 'sources']);
-// A whyItMatters that matches these is mechanical — safe for the ingest to replace
-// with its own fallback (or leave for the editorial pass to enrich). A NON-templated
-// whyItMatters is curated and must never be overwritten.
+// Sources are intentionally excluded. Provenance from Reuters/AP/FIFA/editorial
+// inputs must survive a mechanical refresh.
+const INGEST_OWNED = new Set([
+  'title', 'date', 'dateLabel', 'status', 'yearNum', 'yearLabel', 'precision',
+  'matchNumber', 'matchKey', 'sourceMatchId', 'result', 'venue', 'kickoff',
+]);
 const TEMPLATED_WHY = [/^scorers:/i, /^full-time\s+\d/i, /^upcoming\s+.*match/i];
 const isTemplatedWhy = (w) => TEMPLATED_WHY.some((re) => re.test(String(w ?? '')));
 
@@ -51,7 +56,11 @@ function readJsonIfExists(path, fallback) {
 
 const slug = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
   .replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-const dateLabel = (iso) => { const [y, m, d] = iso.split('-').map(Number); return `${MONTHS[m - 1]} ${d}, ${y}`; };
+const dateLabel = (iso) => {
+  const [y, m, d] = iso.split('-').map(Number);
+  return `${MONTHS[m - 1]} ${d}, ${y}`;
+};
+const norm = (s) => String(s ?? '').trim().toLowerCase().replace(/\s+/g, ' ');
 
 async function loadMatches() {
   const arg = process.argv[2];
@@ -61,66 +70,116 @@ async function loadMatches() {
   return (await res.json()).matches;
 }
 
+function sourceMatchId(m) {
+  const n = asMatchNumber(m.num);
+  return n != null
+    ? `openfootball:worldcup-2026:${n}`
+    : `openfootball:worldcup-2026:${m.date}:${slug(m.team1)}:${slug(m.team2)}`;
+}
+
 function buildEvents(matches) {
   const pairs = [];
   const seen = new Set();
   for (const m of matches) {
-    const t1 = m.team1, t2 = m.team2, lane = m.group || m.round || 'Knockouts';
+    const t1 = m.team1;
+    const t2 = m.team2;
+    const lane = m.group || m.round || 'Knockouts';
     let id = `wc2026-${slug(t1)}-${slug(t2)}-${m.date.slice(5).replace('-', '')}`;
     while (seen.has(id)) id += 'x';
     seen.add(id);
-    const played = !!(m.score && m.score.ft);
+
+    const outcome = normalizeOutcome(m.score);
+    const played = !!outcome;
     const dd = dateLabel(m.date);
-    let title, description, whyItMatters, impactScore;
+    const n = asMatchNumber(m.num);
+    let title;
+    let description;
+    let whyItMatters;
+    let impactScore;
+
     if (played) {
-      const [a, b] = m.score.ft;
-      title = `${t1} ${a}–${b} ${t2}`;
-      const verb = a > b ? 'beat' : (b > a ? 'lost to' : 'drew');
-      description = `${t1} ${verb} ${t2} ${a}–${b} in ${lane}.`;
-      const scorers = [...(m.goals1 || []), ...(m.goals2 || [])].map((g) => g.name).filter(Boolean);
-      whyItMatters = scorers.length ? `Scorers: ${scorers.join(', ')}.` : `Full-time ${a}–${b}${m.ground ? ` at ${m.ground}` : ''}.`;
-      impactScore = Math.min(0.78, 0.52 + Math.abs(a - b) * 0.05);
+      title = formatResultTitle(t1, t2, outcome);
+      description = formatResultDescription(t1, t2, lane, outcome);
+      const scorers = [...(m.goals1 || []), ...(m.goals2 || [])]
+        .map((g) => g.name)
+        .filter(Boolean);
+      whyItMatters = scorers.length
+        ? `Scorers: ${scorers.join(', ')}.`
+        : `Full-time ${outcome.final[0]}–${outcome.final[1]}${m.ground ? ` at ${m.ground}` : ''}.`;
+      impactScore = Math.min(0.78, 0.52 + Math.abs(outcome.final[0] - outcome.final[1]) * 0.05);
     } else {
       title = `${t1} vs ${t2}`;
       description = `${lane} fixture: ${t1} vs ${t2}, ${dd}${m.ground ? ` at ${m.ground}` : ''}.`;
       whyItMatters = `Upcoming ${lane} match.`;
       impactScore = 0.5;
     }
+
     const ev = {
-      id, title, description, yearNum: 2026, yearLabel: '2026', precision: 'day',
-      domains: ['culture', 'systems'], impactScore,
+      id,
+      title,
+      description,
+      yearNum: 2026,
+      yearLabel: '2026',
+      precision: 'day',
+      domains: ['culture', 'systems'],
+      impactScore,
       tags: ['world-cup-2026', slug(lane), slug(t1), slug(t2)],
-      date: m.date, dateLabel: dd, status: played ? 'completed' : 'scheduled',
-      entities: [t1, t2, lane], whyItMatters, sources: [SOURCE],
+      date: m.date,
+      dateLabel: dd,
+      status: played ? 'completed' : 'scheduled',
+      entities: [t1, t2, lane],
+      whyItMatters,
+      sources: [SOURCE],
+      sourceMatchId: sourceMatchId(m),
+      ...(n != null ? { matchNumber: n, matchKey: matchKey(n) } : {}),
+      ...(m.ground ? { venue: m.ground } : {}),
+      ...(m.time ? { kickoff: m.time } : {}),
+      ...(outcome ? { result: outcome } : {}),
     };
-    pairs.push({ ev, m });
+    pairs.push({ ev, m, outcome });
   }
   return pairs;
 }
 
-// Sparse causal layer: a large-margin win "accelerated" the winner's next fixture.
+// Sparse mechanical links remain deliberately conservative. Editorial links win
+// on duplicate ordered pairs later in the merge.
 function buildLinks(pairs) {
   const byTeam = {};
-  for (const p of pairs) for (const t of [p.m.team1, p.m.team2]) (byTeam[t] = byTeam[t] || []).push(p);
-  for (const t in byTeam) byTeam[t].sort((a, b) => a.m.date.localeCompare(b.m.date));
-  const links = []; const ids = new Set();
   for (const p of pairs) {
-    if (!(p.m.score && p.m.score.ft)) continue;
-    const [a, b] = p.m.score.ft; const margin = Math.abs(a - b);
-    if (margin < 3) continue;
-    const winner = a > b ? p.m.team1 : p.m.team2;
-    // Report the WINNER's own margin (higher–lower), never the raw team1–team2
-    // pair — otherwise a team2 win prints as e.g. "Mexico's 0–3 win" (the live bug).
-    const hi = Math.max(a, b), lo = Math.min(a, b);
+    for (const t of [p.m.team1, p.m.team2]) {
+      if (isPlaceholderTeam(t)) continue;
+      (byTeam[t] = byTeam[t] || []).push(p);
+    }
+  }
+  for (const t in byTeam) byTeam[t].sort((a, b) => a.m.date.localeCompare(b.m.date));
+
+  const links = [];
+  const ids = new Set();
+  for (const p of pairs) {
+    if (!p.outcome) continue;
+    const [a, b] = p.outcome.final;
+    const margin = Math.abs(a - b);
+    const winner = outcomeWinner(p.m.team1, p.m.team2, p.outcome);
+    if (!winner || margin < 3) continue;
+
+    const hi = Math.max(a, b);
+    const lo = Math.min(a, b);
     const seq = byTeam[winner];
     const i = seq.indexOf(p);
     const next = seq[i + 1];
     if (!next) continue;
     const nextOpp = next.m.team1 === winner ? next.m.team2 : next.m.team1;
+    if (isPlaceholderTeam(nextOpp)) continue;
+
     const id = `${p.ev.id}--accelerated-->${next.ev.id}`;
-    if (ids.has(id)) continue; ids.add(id);
+    if (ids.has(id)) continue;
+    ids.add(id);
     links.push({
-      id, fromEvent: p.ev.id, toEvent: next.ev.id, relationship: 'accelerated', confidence: 0.62,
+      id,
+      fromEvent: p.ev.id,
+      toEvent: next.ev.id,
+      relationship: 'accelerated',
+      confidence: 0.62,
       evidence: `${winner}'s ${hi}–${lo} win banked a goal-difference cushion heading into ${winner} vs ${nextOpp}.`,
     });
   }
@@ -134,89 +193,227 @@ function buildInsights(links) {
     pattern: 'Statement Win Creates Momentum and Goal-Difference Cushion',
     description: 'A large-margin win generates both a practical goal-difference advantage and narrative momentum that carries into the next fixture.',
     instances: links.map((l) => l.id),
-    predictiveValue: 0.7, domains: ['culture', 'systems'],
+    predictiveValue: 0.7,
+    domains: ['culture', 'systems'],
   }];
 }
 
-// ── Merge an ingest event onto whatever curated event is already on disk ──────
-// Refresh only the fields openfootball owns; preserve every curated field. A
-// templated whyItMatters is refreshed; a curated one is kept. Curated entities /
-// tags / nextWatchpoints / kickoff — and their bilingual _vi twins — survive
-// untouched (the whole spread of `existing` carries them through; the openfootball
-// feed never produces a _vi field so it can only ADD, never wipe, Vietnamese prose).
-function mergeEvent(existing, fresh) {
-  if (!existing) return fresh;                       // brand-new fixture
+function eventRound(event) {
+  const entities = Array.isArray(event?.entities) ? event.entities : [];
+  const candidate = entities.find((x) => /group|round|quarter|semi|final|third/i.test(String(x)));
+  return norm(candidate);
+}
+
+function venueMatches(event, m) {
+  if (!m.ground) return false;
+  if (norm(event?.venue) === norm(m.ground)) return true;
+  return norm(event?.description).includes(norm(m.ground));
+}
+
+function candidateScore(event, fresh, m) {
+  if (!event || !event.status) return 0;
+  const freshN = asMatchNumber(fresh.matchNumber);
+  const eventN = asMatchNumber(event.matchNumber);
+  if (freshN != null && eventN === freshN) return 120;
+  if (event.sourceMatchId && event.sourceMatchId === fresh.sourceMatchId) return 115;
+  if (event.id === fresh.id) return 110;
+  if (event.date === fresh.date && eventTeamPair(event) && eventTeamPair(event) === eventTeamPair(fresh)) return 90;
+  if (
+    isPlaceholderEvent(event)
+    && event.date === fresh.date
+    && eventRound(event) === norm(m.group || m.round || 'Knockouts')
+    && venueMatches(event, m)
+  ) return 80;
+  return 0;
+}
+
+function editorialRichness(event) {
+  let score = 0;
+  if (!event) return score;
+  if (!isPlaceholderEvent(event)) score += 10;
+  if (event.whyItMatters && !isTemplatedWhy(event.whyItMatters)) score += 8;
+  score += Math.min(5, Array.isArray(event.nextWatchpoints) ? event.nextWatchpoints.length : 0);
+  score += Math.min(3, Array.isArray(event.sources) ? event.sources.length : 0);
+  if (event.whyItMatters_vi) score += 2;
+  if (Array.isArray(event.nextWatchpoints_vi) && event.nextWatchpoints_vi.length) score += 2;
+  return score;
+}
+
+function shouldMigrateId(existing, fresh) {
+  if (!existing) return false;
+  if (isPlaceholderEvent(existing) && !isPlaceholderEvent(fresh)) return true;
+  const oldPair = eventTeamPair(existing);
+  const newPair = eventTeamPair(fresh);
+  return asMatchNumber(existing.matchNumber) != null && oldPair && newPair && oldPair !== newPair;
+}
+
+function mergeEvent(existing, fresh, duplicates = []) {
+  for (const candidate of [existing, ...duplicates]) {
+    if (candidate) assertNoIndependentFactConflict(candidate, fresh);
+  }
+  if (!existing) return {
+    ...fresh,
+    sources: mergeSources(...duplicates.map((e) => e.sources), fresh.sources),
+  };
+
   const merged = { ...existing };
-  for (const k of INGEST_OWNED) if (fresh[k] !== undefined) merged[k] = fresh[k];
-  // description: only refresh if the curated one is missing or still the ingest stub.
-  if (!existing.description || /^\w[\w '&-]* (?:beat|lost to|drew) /.test(existing.description) || /fixture:/.test(existing.description)) {
+  for (const k of INGEST_OWNED) {
+    if (fresh[k] !== undefined) merged[k] = fresh[k];
+    else delete merged[k];
+  }
+
+  const existingIsPlaceholder = isPlaceholderEvent(existing);
+  const freshIsResolved = !isPlaceholderEvent(fresh);
+  if (
+    !existing.description
+    || /^\w[\w '&-]* (?:beat|lost to|drew) /.test(existing.description)
+    || /fixture:/.test(existing.description)
+    || (existingIsPlaceholder && freshIsResolved)
+  ) {
     merged.description = fresh.description;
   }
-  // whyItMatters: replace ONLY if the existing one is templated/empty. When we DO
-  // overwrite a stale EN line with the ingest fallback, drop the now-orphaned VI
-  // twin so it can't caption an EN string it no longer matches (the editorial pass
-  // re-authors both). A curated whyItMatters is kept, and its whyItMatters_vi with it.
-  if (!existing.whyItMatters || isTemplatedWhy(existing.whyItMatters)) {
+
+  if (
+    !existing.whyItMatters
+    || isTemplatedWhy(existing.whyItMatters)
+    || /\b(?:W|L)\d+\b/i.test(String(existing.whyItMatters))
+  ) {
     merged.whyItMatters = fresh.whyItMatters;
     delete merged.whyItMatters_vi;
-    // Drop the VI watchpoints too: a stale whyItMatters this templated has no
-    // curated causal layer worth captioning in Vietnamese; the editorial pass
-    // re-authors watchpoints + their VI twin together.
     delete merged.nextWatchpoints_vi;
   }
-  // entities: keep the richer set (curated may add a venue / round label).
-  if (Array.isArray(existing.entities) && existing.entities.length >= (fresh.entities?.length ?? 0)) {
+
+  if (existingIsPlaceholder && freshIsResolved) {
+    merged.entities = fresh.entities;
+  } else if (Array.isArray(existing.entities) && existing.entities.length >= (fresh.entities?.length ?? 0)) {
     merged.entities = existing.entities;
   } else {
     merged.entities = fresh.entities;
   }
-  // impactScore: keep a curated (non-default) score, else take the ingest's margin-based one.
-  merged.impactScore = typeof existing.impactScore === 'number' && existing.impactScore !== 0.5 && existing.impactScore !== 0.6
-    ? existing.impactScore : fresh.impactScore;
+
+  const inheritedTags = [existing, ...duplicates]
+    .flatMap((e) => Array.isArray(e?.tags) ? e.tags : [])
+    .filter((tag) => !(freshIsResolved && /^(?:w|l)\d+$/i.test(String(tag))));
+  merged.tags = [...new Set([...inheritedTags, ...(fresh.tags || [])])];
+  merged.sources = mergeSources(
+    existing.sources,
+    ...duplicates.map((e) => e.sources),
+    fresh.sources,
+  );
+
+  merged.impactScore = typeof existing.impactScore === 'number'
+    && existing.impactScore !== 0.5
+    && existing.impactScore !== 0.6
+    ? existing.impactScore
+    : fresh.impactScore;
+
   return merged;
+}
+
+function resolveAlias(id, aliases) {
+  let current = id;
+  const seen = new Set();
+  while (aliases.has(current) && !seen.has(current)) {
+    seen.add(current);
+    current = aliases.get(current);
+  }
+  return current;
 }
 
 const matches = await loadMatches();
 const pairs = buildEvents(matches);
-const freshEvents = pairs.map((p) => p.ev);
 const freshLinks = buildLinks(pairs);
 
-// Load the curated pack already on disk (the causal substrate to PRESERVE).
 const priorEvents = readJsonIfExists(join(OUT, 'events.json'), []);
 const priorLinks = readJsonIfExists(join(OUT, 'links.json'), []);
 const priorInsights = readJsonIfExists(join(OUT, 'insights.json'), []);
 
-// 1) Events: merge fresh onto prior by id; keep every prior event the ingest
-//    didn't touch (history-spine lineage + editorially-added events).
-const freshById = new Map(freshEvents.map((e) => [e.id, e]));
-const priorById = new Map(priorEvents.map((e) => [e.id, e]));
-const mergedEventsById = new Map();
-for (const e of priorEvents) mergedEventsById.set(e.id, e);       // preserve all prior
-for (const e of freshEvents) mergedEventsById.set(e.id, mergeEvent(priorById.get(e.id), e));
-const events = [...mergedEventsById.values()];
+// Reconcile by stable match identity first, then exact id/team pair, then a
+// placeholder's schedule slot (date + round + venue). This removes W91/W92-style
+// ghosts when the upstream feed resolves participants.
+const consumedPriorIds = new Set();
+const aliases = new Map();
+const reconciledEvents = [];
 
-// 2) Links: keep every prior (curated) link; add a fresh mechanical link ONLY if
-//    no link already connects that ordered pair (don't fight the editorial layer).
-const priorPairs = new Set(priorLinks.map((l) => `${l.fromEvent}>${l.toEvent}`));
-const priorLinkIds = new Set(priorLinks.map((l) => l.id));
-const addedLinks = freshLinks.filter((l) => !priorLinkIds.has(l.id) && !priorPairs.has(`${l.fromEvent}>${l.toEvent}`));
-const links = [...priorLinks, ...addedLinks];
+for (const pair of pairs) {
+  const { ev: fresh, m } = pair;
+  const candidates = priorEvents
+    .filter((event) => !consumedPriorIds.has(event.id))
+    .map((event) => ({ event, score: candidateScore(event, fresh, m) }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || editorialRichness(b.event) - editorialRichness(a.event));
 
-// 3) Insights: preserve curated insights. Only seed the mechanical statement-win
-//    pattern if the pack has NO insights at all (a fresh pack), and never wipe curated ones.
-let insights = priorInsights;
-if (insights.length === 0 && addedLinks.length) insights = buildInsights(addedLinks);
+  const exact = candidates.find((x) => x.event.id === fresh.id)?.event;
+  const primary = exact || candidates[0]?.event || null;
+  const duplicateEvents = candidates.map((x) => x.event).filter((e) => e !== primary);
+  let canonicalId = primary?.id || fresh.id;
+  if (!primary || shouldMigrateId(primary, fresh)) canonicalId = fresh.id;
 
-// 4) Drop any link whose endpoints no longer resolve (safety after the merge).
-const eventIdSet = new Set(events.map((e) => e.id));
-const finalLinks = links.filter((l) => eventIdSet.has(l.fromEvent) && eventIdSet.has(l.toEvent));
-// 5) Drop insight instances pointing at links that no longer exist.
-const linkIdSet = new Set(finalLinks.map((l) => l.id));
-const finalInsights = insights
-  .map((i) => ({ ...i, instances: (i.instances || []).filter((id) => linkIdSet.has(id)) }))
-  .filter((i) => i.instances.length > 0);
+  const merged = mergeEvent(primary, fresh, duplicateEvents);
+  merged.id = canonicalId;
+  const legacyIds = new Set(Array.isArray(merged.legacyIds) ? merged.legacyIds : []);
 
-// Structural validation is a HARD gate (never write a broken graph).
+  for (const candidate of candidates.map((x) => x.event)) {
+    consumedPriorIds.add(candidate.id);
+    if (candidate.id !== canonicalId) {
+      aliases.set(candidate.id, canonicalId);
+      legacyIds.add(candidate.id);
+    }
+  }
+  if (fresh.id !== canonicalId) aliases.set(fresh.id, canonicalId);
+  if (legacyIds.size) merged.legacyIds = [...legacyIds].filter((id) => id !== canonicalId).sort();
+  reconciledEvents.push(merged);
+}
+
+// Preserve static lineage and editorial events not represented by the feed.
+for (const event of priorEvents) {
+  if (!consumedPriorIds.has(event.id)) reconciledEvents.push(event);
+}
+
+const eventsById = new Map();
+for (const event of reconciledEvents) {
+  if (eventsById.has(event.id)) {
+    throw new Error(`duplicate canonical event id after reconciliation: ${event.id}`);
+  }
+  eventsById.set(event.id, event);
+}
+const events = [...eventsById.values()];
+
+function remapLink(link) {
+  const fromEvent = resolveAlias(link.fromEvent, aliases);
+  const toEvent = resolveAlias(link.toEvent, aliases);
+  const id = `${fromEvent}--${link.relationship}-->${toEvent}`;
+  return { ...link, id, fromEvent, toEvent };
+}
+
+const finalLinks = [];
+const linkIds = new Set();
+const orderedPairs = new Set();
+const linkAliases = new Map();
+let addedLinks = 0;
+
+// Curated links are considered first, so the mechanical layer cannot replace one.
+for (const original of [...priorLinks, ...freshLinks]) {
+  const link = remapLink(original);
+  if (original.id !== link.id) linkAliases.set(original.id, link.id);
+  const pairKey = `${link.fromEvent}>${link.toEvent}`;
+  if (linkIds.has(link.id) || orderedPairs.has(pairKey)) continue;
+  if (!eventsById.has(link.fromEvent) || !eventsById.has(link.toEvent)) continue;
+  finalLinks.push(link);
+  linkIds.add(link.id);
+  orderedPairs.add(pairKey);
+  if (freshLinks.includes(original)) addedLinks++;
+}
+
+let finalInsights = priorInsights
+  .map((insight) => ({
+    ...insight,
+    instances: [...new Set((insight.instances || []).map((id) => linkAliases.get(id) || id))]
+      .filter((id) => linkIds.has(id)),
+  }))
+  .filter((insight) => insight.instances.length > 0);
+if (finalInsights.length === 0 && addedLinks) finalInsights = buildInsights(finalLinks);
+
 const errors = validatePackData({ events, links: finalLinks, insights: finalInsights }, 'worldcup-2026');
 if (errors.length) {
   console.error(`✗ ${errors.length} structural error(s) — nothing written:`);
@@ -224,18 +421,21 @@ if (errors.length) {
   process.exit(1);
 }
 
-// Causal-quality is a WARNING here (the ingest alone can't produce varied links);
-// it is HARD-enforced in add-match-day.mjs and CI where the editorial pass runs.
 const { warnings: qWarnings, errors: qErrors, stats } = assessCausalQuality(
-  { events, links: finalLinks, insights: finalInsights }, 'worldcup-2026');
+  { events, links: finalLinks, insights: finalInsights },
+  'worldcup-2026',
+);
 if (qErrors.length) {
-  console.warn(`! causal-quality: ${qErrors.length} issue(s) remain after ingest (the daily editorial pass must resolve these before publish):`);
+  console.warn(`! causal-quality: ${qErrors.length} issue(s) remain after ingest (the editorial pass must resolve these before publish):`);
   for (const w of qErrors.slice(0, 8)) console.warn('  - ' + w);
 }
 for (const w of qWarnings.slice(0, 4)) console.warn('  ! ' + w);
 
 const write = (n, d) => writeFileSync(join(OUT, n), JSON.stringify(d, null, 2) + '\n');
-write('events.json', events); write('links.json', finalLinks); write('insights.json', finalInsights);
+write('events.json', events);
+write('links.json', finalLinks);
+write('insights.json', finalInsights);
 const played = events.filter((e) => e.status === 'completed').length;
-console.log(`✓ worldcup-2026 (merged): ${events.length} events (${played} played, ${events.length - played} upcoming, ${stats.lineage} lineage), ${finalLinks.length} links (${addedLinks.length} added by ingest), ${finalInsights.length} insights`);
+console.log(`✓ worldcup-2026 (reconciled): ${events.length} events (${played} played, ${events.length - played} upcoming, ${stats.lineage} lineage), ${finalLinks.length} links (${addedLinks} added by ingest), ${finalInsights.length} insights`);
 console.log(`  preserved from prior: ${priorEvents.length} events, ${priorLinks.length} links, ${priorInsights.length} insights`);
+console.log(`  reconciled aliases: ${aliases.size}`);
