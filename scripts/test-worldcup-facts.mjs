@@ -21,7 +21,7 @@ const extraTime = normalizeOutcome({ ft: [1, 1], et: [1, 2] });
 assert.deepEqual(extraTime.final, [1, 2]);
 assert.equal(extraTime.decidedBy, 'extra_time');
 assert.equal(formatResultTitle('Norway', 'England', extraTime), 'Norway 1–2 England');
-assert.match(formatResultDescription('Norway', 'England', 'Quarter-final', extraTime), /after extra time/);
+assert.equal(formatResultDescription('Norway', 'England', 'Quarter-final', extraTime), 'England beat Norway 2–1 after extra time in Quarter-final.');
 
 const penalties = normalizeOutcome({ ft: [0, 0], et: [0, 0], p: [4, 3] });
 assert.equal(formatResultTitle('Switzerland', 'Colombia', penalties), 'Switzerland 0–0 (4–3 pens) Colombia');
