@@ -5919,8 +5919,43 @@
   },
   {
     "id": "wc2026-england-argentina-0715",
-    "title": "England vs Argentina",
-    "description": "Semi-final fixture: England vs Argentina, July 15, 2026 at Atlanta.",
+    "title": "England 1–2 Argentina",
+    "description": "England lost to Argentina 1–2 in Semi-final.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5700000000000001,
+    "tags": [
+      "world-cup-2026",
+      "semi-final",
+      "england",
+      "argentina"
+    ],
+    "date": "2026-07-15",
+    "dateLabel": "July 15, 2026",
+    "status": "completed",
+    "entities": [
+      "England",
+      "Argentina",
+      "Semi-final"
+    ],
+    "whyItMatters": "Scorers: Anthony Gordon, Enzo Fernández, Lautaro Martínez.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-france-england-0718",
+    "title": "France vs England",
+    "description": "Match for third place fixture: France vs England, July 18, 2026 at Miami (Miami Gardens).",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5931,19 +5966,54 @@
     "impactScore": 0.5,
     "tags": [
       "world-cup-2026",
-      "semi-final",
-      "england",
-      "argentina"
+      "match-for-third-place",
+      "france",
+      "england"
     ],
-    "date": "2026-07-15",
-    "dateLabel": "July 15, 2026",
+    "date": "2026-07-18",
+    "dateLabel": "July 18, 2026",
     "status": "scheduled",
     "entities": [
+      "France",
       "England",
-      "Argentina",
-      "Semi-final"
+      "Match for third place"
     ],
-    "whyItMatters": "Upcoming Semi-final match.",
+    "whyItMatters": "Upcoming Match for third place match.",
+    "sources": [
+      {
+        "type": "open-data",
+        "citation": "openfootball/worldcup.json (public domain)",
+        "url": "https://github.com/openfootball/worldcup.json"
+      }
+    ]
+  },
+  {
+    "id": "wc2026-spain-argentina-0719",
+    "title": "Spain vs Argentina",
+    "description": "Final fixture: Spain vs Argentina, July 19, 2026 at New York/New Jersey (East Rutherford).",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "culture",
+      "systems"
+    ],
+    "impactScore": 0.5,
+    "tags": [
+      "world-cup-2026",
+      "final",
+      "spain",
+      "argentina"
+    ],
+    "date": "2026-07-19",
+    "dateLabel": "July 19, 2026",
+    "status": "scheduled",
+    "entities": [
+      "Spain",
+      "Argentina",
+      "Final"
+    ],
+    "whyItMatters": "Upcoming Final match.",
     "sources": [
       {
         "type": "open-data",
