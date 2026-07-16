@@ -1,19 +1,37 @@
 name: ingest-worldcup
 
-# Refresh the worldcup-2026 pack from openfootball (real, public-domain data)
-# every day. The ingest script validates in memory and writes nothing on error;
-# if the data changed, commit it — which triggers the gated Pages deploy.
+# Refresh the structured match pack, reconcile stable match identities and block
+# publication if independently produced recap history disagrees with pack facts.
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # daily 06:00 UTC (after most match days finish)
+    - cron: "0 6 * * *"
   workflow_dispatch:
+  pull_request:
+    paths:
+      - "scripts/ingest-openfootball.mjs"
+      - "scripts/worldcup-facts.mjs"
+      - "scripts/test-worldcup-facts.mjs"
+      - "scripts/validate-pack.mjs"
+      - "scripts/validate-worldcup-consistency.mjs"
+      - "scripts/add-match-day.mjs"
+      - ".github/workflows/ingest.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/ingest-openfootball.mjs"
+      - "scripts/worldcup-facts.mjs"
+      - "scripts/test-worldcup-facts.mjs"
+      - "scripts/validate-pack.mjs"
+      - "scripts/validate-worldcup-consistency.mjs"
+      - "scripts/add-match-day.mjs"
+      - ".github/workflows/ingest.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: ingest
+  group: ingest-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -24,9 +42,25 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Ingest from openfootball
+
+      - name: Test score and provenance helpers
+        run: node scripts/test-worldcup-facts.mjs
+
+      - name: Ingest and reconcile from openfootball
         run: node scripts/ingest-openfootball.mjs
-      - name: Commit if the pack changed
+
+      - name: Validate pack structure
+        run: node scripts/validate-pack.mjs worldcup-2026
+
+      - name: Cross-check pack against recap history
+        run: node scripts/validate-worldcup-consistency.mjs
+
+      - name: Show generated diff on pull requests
+        if: github.event_name == 'pull_request'
+        run: git diff --stat -- packs/worldcup-2026
+
+      - name: Commit reconciled pack if changed
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "causari-bot"
           git config user.email "bot@users.noreply.github.com"
@@ -34,6 +68,6 @@ jobs:
             echo "No data changes."
           else
             git add packs/worldcup-2026
-            git commit -m "data(worldcup): daily ingest from openfootball"
+            git commit -m "data(worldcup): reconcile match identities and results"
             git push
           fi
