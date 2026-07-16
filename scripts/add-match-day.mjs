@@ -49,6 +49,7 @@ for (const event of events) {
 const linkIds = new Set(links.map((l) => l.id));
 const insightsById = new Map(insights.map((i) => [i.id, i]));
 const aliases = new Map();
+const linkAliases = new Map();
 
 const DEFAULTS = {
   domains: ['culture', 'systems'],
@@ -130,7 +131,9 @@ for (const sourceLink of input.links || []) {
   }
   const fromEvent = resolveAlias(sourceLink.fromEvent);
   const toEvent = resolveAlias(sourceLink.toEvent);
+  const rawId = `${sourceLink.fromEvent}--${sourceLink.relationship}-->${sourceLink.toEvent}`;
   const id = `${fromEvent}--${sourceLink.relationship}-->${toEvent}`;
+  if (rawId !== id) linkAliases.set(rawId, id);
   if (linkIds.has(id)) continue;
   links.push({
     id,
@@ -148,8 +151,9 @@ for (const update of input.insightInstances || []) {
   if (!insight) die(`insightInstances: unknown insight "${update.insightId}"`);
   const set = new Set(insight.instances);
   for (const rawId of update.addLinkIds || []) {
-    const link = links.find((l) => l.id === rawId);
-    if (link) set.add(rawId);
+    const canonicalId = linkAliases.get(rawId) || rawId;
+    const link = links.find((l) => l.id === canonicalId);
+    if (link) set.add(canonicalId);
   }
   insight.instances = [...set];
 }
