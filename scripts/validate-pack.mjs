@@ -69,7 +69,7 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
       } else {
         matchNumbers.set(ev.matchNumber, id);
       }
-      if (ev.matchKey !== undefined) {
+      if (ev.matchKey !== undefined && packId === 'worldcup-2026') {
         const expected = `wc2026-match-${String(ev.matchNumber).padStart(3, '0')}`;
         if (ev.matchKey !== expected) E(`event ${id}: matchKey should be "${expected}"`);
       }
