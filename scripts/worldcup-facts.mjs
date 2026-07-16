@@ -73,13 +73,19 @@ export function formatResultDescription(team1, team2, lane, outcome) {
     : (a > b ? team1 : b > a ? team2 : null);
 
   if (!winner) return `${team1} drew ${team2} ${a}–${b} in ${lane}.`;
-  const loser = winner === team1 ? team2 : team1;
+  const winnerIsTeam1 = winner === team1;
+  const loser = winnerIsTeam1 ? team2 : team1;
+  const winnerScore = winnerIsTeam1 ? a : b;
+  const loserScore = winnerIsTeam1 ? b : a;
+  const penaltyScore = outcome.penalties
+    ? (winnerIsTeam1 ? outcome.penalties : [outcome.penalties[1], outcome.penalties[0]])
+    : null;
   const suffix = outcome.decidedBy === 'extra_time'
     ? ' after extra time'
     : outcome.decidedBy === 'penalties'
-      ? ` on penalties ${outcome.penalties[0]}–${outcome.penalties[1]}`
+      ? ` on penalties ${penaltyScore[0]}–${penaltyScore[1]}`
       : '';
-  return `${winner} beat ${loser} ${a}–${b}${suffix} in ${lane}.`;
+  return `${winner} beat ${loser} ${winnerScore}–${loserScore}${suffix} in ${lane}.`;
 }
 
 export function parseResultTitle(title) {
