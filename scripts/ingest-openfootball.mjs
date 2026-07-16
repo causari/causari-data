@@ -259,7 +259,9 @@ function mergeEvent(existing, fresh, duplicates = []) {
   const merged = { ...existing };
   for (const k of INGEST_OWNED) {
     if (fresh[k] !== undefined) merged[k] = fresh[k];
-    else delete merged[k];
+    // A scheduled refresh must clear a stale completed result, but absence of a
+    // matchNumber/venue in one adapter must not erase identity from another.
+    else if (k === 'result') delete merged[k];
   }
 
   const existingIsPlaceholder = isPlaceholderEvent(existing);
