@@ -1,0 +1,49 @@
+{
+  "pack": "wc2026",
+  "date": "2026-07-18",
+  "status": "final",
+  "title": "Saka hat-trick earns England bronze in 10-goal thriller",
+  "headlineVi": "Saka lập hat-trick, England thắng France 6-4 và giành hạng ba",
+  "updatedAt": "2026-07-19T01:00:00Z",
+  "results": [
+    {
+      "stage": "third_place",
+      "home": "France",
+      "away": "England",
+      "homeScore": 4,
+      "awayScore": 6,
+      "winner": "England",
+      "venue": "Miami Stadium, Miami Gardens"
+    }
+  ],
+  "bigMoments": [
+    "England dẫn 4-0 sau hiệp một nhờ Declan Rice, Ezri Konsa và hai bàn đầu của Bukayo Saka.",
+    "France vùng lên trong hiệp hai, nhưng hat-trick của Saka và bàn muộn của Jude Bellingham giúp England giữ chiến thắng 6-4.",
+    "Kylian Mbappe ghi hai bàn, nâng tổng số bàn tại World Cup lên 22 và trở thành chân sút số một lịch sử giải đấu tại thời điểm trận kết thúc.",
+    "Đây là trận tranh hạng ba nhiều bàn nhất lịch sử World Cup và là trận World Cup có nhiều bàn nhất kể từ Hungary 10-1 El Salvador năm 1982."
+  ],
+  "tournamentImpact": [
+    "England kết thúc World Cup 2026 ở vị trí thứ ba, thành tích tốt thứ hai của họ sau chức vô địch năm 1966.",
+    "France xếp thứ tư; trận đấu cũng khép lại 14 năm Didier Deschamps dẫn dắt đội tuyển.",
+    "Mbappe kết thúc giải với 10 bàn và tạm dẫn cuộc đua Vua phá lưới trước trận chung kết Spain-Argentina."
+  ],
+  "standoutPlayers": [
+    {"name": "Bukayo Saka", "team": "England", "note": "Hat-trick, gồm một quả penalty, là nhân vật quyết định trận đấu."},
+    {"name": "Kylian Mbappe", "team": "France", "note": "Cú đúp và cột mốc 22 bàn trong lịch sử World Cup."},
+    {"name": "Jude Bellingham", "team": "England", "note": "Ghi bàn chốt tỷ số 6-4, bàn thứ bảy của anh tại giải."}
+  ],
+  "focusTeams": {
+    "Argentina": "Chuẩn bị gặp Spain trong trận chung kết ngày 19/7; Messi còn cơ hội cạnh tranh Vua phá lưới với Mbappe.",
+    "Brazil": "Đã bị loại; không có thay đổi mới.",
+    "Portugal": "Đã bị loại; không có thay đổi mới."
+  },
+  "nextWatchlist": [
+    "Spain vs Argentina — chung kết World Cup 2026 ngày 19/7.",
+    "Theo dõi cuộc đua Vua phá lưới: Mbappe đang có 10 bàn, Messi còn trận chung kết để bám đuổi."
+  ],
+  "sources": [
+    {"publisher": "Reuters", "url": "https://www.reuters.com/sports/soccer/england-survive-france-fightback-secure-third-place-miami-goalfest-2026-07-18/"},
+    {"publisher": "Reuters", "url": "https://www.reuters.com/sports/soccer/frances-mbappe-becomes-world-cup-all-time-top-scorer-2026-07-18/"},
+    {"publisher": "Associated Press", "url": "https://apnews.com/article/world-cup-england-france-third-place-score-52f94eda6ff6d268d38aaefbc446c525"}
+  ]
+}
