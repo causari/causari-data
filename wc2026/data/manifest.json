@@ -4,15 +4,15 @@
   "title": "World Cup 2026 Causal Recap",
   "description": "Manifest index for daily Vietnamese recap files. Use history/YYYY-MM-DD.json for full daily/event data; recaps.json is legacy aggregate data.",
   "timezone": "Asia/Ho_Chi_Minh",
-  "lastUpdated": "2026-07-15T18:00:45Z",
+  "lastUpdated": "2026-07-19T01:00:00Z",
   "sourcePolicy": "Use official FIFA tournament information and reputable sports reporting. Update only when new matches are completed.",
   "focusTeams": ["Argentina", "Brazil", "Portugal"],
   "legacyAggregate": "wc2026/data/recaps.json",
   "latest": {
-    "date": "2026-07-15",
-    "path": "wc2026/history/2026-07-15.json",
+    "date": "2026-07-18",
+    "path": "wc2026/history/2026-07-18.json",
     "status": "final",
-    "title": "Argentina edge England to set up Spain final"
+    "title": "Saka hat-trick earns England bronze in 10-goal thriller"
   },
   "recaps": [
     {"date":"2026-06-23","path":"wc2026/data/recaps.json#2026-06-23","status":"legacy","title":"Argentina and France stay clean, Norway win thriller"},
@@ -33,6 +33,7 @@
     {"date":"2026-07-10","path":"wc2026/history/2026-07-10.json","status":"final","title":"Spain edge Belgium late to book France semi-final"},
     {"date":"2026-07-11","path":"wc2026/history/2026-07-11.json","status":"final","title":"Bellingham sends England through; Argentina outlast 10-man Switzerland"},
     {"date":"2026-07-14","path":"wc2026/history/2026-07-14.json","status":"final","title":"Spain shut out France to reach the World Cup final"},
-    {"date":"2026-07-15","path":"wc2026/history/2026-07-15.json","status":"final","title":"Argentina edge England to set up Spain final"}
+    {"date":"2026-07-15","path":"wc2026/history/2026-07-15.json","status":"final","title":"Argentina edge England to set up Spain final"},
+    {"date":"2026-07-18","path":"wc2026/history/2026-07-18.json","status":"final","title":"Saka hat-trick earns England bronze in 10-goal thriller"}
   ]
 }
