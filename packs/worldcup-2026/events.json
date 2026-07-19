@@ -5954,8 +5954,8 @@
   },
   {
     "id": "wc2026-france-england-0718",
-    "title": "France vs England",
-    "description": "Match for third place fixture: France vs England, July 18, 2026 at Miami (Miami Gardens).",
+    "title": "France 4–6 England",
+    "description": "France lost to England 4–6 in Match for third place.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5963,7 +5963,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.62,
     "tags": [
       "world-cup-2026",
       "match-for-third-place",
@@ -5972,13 +5972,13 @@
     ],
     "date": "2026-07-18",
     "dateLabel": "July 18, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "France",
       "England",
       "Match for third place"
     ],
-    "whyItMatters": "Upcoming Match for third place match.",
+    "whyItMatters": "Scorers: Kylian Mbappé, Bradley Barcola, Kylian Mbappé, Ousmane Dembélé, Declan Rice, Ezri Konsa, Bukayo Saka, Bukayo Saka, Bukayo Saka, Jude Bellingham.",
     "sources": [
       {
         "type": "open-data",
