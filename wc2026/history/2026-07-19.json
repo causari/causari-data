@@ -1,0 +1,53 @@
+{
+  "pack": "wc2026",
+  "date": "2026-07-19",
+  "status": "final",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "headline": "Ferran Torres lifts Spain past 10-man Argentina in extra time",
+  "summaryVi": "Tây Ban Nha thắng Argentina 1-0 sau hiệp phụ để giành chức vô địch World Cup lần thứ hai. Enzo Fernandez nhận thẻ vàng thứ hai ở phút bù giờ cuối hiệp hai, trước khi Ferran Torres ghi bàn quyết định phút 106. Argentina không thể bảo vệ ngôi vương; Lionel Messi khép lại giải với vị trí á quân.",
+  "results": [
+    {
+      "stage": "final",
+      "home": "Spain",
+      "away": "Argentina",
+      "homeScore": 1,
+      "awayScore": 0,
+      "afterExtraTime": true,
+      "winner": "Spain",
+      "venue": "New York New Jersey Stadium",
+      "decisiveEvents": [
+        {"minute": "90+", "type": "red-card", "team": "Argentina", "player": "Enzo Fernandez", "detail": "Second yellow card for a foul on Pau Cubarsi"},
+        {"minute": 106, "type": "goal", "team": "Spain", "player": "Ferran Torres", "detail": "Extra-time winner"}
+      ]
+    }
+  ],
+  "bigMoments": [
+    "Argentina held Spain scoreless for 90 minutes but entered extra time with ten players after Enzo Fernandez's dismissal.",
+    "Substitute Ferran Torres scored in the 106th minute to decide a tense final.",
+    "Spain completed a tournament built on control, defensive structure and squad depth, winning their second men's World Cup title after 2010."
+  ],
+  "tournamentImpact": [
+    "Spain are FIFA Men's World Cup champions for the second time.",
+    "Argentina finish runners-up and fail to become the first team since Brazil in 1962 to retain the trophy.",
+    "The 48-team tournament concludes after 104 matches across Canada, Mexico and the United States."
+  ],
+  "standoutPlayers": [
+    {"name": "Ferran Torres", "team": "Spain", "reason": "Scored the extra-time winner as a substitute."},
+    {"name": "Rodri", "team": "Spain", "reason": "Anchored Spain's control and passing structure throughout the tournament."},
+    {"name": "Lionel Messi", "team": "Argentina", "reason": "Led Argentina to another final but could not produce a final late escape."}
+  ],
+  "focusTeams": {
+    "Argentina": "Runners-up after a 1-0 extra-time defeat; the title defence ended after Enzo Fernandez's dismissal changed the final.",
+    "Brazil": "Previously eliminated by Norway; no new match-day change.",
+    "Portugal": "Previously eliminated by Spain; Spain's title confirms they were beaten by the eventual champions."
+  },
+  "nextMatchDayWatchlist": [],
+  "competitionComplete": true,
+  "sources": [
+    {"publisher": "FIFA", "type": "official", "title": "World Cup 2026 match schedule, fixtures and results", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums"},
+    {"publisher": "Reuters", "type": "reporting", "title": "Substitute Torres rescues grim final to make Spain world champions", "url": "https://www.reuters.com/sports/soccer/torres-grabs-extra-time-winner-spain-beat-toothless-argentina-win-their-second-2026-07-19/"},
+    {"publisher": "Reuters", "type": "reporting", "title": "World Cup final between 10-man Argentina and Spain goes to extra time", "url": "https://www.reuters.com/sports/soccer/world-cup-final-between-10-man-argentina-spain-goes-extra-time-2026-07-19/"},
+    {"publisher": "Associated Press", "type": "reporting", "title": "Goals, technology and hydration breaks: How the biggest World Cup in history will be remembered", "url": "https://apnews.com/article/world-cup-final-spain-argentina-e45fd30932bb9885812805cafa99ca33"}
+  ],
+  "updatedAt": "2026-07-20T01:02:00Z"
+}
