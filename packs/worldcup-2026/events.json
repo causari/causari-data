@@ -5989,8 +5989,8 @@
   },
   {
     "id": "wc2026-spain-argentina-0719",
-    "title": "Spain vs Argentina",
-    "description": "Final fixture: Spain vs Argentina, July 19, 2026 at New York/New Jersey (East Rutherford).",
+    "title": "Spain 0–0 Argentina",
+    "description": "Spain drew Argentina 0–0 in Final.",
     "yearNum": 2026,
     "yearLabel": "2026",
     "precision": "day",
@@ -5998,7 +5998,7 @@
       "culture",
       "systems"
     ],
-    "impactScore": 0.5,
+    "impactScore": 0.52,
     "tags": [
       "world-cup-2026",
       "final",
@@ -6007,13 +6007,13 @@
     ],
     "date": "2026-07-19",
     "dateLabel": "July 19, 2026",
-    "status": "scheduled",
+    "status": "completed",
     "entities": [
       "Spain",
       "Argentina",
       "Final"
     ],
-    "whyItMatters": "Upcoming Final match.",
+    "whyItMatters": "Scorers: Ferran Torres.",
     "sources": [
       {
         "type": "open-data",
