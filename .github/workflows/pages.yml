@@ -13,6 +13,8 @@ on:
       - "wc/**"
       - "wc2026/**"
       - "scripts/validate-pack.mjs"
+      - "scripts/source-artifact.mjs"
+      - "scripts/source-artifact.test.mjs"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -33,6 +35,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Test connector source artifact contract
+        run: node scripts/source-artifact.test.mjs
       - name: Validate all packs
         run: node scripts/validate-pack.mjs
 
