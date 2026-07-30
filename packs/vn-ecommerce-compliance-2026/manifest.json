@@ -1,0 +1,37 @@
+{
+  "id": "vn-ecommerce-compliance-2026",
+  "version": "0.1.0",
+  "title": "Vietnam E-commerce Compliance 2026",
+  "title_vi": "Tuân thủ thương mại điện tử Việt Nam 2026",
+  "description": "An evidence-first causal pack connecting major 2026 legal changes to operational controls, owners, and proof of execution for Vietnamese e-commerce and multi-channel retail.",
+  "description_vi": "Pack nhân quả ưu tiên bằng chứng, kết nối các thay đổi pháp luật lớn năm 2026 với kiểm soát vận hành, người phụ trách và bằng chứng thực thi cho thương mại điện tử và bán lẻ đa kênh tại Việt Nam.",
+  "language": "en",
+  "localizations": [
+    "vi",
+    "en"
+  ],
+  "jurisdiction": "VN",
+  "temporalMode": "effective-date-timeline",
+  "graphMode": "instrument-to-control-to-evidence",
+  "updateCadence": "event-driven",
+  "asOf": "2026-07-30",
+  "files": {
+    "events": "events.json",
+    "links": "links.json",
+    "insights": "insights.json",
+    "views": "views.json"
+  },
+  "canvas": {
+    "defaultView": "executive-impact",
+    "recommendedLayout": "timeline-lanes",
+    "supportsStoryMode": true,
+    "laneField": "lane",
+    "nodeTypeField": "nodeType"
+  },
+  "quality": {
+    "sourcePolicy": "Official government and ministry sources are required for binding legal events. Derived controls must be explicitly labelled.",
+    "legalReviewStatus": "research-preview",
+    "disclaimer": "This pack is a research and operational-design aid, not legal or tax advice. Applicability and deadlines must be confirmed for each organization."
+  },
+  "defaultLocale": "vi"
+}
