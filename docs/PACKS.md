@@ -18,10 +18,14 @@ Examples:
 ```text
 packs/{pack-id}/
 ├── README.md       # pack purpose, audience, curation notes
+├── manifest.json   # optional pack metadata and consumer hints
+├── views.json      # optional Canvas, audience, and teaching projections
 ├── events.json     # CKGEvent-compatible events
 ├── links.json      # CausalLink-compatible relationships
 └── insights.json   # recurring patterns found inside this pack
 ```
+
+`events.json`, `links.json`, and `insights.json` are canonical. Optional manifest and view files must not be required by older consumers. See [PACK-VIEWS.md](PACK-VIEWS.md) for the projection model.
 
 ## Compatibility
 
@@ -44,6 +48,8 @@ For live or short-horizon timelines, packs may use the following optional event 
 
 These optional fields let a pack model live event intelligence without changing the core schema.
 
+Domain packs may also add optional fields such as `nodeType`, `lane`, `audiences`, `normativeStatus`, or `lifecycleStatus`. Consumers must ignore unknown optional fields and preserve the canonical event/link semantics.
+
 ## Graph modeling rules (required for clean loading)
 
 A pack is a causal graph. To load cleanly into any Causari consumer (the visual explorer, the MCP store, an agent), it must follow the same structural rules as the core dataset:
@@ -51,6 +57,7 @@ A pack is a causal graph. To load cleanly into any Causari consumer (the visual 
 - **Links connect events to events.** A `CausalLink`'s `fromEvent` and `toEvent` must both be `id`s of events **in the same pack**. Never point a link at an insight id or at a node that isn't defined — that produces dangling edges in the visual.
 - **Insights attach to links, not the other way around.** An `Insight.instances` array lists the `CausalLink` ids that demonstrate the pattern. Insights are not graph nodes and are never link endpoints.
 - **Upcoming fixtures are events with `status: "scheduled"`.** Model a "watchpoint" (a match that hasn't happened yet) as a real scheduled event, then link the completed result to it. This keeps `nextWatchpoints` (free-text hints) separate from the actual graph edges.
+- **Operational controls must not masquerade as completed work.** For action/control/evidence nodes, use a domain-specific field such as `lifecycleStatus`; reserve the core `status` field for event state.
 - **Ids are kebab-case and globally unique** (e.g. `wc2026-brazil-draws-morocco`). Avoid `--` inside an event id so the link id `{from}--{rel}-->{to}` stays unambiguous.
 
 Run `node scripts/validate-pack.mjs <pack-id>` before every commit — it enforces all of the above (referential integrity, id format, enums, 0–1 ranges) and is wired into CI.
@@ -116,5 +123,7 @@ A visual explorer can then render:
 ```text
 Event → causal link → affected entity → next watchpoint
 ```
+
+When `manifest.json` and `views.json` exist, a Canvas consumer may add lane layouts, audience filters, highlighted paths, or teaching story mode while still loading the same canonical graph.
 
 See [LIVE-UPDATES.md](LIVE-UPDATES.md) for the daily match-day update workflow.
