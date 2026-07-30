@@ -11,7 +11,7 @@
 //
 // Exit 0 = pack updated + valid. Exit 1 = nothing written (see printed errors).
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { validatePackData } from './validate-pack.mjs';
@@ -24,6 +24,7 @@ function readJson(path) {
   try { return JSON.parse(readFileSync(path, 'utf8')); }
   catch (e) { die(`cannot read ${path}: ${e.message}`); }
 }
+function readOptional(path) { return existsSync(path) ? readJson(path) : undefined; }
 
 const inputPath = process.argv[2];
 const packId = process.argv[3] || 'worldcup-2026';
@@ -33,10 +34,14 @@ const packDir = join(ROOT, 'packs', packId);
 const eventsPath = join(packDir, 'events.json');
 const linksPath = join(packDir, 'links.json');
 const insightsPath = join(packDir, 'insights.json');
+const manifestPath = join(packDir, 'manifest.json');
+const baselinePath = join(packDir, 'quality-baseline.json');
 
 const events = readJson(eventsPath);
 const links = readJson(linksPath);
 const insights = readJson(insightsPath);
+const manifest = readOptional(manifestPath);
+const qualityBaseline = readOptional(baselinePath);
 const input = readJson(inputPath);
 
 const eventsById = new Map(events.map((e) => [e.id, e]));
@@ -48,7 +53,7 @@ const topDate = input.date;
 const topDateLabel = input.dateLabel;
 
 function upsertEvent(src, status) {
-  if (!src.id) die(`an event in input has no id`);
+  if (!src.id) die('an event in input has no id');
   const existing = eventsById.get(src.id) || {};
   const ev = {
     ...DEFAULTS,
@@ -63,58 +68,60 @@ function upsertEvent(src, status) {
 }
 
 // 1) Completed results — honesty gate: each MUST carry a source.
-for (const r of input.results || []) {
-  if (!Array.isArray(r.sources) || r.sources.length === 0) {
-    die(`result ${r.id || '<no id>'}: a completed result requires a non-empty "sources" citation (honesty rule)`);
+for (const result of input.results || []) {
+  if (!Array.isArray(result.sources) || result.sources.length === 0) {
+    die(`result ${result.id || '<no id>'}: a completed result requires a non-empty "sources" citation (honesty rule)`);
   }
-  upsertEvent(r, 'completed');
+  upsertEvent(result, 'completed');
 }
 
 // 2) New upcoming fixtures.
-for (const s of input.scheduled || []) upsertEvent(s, 'scheduled');
+for (const scheduled of input.scheduled || []) upsertEvent(scheduled, 'scheduled');
 
 // 3) Causal links (event -> event). Id is derived; dupes skipped.
-for (const l of input.links || []) {
-  if (!l.fromEvent || !l.toEvent || !l.relationship) die(`a link is missing fromEvent/toEvent/relationship`);
-  const id = `${l.fromEvent}--${l.relationship}-->${l.toEvent}`;
+for (const link of input.links || []) {
+  if (!link.fromEvent || !link.toEvent || !link.relationship) die('a link is missing fromEvent/toEvent/relationship');
+  const id = `${link.fromEvent}--${link.relationship}-->${link.toEvent}`;
   if (linkIds.has(id)) continue;
-  links.push({ id, fromEvent: l.fromEvent, toEvent: l.toEvent, relationship: l.relationship, confidence: l.confidence, evidence: l.evidence });
+  links.push({ id, fromEvent: link.fromEvent, toEvent: link.toEvent, relationship: link.relationship, confidence: link.confidence, evidence: link.evidence });
   linkIds.add(id);
 }
 
 // 4) Attach links to insight patterns (dedup) or add whole new insights.
-for (const u of input.insightInstances || []) {
-  const ins = insightsById.get(u.insightId);
-  if (!ins) die(`insightInstances: unknown insight "${u.insightId}"`);
-  const set = new Set(ins.instances);
-  for (const lid of u.addLinkIds || []) set.add(lid);
-  ins.instances = [...set];
+for (const update of input.insightInstances || []) {
+  const insight = insightsById.get(update.insightId);
+  if (!insight) die(`insightInstances: unknown insight "${update.insightId}"`);
+  const set = new Set(insight.instances);
+  for (const linkId of update.addLinkIds || []) set.add(linkId);
+  insight.instances = [...set];
 }
-for (const ni of input.newInsights || []) {
-  if (insightsById.has(ni.id)) die(`newInsights: insight "${ni.id}" already exists`);
-  insights.push(ni);
-  insightsById.set(ni.id, ni);
+for (const newInsight of input.newInsights || []) {
+  if (insightsById.has(newInsight.id)) die(`newInsights: insight "${newInsight.id}" already exists`);
+  insights.push(newInsight);
+  insightsById.set(newInsight.id, newInsight);
 }
 
 const merged = { events: [...eventsById.values()], links, insights };
 
-// 5) Validate BEFORE writing. Nothing is written if invalid.
-//    (a) structural validation — ids resolve, enums in range, referential integrity.
+// 5a) Structural validation — ids resolve, enums are valid, references are intact.
 const errors = validatePackData(merged, packId);
 if (errors.length > 0) {
   console.error(`✗ ${errors.length} validation error(s) — nothing written:`);
-  for (const e of errors) console.error(`  - ${e}`);
+  for (const error of errors) console.error(`  - ${error}`);
   process.exit(1);
 }
-//    (b) causal-quality gate — the layer must be real, not templated. Catches a
-//    "Scorers: …" whyItMatters, a single-relationship graph, a backwards scoreline,
-//    a scheduled event carrying a result, an unresolved round/team, etc. This is
-//    what keeps the daily editorial honest even when structure is fine.
-const { errors: qErrors, warnings: qWarnings } = assessCausalQuality(merged, packId);
-for (const w of qWarnings) console.warn(`  ! ${w}`);
-if (qErrors.length > 0) {
-  console.error(`✗ ${qErrors.length} causal-quality error(s) — nothing written:`);
-  for (const e of qErrors) console.error(`  - ${e}`);
+
+// 5b) Profile-aware causal-quality gate. The pack manifest selects domain rules;
+// an exact quality baseline can temporarily downgrade known debt while new debt fails.
+const profile = manifest?.quality?.causalProfile || (packId === 'worldcup-2026' ? 'sports-live' : 'generic');
+const { errors: qualityErrors, warnings: qualityWarnings } = assessCausalQuality(merged, packId, {
+  profile,
+  baseline: qualityBaseline,
+});
+for (const warning of qualityWarnings) console.warn(`  ! ${warning}`);
+if (qualityErrors.length > 0) {
+  console.error(`✗ ${qualityErrors.length} causal-quality error(s) — nothing written:`);
+  for (const error of qualityErrors) console.error(`  - ${error}`);
   process.exit(1);
 }
 
@@ -124,4 +131,4 @@ write(linksPath, merged.links);
 write(insightsPath, merged.insights);
 
 console.log(`✓ ${packId} updated: ${merged.events.length} events, ${merged.links.length} links, ${merged.insights.length} insights`);
-console.log('  Review the diff, then commit. CI re-validates on push.');
+console.log(`  Quality profile: ${profile}. Review the diff, then commit; CI re-validates on push.`);
