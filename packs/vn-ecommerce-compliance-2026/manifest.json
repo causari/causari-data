@@ -29,6 +29,7 @@
     "nodeTypeField": "nodeType"
   },
   "quality": {
+    "causalProfile": "policy-systemic",
     "sourcePolicy": "Official government and ministry sources are required for binding legal events. Derived controls must be explicitly labelled.",
     "legalReviewStatus": "research-preview",
     "disclaimer": "This pack is a research and operational-design aid, not legal or tax advice. Applicability and deadlines must be confirmed for each organization."
