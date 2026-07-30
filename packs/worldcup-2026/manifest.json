@@ -1,0 +1,22 @@
+{
+  "id": "worldcup-2026",
+  "version": "0.1.0",
+  "title": "World Cup 2026",
+  "description": "Live sports and historical-lineage causal timeline for the FIFA World Cup 2026.",
+  "language": "en",
+  "localizations": [
+    "vi",
+    "en"
+  ],
+  "temporalMode": "live-event-timeline",
+  "graphMode": "result-to-implication-to-watchpoint",
+  "updateCadence": "daily",
+  "files": {
+    "events": "events.json",
+    "links": "links.json",
+    "insights": "insights.json"
+  },
+  "quality": {
+    "causalProfile": "sports-live"
+  }
+}
