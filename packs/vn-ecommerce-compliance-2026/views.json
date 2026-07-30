@@ -1,0 +1,195 @@
+[
+  {
+    "id": "executive-impact",
+    "title": "Executive impact",
+    "title_vi": "Tác động điều hành",
+    "audiences": [
+      "ceo",
+      "founder",
+      "cfo"
+    ],
+    "question": "Which legal changes alter operating risk, which controls must be funded, and what evidence proves execution?",
+    "question_vi": "Thay đổi pháp luật nào làm đổi rủi ro vận hành, cần đầu tư kiểm soát nào và bằng chứng nào chứng minh đã thực thi?",
+    "lanes": [
+      {
+        "id": "law",
+        "label": "Legal instruments",
+        "label_vi": "Văn bản luật",
+        "nodeTypes": [
+          "instrument"
+        ]
+      },
+      {
+        "id": "implementation",
+        "label": "Effective rules",
+        "label_vi": "Quy định triển khai",
+        "nodeTypes": [
+          "instrument",
+          "effective-date"
+        ]
+      },
+      {
+        "id": "operations",
+        "label": "Operating controls",
+        "label_vi": "Kiểm soát vận hành",
+        "nodeTypes": [
+          "action",
+          "control"
+        ]
+      },
+      {
+        "id": "evidence",
+        "label": "Evidence",
+        "label_vi": "Bằng chứng",
+        "nodeTypes": [
+          "evidence"
+        ]
+      }
+    ],
+    "focusEventIds": [
+      "vnce-law-ecommerce-122-passed",
+      "vnce-law-tax-management-108-passed",
+      "vnce-law-cybersecurity-116-passed",
+      "vnce-role-based-compliance-backlog",
+      "vnce-compliance-evidence-register"
+    ],
+    "highlightPaths": [
+      [
+        "vnce-law-ecommerce-122-passed",
+        "vnce-decree-ecommerce-248-effective",
+        "vnce-platform-seller-governance-control",
+        "vnce-compliance-evidence-register"
+      ],
+      [
+        "vnce-law-tax-management-108-passed",
+        "vnce-decree-einvoice-254-effective",
+        "vnce-transaction-invoice-reconciliation-control",
+        "vnce-compliance-evidence-register"
+      ],
+      [
+        "vnce-law-cybersecurity-116-passed",
+        "vnce-cybersecurity-audit-control",
+        "vnce-compliance-evidence-register"
+      ]
+    ]
+  },
+  {
+    "id": "tax-accounting",
+    "title": "Tax and accounting operations",
+    "title_vi": "Vận hành thuế và kế toán",
+    "audiences": [
+      "cfo",
+      "tax-accounting",
+      "erp",
+      "data"
+    ],
+    "question": "Where can transaction data diverge from invoices and tax records?",
+    "question_vi": "Dữ liệu giao dịch có thể lệch khỏi hóa đơn và hồ sơ thuế ở đâu?",
+    "includeEventIds": [
+      "vnce-law-tax-management-108-passed",
+      "vnce-household-tax-einvoice-rules-effective",
+      "vnce-decree-tax-252-effective",
+      "vnce-decree-einvoice-254-effective",
+      "vnce-role-based-compliance-backlog",
+      "vnce-transaction-invoice-reconciliation-control",
+      "vnce-compliance-evidence-register"
+    ],
+    "storySteps": [
+      "law",
+      "early-transition",
+      "implementation",
+      "control",
+      "evidence"
+    ]
+  },
+  {
+    "id": "ecommerce-livestream",
+    "title": "E-commerce and livestream",
+    "title_vi": "Thương mại điện tử và livestream",
+    "audiences": [
+      "legal",
+      "ecommerce",
+      "marketing",
+      "platform-operations",
+      "trust-safety"
+    ],
+    "question": "How do platform, seller, host, and product-content responsibilities connect?",
+    "question_vi": "Trách nhiệm của nền tảng, người bán, người livestream và nội dung sản phẩm kết nối với nhau thế nào?",
+    "includeEventIds": [
+      "vnce-law-ecommerce-122-passed",
+      "vnce-decree-ecommerce-248-effective",
+      "vnce-role-based-compliance-backlog",
+      "vnce-platform-seller-governance-control",
+      "vnce-livestream-identity-content-control",
+      "vnce-compliance-evidence-register"
+    ],
+    "storySteps": [
+      "law",
+      "decree",
+      "platform-control",
+      "livestream-control",
+      "evidence"
+    ]
+  },
+  {
+    "id": "it-security",
+    "title": "IT and security controls",
+    "title_vi": "Kiểm soát IT và an ninh",
+    "audiences": [
+      "cio",
+      "cto",
+      "it",
+      "security",
+      "data"
+    ],
+    "question": "Which product, access, logging, and evidence capabilities are needed to make compliance operable?",
+    "question_vi": "Cần năng lực sản phẩm, truy cập, nhật ký và bằng chứng nào để biến tuân thủ thành vận hành thực tế?",
+    "includeEventIds": [
+      "vnce-law-cybersecurity-116-passed",
+      "vnce-decree-ecommerce-248-effective",
+      "vnce-decree-einvoice-254-effective",
+      "vnce-platform-seller-governance-control",
+      "vnce-livestream-identity-content-control",
+      "vnce-transaction-invoice-reconciliation-control",
+      "vnce-cybersecurity-audit-control",
+      "vnce-compliance-evidence-register"
+    ],
+    "storySteps": [
+      "requirements",
+      "product-controls",
+      "data-controls",
+      "security-controls",
+      "evidence"
+    ]
+  },
+  {
+    "id": "teaching-causal-chain",
+    "title": "Teach the causal chain",
+    "title_vi": "Giảng dạy chuỗi nhân quả",
+    "audiences": [
+      "teacher",
+      "lecturer",
+      "student",
+      "facilitator"
+    ],
+    "question": "How does a policy trigger propagate through institutions, organizations, systems, and observable evidence?",
+    "question_vi": "Một tác nhân chính sách lan truyền qua thể chế, tổ chức, hệ thống và bằng chứng quan sát được như thế nào?",
+    "projection": {
+      "trigger": [
+        "instrument",
+        "effective-date"
+      ],
+      "response": [
+        "action"
+      ],
+      "adaptation": [
+        "control"
+      ],
+      "observableOutcome": [
+        "evidence"
+      ]
+    },
+    "teachingNote": "This projection intentionally mirrors a historical-causality canvas such as a WWI lesson pack: long canonical graph data can be remixed into a narrative sequence without duplicating the underlying nodes.",
+    "teachingNote_vi": "Phép chiếu này cố ý tương đồng với canvas nhân quả lịch sử như pack bài giảng WWI: dữ liệu graph chuẩn có thể được phối lại thành chuỗi kể chuyện mà không cần nhân bản node gốc."
+  }
+]
