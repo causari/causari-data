@@ -4,14 +4,16 @@
 // Checks each pack under packs/<id>/ for schema conformance AND referential
 // integrity (the part JSON Schema can't express): every link endpoint must be a
 // real event, every insight instance must be a real link, ids must be unique and
-// well-formed. Run before every commit that touches a pack — this is what keeps
-// the daily live updates from shipping a broken graph to the public visual.
+// well-formed. Optional manifest.json and views.json files are also checked when
+// present so Canvas projections cannot silently reference missing graph nodes.
+// Run before every commit that touches a pack — this is what keeps live updates
+// from shipping a broken graph to the public visual.
 //
 //   node scripts/validate-pack.mjs            # validate all packs
 //   node scripts/validate-pack.mjs worldcup-2026
 //
-// Also exports validatePackData({events,links,insights}) for in-memory checks
-// (used by add-match-day.mjs to validate BEFORE writing to disk).
+// Also exports validatePackData({events,links,insights,views,manifest}) for
+// in-memory checks. Optional files may be omitted by existing callers.
 //
 // Exit 0 = clean, exit 1 = errors found.
 
@@ -39,17 +41,18 @@ function isNonEmptyStr(v) { return typeof v === 'string' && v.trim().length > 0;
  * Pure validation of a pack's in-memory data. Returns an array of error strings
  * (empty = valid). No I/O, no console — safe to call before writing to disk.
  */
-export function validatePackData({ events, links, insights }, packId = 'pack') {
+export function validatePackData({ events, links, insights, views, manifest }, packId = 'pack') {
   const errors = [];
   const E = (msg) => errors.push(`[${packId}] ${msg}`);
   const eventIds = new Set();
   const linkIds = new Set();
+  const viewIds = new Set();
 
   // --- Events ---
   if (!Array.isArray(events)) { E('events must be an array'); return errors; }
   for (const ev of events) {
     const id = ev?.id ?? '<missing id>';
-    if (!isNonEmptyStr(ev.id)) E(`event has no id`);
+    if (!isNonEmptyStr(ev.id)) E('event has no id');
     else if (!KEBAB.test(ev.id)) E(`event id not kebab-case: ${ev.id}`);
     else if (eventIds.has(ev.id)) E(`duplicate event id: ${ev.id}`);
     else eventIds.add(ev.id);
@@ -73,7 +76,7 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
   if (!Array.isArray(links)) { E('links must be an array'); return errors; }
   for (const ln of links) {
     const id = ln?.id ?? '<missing id>';
-    if (!isNonEmptyStr(ln.id)) E(`link has no id`);
+    if (!isNonEmptyStr(ln.id)) E('link has no id');
     else if (linkIds.has(ln.id)) E(`duplicate link id: ${ln.id}`);
     else linkIds.add(ln.id);
     if (!RELATIONSHIPS.has(ln.relationship)) E(`link ${id}: invalid relationship "${ln.relationship}"`);
@@ -92,7 +95,7 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
   const insightIds = new Set();
   for (const ins of insights) {
     const id = ins?.id ?? '<missing id>';
-    if (!isNonEmptyStr(ins.id)) E(`insight has no id`);
+    if (!isNonEmptyStr(ins.id)) E('insight has no id');
     else if (!PATTERN_ID.test(ins.id)) E(`insight ${id}: id should follow "pattern--{kebab-name}"`);
     else if (insightIds.has(ins.id)) E(`duplicate insight id: ${ins.id}`);
     else insightIds.add(ins.id);
@@ -107,6 +110,53 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
     }
   }
 
+  // --- Optional Canvas/audience views ---
+  if (views !== undefined) {
+    if (!Array.isArray(views)) E('views must be an array when views.json is present');
+    else {
+      for (const view of views) {
+        const id = view?.id ?? '<missing id>';
+        if (!isNonEmptyStr(view.id)) E('view has no id');
+        else if (!KEBAB.test(view.id)) E(`view id not kebab-case: ${view.id}`);
+        else if (viewIds.has(view.id)) E(`duplicate view id: ${view.id}`);
+        else viewIds.add(view.id);
+        if (!isNonEmptyStr(view.title)) E(`view ${id}: missing title`);
+
+        for (const field of ['focusEventIds', 'includeEventIds']) {
+          if (view[field] === undefined) continue;
+          if (!Array.isArray(view[field])) E(`view ${id}: ${field} must be an array`);
+          else for (const ref of view[field]) {
+            if (!eventIds.has(ref)) E(`view ${id}: ${field} references missing event "${ref}"`);
+          }
+        }
+
+        if (view.highlightPaths !== undefined) {
+          if (!Array.isArray(view.highlightPaths)) E(`view ${id}: highlightPaths must be an array`);
+          else for (const [pathIndex, path] of view.highlightPaths.entries()) {
+            if (!Array.isArray(path)) { E(`view ${id}: highlightPaths[${pathIndex}] must be an array`); continue; }
+            for (const ref of path) {
+              if (!eventIds.has(ref)) E(`view ${id}: highlightPaths[${pathIndex}] references missing event "${ref}"`);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // --- Optional manifest ---
+  if (manifest !== undefined) {
+    if (!manifest || typeof manifest !== 'object' || Array.isArray(manifest)) E('manifest must be an object when manifest.json is present');
+    else {
+      if (manifest.id !== undefined && manifest.id !== packId) E(`manifest id "${manifest.id}" must match pack directory "${packId}"`);
+      const defaultView = manifest.canvas?.defaultView;
+      if (defaultView !== undefined) {
+        if (!isNonEmptyStr(defaultView)) E('manifest canvas.defaultView must be a non-empty string');
+        else if (!Array.isArray(views)) E(`manifest defaultView "${defaultView}" requires views.json`);
+        else if (!viewIds.has(defaultView)) E(`manifest defaultView "${defaultView}" is not defined in views.json`);
+      }
+    }
+  }
+
   return errors;
 }
 
@@ -114,14 +164,22 @@ export function validatePackData({ events, links, insights }, packId = 'pack') {
 export function validatePackFromDisk(packId) {
   const dir = join(PACKS_DIR, packId);
   const read = (name) => JSON.parse(readFileSync(join(dir, name), 'utf8'));
+  const readOptional = (name) => existsSync(join(dir, name)) ? read(name) : undefined;
   let data;
   try {
-    data = { events: read('events.json'), links: read('links.json'), insights: read('insights.json') };
+    data = {
+      events: read('events.json'),
+      links: read('links.json'),
+      insights: read('insights.json'),
+      views: readOptional('views.json'),
+      manifest: readOptional('manifest.json'),
+    };
   } catch (e) {
     return { errors: [`[${packId}] cannot read pack — ${e.message}`], counts: '' };
   }
   const errors = validatePackData(data, packId);
-  const counts = `${data.events.length} events, ${data.links.length} links, ${data.insights.length} insights`;
+  const viewCount = Array.isArray(data.views) ? `, ${data.views.length} views` : '';
+  const counts = `${data.events.length} events, ${data.links.length} links, ${data.insights.length} insights${viewCount}`;
   return { errors, counts };
 }
 
