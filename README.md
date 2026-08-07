@@ -15,8 +15,11 @@ data/
 └── insights.json      # Recurring causal patterns
 
 packs/
-└── worldcup-2026/     # Optional vertical pack for live causal timelines
+├── worldcup-2026/                  # Live sports/event intelligence
+└── vn-ecommerce-compliance-2026/   # Regulation → control → evidence timeline
     ├── README.md
+    ├── manifest.json               # Optional pack metadata
+    ├── views.json                  # Optional Canvas/audience projections
     ├── events.json
     ├── links.json
     └── insights.json
@@ -94,8 +97,9 @@ Current packs:
 | Pack | Purpose |
 |------|---------|
 | [`worldcup-2026`](packs/worldcup-2026/) | Proof of concept for live sports/event intelligence using World Cup 2026 results, causal implications, and watchpoints |
+| [`vn-ecommerce-compliance-2026`](packs/vn-ecommerce-compliance-2026/) | Evidence-first timeline connecting Vietnamese legal changes to role-owned controls and proof of execution |
 
-See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines.
+See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines, and [docs/PACK-VIEWS.md](docs/PACK-VIEWS.md) for optional Canvas and teaching projections.
 
 ## Relationship types
 

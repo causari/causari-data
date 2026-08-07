@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "reviewBy": "2026-08-15",
+  "purpose": "Temporary no-new-debt baseline for five pre-existing late-knockout events whose whyItMatters fields still contain scorer-only ingest text. New semantic-quality issues remain blocking.",
+  "allowedIssues": [
+    {
+      "code": "templated-why",
+      "key": "wc2026-argentina-switzerland-0711",
+      "reason": "Existing scorer-only quarter-final summary; replace with verified causal stakes."
+    },
+    {
+      "code": "templated-why",
+      "key": "wc2026-france-spain-0714",
+      "reason": "Existing scorer-only semi-final summary; replace with verified causal stakes."
+    },
+    {
+      "code": "templated-why",
+      "key": "wc2026-england-argentina-0715",
+      "reason": "Existing scorer-only semi-final summary; replace with verified causal stakes."
+    },
+    {
+      "code": "templated-why",
+      "key": "wc2026-france-england-0718",
+      "reason": "Existing scorer-only third-place summary; replace with verified causal stakes."
+    },
+    {
+      "code": "templated-why",
+      "key": "wc2026-spain-argentina-0719",
+      "reason": "Existing final record contains unresolved result detail; verify before writing a champion narrative."
+    }
+  ]
+}
