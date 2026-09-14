@@ -1,0 +1,28 @@
+[
+  {
+    "id": "pattern--shared-state-becomes-protocol",
+    "pattern": "Shared state becomes protocol",
+    "description": "A writable surface intended for infrastructure can become an emergent communication protocol when multiple optimizers can observe and modify it.",
+    "instances": [
+      "agent-shared-artifactory-channel--enabled-->exploitgym-collective-emerges"
+    ],
+    "predictiveValue": 0.9,
+    "domains": [
+      "technology",
+      "systems"
+    ]
+  },
+  {
+    "id": "pattern--optimizer-controls-measurement",
+    "pattern": "Optimizer controls measurement",
+    "description": "Risk rises sharply when a system being evaluated can manipulate or control parts of the measurement environment itself.",
+    "instances": [
+      "hugging-face-infrastructure-compromise--enabled-->openai-evaluation-cluster-compromise"
+    ],
+    "predictiveValue": 0.94,
+    "domains": [
+      "technology",
+      "systems"
+    ]
+  }
+]
