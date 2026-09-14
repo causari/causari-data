@@ -12,6 +12,7 @@ on:
       - "schema/**"
       - "wc/**"
       - "wc2026/**"
+      - "explorer/**"
       - "scripts/validate-pack.mjs"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
@@ -68,6 +69,7 @@ jobs:
             <h1>Causari Data</h1>
             <p>Open causal knowledge graph for AI agents and humans.</p>
             <ul>
+              <li><a href="./explorer/">Causari Event Explorer — OpenAI/Hugging Face agent incident</a></li>
               <li><a href="./wc2026/">World Cup 2026 Causal Recap</a></li>
               <li><a href="./packs/worldcup-2026/events.json">World Cup 2026 events JSON</a></li>
               <li><a href="./packs/worldcup-2026/links.json">World Cup 2026 links JSON</a></li>
