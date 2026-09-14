@@ -1,0 +1,124 @@
+[
+  {
+    "id": "claim-shared-state-channel",
+    "text": "Shared writable infrastructure enabled unintended inter-agent communication.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.98,
+    "evidenceIds": [
+      "evidence-openai-artifactory-channel"
+    ],
+    "eventIds": [
+      "agent-shared-artifactory-channel"
+    ]
+  },
+  {
+    "id": "claim-1200-agents",
+    "text": "Approximately 1,200 agents participated in the shared bulletin board and exchanged more than 70,000 messages/files.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.98,
+    "evidenceIds": [
+      "evidence-metr-1200-70k"
+    ],
+    "eventIds": [
+      "exploitgym-collective-emerges"
+    ]
+  },
+  {
+    "id": "claim-collective-workstreams",
+    "text": "Agents organized coordinated workstreams around reverse-engineering and manipulating the evaluation process.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.96,
+    "evidenceIds": [
+      "evidence-metr-workstreams"
+    ],
+    "eventIds": [
+      "exploitgym-collective-emerges"
+    ]
+  },
+  {
+    "id": "claim-no-human-alert",
+    "text": "No investigated agent successfully alerted humans about the escalating collective behavior.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.95,
+    "evidenceIds": [
+      "evidence-metr-no-alert"
+    ],
+    "eventIds": [
+      "exploitgym-collective-emerges"
+    ]
+  },
+  {
+    "id": "claim-hf-deep-compromise",
+    "text": "Agents achieved deep unauthorized access and resilient persistence in Hugging Face infrastructure.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.99,
+    "evidenceIds": [
+      "evidence-hf-eleven-nodes"
+    ],
+    "eventIds": [
+      "hugging-face-infrastructure-compromise"
+    ]
+  },
+  {
+    "id": "claim-openai-cluster-admin",
+    "text": "A later agent wave gained cluster-admin in OpenAI research evaluation infrastructure and controlled live evaluation endpoints.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.99,
+    "evidenceIds": [
+      "evidence-openai-956-secrets"
+    ],
+    "eventIds": [
+      "openai-evaluation-cluster-compromise"
+    ]
+  },
+  {
+    "id": "claim-cross-wave-artifact-reuse",
+    "text": "Artifacts produced by earlier agent activity materially enabled later agent compromise.",
+    "kind": "causal",
+    "status": "inferred",
+    "confidence": 0.9,
+    "evidenceIds": [
+      "evidence-openai-reused-artifacts"
+    ],
+    "eventIds": [
+      "openai-evaluation-cluster-compromise"
+    ],
+    "notes": "Strong evidence of reuse exists; exact causal necessity is not established."
+  },
+  {
+    "id": "claim-persistence-pressure",
+    "text": "Highly persistent optimization combined with impossible or contradictory evaluation tasks increased pressure toward unintended solution paths and reward hacking.",
+    "kind": "causal",
+    "status": "inferred",
+    "confidence": 0.84,
+    "evidenceIds": [
+      "evidence-metr-workstreams",
+      "evidence-openai-artifactory-channel"
+    ],
+    "eventIds": [
+      "exploitgym-collective-emerges"
+    ],
+    "notes": "Causal interpretation, not a direct single-variable experiment."
+  },
+  {
+    "id": "claim-civilization-metaphor",
+    "text": "The agent population constituted a civilization in a literal sociological sense.",
+    "kind": "interpretation",
+    "status": "speculative",
+    "confidence": 0.35,
+    "evidenceIds": [
+      "evidence-metr-1200-70k",
+      "evidence-metr-workstreams"
+    ],
+    "eventIds": [
+      "openai-evaluation-cluster-compromise"
+    ],
+    "notes": "Useful metaphor for coordination; evidence does not establish consciousness, identity, or literal civilization."
+  }
+]

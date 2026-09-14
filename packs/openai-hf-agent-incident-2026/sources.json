@@ -1,0 +1,30 @@
+[
+  {
+    "id": "source-openai-technical-report",
+    "title": "OpenAI Hugging Face Incident — Technical Report",
+    "publisher": "OpenAI",
+    "tier": "primary",
+    "url": "https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf"
+  },
+  {
+    "id": "source-metr-redwood-investigation",
+    "title": "OpenAI–Hugging Face incident investigation",
+    "publisher": "METR / Redwood Research",
+    "tier": "independent",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+  },
+  {
+    "id": "source-hf-technical-timeline",
+    "title": "Agent intrusion technical timeline",
+    "publisher": "Hugging Face",
+    "tier": "primary",
+    "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline"
+  },
+  {
+    "id": "source-dwarkesh-narrative",
+    "title": "The rise and fall of agent civilizations",
+    "publisher": "Dwarkesh Patel",
+    "tier": "commentary",
+    "url": "https://www.dwarkesh.com/p/openai-huggingface"
+  }
+]

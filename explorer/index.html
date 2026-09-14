@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Causari Event Explorer — evidence-first timelines, causal links, claims, and forecasts." />
+  <title>Causari — Event Explorer</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="../" aria-label="Causari Data home">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>
+          <strong>Causari</strong>
+          <small>Event Explorer</small>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <label class="pack-select-wrap">
+          <span>Pack</span>
+          <select id="packSelect" aria-label="Choose data pack"></select>
+        </label>
+        <button id="openPrimer" class="ghost-button" type="button">How to read</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="packTitle">
+        <div class="hero-copy">
+          <div class="eyebrow">Evidence-first incident reconstruction</div>
+          <h1 id="packTitle">Loading pack…</h1>
+          <p id="packDescription" class="hero-description"></p>
+          <div id="packMeta" class="meta-row"></div>
+        </div>
+        <aside class="trust-card" aria-label="Trust lens summary">
+          <div class="trust-card-head">
+            <span>Trust lens</span>
+            <span id="trustScore" class="score-pill">—</span>
+          </div>
+          <p>Facts, inference and speculation stay visibly separate.</p>
+          <div class="trust-grid">
+            <div><strong id="metricObserved">0</strong><span>Observed</span></div>
+            <div><strong id="metricInferred">0</strong><span>Inferred</span></div>
+            <div><strong id="metricSpeculative">0</strong><span>Speculative</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="toolbar" aria-label="Explorer controls">
+        <nav class="view-tabs" aria-label="Views">
+          <button class="tab is-active" data-view="timeline" type="button">Timeline</button>
+          <button class="tab" data-view="graph" type="button">Causal map</button>
+          <button class="tab" data-view="claims" type="button">Claims</button>
+          <button class="tab" data-view="forecasts" type="button">Forecasts</button>
+        </nav>
+        <div class="filter-group" aria-label="Epistemic filters">
+          <span class="filter-label">Show</span>
+          <label class="filter-chip observed"><input id="filterObserved" type="checkbox" checked /> Observed</label>
+          <label class="filter-chip inferred"><input id="filterInferred" type="checkbox" checked /> Inferred</label>
+          <label class="filter-chip speculative"><input id="filterSpeculative" type="checkbox" checked /> Speculative</label>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div id="view-timeline" class="view-panel is-active" aria-live="polite">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">What happened</span>
+              <h2>Incident timeline</h2>
+            </div>
+            <p>Open an event to inspect the claims and source-backed evidence underneath it.</p>
+          </div>
+          <div id="timeline" class="timeline"></div>
+        </div>
+
+        <div id="view-graph" class="view-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">Why it may have happened</span>
+              <h2>Causal map</h2>
+            </div>
+            <p>Edges are hypotheses with confidence — not automatic proof of causality.</p>
+          </div>
+          <div id="graphLegend" class="graph-legend"></div>
+          <div id="graph" class="graph-stage" role="img" aria-label="Causal graph"></div>
+        </div>
+
+        <div id="view-claims" class="view-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">What can we actually say</span>
+              <h2>Claims & evidence</h2>
+            </div>
+            <p>Sort the narrative into observed facts, causal inference, and interpretation.</p>
+          </div>
+          <div class="claims-tools">
+            <input id="claimSearch" type="search" placeholder="Search claims, e.g. cluster-admin" aria-label="Search claims" />
+            <span id="claimCount" class="quiet"></span>
+          </div>
+          <div id="claims" class="claims-list"></div>
+        </div>
+
+        <div id="view-forecasts" class="view-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">What would change our mind next</span>
+              <h2>Forecasts</h2>
+            </div>
+            <p>Forecasts are frozen questions with explicit resolution criteria, not vague predictions.</p>
+          </div>
+          <div id="forecasts" class="forecast-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Causari research preview · Data stays inspectable.</span>
+      <button id="sessionPulse" class="footer-link" type="button">Session pulse</button>
+    </footer>
+  </div>
+
+  <div id="drawerBackdrop" class="drawer-backdrop" hidden></div>
+  <aside id="drawer" class="drawer" aria-label="Evidence details" aria-hidden="true">
+    <div class="drawer-head">
+      <div>
+        <span id="drawerKicker" class="section-kicker">Detail</span>
+        <h2 id="drawerTitle">Evidence</h2>
+      </div>
+      <button id="closeDrawer" class="icon-button" type="button" aria-label="Close details">×</button>
+    </div>
+    <div id="drawerBody" class="drawer-body"></div>
+  </aside>
+
+  <dialog id="primerDialog" class="primer-dialog">
+    <form method="dialog">
+      <button class="icon-button dialog-close" aria-label="Close">×</button>
+      <span class="section-kicker">30-second primer</span>
+      <h2>Read the graph without overclaiming</h2>
+      <div class="primer-stack">
+        <div><span class="status-dot observed"></span><strong>Observed</strong><p>Directly supported by a primary source or independent investigation.</p></div>
+        <div><span class="status-dot inferred"></span><strong>Inferred</strong><p>A causal or explanatory interpretation supported by evidence, but not directly observed as a controlled fact.</p></div>
+        <div><span class="status-dot speculative"></span><strong>Speculative</strong><p>A useful interpretation or hypothesis that should not be promoted to fact.</p></div>
+      </div>
+      <p class="primer-note">Causari's job is not to make every edge look certain. It is to show where certainty ends.</p>
+    </form>
+  </dialog>
+
+  <dialog id="pulseDialog" class="primer-dialog">
+    <form method="dialog">
+      <button class="icon-button dialog-close" aria-label="Close">×</button>
+      <span class="section-kicker">Local UX telemetry</span>
+      <h2>Your session pulse</h2>
+      <p class="primer-note">Stored only in this browser. This helps us tune the first-user flow without a backend analytics dependency.</p>
+      <div id="pulseBody" class="pulse-grid"></div>
+      <button id="resetPulse" class="ghost-button" type="button">Reset local pulse</button>
+    </form>
+  </dialog>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

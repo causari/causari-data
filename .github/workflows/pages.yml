@@ -47,7 +47,7 @@ jobs:
       - name: Stage site for Pages
         run: |
           mkdir -p _site
-          for d in packs data schema wc wc2026; do
+          for d in packs data schema wc wc2026 explorer; do
             if [ -d "$d" ]; then cp -r "$d" _site/; fi
           done
           touch _site/.nojekyll
@@ -76,7 +76,7 @@ jobs:
           </body>
           </html>
           HTML
-          printf '%s' '{"note":"Causari open data - JSON served for live consumers","routes":["/wc2026/"],"packs":["worldcup-2026"]}' > _site/index.json
+          printf '%s' '{"note":"Causari open data - JSON served for live consumers","routes":["/explorer/","/wc2026/"],"packs":["openai-hf-agent-incident-2026","worldcup-2026"]}' > _site/index.json
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

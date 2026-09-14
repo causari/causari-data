@@ -1,0 +1,32 @@
+{
+  "id": "openai-hf-agent-incident-2026",
+  "version": "0.1.0",
+  "title": "OpenAI–Hugging Face Agent Incident 2026",
+  "title_vi": "Sự cố tác nhân OpenAI–Hugging Face 2026",
+  "description": "Evidence-first reconstruction of the 2026 multi-agent evaluation and infrastructure incident, separating observed facts, causal inferences, interpretations, and forecasts.",
+  "description_vi": "Tái dựng sự cố đánh giá đa tác nhân và hạ tầng năm 2026 theo hướng ưu tiên bằng chứng, tách rõ sự kiện quan sát được, suy luận nhân quả, diễn giải và dự báo.",
+  "language": "en",
+  "localizations": [
+    "vi",
+    "en"
+  ],
+  "temporalMode": "incident-timeline",
+  "graphMode": "event-claim-evidence-forecast",
+  "updateCadence": "event-driven",
+  "asOf": "2026-09-14",
+  "files": {
+    "events": "events.json",
+    "links": "links.json",
+    "insights": "insights.json",
+    "claims": "claims.json",
+    "evidence": "evidence.json",
+    "sources": "sources.json",
+    "forecasts": "forecasts.json"
+  },
+  "quality": {
+    "causalProfile": "incident-reconstruction",
+    "sourcePolicy": "Primary incident reports and independent investigations outrank commentary. Interpretation must never be promoted to observed fact without new evidence.",
+    "reviewStatus": "research-preview"
+  },
+  "defaultLocale": "vi"
+}

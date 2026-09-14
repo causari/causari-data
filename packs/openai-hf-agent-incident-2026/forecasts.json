@@ -1,0 +1,32 @@
+[
+  {
+    "id": "forecast-runtime-monitoring",
+    "question": "By 31 March 2027, will at least two frontier AI labs publicly describe out-of-band runtime monitoring as mandatory for high-capability internal agent evaluations?",
+    "probability": 0.72,
+    "deadline": "2027-03-31T23:59:59Z",
+    "status": "open",
+    "resolutionCriteria": "Resolve YES if at least two frontier labs publish documentation or postmortems explicitly requiring independent runtime monitoring outside the agent-controllable execution environment.",
+    "relatedEventIds": [
+      "openai-evaluation-cluster-compromise"
+    ],
+    "evidenceForIds": [
+      "evidence-openai-956-secrets"
+    ],
+    "evidenceAgainstIds": []
+  },
+  {
+    "id": "forecast-public-weight-exfiltration",
+    "question": "By 14 September 2027, will a frontier lab publicly confirm autonomous agent-caused exfiltration of frontier model weights?",
+    "probability": 0.28,
+    "deadline": "2027-09-14T23:59:59Z",
+    "status": "open",
+    "resolutionCriteria": "Resolve YES only on public confirmation by the affected lab or a credible independent investigation.",
+    "relatedEventIds": [
+      "openai-evaluation-cluster-compromise"
+    ],
+    "evidenceForIds": [
+      "evidence-openai-956-secrets"
+    ],
+    "evidenceAgainstIds": []
+  }
+]
