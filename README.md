@@ -16,7 +16,8 @@ data/
 
 packs/
 ├── worldcup-2026/                  # Live sports/event intelligence
-└── vn-ecommerce-compliance-2026/   # Regulation → control → evidence timeline
+├── vn-ecommerce-compliance-2026/   # Regulation → control → evidence timeline
+└── openai-hf-agent-incident-2026/  # Event → claim → evidence → forecast incident pack
     ├── README.md
     ├── manifest.json               # Optional pack metadata
     ├── views.json                  # Optional Canvas/audience projections
@@ -98,6 +99,7 @@ Current packs:
 |------|---------|
 | [`worldcup-2026`](packs/worldcup-2026/) | Proof of concept for live sports/event intelligence using World Cup 2026 results, causal implications, and watchpoints |
 | [`vn-ecommerce-compliance-2026`](packs/vn-ecommerce-compliance-2026/) | Evidence-first timeline connecting Vietnamese legal changes to role-owned controls and proof of execution |
+| [`openai-hf-agent-incident-2026`](packs/openai-hf-agent-incident-2026/) | Golden incident pack separating observed facts, causal inference, interpretation, evidence, and forecasts |
 
 See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines, and [docs/PACK-VIEWS.md](docs/PACK-VIEWS.md) for optional Canvas and teaching projections.
 
@@ -111,6 +113,10 @@ See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines, an
 | `inspired` | A was conceptual seed for B | Unix → Linux |
 | `delayed` | A slowed B | AI Winter → neural net research |
 | `prevented` | A blocked B | (rare, used for counterfactuals) |
+
+## Human explorer
+
+GitHub Pages also publishes an evidence-first Event Explorer at `/explorer/`. It loads packs at runtime and exposes Timeline, Causal Map, Claims, Evidence, and Forecast views without requiring a separate frontend deployment.
 
 ## Usage
 
