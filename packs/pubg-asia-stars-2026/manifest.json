@@ -1,0 +1,51 @@
+{
+  "id": "pubg-asia-stars-2026",
+  "version": "0.1.0",
+  "title": "PUBG Asia Stars 2026 — Live Case",
+  "title_vi": "PUBG Asia Stars 2026 — Live Case",
+  "description": "Evidence-first live reconstruction of the PUBG Asia Stars controversy involving Himass and TanVuu, separating chronology, attributed official findings, sanctions, public evidence gaps, organizer responsibility and review/appeal responses.",
+  "description_vi": "Tái dựng trực tiếp vụ việc PUBG Asia Stars liên quan Himass và TanVuu theo hướng ưu tiên bằng chứng, tách rõ diễn biến, kết luận chính thức có quy nguồn, chế tài, khoảng trống bằng chứng công khai, trách nhiệm vận hành và phản hồi xem xét/khiếu nại.",
+  "language": "vi",
+  "localizations": ["vi", "en"],
+  "temporalMode": "live-incident-timeline",
+  "graphMode": "event-claim-evidence",
+  "updateCadence": "event-driven",
+  "asOf": "2026-09-24",
+  "files": {
+    "events": "events.json",
+    "links": "links.json",
+    "insights": "insights.json",
+    "views": "views.json",
+    "claims": "claims.json",
+    "evidence": "evidence.json",
+    "sources": "sources.json"
+  },
+  "canvas": {
+    "defaultView": "overview",
+    "recommendedLayout": "timeline-lanes",
+    "supportsStoryMode": true,
+    "laneField": "lane",
+    "nodeTypeField": "nodeType"
+  },
+  "case": {
+    "kind": "live-dispute",
+    "status": "active",
+    "topic": "esports",
+    "officialInvestigation": "concluded",
+    "sanctions": "active",
+    "reviewOrAppealOutcome": "unresolved-publicly",
+    "lastChecked": "2026-09-24",
+    "openQuestions": [
+      "What is the final outcome of any explanation or appeal procedure?",
+      "What is the outcome of KRAFTON's internal operational review?",
+      "Will additional player-specific evidence or procedural detail be made public?"
+    ]
+  },
+  "quality": {
+    "causalProfile": "live-dispute-reconstruction",
+    "sourcePolicy": "Official findings and decisions are always attributed to the issuing authority. Media and advocacy sources remain attributed. Unverified reports must never be promoted to canonical fact merely through repetition.",
+    "reviewStatus": "research-preview",
+    "disclaimer": "Causari reconstructs the public record and its provenance. It does not independently adjudicate player misconduct or legal liability."
+  },
+  "defaultLocale": "vi"
+}
