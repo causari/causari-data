@@ -12,7 +12,7 @@
 //   node scripts/validate-pack.mjs            # validate all packs
 //   node scripts/validate-pack.mjs worldcup-2026
 //
-// Also exports validatePackData({events,links,insights,views,manifest}) for
+// Also exports validatePackData({events,links,insights,views,manifest,claims,evidence,sources,forecasts}) for
 // in-memory checks. Optional files may be omitted by existing callers.
 //
 // Exit 0 = clean, exit 1 = errors found.
@@ -41,12 +41,15 @@ function isNonEmptyStr(v) { return typeof v === 'string' && v.trim().length > 0;
  * Pure validation of a pack's in-memory data. Returns an array of error strings
  * (empty = valid). No I/O, no console — safe to call before writing to disk.
  */
-export function validatePackData({ events, links, insights, views, manifest }, packId = 'pack') {
+export function validatePackData({ events, links, insights, views, manifest, claims, evidence, sources, forecasts }, packId = 'pack') {
   const errors = [];
   const E = (msg) => errors.push(`[${packId}] ${msg}`);
   const eventIds = new Set();
   const linkIds = new Set();
   const viewIds = new Set();
+  const sourceIds = new Set();
+  const evidenceIds = new Set();
+  const claimIds = new Set();
 
   // --- Events ---
   if (!Array.isArray(events)) { E('events must be an array'); return errors; }
@@ -107,6 +110,74 @@ export function validatePackData({ events, links, insights, views, manifest }, p
     if (!Array.isArray(ins.instances)) { E(`insight ${id}: instances must be an array`); continue; }
     for (const ref of ins.instances) {
       if (!linkIds.has(ref)) E(`insight ${id}: instance "${ref}" is not a link in this pack`);
+    }
+  }
+
+  // --- Optional evidence-first case layer ---
+  if (sources !== undefined) {
+    if (!Array.isArray(sources)) E('sources must be an array when sources.json is present');
+    else for (const source of sources) {
+      const id = source?.id ?? '<missing id>';
+      if (!isNonEmptyStr(source?.id)) E('source has no id');
+      else if (!KEBAB.test(source.id)) E(`source id not kebab-case: ${source.id}`);
+      else if (sourceIds.has(source.id)) E(`duplicate source id: ${source.id}`);
+      else sourceIds.add(source.id);
+      if (!isNonEmptyStr(source?.title)) E(`source ${id}: missing title`);
+      if (source?.url !== undefined && !isNonEmptyStr(source.url)) E(`source ${id}: url must be a non-empty string`);
+    }
+  }
+
+  if (evidence !== undefined) {
+    if (!Array.isArray(evidence)) E('evidence must be an array when evidence.json is present');
+    else for (const item of evidence) {
+      const id = item?.id ?? '<missing id>';
+      if (!isNonEmptyStr(item?.id)) E('evidence item has no id');
+      else if (!KEBAB.test(item.id)) E(`evidence id not kebab-case: ${item.id}`);
+      else if (evidenceIds.has(item.id)) E(`duplicate evidence id: ${item.id}`);
+      else evidenceIds.add(item.id);
+      if (!isNonEmptyStr(item?.sourceId)) E(`evidence ${id}: missing sourceId`);
+      else if (!sourceIds.has(item.sourceId)) E(`evidence ${id}: sourceId "${item.sourceId}" is not in sources.json`);
+      if (!isNonEmptyStr(item?.support)) E(`evidence ${id}: missing support text`);
+      if (item?.confidence !== undefined && !isNum01(item.confidence)) E(`evidence ${id}: confidence must be 0-1`);
+    }
+  }
+
+  if (claims !== undefined) {
+    if (!Array.isArray(claims)) E('claims must be an array when claims.json is present');
+    else for (const claim of claims) {
+      const id = claim?.id ?? '<missing id>';
+      if (!isNonEmptyStr(claim?.id)) E('claim has no id');
+      else if (!KEBAB.test(claim.id)) E(`claim id not kebab-case: ${claim.id}`);
+      else if (claimIds.has(claim.id)) E(`duplicate claim id: ${claim.id}`);
+      else claimIds.add(claim.id);
+      if (!isNonEmptyStr(claim?.text)) E(`claim ${id}: missing text`);
+      if (!isNonEmptyStr(claim?.kind)) E(`claim ${id}: missing kind`);
+      if (!isNonEmptyStr(claim?.status)) E(`claim ${id}: missing status`);
+      if (!isNum01(claim?.confidence)) E(`claim ${id}: confidence must be 0-1`);
+      if (!Array.isArray(claim?.eventIds)) E(`claim ${id}: eventIds must be an array`);
+      else for (const ref of claim.eventIds) if (!eventIds.has(ref)) E(`claim ${id}: eventIds references missing event "${ref}"`);
+      if (!Array.isArray(claim?.evidenceIds)) E(`claim ${id}: evidenceIds must be an array`);
+      else for (const ref of claim.evidenceIds) if (!evidenceIds.has(ref)) E(`claim ${id}: evidenceIds references missing evidence "${ref}"`);
+    }
+  }
+
+  if (forecasts !== undefined) {
+    if (!Array.isArray(forecasts)) E('forecasts must be an array when forecasts.json is present');
+    else for (const forecast of forecasts) {
+      const id = forecast?.id ?? '<missing id>';
+      if (!isNonEmptyStr(forecast?.id)) E('forecast has no id');
+      else if (!KEBAB.test(forecast.id)) E(`forecast id not kebab-case: ${forecast.id}`);
+      if (!isNonEmptyStr(forecast?.question)) E(`forecast ${id}: missing question`);
+      if (forecast?.probability !== undefined && !isNum01(forecast.probability)) E(`forecast ${id}: probability must be 0-1`);
+      if (forecast?.relatedEventIds !== undefined) {
+        if (!Array.isArray(forecast.relatedEventIds)) E(`forecast ${id}: relatedEventIds must be an array`);
+        else for (const ref of forecast.relatedEventIds) if (!eventIds.has(ref)) E(`forecast ${id}: relatedEventIds references missing event "${ref}"`);
+      }
+      for (const field of ['evidenceForIds', 'evidenceAgainstIds']) {
+        if (forecast?.[field] === undefined) continue;
+        if (!Array.isArray(forecast[field])) E(`forecast ${id}: ${field} must be an array`);
+        else for (const ref of forecast[field]) if (!evidenceIds.has(ref)) E(`forecast ${id}: ${field} references missing evidence "${ref}"`);
+      }
     }
   }
 
@@ -173,13 +244,23 @@ export function validatePackFromDisk(packId) {
       insights: read('insights.json'),
       views: readOptional('views.json'),
       manifest: readOptional('manifest.json'),
+      claims: readOptional('claims.json'),
+      evidence: readOptional('evidence.json'),
+      sources: readOptional('sources.json'),
+      forecasts: readOptional('forecasts.json'),
     };
   } catch (e) {
     return { errors: [`[${packId}] cannot read pack — ${e.message}`], counts: '' };
   }
   const errors = validatePackData(data, packId);
   const viewCount = Array.isArray(data.views) ? `, ${data.views.length} views` : '';
-  const counts = `${data.events.length} events, ${data.links.length} links, ${data.insights.length} insights${viewCount}`;
+  const caseCount = [
+    Array.isArray(data.claims) ? `${data.claims.length} claims` : '',
+    Array.isArray(data.evidence) ? `${data.evidence.length} evidence` : '',
+    Array.isArray(data.sources) ? `${data.sources.length} sources` : '',
+    Array.isArray(data.forecasts) ? `${data.forecasts.length} forecasts` : '',
+  ].filter(Boolean).join(', ');
+  const counts = `${data.events.length} events, ${data.links.length} links, ${data.insights.length} insights${viewCount}${caseCount ? ', ' + caseCount : ''}`;
   return { errors, counts };
 }
 
