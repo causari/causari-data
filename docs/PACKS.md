@@ -22,7 +22,11 @@ packs/{pack-id}/
 ├── views.json      # optional Canvas, audience, and teaching projections
 ├── events.json     # CKGEvent-compatible events
 ├── links.json      # CausalLink-compatible relationships
-└── insights.json   # recurring patterns found inside this pack
+├── insights.json   # recurring patterns found inside this pack
+├── claims.json     # optional atomic assertions + epistemic status (case packs)
+├── evidence.json   # optional provenance-backed support/limits (case packs)
+├── sources.json    # optional pack-level source registry (case packs)
+└── forecasts.json  # optional resolvable future hypotheses (incident packs)
 ```
 
 `events.json`, `links.json`, and `insights.json` are canonical. Optional manifest and view files must not be required by older consumers. See [PACK-VIEWS.md](PACK-VIEWS.md) for the projection model.
@@ -49,6 +53,19 @@ For live or short-horizon timelines, packs may use the following optional event 
 These optional fields let a pack model live event intelligence without changing the core schema.
 
 Domain packs may also add optional fields such as `nodeType`, `lane`, `audiences`, `normativeStatus`, or `lifecycleStatus`. Consumers must ignore unknown optional fields and preserve the canonical event/link semantics.
+
+### Evidence-first case layer
+
+Incident, dispute, investigation, and due-diligence packs may add four optional arrays without changing the event-to-event causal graph:
+
+- `claims.json`: atomic assertions. Each claim records `kind`, epistemic `status`, `confidence`, `eventIds`, and `evidenceIds`.
+- `evidence.json`: provenance-backed support or limitation. Evidence points to a source record and may declare a `supportType` such as `supports`, `limits`, `qualifies`, or `context`.
+- `sources.json`: pack-level source registry with source tier and URL. Primary, media, advocacy, and commentary sources remain distinguishable.
+- `forecasts.json`: optional resolvable future hypotheses for incidents that need forward watchpoints.
+
+The key semantic boundary is: **causal links still connect events to events**. A claim supporting or contesting an event is not a `CausalLink`. This prevents “source X supports claim Y” from being confused with “event A caused event B.”
+
+For contested live cases, official findings must be represented as attributed claims (for example `status: "official-finding"`), not silently promoted to an independent Causari finding. An evidence gap describes what the public record does not expose; it must not be rewritten as a claim that the authority lacks underlying evidence.
 
 ## Graph modeling rules (required for clean loading)
 
