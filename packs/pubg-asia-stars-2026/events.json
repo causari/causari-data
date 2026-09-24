@@ -8,18 +8,37 @@
     "yearNum": 2026,
     "yearLabel": "11 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.56,
-    "tags": ["pubg", "asia-stars", "context"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "context"
+    ],
     "date": "2026-09-11",
     "dateLabel": "11 September 2026",
     "status": "completed",
-    "entities": ["PUBG: BATTLEGROUNDS", "KRAFTON"],
+    "entities": [
+      "PUBG: BATTLEGROUNDS",
+      "KRAFTON"
+    ],
     "whyItMatters": "This establishes the event format, participant mix and planned three-day schedule before the dispute emerged.",
     "whyItMatters_vi": "Mốc này xác lập thể thức, thành phần tham gia và lịch ba ngày trước khi tranh cãi xuất hiện.",
     "nodeType": "context",
     "lane": "tournament",
-    "claimIds": ["claim-tournament-format"]
+    "claimIds": [
+      "claim-tournament-format"
+    ],
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://pubg.com/vi/events/notice/10926",
+        "citation": "PUBG Asia Stars event notice, 11 Sep 2026"
+      }
+    ]
   },
   {
     "id": "pubg-asia-stars-day1-controversy",
@@ -30,18 +49,37 @@
     "yearNum": 2026,
     "yearLabel": "17 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.82,
-    "tags": ["pubg", "asia-stars", "controversy", "investigation"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "controversy",
+      "investigation"
+    ],
     "date": "2026-09-17",
     "dateLabel": "17 September 2026",
     "status": "completed",
-    "entities": ["Himass", "TanVuu", "PUBG Asia Stars"],
+    "entities": [
+      "Himass",
+      "TanVuu",
+      "PUBG Asia Stars"
+    ],
     "whyItMatters": "This is the trigger that turns a showmatch into a live governance and evidence dispute.",
     "whyItMatters_vi": "Đây là ngòi nổ biến một giải giao lưu thành tranh chấp trực tiếp về quản trị và bằng chứng.",
     "nodeType": "incident",
     "lane": "tournament",
-    "claimIds": []
+    "claimIds": [],
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://labs.invenglobal.com/articles/26248/stream-sniping-allegations-proven-true-krafton-belatedly-identifies-region-and-players-involved",
+        "citation": "Inven Global retrospective on Day 1 controversy, 19 Sep 2026"
+      }
+    ]
   },
   {
     "id": "himass-tanvuu-excluded",
@@ -52,18 +90,38 @@
     "yearNum": 2026,
     "yearLabel": "19 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.78,
-    "tags": ["pubg", "asia-stars", "interim-action"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "interim-action"
+    ],
     "date": "2026-09-19",
     "dateLabel": "19 September 2026",
     "status": "completed",
-    "entities": ["Himass", "TanVuu", "KRAFTON"],
+    "entities": [
+      "Himass",
+      "TanVuu",
+      "KRAFTON"
+    ],
     "whyItMatters": "This was an interim participation consequence before the final 23 September sanctions.",
     "whyItMatters_vi": "Đây là hệ quả tham dự tạm thời trước chế tài cuối cùng ngày 23/09.",
     "nodeType": "interim-decision",
     "lane": "decision",
-    "claimIds": ["claim-players-excluded"]
+    "claimIds": [
+      "claim-players-excluded"
+    ],
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://labs.invenglobal.com/articles/26248/stream-sniping-allegations-proven-true-krafton-belatedly-identifies-region-and-players-involved",
+        "citation": "Inven Global, 19 Sep 2026"
+      }
+    ]
   },
   {
     "id": "pubg-asia-stars-day3-cancelled",
@@ -74,18 +132,38 @@
     "yearNum": 2026,
     "yearLabel": "20 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.84,
-    "tags": ["pubg", "asia-stars", "cancellation", "operations"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "cancellation",
+      "operations"
+    ],
     "date": "2026-09-20",
     "dateLabel": "20 September 2026",
     "status": "completed",
-    "entities": ["KRAFTON", "PUBG Asia Stars"],
+    "entities": [
+      "KRAFTON",
+      "PUBG Asia Stars"
+    ],
     "whyItMatters": "The controversy affected the tournament itself, not only the two players, and the knowledge state was still provisional.",
     "whyItMatters_vi": "Tranh cãi ảnh hưởng đến chính giải đấu chứ không chỉ hai tuyển thủ, và trạng thái tri thức lúc đó vẫn còn tạm thời.",
     "nodeType": "operational-response",
     "lane": "investigation",
-    "claimIds": ["claim-day3-cancelled"]
+    "claimIds": [
+      "claim-day3-cancelled"
+    ],
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.invenglobal.com/articles/26265/krafton-cancels-tournament-bows-head-we-fell-short-in-many-areas",
+        "citation": "Inven Global, 20 Sep 2026"
+      }
+    ]
   },
   {
     "id": "pubg-final-investigation-finding",
@@ -96,18 +174,43 @@
     "yearNum": 2026,
     "yearLabel": "23 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.96,
-    "tags": ["pubg", "asia-stars", "official-finding", "stream-sniping"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "official-finding",
+      "stream-sniping"
+    ],
     "date": "2026-09-23",
     "dateLabel": "23 September 2026",
     "status": "completed",
-    "entities": ["PUBG: BATTLEGROUNDS", "KRAFTON", "Himass", "TanVuu"],
+    "entities": [
+      "PUBG: BATTLEGROUNDS",
+      "KRAFTON",
+      "Himass",
+      "TanVuu"
+    ],
     "whyItMatters": "This changes the case from an ongoing investigation to an official finding while leaving a distinction between the official finding and publicly inspectable underlying evidence.",
     "whyItMatters_vi": "Mốc này chuyển case từ điều tra đang diễn ra sang kết luận chính thức, đồng thời vẫn giữ ranh giới giữa kết luận đó và bằng chứng nền có thể được công chúng tự kiểm tra.",
     "nodeType": "finding",
     "lane": "investigation",
-    "claimIds": ["claim-pubg-final-policy-violation", "claim-no-additional-sanctionable-violations", "claim-krafton-never-officially-permitted", "claim-public-evidence-package-incomplete"]
+    "claimIds": [
+      "claim-pubg-final-policy-violation",
+      "claim-no-additional-sanctionable-violations",
+      "claim-krafton-never-officially-permitted",
+      "claim-public-evidence-package-incomplete"
+    ],
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://pubg.com/vi/news/11155",
+        "citation": "PUBG final investigation notice, 23 Sep 2026"
+      }
+    ]
   },
   {
     "id": "pubg-permanent-sanctions",
@@ -118,18 +221,41 @@
     "yearNum": 2026,
     "yearLabel": "23 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.98,
-    "tags": ["pubg", "asia-stars", "sanction", "decision"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "sanction",
+      "decision"
+    ],
     "date": "2026-09-23",
     "dateLabel": "23 September 2026",
     "status": "completed",
-    "entities": ["PUBG: BATTLEGROUNDS", "KRAFTON", "Himass", "TanVuu"],
+    "entities": [
+      "PUBG: BATTLEGROUNDS",
+      "KRAFTON",
+      "Himass",
+      "TanVuu"
+    ],
     "whyItMatters": "The final finding produced long-duration consequences that immediately became the focus of proportionality and appeal debate.",
     "whyItMatters_vi": "Kết luận cuối tạo ra hệ quả dài hạn và ngay lập tức trở thành trọng tâm tranh luận về tính tương xứng và khiếu nại.",
     "nodeType": "decision",
     "lane": "decision",
-    "claimIds": ["claim-permanent-sanctions", "claim-right-to-explanation"]
+    "claimIds": [
+      "claim-permanent-sanctions",
+      "claim-right-to-explanation"
+    ],
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://pubg.com/vi/news/11155",
+        "citation": "PUBG final investigation notice, 23 Sep 2026"
+      }
+    ]
   },
   {
     "id": "krafton-accepts-operational-responsibility",
@@ -140,18 +266,37 @@
     "yearNum": 2026,
     "yearLabel": "23 Sep 2026",
     "precision": "day",
-    "domains": ["systems", "culture"],
+    "domains": [
+      "systems",
+      "culture"
+    ],
     "impactScore": 0.88,
-    "tags": ["krafton", "operations", "accountability", "internal-review"],
+    "tags": [
+      "krafton",
+      "operations",
+      "accountability",
+      "internal-review"
+    ],
     "date": "2026-09-23",
     "dateLabel": "23 September 2026",
     "status": "completed",
-    "entities": ["KRAFTON"],
+    "entities": [
+      "KRAFTON"
+    ],
     "whyItMatters": "The official record contains two simultaneous accountability tracks: player conduct and organizer process failure.",
     "whyItMatters_vi": "Hồ sơ chính thức chứa hai tuyến trách nhiệm song song: hành vi tuyển thủ và thất bại quy trình của ban tổ chức.",
     "nodeType": "admission",
     "lane": "investigation",
-    "claimIds": ["claim-krafton-operational-failures"]
+    "claimIds": [
+      "claim-krafton-operational-failures"
+    ],
+    "sources": [
+      {
+        "type": "official",
+        "url": "https://pubg.com/vi/news/11155",
+        "citation": "PUBG final investigation notice, 23 Sep 2026"
+      }
+    ]
   },
   {
     "id": "teams-request-review-and-appeal-support",
@@ -162,18 +307,45 @@
     "yearNum": 2026,
     "yearLabel": "23 Sep 2026",
     "precision": "day",
-    "domains": ["culture", "systems"],
+    "domains": [
+      "culture",
+      "systems"
+    ],
     "impactScore": 0.8,
-    "tags": ["pubg", "asia-stars", "appeal", "team-response"],
+    "tags": [
+      "pubg",
+      "asia-stars",
+      "appeal",
+      "team-response"
+    ],
     "date": "2026-09-23",
     "dateLabel": "23 September 2026",
     "status": "completed",
-    "entities": ["GAM x TE", "Anyone's Legend", "Himass", "TanVuu"],
+    "entities": [
+      "GAM x TE",
+      "Anyone's Legend",
+      "Himass",
+      "TanVuu"
+    ],
     "whyItMatters": "The case remains live after the final sanction because formal explanation and appeal pathways have not yet produced a publicly indexed outcome.",
     "whyItMatters_vi": "Case vẫn còn sống sau chế tài cuối vì quy trình giải trình và khiếu nại chưa tạo ra kết quả công khai được lập chỉ mục.",
     "nodeType": "response",
     "lane": "response",
-    "claimIds": ["claim-teams-request-review", "claim-appeal-outcome-unresolved"],
-    "nextWatchpoints": ["Official explanation/appeal outcome", "KRAFTON internal-review outcome", "Any publication of player-specific evidence or procedural detail"]
+    "claimIds": [
+      "claim-teams-request-review",
+      "claim-appeal-outcome-unresolved"
+    ],
+    "nextWatchpoints": [
+      "Official explanation/appeal outcome",
+      "KRAFTON internal-review outcome",
+      "Any publication of player-specific evidence or procedural detail"
+    ],
+    "sources": [
+      {
+        "type": "news",
+        "url": "https://www.invenglobal.com/articles/26457/teams-of-himass-and-tanvuu-object-to-permanent-pubg-bans",
+        "citation": "Inven Global, 23 Sep 2026"
+      }
+    ]
   }
 ]
