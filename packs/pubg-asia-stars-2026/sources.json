@@ -1,0 +1,57 @@
+[
+  {
+    "id": "source-pubg-event-announcement",
+    "title": "Giải đấu & Sự Kiện Web PUBG Asia Stars",
+    "publisher": "PUBG: BATTLEGROUNDS",
+    "tier": "primary",
+    "type": "official",
+    "url": "https://pubg.com/vi/events/notice/10926",
+    "publishedAt": "2026-09-11"
+  },
+  {
+    "id": "source-pubg-final-investigation",
+    "title": "Thông Báo Kết Quả Điều Tra Và Biện Pháp Xử Lý Sự Cố Vận Hành PUBG Asia Stars",
+    "publisher": "PUBG: BATTLEGROUNDS / KRAFTON",
+    "tier": "primary",
+    "type": "official",
+    "url": "https://pubg.com/vi/news/11155",
+    "publishedAt": "2026-09-23"
+  },
+  {
+    "id": "source-inven-sep19",
+    "title": "Stream Sniping Allegations Proven True... KRAFTON Belatedly Identifies Region and Players Involved",
+    "publisher": "Inven Global",
+    "tier": "media",
+    "type": "news",
+    "url": "https://labs.invenglobal.com/articles/26248/stream-sniping-allegations-proven-true-krafton-belatedly-identifies-region-and-players-involved",
+    "publishedAt": "2026-09-19"
+  },
+  {
+    "id": "source-inven-sep20",
+    "title": "Krafton Cancels Tournament, Bows Head: We Fell Short in Many Areas",
+    "publisher": "Inven Global",
+    "tier": "media",
+    "type": "news",
+    "url": "https://www.invenglobal.com/articles/26265/krafton-cancels-tournament-bows-head-we-fell-short-in-many-areas",
+    "publishedAt": "2026-09-20"
+  },
+  {
+    "id": "source-inven-team-responses",
+    "title": "Teams of Himass and TanVuu Object to Permanent PUBG Bans",
+    "publisher": "Inven Global",
+    "tier": "media",
+    "type": "news",
+    "url": "https://www.invenglobal.com/articles/26457/teams-of-himass-and-tanvuu-object-to-permanent-pubg-bans",
+    "publishedAt": "2026-09-23"
+  },
+  {
+    "id": "source-justiceforpubgvn",
+    "title": "Công bằng cho Himass & TanVuu",
+    "publisher": "Justice for PUBG VN",
+    "tier": "advocacy",
+    "type": "advocacy",
+    "url": "https://justiceforpubgvn.com/vi",
+    "retrievedAt": "2026-09-24",
+    "notes": "Advocacy source. Claims from this source remain attributed and are not promoted to canonical fact without independent support."
+  }
+]
