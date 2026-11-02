@@ -1,0 +1,112 @@
+[
+  {
+    "id": "dna_disc--enabled-->relativity",
+    "fromEvent": "dna_disc",
+    "toEvent": "relativity",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "DNA as discrete information substrate strengthened the broader 20th-c shift toward discrete/quantized models of nature, reinforcing relativity's framework.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "retro-causal",
+    "reason": "DNA Double Helix (1953) cannot enable General Relativity (1915); the original evidence described a later intellectual analogy, not causation."
+  },
+  {
+    "id": "ai--enabled-->internet",
+    "fromEvent": "ai",
+    "toEvent": "internet",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Feedback loop: AI systems both consume and reshape internet infrastructure (search, recommendation, content generation).",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "event-vs-system-feedback",
+    "reason": "The 2026 AI-era node may reshape today's internet infrastructure, but it cannot enable the historical ARPANET/Internet event dated 1969."
+  },
+  {
+    "id": "internet--enabled-->darwin_ev",
+    "fromEvent": "internet",
+    "toEvent": "darwin_ev",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "Online publication of genomic data and computational evolution simulations expanded what evolutionary biology can do — feedback from later technology to earlier theory.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "retro-causal",
+    "reason": "Internet-era tooling can extend evolutionary research, but it cannot enable Darwin's 1859 theory event."
+  },
+  {
+    "id": "forecast_renewable--enabled-->forecast_climate",
+    "fromEvent": "forecast_renewable",
+    "toEvent": "forecast_climate",
+    "relationship": "enabled",
+    "confidence": 0.8,
+    "evidence": "Decarbonized energy grid is the largest single lever for atmospheric carbon trajectory reversal.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "forecast-temporal-inversion",
+    "reason": "The source scenario is dated 2031 while the target climate-restoration scenario is dated 2030; the dependency must be rebuilt from explicit scenario assumptions."
+  },
+  {
+    "id": "forecast_fusion--enabled-->forecast_renewable",
+    "fromEvent": "forecast_fusion",
+    "toEvent": "forecast_renewable",
+    "relationship": "enabled",
+    "confidence": 0.8,
+    "evidence": "Fusion provides the high-density baseload that complements intermittent renewables, completing the energy transition.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "forecast-temporal-inversion",
+    "reason": "The source fusion scenario is dated 2036 while the target renewable-dominance scenario is dated 2031; this cannot be represented as a forward causal dependency."
+  }
+]
