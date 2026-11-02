@@ -13,6 +13,7 @@ on:
       - "scripts/causal-quality.mjs"
       - "schema/**"
       - ".github/workflows/validate-packs.yml"
+      - ".github/workflows/career-radar-ingest.yml"
   pull_request:
     paths:
       - "packs/**"
@@ -24,6 +25,7 @@ on:
       - "scripts/ingest-career-radar.mjs"
       - "scripts/causal-quality.mjs"
       - "schema/**"
+      - ".github/workflows/career-radar-ingest.yml"
 
 jobs:
   validate:
