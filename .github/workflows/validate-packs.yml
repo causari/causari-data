@@ -11,6 +11,8 @@ on:
       - "scripts/validate-global-projection.mjs"
       - "scripts/ingest-career-radar.mjs"
       - "scripts/causal-quality.mjs"
+      - "scripts/audit-canonical-quality.mjs"
+      - "data/quality/**"
       - "schema/**"
       - ".github/workflows/validate-packs.yml"
       - ".github/workflows/career-radar-ingest.yml"
@@ -61,6 +63,9 @@ jobs:
           }
           JSON
           node scripts/ingest-career-radar.mjs /tmp/career-radar-noop.json --dry-run
+
+      - name: Canonical quality gate (no new legacy debt)
+        run: node scripts/audit-canonical-quality.mjs
 
       - name: Causal-quality gate (semantic — no templated substrate)
         run: node scripts/causal-quality.mjs
