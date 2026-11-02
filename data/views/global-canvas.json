@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -322,5 +322,52 @@
       "relationship": "context",
       "reason": "The IMF study explicitly compares hiring demand across AI-exposed occupations in the post-ChatGPT period. Contextual association is not a causal claim."
     }
-  ]
+  ],
+  "filterPolicy": {
+    "default": {
+      "layers": [
+        "world"
+      ],
+      "packs": [
+        "core"
+      ],
+      "topics": []
+    },
+    "layers": [
+      {
+        "id": "world",
+        "label": "World",
+        "label_vi": "Thế giới",
+        "description": "Observed/historical world events in the canonical core."
+      },
+      {
+        "id": "evidence",
+        "label": "Evidence",
+        "label_vi": "Bằng chứng",
+        "description": "Reports, research, measurements and official projections promoted from topic packs."
+      },
+      {
+        "id": "forecast",
+        "label": "Forecast",
+        "label_vi": "Dự báo",
+        "description": "Future scenarios. These are not observed events and should remain visually distinct."
+      }
+    ],
+    "packOrder": [
+      "core",
+      "ai-career-radar-2026"
+    ],
+    "packLabels": {
+      "core": {
+        "label": "Core",
+        "label_vi": "Core"
+      },
+      "ai-career-radar-2026": {
+        "label": "AI Career",
+        "label_vi": "AI Nghề nghiệp"
+      }
+    },
+    "topicSource": "event.domains",
+    "preserveContextAnchors": true
+  }
 }
