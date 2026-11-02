@@ -20,7 +20,8 @@ packs/{pack-id}/
 ├── README.md       # pack purpose, audience, curation notes
 ├── manifest.json   # optional pack metadata and consumer hints
 ├── views.json      # optional Canvas, audience, and teaching projections
-├── events.json     # CKGEvent-compatible events
+├── event-refs.json # optional references to canonical data/events.json
+├── events.json     # pack-local events OR deprecated compatibility mirror
 ├── links.json      # CausalLink-compatible relationships
 ├── insights.json   # recurring patterns found inside this pack
 ├── claims.json     # optional atomic assertions + epistemic status (case packs)
@@ -29,7 +30,7 @@ packs/{pack-id}/
 └── forecasts.json  # optional resolvable future hypotheses (incident packs)
 ```
 
-`events.json`, `links.json`, and `insights.json` are canonical. Optional manifest and view files must not be required by older consumers. See [PACK-VIEWS.md](PACK-VIEWS.md) for the projection model.
+Pack-local `events.json`, `links.json`, and `insights.json` remain canonical for pack-only content. When a pack reuses global events, prefer `event-refs.json` references to `data/events.json`; do not create a second authoritative copy. A temporary compatibility mirror is allowed during consumer migration. See [CANONICAL-EVENTS.md](CANONICAL-EVENTS.md) and [PACK-VIEWS.md](PACK-VIEWS.md).
 
 ## Compatibility
 
@@ -71,7 +72,7 @@ For contested live cases, official findings must be represented as attributed cl
 
 A pack is a causal graph. To load cleanly into any Causari consumer (the visual explorer, the MCP store, an agent), it must follow the same structural rules as the core dataset:
 
-- **Links connect events to events.** A `CausalLink`'s `fromEvent` and `toEvent` must both be `id`s of events **in the same pack**. Never point a link at an insight id or at a node that isn't defined — that produces dangling edges in the visual.
+- **Links connect events to events.** A `CausalLink`'s endpoints must resolve either from pack-local events or declared canonical `event-refs.json`. Never point a link at an insight id or at a node that isn't defined — that produces dangling edges in the visual.
 - **Insights attach to links, not the other way around.** An `Insight.instances` array lists the `CausalLink` ids that demonstrate the pattern. Insights are not graph nodes and are never link endpoints.
 - **Upcoming fixtures are events with `status: "scheduled"`.** Model a "watchpoint" (a match that hasn't happened yet) as a real scheduled event, then link the completed result to it. This keeps `nextWatchpoints` (free-text hints) separate from the actual graph edges.
 - **Operational controls must not masquerade as completed work.** For action/control/evidence nodes, use a domain-specific field such as `lifecycleStatus`; reserve the core `status` field for event state.
