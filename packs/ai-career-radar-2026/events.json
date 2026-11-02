@@ -57,7 +57,8 @@
       "sourceIds": [
         "source-ilo-vietnam-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "ilo-genai-empirical-review-2026",
@@ -118,7 +119,8 @@
       "sourceIds": [
         "source-ilo-empirical-review-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "bls-2025-2035-ai-occupation-split",
@@ -179,7 +181,8 @@
         "source-bls-software-developers-2026",
         "source-bls-programmers-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "oecd-skill-shortages-2026",
@@ -241,7 +244,8 @@
       "sourceIds": [
         "source-oecd-skill-shortages-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "imf-asia-ai-labor-market-2026",
@@ -305,6 +309,7 @@
       "sourceIds": [
         "source-imf-asia-reo-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   }
 ]
