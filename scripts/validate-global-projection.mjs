@@ -77,3 +77,27 @@ console.log('✓ Global projection valid');
 console.log('  canonical events: ' + events.length);
 console.log('  canonical links: ' + links.length);
 console.log('  projected events: ' + view.eventIds.length);
+
+
+const filterPolicy = view.filterPolicy;
+if (!filterPolicy || typeof filterPolicy !== 'object') {
+  errors.push('global view missing filterPolicy');
+} else {
+  const allowedLayers = new Set(['world', 'evidence', 'forecast']);
+  const layerIds = new Set((filterPolicy.layers || []).map((item) => item?.id));
+  for (const id of allowedLayers) if (!layerIds.has(id)) errors.push('filterPolicy missing layer: ' + id);
+
+  for (const id of filterPolicy.default?.layers || []) {
+    if (!allowedLayers.has(id)) errors.push('filterPolicy default layer invalid: ' + id);
+  }
+  for (const id of filterPolicy.default?.packs || []) {
+    if (id !== 'core' && !(view.promotedFromPacks || {})[id]) {
+      errors.push('filterPolicy default pack invalid: ' + id);
+    }
+  }
+  for (const id of filterPolicy.packOrder || []) {
+    if (id !== 'core' && !(view.promotedFromPacks || {})[id]) {
+      errors.push('filterPolicy packOrder references unknown pack: ' + id);
+    }
+  }
+}
