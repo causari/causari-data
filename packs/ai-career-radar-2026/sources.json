@@ -1,0 +1,50 @@
+[
+  {
+    "id": "source-ilo-vietnam-2026",
+    "title": "Generative AI and jobs in Viet Nam: Labour market exposure and policy considerations",
+    "publisher": "International Labour Organization",
+    "tier": "primary",
+    "publishedAt": "2026-04-16",
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-viet-nam-labour-market-exposure-and-policy"
+  },
+  {
+    "id": "source-ilo-empirical-review-2026",
+    "title": "The impact of GenAI on jobs, productivity and work organization: a review of the empirical evidence",
+    "publisher": "International Labour Organization",
+    "tier": "primary",
+    "publishedAt": "2026-06-01",
+    "url": "https://www.ilo.org/publications/impact-genai-jobs-productivity-and-work-organization-review-empirical"
+  },
+  {
+    "id": "source-bls-software-developers-2026",
+    "title": "Software Developers, Quality Assurance Analysts, and Testers — Occupational Outlook Handbook",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "tier": "primary",
+    "publishedAt": "2026-08-27",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+  },
+  {
+    "id": "source-bls-programmers-2026",
+    "title": "Computer Programmers — Occupational Outlook Handbook",
+    "publisher": "U.S. Bureau of Labor Statistics",
+    "tier": "primary",
+    "publishedAt": "2026-08-27",
+    "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm"
+  },
+  {
+    "id": "source-oecd-skill-shortages-2026",
+    "title": "Mapping Skill Shortages in OECD Countries: New Evidence from the Updated Skills for Jobs Database",
+    "publisher": "OECD",
+    "tier": "primary",
+    "publishedAt": "2026-10-14",
+    "url": "https://www.oecd.org/en/publications/mapping-skill-shortages-in-oecd-countries_735f9485-en.html"
+  },
+  {
+    "id": "source-imf-asia-reo-2026",
+    "title": "Regional Economic Outlook: Asia and Pacific, October 2026 — Chapter 2: Labor Markets in Asia",
+    "publisher": "International Monetary Fund",
+    "tier": "primary",
+    "publishedAt": "2026-10-15",
+    "url": "https://www.imf.org/en/publications/reo/apac/issues/2026/10/15/regional-economic-outlook-for-asia-and-pacific-october-2026"
+  }
+]
