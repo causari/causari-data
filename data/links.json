@@ -162,24 +162,6 @@
     "scope": "world"
   },
   {
-    "id": "dna_disc--enabled-->relativity",
-    "fromEvent": "dna_disc",
-    "toEvent": "relativity",
-    "relationship": "enabled",
-    "confidence": 0.5,
-    "evidence": "DNA as discrete information substrate strengthened the broader 20th-c shift toward discrete/quantized models of nature, reinforcing relativity's framework.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "dna_disc--enabled-->internet",
     "fromEvent": "dna_disc",
     "toEvent": "internet",
@@ -360,42 +342,6 @@
     "scope": "world"
   },
   {
-    "id": "ai--enabled-->internet",
-    "fromEvent": "ai",
-    "toEvent": "internet",
-    "relationship": "enabled",
-    "confidence": 0.7,
-    "evidence": "Feedback loop: AI systems both consume and reshape internet infrastructure (search, recommendation, content generation).",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
-    "id": "internet--enabled-->darwin_ev",
-    "fromEvent": "internet",
-    "toEvent": "darwin_ev",
-    "relationship": "enabled",
-    "confidence": 0.5,
-    "evidence": "Online publication of genomic data and computational evolution simulations expanded what evolutionary biology can do — feedback from later technology to earlier theory.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "printing--enabled-->indus",
     "fromEvent": "printing",
     "toEvent": "indus",
@@ -486,24 +432,6 @@
     "scope": "world"
   },
   {
-    "id": "forecast_renewable--enabled-->forecast_climate",
-    "fromEvent": "forecast_renewable",
-    "toEvent": "forecast_climate",
-    "relationship": "enabled",
-    "confidence": 0.8,
-    "evidence": "Decarbonized energy grid is the largest single lever for atmospheric carbon trajectory reversal.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "forecast_neural--enabled-->forecast_consciousness",
     "fromEvent": "forecast_neural",
     "toEvent": "forecast_consciousness",
@@ -564,24 +492,6 @@
     "relationship": "enabled",
     "confidence": 0.6,
     "evidence": "Quantum-accelerated training could shorten AGI timelines by orders of magnitude on certain optimization problems.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
-    "id": "forecast_fusion--enabled-->forecast_renewable",
-    "fromEvent": "forecast_fusion",
-    "toEvent": "forecast_renewable",
-    "relationship": "enabled",
-    "confidence": 0.8,
-    "evidence": "Fusion provides the high-density baseload that complements intermittent renewables, completing the energy transition.",
     "sources": [
       {
         "type": "demo-seed",

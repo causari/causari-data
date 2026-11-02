@@ -2,9 +2,9 @@
   "version": 1,
   "generatedAt": "2026-11-03",
   "debtCeilings": {
-    "demoSeedCanonicalLinks": 463,
-    "highConfidenceDemoSeedLinks": 272,
-    "retroCausalLinks": 58
+    "demoSeedCanonicalLinks": 458,
+    "highConfidenceDemoSeedLinks": 270,
+    "retroCausalLinks": 53
   },
   "legacyForecastIds": [
     "forecast_agi",
@@ -26,15 +26,10 @@
     "omega"
   ],
   "requiredSuppressedGlobalLinkIds": [
-    "ai--enabled-->internet",
     "bitcoin--enabled-->ai",
     "darwin_ev--enabled-->relativity",
     "dna_disc--enabled-->internet",
-    "dna_disc--enabled-->relativity",
-    "forecast_fusion--enabled-->forecast_renewable",
-    "forecast_renewable--enabled-->forecast_climate",
     "genome--enabled-->bitcoin",
-    "internet--enabled-->darwin_ev",
     "iphone--enabled-->transformer",
     "printing--caused-->rena",
     "relativity--enabled-->turing_m",
