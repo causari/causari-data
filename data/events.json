@@ -256,9 +256,9 @@
   {
     "id": "turing_m",
     "title": "Turing Machine",
-    "description": "Can a machine think? Turing's universal computation model — and the test that bears his name — set the agenda for computer science and artificial intelligence for the next 75 years.",
-    "yearNum": 1950,
-    "yearLabel": "1950",
+    "description": "Alan Turing's 1936–37 computability paper introduced the abstract machine model now called the Turing machine, formalizing general computation and the universal-machine idea. This event is distinct from Turing's 1950 paper on machine intelligence.",
+    "yearNum": 1936,
+    "yearLabel": "1936",
     "precision": "year",
     "domains": [
       "technology",
@@ -276,9 +276,10 @@
     "scope": "world",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.95,
-        "citation": "Causari demo-v2.0.html curated baseline"
+        "type": "academic",
+        "reliability": 0.99,
+        "citation": "A. M. Turing, “On Computable Numbers, with an Application to the Entscheidungsproblem,” Proceedings of the London Mathematical Society, s2-42 (1936–37), 230–265. DOI: 10.1112/plms/s2-42.1.230",
+        "url": "https://doi.org/10.1112/plms/s2-42.1.230"
       }
     ]
   },
@@ -537,7 +538,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "omega",
@@ -565,7 +572,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_quantum",
@@ -594,7 +607,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_neural",
@@ -625,7 +644,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_mars",
@@ -655,7 +680,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_renewable",
@@ -686,7 +717,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_agi",
@@ -717,7 +754,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_longevity",
@@ -747,7 +790,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_synthesis",
@@ -777,7 +826,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_fusion",
@@ -808,7 +863,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_climate",
@@ -839,7 +900,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_distributed",
@@ -870,7 +937,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_consciousness",
@@ -901,7 +974,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_language",
@@ -931,7 +1010,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_space_trade",
@@ -960,7 +1045,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_quantum_net",
@@ -990,7 +1081,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "forecast_bio_ai",
@@ -1021,7 +1118,13 @@
         "citation": "Causari demo-v2.0.html curated baseline"
       }
     ],
-    "knowledgeLayer": "forecast"
+    "knowledgeLayer": "forecast",
+    "forecastQuality": {
+      "status": "legacy-demo",
+      "calibrated": false,
+      "sourceClass": "demo-seed",
+      "reviewState": "needs-research-replacement"
+    }
   },
   {
     "id": "mcculloch_pitts",
