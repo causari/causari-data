@@ -19,6 +19,15 @@
       "freelancer": "Expect more AI-assisted work and pricing pressure on routine tasks.",
       "ceo": "Redesign tasks before assuming headcount replacement.",
       "citizen": "AI exposure does not mean your whole job disappears."
+    },
+    "label_vi": "Mức phơi nhiễm tác vụ với GenAI tại Việt Nam",
+    "shortLabel_vi": "Phơi nhiễm VN",
+    "summary_vi": "Mức phơi nhiễm khá rộng (~1/5 lao động), nhưng nhóm có rủi ro tự động hóa toàn phần cao vẫn dưới 2%.",
+    "implications_vi": {
+      "developer": "Chuẩn bị cho việc tái thiết kế tác vụ, không hoảng loạn vì nghề biến mất hoàn toàn.",
+      "freelancer": "Kỳ vọng nhiều công việc được AI hỗ trợ hơn và áp lực giá tăng ở các tác vụ lặp lại.",
+      "ceo": "Tái thiết kế tác vụ trước khi mặc định rằng cần thay thế headcount.",
+      "citizen": "Phơi nhiễm với AI không đồng nghĩa toàn bộ công việc của bạn sẽ biến mất."
     }
   },
   {
@@ -41,6 +50,15 @@
       "freelancer": "Portfolio proof and outcome ownership matter more as basic gigs compress.",
       "ceo": "Do not automate away the learning ladder needed to create future senior talent.",
       "citizen": "The path into some professions may change before total employment changes."
+    },
+    "label_vi": "Cơ hội entry-level",
+    "shortLabel_vi": "Entry-level",
+    "summary_vi": "Tổng quan bằng chứng của ILO cảnh báo việc thu hẹp cơ hội cho lao động trẻ là một rủi ro đang nổi lên.",
+    "implications_vi": {
+      "developer": "Sớm xây năng lực ownership production và review, không chỉ tối ưu tốc độ viết code.",
+      "freelancer": "Portfolio chứng minh kết quả và ownership quan trọng hơn khi các gig cơ bản bị nén giá trị.",
+      "ceo": "Đừng tự động hóa mất chiếc thang học nghề cần để tạo ra senior talent tương lai.",
+      "citizen": "Con đường bước vào một số nghề có thể thay đổi trước khi tổng việc làm của nghề đó giảm."
     }
   },
   {
@@ -62,6 +80,15 @@
       "freelancer": "Higher-value software delivery remains viable when tied to outcomes.",
       "ceo": "Software capability stays strategic even as implementation productivity rises.",
       "citizen": "AI does not imply all software careers are shrinking."
+    },
+    "label_vi": "Nhu cầu Software Developer",
+    "shortLabel_vi": "Software dev",
+    "summary_vi": "BLS dự báo việc làm Software Developer tại Mỹ tăng 10,2% trong giai đoạn 2025–2035.",
+    "implications_vi": {
+      "developer": "Không bỏ software; dịch lên system design, integration và ownership.",
+      "freelancer": "Dịch vụ software giá trị cao vẫn khả thi khi gắn với outcome thay vì số dòng code.",
+      "ceo": "Năng lực software vẫn mang tính chiến lược dù năng suất implementation tăng.",
+      "citizen": "AI không đồng nghĩa mọi nghề software đều đang co lại."
     }
   },
   {
@@ -84,6 +111,15 @@
       "freelancer": "Commodity coding gigs face stronger price and automation pressure.",
       "ceo": "Automate repetitive implementation while retaining architecture and accountability.",
       "citizen": "Occupations can split: narrower task bundles shrink while broader roles grow."
+    },
+    "label_vi": "Nhu cầu lập trình thuần implementation",
+    "shortLabel_vi": "Programming",
+    "summary_vi": "BLS dự báo việc làm Computer Programmer tại Mỹ giảm 7,3% trong giai đoạn 2025–2035.",
+    "implications_vi": {
+      "developer": "Implementation thuần đang trở thành lợi thế khác biệt yếu hơn.",
+      "freelancer": "Gig coding hàng hóa hóa chịu áp lực mạnh hơn về giá và tự động hóa.",
+      "ceo": "Tự động hóa implementation lặp lại nhưng giữ architecture và accountability.",
+      "citizen": "Một nghề có thể phân hóa: nhóm tác vụ hẹp giảm trong khi vai trò rộng hơn vẫn tăng."
     }
   },
   {
@@ -106,6 +142,15 @@
       "freelancer": "Specialized expertise can defend margins better than generic implementation.",
       "ceo": "AI adoption does not remove the need for scarce senior technical capability.",
       "citizen": "High-skill shortages can coexist with automation pressure elsewhere."
+    },
+    "label_vi": "Khan hiếm kỹ năng ICT chuyên sâu",
+    "shortLabel_vi": "Thiếu hụt ICT",
+    "summary_vi": "OECD vẫn ghi nhận thiếu hụt kéo dài ở các nghề ICT trình độ cao tại nhiều quốc gia.",
+    "implications_vi": {
+      "developer": "Phán đoán kỹ thuật sâu vẫn khan hiếm dù việc sinh code ngày càng rẻ.",
+      "freelancer": "Chuyên môn sâu bảo vệ biên lợi nhuận tốt hơn implementation chung chung.",
+      "ceo": "Ứng dụng AI không xóa nhu cầu về năng lực technical senior đang khan hiếm.",
+      "citizen": "Thiếu hụt kỹ năng cao có thể đồng thời tồn tại với áp lực tự động hóa ở nơi khác."
     }
   },
   {
@@ -128,6 +173,15 @@
       "freelancer": "Demand can weaken in exposed service categories even while AI-enabled services grow.",
       "ceo": "Rebalancing demand is visible, but the relative decline has not simply accelerated with model capability.",
       "citizen": "Regional hiring evidence matters more than global AI headlines for career decisions."
+    },
+    "label_vi": "Nhu cầu tuyển dụng ở nghề phơi nhiễm AI",
+    "shortLabel_vi": "Tuyển dụng AI-exposed",
+    "summary_vi": "IMF ghi nhận nhu cầu tuyển dụng yếu hơn gần 10% ở các nghề phơi nhiễm AI cao hơn trên 19 nền kinh tế châu Á, tính tương đối so với nhóm ít phơi nhiễm hơn.",
+    "implications_vi": {
+      "developer": "Theo dõi tuyển dụng theo tác vụ và seniority, không chỉ theo tên chức danh.",
+      "freelancer": "Nhu cầu có thể yếu đi ở nhóm dịch vụ phơi nhiễm cao dù dịch vụ AI-enabled vẫn tăng.",
+      "ceo": "Sự tái cân bằng nhu cầu đã xuất hiện, nhưng mức giảm tương đối chưa đơn giản tăng tốc theo năng lực model.",
+      "citizen": "Bằng chứng tuyển dụng trong khu vực đáng quan tâm hơn headline AI toàn cầu khi ra quyết định nghề nghiệp."
     }
   },
   {
@@ -149,6 +203,15 @@
       "freelancer": "AI-native service capability is a growing wedge.",
       "ceo": "Upskilling existing teams may be as important as buying AI tools.",
       "citizen": "AI literacy is increasingly useful even outside pure AI jobs."
+    },
+    "label_vi": "Nhu cầu kỹ năng AI",
+    "shortLabel_vi": "Kỹ năng AI",
+    "summary_vi": "IMF ghi nhận nhu cầu với lao động có kỹ năng AI đang tăng trong tin tuyển dụng tại châu Á.",
+    "implications_vi": {
+      "developer": "AI integration, evaluation và orchestration nên trở thành một phần của toolkit cốt lõi.",
+      "freelancer": "Năng lực cung cấp dịch vụ AI-native là một wedge đang tăng giá trị.",
+      "ceo": "Upskill đội ngũ hiện tại có thể quan trọng không kém việc mua công cụ AI.",
+      "citizen": "AI literacy ngày càng hữu ích kể cả ngoài các công việc AI thuần."
     }
   }
 ]
