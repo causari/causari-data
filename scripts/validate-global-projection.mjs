@@ -45,6 +45,17 @@ for (const id of Object.keys(view.presentation || {})) {
   if (!view.eventIds?.includes(id)) errors.push('presentation hint references event not selected by global view: ' + id);
 }
 
+const contextIds = new Set();
+for (const link of view.contextLinks || []) {
+  if (!link?.id) errors.push('context link missing id');
+  else if (contextIds.has(link.id)) errors.push('duplicate context link id: ' + link.id);
+  else contextIds.add(link.id);
+  if (link?.relationship !== 'context') errors.push('context link must use relationship=context: ' + (link?.id || '<missing id>'));
+  if (!view.eventIds?.includes(link?.fromEvent)) errors.push('context link fromEvent not selected by global view: ' + (link?.fromEvent || '<missing>'));
+  if (!view.eventIds?.includes(link?.toEvent)) errors.push('context link toEvent not selected by global view: ' + (link?.toEvent || '<missing>'));
+  if (!String(link?.reason || '').trim()) errors.push('context link missing reason: ' + (link?.id || '<missing id>'));
+}
+
 for (const [pack, ids] of Object.entries(view.promotedFromPacks || {})) {
   if (!Array.isArray(ids)) {
     errors.push('promotedFromPacks.' + pack + ' must be an array');

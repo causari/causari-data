@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -245,31 +245,36 @@
       "lod": 1,
       "lane": "career",
       "color": "#22d3ee",
-      "tag": "AI-Career"
+      "tag": "AI-Career",
+      "y": -190
     },
     "ilo-genai-empirical-review-2026": {
       "lod": 1,
       "lane": "career",
       "color": "#22d3ee",
-      "tag": "AI-Career"
+      "tag": "AI-Career",
+      "y": -95
     },
     "bls-2025-2035-ai-occupation-split": {
       "lod": 1,
       "lane": "career",
       "color": "#38bdf8",
-      "tag": "AI-Career"
+      "tag": "AI-Career",
+      "y": 10
     },
     "oecd-skill-shortages-2026": {
       "lod": 1,
       "lane": "career",
       "color": "#4ade80",
-      "tag": "AI-Career"
+      "tag": "AI-Career",
+      "y": 105
     },
     "imf-asia-ai-labor-market-2026": {
       "lod": 0,
       "lane": "career",
       "color": "#00f2ff",
-      "tag": "AI-Career"
+      "tag": "AI-Career",
+      "y": 205
     }
   },
   "promotedFromPacks": {
@@ -280,5 +285,42 @@
       "oecd-skill-shortages-2026",
       "imf-asia-ai-labor-market-2026"
     ]
-  }
+  },
+  "contextLinks": [
+    {
+      "id": "chatgpt--context-->ilo-vietnam-genai-exposure-2026",
+      "fromEvent": "chatgpt",
+      "toEvent": "ilo-vietnam-genai-exposure-2026",
+      "relationship": "context",
+      "reason": "The ILO Viet Nam study measures labour-market exposure in the post-ChatGPT GenAI era. This edge denotes shared context, not causation."
+    },
+    {
+      "id": "chatgpt--context-->ilo-genai-empirical-review-2026",
+      "fromEvent": "chatgpt",
+      "toEvent": "ilo-genai-empirical-review-2026",
+      "relationship": "context",
+      "reason": "The ILO review synthesizes empirical evidence about GenAI at work after widespread generative-AI adoption. Context only."
+    },
+    {
+      "id": "chatgpt--context-->bls-2025-2035-ai-occupation-split",
+      "fromEvent": "chatgpt",
+      "toEvent": "bls-2025-2035-ai-occupation-split",
+      "relationship": "context",
+      "reason": "The BLS occupation split is relevant to the GenAI-era software-work transition, but this edge does not assert ChatGPT caused the projections."
+    },
+    {
+      "id": "ai--context-->oecd-skill-shortages-2026",
+      "fromEvent": "ai",
+      "toEvent": "oecd-skill-shortages-2026",
+      "relationship": "context",
+      "reason": "The OECD skill-shortage evidence belongs to the current AI-and-work context while remaining an independently measured labour-market signal."
+    },
+    {
+      "id": "chatgpt--context-->imf-asia-ai-labor-market-2026",
+      "fromEvent": "chatgpt",
+      "toEvent": "imf-asia-ai-labor-market-2026",
+      "relationship": "context",
+      "reason": "The IMF study explicitly compares hiring demand across AI-exposed occupations in the post-ChatGPT period. Contextual association is not a causal claim."
+    }
+  ]
 }
