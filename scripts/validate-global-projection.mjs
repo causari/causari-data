@@ -68,6 +68,14 @@ for (const [pack, ids] of Object.entries(view.promotedFromPacks || {})) {
 }
 
 
+const allowedKnowledgeLayers = new Set(['world', 'evidence', 'forecast']);
+for (const id of view.eventIds || []) {
+  const event = events.find((candidate) => candidate.id === id);
+  if (event?.knowledgeLayer && !allowedKnowledgeLayers.has(event.knowledgeLayer)) {
+    errors.push('event ' + id + ' has invalid knowledgeLayer: ' + event.knowledgeLayer);
+  }
+}
+
 const filterPolicy = view.filterPolicy;
 if (!filterPolicy || typeof filterPolicy !== 'object') {
   errors.push('global view missing filterPolicy');
