@@ -166,6 +166,7 @@ function normalizeCanonicalEvent(raw, sourceIds = []) {
   delete event.sourceIds;
 
   event.scope = event.scope || 'world';
+  event.knowledgeLayer = event.knowledgeLayer || 'evidence';
   event.globalVisibility = promotion.globalVisibility || event.globalVisibility || 'pack-only';
   event.canonicalOrigin = event.canonicalOrigin || PACK_ID;
   event.provenance = {
