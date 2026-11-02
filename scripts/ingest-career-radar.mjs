@@ -131,11 +131,12 @@ function validateIntake(input) {
   }
 
   const payloadItems = input.sources.length + input.events.length + input.claims.length + input.evidence.length + input.signals.length;
+  const substantiveItems = input.events.length + input.claims.length + input.evidence.length + input.signals.length;
   if (!input.quality.substantive && payloadItems > 0) {
     fail('non-substantive heartbeat must not contain new sources/events/claims/evidence/signals');
   }
-  if (input.quality.substantive && payloadItems === 0) {
-    fail('substantive intake must contain at least one data item');
+  if (input.quality.substantive && substantiveItems === 0) {
+    fail('substantive intake must contain at least one event/claim/evidence/signal');
   }
 
   for (const source of input.sources) assertKebab(source?.id, 'source.id');
