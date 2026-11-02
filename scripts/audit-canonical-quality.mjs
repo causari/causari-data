@@ -25,6 +25,7 @@ const events = read('data/events.json');
 const links = read('data/links.json');
 const view = read('data/views/global-canvas.json');
 const baseline = read('data/quality/canonical-baseline.json');
+const rejectedLinks = read('data/quality/rejected-links.json');
 
 const errors = [];
 const warnings = [];
@@ -112,6 +113,18 @@ for (const item of view.suppressedCausalLinks || []) {
   if (!String(item.reason || '').trim()) errors.push('suppressed global link missing reason: ' + item.id);
 }
 
+const rejectedIds = new Set();
+for (const item of rejectedLinks || []) {
+  if (!item?.id) errors.push('rejected link missing id');
+  else if (rejectedIds.has(item.id)) errors.push('duplicate rejected link id: ' + item.id);
+  else rejectedIds.add(item.id);
+  if (item?.id && links.some((link) => link.id === item.id)) {
+    errors.push('rejected link still active in canonical links: ' + item.id);
+  }
+  if (!String(item?.reason || '').trim()) errors.push('rejected link missing reason: ' + (item?.id || '<missing>'));
+  if (!String(item?.rejectionType || '').trim()) errors.push('rejected link missing rejectionType: ' + (item?.id || '<missing>'));
+}
+
 console.log('=== canonical-quality ===');
 console.log('  events=' + events.length + ' forecasts=' + forecastEvents.length);
 console.log('  links=' + links.length);
@@ -120,6 +133,7 @@ console.log('  high-confidence demo-seed links=' + highConfidenceDemoLinks.lengt
 console.log('  retro-causal links=' + retroLinks.length + ' / baseline ' + ceilings.retroCausalLinks);
 console.log('  suppressed global links=' + suppressed.size);
 console.log('  unsuppressed global retro links=' + globalRetro.length);
+console.log('  archived rejected links=' + rejectedLinks.length);
 
 if (warnings.length) {
   console.log('\nWARN:');
