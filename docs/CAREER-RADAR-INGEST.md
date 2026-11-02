@@ -116,7 +116,20 @@ node scripts/validate-global-projection.mjs
 
 ## Agent / scheduler entry point
 
-Use the GitHub Actions workflow **career-radar-ingest** and pass the complete payload via `payload_json`.
+The preferred bridge is the repository inbox:
+
+```text
+inbox/career-radar/pending/<ingestId>.json
+```
+
+A scheduled research agent creates exactly one pending JSON file per run. The **career-radar-ingest** workflow is triggered by that commit, applies the deterministic ingestion pipeline, validates the result, then moves the raw payload to:
+
+- `processed/<checkedAt>/` when accepted;
+- `rejected/` when invalid.
+
+The workflow fails visibly on rejected payloads, while canonical data remains protected.
+
+`workflow_dispatch` with `payload_json` remains available for manual/debug ingestion.
 
 The research agent should:
 
@@ -124,8 +137,8 @@ The research agent should:
 2. Decide whether the update is substantive.
 3. Keep observed data, forecasts, surveys and interpretation distinct.
 4. Review correlation vs causality.
-5. Build one intake payload.
-6. Dispatch the workflow.
-7. Notify the user only when `substantive=true`.
+5. Build exactly one intake payload.
+6. Write only to `inbox/career-radar/pending/`; never edit canonical files directly.
+7. Notify the user only when `substantive=true`; operational ingestion failures are also worth surfacing.
 
-This separates **research judgement** from **deterministic data mutation**.
+This separates **research judgement** from **deterministic data mutation**, while keeping every raw research decision auditable.
