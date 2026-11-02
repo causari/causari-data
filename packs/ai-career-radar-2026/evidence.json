@@ -1,0 +1,90 @@
+[
+  {
+    "id": "evidence-ilo-vn-exposure",
+    "sourceId": "source-ilo-vietnam-2026",
+    "sourceTier": "primary",
+    "support": "ILO reports around 11.5 million workers in Viet Nam, about one in five workers, are in occupations with tasks potentially exposed to GenAI.",
+    "locator": "Key findings / national exposure",
+    "confidence": 0.98
+  },
+  {
+    "id": "evidence-ilo-vn-high-automation",
+    "sourceId": "source-ilo-vietnam-2026",
+    "sourceTier": "primary",
+    "support": "ILO reports roughly one million workers are in occupations where tasks are highly susceptible and standardized, less than 2% of the workforce.",
+    "locator": "Key findings / automation risk",
+    "confidence": 0.97
+  },
+  {
+    "id": "evidence-ilo-review-displacement",
+    "sourceId": "source-ilo-empirical-review-2026",
+    "sourceTier": "primary",
+    "support": "ILO's review concludes productivity gains are real but uneven and large-scale job displacement remains limited in the empirical evidence reviewed.",
+    "locator": "Research brief summary",
+    "confidence": 0.9
+  },
+  {
+    "id": "evidence-ilo-review-youth",
+    "sourceId": "source-ilo-empirical-review-2026",
+    "sourceTier": "primary",
+    "support": "ILO highlights erosion of employment opportunities for younger workers among the main emerging risks.",
+    "locator": "Research brief summary",
+    "confidence": 0.86
+  },
+  {
+    "id": "evidence-bls-software-developers",
+    "sourceId": "source-bls-software-developers-2026",
+    "sourceTier": "primary",
+    "support": "BLS projects software developers from 1,717,800 jobs in 2025 to 1,892,600 in 2035: +174,700, or +10.2%.",
+    "locator": "Employment projections data, 2025–35",
+    "confidence": 0.99
+  },
+  {
+    "id": "evidence-bls-programmers",
+    "sourceId": "source-bls-programmers-2026",
+    "sourceTier": "primary",
+    "support": "BLS projects computer programmers from 110,800 jobs in 2025 to 102,700 in 2035: -8,100, or -7.3%, and explicitly notes automation of repetitive programming tasks including AI.",
+    "locator": "Job Outlook / Employment projections data, 2025–35",
+    "confidence": 0.99
+  },
+  {
+    "id": "evidence-oecd-shortages",
+    "sourceId": "source-oecd-skill-shortages-2026",
+    "sourceTier": "primary",
+    "support": "OECD Skills for Jobs 2026 across 38 countries finds persistent shortages concentrated in high-skilled occupations, notably ICT, health and teaching professionals.",
+    "locator": "Occupational imbalances and skill shortages",
+    "confidence": 0.97
+  },
+  {
+    "id": "evidence-oecd-us-ict",
+    "sourceId": "source-oecd-skill-shortages-2026",
+    "sourceTier": "primary",
+    "support": "OECD states that U.S. ICT professional shortages intensified after the launch of ChatGPT in 2022.",
+    "locator": "ICT shortages discussion",
+    "confidence": 0.9
+  },
+  {
+    "id": "evidence-imf-demand-gap",
+    "sourceId": "source-imf-asia-reo-2026",
+    "sourceTier": "primary",
+    "support": "IMF analyzes 40 million online job postings across 19 Asian economies and finds employer demand fell by nearly 10% in more AI-exposed occupations relative to less-exposed ones.",
+    "locator": "Chapter 2: Labor Markets in Asia",
+    "confidence": 0.97
+  },
+  {
+    "id": "evidence-imf-stabilized",
+    "sourceId": "source-imf-asia-reo-2026",
+    "sourceTier": "primary",
+    "support": "IMF reports the relative demand decline appears to have stabilized even as AI capability improved rapidly.",
+    "locator": "Chapter 2: Labor Markets in Asia",
+    "confidence": 0.91
+  },
+  {
+    "id": "evidence-imf-ai-skills",
+    "sourceId": "source-imf-asia-reo-2026",
+    "sourceTier": "primary",
+    "support": "IMF reports rising employer demand for workers with AI skills.",
+    "locator": "Chapter 2: Labor Markets in Asia",
+    "confidence": 0.94
+  }
+]
