@@ -67,17 +67,6 @@ for (const [pack, ids] of Object.entries(view.promotedFromPacks || {})) {
   }
 }
 
-if (errors.length) {
-  console.error('✗ Global projection invalid:');
-  for (const error of errors) console.error('  - ' + error);
-  process.exit(1);
-}
-
-console.log('✓ Global projection valid');
-console.log('  canonical events: ' + events.length);
-console.log('  canonical links: ' + links.length);
-console.log('  projected events: ' + view.eventIds.length);
-
 
 const filterPolicy = view.filterPolicy;
 if (!filterPolicy || typeof filterPolicy !== 'object') {
@@ -101,3 +90,14 @@ if (!filterPolicy || typeof filterPolicy !== 'object') {
     }
   }
 }
+
+if (errors.length) {
+  console.error('✗ Global projection invalid:');
+  for (const error of errors) console.error('  - ' + error);
+  process.exit(1);
+}
+
+console.log('✓ Global projection valid');
+console.log('  canonical events: ' + events.length);
+console.log('  canonical links: ' + links.length);
+console.log('  projected events: ' + view.eventIds.length);
