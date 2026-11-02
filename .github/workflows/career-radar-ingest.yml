@@ -1,6 +1,11 @@
 name: career-radar-ingest
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "inbox/career-radar/pending/*.json"
   workflow_dispatch:
     inputs:
       payload_json:
@@ -22,10 +27,12 @@ concurrency:
 
 jobs:
   ingest:
+    if: ${{ github.event_name != 'push' || github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      PAYLOAD_JSON: ${{ inputs.payload_json }}
+      PAYLOAD_JSON: ${{ github.event_name == 'workflow_dispatch' && inputs.payload_json || '' }}
+      DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
 
     steps:
       - name: Checkout
@@ -38,40 +45,101 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Materialize intake
+      - name: Materialize manual intake
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           node - <<'NODE'
           const { writeFileSync } = require('node:fs');
           const raw = process.env.PAYLOAD_JSON || '';
           JSON.parse(raw);
-          writeFileSync('/tmp/career-radar-intake.json', raw + '\n');
+          writeFileSync('/tmp/career-radar-dispatch.json', raw + '\n');
           NODE
 
-      - name: Apply intake
+      - name: Apply pending intakes
+        id: apply
         run: |
-          if [ "${{ inputs.dry_run }}" = "true" ]; then
-            node scripts/ingest-career-radar.mjs /tmp/career-radar-intake.json --dry-run
-          else
-            node scripts/ingest-career-radar.mjs /tmp/career-radar-intake.json
+          set -u
+          shopt -s nullglob
+
+          files=()
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            files+=("/tmp/career-radar-dispatch.json")
           fi
+          for file in inbox/career-radar/pending/*.json; do
+            files+=("$file")
+          done
 
-      - name: Validate Career Radar
-        run: node scripts/validate-pack.mjs ai-career-radar-2026
-
-      - name: Validate global projection
-        run: node scripts/validate-global-projection.mjs
-
-      - name: Commit changed data
-        if: ${{ inputs.dry_run != true }}
-        run: |
-          if git diff --quiet; then
-            echo "No repository changes — idempotent/no-op run."
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No pending Career Radar intakes."
+            echo "processed=0" >> "$GITHUB_OUTPUT"
+            echo "rejected=0" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
-          INGEST_ID="$(node -e "console.log(JSON.parse(process.env.PAYLOAD_JSON).ingestId)")"
-          git config user.name "causari-ingest[bot]"
-          git config user.email "causari-ingest[bot]@users.noreply.github.com"
-          git add             data/events.json             data/views/global-canvas.json             packs/ai-career-radar-2026/
-          git commit -m "data(career-radar): ingest ${INGEST_ID}"
-          git push origin HEAD:main
+          processed=0
+          rejected=0
+          rejected_files=()
+
+          for file in "${files[@]}"; do
+            echo "Processing $file"
+            if [ "$DRY_RUN" = "true" ]; then
+              node scripts/ingest-career-radar.mjs "$file" --dry-run
+              processed=$((processed + 1))
+              continue
+            fi
+
+            if node scripts/ingest-career-radar.mjs "$file"; then
+              processed=$((processed + 1))
+              if [[ "$file" == inbox/career-radar/pending/* ]]; then
+                checked_at="$(node -e "console.log(JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).checkedAt)" "$file")"
+                mkdir -p "inbox/career-radar/processed/$checked_at"
+                git mv "$file" "inbox/career-radar/processed/$checked_at/$(basename "$file")"
+              fi
+            else
+              rejected=$((rejected + 1))
+              rejected_files+=("$file")
+              if [[ "$file" == inbox/career-radar/pending/* ]]; then
+                mkdir -p "inbox/career-radar/rejected"
+                git mv "$file" "inbox/career-radar/rejected/$(basename "$file")"
+              fi
+            fi
+          done
+
+          echo "processed=$processed" >> "$GITHUB_OUTPUT"
+          echo "rejected=$rejected" >> "$GITHUB_OUTPUT"
+
+          if [ "$rejected" -gt 0 ]; then
+            printf '%s\n' "${rejected_files[@]}" > /tmp/career-radar-rejected.txt
+          fi
+
+      - name: Validate Career Radar
+        if: ${{ env.DRY_RUN != 'true' }}
+        run: node scripts/validate-pack.mjs ai-career-radar-2026
+
+      - name: Validate global projection
+        if: ${{ env.DRY_RUN != 'true' }}
+        run: node scripts/validate-global-projection.mjs
+
+      - name: Commit changed data and archive
+        if: ${{ env.DRY_RUN != 'true' }}
+        run: |
+          if git diff --quiet; then
+            echo "No repository changes — idempotent/no-op run."
+          else
+            git config user.name "causari-ingest[bot]"
+            git config user.email "causari-ingest[bot]@users.noreply.github.com"
+            git add \
+              data/events.json \
+              data/views/global-canvas.json \
+              packs/ai-career-radar-2026/ \
+              inbox/career-radar/
+            git commit -m "data(career-radar): process monitoring intake"
+            git push origin HEAD:main
+          fi
+
+      - name: Fail if any intake was rejected
+        if: ${{ steps.apply.outputs.rejected != '0' }}
+        run: |
+          echo "One or more Career Radar intakes were rejected and quarantined."
+          cat /tmp/career-radar-rejected.txt || true
+          exit 1
