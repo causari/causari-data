@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -369,5 +369,87 @@
     },
     "topicSource": "event.domains",
     "preserveContextAnchors": true
-  }
+  },
+  "suppressedCausalLinks": [
+    {
+      "id": "dna_disc--enabled-->relativity",
+      "reason": "Retro-causal in the event timeline and conceptually unsupported as a causal mechanism.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "ai--enabled-->internet",
+      "reason": "Describes present-day feedback on internet infrastructure, not causation of the 1969 Internet event.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "internet--enabled-->darwin_ev",
+      "reason": "Later internet tooling cannot causally enable Darwin's 1859 theory event.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "forecast_renewable--enabled-->forecast_climate",
+      "reason": "Forecast dependency is temporally inverted: source scenario is dated after target scenario.",
+      "reviewState": "forecast-rebuild"
+    },
+    {
+      "id": "forecast_fusion--enabled-->forecast_renewable",
+      "reason": "Forecast dependency is temporally inverted and should be rebuilt from explicit scenario assumptions.",
+      "reviewState": "forecast-rebuild"
+    },
+    {
+      "id": "genome--enabled-->bitcoin",
+      "reason": "Biological decentralization analogy is not sufficient evidence that the Human Genome Project enabled Bitcoin.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "bitcoin--enabled-->ai",
+      "reason": "Conceptual cross-pollination is too weak to represent as an enabling causal edge for the AI era.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "darwin_ev--enabled-->relativity",
+      "reason": "Analogy about conceptual flexibility is not a supported mechanism from evolutionary theory to relativity.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "relativity--enabled-->turing_m",
+      "reason": "Shared intellectual climate is contextual, not a demonstrated enabling mechanism.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "turing_m--enabled-->dna_disc",
+      "reason": "The biological-code metaphor does not establish that Turing's computation model enabled discovery of the double helix.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "dna_disc--enabled-->internet",
+      "reason": "Molecular-biology information framing did not directly enable ARPANET; the existing evidence conflates contemporaneous information theory.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "printing--caused-->rena",
+      "reason": "The Renaissance predates and overlaps Gutenberg printing; 'caused' is too strong for the historical relationship.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "web--enabled-->genome",
+      "reason": "The Web supported later collaboration, but is too strong as an enabling cause of the Human Genome Project event.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "iphone--enabled-->transformer",
+      "reason": "Smartphone-era data and GPU economics are indirect background conditions, not a sufficiently supported enabling edge.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "turing_m--enabled-->transformer",
+      "reason": "Foundational computability is ancestry/context, not a useful direct causal edge to the 2017 Transformer architecture.",
+      "reviewState": "legacy-debt"
+    },
+    {
+      "id": "rena--enabled-->darwin_ev",
+      "reason": "Long-run humanist influence is contextual and too diffuse to encode as a direct enabling edge.",
+      "reviewState": "legacy-debt"
+    }
+  ]
 }

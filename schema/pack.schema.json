@@ -26,6 +26,17 @@
         "wikidataId": { "type": "string" },
         "forecastConfidence": { "type": "number", "minimum": 0, "maximum": 1 },
         "forecastReasoning": { "type": "string" },
+        "forecastQuality": {
+          "type": "object",
+          "properties": {
+            "status": { "enum": ["legacy-demo", "tracked", "research-backed"] },
+            "calibrated": { "type": "boolean" },
+            "sourceClass": { "type": "string" },
+            "reviewState": { "type": "string" }
+          },
+          "required": ["status", "calibrated", "sourceClass", "reviewState"],
+          "additionalProperties": true
+        },
         "date": { "type": "string" },
         "dateLabel": { "type": "string" },
         "status": { "enum": ["completed", "scheduled", "live", "forecast"] },

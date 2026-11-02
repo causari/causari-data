@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generatedAt": "2026-11-03",
+  "debtCeilings": {
+    "demoSeedCanonicalLinks": 463,
+    "highConfidenceDemoSeedLinks": 272,
+    "retroCausalLinks": 58
+  },
+  "legacyForecastIds": [
+    "forecast_agi",
+    "forecast_bio_ai",
+    "forecast_climate",
+    "forecast_consciousness",
+    "forecast_distributed",
+    "forecast_fusion",
+    "forecast_language",
+    "forecast_longevity",
+    "forecast_mars",
+    "forecast_neural",
+    "forecast_quantum",
+    "forecast_quantum_net",
+    "forecast_renewable",
+    "forecast_space_trade",
+    "forecast_synthesis",
+    "mar",
+    "omega"
+  ],
+  "requiredSuppressedGlobalLinkIds": [
+    "ai--enabled-->internet",
+    "bitcoin--enabled-->ai",
+    "darwin_ev--enabled-->relativity",
+    "dna_disc--enabled-->internet",
+    "dna_disc--enabled-->relativity",
+    "forecast_fusion--enabled-->forecast_renewable",
+    "forecast_renewable--enabled-->forecast_climate",
+    "genome--enabled-->bitcoin",
+    "internet--enabled-->darwin_ev",
+    "iphone--enabled-->transformer",
+    "printing--caused-->rena",
+    "relativity--enabled-->turing_m",
+    "rena--enabled-->darwin_ev",
+    "turing_m--enabled-->dna_disc",
+    "turing_m--enabled-->transformer",
+    "web--enabled-->genome"
+  ]
+}
