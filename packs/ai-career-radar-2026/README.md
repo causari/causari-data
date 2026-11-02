@@ -45,10 +45,27 @@ The initial wedge is **a developer in Viet Nam**. The same canonical data can la
 
 For software, the current evidence suggests pressure is stronger on routine implementation than on broader software development, while demand for AI skills and advanced ICT expertise remains strong in several datasets.
 
+## Operating loop
+
+Daily research now feeds an idempotent ingestion contract:
+
+```text
+research
+→ evidence-first intake
+→ canonical event / claim / signal classification
+→ explicit global promotion decision
+→ daily snapshot
+→ Career Radar + Causari global projection
+```
+
+Run `scripts/ingest-career-radar.mjs` locally or dispatch the `career-radar-ingest` GitHub workflow. See [../../docs/CAREER-RADAR-INGEST.md](../../docs/CAREER-RADAR-INGEST.md).
+
+Days with no material update still produce a no-change snapshot when the monitor dispatches a heartbeat; they do not create noisy events or signals.
+
 ## Next increments
 
-1. Daily ingestion from the existing AI/job-market scheduled watch.
-2. Weekly/monthly aggregation.
-3. Trend chart generated from normalized signals.
-4. Persona-aware `/lens` rendering.
+1. Wire the existing AI/job-market scheduled watch to the ingest workflow.
+2. Weekly/monthly aggregation over `snapshots.json`.
+3. Trend chart generated from snapshot history + normalized signals.
+4. Persona-aware alert thresholds and decision history.
 5. Resolvable forecast layer only after enough historical observations exist.
