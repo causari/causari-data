@@ -536,7 +536,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "omega",
@@ -563,7 +564,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_quantum",
@@ -591,7 +593,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_neural",
@@ -621,7 +624,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_mars",
@@ -650,7 +654,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_renewable",
@@ -680,7 +685,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_agi",
@@ -710,7 +716,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_longevity",
@@ -739,7 +746,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_synthesis",
@@ -768,7 +776,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_fusion",
@@ -798,7 +807,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_climate",
@@ -828,7 +838,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_distributed",
@@ -858,7 +869,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_consciousness",
@@ -888,7 +900,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_language",
@@ -917,7 +930,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_space_trade",
@@ -945,7 +959,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_quantum_net",
@@ -974,7 +989,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "forecast_bio_ai",
@@ -1004,7 +1020,8 @@
         "reliability": 0.95,
         "citation": "Causari demo-v2.0.html curated baseline"
       }
-    ]
+    ],
+    "knowledgeLayer": "forecast"
   },
   {
     "id": "mcculloch_pitts",
@@ -7548,7 +7565,8 @@
         "source-bls-software-developers-2026",
         "source-bls-programmers-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "ilo-genai-empirical-review-2026",
@@ -7609,7 +7627,8 @@
       "sourceIds": [
         "source-ilo-empirical-review-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "ilo-vietnam-genai-exposure-2026",
@@ -7669,7 +7688,8 @@
       "sourceIds": [
         "source-ilo-vietnam-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "imf-asia-ai-labor-market-2026",
@@ -7733,7 +7753,8 @@
       "sourceIds": [
         "source-imf-asia-reo-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   },
   {
     "id": "oecd-skill-shortages-2026",
@@ -7795,6 +7816,7 @@
       "sourceIds": [
         "source-oecd-skill-shortages-2026"
       ]
-    }
+    },
+    "knowledgeLayer": "evidence"
   }
 ]

@@ -76,3 +76,20 @@ research
 ```
 
 Ingest once; project many times.
+
+
+## Knowledge layers
+
+Global projections must not present every canonical node as the same epistemic object.
+
+Causari distinguishes three knowledge layers:
+
+- `world` — observed/historical world events and durable milestones.
+- `evidence` — reports, measurements, research syntheses, official projections, and other evidence updates about the world.
+- `forecast` — future scenarios or predictions that have not happened.
+
+Canonical events may declare `knowledgeLayer`. Consumers should preserve this distinction visually and in filters. During migration, missing values may fall back to `world`, but new ingestion pipelines should classify explicitly.
+
+A topic pack is **not** a knowledge layer. For example, AI Career Radar is a pack/source; its ILO report is an `evidence` node. Likewise `technology` is a topic/domain, not a pack or epistemic layer.
+
+The default global Canvas projection should remain coherent by starting from the `world` layer and `core` source. Evidence and forecast layers are overlays/lenses that users can opt into.

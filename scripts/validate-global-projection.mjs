@@ -67,6 +67,38 @@ for (const [pack, ids] of Object.entries(view.promotedFromPacks || {})) {
   }
 }
 
+
+const allowedKnowledgeLayers = new Set(['world', 'evidence', 'forecast']);
+for (const id of view.eventIds || []) {
+  const event = events.find((candidate) => candidate.id === id);
+  if (event?.knowledgeLayer && !allowedKnowledgeLayers.has(event.knowledgeLayer)) {
+    errors.push('event ' + id + ' has invalid knowledgeLayer: ' + event.knowledgeLayer);
+  }
+}
+
+const filterPolicy = view.filterPolicy;
+if (!filterPolicy || typeof filterPolicy !== 'object') {
+  errors.push('global view missing filterPolicy');
+} else {
+  const allowedLayers = new Set(['world', 'evidence', 'forecast']);
+  const layerIds = new Set((filterPolicy.layers || []).map((item) => item?.id));
+  for (const id of allowedLayers) if (!layerIds.has(id)) errors.push('filterPolicy missing layer: ' + id);
+
+  for (const id of filterPolicy.default?.layers || []) {
+    if (!allowedLayers.has(id)) errors.push('filterPolicy default layer invalid: ' + id);
+  }
+  for (const id of filterPolicy.default?.packs || []) {
+    if (id !== 'core' && !(view.promotedFromPacks || {})[id]) {
+      errors.push('filterPolicy default pack invalid: ' + id);
+    }
+  }
+  for (const id of filterPolicy.packOrder || []) {
+    if (id !== 'core' && !(view.promotedFromPacks || {})[id]) {
+      errors.push('filterPolicy packOrder references unknown pack: ' + id);
+    }
+  }
+}
+
 if (errors.length) {
   console.error('✗ Global projection invalid:');
   for (const error of errors) console.error('  - ' + error);
