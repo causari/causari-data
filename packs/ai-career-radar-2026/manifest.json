@@ -1,6 +1,6 @@
 {
   "id": "ai-career-radar-2026",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "title": "AI Career Radar 2026",
   "title_vi": "AI Career Radar 2026",
   "description": "Evidence-first timeline tracking how AI is changing jobs, skills, hiring and career strategy, starting with a Vietnamese developer lens.",
@@ -23,7 +23,8 @@
     "evidence": "evidence.json",
     "sources": "sources.json",
     "forecasts": "forecasts.json",
-    "views": "views.json"
+    "views": "views.json",
+    "signals": "signals.json"
   },
   "quality": {
     "causalProfile": "evidence-first-trend-watch",
