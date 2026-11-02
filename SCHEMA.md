@@ -18,6 +18,9 @@ Version: 1.0
 | `wikidataId` | string | no | Wikidata Q-id for entity linking (e.g. `Q22661306`) |
 | `forecastConfidence` | number | no | 0-1, only for future/speculative events |
 | `forecastReasoning` | string | no | Explanation for forecast confidence |
+| `globalVisibility` | enum | no | `pack-only`, `contextual`, or `major`; promotion hint, not an automatic render rule |
+| `canonicalOrigin` | string | no | Pack or ingestion pipeline that first promoted the canonical event |
+| `provenance` | object | no | Optional source-pack/source-id provenance for domain evidence |
 
 ## CausalLink
 
@@ -75,3 +78,16 @@ Version: 1.0
 | 0.7-0.79 | Significant (Docker, React, Python) |
 | 0.6-0.69 | Notable (COBOL, WebSockets, OAuth) |
 | < 0.6 | Niche or supporting event |
+
+
+## Projection contract
+
+Canonical events live in `data/events.json`. Renderers should consume projections rather than treating every canonical event as visible by default.
+
+`data/views/global-canvas.json` defines the default global Canvas selection and presentation hints.
+
+### Pack event references
+
+A pack may reuse canonical events through an `event-refs.json` file containing canonical event IDs. During migration, `events.json` may remain as a deprecated compatibility mirror, but new consumers should resolve references first.
+
+See [docs/CANONICAL-EVENTS.md](docs/CANONICAL-EVENTS.md).
