@@ -289,10 +289,10 @@ nextSnapshots.push(activeSignalSnapshot(signalMerge.result, input.checkedAt, inp
 nextSnapshots.sort((a, b) => a.date.localeCompare(b.date));
 
 manifest.monitoring ||= {};
+manifest.asOf = input.checkedAt;
 manifest.monitoring.lastCheckedAt = input.checkedAt;
 manifest.monitoring.lastIngestId = input.ingestId;
 if (input.quality.substantive) {
-  manifest.asOf = input.checkedAt;
   manifest.monitoring.latestSubstantiveAt = input.checkedAt;
 }
 manifest.files ||= {};
