@@ -9348,5 +9348,95 @@
     "contributedBy": "ai-generated",
     "validated": false,
     "scope": "world"
+  },
+  {
+    "id": "big-bang--enabled-->first-stars",
+    "fromEvent": "big-bang",
+    "toEvent": "first-stars",
+    "relationship": "enabled",
+    "confidence": 0.98,
+    "evidence": "The post-Big-Bang universe supplied the matter, time and physical conditions from which the first stars formed.",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.85,
+        "citation": "Causari deep-time continuity baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "first-stars--enabled-->solar-system",
+    "fromEvent": "first-stars",
+    "toEvent": "solar-system",
+    "relationship": "enabled",
+    "confidence": 0.9,
+    "evidence": "Stellar generations synthesized heavier elements required for rocky planets and later solar systems.",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.85,
+        "citation": "Causari deep-time continuity baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "solar-system--enabled-->first-life",
+    "fromEvent": "solar-system",
+    "toEvent": "first-life",
+    "relationship": "enabled",
+    "confidence": 0.9,
+    "evidence": "Formation of Earth within the Solar System created the planetary environment in which terrestrial life emerged.",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.85,
+        "citation": "Causari deep-time continuity baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "first-life--enabled-->cambrian",
+    "fromEvent": "first-life",
+    "toEvent": "cambrian",
+    "relationship": "enabled",
+    "confidence": 0.85,
+    "evidence": "Billions of years of biological evolution from early life were a prerequisite for the later diversification of complex animals.",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.85,
+        "citation": "Causari deep-time continuity baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
+  },
+  {
+    "id": "cambrian--enabled-->lang",
+    "fromEvent": "cambrian",
+    "toEvent": "lang",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "The long evolutionary path from complex animal life ultimately enabled nervous systems, hominins and symbolic language; this is a deep-time enabling relation rather than direct causation.",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.85,
+        "citation": "Causari deep-time continuity baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world"
   }
 ]
