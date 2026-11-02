@@ -51,6 +51,7 @@
   "monitoring": {
     "lastCheckedAt": "2026-11-02",
     "latestSubstantiveAt": "2026-10-15",
-    "ingestionMode": "evidence-first-idempotent-v1"
+    "ingestionMode": "evidence-first-idempotent-v1",
+    "lastIngestId": "2026-11-02-e2e-heartbeat"
   }
 }

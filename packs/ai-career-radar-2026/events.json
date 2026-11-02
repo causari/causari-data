@@ -48,7 +48,16 @@
     ],
     "title_vi": "ILO lập bản đồ mức phơi nhiễm GenAI tại Việt Nam",
     "description_vi": "ILO áp dụng chỉ số phơi nhiễm nghề nghiệp lên Điều tra Lao động Việc làm Việt Nam 2024. Khoảng 11,5 triệu lao động thuộc các nghề có tác vụ có thể bị GenAI tác động, trong khi dưới 2% lao động nằm trong nhóm nghề có tác vụ vừa rất dễ bị AI tác động vừa đủ chuẩn hóa để có rủi ro tự động hóa cao.",
-    "whyItMatters_vi": "Tạo baseline tại Việt Nam: mức phơi nhiễm rộng, nhưng phơi nhiễm không đồng nghĩa tự động hóa toàn bộ công việc."
+    "whyItMatters_vi": "Tạo baseline tại Việt Nam: mức phơi nhiễm rộng, nhưng phơi nhiễm không đồng nghĩa tự động hóa toàn bộ công việc.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-ilo-vietnam-2026"
+      ]
+    }
   },
   {
     "id": "ilo-genai-empirical-review-2026",
@@ -100,7 +109,16 @@
     ],
     "title_vi": "ILO tổng quan bằng chứng thực nghiệm về GenAI và việc làm",
     "description_vi": "ILO tổng hợp thí nghiệm, dữ liệu cấp doanh nghiệp, nghiên cứu nền tảng và khảo sát người lao động. Kết quả cho thấy năng suất có tăng nhưng không đồng đều, chưa có bằng chứng về thay thế việc làm quy mô lớn, đồng thời rủi ro bất bình đẳng và cơ hội của lao động trẻ đang tăng.",
-    "whyItMatters_vi": "Bằng chứng chống lại cả hai cực đoan: AI đã thay đổi tác vụ, nhưng mức thay thế việc làm tổng thể vẫn còn hạn chế trong dữ liệu được rà soát."
+    "whyItMatters_vi": "Bằng chứng chống lại cả hai cực đoan: AI đã thay đổi tác vụ, nhưng mức thay thế việc làm tổng thể vẫn còn hạn chế trong dữ liệu được rà soát.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-ilo-empirical-review-2026"
+      ]
+    }
   },
   {
     "id": "bls-2025-2035-ai-occupation-split",
@@ -151,7 +169,17 @@
     ],
     "title_vi": "BLS dự báo Software Developer tăng, Computer Programmer giảm",
     "description_vi": "Dự báo 2025–2035 của BLS tách rõ software development rộng hơn với programming hẹp hơn. Việc làm Software Developer được dự báo tăng 10,2% (+174.700), trong khi Computer Programmer giảm 7,3% (-8.100).",
-    "whyItMatters_vi": "Dự báo chính thức ủng hộ luận điểm dịch chuyển tác vụ: implementation lặp lại chịu áp lực lớn hơn các vai trò software bao gồm thiết kế, tích hợp và trách nhiệm hệ thống."
+    "whyItMatters_vi": "Dự báo chính thức ủng hộ luận điểm dịch chuyển tác vụ: implementation lặp lại chịu áp lực lớn hơn các vai trò software bao gồm thiết kế, tích hợp và trách nhiệm hệ thống.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-bls-software-developers-2026",
+        "source-bls-programmers-2026"
+      ]
+    }
   },
   {
     "id": "oecd-skill-shortages-2026",
@@ -204,7 +232,16 @@
     ],
     "title_vi": "OECD ghi nhận thiếu hụt kéo dài ở ICT và y tế",
     "description_vi": "OECD Skills for Jobs 2026, bao phủ 38 quốc gia, ghi nhận thiếu hụt kéo dài tập trung ở các nghề kỹ năng cao. ICT, y tế và giáo dục nằm trong nhóm thiếu hụt lớn và bền vững nhất.",
-    "whyItMatters_vi": "Áp lực ở một số tác vụ phơi nhiễm AI có thể đồng thời tồn tại với tình trạng thiếu hụt chuyên môn kỹ thuật và dịch vụ con người trình độ cao."
+    "whyItMatters_vi": "Áp lực ở một số tác vụ phơi nhiễm AI có thể đồng thời tồn tại với tình trạng thiếu hụt chuyên môn kỹ thuật và dịch vụ con người trình độ cao.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-oecd-skill-shortages-2026"
+      ]
+    }
   },
   {
     "id": "imf-asia-ai-labor-market-2026",
@@ -259,6 +296,15 @@
     ],
     "title_vi": "IMF ghi nhận nhu cầu yếu hơn ở nghề phơi nhiễm AI tại châu Á",
     "description_vi": "IMF phân tích 40 triệu tin tuyển dụng trực tuyến tại 19 nền kinh tế châu Á. Nhu cầu tuyển dụng giảm gần 10% ở các nghề phơi nhiễm AI cao hơn, tính tương đối so với nhóm ít phơi nhiễm hơn; mức giảm tương đối có dấu hiệu ổn định trong khi nhu cầu kỹ năng AI tăng.",
-    "whyItMatters_vi": "Đây là bằng chứng trực tiếp về nhu cầu tuyển dụng tại châu Á: mức phơi nhiễm AI đi cùng nhu cầu yếu hơn, nhưng không đơn giản tiếp tục xấu đi theo tốc độ tăng năng lực model."
+    "whyItMatters_vi": "Đây là bằng chứng trực tiếp về nhu cầu tuyển dụng tại châu Á: mức phơi nhiễm AI đi cùng nhu cầu yếu hơn, nhưng không đơn giản tiếp tục xấu đi theo tốc độ tăng năng lực model.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-imf-asia-reo-2026"
+      ]
+    }
   }
 ]
