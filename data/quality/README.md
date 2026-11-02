@@ -34,3 +34,20 @@ node scripts/audit-canonical-quality.mjs
 ```
 
 When legacy debt is genuinely removed or upgraded, lower the corresponding ceiling in `canonical-baseline.json`; never raise a ceiling to make CI pass.
+
+
+## Rejected canonical links
+
+Links that are clearly invalid should not remain in `data/links.json` merely for historical traceability.
+
+Move them to `rejected-links.json` with:
+
+- the original link payload;
+- `rejectedAt`;
+- `rejectedFrom`;
+- `rejectionType`;
+- a specific human-readable `reason`.
+
+Git history remains the ultimate audit trail; the rejected archive makes removals visible to tooling and reviewers without polluting the active causal graph.
+
+A rejected link must never simultaneously exist in active canonical links.
