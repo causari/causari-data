@@ -16,6 +16,14 @@
       "Pure implementation is under more pressure than system-level software work.",
       "AI skill demand is rising even where AI-exposed hiring is weaker.",
       "Keep CS/software direction; increase system design, AI integration, verification and domain ownership."
+    ],
+    "title_vi": "Developer tại Việt Nam",
+    "question": "How is AI changing the value of software skills, and where should I invest?",
+    "question_vi": "AI đang thay đổi giá trị của kỹ năng software như thế nào và tôi nên đầu tư vào đâu?",
+    "thesis_vi": [
+      "Implementation thuần chịu áp lực mạnh hơn công việc software ở cấp hệ thống.",
+      "Nhu cầu kỹ năng AI vẫn tăng ngay cả khi tuyển dụng ở các nghề phơi nhiễm AI yếu hơn.",
+      "Giữ hướng CS/software; tăng system design, AI integration, verification và domain ownership."
     ]
   },
   {
@@ -34,6 +42,14 @@
       "Commodity execution faces price pressure.",
       "AI-assisted delivery speed rises.",
       "Move toward outcome-based services, integration and domain-specific automation."
+    ],
+    "title_vi": "Freelancer tại Việt Nam",
+    "question": "Which gigs is AI compressing, and which services is it opening?",
+    "question_vi": "AI đang nén giá trị gig nào và mở ra dịch vụ nào?",
+    "thesis_vi": [
+      "Execution hàng hóa hóa chịu áp lực giá.",
+      "Tốc độ delivery nhờ AI tăng.",
+      "Dịch sang dịch vụ theo outcome, integration và automation theo domain."
     ]
   },
   {
@@ -53,6 +69,14 @@
       "Exposure is broader than replacement.",
       "Track task redesign and skill scarcity separately from headcount.",
       "Preserve learning pathways for junior talent while automating repetitive work."
+    ],
+    "title_vi": "CEO / Manager tại Việt Nam",
+    "question": "How should AI change workforce design, hiring, and upskilling?",
+    "question_vi": "AI nên thay đổi workforce, hiring và upskilling như thế nào?",
+    "thesis_vi": [
+      "Phơi nhiễm rộng hơn rất nhiều so với thay thế hoàn toàn.",
+      "Theo dõi task redesign và skill scarcity riêng với headcount.",
+      "Giữ con đường học nghề cho junior trong khi tự động hóa công việc lặp lại."
     ]
   },
   {
@@ -71,6 +95,14 @@
       "Most exposure implies task transformation, not immediate full automation.",
       "Learning ability and occupational mobility become more valuable.",
       "Watch local employment and wage data, not only global AI headlines."
+    ],
+    "title_vi": "Người lao động tại Việt Nam",
+    "question": "What does AI mean for jobs, learning, and adaptability for an ordinary worker?",
+    "question_vi": "AI có ý nghĩa gì với việc làm, học tập và khả năng thích nghi của một người lao động bình thường?",
+    "thesis_vi": [
+      "Phần lớn phơi nhiễm hàm ý biến đổi tác vụ, không phải tự động hóa toàn bộ ngay lập tức.",
+      "Khả năng học và chuyển đổi nghề nghiệp tăng giá trị.",
+      "Theo dõi dữ liệu việc làm và tiền lương địa phương, không chỉ headline AI toàn cầu."
     ]
   }
 ]
