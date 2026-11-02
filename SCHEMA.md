@@ -19,6 +19,7 @@ Version: 1.0
 | `forecastConfidence` | number | no | 0-1, only for future/speculative events |
 | `forecastReasoning` | string | no | Explanation for forecast confidence |
 | `globalVisibility` | enum | no | `pack-only`, `contextual`, or `major`; promotion hint, not an automatic render rule |
+| `knowledgeLayer` | enum | no | `world`, `evidence`, or `forecast`; epistemic layer used by global projections/filters |
 | `canonicalOrigin` | string | no | Pack or ingestion pipeline that first promoted the canonical event |
 | `provenance` | object | no | Optional source-pack/source-id provenance for domain evidence |
 
