@@ -7353,5 +7353,448 @@
       }
     ],
     "scope": "world"
+  },
+  {
+    "id": "big-bang",
+    "title": "Big Bang",
+    "description": "The origin of spacetime, matter, and energy in the observable universe.",
+    "yearNum": -13800000000,
+    "yearLabel": "13.8B BCE",
+    "precision": "millennium",
+    "domains": [
+      "science",
+      "systems"
+    ],
+    "impactScore": 1,
+    "tags": [
+      "cosmic",
+      "origin",
+      "universe"
+    ],
+    "scope": "world",
+    "globalVisibility": "major",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.95,
+        "citation": "Causari cosmic baseline; standard cosmology"
+      }
+    ]
+  },
+  {
+    "id": "first-stars",
+    "title": "First Stars",
+    "description": "The first generation of stars formed from primordial hydrogen and helium, beginning stellar nucleosynthesis and cosmic reionization.",
+    "yearNum": -13650000000,
+    "yearLabel": "~13.65B BCE",
+    "precision": "millennium",
+    "domains": [
+      "science",
+      "systems"
+    ],
+    "impactScore": 0.95,
+    "tags": [
+      "cosmic",
+      "stars",
+      "fusion"
+    ],
+    "scope": "world",
+    "globalVisibility": "major",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.9,
+        "citation": "Causari cosmic baseline; standard cosmology"
+      }
+    ]
+  },
+  {
+    "id": "solar-system",
+    "title": "Formation of the Solar System",
+    "description": "A protoplanetary disk around the young Sun condensed into the Solar System, including Earth.",
+    "yearNum": -4600000000,
+    "yearLabel": "4.6B BCE",
+    "precision": "millennium",
+    "domains": [
+      "science",
+      "systems"
+    ],
+    "impactScore": 0.96,
+    "tags": [
+      "cosmic",
+      "solar-system",
+      "earth"
+    ],
+    "scope": "world",
+    "globalVisibility": "major",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.95,
+        "citation": "Causari cosmic baseline; standard planetary science"
+      }
+    ]
+  },
+  {
+    "id": "first-life",
+    "title": "Earliest Life on Earth",
+    "description": "The earliest known life emerged on Earth, establishing biology as a new information-processing layer.",
+    "yearNum": -3800000000,
+    "yearLabel": "~3.8B BCE",
+    "precision": "millennium",
+    "domains": [
+      "science",
+      "systems"
+    ],
+    "impactScore": 0.98,
+    "tags": [
+      "origin",
+      "life",
+      "biology"
+    ],
+    "scope": "world",
+    "globalVisibility": "major",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.85,
+        "citation": "Causari cosmic baseline; early-life dating remains approximate"
+      }
+    ]
+  },
+  {
+    "id": "cambrian",
+    "title": "Cambrian Explosion",
+    "description": "A rapid diversification of complex animal life produced many major body plans in the fossil record.",
+    "yearNum": -540000000,
+    "yearLabel": "~540M BCE",
+    "precision": "millennium",
+    "domains": [
+      "science",
+      "systems"
+    ],
+    "impactScore": 0.91,
+    "tags": [
+      "evolution",
+      "cambrian",
+      "biodiversity"
+    ],
+    "scope": "world",
+    "globalVisibility": "major",
+    "sources": [
+      {
+        "type": "curated-baseline",
+        "reliability": 0.95,
+        "citation": "Causari cosmic baseline; paleontology consensus"
+      }
+    ]
+  },
+  {
+    "id": "bls-2025-2035-ai-occupation-split",
+    "title": "BLS projects software developers up, programmers down",
+    "description": "BLS 2025–2035 projections separate broader software development from narrower programming work. Software developer employment is projected to rise 10.2% (+174,700), while computer programmer employment is projected to decline 7.3% (-8,100).",
+    "yearNum": 2026,
+    "yearLabel": "27 Aug 2026",
+    "precision": "day",
+    "domains": [
+      "technology",
+      "economy"
+    ],
+    "impactScore": 0.93,
+    "tags": [
+      "bls",
+      "software",
+      "programmers",
+      "developers",
+      "employment-projection",
+      "ai"
+    ],
+    "date": "2026-08-27",
+    "dateLabel": "27 Aug 2026",
+    "status": "completed",
+    "entities": [
+      "U.S. Bureau of Labor Statistics",
+      "Software developers",
+      "Computer programmers"
+    ],
+    "nodeType": "official-projection",
+    "lane": "software",
+    "audiences": [
+      "developer",
+      "freelancer",
+      "ceo"
+    ],
+    "evidenceType": "forecast",
+    "geography": "United States",
+    "whyItMatters": "The official projection supports a task-shift thesis: routine implementation is under more pressure than broader software design and development roles.",
+    "nextWatchpoints": [
+      "Actual payroll and hiring data by experience level",
+      "Whether AI exposure categories predict realized employment outcomes"
+    ],
+    "claimIds": [
+      "claim-bls-software-developers-up",
+      "claim-bls-programmers-down",
+      "claim-execution-pressure-vs-system-role"
+    ],
+    "title_vi": "BLS dự báo Software Developer tăng, Computer Programmer giảm",
+    "description_vi": "Dự báo 2025–2035 của BLS tách rõ software development rộng hơn với programming hẹp hơn. Việc làm Software Developer được dự báo tăng 10,2% (+174.700), trong khi Computer Programmer giảm 7,3% (-8.100).",
+    "whyItMatters_vi": "Dự báo chính thức ủng hộ luận điểm dịch chuyển tác vụ: implementation lặp lại chịu áp lực lớn hơn các vai trò software bao gồm thiết kế, tích hợp và trách nhiệm hệ thống.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-bls-software-developers-2026",
+        "source-bls-programmers-2026"
+      ]
+    }
+  },
+  {
+    "id": "ilo-genai-empirical-review-2026",
+    "title": "ILO reviews empirical evidence on GenAI and work",
+    "description": "ILO synthesizes experiments, firm-level data, platform studies and worker surveys. It finds real but uneven productivity gains, limited large-scale displacement so far, and growing concern about inequality and younger-worker opportunities.",
+    "yearNum": 2026,
+    "yearLabel": "1 Jun 2026",
+    "precision": "day",
+    "domains": [
+      "technology",
+      "economy",
+      "systems"
+    ],
+    "impactScore": 0.82,
+    "tags": [
+      "genai",
+      "productivity",
+      "jobs",
+      "entry-level",
+      "work-organization"
+    ],
+    "date": "2026-06-01",
+    "dateLabel": "1 Jun 2026",
+    "status": "completed",
+    "entities": [
+      "International Labour Organization",
+      "Workers",
+      "Firms"
+    ],
+    "nodeType": "research-synthesis",
+    "lane": "automation",
+    "audiences": [
+      "developer",
+      "freelancer",
+      "ceo",
+      "citizen"
+    ],
+    "evidenceType": "research-review",
+    "geography": "Multi-country",
+    "whyItMatters": "It argues against both extremes: AI is already changing tasks, but aggregate displacement remains limited in the evidence reviewed.",
+    "nextWatchpoints": [
+      "Measured output and wage effects",
+      "Entry-level opportunity erosion",
+      "Changes in worker autonomy and job quality"
+    ],
+    "claimIds": [
+      "claim-ilo-displacement-limited",
+      "claim-ilo-younger-worker-risk"
+    ],
+    "title_vi": "ILO tổng quan bằng chứng thực nghiệm về GenAI và việc làm",
+    "description_vi": "ILO tổng hợp thí nghiệm, dữ liệu cấp doanh nghiệp, nghiên cứu nền tảng và khảo sát người lao động. Kết quả cho thấy năng suất có tăng nhưng không đồng đều, chưa có bằng chứng về thay thế việc làm quy mô lớn, đồng thời rủi ro bất bình đẳng và cơ hội của lao động trẻ đang tăng.",
+    "whyItMatters_vi": "Bằng chứng chống lại cả hai cực đoan: AI đã thay đổi tác vụ, nhưng mức thay thế việc làm tổng thể vẫn còn hạn chế trong dữ liệu được rà soát.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-ilo-empirical-review-2026"
+      ]
+    }
+  },
+  {
+    "id": "ilo-vietnam-genai-exposure-2026",
+    "title": "ILO maps GenAI exposure across Viet Nam",
+    "description": "ILO applies its occupational exposure index to Viet Nam's 2024 Labour Force Survey. Around 11.5 million workers are in occupations with potentially exposed tasks, while fewer than 2% of workers are in occupations where tasks are both highly susceptible to AI and standardized.",
+    "yearNum": 2026,
+    "yearLabel": "16 Apr 2026",
+    "precision": "day",
+    "domains": [
+      "technology",
+      "economy",
+      "systems"
+    ],
+    "impactScore": 0.88,
+    "tags": [
+      "ai",
+      "jobs",
+      "vietnam",
+      "automation",
+      "exposure",
+      "skills"
+    ],
+    "date": "2026-04-16",
+    "dateLabel": "16 Apr 2026",
+    "status": "completed",
+    "entities": [
+      "International Labour Organization",
+      "Viet Nam workforce"
+    ],
+    "nodeType": "evidence-update",
+    "lane": "employment",
+    "audiences": [
+      "developer",
+      "freelancer",
+      "ceo",
+      "citizen"
+    ],
+    "evidenceType": "observed",
+    "geography": "Viet Nam",
+    "whyItMatters": "It gives a local baseline: exposure is broad, but exposure is not equivalent to full job automation.",
+    "nextWatchpoints": [
+      "Whether exposed occupations show measurable employment or wage changes in Viet Nam",
+      "Whether entry-level hiring weakens faster than total employment"
+    ],
+    "claimIds": [
+      "claim-vn-one-in-five-exposed",
+      "claim-vn-high-automation-under-two-percent"
+    ],
+    "title_vi": "ILO lập bản đồ mức phơi nhiễm GenAI tại Việt Nam",
+    "description_vi": "ILO áp dụng chỉ số phơi nhiễm nghề nghiệp lên Điều tra Lao động Việc làm Việt Nam 2024. Khoảng 11,5 triệu lao động thuộc các nghề có tác vụ có thể bị GenAI tác động, trong khi dưới 2% lao động nằm trong nhóm nghề có tác vụ vừa rất dễ bị AI tác động vừa đủ chuẩn hóa để có rủi ro tự động hóa cao.",
+    "whyItMatters_vi": "Tạo baseline tại Việt Nam: mức phơi nhiễm rộng, nhưng phơi nhiễm không đồng nghĩa tự động hóa toàn bộ công việc.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-ilo-vietnam-2026"
+      ]
+    }
+  },
+  {
+    "id": "imf-asia-ai-labor-market-2026",
+    "title": "IMF finds weaker demand in more AI-exposed Asian occupations",
+    "description": "IMF analyzes 40 million online job postings across 19 Asian economies. Employer demand fell by nearly 10% in more AI-exposed occupations relative to less-exposed occupations, while the relative decline appears to have stabilized and demand for AI skills is rising.",
+    "yearNum": 2026,
+    "yearLabel": "15 Oct 2026",
+    "precision": "day",
+    "domains": [
+      "technology",
+      "economy",
+      "systems"
+    ],
+    "impactScore": 0.95,
+    "tags": [
+      "imf",
+      "asia",
+      "job-postings",
+      "ai-exposure",
+      "hiring",
+      "skills"
+    ],
+    "date": "2026-10-15",
+    "dateLabel": "15 Oct 2026",
+    "status": "completed",
+    "entities": [
+      "International Monetary Fund",
+      "Asian employers",
+      "Knowledge workers"
+    ],
+    "nodeType": "official-research",
+    "lane": "employment",
+    "audiences": [
+      "developer",
+      "freelancer",
+      "ceo",
+      "citizen"
+    ],
+    "evidenceType": "observed",
+    "geography": "19 Asian economies",
+    "whyItMatters": "This is direct hiring-demand evidence for Asia: AI exposure is associated with weaker employer demand, but the effect is not simply accelerating in lockstep with model capability.",
+    "nextWatchpoints": [
+      "Whether the relative demand gap widens again",
+      "Which AI skills command hiring premiums",
+      "Country-level results relevant to Viet Nam"
+    ],
+    "claimIds": [
+      "claim-imf-ai-exposed-demand-down",
+      "claim-imf-effect-stabilized",
+      "claim-imf-ai-skills-rising",
+      "claim-entry-path-needs-separate-tracking"
+    ],
+    "title_vi": "IMF ghi nhận nhu cầu yếu hơn ở nghề phơi nhiễm AI tại châu Á",
+    "description_vi": "IMF phân tích 40 triệu tin tuyển dụng trực tuyến tại 19 nền kinh tế châu Á. Nhu cầu tuyển dụng giảm gần 10% ở các nghề phơi nhiễm AI cao hơn, tính tương đối so với nhóm ít phơi nhiễm hơn; mức giảm tương đối có dấu hiệu ổn định trong khi nhu cầu kỹ năng AI tăng.",
+    "whyItMatters_vi": "Đây là bằng chứng trực tiếp về nhu cầu tuyển dụng tại châu Á: mức phơi nhiễm AI đi cùng nhu cầu yếu hơn, nhưng không đơn giản tiếp tục xấu đi theo tốc độ tăng năng lực model.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-imf-asia-reo-2026"
+      ]
+    }
+  },
+  {
+    "id": "oecd-skill-shortages-2026",
+    "title": "OECD finds persistent ICT and health skill shortages",
+    "description": "OECD Skills for Jobs 2026, covering 38 countries, finds persistent shortages concentrated in high-skilled occupations. ICT professionals, health professionals and teaching professionals are among the largest and most persistent shortage groups.",
+    "yearNum": 2026,
+    "yearLabel": "14 Oct 2026",
+    "precision": "day",
+    "domains": [
+      "technology",
+      "economy",
+      "health"
+    ],
+    "impactScore": 0.86,
+    "tags": [
+      "oecd",
+      "skills",
+      "shortage",
+      "ict",
+      "health",
+      "education"
+    ],
+    "date": "2026-10-14",
+    "dateLabel": "14 Oct 2026",
+    "status": "completed",
+    "entities": [
+      "OECD",
+      "ICT professionals",
+      "Health professionals",
+      "Teaching professionals"
+    ],
+    "nodeType": "official-research",
+    "lane": "skills",
+    "audiences": [
+      "developer",
+      "freelancer",
+      "ceo",
+      "citizen"
+    ],
+    "evidenceType": "observed",
+    "geography": "OECD countries",
+    "whyItMatters": "Weakness in some AI-exposed tasks can coexist with persistent shortages of advanced technical and human-service expertise.",
+    "nextWatchpoints": [
+      "Whether ICT shortages narrow as AI adoption deepens",
+      "Which specific skills remain scarce inside ICT occupations"
+    ],
+    "claimIds": [
+      "claim-oecd-high-skill-shortages",
+      "claim-oecd-us-ict-shortage-intensified"
+    ],
+    "title_vi": "OECD ghi nhận thiếu hụt kéo dài ở ICT và y tế",
+    "description_vi": "OECD Skills for Jobs 2026, bao phủ 38 quốc gia, ghi nhận thiếu hụt kéo dài tập trung ở các nghề kỹ năng cao. ICT, y tế và giáo dục nằm trong nhóm thiếu hụt lớn và bền vững nhất.",
+    "whyItMatters_vi": "Áp lực ở một số tác vụ phơi nhiễm AI có thể đồng thời tồn tại với tình trạng thiếu hụt chuyên môn kỹ thuật và dịch vụ con người trình độ cao.",
+    "scope": "world",
+    "globalVisibility": "contextual",
+    "canonicalOrigin": "ai-career-radar-2026",
+    "provenance": {
+      "pack": "ai-career-radar-2026",
+      "sourceIds": [
+        "source-oecd-skill-shortages-2026"
+      ]
+    }
   }
 ]

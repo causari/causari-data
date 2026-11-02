@@ -1,0 +1,284 @@
+{
+  "id": "global-canvas-v1",
+  "version": "1.0.0",
+  "title": "Causari Global Canvas",
+  "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
+  "source": "data/events.json",
+  "linkSource": "data/links.json",
+  "selectionPolicy": {
+    "principle": "Global timeline is a curated projection of canonical knowledge, not a union of every pack.",
+    "promotionLevels": [
+      "major",
+      "contextual"
+    ],
+    "packOnlyExcluded": true
+  },
+  "eventIds": [
+    "big-bang",
+    "first-stars",
+    "solar-system",
+    "first-life",
+    "cambrian",
+    "lang",
+    "write",
+    "alex",
+    "rome",
+    "printing",
+    "rena",
+    "indus",
+    "darwin_ev",
+    "relativity",
+    "turing_m",
+    "dna_disc",
+    "internet",
+    "web",
+    "genome",
+    "iphone",
+    "bitcoin",
+    "transformer",
+    "mcculloch_pitts",
+    "dartmouth_conf",
+    "perceptron",
+    "ai_winter_1",
+    "backprop",
+    "deep_blue",
+    "imagenet",
+    "alexnet",
+    "alphago",
+    "bert",
+    "gpt2",
+    "gpt3",
+    "alphafold2",
+    "dalle",
+    "chatgpt",
+    "ai",
+    "mar",
+    "omega",
+    "forecast_quantum",
+    "forecast_neural",
+    "forecast_mars",
+    "forecast_renewable",
+    "forecast_agi",
+    "forecast_longevity",
+    "forecast_synthesis",
+    "forecast_fusion",
+    "forecast_climate",
+    "forecast_distributed",
+    "forecast_consciousness",
+    "forecast_language",
+    "forecast_space_trade",
+    "forecast_quantum_net",
+    "forecast_bio_ai",
+    "ilo-vietnam-genai-exposure-2026",
+    "ilo-genai-empirical-review-2026",
+    "bls-2025-2035-ai-occupation-split",
+    "oecd-skill-shortages-2026",
+    "imf-asia-ai-labor-market-2026"
+  ],
+  "presentation": {
+    "big-bang": {
+      "lod": 0
+    },
+    "first-stars": {
+      "lod": 0
+    },
+    "solar-system": {
+      "lod": 0
+    },
+    "first-life": {
+      "lod": 0
+    },
+    "cambrian": {
+      "lod": 0
+    },
+    "lang": {
+      "lod": 0
+    },
+    "write": {
+      "lod": 0
+    },
+    "alex": {
+      "lod": 0
+    },
+    "rome": {
+      "lod": 0
+    },
+    "printing": {
+      "lod": 0
+    },
+    "rena": {
+      "lod": 0
+    },
+    "indus": {
+      "lod": 0
+    },
+    "darwin_ev": {
+      "lod": 1
+    },
+    "relativity": {
+      "lod": 1
+    },
+    "turing_m": {
+      "lod": 1
+    },
+    "dna_disc": {
+      "lod": 1
+    },
+    "internet": {
+      "lod": 0
+    },
+    "web": {
+      "lod": 1
+    },
+    "genome": {
+      "lod": 1
+    },
+    "iphone": {
+      "lod": 1
+    },
+    "bitcoin": {
+      "lod": 1
+    },
+    "transformer": {
+      "lod": 1
+    },
+    "mcculloch_pitts": {
+      "lod": 1
+    },
+    "dartmouth_conf": {
+      "lod": 1
+    },
+    "perceptron": {
+      "lod": 1
+    },
+    "ai_winter_1": {
+      "lod": 1
+    },
+    "backprop": {
+      "lod": 1
+    },
+    "deep_blue": {
+      "lod": 1
+    },
+    "imagenet": {
+      "lod": 1
+    },
+    "alexnet": {
+      "lod": 0
+    },
+    "alphago": {
+      "lod": 1
+    },
+    "bert": {
+      "lod": 1
+    },
+    "gpt2": {
+      "lod": 1
+    },
+    "gpt3": {
+      "lod": 1
+    },
+    "alphafold2": {
+      "lod": 1
+    },
+    "dalle": {
+      "lod": 1
+    },
+    "chatgpt": {
+      "lod": 0
+    },
+    "ai": {
+      "lod": 0
+    },
+    "mar": {
+      "lod": 0
+    },
+    "omega": {
+      "lod": 0
+    },
+    "forecast_quantum": {
+      "lod": 0
+    },
+    "forecast_neural": {
+      "lod": 0
+    },
+    "forecast_mars": {
+      "lod": 0
+    },
+    "forecast_renewable": {
+      "lod": 0
+    },
+    "forecast_agi": {
+      "lod": 0
+    },
+    "forecast_longevity": {
+      "lod": 0
+    },
+    "forecast_synthesis": {
+      "lod": 0
+    },
+    "forecast_fusion": {
+      "lod": 0
+    },
+    "forecast_climate": {
+      "lod": 0
+    },
+    "forecast_distributed": {
+      "lod": 0
+    },
+    "forecast_consciousness": {
+      "lod": 0
+    },
+    "forecast_language": {
+      "lod": 0
+    },
+    "forecast_space_trade": {
+      "lod": 0
+    },
+    "forecast_quantum_net": {
+      "lod": 0
+    },
+    "forecast_bio_ai": {
+      "lod": 0
+    },
+    "ilo-vietnam-genai-exposure-2026": {
+      "lod": 1,
+      "lane": "career",
+      "color": "#22d3ee",
+      "tag": "AI-Career"
+    },
+    "ilo-genai-empirical-review-2026": {
+      "lod": 1,
+      "lane": "career",
+      "color": "#22d3ee",
+      "tag": "AI-Career"
+    },
+    "bls-2025-2035-ai-occupation-split": {
+      "lod": 1,
+      "lane": "career",
+      "color": "#38bdf8",
+      "tag": "AI-Career"
+    },
+    "oecd-skill-shortages-2026": {
+      "lod": 1,
+      "lane": "career",
+      "color": "#4ade80",
+      "tag": "AI-Career"
+    },
+    "imf-asia-ai-labor-market-2026": {
+      "lod": 0,
+      "lane": "career",
+      "color": "#00f2ff",
+      "tag": "AI-Career"
+    }
+  },
+  "promotedFromPacks": {
+    "ai-career-radar-2026": [
+      "ilo-vietnam-genai-exposure-2026",
+      "ilo-genai-empirical-review-2026",
+      "bls-2025-2035-ai-occupation-split",
+      "oecd-skill-shortages-2026",
+      "imf-asia-ai-labor-market-2026"
+    ]
+  }
+}

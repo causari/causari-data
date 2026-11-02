@@ -2,7 +2,7 @@
 
 > Open causal knowledge graph for AI agents and humans.
 
-**100+ curated events**, **130+ causal links** with evidence and confidence scores, **8 insight patterns** — focused on the history of computing and software engineering.
+**250+ canonical events**, **500+ causal links** with evidence and confidence scores, plus topic packs for faster-moving domains.
 
 This dataset powers [@causari/mcp-server](https://github.com/causari/mcp-server), a Model Context Protocol server that gives Claude Code, Cursor, and any MCP-compatible agent structured causal knowledge.
 
@@ -10,9 +10,11 @@ This dataset powers [@causari/mcp-server](https://github.com/causari/mcp-server)
 
 ```
 data/
-├── events.json        # Historical events with metadata
-├── links.json         # Causal relationships between events
-└── insights.json      # Recurring causal patterns
+├── events.json        # Canonical events — single source of truth
+├── links.json         # Canonical causal relationships
+├── insights.json      # Recurring causal patterns
+└── views/
+    └── global-canvas.json # Curated /app projection + LOD hints
 
 packs/
 ├── worldcup-2026/                  # Live sports/event intelligence
@@ -103,7 +105,7 @@ Current packs:
 | [`openai-hf-agent-incident-2026`](packs/openai-hf-agent-incident-2026/) | Golden incident pack separating observed facts, causal inference, interpretation, evidence, and forecasts |
 | [`pubg-asia-stars-2026`](packs/pubg-asia-stars-2026/) | Live evidence-first case separating timeline, attributed findings, sanctions, public evidence gaps, organizer responsibility, and review/appeal responses |
 
-See [docs/PACKS.md](docs/PACKS.md) for pack structure and quality guidelines, and [docs/PACK-VIEWS.md](docs/PACK-VIEWS.md) for optional Canvas and teaching projections.
+See [docs/CANONICAL-EVENTS.md](docs/CANONICAL-EVENTS.md) for the canonical-event/projection contract, [docs/PACKS.md](docs/PACKS.md) for pack structure, and [docs/PACK-VIEWS.md](docs/PACK-VIEWS.md) for projections.
 
 ## Relationship types
 
