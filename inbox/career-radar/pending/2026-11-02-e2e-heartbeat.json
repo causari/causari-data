@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-02-e2e-heartbeat",
+  "checkedAt": "2026-11-02",
+  "summary": "End-to-end monitoring heartbeat after inbox bridge deployment; no material research update is being added.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
