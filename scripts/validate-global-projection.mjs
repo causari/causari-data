@@ -56,6 +56,17 @@ for (const link of view.contextLinks || []) {
   if (!String(link?.reason || '').trim()) errors.push('context link missing reason: ' + (link?.id || '<missing id>'));
 }
 
+
+const canonicalLinkIdSet = new Set(links.map((link) => link.id));
+const suppressedIds = new Set();
+for (const item of view.suppressedCausalLinks || []) {
+  if (!item?.id) errors.push('suppressed causal link missing id');
+  else if (suppressedIds.has(item.id)) errors.push('duplicate suppressed causal link id: ' + item.id);
+  else suppressedIds.add(item.id);
+  if (item?.id && !canonicalLinkIdSet.has(item.id)) errors.push('suppressed causal link not found in canonical links: ' + item.id);
+  if (!String(item?.reason || '').trim()) errors.push('suppressed causal link missing reason: ' + (item?.id || '<missing>'));
+}
+
 for (const [pack, ids] of Object.entries(view.promotedFromPacks || {})) {
   if (!Array.isArray(ids)) {
     errors.push('promotedFromPacks.' + pack + ' must be an array');
