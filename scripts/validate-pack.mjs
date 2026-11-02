@@ -41,7 +41,7 @@ function isNonEmptyStr(v) { return typeof v === 'string' && v.trim().length > 0;
  * Pure validation of a pack's in-memory data. Returns an array of error strings
  * (empty = valid). No I/O, no console — safe to call before writing to disk.
  */
-export function validatePackData({ events, links, insights, views, manifest, claims, evidence, sources, forecasts }, packId = 'pack') {
+export function validatePackData({ events, links, insights, views, manifest, claims, evidence, sources, forecasts, signals, snapshots, eventRefs, canonicalEvents }, packId = 'pack') {
   const errors = [];
   const E = (msg) => errors.push(`[${packId}] ${msg}`);
   const eventIds = new Set();
@@ -50,6 +50,7 @@ export function validatePackData({ events, links, insights, views, manifest, cla
   const sourceIds = new Set();
   const evidenceIds = new Set();
   const claimIds = new Set();
+  const signalIds = new Set();
 
   // --- Events ---
   if (!Array.isArray(events)) { E('events must be an array'); return errors; }
@@ -181,6 +182,63 @@ export function validatePackData({ events, links, insights, views, manifest, cla
     }
   }
 
+  // --- Optional derived signal / trend layer ---
+  if (signals !== undefined) {
+    if (!Array.isArray(signals)) E('signals must be an array when signals.json is present');
+    else for (const signal of signals) {
+      const id = signal?.id ?? '<missing id>';
+      if (!isNonEmptyStr(signal?.id)) E('signal has no id');
+      else if (!KEBAB.test(signal.id)) E(`signal id not kebab-case: ${signal.id}`);
+      else if (signalIds.has(signal.id)) E(`duplicate signal id: ${signal.id}`);
+      else signalIds.add(signal.id);
+      if (!isNonEmptyStr(signal?.label)) E(`signal ${id}: missing label`);
+      if (!['up', 'down', 'mixed'].includes(signal?.direction)) E(`signal ${id}: invalid direction "${signal?.direction}"`);
+      if (!isNonEmptyStr(signal?.observedAt) || !/^\d{4}-\d{2}-\d{2}$/.test(signal.observedAt)) E(`signal ${id}: observedAt must be YYYY-MM-DD`);
+      if (!Array.isArray(signal?.claimIds) || signal.claimIds.length === 0) E(`signal ${id}: claimIds must be a non-empty array`);
+      else for (const ref of signal.claimIds) if (!claimIds.has(ref)) E(`signal ${id}: claimIds references missing claim "${ref}"`);
+    }
+  }
+
+  if (snapshots !== undefined) {
+    if (!Array.isArray(snapshots)) E('snapshots must be an array when snapshots.json is present');
+    else {
+      const dates = new Set();
+      for (const snapshot of snapshots) {
+        const date = snapshot?.date ?? '<missing date>';
+        if (!isNonEmptyStr(snapshot?.date) || !/^\d{4}-\d{2}-\d{2}$/.test(snapshot.date)) E(`snapshot ${date}: date must be YYYY-MM-DD`);
+        else if (dates.has(snapshot.date)) E(`duplicate snapshot date: ${snapshot.date}`);
+        else dates.add(snapshot.date);
+        const counts = snapshot?.counts;
+        if (!counts || typeof counts !== 'object' || Array.isArray(counts)) E(`snapshot ${date}: counts must be an object`);
+        else for (const key of ['up', 'down', 'mixed']) {
+          if (!Number.isInteger(counts[key]) || counts[key] < 0) E(`snapshot ${date}: counts.${key} must be a non-negative integer`);
+        }
+      }
+    }
+  }
+
+  // --- Canonical event references ---
+  if (eventRefs !== undefined) {
+    if (!Array.isArray(eventRefs)) E('eventRefs must be an array when event-refs.json is present');
+    else {
+      const canonicalIds = new Set(Array.isArray(canonicalEvents) ? canonicalEvents.map((event) => event?.id).filter(Boolean) : []);
+      const refs = new Set();
+      for (const ref of eventRefs) {
+        if (!isNonEmptyStr(ref)) E('eventRefs contains a non-string/empty id');
+        else if (refs.has(ref)) E(`duplicate eventRef: ${ref}`);
+        else {
+          refs.add(ref);
+          if (!canonicalIds.has(ref)) E(`eventRef "${ref}" is missing from canonical data/events.json`);
+        }
+      }
+      if (manifest?.eventSource?.mode === 'canonical-refs') {
+        const mirrorIds = new Set(events.map((event) => event.id));
+        for (const ref of refs) if (!mirrorIds.has(ref)) E(`compatibility mirror missing canonical ref "${ref}"`);
+        for (const id of mirrorIds) if (!refs.has(id)) E(`compatibility mirror contains event "${id}" not declared in event-refs.json`);
+      }
+    }
+  }
+
   // --- Optional Canvas/audience views ---
   if (views !== undefined) {
     if (!Array.isArray(views)) E('views must be an array when views.json is present');
@@ -248,6 +306,12 @@ export function validatePackFromDisk(packId) {
       evidence: readOptional('evidence.json'),
       sources: readOptional('sources.json'),
       forecasts: readOptional('forecasts.json'),
+      signals: readOptional('signals.json'),
+      snapshots: readOptional('snapshots.json'),
+      eventRefs: readOptional('event-refs.json'),
+      canonicalEvents: existsSync(join(ROOT, 'data', 'events.json'))
+        ? JSON.parse(readFileSync(join(ROOT, 'data', 'events.json'), 'utf8'))
+        : undefined,
     };
   } catch (e) {
     return { errors: [`[${packId}] cannot read pack — ${e.message}`], counts: '' };
@@ -259,6 +323,9 @@ export function validatePackFromDisk(packId) {
     Array.isArray(data.evidence) ? `${data.evidence.length} evidence` : '',
     Array.isArray(data.sources) ? `${data.sources.length} sources` : '',
     Array.isArray(data.forecasts) ? `${data.forecasts.length} forecasts` : '',
+    Array.isArray(data.signals) ? `${data.signals.length} signals` : '',
+    Array.isArray(data.snapshots) ? `${data.snapshots.length} snapshots` : '',
+    Array.isArray(data.eventRefs) ? `${data.eventRefs.length} canonical refs` : '',
   ].filter(Boolean).join(', ');
   const counts = `${data.events.length} events, ${data.links.length} links, ${data.insights.length} insights${viewCount}${caseCount ? ', ' + caseCount : ''}`;
   return { errors, counts };

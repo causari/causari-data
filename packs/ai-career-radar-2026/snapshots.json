@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-11-02",
+    "substantive": true,
+    "counts": {
+      "up": 3,
+      "down": 3,
+      "mixed": 1
+    },
+    "totalSignals": 7,
+    "byDomain": {
+      "workforce": {
+        "up": 0,
+        "down": 0,
+        "mixed": 1
+      },
+      "entry-level": {
+        "up": 0,
+        "down": 1,
+        "mixed": 0
+      },
+      "software": {
+        "up": 1,
+        "down": 1,
+        "mixed": 0
+      },
+      "skills": {
+        "up": 2,
+        "down": 0,
+        "mixed": 0
+      },
+      "employment": {
+        "up": 0,
+        "down": 1,
+        "mixed": 0
+      }
+    },
+    "newEventIds": [],
+    "updatedEventIds": [],
+    "newSignalIds": [],
+    "updatedSignalIds": [],
+    "ingestId": "bootstrap-career-radar-v0"
+  }
+]

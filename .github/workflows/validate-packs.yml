@@ -4,14 +4,24 @@ on:
   push:
     paths:
       - "packs/**"
+      - "data/events.json"
+      - "data/links.json"
+      - "data/views/**"
       - "scripts/validate-pack.mjs"
+      - "scripts/validate-global-projection.mjs"
+      - "scripts/ingest-career-radar.mjs"
       - "scripts/causal-quality.mjs"
       - "schema/**"
       - ".github/workflows/validate-packs.yml"
   pull_request:
     paths:
       - "packs/**"
+      - "data/events.json"
+      - "data/links.json"
+      - "data/views/**"
       - "scripts/validate-pack.mjs"
+      - "scripts/validate-global-projection.mjs"
+      - "scripts/ingest-career-radar.mjs"
       - "scripts/causal-quality.mjs"
       - "schema/**"
 
@@ -25,5 +35,30 @@ jobs:
           node-version: "20"
       - name: Validate all packs (schema + referential integrity)
         run: node scripts/validate-pack.mjs
+      - name: Validate canonical global projection
+        run: node scripts/validate-global-projection.mjs
+
+      - name: Career Radar no-change heartbeat dry-run
+        run: |
+          cat > /tmp/career-radar-noop.json <<'JSON'
+          {
+            "ingestId": "ci-no-material-change",
+            "checkedAt": "2099-01-01",
+            "summary": "CI heartbeat contract test",
+            "quality": {
+              "substantive": false,
+              "sourceReviewComplete": true,
+              "observedVsForecastSeparated": true,
+              "correlationCausalityReviewed": true
+            },
+            "sources": [],
+            "events": [],
+            "claims": [],
+            "evidence": [],
+            "signals": []
+          }
+          JSON
+          node scripts/ingest-career-radar.mjs /tmp/career-radar-noop.json --dry-run
+
       - name: Causal-quality gate (semantic — no templated substrate)
         run: node scripts/causal-quality.mjs

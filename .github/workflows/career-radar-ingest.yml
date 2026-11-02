@@ -1,0 +1,77 @@
+name: career-radar-ingest
+
+on:
+  workflow_dispatch:
+    inputs:
+      payload_json:
+        description: "Evidence-first Career Radar intake JSON"
+        required: true
+        type: string
+      dry_run:
+        description: "Validate only; do not commit"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-radar-ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PAYLOAD_JSON: ${{ inputs.payload_json }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Materialize intake
+        run: |
+          node - <<'NODE'
+          const { writeFileSync } = require('node:fs');
+          const raw = process.env.PAYLOAD_JSON || '';
+          JSON.parse(raw);
+          writeFileSync('/tmp/career-radar-intake.json', raw + '\n');
+          NODE
+
+      - name: Apply intake
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            node scripts/ingest-career-radar.mjs /tmp/career-radar-intake.json --dry-run
+          else
+            node scripts/ingest-career-radar.mjs /tmp/career-radar-intake.json
+          fi
+
+      - name: Validate Career Radar
+        run: node scripts/validate-pack.mjs ai-career-radar-2026
+
+      - name: Validate global projection
+        run: node scripts/validate-global-projection.mjs
+
+      - name: Commit changed data
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if git diff --quiet; then
+            echo "No repository changes — idempotent/no-op run."
+            exit 0
+          fi
+
+          INGEST_ID="$(node -e "console.log(JSON.parse(process.env.PAYLOAD_JSON).ingestId)")"
+          git config user.name "causari-ingest[bot]"
+          git config user.email "causari-ingest[bot]@users.noreply.github.com"
+          git add             data/events.json             data/views/global-canvas.json             packs/ai-career-radar-2026/
+          git commit -m "data(career-radar): ingest ${INGEST_ID}"
+          git push origin HEAD:main
