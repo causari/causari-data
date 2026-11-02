@@ -1,0 +1,40 @@
+{
+  "id": "ai-career-radar-2026",
+  "version": "0.1.0",
+  "title": "AI Career Radar 2026",
+  "title_vi": "AI Career Radar 2026",
+  "description": "Evidence-first timeline tracking how AI is changing jobs, skills, hiring and career strategy, starting with a Vietnamese developer lens.",
+  "description_vi": "Timeline ưu tiên bằng chứng, theo dõi AI đang thay đổi việc làm, kỹ năng, tuyển dụng và chiến lược nghề nghiệp như thế nào, bắt đầu từ góc nhìn developer Việt Nam.",
+  "language": "en",
+  "localizations": [
+    "vi",
+    "en"
+  ],
+  "jurisdiction": "Global + Vietnam",
+  "temporalMode": "rolling-labor-market-timeline",
+  "graphMode": "event-claim-evidence-trend",
+  "updateCadence": "daily-event-driven",
+  "asOf": "2026-11-02",
+  "files": {
+    "events": "events.json",
+    "links": "links.json",
+    "insights": "insights.json",
+    "claims": "claims.json",
+    "evidence": "evidence.json",
+    "sources": "sources.json",
+    "forecasts": "forecasts.json",
+    "views": "views.json"
+  },
+  "quality": {
+    "causalProfile": "evidence-first-trend-watch",
+    "sourcePolicy": "Official statistics, international organizations, primary research and major AI labs outrank commentary. Observed data, forecasts, surveys and interpretations must remain separate.",
+    "reviewStatus": "research-preview"
+  },
+  "canvas": {
+    "defaultView": "developer-vn",
+    "recommendedLayout": "timeline-lanes",
+    "laneField": "lane",
+    "nodeTypeField": "nodeType"
+  },
+  "defaultLocale": "vi"
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "id": "claim-vn-one-in-five-exposed",
+    "text": "Around 11.5 million workers in Viet Nam, roughly one in five workers, are in occupations with tasks potentially exposed to GenAI.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.98,
+    "evidenceIds": [
+      "evidence-ilo-vn-exposure"
+    ],
+    "eventIds": [
+      "ilo-vietnam-genai-exposure-2026"
+    ]
+  },
+  {
+    "id": "claim-vn-high-automation-under-two-percent",
+    "text": "Fewer than 2% of workers in Viet Nam are in occupations where tasks are both highly susceptible to GenAI and standardized enough to imply higher full-automation risk.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.97,
+    "evidenceIds": [
+      "evidence-ilo-vn-high-automation"
+    ],
+    "eventIds": [
+      "ilo-vietnam-genai-exposure-2026"
+    ]
+  },
+  {
+    "id": "claim-ilo-displacement-limited",
+    "text": "The empirical evidence reviewed by ILO shows limited large-scale job displacement so far, despite real and uneven productivity gains.",
+    "kind": "research-synthesis",
+    "status": "observed",
+    "confidence": 0.9,
+    "evidenceIds": [
+      "evidence-ilo-review-displacement"
+    ],
+    "eventIds": [
+      "ilo-genai-empirical-review-2026"
+    ]
+  },
+  {
+    "id": "claim-ilo-younger-worker-risk",
+    "text": "The evidence reviewed by ILO identifies erosion of employment opportunities for younger workers as an important emerging risk.",
+    "kind": "research-synthesis",
+    "status": "observed",
+    "confidence": 0.86,
+    "evidenceIds": [
+      "evidence-ilo-review-youth"
+    ],
+    "eventIds": [
+      "ilo-genai-empirical-review-2026"
+    ]
+  },
+  {
+    "id": "claim-bls-software-developers-up",
+    "text": "BLS projects U.S. software developer employment to increase 10.2% from 2025 to 2035, adding about 174,700 jobs.",
+    "kind": "forecast",
+    "status": "observed",
+    "confidence": 0.99,
+    "evidenceIds": [
+      "evidence-bls-software-developers"
+    ],
+    "eventIds": [
+      "bls-2025-2035-ai-occupation-split"
+    ]
+  },
+  {
+    "id": "claim-bls-programmers-down",
+    "text": "BLS projects U.S. computer programmer employment to decline 7.3% from 2025 to 2035, a decrease of about 8,100 jobs.",
+    "kind": "forecast",
+    "status": "observed",
+    "confidence": 0.99,
+    "evidenceIds": [
+      "evidence-bls-programmers"
+    ],
+    "eventIds": [
+      "bls-2025-2035-ai-occupation-split"
+    ]
+  },
+  {
+    "id": "claim-execution-pressure-vs-system-role",
+    "text": "Execution-heavy programming roles appear more exposed to automation pressure than broader software development roles that include design, integration and system responsibility.",
+    "kind": "interpretation",
+    "status": "inferred",
+    "confidence": 0.87,
+    "evidenceIds": [
+      "evidence-bls-software-developers",
+      "evidence-bls-programmers"
+    ],
+    "eventIds": [
+      "bls-2025-2035-ai-occupation-split"
+    ],
+    "notes": "Inference from occupation definitions and divergent BLS projections; not a causal estimate of AI alone."
+  },
+  {
+    "id": "claim-oecd-high-skill-shortages",
+    "text": "Across 38 countries in the OECD Skills for Jobs 2026 database, persistent shortages are concentrated in high-skilled occupations, especially ICT, health and teaching professionals.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.97,
+    "evidenceIds": [
+      "evidence-oecd-shortages"
+    ],
+    "eventIds": [
+      "oecd-skill-shortages-2026"
+    ]
+  },
+  {
+    "id": "claim-oecd-us-ict-shortage-intensified",
+    "text": "OECD reports that shortages of ICT professionals in the United States intensified after the 2022 launch of ChatGPT.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.9,
+    "evidenceIds": [
+      "evidence-oecd-us-ict"
+    ],
+    "eventIds": [
+      "oecd-skill-shortages-2026"
+    ],
+    "notes": "OECD describes the association; this does not establish that ChatGPT caused the shortage."
+  },
+  {
+    "id": "claim-imf-ai-exposed-demand-down",
+    "text": "Across 40 million online job postings in 19 Asian economies, employer demand fell by nearly 10% in more AI-exposed occupations relative to less-exposed occupations.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.97,
+    "evidenceIds": [
+      "evidence-imf-demand-gap"
+    ],
+    "eventIds": [
+      "imf-asia-ai-labor-market-2026"
+    ]
+  },
+  {
+    "id": "claim-imf-effect-stabilized",
+    "text": "IMF finds that the relative decline in employer demand for more AI-exposed occupations appears to have stabilized even as AI capabilities continued to improve.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.91,
+    "evidenceIds": [
+      "evidence-imf-stabilized"
+    ],
+    "eventIds": [
+      "imf-asia-ai-labor-market-2026"
+    ]
+  },
+  {
+    "id": "claim-imf-ai-skills-rising",
+    "text": "IMF reports rising demand for workers with AI skills in Asian job postings.",
+    "kind": "fact",
+    "status": "observed",
+    "confidence": 0.94,
+    "evidenceIds": [
+      "evidence-imf-ai-skills"
+    ],
+    "eventIds": [
+      "imf-asia-ai-labor-market-2026"
+    ]
+  },
+  {
+    "id": "claim-entry-path-needs-separate-tracking",
+    "text": "Entry-level pathways should be tracked separately from total occupational employment because task automation can weaken the route into a profession before the profession itself contracts.",
+    "kind": "interpretation",
+    "status": "inferred",
+    "confidence": 0.82,
+    "evidenceIds": [
+      "evidence-ilo-review-youth",
+      "evidence-imf-demand-gap"
+    ],
+    "eventIds": [
+      "ilo-genai-empirical-review-2026",
+      "imf-asia-ai-labor-market-2026"
+    ],
+    "notes": "Career-planning inference supported by youth-risk and hiring-demand evidence; not yet a universal labor-market law."
+  }
+]
