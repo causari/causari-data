@@ -175,7 +175,7 @@ function normalizeCanonicalEvent(raw, sourceIds = []) {
   };
   return { event, promotion };
 }
-function activeSignalSnapshot(signals, checkedAt, intake, delta) {
+function activeSignalSnapshot(signals, checkedAt, intake, delta, previousSnapshot) {
   const counts = { up: 0, down: 0, mixed: 0 };
   const byDomain = {};
   for (const signal of signals) {
@@ -186,14 +186,14 @@ function activeSignalSnapshot(signals, checkedAt, intake, delta) {
   }
   return {
     date: checkedAt,
-    substantive: inputBoolean(intake.quality.substantive),
+    substantive: previousSnapshot?.substantive === true || inputBoolean(intake.quality.substantive),
     counts,
     totalSignals: signals.length,
     byDomain,
-    newEventIds: delta.newEventIds,
-    updatedEventIds: delta.updatedEventIds,
-    newSignalIds: delta.newSignalIds,
-    updatedSignalIds: delta.updatedSignalIds,
+    newEventIds: uniqueAppend(previousSnapshot?.newEventIds || [], delta.newEventIds),
+    updatedEventIds: uniqueAppend(previousSnapshot?.updatedEventIds || [], delta.updatedEventIds),
+    newSignalIds: uniqueAppend(previousSnapshot?.newSignalIds || [], delta.newSignalIds),
+    updatedSignalIds: uniqueAppend(previousSnapshot?.updatedSignalIds || [], delta.updatedSignalIds),
     ingestId: intake.ingestId,
   };
 }
@@ -217,6 +217,11 @@ const forecasts = readJson(PATHS.forecasts, []);
 const signals = readJson(PATHS.signals, []);
 const snapshots = readJson(PATHS.snapshots, []);
 const ingestLog = readJson(PATHS.ingestLog, []);
+
+const previousCheckedAt = manifest.monitoring?.lastCheckedAt;
+if (previousCheckedAt && input.checkedAt < previousCheckedAt) {
+  fail('checkedAt cannot move backwards: ' + input.checkedAt + ' < ' + previousCheckedAt);
+}
 
 const previousLog = ingestLog.find((entry) => entry.ingestId === input.ingestId);
 if (previousLog) {
@@ -285,8 +290,9 @@ const delta = {
   newSignalIds: signalMerge.created,
   updatedSignalIds: signalMerge.updated,
 };
+const previousSnapshot = snapshots.find((snapshot) => snapshot.date === input.checkedAt);
 const nextSnapshots = snapshots.filter((snapshot) => snapshot.date !== input.checkedAt);
-nextSnapshots.push(activeSignalSnapshot(signalMerge.result, input.checkedAt, input, delta));
+nextSnapshots.push(activeSignalSnapshot(signalMerge.result, input.checkedAt, input, delta, previousSnapshot));
 nextSnapshots.sort((a, b) => a.date.localeCompare(b.date));
 
 manifest.monitoring ||= {};
