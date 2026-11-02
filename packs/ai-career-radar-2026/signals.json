@@ -1,0 +1,154 @@
+[
+  {
+    "id": "vn-genai-exposure",
+    "label": "GenAI task exposure in Viet Nam",
+    "shortLabel": "VN exposure",
+    "domain": "workforce",
+    "direction": "mixed",
+    "observedAt": "2026-04-16",
+    "horizon": "medium",
+    "evidenceType": "observed",
+    "confidence": "high",
+    "claimIds": [
+      "claim-vn-one-in-five-exposed",
+      "claim-vn-high-automation-under-two-percent"
+    ],
+    "summary": "Exposure is broad (~1 in 5 workers), but the high full-automation-risk group remains below 2%.",
+    "implications": {
+      "developer": "Prepare for task redesign, not panic about occupation extinction.",
+      "freelancer": "Expect more AI-assisted work and pricing pressure on routine tasks.",
+      "ceo": "Redesign tasks before assuming headcount replacement.",
+      "citizen": "AI exposure does not mean your whole job disappears."
+    }
+  },
+  {
+    "id": "entry-level-opportunity",
+    "label": "Entry-level opportunity",
+    "shortLabel": "Entry-level",
+    "domain": "entry-level",
+    "direction": "down",
+    "observedAt": "2026-06-01",
+    "horizon": "short",
+    "evidenceType": "research-review",
+    "confidence": "medium",
+    "claimIds": [
+      "claim-ilo-younger-worker-risk",
+      "claim-entry-path-needs-separate-tracking"
+    ],
+    "summary": "ILO's evidence review flags erosion of opportunities for younger workers as an emerging risk.",
+    "implications": {
+      "developer": "Build production ownership and review skills earlier, not only coding speed.",
+      "freelancer": "Portfolio proof and outcome ownership matter more as basic gigs compress.",
+      "ceo": "Do not automate away the learning ladder needed to create future senior talent.",
+      "citizen": "The path into some professions may change before total employment changes."
+    }
+  },
+  {
+    "id": "software-development-demand",
+    "label": "Software developer demand",
+    "shortLabel": "Software dev",
+    "domain": "software",
+    "direction": "up",
+    "observedAt": "2026-08-27",
+    "horizon": "long",
+    "evidenceType": "forecast",
+    "confidence": "high",
+    "claimIds": [
+      "claim-bls-software-developers-up"
+    ],
+    "summary": "BLS projects U.S. software developer employment +10.2% from 2025 to 2035.",
+    "implications": {
+      "developer": "Do not abandon software; move up toward system design, integration and ownership.",
+      "freelancer": "Higher-value software delivery remains viable when tied to outcomes.",
+      "ceo": "Software capability stays strategic even as implementation productivity rises.",
+      "citizen": "AI does not imply all software careers are shrinking."
+    }
+  },
+  {
+    "id": "routine-programming-demand",
+    "label": "Routine programming demand",
+    "shortLabel": "Programming",
+    "domain": "software",
+    "direction": "down",
+    "observedAt": "2026-08-27",
+    "horizon": "long",
+    "evidenceType": "forecast",
+    "confidence": "high",
+    "claimIds": [
+      "claim-bls-programmers-down",
+      "claim-execution-pressure-vs-system-role"
+    ],
+    "summary": "BLS projects U.S. computer programmer employment -7.3% from 2025 to 2035.",
+    "implications": {
+      "developer": "Pure implementation is becoming a weaker differentiator.",
+      "freelancer": "Commodity coding gigs face stronger price and automation pressure.",
+      "ceo": "Automate repetitive implementation while retaining architecture and accountability.",
+      "citizen": "Occupations can split: narrower task bundles shrink while broader roles grow."
+    }
+  },
+  {
+    "id": "ict-skill-shortage",
+    "label": "Advanced ICT skill scarcity",
+    "shortLabel": "ICT shortage",
+    "domain": "skills",
+    "direction": "up",
+    "observedAt": "2026-10-14",
+    "horizon": "medium",
+    "evidenceType": "observed",
+    "confidence": "high",
+    "claimIds": [
+      "claim-oecd-high-skill-shortages",
+      "claim-oecd-us-ict-shortage-intensified"
+    ],
+    "summary": "OECD still finds persistent shortages in high-skilled ICT occupations across many countries.",
+    "implications": {
+      "developer": "Deep technical judgment remains scarce even as code generation gets cheaper.",
+      "freelancer": "Specialized expertise can defend margins better than generic implementation.",
+      "ceo": "AI adoption does not remove the need for scarce senior technical capability.",
+      "citizen": "High-skill shortages can coexist with automation pressure elsewhere."
+    }
+  },
+  {
+    "id": "ai-exposed-hiring-asia",
+    "label": "Hiring demand in AI-exposed occupations",
+    "shortLabel": "AI-exposed hiring",
+    "domain": "employment",
+    "direction": "down",
+    "observedAt": "2026-10-15",
+    "horizon": "short",
+    "evidenceType": "observed",
+    "confidence": "high",
+    "claimIds": [
+      "claim-imf-ai-exposed-demand-down",
+      "claim-imf-effect-stabilized"
+    ],
+    "summary": "IMF finds nearly 10% weaker employer demand in more AI-exposed occupations across 19 Asian economies, relative to less-exposed occupations.",
+    "implications": {
+      "developer": "Track hiring conditions by task and seniority, not only occupation titles.",
+      "freelancer": "Demand can weaken in exposed service categories even while AI-enabled services grow.",
+      "ceo": "Rebalancing demand is visible, but the relative decline has not simply accelerated with model capability.",
+      "citizen": "Regional hiring evidence matters more than global AI headlines for career decisions."
+    }
+  },
+  {
+    "id": "ai-skill-demand",
+    "label": "Demand for AI skills",
+    "shortLabel": "AI skills",
+    "domain": "skills",
+    "direction": "up",
+    "observedAt": "2026-10-15",
+    "horizon": "short",
+    "evidenceType": "observed",
+    "confidence": "high",
+    "claimIds": [
+      "claim-imf-ai-skills-rising"
+    ],
+    "summary": "IMF reports rising demand for workers with AI skills in Asian job postings.",
+    "implications": {
+      "developer": "AI integration, evaluation and orchestration should become part of the core toolkit.",
+      "freelancer": "AI-native service capability is a growing wedge.",
+      "ceo": "Upskilling existing teams may be as important as buying AI tools.",
+      "citizen": "AI literacy is increasingly useful even outside pure AI jobs."
+    }
+  }
+]
