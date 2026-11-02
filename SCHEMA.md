@@ -18,6 +18,7 @@ Version: 1.0
 | `wikidataId` | string | no | Wikidata Q-id for entity linking (e.g. `Q22661306`) |
 | `forecastConfidence` | number | no | 0-1, only for future/speculative events |
 | `forecastReasoning` | string | no | Explanation for forecast confidence |
+| `forecastQuality` | object | no | Forecast provenance/calibration state; legacy demo scenarios must be explicitly marked rather than presented as research-backed predictions |
 | `globalVisibility` | enum | no | `pack-only`, `contextual`, or `major`; promotion hint, not an automatic render rule |
 | `knowledgeLayer` | enum | no | `world`, `evidence`, or `forecast`; epistemic layer used by global projections/filters |
 | `canonicalOrigin` | string | no | Pack or ingestion pipeline that first promoted the canonical event |
