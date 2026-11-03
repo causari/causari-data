@@ -2538,13 +2538,20 @@
     "fromEvent": "babel",
     "toEvent": "reactjs",
     "relationship": "enabled",
-    "confidence": 0.9,
-    "evidence": "React's JSX syntax requires Babel to compile. Without @babel/plugin-transform-react-jsx, JSX is a syntax error. Babel made React's unconventional syntax universally deployable.",
+    "confidence": 0.75,
+    "evidence": "Babel's React preset includes the JSX transform that converts JSX into JavaScript runtime calls. This made Babel a widely used compilation capability for React JSX workflows after React already existed; JSX is optional and Babel is not the only possible compiler.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — web ecosystem"
+        "type": "primary",
+        "reliability": 0.98,
+        "citation": "Babel — @babel/preset-react documentation",
+        "url": "https://babeljs.io/docs/babel-preset-react"
+      },
+      {
+        "type": "primary",
+        "reliability": 0.98,
+        "citation": "React — Quick Start: JSX is optional",
+        "url": "https://react.dev/learn"
       }
     ],
     "contributedBy": "system",
@@ -4276,12 +4283,19 @@
     "toEvent": "kubernetes",
     "relationship": "enabled",
     "confidence": 0.88,
-    "evidence": "Kubernetes deprecated the Docker shim in 1.24 and uses containerd directly via CRI (Container Runtime Interface). containerd IS the K8s runtime on most production clusters today.",
+    "evidence": "Kubernetes requires a container runtime on each node and supports containerd through the Container Runtime Interface (CRI). containerd therefore provides a concrete runtime capability for Kubernetes clusters after Kubernetes' original 2014 milestone; this is lifecycle capability, not origin causation.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — cloud & devops"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "Kubernetes — Container Runtimes",
+        "url": "https://kubernetes.io/docs/setup/production-environment/container-runtimes/"
+      },
+      {
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "Kubernetes — Container Runtime Interface (CRI)",
+        "url": "https://kubernetes.io/docs/concepts/containers/cri/"
       }
     ],
     "contributedBy": "system",
@@ -4312,13 +4326,14 @@
     "fromEvent": "kubernetes",
     "toEvent": "etcd",
     "relationship": "accelerated",
-    "confidence": 0.9,
-    "evidence": "etcd predates Kubernetes, but Kubernetes standardized etcd as its backing store and dramatically expanded etcd's production adoption. Kubernetes accelerated etcd adoption rather than causing its creation.",
+    "confidence": 0.72,
+    "evidence": "Kubernetes uses etcd as the backing store for cluster data, creating sustained production use of etcd inside Kubernetes control planes. That supports an adoption influence on etcd after etcd already existed, but does not establish that Kubernetes caused etcd's creation.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — cloud & devops"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "Kubernetes — Operating etcd clusters for Kubernetes",
+        "url": "https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/"
       }
     ],
     "contributedBy": "system",
@@ -7611,13 +7626,20 @@
     "fromEvent": "kotlin",
     "toEvent": "android",
     "relationship": "accelerated",
-    "confidence": 0.82,
-    "evidence": "Google announced Kotlin as the preferred Android language in 2017. Kotlin's adoption as the official language accelerated Android development quality and reduced boilerplate dramatically.",
+    "confidence": 0.84,
+    "evidence": "Android adopted a Kotlin-first approach and Android Studio fully supports Kotlin, making Kotlin a central part of the Android developer ecosystem after Android already existed. This is an ecosystem/adoption influence, not causation of the original Android platform.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — mobile"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "Android Developers — Android's Kotlin-first approach",
+        "url": "https://developer.android.com/kotlin/first"
+      },
+      {
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "Android Developers — Kotlin on Android FAQ",
+        "url": "https://developer.android.com/kotlin/faq"
       }
     ],
     "contributedBy": "system",
