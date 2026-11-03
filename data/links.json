@@ -185,12 +185,13 @@
     "toEvent": "web",
     "relationship": "enabled",
     "confidence": 0.95,
-    "evidence": "TCP/IP made the WWW protocol layer possible. The web is an application built on the internet; not the same thing.",
+    "evidence": "The World Wide Web was built as an application layer that used the existing Internet for network transport and distribution. W3C's history records Web software being made available over the Internet and the Web's protocols running on that network substrate.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "W3C, History of the World Wide Web.",
+        "url": "https://www.w3.org/about/history/"
       }
     ],
     "contributedBy": "system",
@@ -652,13 +653,14 @@
     "fromEvent": "backprop",
     "toEvent": "alexnet",
     "relationship": "enabled",
-    "confidence": 0.8,
-    "evidence": "Backpropagation made multi-layer training mathematically tractable; AlexNet showed it scaled to deep CNNs on GPUs. Same algorithm, 26 years later, finally on hardware that could run it.",
+    "confidence": 0.9,
+    "evidence": "AlexNet trained a multi-layer convolutional neural network end-to-end with gradient-based learning. Backpropagation is the optimization mechanism that made training such deep layered networks practical.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "academic",
+        "reliability": 0.99,
+        "citation": "Krizhevsky, Sutskever & Hinton, 'ImageNet Classification with Deep Convolutional Neural Networks', NIPS 2012.",
+        "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
       }
     ],
     "contributedBy": "system",
@@ -666,17 +668,18 @@
     "scope": "world"
   },
   {
-    "id": "imagenet--caused-->alexnet",
+    "id": "imagenet--enabled-->alexnet",
     "fromEvent": "imagenet",
     "toEvent": "alexnet",
-    "relationship": "caused",
+    "relationship": "enabled",
     "confidence": 0.95,
-    "evidence": "AlexNet was specifically trained on and submitted to the ImageNet 2012 challenge — without the labeled dataset there was no benchmark to win and no signal that depth mattered.",
+    "evidence": "AlexNet was trained and evaluated on the ImageNet Large Scale Visual Recognition Challenge dataset. ImageNet supplied the labeled benchmark and training corpus that made the 2012 AlexNet result possible.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "academic",
+        "reliability": 0.99,
+        "citation": "Krizhevsky, Sutskever & Hinton, 'ImageNet Classification with Deep Convolutional Neural Networks', NIPS 2012.",
+        "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
       }
     ],
     "contributedBy": "system",
@@ -720,17 +723,18 @@
     "scope": "world"
   },
   {
-    "id": "transformer--caused-->bert",
+    "id": "transformer--enabled-->bert",
     "fromEvent": "transformer",
     "toEvent": "bert",
-    "relationship": "caused",
-    "confidence": 0.95,
-    "evidence": "BERT is a transformer encoder. Google's team applied the 2017 architecture to bidirectional pre-training and produced state-of-the-art NLP within a year.",
+    "relationship": "enabled",
+    "confidence": 0.97,
+    "evidence": "BERT is explicitly a Transformer-based bidirectional encoder model. The 2017 Transformer architecture is the direct architectural substrate BERT adapted for deep bidirectional pre-training.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "academic",
+        "reliability": 0.99,
+        "citation": "Devlin et al., 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding', 2018.",
+        "url": "https://arxiv.org/abs/1810.04805"
       }
     ],
     "contributedBy": "system",
@@ -738,17 +742,18 @@
     "scope": "world"
   },
   {
-    "id": "transformer--caused-->gpt2",
+    "id": "transformer--enabled-->gpt2",
     "fromEvent": "transformer",
     "toEvent": "gpt2",
-    "relationship": "caused",
-    "confidence": 0.95,
-    "evidence": "GPT-2 is a transformer decoder scaled to 1.5B params. The architectural choice is direct; the contribution is scale + the discovery that autoregressive pre-training transfers broadly.",
+    "relationship": "enabled",
+    "confidence": 0.97,
+    "evidence": "OpenAI describes GPT-2 as a large Transformer-based language model. The Transformer decoder architecture is a direct technical prerequisite for GPT-2's design.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "OpenAI, 'Better language models and their implications' (GPT-2), 2019.",
+        "url": "https://openai.com/index/better-language-models/"
       }
     ],
     "contributedBy": "system",
@@ -760,13 +765,14 @@
     "fromEvent": "gpt2",
     "toEvent": "gpt3",
     "relationship": "enabled",
-    "confidence": 0.8,
-    "evidence": "GPT-2 demonstrated that scaling helped without architectural change; GPT-3 took the same recipe to 175B and unlocked emergent few-shot learning.",
+    "confidence": 0.95,
+    "evidence": "The GPT-3 paper states that GPT-3 uses the same model and architecture as GPT-2, scaled across a much larger family up to 175B parameters. GPT-2 therefore forms the direct model lineage and scaling recipe for GPT-3.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "academic",
+        "reliability": 0.99,
+        "citation": "Brown et al., 'Language Models are Few-Shot Learners', 2020.",
+        "url": "https://arxiv.org/abs/2005.14165"
       }
     ],
     "contributedBy": "system",
@@ -778,13 +784,14 @@
     "fromEvent": "gpt3",
     "toEvent": "chatgpt",
     "relationship": "enabled",
-    "confidence": 0.8,
-    "evidence": "ChatGPT is GPT-3.5 + instruction tuning + RLHF + a chat UI. The base capability had to exist before product packaging could turn it into a consumer phenomenon.",
+    "confidence": 0.82,
+    "evidence": "ChatGPT was fine-tuned from the GPT-3.5 series and then aligned for dialogue with reinforcement learning from human feedback. GPT-3 established the preceding GPT scaling lineage, while GPT-3.5 plus instruction/RLHF training supplied the immediate base.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "OpenAI, 'Introducing ChatGPT', 30 Nov 2022.",
+        "url": "https://openai.com/index/chatgpt/"
       }
     ],
     "contributedBy": "system",
@@ -8651,18 +8658,18 @@
     "scope": "world"
   },
   {
-    "id": "transformer--caused-->gpt3",
+    "id": "transformer--enabled-->gpt3",
     "fromEvent": "transformer",
     "toEvent": "gpt3",
-    "relationship": "caused",
-    "confidence": 0.92,
-    "evidence": "GPT-3 is a 175B-parameter decoder-only Transformer; the architecture is its defining substrate, scaled up. Without the 2017 Transformer there is no GPT-3 — direct technical descent (beyond the existing gpt2→gpt3 scale step).",
+    "relationship": "enabled",
+    "confidence": 0.97,
+    "evidence": "GPT-3 uses the GPT-2 model architecture at much larger scale, and that architecture is decoder-only Transformer. The Transformer is therefore a direct architectural prerequisite, not a sufficient cause by itself.",
     "sources": [
       {
         "type": "academic",
-        "url": "https://arxiv.org/abs/2005.14165",
-        "citation": "Brown et al., 'Language Models are Few-Shot Learners' (GPT-3), NeurIPS 2020",
-        "reliability": 0.95
+        "reliability": 0.99,
+        "citation": "Brown et al., 'Language Models are Few-Shot Learners', 2020.",
+        "url": "https://arxiv.org/abs/2005.14165"
       }
     ],
     "contributedBy": "expert",

@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.3.1",
+  "version": "1.4.1",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -321,6 +321,41 @@
       "toEvent": "imf-asia-ai-labor-market-2026",
       "relationship": "context",
       "reason": "The IMF study explicitly compares hiring demand across AI-exposed occupations in the post-ChatGPT period. Contextual association is not a causal claim."
+    },
+    {
+      "id": "dartmouth_conf--context-->deep_blue",
+      "fromEvent": "dartmouth_conf",
+      "toEvent": "deep_blue",
+      "relationship": "context",
+      "reason": "Deep Blue belongs to the long symbolic/search AI tradition associated with the field Dartmouth helped name, but the four-decade lineage is too indirect for a causal edge."
+    },
+    {
+      "id": "deep_blue--context-->alphago",
+      "fromEvent": "deep_blue",
+      "toEvent": "alphago",
+      "relationship": "context",
+      "reason": "Deep Blue and AlphaGo form a meaningful game-AI milestone lineage, but AlphaGo's technical ancestry is not a direct causal continuation of Deep Blue."
+    },
+    {
+      "id": "genome--context-->alphafold2",
+      "fromEvent": "genome",
+      "toEvent": "alphafold2",
+      "relationship": "context",
+      "reason": "The genomics era expanded sequence data used by modern protein models, but the Human Genome Project itself is too broad a proxy to encode as a direct enabling cause of AlphaFold 2."
+    },
+    {
+      "id": "alexnet--context-->alphafold2",
+      "fromEvent": "alexnet",
+      "toEvent": "alphafold2",
+      "relationship": "context",
+      "reason": "AlexNet marks the deep-learning-at-scale methodological shift that contextualizes AlphaFold 2, but it is not a direct technical prerequisite of AlphaFold 2's architecture."
+    },
+    {
+      "id": "imagenet--context-->transformer",
+      "fromEvent": "imagenet",
+      "toEvent": "transformer",
+      "relationship": "context",
+      "reason": "ImageNet/AlexNet established a deep-learning-at-scale research paradigm, but the Transformer architecture arose from sequence-modeling work rather than a direct ImageNet causal mechanism."
     }
   ],
   "filterPolicy": {
@@ -425,6 +460,42 @@
       "id": "rena--enabled-->darwin_ev",
       "reason": "Long-run humanist influence is contextual and too diffuse to encode as a direct enabling edge.",
       "reviewState": "legacy-debt"
+    },
+    {
+      "id": "dartmouth_conf--inspired-->deep_blue",
+      "reason": "Deep Blue belongs to the long symbolic/search AI tradition associated with the field Dartmouth helped name, but the four-decade lineage is too indirect for a causal edge.",
+      "reviewState": "context-not-causal"
+    },
+    {
+      "id": "deep_blue--inspired-->alphago",
+      "reason": "Deep Blue and AlphaGo form a meaningful game-AI milestone lineage, but AlphaGo's technical ancestry is not a direct causal continuation of Deep Blue.",
+      "reviewState": "context-not-causal"
+    },
+    {
+      "id": "genome--enabled-->alphafold2",
+      "reason": "The genomics era expanded sequence data used by modern protein models, but the Human Genome Project itself is too broad a proxy to encode as a direct enabling cause of AlphaFold 2.",
+      "reviewState": "context-not-causal"
+    },
+    {
+      "id": "alexnet--enabled-->alphafold2",
+      "reason": "AlexNet marks the deep-learning-at-scale methodological shift that contextualizes AlphaFold 2, but it is not a direct technical prerequisite of AlphaFold 2's architecture.",
+      "reviewState": "context-not-causal"
+    },
+    {
+      "id": "imagenet--inspired-->transformer",
+      "reason": "ImageNet/AlexNet established a deep-learning-at-scale research paradigm, but the Transformer architecture arose from sequence-modeling work rather than a direct ImageNet causal mechanism.",
+      "reviewState": "context-not-causal"
     }
-  ]
+  ],
+  "causalLinkPolicy": {
+    "blockedSourceTypes": [
+      "demo-seed"
+    ],
+    "allowLinkIds": [
+      "lang--enabled-->write",
+      "write--enabled-->alex",
+      "mcculloch_pitts--enabled-->perceptron"
+    ],
+    "rationale": "Global Canvas hides prototype demo-seed causal claims unless explicitly allowlisted. Research-backed/curated links remain eligible; suppressedCausalLinks still takes precedence."
+  }
 }

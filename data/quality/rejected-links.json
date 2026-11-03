@@ -378,5 +378,98 @@
     "rejectedFrom": "data/links.json",
     "rejectionType": "direction-mismatch",
     "reason": "Spark (2014) cannot inspire scikit-learn (2007). The evidence actually describes similar API ergonomics in the opposite chronological direction."
+  },
+  {
+    "id": "imagenet--caused-->alexnet",
+    "fromEvent": "imagenet",
+    "toEvent": "alexnet",
+    "relationship": "caused",
+    "confidence": 0.95,
+    "evidence": "AlexNet was specifically trained on and submitted to the ImageNet 2012 challenge — without the labeled dataset there was no benchmark to win and no signal that depth mattered.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Direct architectural dependency is better represented as enabled, not caused; replaced by imagenet--enabled-->alexnet.",
+    "replacedBy": "imagenet--enabled-->alexnet"
+  },
+  {
+    "id": "transformer--caused-->bert",
+    "fromEvent": "transformer",
+    "toEvent": "bert",
+    "relationship": "caused",
+    "confidence": 0.95,
+    "evidence": "BERT is a transformer encoder. Google's team applied the 2017 architecture to bidirectional pre-training and produced state-of-the-art NLP within a year.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Direct architectural dependency is better represented as enabled, not caused; replaced by transformer--enabled-->bert.",
+    "replacedBy": "transformer--enabled-->bert"
+  },
+  {
+    "id": "transformer--caused-->gpt2",
+    "fromEvent": "transformer",
+    "toEvent": "gpt2",
+    "relationship": "caused",
+    "confidence": 0.95,
+    "evidence": "GPT-2 is a transformer decoder scaled to 1.5B params. The architectural choice is direct; the contribution is scale + the discovery that autoregressive pre-training transfers broadly.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Direct architectural dependency is better represented as enabled, not caused; replaced by transformer--enabled-->gpt2.",
+    "replacedBy": "transformer--enabled-->gpt2"
+  },
+  {
+    "id": "transformer--caused-->gpt3",
+    "fromEvent": "transformer",
+    "toEvent": "gpt3",
+    "relationship": "caused",
+    "confidence": 0.92,
+    "evidence": "GPT-3 is a 175B-parameter decoder-only Transformer; the architecture is its defining substrate, scaled up. Without the 2017 Transformer there is no GPT-3 — direct technical descent (beyond the existing gpt2→gpt3 scale step).",
+    "sources": [
+      {
+        "type": "academic",
+        "url": "https://arxiv.org/abs/2005.14165",
+        "citation": "Brown et al., 'Language Models are Few-Shot Learners' (GPT-3), NeurIPS 2020",
+        "reliability": 0.95
+      }
+    ],
+    "contributedBy": "expert",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Direct architectural dependency is better represented as enabled, not caused; replaced by transformer--enabled-->gpt3.",
+    "replacedBy": "transformer--enabled-->gpt3"
   }
 ]
