@@ -1,0 +1,52 @@
+[
+  {
+    "id": "observed-reporting",
+    "title": "Reported developments",
+    "audiences": [
+      "researcher",
+      "citizen"
+    ],
+    "guidingQuestion": "What has been reported, and how strong is the evidence?",
+    "includedEventIds": [
+      "iran-civil-defence-video-reported-2026-11-03",
+      "us-qeshm-strike-reported-2026-11-03"
+    ],
+    "filters": {
+      "knowledgeLayer": [
+        "evidence"
+      ],
+      "epistemicStatus": [
+        "reported-secondary",
+        "reported-attributed"
+      ]
+    }
+  },
+  {
+    "id": "escalation-scenarios",
+    "title": "Escalation branches (hypothetical only)",
+    "audiences": [
+      "researcher",
+      "citizen"
+    ],
+    "guidingQuestion": "Which potential developments should be monitored without treating them as predictions?",
+    "scenarioOnly": true,
+    "scenarios": [
+      {
+        "id": "scenario-conventional-conflict",
+        "title": "Continued conventional conflict",
+        "status": "hypothetical"
+      },
+      {
+        "id": "scenario-expanded-strikes",
+        "title": "Expanded attacks on strategic facilities",
+        "status": "hypothetical"
+      },
+      {
+        "id": "scenario-nuclear-use",
+        "title": "Use of a nuclear weapon",
+        "status": "hypothetical"
+      }
+    ],
+    "notes": "Branches are not event nodes, causal links or probabilistic forecasts."
+  }
+]
