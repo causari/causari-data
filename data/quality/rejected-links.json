@@ -108,5 +108,275 @@
     "rejectedFrom": "data/links.json",
     "rejectionType": "forecast-temporal-inversion",
     "reason": "The source fusion scenario is dated 2036 while the target renewable-dominance scenario is dated 2031; this cannot be represented as a forward causal dependency."
+  },
+  {
+    "id": "transistor--enabled-->eniac",
+    "fromEvent": "transistor",
+    "toEvent": "eniac",
+    "relationship": "enabled",
+    "confidence": 0.5,
+    "evidence": "While ENIAC used vacuum tubes, the transistor (invented 2 years later) was critical for the reliability needed in subsequent computers.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — computing"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "retro-causal",
+    "reason": "The transistor was invented after ENIAC and enabled later generations of computers, not the 1945 ENIAC event."
+  },
+  {
+    "id": "c_language--caused-->unix",
+    "fromEvent": "c_language",
+    "toEvent": "unix",
+    "relationship": "caused",
+    "confidence": 0.92,
+    "evidence": "Unix was rewritten in C in 1973 — the first OS written in a high-level language. C and Unix co-evolved; each made the other viable.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — computing"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Legacy \"caused\" overstated lifecycle influence; replaced by c_language--enabled-->unix with targetFacet=evolution.",
+    "replacedBy": "c_language--enabled-->unix"
+  },
+  {
+    "id": "von_neumann_arch--enabled-->turing_m",
+    "fromEvent": "von_neumann_arch",
+    "toEvent": "turing_m",
+    "relationship": "enabled",
+    "confidence": 0.85,
+    "evidence": "Von Neumann's stored-program architecture is a practical realization of Turing's universal machine concept.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — computing"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "retro-causal",
+    "reason": "Von Neumann's 1945 stored-program architecture cannot enable Turing's 1936 computation model; the evidence describes a later practical realization of an earlier concept."
+  },
+  {
+    "id": "babel--enabled-->angularjs",
+    "fromEvent": "babel",
+    "toEvent": "angularjs",
+    "relationship": "enabled",
+    "confidence": 0.7,
+    "evidence": "Angular 2 adopted TypeScript/Babel for decorators and class syntax. The ability to use next-gen JS syntax in 2016 browsers was Babel's enabling contribution.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — web ecosystem"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "wrong-target",
+    "reason": "The evidence discusses Angular 2-era tooling, not the 2010 AngularJS event. The target node is semantically wrong."
+  },
+  {
+    "id": "nextjs--caused-->vercel",
+    "fromEvent": "nextjs",
+    "toEvent": "vercel",
+    "relationship": "caused",
+    "confidence": 0.88,
+    "evidence": "Vercel creates and maintains Next.js. Next.js is Vercel's distribution vehicle — every Next.js project is a potential Vercel customer.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — web ecosystem"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Legacy \"caused\" overstated lifecycle influence; replaced by nextjs--accelerated-->vercel with targetFacet=evolution.",
+    "replacedBy": "nextjs--accelerated-->vercel"
+  },
+  {
+    "id": "nginx--enabled-->haproxy",
+    "fromEvent": "nginx",
+    "toEvent": "haproxy",
+    "relationship": "enabled",
+    "confidence": 0.65,
+    "evidence": "Nginx and HAProxy serve complementary roles — Nginx as web server/reverse proxy, HAProxy as the TCP/HTTP load balancer in front. The distinction drove both tools to specialize.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — cloud & devops"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "non-causal-complementarity",
+    "reason": "The evidence only establishes complementarity between Nginx and HAProxy, not that Nginx enabled the earlier HAProxy event."
+  },
+  {
+    "id": "kubernetes--caused-->etcd",
+    "fromEvent": "kubernetes",
+    "toEvent": "etcd",
+    "relationship": "caused",
+    "confidence": 0.95,
+    "evidence": "etcd is Kubernetes's only supported data store. Every Kubernetes cluster requires etcd. The relationship is architectural: K8s controllers read/write to etcd via the API server.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — cloud & devops"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Legacy \"caused\" overstated lifecycle influence; replaced by kubernetes--accelerated-->etcd with targetFacet=adoption.",
+    "replacedBy": "kubernetes--accelerated-->etcd"
+  },
+  {
+    "id": "nosql_movement--caused-->cassandra",
+    "fromEvent": "nosql_movement",
+    "toEvent": "cassandra",
+    "relationship": "caused",
+    "confidence": 0.88,
+    "evidence": "Cassandra is a NoSQL database — wide-column, eventually consistent, partition-tolerant. Facebook built it to solve problems that relational DBs couldn't: geo-distributed, always-available write throughput.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — databases"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "direction-mismatch",
+    "reason": "Cassandra predates the 2009 NoSQL movement label. It can be an antecedent/example of the movement, but the later movement did not cause the earlier Cassandra event."
+  },
+  {
+    "id": "rag_pattern--caused-->pinecone",
+    "fromEvent": "rag_pattern",
+    "toEvent": "pinecone",
+    "relationship": "caused",
+    "confidence": 0.88,
+    "evidence": "Pinecone was purpose-built for RAG. The company's pitch was \"the vector database for LLM applications\" — retrieval in RAG is the core use case.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — AI tooling"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Legacy \"caused\" overstated lifecycle influence; replaced by rag_pattern--accelerated-->pinecone with targetFacet=adoption.",
+    "replacedBy": "rag_pattern--accelerated-->pinecone"
+  },
+  {
+    "id": "oidc--caused-->okta",
+    "fromEvent": "oidc",
+    "toEvent": "okta",
+    "relationship": "caused",
+    "confidence": 0.82,
+    "evidence": "Okta implemented OIDC alongside SAML to serve consumer and modern enterprise apps. OIDC made Okta relevant beyond legacy enterprise into developer-first and SaaS applications.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — security"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "relationship-overstatement",
+    "reason": "Legacy \"caused\" overstated lifecycle influence; replaced by oidc--enabled-->okta with targetFacet=capability.",
+    "replacedBy": "oidc--enabled-->okta"
+  },
+  {
+    "id": "flutter--inspired-->react_native",
+    "fromEvent": "flutter",
+    "toEvent": "react_native",
+    "relationship": "inspired",
+    "confidence": 0.75,
+    "evidence": "Flutter was built partly as a reaction to React Native's JavaScript bridge performance bottleneck. Flutter's \"compile to native, no bridge\" architecture is designed to solve React Native's performance concerns.",
+    "sources": [
+      {
+        "type": "demo-seed",
+        "reliability": 0.9,
+        "citation": "Causari curated baseline — mobile"
+      }
+    ],
+    "contributedBy": "system",
+    "validated": true,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "direction-mismatch",
+    "reason": "Flutter (2018) cannot inspire the 2015 React Native event. Flutter documents React-style antecedents, not this reverse direction."
+  },
+  {
+    "id": "apache_spark--inspired-->scikit_learn",
+    "fromEvent": "apache_spark",
+    "toEvent": "scikit_learn",
+    "relationship": "inspired",
+    "confidence": 0.4,
+    "evidence": "Spark's MLlib brought a scikit-learn-style high-level ML API to distributed datasets, extending the familiar fit/transform paradigm to cluster scale. Shared API ergonomics — inspired, not causal.",
+    "sources": [
+      {
+        "type": "wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Apache_Spark",
+        "reliability": 0.9,
+        "citation": "Apache Spark — MLlib is \"a distributed machine-learning framework on top of Spark Core\" offering common ML algorithms at cluster scale."
+      }
+    ],
+    "contributedBy": "ai-generated",
+    "validated": false,
+    "scope": "world",
+    "rejectedAt": "2026-11-03",
+    "rejectedFrom": "data/links.json",
+    "rejectionType": "direction-mismatch",
+    "reason": "Spark (2014) cannot inspire scikit-learn (2007). The evidence actually describes similar API ergonomics in the opposite chronological direction."
   }
 ]
