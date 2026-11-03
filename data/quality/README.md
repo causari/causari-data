@@ -62,3 +62,18 @@ When a later event affects an already-existing platform/entity, encode that as a
 The canonical gate treats only backward links targeting the default `event` facet as retro-causal debt. Explicit lifecycle backlinks are allowed only when their mechanism is stated and `relationship=caused` is not used.
 
 This distinction lets Causari represent facts such as "Kotlin accelerated Android's developer ecosystem" without implying that Kotlin caused Android to exist in 2008.
+
+
+## Global causal source policy
+
+The canonical graph is broader than the public global projection. Prototype-era `demo-seed` links may remain in canonical storage for migration/audit, but the default global Canvas should not present them as equally trustworthy.
+
+`data/views/global-canvas.json.causalLinkPolicy` can block source classes for the public projection and explicitly allow a very small number of transitional backbone links.
+
+Order of precedence:
+
+1. `suppressedCausalLinks` always hides the link.
+2. `causalLinkPolicy.blockedSourceTypes` hides matching links.
+3. `causalLinkPolicy.allowLinkIds` may override the source-type block, but never suppression.
+
+The allowlist is transitional debt. Prefer replacing demo provenance with real primary/academic evidence, then remove the link from the allowlist.
