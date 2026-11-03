@@ -29,19 +29,21 @@ const rejectedLinks = read('data/quality/rejected-links.json');
 
 const errors = [];
 const warnings = [];
+const TARGET_FACETS = new Set(['event', 'adoption', 'capability', 'ecosystem', 'evolution']);
 const eventById = new Map(events.map((event) => [event.id, event]));
 const selected = new Set(view.eventIds || []);
 const suppressed = new Set((view.suppressedCausalLinks || []).map((item) => item.id));
 const legacyForecastIds = new Set(baseline.legacyForecastIds || []);
 
 const demoSeed = (item) => (item.sources || []).some((source) => source?.type === 'demo-seed');
-const isRetro = (link) => {
+const isBackwardInTime = (link) => {
   const from = eventById.get(link.fromEvent);
   const to = eventById.get(link.toEvent);
   if (!from || !to) return false;
   if (!Number.isFinite(from.yearNum) || !Number.isFinite(to.yearNum)) return false;
   return from.yearNum > to.yearNum;
 };
+const targetFacet = (link) => link.targetFacet || 'event';
 
 const forecastEvents = events.filter((event) => event.knowledgeLayer === 'forecast');
 for (const event of forecastEvents) {
@@ -81,15 +83,30 @@ for (const event of forecastEvents) {
   }
 }
 
+for (const link of links) {
+  const facet = targetFacet(link);
+  if (!TARGET_FACETS.has(facet)) errors.push('invalid targetFacet on canonical link ' + link.id + ': ' + facet);
+  if (link.relationship === 'caused' && facet !== 'event') {
+    errors.push('relationship=caused cannot target lifecycle facet: ' + link.id);
+  }
+  if (isBackwardInTime(link) && facet === 'event') {
+    // Point-event causation cannot arrive from the future.
+  } else if (isBackwardInTime(link) && facet !== 'event' && !String(link.evidence || '').trim()) {
+    errors.push('backward lifecycle link requires concrete evidence: ' + link.id);
+  }
+}
+
 const demoLinks = links.filter(demoSeed);
 const highConfidenceDemoLinks = demoLinks.filter((link) => Number(link.confidence || 0) >= 0.8);
-const retroLinks = links.filter(isRetro);
+const backwardLinks = links.filter(isBackwardInTime);
+const retroEventLinks = backwardLinks.filter((link) => targetFacet(link) === 'event');
+const lifecycleBacklinks = backwardLinks.filter((link) => targetFacet(link) !== 'event');
 
 const ceilings = baseline.debtCeilings || {};
 const debtChecks = [
   ['demoSeedCanonicalLinks', demoLinks.length],
   ['highConfidenceDemoSeedLinks', highConfidenceDemoLinks.length],
-  ['retroCausalLinks', retroLinks.length],
+  ['retroEventLinks', retroEventLinks.length],
 ];
 for (const [key, value] of debtChecks) {
   const ceiling = Number(ceilings[key]);
@@ -97,11 +114,11 @@ for (const [key, value] of debtChecks) {
   else if (value > ceiling) errors.push(key + ' increased: ' + value + ' > baseline ' + ceiling);
 }
 
-const globalRetro = retroLinks.filter(
+const globalRetroEvents = retroEventLinks.filter(
   (link) => selected.has(link.fromEvent) && selected.has(link.toEvent) && !suppressed.has(link.id),
 );
-if (globalRetro.length) {
-  for (const link of globalRetro) errors.push('global projection exposes retro-causal edge: ' + link.id);
+if (globalRetroEvents.length) {
+  for (const link of globalRetroEvents) errors.push('global projection exposes retro point-event edge: ' + link.id);
 }
 
 for (const id of baseline.requiredSuppressedGlobalLinkIds || []) {
@@ -130,9 +147,10 @@ console.log('  events=' + events.length + ' forecasts=' + forecastEvents.length)
 console.log('  links=' + links.length);
 console.log('  demo-seed links=' + demoLinks.length + ' / baseline ' + ceilings.demoSeedCanonicalLinks);
 console.log('  high-confidence demo-seed links=' + highConfidenceDemoLinks.length + ' / baseline ' + ceilings.highConfidenceDemoSeedLinks);
-console.log('  retro-causal links=' + retroLinks.length + ' / baseline ' + ceilings.retroCausalLinks);
+console.log('  backward-in-time links=' + backwardLinks.length + ' (lifecycle=' + lifecycleBacklinks.length + ', point-event=' + retroEventLinks.length + ')');
+console.log('  retro point-event links=' + retroEventLinks.length + ' / baseline ' + ceilings.retroEventLinks);
 console.log('  suppressed global links=' + suppressed.size);
-console.log('  unsuppressed global retro links=' + globalRetro.length);
+console.log('  unsuppressed global retro point-event links=' + globalRetroEvents.length);
 console.log('  archived rejected links=' + rejectedLinks.length);
 
 if (warnings.length) {
