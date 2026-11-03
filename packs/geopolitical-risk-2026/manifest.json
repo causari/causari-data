@@ -1,0 +1,32 @@
+{
+  "id": "geopolitical-risk-2026",
+  "version": "0.1.0",
+  "title": "Geopolitical Risk Timeline 2026",
+  "title_vi": "Dòng thời gian rủi ro địa chính trị 2026",
+  "description": "Evidence-first pilot separating reported developments, attributed claims and hypothetical escalation branches.",
+  "language": "en",
+  "defaultLocale": "vi",
+  "temporalMode": "incident-timeline",
+  "graphMode": "event-claim-evidence-scenario",
+  "updateCadence": "event-driven",
+  "asOf": "2026-11-03",
+  "files": {
+    "events": "events.json",
+    "links": "links.json",
+    "insights": "insights.json",
+    "claims": "claims.json",
+    "evidence": "evidence.json",
+    "sources": "sources.json",
+    "forecasts": "forecasts.json",
+    "views": "views.json"
+  },
+  "quality": {
+    "reviewStatus": "research-preview",
+    "sourcePolicy": "Official primary documents and independently corroborated reporting take precedence over secondary coverage; scenario is never observed fact."
+  },
+  "canvas": {
+    "defaultView": "observed-reporting",
+    "recommendedLayout": "timeline-lanes",
+    "laneField": "lane"
+  }
+}
