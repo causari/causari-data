@@ -1,0 +1,74 @@
+[
+  {
+    "id": "iran-civil-defence-video-reported-2026-11-03",
+    "title": "Iranian nuclear civil-defence video reported",
+    "description": "Media reporting describes an Iranian civil-defence video providing shelter and decontamination guidance. The existence of public guidance does not establish an imminent nuclear strike; the original broadcast remains to be checked.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "geopolitics"
+    ],
+    "impactScore": 0.55,
+    "tags": [
+      "iran",
+      "civil-defence",
+      "nuclear-risk",
+      "media-report"
+    ],
+    "date": "2026-11-03",
+    "dateLabel": "3 Nov 2026 (report date)",
+    "status": "completed",
+    "entities": [
+      "Iran"
+    ],
+    "knowledgeLayer": "evidence",
+    "globalVisibility": "pack-only",
+    "epistemicStatus": "reported-secondary",
+    "lane": "reported-developments",
+    "claimIds": [
+      "claim-iran-civil-defence-video-reported"
+    ],
+    "whyItMatters": "Civil preparedness messaging is observable separately from speculation about nuclear use.",
+    "nextWatchpoints": [
+      "Retrieve and authenticate the original broadcast and publication date."
+    ]
+  },
+  {
+    "id": "us-qeshm-strike-reported-2026-11-03",
+    "title": "Reports of US strikes on Qeshm Island",
+    "description": "Reuters reported strikes on Iran's Qeshm Island citing other reporting and officials. This node records the dated report, not independently established operational details or a nuclear escalation.",
+    "yearNum": 2026,
+    "yearLabel": "2026",
+    "precision": "day",
+    "domains": [
+      "geopolitics"
+    ],
+    "impactScore": 0.6,
+    "tags": [
+      "iran",
+      "united-states",
+      "qeshm",
+      "military-strike",
+      "media-report"
+    ],
+    "date": "2026-11-03",
+    "dateLabel": "3 Nov 2026 (report date)",
+    "status": "completed",
+    "entities": [
+      "Iran",
+      "United States"
+    ],
+    "knowledgeLayer": "evidence",
+    "globalVisibility": "pack-only",
+    "epistemicStatus": "reported-attributed",
+    "lane": "reported-developments",
+    "claimIds": [
+      "claim-qeshm-strike-reported"
+    ],
+    "whyItMatters": "Separates reports of conventional military activity from hypothetical nuclear use.",
+    "nextWatchpoints": [
+      "Confirm date, targets and damage using independent and official sources."
+    ]
+  }
+]
