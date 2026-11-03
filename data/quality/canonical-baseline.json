@@ -2,9 +2,10 @@
   "version": 2,
   "generatedAt": "2026-11-03",
   "debtCeilings": {
-    "demoSeedCanonicalLinks": 442,
-    "highConfidenceDemoSeedLinks": 255,
-    "retroEventLinks": 0
+    "demoSeedCanonicalLinks": 438,
+    "highConfidenceDemoSeedLinks": 251,
+    "retroEventLinks": 0,
+    "highConfidenceDemoLifecycleLinks": 7
   },
   "legacyForecastIds": [
     "forecast_agi",

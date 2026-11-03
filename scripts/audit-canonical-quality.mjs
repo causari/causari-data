@@ -101,12 +101,16 @@ const highConfidenceDemoLinks = demoLinks.filter((link) => Number(link.confidenc
 const backwardLinks = links.filter(isBackwardInTime);
 const retroEventLinks = backwardLinks.filter((link) => targetFacet(link) === 'event');
 const lifecycleBacklinks = backwardLinks.filter((link) => targetFacet(link) !== 'event');
+const highConfidenceDemoLifecycleLinks = lifecycleBacklinks.filter(
+  (link) => demoSeed(link) && Number(link.confidence || 0) >= 0.8,
+);
 
 const ceilings = baseline.debtCeilings || {};
 const debtChecks = [
   ['demoSeedCanonicalLinks', demoLinks.length],
   ['highConfidenceDemoSeedLinks', highConfidenceDemoLinks.length],
   ['retroEventLinks', retroEventLinks.length],
+  ['highConfidenceDemoLifecycleLinks', highConfidenceDemoLifecycleLinks.length],
 ];
 for (const [key, value] of debtChecks) {
   const ceiling = Number(ceilings[key]);
@@ -149,6 +153,7 @@ console.log('  demo-seed links=' + demoLinks.length + ' / baseline ' + ceilings.
 console.log('  high-confidence demo-seed links=' + highConfidenceDemoLinks.length + ' / baseline ' + ceilings.highConfidenceDemoSeedLinks);
 console.log('  backward-in-time links=' + backwardLinks.length + ' (lifecycle=' + lifecycleBacklinks.length + ', point-event=' + retroEventLinks.length + ')');
 console.log('  retro point-event links=' + retroEventLinks.length + ' / baseline ' + ceilings.retroEventLinks);
+console.log('  high-confidence demo lifecycle links=' + highConfidenceDemoLifecycleLinks.length + ' / baseline ' + ceilings.highConfidenceDemoLifecycleLinks);
 console.log('  suppressed global links=' + suppressed.size);
 console.log('  unsuppressed global retro point-event links=' + globalRetroEvents.length);
 console.log('  archived rejected links=' + rejectedLinks.length);
