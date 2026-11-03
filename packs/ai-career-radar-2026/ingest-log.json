@@ -20,5 +20,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-03-0810-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-03",
+    "substantive": false,
+    "payloadHash": "f101b761cb63137b57604f6a40270dfd884781267bb03abdf57b0c7b695939ea",
+    "summary": "Primary-source review on 2026-11-03 found no verified material new AI-and-employment evidence since the previous intake; older ILO findings and existing OECD/IMF/BLS evidence are not re-ingested.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
