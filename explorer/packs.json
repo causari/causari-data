@@ -8,5 +8,10 @@
     "id": "ai-career-radar-2026",
     "title": "AI Career Radar 2026",
     "base": "../packs/ai-career-radar-2026"
+  },
+  {
+    "id": "geopolitical-risk-2026",
+    "title": "Geopolitical Risk Timeline 2026",
+    "base": "../packs/geopolitical-risk-2026"
   }
 ]
