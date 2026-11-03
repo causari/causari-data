@@ -77,3 +77,16 @@ Order of precedence:
 3. `causalLinkPolicy.allowLinkIds` may override the source-type block, but never suppression.
 
 The allowlist is transitional debt. Prefer replacing demo provenance with real primary/academic evidence, then remove the link from the allowlist.
+
+
+## High-confidence lifecycle claims
+
+Backward-in-time links are allowed only when they explicitly target a continuing lifecycle facet such as `adoption`, `capability`, `ecosystem`, or `evolution`.
+
+A lifecycle link with confidence >= 0.8 and only `demo-seed` provenance is tracked as quality debt. These claims may be directionally plausible but should either:
+
+1. gain primary/academic evidence that supports the specific lifecycle mechanism;
+2. be rewritten with narrower evidence and lower confidence; or
+3. be rejected if the source only shows compatibility/co-occurrence rather than influence.
+
+The `highConfidenceDemoLifecycleLinks` ceiling is ratcheted downward in CI and must never be raised to accommodate new unverified claims.
