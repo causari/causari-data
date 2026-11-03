@@ -34,6 +34,7 @@ Version: 1.0
 | `relationship` | CausalRelationship | yes | See relationship types below |
 | `confidence` | number | yes | 0-1, curator-estimated strength of causal claim |
 | `evidence` | string | yes | 1-2 sentences explaining WHY this link exists |
+| `targetFacet` | enum | no | Defaults to `event`. Use `adoption`, `capability`, `ecosystem`, or `evolution` when a later event affects the continuing lifecycle of an earlier entity rather than its original creation milestone. |
 
 ## Insight
 
@@ -56,7 +57,7 @@ Version: 1.0
 |-------|---------|
 | `caused` | A directly caused B (strong, confidence ≥ 0.85 typical) |
 | `enabled` | A was a precondition for B (moderate, 0.6-0.85 typical) |
-| `accelerated` | A sped up B's emergence |
+| `accelerated` | A sped up B's emergence; with a lifecycle `targetFacet`, A sped up that facet after B already existed |
 | `inspired` | A was the conceptual seed for B |
 | `delayed` | A slowed B's development |
 | `prevented` | A blocked or reduced B |
@@ -93,3 +94,36 @@ Canonical events live in `data/events.json`. Renderers should consume projection
 A pack may reuse canonical events through an `event-refs.json` file containing canonical event IDs. During migration, `events.json` may remain as a deprecated compatibility mirror, but new consumers should resolve references first.
 
 See [docs/CANONICAL-EVENTS.md](docs/CANONICAL-EVENTS.md).
+
+
+### Temporal semantics
+
+A canonical event is a point on the timeline by default. Therefore a causal link with no `targetFacet` (or `targetFacet: "event"`) must not run backward in time.
+
+Some canonical nodes also stand for durable entities/platforms after their initial milestone. A later event may affect that continuing lifecycle, but the link must declare the affected facet explicitly:
+
+- `adoption` — usage, market uptake, or demand;
+- `capability` — functionality, interoperability, operations, or integration;
+- `ecosystem` — surrounding developer/community/tooling ecosystem;
+- `evolution` — product, standard, architecture, or roadmap changes.
+
+Example:
+
+```json
+{
+  "fromEvent": "kotlin",
+  "toEvent": "android",
+  "relationship": "accelerated",
+  "targetFacet": "ecosystem"
+}
+```
+
+This means Kotlin accelerated the Android developer ecosystem after Android already existed. It does **not** mean Kotlin caused the 2008 Android event.
+
+Rules:
+
+1. Missing `targetFacet` means `event`.
+2. A source later than its target is invalid when targeting `event`.
+3. A later source may target a lifecycle facet only with explicit facet metadata.
+4. `caused` is reserved for the event itself and cannot target a lifecycle facet.
+5. Lifecycle facets are not a loophole for analogy/context. The evidence must name a concrete adoption, capability, ecosystem, or evolution mechanism.

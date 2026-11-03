@@ -1008,24 +1008,6 @@
     "scope": "world"
   },
   {
-    "id": "transistor--enabled-->eniac",
-    "fromEvent": "transistor",
-    "toEvent": "eniac",
-    "relationship": "enabled",
-    "confidence": 0.5,
-    "evidence": "While ENIAC used vacuum tubes, the transistor (invented 2 years later) was critical for the reliability needed in subsequent computers.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — computing"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "fortran--enabled-->cobol",
     "fromEvent": "fortran",
     "toEvent": "cobol",
@@ -1062,22 +1044,24 @@
     "scope": "world"
   },
   {
-    "id": "c_language--caused-->unix",
+    "id": "c_language--enabled-->unix",
     "fromEvent": "c_language",
     "toEvent": "unix",
-    "relationship": "caused",
-    "confidence": 0.92,
-    "evidence": "Unix was rewritten in C in 1973 — the first OS written in a high-level language. C and Unix co-evolved; each made the other viable.",
+    "relationship": "enabled",
+    "confidence": 0.95,
+    "evidence": "Unix already existed before C, but rewriting the Unix kernel in C in 1973 made the system substantially easier to modify and portable across hardware. C enabled a major evolution of Unix rather than causing its original creation.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — computing"
+        "type": "primary",
+        "reliability": 0.99,
+        "citation": "Dennis M. Ritchie, The Development of the C Language — Unix kernel rewritten in C during summer 1973.",
+        "url": "https://www.bell-labs.com/usr/dmr/www/chist.pdf"
       }
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "evolution"
   },
   {
     "id": "unix--accelerated-->c_language",
@@ -1527,7 +1511,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "linux--caused-->git",
@@ -1581,7 +1566,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "ecosystem"
   },
   {
     "id": "aws--enabled-->docker",
@@ -1854,24 +1840,6 @@
     "scope": "world"
   },
   {
-    "id": "von_neumann_arch--enabled-->turing_m",
-    "fromEvent": "von_neumann_arch",
-    "toEvent": "turing_m",
-    "relationship": "enabled",
-    "confidence": 0.85,
-    "evidence": "Von Neumann's stored-program architecture is a practical realization of Turing's universal machine concept.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — computing"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "ibm_pc--enabled-->web",
     "fromEvent": "ibm_pc",
     "toEvent": "web",
@@ -2121,7 +2089,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "gnu_project--enabled-->agile_manifesto",
@@ -2265,7 +2234,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "sass--enabled-->bootstrap",
@@ -2571,25 +2541,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
-  },
-  {
-    "id": "babel--enabled-->angularjs",
-    "fromEvent": "babel",
-    "toEvent": "angularjs",
-    "relationship": "enabled",
-    "confidence": 0.7,
-    "evidence": "Angular 2 adopted TypeScript/Babel for decorators and class syntax. The ability to use next-gen JS syntax in 2016 browsers was Babel's enabling contribution.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — web ecosystem"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "webpack--enabled-->nextjs",
@@ -3237,7 +3190,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "babel--enabled-->jest",
@@ -3420,12 +3374,12 @@
     "scope": "world"
   },
   {
-    "id": "nextjs--caused-->vercel",
+    "id": "nextjs--accelerated-->vercel",
     "fromEvent": "nextjs",
     "toEvent": "vercel",
-    "relationship": "caused",
-    "confidence": 0.88,
-    "evidence": "Vercel creates and maintains Next.js. Next.js is Vercel's distribution vehicle — every Next.js project is a potential Vercel customer.",
+    "relationship": "accelerated",
+    "confidence": 0.78,
+    "evidence": "Vercel (then ZEIT) existed before Next.js. Next.js became the company's flagship framework and distribution channel, accelerating Vercel's product and platform evolution rather than causing the company to exist.",
     "sources": [
       {
         "type": "demo-seed",
@@ -3435,7 +3389,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "evolution"
   },
   {
     "id": "reactjs--enabled-->vercel",
@@ -3636,24 +3591,6 @@
     "scope": "world"
   },
   {
-    "id": "nginx--enabled-->haproxy",
-    "fromEvent": "nginx",
-    "toEvent": "haproxy",
-    "relationship": "enabled",
-    "confidence": 0.65,
-    "evidence": "Nginx and HAProxy serve complementary roles — Nginx as web server/reverse proxy, HAProxy as the TCP/HTTP load balancer in front. The distinction drove both tools to specialize.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — cloud & devops"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "linux--enabled-->nginx",
     "fromEvent": "linux",
     "toEvent": "nginx",
@@ -3759,7 +3696,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "redis--caused-->nosql_movement",
@@ -4029,7 +3967,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "prometheus--enabled-->grafana",
@@ -4065,7 +4004,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "evolution"
   },
   {
     "id": "prometheus--enabled-->opentelemetry",
@@ -4101,7 +4041,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "opentelemetry--enabled-->datadog",
@@ -4119,7 +4060,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "opentelemetry--enabled-->grafana",
@@ -4137,7 +4079,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "linux--caused-->ebpf",
@@ -4335,7 +4278,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "linux--caused-->docker",
@@ -4356,12 +4300,12 @@
     "scope": "world"
   },
   {
-    "id": "kubernetes--caused-->etcd",
+    "id": "kubernetes--accelerated-->etcd",
     "fromEvent": "kubernetes",
     "toEvent": "etcd",
-    "relationship": "caused",
-    "confidence": 0.95,
-    "evidence": "etcd is Kubernetes's only supported data store. Every Kubernetes cluster requires etcd. The relationship is architectural: K8s controllers read/write to etcd via the API server.",
+    "relationship": "accelerated",
+    "confidence": 0.9,
+    "evidence": "etcd predates Kubernetes, but Kubernetes standardized etcd as its backing store and dramatically expanded etcd's production adoption. Kubernetes accelerated etcd adoption rather than causing its creation.",
     "sources": [
       {
         "type": "demo-seed",
@@ -4371,7 +4315,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "golang--caused-->etcd",
@@ -4497,7 +4442,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "cloudflare--caused-->cloudflare_workers",
@@ -4551,7 +4497,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "evolution"
   },
   {
     "id": "aws--enabled-->elasticsearch",
@@ -4695,7 +4642,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "github--caused-->github_copilot",
@@ -4749,7 +4697,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "github_copilot--enabled-->mcp_protocol",
@@ -5058,24 +5007,6 @@
     "scope": "world"
   },
   {
-    "id": "nosql_movement--caused-->cassandra",
-    "fromEvent": "nosql_movement",
-    "toEvent": "cassandra",
-    "relationship": "caused",
-    "confidence": 0.88,
-    "evidence": "Cassandra is a NoSQL database — wide-column, eventually consistent, partition-tolerant. Facebook built it to solve problems that relational DBs couldn't: geo-distributed, always-available write throughput.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — databases"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
     "id": "nosql_movement--caused-->dynamodb",
     "fromEvent": "nosql_movement",
     "toEvent": "dynamodb",
@@ -5235,7 +5166,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "dbt--accelerated-->bigquery",
@@ -5253,7 +5185,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "kafka--enabled-->snowflake",
@@ -5433,7 +5366,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "pgvector--accelerated-->neon",
@@ -5757,7 +5691,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "github_copilot--accelerated-->prisma",
@@ -5775,7 +5710,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "cuda--caused-->alexnet",
@@ -5973,7 +5909,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "evolution"
   },
   {
     "id": "transformer--accelerated-->tensorflow",
@@ -5991,7 +5928,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "transformer--accelerated-->pytorch",
@@ -6009,7 +5947,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "bert--caused-->huggingface_hub",
@@ -6189,7 +6128,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "transformer--caused-->rag_pattern",
@@ -6210,12 +6150,12 @@
     "scope": "world"
   },
   {
-    "id": "rag_pattern--caused-->pinecone",
+    "id": "rag_pattern--accelerated-->pinecone",
     "fromEvent": "rag_pattern",
     "toEvent": "pinecone",
-    "relationship": "caused",
-    "confidence": 0.88,
-    "evidence": "Pinecone was purpose-built for RAG. The company's pitch was \"the vector database for LLM applications\" — retrieval in RAG is the core use case.",
+    "relationship": "accelerated",
+    "confidence": 0.78,
+    "evidence": "Pinecone predates the 2020 RAG paper. The rise of RAG and LLM applications later made vector retrieval a mainstream use case and accelerated Pinecone adoption; RAG did not cause Pinecone's creation.",
     "sources": [
       {
         "type": "demo-seed",
@@ -6225,7 +6165,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "rag_pattern--accelerated-->langchain",
@@ -6405,7 +6346,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "pytorch--caused-->vllm",
@@ -6783,7 +6725,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "ssl_tls--caused-->letsencrypt",
@@ -6966,12 +6909,12 @@
     "scope": "world"
   },
   {
-    "id": "oidc--caused-->okta",
+    "id": "oidc--enabled-->okta",
     "fromEvent": "oidc",
     "toEvent": "okta",
-    "relationship": "caused",
-    "confidence": 0.82,
-    "evidence": "Okta implemented OIDC alongside SAML to serve consumer and modern enterprise apps. OIDC made Okta relevant beyond legacy enterprise into developer-first and SaaS applications.",
+    "relationship": "enabled",
+    "confidence": 0.72,
+    "evidence": "OpenID Connect gave an already-existing identity platform a standardized modern authentication capability for OAuth-based web and mobile applications; it did not cause Okta's 2009 founding.",
     "sources": [
       {
         "type": "demo-seed",
@@ -6981,7 +6924,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "webauthn--accelerated-->okta",
@@ -6999,7 +6943,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "internet--caused-->gdpr",
@@ -7053,7 +6998,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "soc2--enabled-->vault",
@@ -7089,7 +7035,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "owasp--enabled-->snyk",
@@ -7305,7 +7252,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "zero_trust--accelerated-->okta",
@@ -7323,7 +7271,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "zero_trust--accelerated-->vault",
@@ -7665,7 +7614,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "ecosystem"
   },
   {
     "id": "kotlin--caused-->jetpack_compose",
@@ -7746,24 +7696,6 @@
     "relationship": "inspired",
     "confidence": 0.65,
     "evidence": "Capacitor provides the same \"write once, deploy mobile\" promise as React Native but for web tech teams that don't want to learn React Native's native module system. Web + native bridge is the shared concept.",
-    "sources": [
-      {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline — mobile"
-      }
-    ],
-    "contributedBy": "system",
-    "validated": true,
-    "scope": "world"
-  },
-  {
-    "id": "flutter--inspired-->react_native",
-    "fromEvent": "flutter",
-    "toEvent": "react_native",
-    "relationship": "inspired",
-    "confidence": 0.75,
-    "evidence": "Flutter was built partly as a reaction to React Native's JavaScript bridge performance bottleneck. Flutter's \"compile to native, no bridge\" architecture is designed to solve React Native's performance concerns.",
     "sources": [
       {
         "type": "demo-seed",
@@ -7989,7 +7921,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "git--enabled-->fastlane",
@@ -8205,7 +8138,8 @@
     ],
     "contributedBy": "system",
     "validated": true,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "sqlite--enabled-->android",
@@ -8550,7 +8484,8 @@
     ],
     "contributedBy": "expert",
     "validated": false,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "c_language--enabled-->postgresql",
@@ -8915,7 +8850,8 @@
     ],
     "contributedBy": "ai-generated",
     "validated": false,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "bert--enabled-->weaviate",
@@ -9010,7 +8946,8 @@
     ],
     "contributedBy": "ai-generated",
     "validated": false,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "capability"
   },
   {
     "id": "pwa--enabled-->capacitor",
@@ -9044,25 +8981,6 @@
         "url": "https://rise.cs.berkeley.edu/projects/ray/",
         "reliability": 0.9,
         "citation": "Ray (RISELab, UC Berkeley) — \"a high-performance distributed execution framework targeted at large-scale machine learning and reinforcement learning applications.\""
-      }
-    ],
-    "contributedBy": "ai-generated",
-    "validated": false,
-    "scope": "world"
-  },
-  {
-    "id": "apache_spark--inspired-->scikit_learn",
-    "fromEvent": "apache_spark",
-    "toEvent": "scikit_learn",
-    "relationship": "inspired",
-    "confidence": 0.4,
-    "evidence": "Spark's MLlib brought a scikit-learn-style high-level ML API to distributed datasets, extending the familiar fit/transform paradigm to cluster scale. Shared API ergonomics — inspired, not causal.",
-    "sources": [
-      {
-        "type": "wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Apache_Spark",
-        "reliability": 0.9,
-        "citation": "Apache Spark — MLlib is \"a distributed machine-learning framework on top of Spark Core\" offering common ML algorithms at cluster scale."
       }
     ],
     "contributedBy": "ai-generated",
@@ -9143,7 +9061,8 @@
     ],
     "contributedBy": "ai-generated",
     "validated": false,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "adoption"
   },
   {
     "id": "npm--caused-->yarn_pkg",
@@ -9181,7 +9100,8 @@
     ],
     "contributedBy": "ai-generated",
     "validated": false,
-    "scope": "world"
+    "scope": "world",
+    "targetFacet": "evolution"
   },
   {
     "id": "reactjs--enabled-->gatsby",

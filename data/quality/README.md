@@ -51,3 +51,14 @@ Move them to `rejected-links.json` with:
 Git history remains the ultimate audit trail; the rejected archive makes removals visible to tooling and reviewers without polluting the active causal graph.
 
 A rejected link must never simultaneously exist in active canonical links.
+
+
+## Temporal facets
+
+A node's date marks its canonical milestone. It does not automatically mean that the entity stopped evolving at that date.
+
+When a later event affects an already-existing platform/entity, encode that as a lifecycle `targetFacet` rather than pretending the later event caused the earlier milestone.
+
+The canonical gate treats only backward links targeting the default `event` facet as retro-causal debt. Explicit lifecycle backlinks are allowed only when their mechanism is stated and `relationship=caused` is not used.
+
+This distinction lets Causari represent facts such as "Kotlin accelerated Android's developer ecosystem" without implying that Kotlin caused Android to exist in 2008.
