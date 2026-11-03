@@ -10,7 +10,8 @@
     "eventIds": [
       "iran-civil-defence-video-reported-2026-11-03"
     ],
-    "notes": "Publication date, origin and full broadcast need primary-source verification."
+    "notes": "Publication date, origin and full broadcast need primary-source verification. Curator-estimated confidence in the proposition, not a measured likelihood or nuclear escalation probability.",
+    "confidence": 0.65
   },
   {
     "id": "claim-qeshm-strike-reported",
@@ -23,7 +24,8 @@
     "eventIds": [
       "us-qeshm-strike-reported-2026-11-03"
     ],
-    "notes": "Reported strike does not establish use or planned use of nuclear weapons."
+    "notes": "Reported strike does not establish use or planned use of nuclear weapons. Curator-estimated confidence in the proposition, not a measured likelihood or nuclear escalation probability.",
+    "confidence": 0.65
   },
   {
     "id": "claim-imminent-nuclear-attack-unverified",
@@ -32,6 +34,7 @@
     "status": "unverified",
     "evidenceIds": [],
     "eventIds": [],
-    "notes": "No substantiating primary evidence entered. Never render as observed or as a forecast."
+    "notes": "No substantiating primary evidence entered. Never render as observed or as a forecast. Curator-estimated confidence in the proposition, not a measured likelihood or nuclear escalation probability.",
+    "confidence": 0.1
   }
 ]
