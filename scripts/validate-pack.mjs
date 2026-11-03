@@ -29,6 +29,7 @@ const DOMAINS = new Set([
   'geopolitics', 'philosophy', 'environment', 'culture', 'health',
 ]);
 const RELATIONSHIPS = new Set(['caused', 'enabled', 'accelerated', 'inspired', 'delayed', 'prevented']);
+const TARGET_FACETS = new Set(['event', 'adoption', 'capability', 'ecosystem', 'evolution']);
 const PRECISIONS = new Set(['millennium', 'century', 'decade', 'year', 'month', 'day']);
 const STATUSES = new Set(['completed', 'scheduled', 'live', 'forecast']); // optional live-event field
 const KEBAB = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -86,6 +87,10 @@ export function validatePackData({ events, links, insights, views, manifest, cla
     if (!RELATIONSHIPS.has(ln.relationship)) E(`link ${id}: invalid relationship "${ln.relationship}"`);
     if (!isNum01(ln.confidence)) E(`link ${id}: confidence must be 0-1`);
     if (!isNonEmptyStr(ln.evidence)) E(`link ${id}: missing evidence`);
+    if (ln.targetFacet !== undefined && !TARGET_FACETS.has(ln.targetFacet)) E(`link ${id}: invalid targetFacet "${ln.targetFacet}"`);
+    if (ln.relationship === 'caused' && ln.targetFacet !== undefined && ln.targetFacet !== 'event') {
+      E(`link ${id}: relationship=caused cannot target lifecycle facet "${ln.targetFacet}"`);
+    }
     // endpoints MUST be real events
     if (!eventIds.has(ln.fromEvent)) E(`link ${id}: fromEvent "${ln.fromEvent}" is not an event in this pack`);
     if (!eventIds.has(ln.toEvent)) E(`link ${id}: toEvent "${ln.toEvent}" is not an event in this pack`);
