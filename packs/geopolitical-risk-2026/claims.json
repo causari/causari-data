@@ -1,0 +1,37 @@
+[
+  {
+    "id": "claim-iran-civil-defence-video-reported",
+    "text": "Media reports say Iranian authorities published nuclear civil-defence guidance.",
+    "kind": "fact",
+    "status": "reported",
+    "evidenceIds": [
+      "evidence-iran-civil-defence-coverage"
+    ],
+    "eventIds": [
+      "iran-civil-defence-video-reported-2026-11-03"
+    ],
+    "notes": "Publication date, origin and full broadcast need primary-source verification."
+  },
+  {
+    "id": "claim-qeshm-strike-reported",
+    "text": "Reuters reported that US strikes targeted Qeshm Island.",
+    "kind": "fact",
+    "status": "attributed-report",
+    "evidenceIds": [
+      "evidence-qeshm-reuters-report"
+    ],
+    "eventIds": [
+      "us-qeshm-strike-reported-2026-11-03"
+    ],
+    "notes": "Reported strike does not establish use or planned use of nuclear weapons."
+  },
+  {
+    "id": "claim-imminent-nuclear-attack-unverified",
+    "text": "A nuclear strike on Pickaxe Mountain is imminent.",
+    "kind": "interpretation",
+    "status": "unverified",
+    "evidenceIds": [],
+    "eventIds": [],
+    "notes": "No substantiating primary evidence entered. Never render as observed or as a forecast."
+  }
+]
