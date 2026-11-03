@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -426,5 +426,16 @@
       "reason": "Long-run humanist influence is contextual and too diffuse to encode as a direct enabling edge.",
       "reviewState": "legacy-debt"
     }
-  ]
+  ],
+  "causalLinkPolicy": {
+    "blockedSourceTypes": [
+      "demo-seed"
+    ],
+    "allowLinkIds": [
+      "lang--enabled-->write",
+      "write--enabled-->alex",
+      "mcculloch_pitts--enabled-->perceptron"
+    ],
+    "rationale": "Global Canvas hides prototype demo-seed causal claims unless explicitly allowlisted. Research-backed/curated links remain eligible; suppressedCausalLinks still takes precedence."
+  }
 }
