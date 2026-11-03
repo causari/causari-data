@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -356,6 +356,13 @@
       "toEvent": "transformer",
       "relationship": "context",
       "reason": "ImageNet/AlexNet established a deep-learning-at-scale research paradigm, but the Transformer architecture arose from sequence-modeling work rather than a direct ImageNet causal mechanism."
+    },
+    {
+      "id": "lang--context-->write",
+      "fromEvent": "lang",
+      "toEvent": "write",
+      "relationship": "context",
+      "reason": "Writing is structurally related to language, but its emergence also depends on notation systems, cognition and sociohistorical institutions; represent this as context rather than a single direct cause."
     }
   ],
   "filterPolicy": {
@@ -485,17 +492,18 @@
       "id": "imagenet--inspired-->transformer",
       "reason": "ImageNet/AlexNet established a deep-learning-at-scale research paradigm, but the Transformer architecture arose from sequence-modeling work rather than a direct ImageNet causal mechanism.",
       "reviewState": "context-not-causal"
+    },
+    {
+      "id": "lang--enabled-->write",
+      "reason": "Writing systems are deeply related to spoken language, but current scholarship emphasizes an interplay among language, notation, cognition and social institutions rather than a simple one-way causal chain from language to writing.",
+      "reviewState": "context-not-causal"
     }
   ],
   "causalLinkPolicy": {
     "blockedSourceTypes": [
       "demo-seed"
     ],
-    "allowLinkIds": [
-      "lang--enabled-->write",
-      "write--enabled-->alex",
-      "mcculloch_pitts--enabled-->perceptron"
-    ],
-    "rationale": "Global Canvas hides prototype demo-seed causal claims unless explicitly allowlisted. Research-backed/curated links remain eligible; suppressedCausalLinks still takes precedence."
+    "allowLinkIds": [],
+    "rationale": "Global Canvas blocks prototype demo-seed causal claims with no exceptions. Promote a link by upgrading its provenance, not by adding an allowlist exception."
   }
 }

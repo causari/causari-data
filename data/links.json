@@ -22,13 +22,14 @@
     "fromEvent": "write",
     "toEvent": "alex",
     "relationship": "enabled",
-    "confidence": 0.8,
-    "evidence": "Durable written records made centralized libraries possible. Alexandria aggregated what writing had begun preserving across centuries.",
+    "confidence": 0.78,
+    "evidence": "The Library of Alexandria culminated a much older Near Eastern tradition of central repositories of written knowledge whose institutional roots extend back to the earliest cities and the advent of writing. Writing is therefore a necessary knowledge-storage substrate, while Alexandria's specific foundation had additional political and scholarly causes.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.9,
-        "citation": "Causari curated baseline"
+        "type": "academic",
+        "reliability": 0.98,
+        "citation": "Libraries before Alexandria: Ancient Near Eastern Traditions, Oxford University Press, 2020.",
+        "url": "https://academic.oup.com/book/36471"
       }
     ],
     "contributedBy": "system",
@@ -8026,13 +8027,14 @@
     "fromEvent": "mcculloch_pitts",
     "toEvent": "perceptron",
     "relationship": "enabled",
-    "confidence": 0.85,
-    "evidence": "Rosenblatt's Perceptron built directly on the McCulloch-Pitts formal neuron, adding learnable weights to the threshold model.",
+    "confidence": 0.92,
+    "evidence": "Historical accounts of neural networks describe Rosenblatt's perceptron as based on the simplified single-neuron model introduced by McCulloch and Pitts, with Rosenblatt adding a trainable pattern-recognition learning rule.",
     "sources": [
       {
-        "type": "demo-seed",
-        "reliability": 0.85,
-        "citation": "Causari curated baseline — cross-domain depth"
+        "type": "academic",
+        "reliability": 0.99,
+        "citation": "Terrence J. Sejnowski, 'The unreasonable effectiveness of deep learning in artificial intelligence', PNAS 2020.",
+        "url": "https://doi.org/10.1073/pnas.1907373117"
       }
     ],
     "contributedBy": "system",
