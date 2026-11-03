@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-03-0810-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-03",
+  "summary": "Primary-source review on 2026-11-03 found no verified material new AI-and-employment evidence since the previous intake; older ILO findings and existing OECD/IMF/BLS evidence are not re-ingested.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
