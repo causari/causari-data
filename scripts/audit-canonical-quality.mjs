@@ -107,6 +107,7 @@ const debtChecks = [
   ['demoSeedCanonicalLinks', demoLinks.length],
   ['highConfidenceDemoSeedLinks', highConfidenceDemoLinks.length],
   ['retroEventLinks', retroEventLinks.length],
+  ['highConfidenceDemoLifecycleLinks', highConfidenceDemoLifecycleLinks.length],
 ];
 for (const [key, value] of debtChecks) {
   const ceiling = Number(ceilings[key]);
