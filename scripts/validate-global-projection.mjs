@@ -87,6 +87,29 @@ for (const id of view.eventIds || []) {
   }
 }
 
+
+const causalLinkPolicy = view.causalLinkPolicy;
+if (causalLinkPolicy !== undefined) {
+  if (!causalLinkPolicy || typeof causalLinkPolicy !== 'object') {
+    errors.push('causalLinkPolicy must be an object');
+  } else {
+    if (!Array.isArray(causalLinkPolicy.blockedSourceTypes)) {
+      errors.push('causalLinkPolicy.blockedSourceTypes must be an array');
+    } else {
+      for (const type of causalLinkPolicy.blockedSourceTypes) {
+        if (typeof type !== 'string' || !type.trim()) errors.push('causalLinkPolicy has invalid blocked source type');
+      }
+    }
+    if (!Array.isArray(causalLinkPolicy.allowLinkIds)) {
+      errors.push('causalLinkPolicy.allowLinkIds must be an array');
+    } else {
+      for (const id of causalLinkPolicy.allowLinkIds) {
+        if (!canonicalLinkIdSet.has(id)) errors.push('causalLinkPolicy allowLinkIds references missing canonical link: ' + id);
+      }
+    }
+  }
+}
+
 const filterPolicy = view.filterPolicy;
 if (!filterPolicy || typeof filterPolicy !== 'object') {
   errors.push('global view missing filterPolicy');
