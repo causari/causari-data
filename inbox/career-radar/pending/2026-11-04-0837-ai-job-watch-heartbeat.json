@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-04-0837-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-04",
+  "summary": "Primary-source review since 2026-11-03: no newly verified AI-specific employment evidence that materially changes Career Radar. BLS September JOLTS released 2026-11-03 is aggregate labor-market data, not causal AI evidence; October payroll report scheduled for 2026-11-06. Existing ILO, OECD, IMF and BLS findings are not duplicated.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
