@@ -64,5 +64,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-05-0843-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-05",
+    "substantive": false,
+    "payloadHash": "6ae8d6dc9cd639d8dfa584ababa5564fadee3cfc16234734545bec4bb53b8afa",
+    "summary": "Primary-source review since 2026-11-04: no newly verified AI-specific realized-employment evidence materially changes Career Radar. BLS September JOLTS (released Nov 3) was already assessed; ADP October private payroll estimate (released Nov 4) is observed private payroll data but not evidence of AI causality, and is not interchangeable with BLS payrolls. Earlier ILO, OECD, IMF and PwC research is not re-ingested.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
