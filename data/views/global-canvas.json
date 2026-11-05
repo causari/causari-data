@@ -1,6 +1,6 @@
 {
   "id": "global-canvas-v1",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "title": "Causari Global Canvas",
   "description": "Curated projection of canonical Causari events for the default /app timeline. This is not the union of all packs.",
   "source": "data/events.json",
@@ -73,7 +73,40 @@
     "ilo-genai-empirical-review-2026",
     "bls-2025-2035-ai-occupation-split",
     "oecd-skill-shortages-2026",
-    "imf-asia-ai-labor-market-2026"
+    "imf-asia-ai-labor-market-2026",
+    "rest_api",
+    "agile_manifesto",
+    "git",
+    "aws",
+    "github",
+    "android",
+    "app_store",
+    "cuda",
+    "nodejs",
+    "golang",
+    "docker",
+    "reactjs",
+    "kubernetes",
+    "rust_1_0",
+    "tensorflow",
+    "pytorch",
+    "webassembly",
+    "gdpr",
+    "github_actions",
+    "cloudflare_workers",
+    "openai_api",
+    "github_copilot",
+    "stable_diffusion",
+    "llama_meta",
+    "mcp_protocol",
+    "rag_pattern",
+    "owasp",
+    "sqlite",
+    "apache_spark",
+    "letsencrypt",
+    "huggingface_hub",
+    "vllm",
+    "cursor_ide"
   ],
   "presentation": {
     "big-bang": {
@@ -275,6 +308,171 @@
       "color": "#00f2ff",
       "tag": "AI-Career",
       "y": 205
+    },
+    "rest_api": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "agile_manifesto": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "git": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "aws": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "github": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "android": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "app_store": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "cuda": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "nodejs": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "golang": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "docker": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "reactjs": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "kubernetes": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "rust_1_0": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "tensorflow": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "pytorch": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "webassembly": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "gdpr": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "github_actions": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "cloudflare_workers": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "openai_api": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "github_copilot": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "stable_diffusion": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "llama_meta": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "mcp_protocol": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "rag_pattern": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "owasp": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "sqlite": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "apache_spark": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "letsencrypt": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "huggingface_hub": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "vllm": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
+    },
+    "cursor_ide": {
+      "lod": 1,
+      "lane": "modern-world",
+      "tag": "Modern World"
     }
   },
   "promotedFromPacks": {
@@ -284,6 +482,41 @@
       "bls-2025-2035-ai-occupation-split",
       "oecd-skill-shortages-2026",
       "imf-asia-ai-labor-market-2026"
+    ],
+    "modern-world-2000-2026": [
+      "rest_api",
+      "agile_manifesto",
+      "git",
+      "aws",
+      "github",
+      "android",
+      "app_store",
+      "cuda",
+      "nodejs",
+      "golang",
+      "docker",
+      "reactjs",
+      "kubernetes",
+      "rust_1_0",
+      "tensorflow",
+      "pytorch",
+      "webassembly",
+      "gdpr",
+      "github_actions",
+      "cloudflare_workers",
+      "openai_api",
+      "github_copilot",
+      "stable_diffusion",
+      "llama_meta",
+      "mcp_protocol",
+      "rag_pattern",
+      "owasp",
+      "sqlite",
+      "apache_spark",
+      "letsencrypt",
+      "huggingface_hub",
+      "vllm",
+      "cursor_ide"
     ]
   },
   "contextLinks": [
@@ -397,7 +630,8 @@
     ],
     "packOrder": [
       "core",
-      "ai-career-radar-2026"
+      "ai-career-radar-2026",
+      "modern-world-2000-2026"
     ],
     "packLabels": {
       "core": {
@@ -407,6 +641,10 @@
       "ai-career-radar-2026": {
         "label": "AI Career",
         "label_vi": "AI Nghề nghiệp"
+      },
+      "modern-world-2000-2026": {
+        "label": "Modern World",
+        "label_vi": "Thế giới hiện đại"
       }
     },
     "topicSource": "event.domains",
