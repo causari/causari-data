@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-06-0757-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-06",
+  "summary": "Primary-source review since 2026-11-05: no newly verified AI-specific labor-market evidence materially changes Career Radar. BLS October payroll release is scheduled for 2026-11-06 at 08:30 ET (after this check); Nov 5 unemployment claims and productivity data are aggregate observed labor-market measures, not evidence of AI-caused displacement. Recent media coverage of a Goldman Sachs displacement analysis lacks independently verified primary methodology for intake; existing IMF/ILO/OECD/BLS findings are not duplicated.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
