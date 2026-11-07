@@ -108,5 +108,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-07-0756-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-07",
+    "substantive": false,
+    "payloadHash": "e0665a26c74017c0072ded536c98be1f6be8915be9f92f7d7cb37a4e10323f0e",
+    "summary": "Primary-source review since 2026-11-06: BLS October 2026 Employment Situation released Nov 6 reports +165,000 nonfarm payroll jobs (observed aggregate employment), including -1,000 in information; these figures do not establish AI-related displacement or adoption. No independently verified new AI-specific labor-market evidence materially changes Career Radar. Earlier ILO/OECD/IMF findings and unverified secondary claims are not duplicated.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]

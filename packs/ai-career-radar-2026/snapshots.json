@@ -208,5 +208,47 @@
     "newSignalIds": [],
     "updatedSignalIds": [],
     "ingestId": "2026-11-06-0757-ai-job-watch-heartbeat"
+  },
+  {
+    "date": "2026-11-07",
+    "substantive": false,
+    "counts": {
+      "up": 3,
+      "down": 3,
+      "mixed": 1
+    },
+    "totalSignals": 7,
+    "byDomain": {
+      "workforce": {
+        "up": 0,
+        "down": 0,
+        "mixed": 1
+      },
+      "entry-level": {
+        "up": 0,
+        "down": 1,
+        "mixed": 0
+      },
+      "software": {
+        "up": 1,
+        "down": 1,
+        "mixed": 0
+      },
+      "skills": {
+        "up": 2,
+        "down": 0,
+        "mixed": 0
+      },
+      "employment": {
+        "up": 0,
+        "down": 1,
+        "mixed": 0
+      }
+    },
+    "newEventIds": [],
+    "updatedEventIds": [],
+    "newSignalIds": [],
+    "updatedSignalIds": [],
+    "ingestId": "2026-11-07-0756-ai-job-watch-heartbeat"
   }
 ]
