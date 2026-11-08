@@ -130,5 +130,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-08-0823-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-08",
+    "substantive": false,
+    "payloadHash": "2409523b460a352bc39ee3c533c051de3f268fe6eda367522e785fdaf643d8a5",
+    "summary": "Primary-source review since 2026-11-07: no new verified AI-specific employment evidence materially changes Career Radar. BLS October 2026 payrolls (+165,000) released November 6 were assessed in the prior run; aggregate employment and Q3 productivity releases do not identify causal AI impacts. Earlier OECD, ILO, IMF and BLS research is not duplicated.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
