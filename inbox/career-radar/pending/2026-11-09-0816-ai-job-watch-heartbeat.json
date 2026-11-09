@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-09-0816-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-09",
+  "summary": "Primary-source review since 2026-11-08 found no new verified AI-specific employment evidence materially changing Career Radar. BLS October payroll data were already assessed; aggregate employment changes cannot be attributed to AI. Earlier ILO Vietnam/ASEAN exposure research, OECD skill shortages, and IMF job-postings evidence are already represented and are not duplicated.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
