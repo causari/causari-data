@@ -174,5 +174,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-10-0754-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-10",
+    "substantive": false,
+    "payloadHash": "eaf1bc89f70cb0f25407e85dba54ebbce7fa88d0ed13027f82372a72fd5b3e7e",
+    "summary": "Primary-source review since 2026-11-09 found no newly verified material AI-specific labor-market evidence. BLS October payroll release was previously reviewed; aggregate payroll changes cannot be attributed to AI. Existing ILO, OECD, IMF research and job-posting evidence are not re-ingested; postings are not realized employment.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
