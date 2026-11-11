@@ -196,5 +196,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-11-0758-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-11",
+    "substantive": false,
+    "payloadHash": "44466b1857cab90fd12124496265128a67df44efdad90558d8e8d6e41b3f791c",
+    "summary": "Primary-source review since 2026-11-10 found no newly verified material AI-specific employment evidence. BLS October CPI released Nov 10 is inflation data, not AI-related employment; October payrolls and September JOLTS were reviewed previously. Existing ILO, OECD, IMF exposure, job-posting and forecast findings are not duplicated; no causal AI-employment conclusion is inferred.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
