@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-13-0804-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-13",
+  "summary": "Primary-source review since 2026-11-12 found no newly verified AI-specific labor-market evidence materially changing Career Radar. Previously assessed BLS October payrolls, ILO exposure/review, OECD shortages and IMF Asian job-postings evidence are not duplicated. IMF October 18 global working paper is earlier research, not a new release since the last check; job postings are not realized employment, and exposure/adoption correlations do not prove AI-caused displacement.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
