@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-14-0758-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-14",
+  "summary": "Primary-source review since 2026-11-13 found no newly verified material AI-specific labor-market evidence. ILO Viet Nam Nov 2 reiterates April exposure estimates, not observed displacement; previously assessed BLS payrolls, OECD shortages, IMF job-postings research and ILO findings are not duplicated. Exposure, postings, and aggregate payrolls do not establish AI-caused job losses.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
