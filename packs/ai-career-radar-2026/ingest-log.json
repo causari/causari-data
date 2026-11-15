@@ -284,5 +284,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-15-0822-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-15",
+    "substantive": false,
+    "payloadHash": "39895ef309729d20ece9601908e0f1b6db57901bd996586344bd9598d68a5f9d",
+    "summary": "Primary-source review since 2026-11-14 found no newly verified material AI-specific employment evidence. ILO November 2 Viet Nam communication reiterates April exposure estimates; ILO ASEAN July findings and BLS October payroll data were previously considered. Exposure is not displacement, job postings are not realized employment, and aggregate payroll changes cannot establish AI causality. No prior claims duplicated.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
