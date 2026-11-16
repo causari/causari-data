@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-16-0811-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-16",
+  "summary": "Primary-source review since 2026-11-15 found no newly verified material AI-specific realized-employment evidence changing Career Radar. BLS October payrolls (Nov 6), OECD unemployment release (Nov 10), and earlier ILO AI exposure/adoption research do not establish AI-caused job displacement. Existing OECD, ILO, IMF and BLS evidence is not duplicated; online job postings are not payroll employment, and forecasts/exposure/surveys are not observed displacement.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
