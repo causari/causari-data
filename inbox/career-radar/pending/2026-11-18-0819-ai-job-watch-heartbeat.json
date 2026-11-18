@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-18-0819-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-18",
+  "summary": "Primary-source review since 2026-11-17 found no newly published, verified AI-specific labor-market evidence materially changing Career Radar. BLS October payroll figures are observed aggregate employment, not AI causality; OECD October skills findings and ILO Vietnam exposure findings are already represented in the pack. No weak headline, job-posting change, exposure estimate, or forecast is treated as realized AI-driven employment change.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
