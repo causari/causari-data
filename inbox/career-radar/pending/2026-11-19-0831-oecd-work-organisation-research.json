@@ -1,0 +1,45 @@
+{
+  "ingestId": "2026-11-19-0831-oecd-work-organisation-research",
+  "checkedAt": "2026-11-19",
+  "summary": "New OECD/Eurofound working paper (17 Nov 2026) analyses PIAAC and EWCS surveys covering approximately 2011–2024. AI occupational exposure correlates with changes in task organisation, but rising educational attainment appears more important for some changes. This is retrospective observational research, not realized AI-caused job displacement or payroll evidence. Older BLS payroll, ILO exposure and OECD skills evidence not duplicated.",
+  "quality": {
+    "substantive": true,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [
+    {
+      "id": "source-oecd-eurofound-work-organisation-2026",
+      "title": "Artificial intelligence and work organisation",
+      "publisher": "OECD/Eurofound",
+      "tier": "primary",
+      "publishedAt": "2026-11-17",
+      "url": "https://www.oecd.org/en/publications/artificial-intelligence-and-work-organisation_5a208f6b-en.html"
+    }
+  ],
+  "events": [],
+  "claims": [
+    {
+      "id": "claim-oecd-work-organisation-ai-exposure-association-2026",
+      "text": "OECD/Eurofound analysis of PIAAC and EWCS surveys (roughly 2011–2024) reports occupational AI exposure is associated with smaller increases in monotonous tasks and faster increases in certain information-processing tasks; rising educational attainment appears more important for some changes. This is correlational, not proof of AI-caused employment displacement.",
+      "kind": "research-synthesis",
+      "status": "observed",
+      "evidenceIds": [
+        "evidence-oecd-work-organisation-association-2026"
+      ],
+      "eventIds": [],
+      "notes": "Retrospective observational analysis of work organisation and AI exposure; no payroll/job-loss magnitude or causal attribution claimed."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence-oecd-work-organisation-association-2026",
+      "sourceId": "source-oecd-eurofound-work-organisation-2026",
+      "sourceTier": "primary",
+      "support": "Abstract: occupational exposure to AI correlated with changes in monotonous and information-processing tasks; rising educational attainment appears more important for some work-organisation changes.",
+      "locator": "Abstract, OECD AI Papers No. 68"
+    }
+  ],
+  "signals": []
+}
