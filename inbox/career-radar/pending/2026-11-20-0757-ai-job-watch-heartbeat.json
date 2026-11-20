@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-20-0757-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-20",
+  "summary": "Primary-source review through 2026-11-20 07:57 Asia/Ho_Chi_Minh found no newly verified AI-specific employment/payroll evidence materially changing Career Radar since the previous intake. OECD 2026-11-17 work-organisation study is already queued in the 2026-11-19 intake and must not be duplicated. ILO 2026-11-18 Vietnam tripartite discussion is policy commentary, not measured AI-caused employment change. Older ILO Vietnam exposure findings are already represented. Job postings, occupational exposure, adoption, surveys and forecasts are not treated as realized employment or causal displacement.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
