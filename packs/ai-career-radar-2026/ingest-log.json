@@ -394,5 +394,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-21-0830-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-21",
+    "substantive": false,
+    "payloadHash": "b0a7a2e3bd4636e56ee33305eb9d00fd07e691d39acf39e228da812f2121d914",
+    "summary": "Primary-source review through 2026-11-21 08:30 Asia/Ho_Chi_Minh found no new verified AI-specific employment evidence materially changing Career Radar since 2026-11-20. BLS Nov 20 state employment and total factor productivity releases are observed labor/productivity statistics, not causal evidence of AI-driven displacement. Existing BLS payroll, OECD/ILO exposure and IMF job-postings evidence are not duplicated. OECD Nov 17 work-organisation research was submitted Nov 19 but rejected; requires separate operational remediation, not duplicate ingestion. Employment/payroll, postings, exposure, adoption, forecasts and causal inference remain distinct.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
