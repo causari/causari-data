@@ -416,5 +416,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-22-0839-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-22",
+    "substantive": false,
+    "payloadHash": "92b45ed1c50829e8b80ff3b8e25416e756d0334f7c3a80def5511c6240e74846",
+    "summary": "Primary-source review since 2026-11-21 08:30 Asia/Ho_Chi_Minh found no newly verified material AI-specific realized-employment evidence changing Career Radar. BLS October payroll data (released Nov 6), BLS 2025-2035 projections (Aug 27), OECD/IMF labor-market conference (Nov 17-18), and ILO Vietnam exposure commentary (Nov 2) are older or non-causal and do not justify a new claim. Job postings are not payroll; AI exposure is not adoption or displacement; forecasts, surveys and observational associations are not causal employment effects. OECD Nov 17 work-organisation intake previously rejected and must not be duplicated.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
