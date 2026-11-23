@@ -438,5 +438,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-23-0833-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-23",
+    "substantive": false,
+    "payloadHash": "de366d1779546b7103be513e8b68ca4ef8782ccf0cec584da2498c35af84b6e8",
+    "summary": "Primary-source review since 2026-11-22 08:39 Asia/Ho_Chi_Minh found no newly verified material AI-specific employment or payroll evidence changing Career Radar. BLS November 2026 Career Outlook article combines 2025-2035 projected occupational openings with AI exposure categories, explicitly stating exposure is not employment impact; projections are not observed job loss. ILO November 18 Vietnam event reports policy discussion rather than measured employment effects. OECD November 17 work-organisation study was previously submitted and rejected and is not duplicated. Older BLS payroll, OECD, ILO, and IMF evidence is not re-ingested; job postings, observed payroll, forecasts, exposure, adoption and causal attribution remain distinct.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]
