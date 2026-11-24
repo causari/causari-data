@@ -1,0 +1,41 @@
+{
+  "ingestId": "2026-11-24-0817-agentic-ai-postings-research",
+  "checkedAt": "2026-11-24",
+  "summary": "Newly reviewed November 23 manuscript of Borri et al. (arXiv first posted November 20) adds agent-specific evidence on US listed firms' job postings, especially non-senior roles. Observational panel and event-study estimates are not realized employment or definitive causal effects. No duplicate source found. Evidence-only intake because current validator requires unsupported numeric confidence for claims and impact scores for events; no fabricated scores or global promotion.",
+  "quality": {
+    "substantive": true,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [
+    {
+      "id": "source-borri-agentic-labor-2026",
+      "title": "The Rise of Agents and the Human Labor Market",
+      "publisher": "Borri, Cheremukhin, Liu and Tsyvinski (arXiv preprint)",
+      "tier": "primary",
+      "publishedAt": "2026-11-20",
+      "url": "https://arxiv.org/abs/2611.27210",
+      "notes": "Manuscript dated November 23, 2026; preprint, not established peer-reviewed evidence."
+    }
+  ],
+  "events": [],
+  "claims": [],
+  "evidence": [
+    {
+      "id": "evidence-borri-agentic-posting-growth-2026",
+      "sourceId": "source-borri-agentic-labor-2026",
+      "sourceTier": "primary",
+      "support": "Panel analysis of 34.8 million US job postings matched to 1,784 listed parent companies finds one standard deviation higher market-implied agentic exposure associated with 2.11% lower six-month posting growth and 3.20% lower nine-month growth. Exposure is a stock-return sensitivity to aggregate OpenRouter agentic token usage, not measured firm-level adoption. Postings are not hires or payroll.",
+      "locator": "Introduction; sections 2 and 4"
+    },
+    {
+      "id": "evidence-borri-agentic-seniority-2026",
+      "sourceId": "source-borri-agentic-labor-2026",
+      "sourceTier": "primary",
+      "support": "Event-study estimates after Claude Code 2.0 release associate one standard deviation higher pre-release agentic exposure with 4.54% lower six-month non-senior posting growth; senior estimate is statistically insignificant. Identification depends on comparable counterfactual trends and does not establish actual job losses or generalize directly to Vietnam.",
+      "locator": "Introduction; empirical results by job type"
+    }
+  ],
+  "signals": []
+}
