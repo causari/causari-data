@@ -46,5 +46,14 @@
     "tier": "primary",
     "publishedAt": "2026-10-15",
     "url": "https://www.imf.org/en/publications/reo/apac/issues/2026/10/15/regional-economic-outlook-for-asia-and-pacific-october-2026"
+  },
+  {
+    "id": "source-borri-agentic-labor-2026",
+    "title": "The Rise of Agents and the Human Labor Market",
+    "publisher": "Borri, Cheremukhin, Liu and Tsyvinski (arXiv preprint)",
+    "tier": "primary",
+    "publishedAt": "2026-11-20",
+    "url": "https://arxiv.org/abs/2611.27210",
+    "notes": "Manuscript dated November 23, 2026; preprint, not established peer-reviewed evidence."
   }
 ]

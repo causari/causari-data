@@ -460,5 +460,32 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-24-0817-agentic-ai-postings-research",
+    "checkedAt": "2026-11-24",
+    "substantive": true,
+    "payloadHash": "217a6a91e17dd5d73a5a7a75ed2b00daf45bb37a10850958ccfec75e1efb8330",
+    "summary": "Newly reviewed November 23 manuscript of Borri et al. (arXiv first posted November 20) adds agent-specific evidence on US listed firms' job postings, especially non-senior roles. Observational panel and event-study estimates are not realized employment or definitive causal effects. No duplicate source found. Evidence-only intake because current validator requires unsupported numeric confidence for claims and impact scores for events; no fabricated scores or global promotion.",
+    "created": {
+      "sources": [
+        "source-borri-agentic-labor-2026"
+      ],
+      "events": [],
+      "evidence": [
+        "evidence-borri-agentic-posting-growth-2026",
+        "evidence-borri-agentic-seniority-2026"
+      ],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]

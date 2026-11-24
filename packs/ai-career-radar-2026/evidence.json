@@ -86,5 +86,19 @@
     "support": "IMF reports rising employer demand for workers with AI skills.",
     "locator": "Chapter 2: Labor Markets in Asia",
     "confidence": 0.94
+  },
+  {
+    "id": "evidence-borri-agentic-posting-growth-2026",
+    "sourceId": "source-borri-agentic-labor-2026",
+    "sourceTier": "primary",
+    "support": "Panel analysis of 34.8 million US job postings matched to 1,784 listed parent companies finds one standard deviation higher market-implied agentic exposure associated with 2.11% lower six-month posting growth and 3.20% lower nine-month growth. Exposure is a stock-return sensitivity to aggregate OpenRouter agentic token usage, not measured firm-level adoption. Postings are not hires or payroll.",
+    "locator": "Introduction; sections 2 and 4"
+  },
+  {
+    "id": "evidence-borri-agentic-seniority-2026",
+    "sourceId": "source-borri-agentic-labor-2026",
+    "sourceTier": "primary",
+    "support": "Event-study estimates after Claude Code 2.0 release associate one standard deviation higher pre-release agentic exposure with 4.54% lower six-month non-senior posting growth; senior estimate is statistically insignificant. Identification depends on comparable counterfactual trends and does not establish actual job losses or generalize directly to Vietnam.",
+    "locator": "Introduction; empirical results by job type"
   }
 ]
