@@ -100,5 +100,19 @@
     "sourceTier": "primary",
     "support": "Event-study estimates after Claude Code 2.0 release associate one standard deviation higher pre-release agentic exposure with 4.54% lower six-month non-senior posting growth; senior estimate is statistically insignificant. Identification depends on comparable counterfactual trends and does not establish actual job losses or generalize directly to Vietnam.",
     "locator": "Introduction; empirical results by job type"
+  },
+  {
+    "id": "evidence-anthropic-working-with-ai-hiring-2026",
+    "sourceId": "source-anthropic-working-with-ai-2026",
+    "sourceTier": "primary",
+    "support": "Across 66 interviews at 58 selected US customer companies, approximately two-thirds of companies had interviewees reporting AI-related hiring reductions; 10 companies reported increased hiring, mainly for implementation and IT support. These are qualitative self-reports, not representative hiring rates or causal estimates.",
+    "locator": "Introduction; Top-down automation"
+  },
+  {
+    "id": "evidence-anthropic-working-with-ai-contractors-2026",
+    "sourceId": "source-anthropic-working-with-ai-2026",
+    "sourceTier": "primary",
+    "support": "Nine interviewed companies described reducing contracted labor, including software development, customer service, legal and back-office work, often offshore. Only two companies reported automation fully eliminating a position with job loss. Counts describe this selected sample, not population prevalence or independently verified payroll.",
+    "locator": "Top-down automation"
   }
 ]

@@ -487,5 +487,32 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-25-0807-ai-work-reorganisation-research",
+    "checkedAt": "2026-11-25",
+    "substantive": true,
+    "payloadHash": "398a39655cadfebda3f5fb01e795f6de93c46225b3be9ff114e40c9e24a2b76a",
+    "summary": "Newly reviewed Anthropic Institute report dated November 23 adds qualitative evidence on hiring restraint, contractor reductions and AI implementation hiring among selected US enterprise customers. Interview reports are not representative payroll, verified causal estimates or job postings. Distinct from Borri et al. already ingested November 24. Evidence-only to avoid unsupported numerical confidence or event impact scores; no global promotion.",
+    "created": {
+      "sources": [
+        "source-anthropic-working-with-ai-2026"
+      ],
+      "events": [],
+      "evidence": [
+        "evidence-anthropic-working-with-ai-hiring-2026",
+        "evidence-anthropic-working-with-ai-contractors-2026"
+      ],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]

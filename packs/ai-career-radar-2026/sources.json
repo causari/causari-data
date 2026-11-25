@@ -55,5 +55,14 @@
     "publishedAt": "2026-11-20",
     "url": "https://arxiv.org/abs/2611.27210",
     "notes": "Manuscript dated November 23, 2026; preprint, not established peer-reviewed evidence."
+  },
+  {
+    "id": "source-anthropic-working-with-ai-2026",
+    "title": "Working with AI",
+    "publisher": "Anthropic Institute (Wilmers, Massenkoff, McCrory)",
+    "tier": "primary",
+    "publishedAt": "2026-11-23",
+    "url": "https://www.anthropic.com/research/working-with-ai",
+    "notes": "Qualitative interviews; selected nonrandom sample of Anthropic enterprise customers in the US; vendor affiliation and self-report limit generalization."
   }
 ]
