@@ -1,0 +1,41 @@
+{
+  "ingestId": "2026-11-25-0807-ai-work-reorganisation-research",
+  "checkedAt": "2026-11-25",
+  "summary": "Newly reviewed Anthropic Institute report dated November 23 adds qualitative evidence on hiring restraint, contractor reductions and AI implementation hiring among selected US enterprise customers. Interview reports are not representative payroll, verified causal estimates or job postings. Distinct from Borri et al. already ingested November 24. Evidence-only to avoid unsupported numerical confidence or event impact scores; no global promotion.",
+  "quality": {
+    "substantive": true,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [
+    {
+      "id": "source-anthropic-working-with-ai-2026",
+      "title": "Working with AI",
+      "publisher": "Anthropic Institute (Wilmers, Massenkoff, McCrory)",
+      "tier": "primary",
+      "publishedAt": "2026-11-23",
+      "url": "https://www.anthropic.com/research/working-with-ai",
+      "notes": "Qualitative interviews; selected nonrandom sample of Anthropic enterprise customers in the US; vendor affiliation and self-report limit generalization."
+    }
+  ],
+  "events": [],
+  "claims": [],
+  "evidence": [
+    {
+      "id": "evidence-anthropic-working-with-ai-hiring-2026",
+      "sourceId": "source-anthropic-working-with-ai-2026",
+      "sourceTier": "primary",
+      "support": "Across 66 interviews at 58 selected US customer companies, approximately two-thirds of companies had interviewees reporting AI-related hiring reductions; 10 companies reported increased hiring, mainly for implementation and IT support. These are qualitative self-reports, not representative hiring rates or causal estimates.",
+      "locator": "Introduction; Top-down automation"
+    },
+    {
+      "id": "evidence-anthropic-working-with-ai-contractors-2026",
+      "sourceId": "source-anthropic-working-with-ai-2026",
+      "sourceTier": "primary",
+      "support": "Nine interviewed companies described reducing contracted labor, including software development, customer service, legal and back-office work, often offshore. Only two companies reported automation fully eliminating a position with job loss. Counts describe this selected sample, not population prevalence or independently verified payroll.",
+      "locator": "Top-down automation"
+    }
+  ],
+  "signals": []
+}
