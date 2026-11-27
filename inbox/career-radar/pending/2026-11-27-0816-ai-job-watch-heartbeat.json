@@ -1,0 +1,16 @@
+{
+  "ingestId": "2026-11-27-0816-ai-job-watch-heartbeat",
+  "checkedAt": "2026-11-27",
+  "summary": "Review since last successful intake (2026-11-25), including newly indexed November 25–26 job-board snapshots, found no material change supported by sufficiently strong new evidence. NextChapter November 25 advertised pay and openings are a selected job-board cross-section, not realized wages, hiring or payroll; Artificial Careers November 26 catalogue is likewise postings with partial AI review coverage. Neither establishes causal displacement or a new trend. Existing Borri and Anthropic research is already ingested; older studies are not new releases. Exposure, adoption, automation, postings, forecasts and realized employment remain distinct.",
+  "quality": {
+    "substantive": false,
+    "sourceReviewComplete": true,
+    "observedVsForecastSeparated": true,
+    "correlationCausalityReviewed": true
+  },
+  "sources": [],
+  "events": [],
+  "claims": [],
+  "evidence": [],
+  "signals": []
+}
