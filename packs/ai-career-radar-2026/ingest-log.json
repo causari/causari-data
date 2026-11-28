@@ -536,5 +536,27 @@
       "signals": []
     },
     "promotedToGlobal": []
+  },
+  {
+    "ingestId": "2026-11-28-0756-ai-job-watch-heartbeat",
+    "checkedAt": "2026-11-28",
+    "substantive": false,
+    "payloadHash": "9390b2c43c7d54ceb25af639f748404919bb618e70601b013212560782b94ec2",
+    "summary": "Review since 2026-11-27 found no material new verified evidence. OECD employment impact of AI survey brief (https://doi.org/10.1787/2d7de510-en) is scheduled for December 1; await full methodology and results. November 27 AI Jobs Report combines selected employer vacancies with modeled global projections, not realized employment. NextChapter November 26 snapshot is already reviewed; secondary reporting on forward-deployed engineers does not independently establish a labor-market trend. Borri research already ingested. Postings, payroll, exposure, adoption, automation, forecasts and causal attribution remain distinct.",
+    "created": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "updated": {
+      "sources": [],
+      "events": [],
+      "evidence": [],
+      "claims": [],
+      "signals": []
+    },
+    "promotedToGlobal": []
   }
 ]

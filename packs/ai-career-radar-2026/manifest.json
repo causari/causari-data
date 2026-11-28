@@ -14,7 +14,7 @@
   "temporalMode": "rolling-labor-market-timeline",
   "graphMode": "event-claim-evidence-trend",
   "updateCadence": "daily-event-driven",
-  "asOf": "2026-11-27",
+  "asOf": "2026-11-28",
   "files": {
     "events": "events.json",
     "links": "links.json",
@@ -49,9 +49,9 @@
     "compatibilityMirrorStatus": "deprecated"
   },
   "monitoring": {
-    "lastCheckedAt": "2026-11-27",
+    "lastCheckedAt": "2026-11-28",
     "latestSubstantiveAt": "2026-11-25",
     "ingestionMode": "evidence-first-idempotent-v1",
-    "lastIngestId": "2026-11-27-0816-ai-job-watch-heartbeat"
+    "lastIngestId": "2026-11-28-0756-ai-job-watch-heartbeat"
   }
 }
